@@ -331,6 +331,36 @@ h2::before {
     color: var(--text);
 }
 
+/* ===== Skills ===== */
+.skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.skill-group h3 {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+/* ===== Timeline extras ===== */
+.timeline-role-note {
+    font-size: 0.8rem;
+    color: var(--accent-dim);
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.timeline-coursework {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 8px;
+}
+
 /* ===== Contact ===== */
 .contact-text {
     color: var(--text-muted);
