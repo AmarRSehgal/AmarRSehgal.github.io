@@ -1,0 +1,59 @@
+name: Daily NBA Picks
+
+on:
+  schedule:
+    # Run at 10:00 AM ET (15:00 UTC) every day during NBA season
+    - cron: '0 15 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  generate-picks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout website repo
+        uses: actions/checkout@v4
+
+      - name: Checkout NBA prediction repo
+        uses: actions/checkout@v4
+        with:
+          repository: Amar-Sehgal/nba-prediction
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          path: nba-prediction
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install dependencies
+        run: |
+          cd nba-prediction
+          pip install -r requirements.txt
+
+      - name: Restore NBA database cache
+        uses: actions/cache@v4
+        with:
+          path: nba-prediction/data
+          key: nba-db-${{ github.run_number }}
+          restore-keys: nba-db-
+
+      - name: Update data and generate picks
+        run: |
+          cd nba-prediction
+          python3 daily_update.py || true
+          python3 generate_web_picks.py --output ../predictions/nba.json
+
+      - name: Commit and push predictions
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add predictions/nba.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update NBA picks for $(date -u +%Y-%m-%d)"
+            git push
+          fi

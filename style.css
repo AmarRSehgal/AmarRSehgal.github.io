@@ -331,6 +331,161 @@ h2::before {
     color: var(--text);
 }
 
+/* ===== Predictions ===== */
+.predictions-subtitle {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-top: -28px;
+    margin-bottom: 36px;
+}
+
+.prediction-block {
+    margin-bottom: 40px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.prediction-block:last-child {
+    margin-bottom: 0;
+}
+
+.prediction-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+}
+
+.prediction-header h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.prediction-date {
+    font-family: var(--font);
+    font-size: 0.7rem;
+    color: var(--text-muted);
+}
+
+.prediction-content {
+    padding: 20px;
+}
+
+.prediction-loading {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    font-style: italic;
+}
+
+.prediction-none {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+/* NBA game cards */
+.nba-game {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.nba-game:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.nba-game:first-child {
+    padding-top: 0;
+}
+
+.nba-matchup {
+    flex: 1;
+}
+
+.nba-teams {
+    font-size: 0.9rem;
+    color: var(--text);
+}
+
+.nba-teams .pick-team {
+    color: #fff;
+    font-weight: 600;
+}
+
+.nba-meta {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+.nba-pick {
+    text-align: right;
+    min-width: 100px;
+}
+
+.nba-pick-label {
+    font-family: var(--font);
+    font-size: 0.7rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nba-confidence {
+    font-family: var(--font);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.confidence-high {
+    color: #4ade80;
+}
+
+.confidence-med {
+    color: #fbbf24;
+}
+
+/* F1 prediction table */
+.f1-race-name {
+    font-size: 0.9rem;
+    color: var(--text);
+    margin-bottom: 12px;
+}
+
+.f1-grid {
+    display: grid;
+    grid-template-columns: 32px 1fr 80px;
+    gap: 4px 12px;
+    font-size: 0.85rem;
+}
+
+.f1-pos {
+    font-family: var(--font);
+    color: var(--accent-dim);
+    text-align: right;
+}
+
+.f1-driver {
+    color: var(--text);
+}
+
+.f1-score {
+    font-family: var(--font);
+    color: var(--text-muted);
+    text-align: right;
+    font-size: 0.75rem;
+}
+
+.f1-pos-1 .f1-driver { color: #fbbf24; font-weight: 600; }
+.f1-pos-2 .f1-driver { color: #d1d5db; font-weight: 600; }
+.f1-pos-3 .f1-driver { color: #cd7f32; font-weight: 600; }
+
 /* ===== Skills ===== */
 .skills-grid {
     display: flex;

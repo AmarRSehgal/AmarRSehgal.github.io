@@ -13,7 +13,7 @@
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
-                <a href="#leadership">Leadership</a>
+                <a href="#predictions">Predictions</a>
                 <a href="#projects">Projects</a>
                 <a href="#education">Education</a>
                 <a href="#contact">Contact</a>
@@ -162,6 +162,36 @@
         </div>
     </section>
 
+    <!-- Live Predictions -->
+    <section id="predictions">
+        <div class="container">
+            <h2>Live Predictions</h2>
+            <p class="predictions-subtitle">Auto-updated daily from my ML models. Not financial advice.</p>
+
+            <!-- NBA Picks -->
+            <div class="prediction-block">
+                <div class="prediction-header">
+                    <h3>NBA Moneyline Picks</h3>
+                    <span id="nba-updated" class="prediction-date">Loading...</span>
+                </div>
+                <div id="nba-picks" class="prediction-content">
+                    <p class="prediction-loading">Fetching today's picks...</p>
+                </div>
+            </div>
+
+            <!-- F1 Predictions -->
+            <div class="prediction-block">
+                <div class="prediction-header">
+                    <h3>F1 Race Predictions</h3>
+                    <span id="f1-updated" class="prediction-date">Loading...</span>
+                </div>
+                <div id="f1-predictions" class="prediction-content">
+                    <p class="prediction-loading">Fetching upcoming race predictions...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects -->
     <section id="projects">
         <div class="container">
@@ -169,22 +199,53 @@
             <div class="projects-grid">
 
                 <div class="project-card">
-                    <h3>Stock Prediction System</h3>
-                    <p>Swing trading strategy simulator and scanner for S&amp;P 500 stocks with ML-based signal generation.</p>
+                    <h3>NBA Prediction</h3>
+                    <p>Game outcome prediction using Elo ratings, rolling stats, player impact models, and LightGBM. Includes spreads, totals, and player props. Powers the live picks above.</p>
                     <div class="project-tags">
                         <span>Python</span>
-                        <span>PyTorch</span>
-                        <span>Finance</span>
+                        <span>LightGBM</span>
+                        <span>ESPN API</span>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <h3>F1 Race Prediction</h3>
-                    <p>Machine learning model for predicting Formula 1 race winners using historical race and driver data.</p>
+                    <p>Predicts Formula 1 race finishing positions using lap time data from FastF1. Backtesting simulator compares models, features, and data windows. Powers the live predictions above.</p>
                     <div class="project-tags">
                         <span>Python</span>
-                        <span>ML</span>
-                        <span>Sports Analytics</span>
+                        <span>FastF1</span>
+                        <span>Gradient Boosting</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Stock Prediction</h3>
+                    <p>Swing trading strategy simulator and scanner for S&amp;P 500 stocks. Backtests SMA crossover and dual-SMA filter strategies with heatmap optimization.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Backtesting.py</span>
+                        <span>Finance</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Weather Prediction</h3>
+                    <p>Severe weather risk scoring, seasonal anomaly detection, and event frequency forecasting for any US location. Built on NOAA Storm Events (1.8M+ events) and Open-Meteo data.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>NOAA API</span>
+                        <span>Open-Meteo</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>News Sentiment Tracker</h3>
+                    <p>Monitors sentiment across 40+ news sources (Reuters, CNBC, BBC, etc.) with keyword search, velocity tracking, and cross-source bias comparison.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>NLP</span>
+                        <span>VADER</span>
+                        <span>SQLite FTS5</span>
                     </div>
                 </div>
 
