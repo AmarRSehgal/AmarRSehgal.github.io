@@ -3,8 +3,8 @@
 Each file here is generated in its model repo by a `generate_web_picks.py` /
 `generate_web_predictions.py` entrypoint, validated by
 `.github/scripts/validate_predictions.py`, and committed either by the matching workflow
-in `.github/workflows/` or -- for `real_estate.json` -- by a scheduled job on the local
-machine (see that section for why). The front end (`script.js`) renders them and nothing else — if a
+in `.github/workflows/` or -- for `real_estate.json` and `magicformula.json` -- by a
+scheduled job on the local machine (see those sections for why). The front end (`script.js`) renders them and nothing else — if a
 field is not listed here, the site ignores it.
 
 **The validator is the contract.** Every rule below is enforced, and a violation fails
@@ -332,6 +332,90 @@ The generator also refuses to write at all when its own raw sweep is older than 
 days, so a fresh `generated_at` here really does imply fresh listings. That is why this
 feed needs no extra front-end `gate` the way `magicformula.json` does.
 
+## `magicformula.json`
+
+A Magic Formula value screen (Greenblatt: rank by earnings yield and return on capital,
+sum the two ranks) from `~/personal/magic-formula-portfolio`. **Published by a local
+launchd job, not a GitHub Action** (`run_weekly.sh`, Mondays 08:00 local, installed per
+`~/personal/automation/LAUNCHD.md`). Weekly rather than daily because the strategy holds
+for a year and the source re-screens quarterly, so a daily rebuild would publish price
+noise as though it were signal. The wrapper runs this validator itself before copying the
+payload in, so the contract is enforced identically either way.
+
+The page shows the screen only -- no holdings, no P&L, no position sizes.
+
+```json
+{
+  "generated_at": "2026-09-01T08:13:48.431866+00:00",
+  "universe_pulled": "2026-04-15",
+  "universe_size": 50,
+  "screened": 18,
+  "unrankable": 9,
+  "min_market_cap_m": 1000.0,
+  "ideas": [
+    {
+      "ticker": "VSNT",
+      "name": "Versant Media Group, Inc.",
+      "sector": "Communication Services",
+      "rank": 1,
+      "earnings_yield": 0.230031,
+      "return_on_capital": 0.752497,
+      "market_cap": 5722673664.0,
+      "ebit_basis": "TTM"
+    }
+  ]
+}
+```
+
+| field | required | type | meaning |
+|---|---|---|---|
+| `generated_at` | yes | ISO 8601 + offset | when the screen was re-ranked — see above |
+| `universe_pulled` | yes | `YYYY-MM-DD` | when the candidate list was last pasted in by hand |
+| `universe_size` | yes | int | names in the pasted list |
+| `screened` | yes | int, `0 <= screened <= universe_size` | how many were rankable and cleared the filters |
+| `unrankable` | no | int | names the formula could not rank (see below) |
+| `min_market_cap_m` | no | number | market-cap floor applied, in $M; rendered in the slate line |
+| `ideas[].ticker` / `name` | yes | non-empty string | ticker is the display label, name is context |
+| `ideas[].rank` | yes | int `>= 1` | 1 = best combined rank. **The list must be sorted by it** |
+| `ideas[].earnings_yield` | yes | number, \|x\| <= 5 | EBIT / enterprise value, **a fraction** |
+| `ideas[].return_on_capital` | yes | number, \|x\| <= 100 | EBIT / (NWC + net fixed assets), **a fraction** |
+| `ideas[].market_cap` | yes | number `>= 1e6` | **in dollars** |
+| `ideas[].sector` / `ebit_basis` | no | string | shown in the meta line; `ebit_basis` is `TTM` or `annual` |
+
+### Two staleness axes, and why one is not enough
+
+This is the only feed where `generated_at` being fresh does not mean the content is.
+
+- **`generated_at`** — when the screen was re-ranked. A weekly job keeps this permanently
+  fresh, by construction.
+- **`universe_pulled`** — when the list of candidate names was last pasted in from
+  magicformulainvesting.com. That is a manual step (the site has no API and must not be
+  scraped), and its list only turns over when new quarterly filings reach its data
+  provider.
+
+Re-ranking a two-quarter-old universe every Monday produces a payload with an impeccable
+`generated_at` and names that are two quarters behind. No freshness check on
+`generated_at` could ever reveal that. So the front end gates on `universe_pulled`
+separately: past a quarter plus a fortnight it shows the age and nothing else, the same
+way it refuses to render a stale slate. The universe as of 2026-09-01 was pulled
+2026-04-15, so this is the live state, not a hypothetical.
+
+The validator deliberately does **not** reject an old `universe_pulled` — which stale
+screens to display is the front end's decision, and gating it here would mean a stale
+feed could not publish the very date that reveals it.
+
+Nothing else from the pasted CSV reaches the payload. It supplies the ticker list and the
+pull date; every number is computed at scan time.
+
+### `unrankable`
+
+Reported as a count rather than hidden. Most of these are not a data outage: they are
+companies with **negative invested capital** (current liabilities exceed current assets by
+more than net fixed assets), where return on capital has no meaningful denominator, or
+with a negative enterprise value where the company holds more cash than its market cap.
+The Magic Formula is undefined for them rather than the data being missing, and the reader
+should know the screen is not covering them.
+
 ## `f1.json`
 
 ```json
@@ -348,6 +432,86 @@ feed needs no extra front-end `gate` the way `magicformula.json` does.
 `predictions` is in predicted finishing order (index 0 = P1). `year` is an int,
 `race_name` a non-empty string, `driver` a non-empty string, and `predicted_pos` a
 number rendered to one decimal.
+
+## `funding.json`
+
+Cross-exchange perpetual funding carry, from `AmarRSehgal/funding-rate-arb`.
+Published **hourly** by a local launchd job (`run_hourly.sh`), not a GitHub Action --
+several of the venues geo-block datacenter IPs, so this has to run from a residential
+connection.
+
+```json
+{
+  "generated_at": "2026-09-09T13:04:22Z",
+  "status": "ok",
+  "scans_seen": 24,
+  "window_scans": 24,
+  "min_hits": 18,
+  "opportunities": [{
+    "base": "BTC",
+    "type": "spot-perp",
+    "long_venue": "Binance",
+    "short_venue": "Hyperliquid",
+    "long_instrument": "spot",
+    "min_hold_h": 8,
+    "hits": 22,
+    "scans": 24,
+    "net_apr": 42.13,
+    "net_at_hold": 0.03847,
+    "cost_bps": 21.5
+  }]
+}
+```
+
+**The numbers here are PERCENTS, not probabilities.** `net_apr` is `42.13` for
+42.13%/yr and routinely exceeds 100. The shared `[0, 1]` rule the sports feeds use
+does not apply and must not be "restored" here.
+
+### Why this board is not the scanner's top rows
+
+The scanner ranks ~30,000 routes and its top rows are almost always one altcoin mid
+funding spike -- at the time of writing, `+10,456% APR`. That figure is correct
+arithmetic (an instantaneous rate, annualised) and a false promise: the rate reverts
+long before the minimum hold completes. Publishing it would put an untrue claim on the
+page.
+
+So a route has to keep earning its place. Every scan stores its net-positive routes,
+and only routes positive in **at least `min_hits` of the last `scans_seen` hourly
+scans** are published, ranked by hit count and then by the **median** net APR across
+those scans -- median, because a route published *for being steady* must not have its
+headline number set by the one scan where it spiked.
+
+Consequence: **an empty `opportunities` list is the normal state**, not a broken feed.
+
+### `status`
+
+| value | meaning |
+|---|---|
+| `ok` | The window holds enough scans to judge persistence. `opportunities` may still be empty. |
+| `building_history` | Fewer than 12 scans collected. The hit rate is not yet a measurement. |
+
+`building_history` **must** carry an empty `opportunities` list, and the validator
+enforces it: publishing a board while saying there is no basis for one asserts both at
+once, and the front end renders them as different things.
+
+### Per-route rules (all enforced)
+
+- `type` is `spot-perp` or `perp-perp`.
+- A `perp-perp` route may not have both legs on the same venue -- that is a position
+  against itself, not a carry. A same-venue `spot-perp` is legitimate and allowed.
+- `hits <= scans`, both `>= 1`. A route cannot have been positive more often than it
+  was looked at.
+- `min_hold_h >= 1`.
+- `net_apr > 0` and `net_at_hold > 0`. Only routes that were worth doing get
+  published, so a non-positive one means the persistence filter let a losing route
+  through -- a failure that is otherwise invisible, because it just looks like a thin
+  board.
+- `net_apr` and `net_at_hold` are the same return over different horizons and may not
+  disagree in sign.
+
+The front end leads with `net_at_hold` (what actually happens over one hold) and shows
+`net_apr` as the smaller derived figure, so the annualised number reads as an
+extrapolation rather than a claim.
 
 ## Publishing setup (required, currently missing)
 
