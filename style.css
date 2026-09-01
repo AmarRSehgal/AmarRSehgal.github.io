@@ -705,3 +705,12 @@ button:focus-visible {
 .deal-address a:hover { border-bottom-style: solid; }
 
 .deal-prices { margin-top: 0.15rem; }
+
+/* Magic Formula screen: the ticker is the identifier, the company name is context,
+   so the name sits alongside at a lower weight rather than replacing it. */
+.idea-name {
+    color: #94a3b8;
+    font-weight: 400;
+    font-size: 0.85rem;
+    margin-left: 0.4rem;
+}
