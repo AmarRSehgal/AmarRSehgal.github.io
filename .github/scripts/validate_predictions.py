@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Gate a freshly generated predictions payload before it replaces the published one.
 
-Usage: validate_predictions.py {nba|nfl|f1|real_estate|magicformula} <candidate.json>
+Usage: validate_predictions.py {nba|nfl|f1|real_estate|magicformula|opportunities}
+           <candidate.json>
 
 Exits non-zero on anything the front end cannot render honestly. The point is that a
 half-broken generator run fails the workflow loudly instead of publishing a file that
@@ -66,7 +67,17 @@ SPECS = {
                       'ideas'), 'ideas',
                      ('ticker', 'name', 'rank', 'earnings_yield', 'return_on_capital',
                       'market_cap')),
+    # The opportunities board is the only NESTED payload: its list holds per-source
+    # sections, each with its own status, caveat and item list.
+    'opportunities': (('generated_at', 'sources', 'methodology'), 'sources',
+                      ('source', 'label', 'status', 'caveat', 'opportunities')),
 }
+
+# A section may only carry items when its own scan is current. 'stale' and 'missing'
+# exist precisely so the page can say "this source went quiet" instead of showing old
+# numbers as though they were live; publishing items beside them defeats the point.
+SOURCE_STATUS = ('fresh', 'empty', 'stale', 'missing', 'error')
+PUBLISHABLE_STATUS = ('fresh', 'empty')
 
 
 class Invalid(Exception):
@@ -291,6 +302,40 @@ def check_f1_entry(where, p):
     require_number(where, 'predicted_pos', p['predicted_pos'])
 
 
+def check_source_section(where, sec):
+    """One per-source section of the opportunities board."""
+    status = require_str(where, 'status', sec['status'])
+    if status not in SOURCE_STATUS:
+        raise Invalid(f'{where}: status={status!r} must be one of {SOURCE_STATUS}')
+    require_str(where, 'source', sec['source'])
+    require_str(where, 'label', sec['label'])
+    # Every section carries a caveat by construction. The board mixes sources whose
+    # numbers mean very different things, and several generators feeding it exist to
+    # warn about their own output -- dropping the caveat is how a page ends up
+    # presenting a momentum ranking as a trade signal.
+    require_str(where, 'caveat', sec['caveat'])
+
+    items = sec['opportunities']
+    if not isinstance(items, list):
+        raise Invalid(f'{where}: opportunities must be a list')
+    if items and status not in PUBLISHABLE_STATUS:
+        raise Invalid(f'{where}: status={status!r} but {len(items)} item(s) published; '
+                      f'a section outside {PUBLISHABLE_STATUS} must show nothing')
+
+    for i, item in enumerate(items):
+        iw = f'{where}.opportunities[{i}]'
+        if not isinstance(item, dict):
+            raise Invalid(f'{iw} must be an object')
+        missing = [k for k in ('title', 'metric_value', 'metric_display') if k not in item]
+        if missing:
+            raise Invalid(f'{iw} missing {missing}')
+        require_str(iw, 'title', item['title'])
+        require_str(iw, 'metric_display', item['metric_display'])
+        # metric_value is what the section is sorted by. A string here sorts
+        # lexicographically and silently reorders the board.
+        require_number(iw, 'metric_value', item['metric_value'])
+
+
 def validate(sport, data, now=None):
     """Raise Invalid on the first contract violation. Returns the item list on success."""
     now = now or datetime.now(timezone.utc)
@@ -322,6 +367,11 @@ def validate(sport, data, now=None):
         for i, m in enumerate(markets):
             require_str(f'markets[{i}]', 'value', m)
         check_track_record(data.get('track_record'))
+    elif sport == 'opportunities':
+        require_str('<payload>', 'methodology', data['methodology'])
+        keys = [x.get('source') for x in data['sources'] if isinstance(x, dict)]
+        if len(set(keys)) != len(keys):
+            raise Invalid(f'duplicate source keys in sources: {keys}')
     elif sport == 'magicformula':
         check_date_string('<payload>', 'universe_pulled', data['universe_pulled'])
         size = require_int('<payload>', 'universe_size', data['universe_size'])
@@ -344,7 +394,9 @@ def validate(sport, data, now=None):
         item_missing = [k for k in item_keys if k not in item]
         if item_missing:
             raise Invalid(f'{where} missing {item_missing}')
-        if sport == 'f1':
+        if sport == 'opportunities':
+            check_source_section(where, item)
+        elif sport == 'f1':
             check_f1_entry(where, item)
         elif sport == 'magicformula':
             check_idea(where, item)

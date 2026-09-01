@@ -108,9 +108,59 @@ const SPORTS = {
         },
         render: renderDeals,
     },
+    // Magic Formula stock screen. No season either, and published from a local weekly
+    // job like real estate. The `gate` is the part that matters: this feed has two
+    // independent staleness axes and `staleAfter` only covers one of them.
+    magic_formula: {
+        file: 'predictions/magicformula.json',
+        container: 'magic-formula-ideas',
+        stamp: 'magic-formula-updated',
+        cadence: 'weekly',
+        noun: 'ideas',
+        listKey: 'ideas',
+        staleAfter: 14 * MS_DAY,
+        emptyLabel: 'No name currently clears the screen.',
+        slate: d => {
+            const n = Array.isArray(d.ideas) ? d.ideas.length : 0;
+            const m = Number(d.min_market_cap_m);
+            const cap = isFinite(m) && m > 0
+                ? ` above ${m >= 1000 ? `$${m / 1000}B` : `$${m}M`} market cap`
+                : '';
+            return `Top ${n} of ${d.screened} ranked names${cap}`;
+        },
+        gate: (d, now) => {
+            // The screen re-ranks weekly, so `generated_at` is always fresh. But the
+            // universe it ranks is a list pasted in by hand from
+            // magicformulainvesting.com, and that site only re-screens when new
+            // quarterly filings land. A weekly re-rank of a two-quarter-old universe is
+            // a page that looks current and is not, and no amount of freshness on
+            // `generated_at` would reveal it.
+            const pulled = parseIsoDay(d.universe_pulled);
+            if (isNaN(pulled)) {
+                return { cls: 'prediction-stale', text: 'The screen did not report when its '
+                    + 'universe was pulled, so its age cannot be shown. Not publishing '
+                    + 'names without it.' };
+            }
+            const age = now - pulled;
+            if (age > UNIVERSE_STALE) {
+                return { cls: 'prediction-stale', text: 'The candidate universe was last '
+                    + `pulled ${relativeAge(age)} (${formatDay(pulled)}), and the source `
+                    + 're-screens quarterly -- so these names are behind the current '
+                    + 'filings. Showing nothing rather than a stale screen.' };
+            }
+            return null;
+        },
+        render: renderIdeas,
+    },
 };
 
-const SPORT_LABEL = { nba: 'NBA', nfl: 'NFL', f1: 'F1', real_estate: 'Real estate' };
+// A quarter plus a fortnight of slack. The source refreshes its fundamentals when its
+// data provider delivers new filings, so a list older than this predates the current
+// quarter's numbers entirely.
+const UNIVERSE_STALE = 105 * MS_DAY;
+
+const SPORT_LABEL = { nba: 'NBA', nfl: 'NFL', f1: 'F1', real_estate: 'Real estate',
+                      magic_formula: 'Magic Formula' };
 
 function esc(v) {
     return String(v == null ? '' : v).replace(/[&<>"']/g, c => (
@@ -298,6 +348,35 @@ function renderDeals(data) {
     return renderTrackRecord(data.track_record) + rows;
 }
 
+function renderIdeas(data) {
+    return data.ideas.map(d => {
+        const ey = Number(d.earnings_yield);
+        const roc = Number(d.return_on_capital);
+        // Earnings yield is the "how cheap" half of the formula, so it carries the
+        // emphasis; 10% is roughly the line between cheap and merely reasonable.
+        const eyClass = ey >= 0.10 ? 'confidence-high' : 'confidence-med';
+        const facts = [];
+        if (d.sector) facts.push(String(d.sector));
+        if (d.market_cap != null) facts.push(`${formatMoney(d.market_cap)} mkt cap`);
+        facts.push(`ROC ${(roc * 100).toFixed(0)}%`);
+        if (d.ebit_basis) facts.push(`${d.ebit_basis} EBIT`);
+        return `
+            <div class="nba-game">
+                <div class="nba-matchup">
+                    <div class="nba-teams"><span class="pick-team">${esc(d.ticker)}</span>
+                        <span class="idea-name">${esc(d.name)}</span></div>
+                    <div class="nba-meta">${esc(facts.join(' | '))}</div>
+                </div>
+                <div class="nba-pick">
+                    <div class="nba-pick-label">Earnings yield</div>
+                    <div class="nba-confidence ${eyClass}">${(ey * 100).toFixed(1)}%</div>
+                    <div class="nba-pick-label">rank ${esc(d.rank)}</div>
+                </div>
+            </div>
+        `;
+    }).join('');
+}
+
 // --- Loader ---
 
 async function loadSport(key) {
@@ -372,6 +451,12 @@ async function loadSport(key) {
         container.innerHTML = note('prediction-stale',
             `${label} ${cfg.noun} are out of date -- last published ${relativeAge(age)} `
             + `(${formatStamp(data.generated_at)}). Showing nothing rather than a stale slate.`);
+        return;
+    }
+
+    const gated = cfg.gate ? cfg.gate(data, now) : null;
+    if (gated) {
+        container.innerHTML = note(gated.cls, gated.text);
         return;
     }
 
