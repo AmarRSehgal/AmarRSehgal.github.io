@@ -51,6 +51,11 @@ const SPORTS = {
         staleAfter: 36 * MS_HOUR,
         season: { startMonth: 10, startDay: 20, endMonth: 6, endDay: 30, startPhrase: 'late October' },
         emptyLabel: 'No games on the schedule today.',
+        slate: d => {
+            const day = parseIsoDay(d.date);
+            return isNaN(day) ? '' : `${day.toLocaleDateString('en-US',
+                { weekday: 'long', month: 'long', day: 'numeric' })} slate`;
+        },
         render: renderTeamGames,
     },
     nfl: {
@@ -62,6 +67,12 @@ const SPORTS = {
         staleAfter: 10 * MS_DAY,
         season: { startMonth: 9, startDay: 4, endMonth: 2, endDay: 15, startPhrase: 'early September' },
         emptyLabel: 'No games on the schedule this week.',
+        slate: d => {
+            if (d.week == null) return '';
+            const phase = { preseason: 'Preseason week', postseason: 'Postseason week' };
+            const label = phase[d.season_type] || 'Week';
+            return `${label} ${d.week}${d.season ? ` -- ${d.season} season` : ''}`;
+        },
         render: renderTeamGames,
     },
     f1: {
@@ -108,6 +119,23 @@ function relativeAge(ms) {
     if (days >= 1) return days === 1 ? 'yesterday' : `${days} days ago`;
     const hours = Math.max(1, Math.floor(ms / MS_HOUR));
     return hours === 1 ? '1 hour ago' : `${hours} hours ago`;
+}
+
+// Two traps in Date() that the contract's date fields hit directly:
+//   - a bare YYYY-MM-DD is parsed as UTC midnight, so it renders as the PREVIOUS day
+//     for every viewer west of Greenwich -- build it as a local date instead;
+//   - Date() also happily parses loose prose ("September 2026" -> Sep 1), so a
+//     malformed field yields a confident wrong date rather than a detectable one.
+// Accept only the ISO forms the payload contract specifies; anything else is invalid.
+function parseIsoDay(value) {
+    const str = String(value == null ? '' : value);
+    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(str);
+    if (m) return new Date(+m[1], +m[2] - 1, +m[3]);
+    return str.includes('T') ? new Date(str) : new Date(NaN);
+}
+
+function formatDay(d) {
+    return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
 }
 
 const mmdd = (m, d) => m * 100 + d;
@@ -201,12 +229,16 @@ async function loadSport(key) {
     const off = status ? status !== 'in_season' : !inSeason(cfg.season, now);
 
     if (off) {
-        const start = data && data.next_season_start
-            ? new Date(data.next_season_start)
-            : nextSeasonStart(cfg.season, now);
-        const when = data && data.next_season_start && !isNaN(start)
-            ? start.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
-            : `${cfg.season.startPhrase} ${start.getFullYear()}`;
+        // An unparseable next_season_start must fall back to the computed window --
+        // the old code called getFullYear() on the Invalid Date and published
+        // "resume when the season starts, early September NaN".
+        const override = data && data.next_season_start
+            ? parseIsoDay(data.next_season_start)
+            : null;
+        const usable = override && !isNaN(override);
+        const when = usable
+            ? formatDay(override)
+            : `${cfg.season.startPhrase} ${nextSeasonStart(cfg.season, now).getFullYear()}`;
         stampEl.textContent = 'Off-season';
         container.innerHTML = note('prediction-offseason',
             `${label} is between seasons. ${cfg.cadence === 'daily' ? 'Daily' : 'Weekly'} ${cfg.noun} resume when the season starts, ${when}.`);
@@ -253,7 +285,9 @@ async function loadSport(key) {
         return;
     }
 
-    container.innerHTML = cfg.render(data);
+    const slate = cfg.slate ? cfg.slate(data) : '';
+    container.innerHTML = (slate ? `<div class="prediction-slate">${esc(slate)}</div>` : '')
+        + cfg.render(data);
 }
 
 Object.keys(SPORTS).forEach(loadSport);
