@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Gate a freshly generated predictions payload before it replaces the published one.
 
-Usage: validate_predictions.py {nba|nfl|f1|real_estate|magicformula|opportunities}
+Usage: validate_predictions.py {nba|nfl|f1|real_estate|magicformula|opportunities|business_hunter}
            <candidate.json>
 
 Exits non-zero on anything the front end cannot render honestly. The point is that a
@@ -39,6 +39,19 @@ NON_DISCLOSURE_STATES = frozenset({
 # the ratio to 4dp.
 DISCOUNT_TOLERANCE = 0.005
 
+# business_hunter publishes `multiple` alongside the asking price and cash flow it is
+# derived from, rounded to 2dp -- so allow a rounding-sized disagreement and nothing more.
+MULTIPLE_TOLERANCE = 0.02
+
+# The screener refuses to score these earnings labels, and a refused row must never
+# reach the page. Flippa's self-reported monthly "net_profit" has a median of 0.98x, so
+# on a page ranked by discount those rows would place FIRST -- the least credible
+# listings presented as the best finds. The generator excludes them; this is the
+# independent check that they never come back.
+REFUSED_CASH_FLOW_TYPES = frozenset({'net_profit', ''})
+SCORABLE_CASH_FLOW_TYPES = frozenset({'SDE', 'EBITDA', 'cashflow'})
+BUSINESS_TRAITS = frozenset({'absentee', 'recurring', 'online'})
+
 # Earnings yield is a fraction, not a percent, and the two are indistinguishable by
 # type. A realistic EY never leaves this band, so 23.0 (meaning 23%) fails here instead
 # of rendering as 2300% on the page. Return on capital is genuinely unbounded -- a
@@ -60,6 +73,11 @@ SPECS = {
             ('away_team', 'home_team', 'pick', 'pred_spread', 'ml_win_prob', 'confidence')),
     'f1': (('generated_at', 'year', 'race_name', 'predictions'), 'predictions',
            ('driver', 'predicted_pos')),
+    'business_hunter': (('generated_at', 'sources', 'screened', 'scored', 'refused',
+                         'flagged', 'businesses'), 'businesses',
+                        ('title', 'source', 'url', 'asking_price', 'cash_flow',
+                         'cash_flow_type', 'multiple', 'fair_value', 'discount',
+                         'score')),
     'real_estate': (('generated_at', 'markets', 'deals'), 'deals',
                     ('address', 'city', 'state', 'score', 'list_price',
                      'comp_implied_value', 'discount_vs_comps')),
@@ -245,6 +263,131 @@ def check_deal(where, d):
         require_str(where, 'url', d['url'])
 
 
+def check_business(where, b):
+    """A published acquisition candidate. Each check stops the page asserting
+    something the screen does not actually support."""
+    require_str(where, 'title', b['title'])
+    require_str(where, 'source', b['source'])
+    # The feed publishes links, so a row without one is a dead end on the page.
+    require_str(where, 'url', b['url'])
+
+    # Membership is tested BEFORE the non-empty check: the empty label is itself a
+    # refused type, and the refused message tells a generator author what to do
+    # about it where "must be a non-empty string" does not.
+    raw_type = b['cash_flow_type']
+    cf_type = raw_type.strip() if isinstance(raw_type, str) else raw_type
+    if cf_type in REFUSED_CASH_FLOW_TYPES:
+        raise Invalid(
+            f'{where}.cash_flow_type={cf_type!r} is a refused earnings label -- the '
+            f'screener will not score it, so it cannot be published as an opportunity. '
+            f'Its multiple is not comparable to a vetted earnings stream and on a page '
+            f'ranked by discount it would rank first. Filter it in the generator.')
+    cf_type = require_str(where, 'cash_flow_type', raw_type).strip()
+    if cf_type not in SCORABLE_CASH_FLOW_TYPES:
+        raise Invalid(f'{where}.cash_flow_type={cf_type!r} is not one of '
+                      f'{sorted(SCORABLE_CASH_FLOW_TYPES)}')
+
+    price = require_positive(where, 'asking_price', b['asking_price'])
+    cash_flow = require_positive(where, 'cash_flow', b['cash_flow'])
+    multiple = require_positive(where, 'multiple', b['multiple'])
+    fair_value = require_positive(where, 'fair_value', b['fair_value'])
+    discount = require_number(where, 'discount', b['discount'])
+    score = require_number(where, 'score', b['score'])
+
+    # `multiple` is derived from two numbers published right beside it, so a
+    # disagreement means the page is showing a ratio that contradicts its own figures.
+    expected_multiple = price / cash_flow
+    if abs(multiple - expected_multiple) > MULTIPLE_TOLERANCE:
+        raise Invalid(f'{where}: multiple={multiple} does not match asking_price / '
+                      f'cash_flow = {expected_multiple:.4f}')
+
+    # The sign convention, enforced: positive means priced BELOW the band for this
+    # listing's earnings type and size. A flipped subtraction turns every premium into
+    # a bargain and still renders a completely plausible page.
+    expected_discount = 1.0 - (multiple / fair_value)
+    if abs(discount - expected_discount) > DISCOUNT_TOLERANCE:
+        raise Invalid(
+            f'{where}: discount={discount} does not match 1 - (multiple / fair_value) '
+            f'= {expected_discount:.4f}. Positive means priced BELOW the fair-value '
+            f'band; check for a flipped subtraction or a percent-vs-fraction mixup. '
+            f'Emit a fraction (0.47), never a percent (47).')
+
+    # A published row must actually be a candidate. The screener's own history is the
+    # reason this is checked at the boundary: trait bonuses used to be additive, so
+    # absentee/recurring/online keywords manufactured a positive score on businesses
+    # priced at or above fair value -- 297 of 640 flagged rows were >= their band.
+    if multiple >= fair_value:
+        raise Invalid(f'{where}: multiple={multiple} is at or above its fair_value band '
+                      f'({fair_value}), so it is not a discount and must not be '
+                      f'published as an opportunity')
+    if discount <= 0:
+        raise Invalid(f'{where}: discount={discount} must be positive for a published '
+                      f'opportunity')
+    if score <= 0:
+        raise Invalid(f'{where}: score={score} must be positive -- a zero score means '
+                      f'the listing is at or above its band')
+
+    if type(b.get('vetted')) is not bool:
+        raise Invalid(f'{where}.vetted={b.get("vetted")!r} must be a JSON boolean. It '
+                      f'means the source screened the P&L, NOT that anyone audited it.')
+
+    traits = b.get('traits', [])
+    if not isinstance(traits, list):
+        raise Invalid(f'{where}.traits must be a list')
+    for t in traits:
+        if t not in BUSINESS_TRAITS:
+            raise Invalid(f'{where}.traits contains {t!r}; expected one of '
+                          f'{sorted(BUSINESS_TRAITS)}')
+
+
+def check_business_counts(data, published):
+    """The screen summary is the page's honesty about what it looked at.
+
+    These counts are what let a reader see that 97 rows were refused rather than
+    silently dropped, so an inconsistent set is worse than no set at all.
+    """
+    screened = require_int('<payload>', 'screened', data['screened'])
+    scored = require_int('<payload>', 'scored', data['scored'])
+    refused = require_int('<payload>', 'refused', data['refused'])
+    flagged = require_int('<payload>', 'flagged', data['flagged'])
+    for key, val in (('screened', screened), ('scored', scored),
+                     ('refused', refused), ('flagged', flagged)):
+        if val < 0:
+            raise Invalid(f'<payload>.{key}={val} cannot be negative')
+
+    if scored + refused > screened:
+        raise Invalid(f'scored ({scored}) + refused ({refused}) exceeds screened '
+                      f'({screened}) -- every scored or refused listing was screened')
+    if flagged > scored:
+        raise Invalid(f'flagged ({flagged}) exceeds scored ({scored}) -- a listing '
+                      f'cannot be below its band without having been scored')
+    if published > flagged:
+        raise Invalid(f'{published} businesses published but only {flagged} flagged -- '
+                      f'the page would be showing rows the screen did not flag')
+
+    sources = data['sources']
+    if not isinstance(sources, list):
+        raise Invalid('sources must be a list of per-source count objects')
+    totals = {'listings': 0, 'refused': 0, 'flagged': 0}
+    for i, s in enumerate(sources):
+        where = f'sources[{i}]'
+        if not isinstance(s, dict):
+            raise Invalid(f'{where} must be an object')
+        require_str(where, 'name', s.get('name'))
+        for key in ('listings', 'scored', 'refused', 'flagged'):
+            if key not in s:
+                raise Invalid(f'{where} missing {key!r}')
+            require_int(where, key, s[key])
+        for key in totals:
+            totals[key] += s[key]
+    if totals['listings'] != screened:
+        raise Invalid(f'per-source listings sum to {totals["listings"]} but screened is '
+                      f'{screened}')
+    if totals['flagged'] != flagged:
+        raise Invalid(f'per-source flagged sum to {totals["flagged"]} but flagged is '
+                      f'{flagged}')
+
+
 def check_track_record(tr):
     """Optional, but if the page is going to quote the model's skill it must be real."""
     if tr is None:
@@ -360,6 +503,9 @@ def validate(sport, data, now=None):
         week = require_int('<payload>', 'week', data['week'])
         if not 1 <= week <= 25:
             raise Invalid(f'week={week} is out of range (1-18 regular, 19+ playoffs)')
+    elif sport == 'business_hunter':
+        check_business_counts(data, len(data['businesses'])
+                              if isinstance(data.get('businesses'), list) else 0)
     elif sport == 'real_estate':
         markets = data['markets']
         if not isinstance(markets, list):
@@ -400,6 +546,8 @@ def validate(sport, data, now=None):
             check_f1_entry(where, item)
         elif sport == 'magicformula':
             check_idea(where, item)
+        elif sport == 'business_hunter':
+            check_business(where, item)
         elif sport == 'real_estate':
             check_deal(where, item)
         else:
@@ -421,7 +569,7 @@ def validate(sport, data, now=None):
 def main(argv):
     if len(argv) != 3:
         print('::error::usage: validate_predictions.py '
-              '{nba|nfl|f1|real_estate|magicformula} <candidate.json>')
+              '{nba|nfl|f1|real_estate|magicformula|business_hunter} <candidate.json>')
         return 1
     sport, path = argv[1], argv[2]
 

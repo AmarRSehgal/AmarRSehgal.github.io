@@ -235,6 +235,103 @@ premium and still renders a page that looks entirely plausible. A positive `list
 makes the true ratio strictly less than 1, so emitting a percent (`47`) instead of a
 fraction (`0.47`) can never agree and is caught by the same check.
 
+## `businesses.json`
+
+Small-business acquisition screen, published **nightly** by a launchd job in
+`~/personal/business-hunter` (not a GitHub Action — see `run_daily.sh` there and
+`~/personal/automation/LAUNCHD.md`).
+
+```json
+{
+  "generated_at": "2026-09-01T08:07:50.483262+00:00",
+  "sources": [
+    {"name": "empireflippers", "listings": 184, "scored": 184, "refused": 0, "flagged": 86},
+    {"name": "flippa", "listings": 99, "scored": 0, "refused": 97, "flagged": 0}
+  ],
+  "screened": 283,
+  "scored": 184,
+  "refused": 97,
+  "flagged": 86,
+  "bands": [
+    {"population": "online", "cash_flow_type": "SDE",
+     "rungs": [{"below": null, "multiple": 2.5}]}
+  ],
+  "businesses": [
+    {
+      "title": "Food & Beverages - Amazon FBA #94642",
+      "source": "empireflippers",
+      "url": "https://empireflippers.com/listing/94642/",
+      "state": "ONLINE", "city": "",
+      "asking_price": 96077, "cash_flow": 164700, "cash_flow_type": "SDE",
+      "multiple": 0.58, "fair_value": 2.5, "discount": 0.768,
+      "score": 62.6, "vetted": true, "traits": ["online"]
+    }
+  ]
+}
+```
+
+| field | required | type | meaning |
+|---|---|---|---|
+| `generated_at` | yes | ISO 8601 + offset | see the shared rules |
+| `sources[]` | yes | list | per-source `name`, `listings`, `scored`, `refused`, `flagged`. `listings` and `flagged` **must sum to the payload totals** |
+| `screened` | yes | int | listings considered (US-only, publishable sources) |
+| `scored` | yes | int | had a computable multiple **and** a defensible fair-value band |
+| `refused` | yes | int | had a multiple but no defensible band — see below |
+| `flagged` | yes | int | scored below their band. `businesses` is the top slice of this, so it may never be shorter than the published list |
+| `bands` | no | list | the fair-value table, for the methodology note |
+| `businesses[].title` / `source` / `url` | yes | non-empty string | the feed publishes links, so a row without one is a dead end |
+| `businesses[].asking_price` / `cash_flow` | yes | number > 0 | dollars |
+| `businesses[].cash_flow_type` | yes | `"SDE"`\|`"EBITDA"`\|`"cashflow"` | the earnings definition the multiple is taken against. `cashflow` is BizBuySell's own field name for SDE |
+| `businesses[].multiple` | yes | number > 0 | `asking_price / cash_flow`, and validated against exactly that |
+| `businesses[].fair_value` | yes | number > 0 | the band for this listing's earnings type **and size** |
+| `businesses[].discount` | yes | number > 0 | `1 - (multiple / fair_value)`; positive = priced BELOW band |
+| `businesses[].score` | yes | number > 0 | screening rank, 0-100ish |
+| `businesses[].vetted` | yes | boolean | the marketplace screened the P&L. **Not** that anyone audited it |
+| `businesses[].traits` | no | list of `absentee`\|`recurring`\|`online` | |
+
+### Refused rows are not opportunities
+
+The screener declines to score some earnings labels, and a refused row may not be
+published — the validator rejects the payload if one appears. This is not tidiness:
+Flippa reports a self-reported, unaudited **monthly** `net_profit` with no add-back
+discipline, and its median is **0.98x**. That is not a bargain bin, it is the market
+declining to believe the numbers. On a page ranked by discount those rows would place
+**first**, presenting the least credible listings as the best finds. So they are counted
+in `refused` — visible, deliberately not scored — and never ranked.
+
+### The sign convention, stated once
+
+`discount` is `1 - (multiple / fair_value)`: **positive means priced below the band.**
+An inverted subtraction turns every premium into a bargain and still renders a
+completely plausible page, so the validator recomputes it. Emit a fraction (`0.47`),
+never a percent (`47`).
+
+A published row must also actually be one: `multiple < fair_value`, `discount > 0` and
+`score > 0` are all enforced. The screener's own history is why — trait bonuses used to
+be *additive*, so absentee/recurring/online keywords manufactured a positive score on
+businesses priced at or above fair value, and 297 of 640 flagged rows were at or above
+their band.
+
+### Why the band is per earnings type and size
+
+A multiple is meaningless without the earnings definition it was taken against. SDE is
+EBITDA **plus** owner compensation and add-backs, so the same business prices at a
+higher multiple of EBITDA than of SDE — a flat fair value scored 41 of 69 EBITDA
+listings at zero even when they were cheap for their type. `fair_value` is therefore
+per label and per deal size, anchored on IBBA Market Pulse and BizBuySell closed
+medians. Full derivation lives in `business-hunter/analyze.py`.
+
+### Feed scope
+
+Only marketplaces that answer plain HTTP are in this payload. BizBuySell is
+Akamai-blocked (403 on every path, `robots.txt` included) and needs a manual WebFetch
+pass, so its rows go months stale between sweeps and would decay into dead links on a
+page claiming to be current. They stay in the screener's local CSVs.
+
+The generator also refuses to write at all when its own raw sweep is older than three
+days, so a fresh `generated_at` here really does imply fresh listings. That is why this
+feed needs no extra front-end `gate` the way `magicformula.json` does.
+
 ## `f1.json`
 
 ```json
