@@ -452,7 +452,8 @@ h2::before {
 }
 
 /* F1 prediction table */
-.f1-race-name {
+.f1-race-name,
+.prediction-slate {
     font-size: 0.9rem;
     color: var(--text);
     margin-bottom: 12px;
