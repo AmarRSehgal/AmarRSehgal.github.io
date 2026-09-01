@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-01T17:00:10.549465+00:00",
+  "generated_at": "2026-09-01T18:00:10.350233+00:00",
   "status": "ok",
-  "scans_seen": 17,
+  "scans_seen": 18,
   "window_scans": 24,
-  "min_hits": 13,
+  "min_hits": 14,
   "opportunities": [
     {
       "base": "ONG",
@@ -12,11 +12,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 17,
-      "scans": 17,
-      "net_apr": 3013.09,
-      "net_at_hold": 2.75168,
-      "cost_bps": 35.14
+      "hits": 18,
+      "scans": 18,
+      "net_apr": 2978.58,
+      "net_at_hold": 2.72017,
+      "cost_bps": 35.38
     },
     {
       "base": "ONG",
@@ -25,11 +25,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 17,
-      "scans": 17,
-      "net_apr": 2722.44,
-      "net_at_hold": 2.48624,
-      "cost_bps": 35.35
+      "hits": 18,
+      "scans": 18,
+      "net_apr": 2715.66,
+      "net_at_hold": 2.48005,
+      "cost_bps": 35.67
     },
     {
       "base": "ONG",
@@ -38,11 +38,24 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 17,
-      "scans": 17,
-      "net_apr": 2614.54,
-      "net_at_hold": 2.3877,
-      "cost_bps": 34.18
+      "hits": 18,
+      "scans": 18,
+      "net_apr": 2612.28,
+      "net_at_hold": 2.38564,
+      "cost_bps": 35.19
+    },
+    {
+      "base": "SKR",
+      "type": "perp-perp",
+      "long_venue": "Binance",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 18,
+      "net_apr": 2065.13,
+      "net_at_hold": 1.88596,
+      "cost_bps": 39.29
     },
     {
       "base": "SKR",
@@ -51,24 +64,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 17,
-      "scans": 17,
-      "net_apr": 2069.13,
-      "net_at_hold": 1.88962,
-      "cost_bps": 28.89
-    },
-    {
-      "base": "SKR",
-      "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 17,
-      "scans": 17,
-      "net_apr": 2067.62,
-      "net_at_hold": 1.88824,
-      "cost_bps": 38.89
+      "hits": 18,
+      "scans": 18,
+      "net_apr": 2057.57,
+      "net_at_hold": 1.87906,
+      "cost_bps": 29.29
     },
     {
       "base": "SKR",
@@ -77,11 +77,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 17,
-      "scans": 17,
-      "net_apr": 2046.73,
-      "net_at_hold": 1.86916,
-      "cost_bps": 41.4
+      "hits": 18,
+      "scans": 18,
+      "net_apr": 2019.14,
+      "net_at_hold": 1.84396,
+      "cost_bps": 41.2
     },
     {
       "base": "SKR",
@@ -90,11 +90,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 17,
-      "scans": 17,
-      "net_apr": 1967.87,
-      "net_at_hold": 1.79714,
-      "cost_bps": 42.46
+      "hits": 18,
+      "scans": 18,
+      "net_apr": 1955.31,
+      "net_at_hold": 1.78567,
+      "cost_bps": 42.83
     },
     {
       "base": "SKR",
@@ -103,11 +103,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 17,
-      "scans": 17,
-      "net_apr": 1905.86,
-      "net_at_hold": 1.74051,
-      "cost_bps": 40.89
+      "hits": 18,
+      "scans": 18,
+      "net_apr": 1888.38,
+      "net_at_hold": 1.72455,
+      "cost_bps": 41.29
     }
   ]
 }
