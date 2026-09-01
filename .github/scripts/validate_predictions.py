@@ -71,6 +71,11 @@ SPECS = {
             ('away_team', 'home_team', 'pick', 'pred_spread', 'ml_win_prob', 'confidence')),
     'nfl': (('generated_at', 'season', 'week', 'games'), 'games',
             ('away_team', 'home_team', 'pick', 'pred_spread', 'ml_win_prob', 'confidence')),
+    # MLB carries no pred_spread: the model predicts a win probability and not a
+    # run margin, so there is no honest number to put there and a fabricated one
+    # is exactly what this contract refuses elsewhere.
+    'mlb': (('generated_at', 'date', 'games'), 'games',
+            ('away_team', 'home_team', 'pick', 'ml_win_prob', 'confidence')),
     'f1': (('generated_at', 'year', 'race_name', 'predictions'), 'predictions',
            ('driver', 'predicted_pos')),
     'business_hunter': (('generated_at', 'sources', 'screened', 'scored', 'refused',
@@ -192,7 +197,7 @@ def check_optional_season_fields(data):
             raise Invalid(f'season_type={data["season_type"]!r} must be one of {list(SEASON_TYPE)}')
 
 
-def check_team_game(where, g):
+def check_team_game(where, g, spread_required=True):
     away = require_str(where, 'away_team', g['away_team'])
     home = require_str(where, 'home_team', g['home_team'])
     pick = require_str(where, 'pick', g['pick'])
@@ -202,7 +207,10 @@ def check_team_game(where, g):
 
     prob = require_probability(where, 'ml_win_prob', g['ml_win_prob'])
     conf = require_probability(where, 'confidence', g['confidence'])
-    require_number(where, 'pred_spread', g['pred_spread'])
+    if spread_required or g.get('pred_spread') is not None:
+        # Optional for a spread-less sport, but never unchecked: a string here
+        # would render as literal text in the meta line.
+        require_number(where, 'pred_spread', g['pred_spread'])
     if g.get('pred_total') is not None:
         require_number(where, 'pred_total', g['pred_total'])
 
@@ -427,6 +435,70 @@ def check_track_record(tr):
             require_number(where, key, tr[key])
 
 
+def check_mlb_track_record(tr):
+    """
+    MLB's record is accuracy against a baseline, not a rank correlation.
+
+    Deliberately a different shape from check_track_record: forcing an accuracy
+    into a `spearman` field would be a false statement about what was measured.
+    The calibration pair is the load-bearing part -- accuracy over the -110
+    break-even of 0.524 is not an edge when the confident picks are lopsided
+    matchups a book prices at short odds, so a page that quotes the model's
+    skill has to be able to show realized against stated.
+    """
+    if tr is None:
+        return
+    if not isinstance(tr, dict):
+        raise Invalid('track_record must be an object or null')
+    where = 'track_record'
+    for key in ('n_games', 'accuracy', 'baseline_accuracy', 'mcnemar_p_vs_baseline'):
+        if key not in tr:
+            raise Invalid(f'{where} is present but missing {key!r} -- emit null '
+                          f'instead of a partial record')
+    n = require_int(where, 'n_games', tr['n_games'])
+    if n < 100:
+        raise Invalid(f'{where}.n_games={n} is below 100. Emit track_record=null '
+                      f'rather than quoting an accuracy that is noise at that size.')
+    acc = require_probability(where, 'accuracy', tr['accuracy'])
+    base = require_probability(where, 'baseline_accuracy', tr['baseline_accuracy'])
+    pval = require_number(where, 'mcnemar_p_vs_baseline', tr['mcnemar_p_vs_baseline'])
+    if not 0.0 <= pval <= 1.0:
+        raise Invalid(f'{where}.mcnemar_p_vs_baseline={pval} must be in [0, 1]')
+
+    # beats_baseline is what the page would headline, so it may not disagree
+    # with the two numbers next to it.
+    if 'beats_baseline' in tr:
+        claim = tr['beats_baseline']
+        if not isinstance(claim, bool):
+            raise Invalid(f'{where}.beats_baseline must be a boolean')
+        truth = pval < 0.05 and acc > base
+        if claim != truth:
+            raise Invalid(
+                f'{where}.beats_baseline={claim} contradicts accuracy={acc} vs '
+                f'baseline={base} at p={pval}. It is true only when the model is '
+                f'both better AND significant at p<0.05.')
+
+    stated = tr.get('high_conf_stated')
+    realized = tr.get('high_conf_realized')
+    if (stated is None) != (realized is None):
+        raise Invalid(f'{where}: high_conf_stated and high_conf_realized must be '
+                      f'published together -- realized accuracy without the '
+                      f'confidence it was stated at is the misleading half')
+    if stated is not None:
+        st = require_probability(where, 'high_conf_stated', stated)
+        rz = require_probability(where, 'high_conf_realized', realized)
+        if tr.get('high_conf_n') is None:
+            raise Invalid(f'{where}: high_conf_n is required alongside the '
+                          f'confidence pair')
+        require_int(where, 'high_conf_n', tr['high_conf_n'])
+        if tr.get('calibration_gap') is not None:
+            gap = require_number(where, 'calibration_gap', tr['calibration_gap'])
+            if abs(gap - (rz - st)) > 5e-4:
+                raise Invalid(f'{where}.calibration_gap={gap} is not '
+                              f'high_conf_realized - high_conf_stated '
+                              f'({rz} - {st} = {round(rz - st, 4)})')
+
+
 def check_idea(where, item):
     require_str(where, 'ticker', item['ticker'])
     require_str(where, 'name', item['name'])
@@ -567,6 +639,9 @@ def validate(sport, data, now=None):
                           f'while saying it has no basis for one')
     elif sport == 'nba':
         check_date_string('<payload>', 'date', data['date'])
+    elif sport == 'mlb':
+        check_date_string('<payload>', 'date', data['date'])
+        check_mlb_track_record(data.get('track_record'))
     elif sport == 'nfl':
         require_int('<payload>', 'season', data['season'])
         week = require_int('<payload>', 'week', data['week'])
@@ -621,6 +696,8 @@ def validate(sport, data, now=None):
             check_business(where, item)
         elif sport == 'real_estate':
             check_deal(where, item)
+        elif sport == 'mlb':
+            check_team_game(where, item, spread_required=False)
         else:
             check_team_game(where, item)
 
@@ -639,8 +716,10 @@ def validate(sport, data, now=None):
 
 def main(argv):
     if len(argv) != 3:
+        # Derived from SPECS, not typed: a hand-maintained list here silently
+        # drops a feed every time two people add one at once.
         print('::error::usage: validate_predictions.py '
-              '{nba|nfl|f1|real_estate|magicformula|business_hunter} <candidate.json>')
+              '{' + '|'.join(sorted(SPECS)) + '} <candidate.json>')
         return 1
     sport, path = argv[1], argv[2]
 
