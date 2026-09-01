@@ -2,8 +2,9 @@
 
 Each file here is generated in its model repo by a `generate_web_picks.py` /
 `generate_web_predictions.py` entrypoint, validated by
-`.github/scripts/validate_predictions.py`, and committed by the matching workflow in
-`.github/workflows/`. The front end (`script.js`) renders them and nothing else — if a
+`.github/scripts/validate_predictions.py`, and committed either by the matching workflow
+in `.github/workflows/` or -- for `real_estate.json` -- by a scheduled job on the local
+machine (see that section for why). The front end (`script.js`) renders them and nothing else — if a
 field is not listed here, the site ignores it.
 
 **The validator is the contract.** Every rule below is enforced, and a violation fails
@@ -146,6 +147,94 @@ Same shape and the same sign convention, minus `season`/`week`/`kickoff`, plus a
 `date` is required and must be `YYYY-MM-DD` — it is rendered above the picks
 ("Thursday, October 22 slate"), so it is the slate's date, not the generation date.
 
+## `real_estate.json`
+
+Flagged residential listings from the `real_estate` deal screen. **Published by a local
+launchd job, not a GitHub Action** (`~/personal/real_estate/run_weekly.sh`, weekly Sunday
+08:00 local, installed per `~/personal/automation/LAUNCHD.md`). The generator scrapes
+Realtor.com for ~15k listings across three metros and takes about twenty minutes, which
+does not belong in CI; the wrapper runs this validator itself before it copies the
+payload in, so the contract is enforced identically either way.
+
+```json
+{
+  "generated_at": "2026-09-01T07:54:16.729035+00:00",
+  "markets": ["Phoenix, AZ", "San Francisco, CA", "Tampa, FL"],
+  "track_record": {
+    "resolved": 498, "spearman": 0.309, "ci_low": 0.227, "ci_high": 0.386,
+    "mean_edge": 0.0805, "median_edge": 0.0823, "share_below_comp_value": 0.6386
+  },
+  "deals": [
+    {
+      "address": "926 W Cocopah St", "city": "Phoenix", "state": "AZ",
+      "zip_code": "85007", "score": 79.1,
+      "list_price": 270000, "comp_implied_value": 514009,
+      "discount_vs_comps": 0.4747,
+      "property_type": "SINGLE_FAMILY", "beds": 2, "baths": 2.0, "sqft": 1512,
+      "year_built": 1940, "reno_scope": "full", "reno_mid": 149688,
+      "comp_basis": "85007 SINGLE_FAMILY n=51 from sold prices",
+      "rationale": "47% below single family comp median $/sqft; 157 DOM (very stale)",
+      "url": "https://www.realtor.com/..."
+    }
+  ]
+}
+```
+
+| field | required | type | meaning |
+|---|---|---|---|
+| `generated_at` | yes | ISO 8601 + offset | see the shared rules |
+| `markets` | yes | list of string | `"City, ST"` per scanned metro; rendered as the slate line |
+| `track_record` | no | object or `null` | the model's measured skill — see below |
+| `deals[].address` / `city` | yes | non-empty string | |
+| `deals[].state` | yes | 2-letter string | **must be a disclosure state** — see below |
+| `deals[].zip_code` | no | string | |
+| `deals[].score` | yes | number `0`-`100` | composite deal score |
+| `deals[].list_price` | yes | number `> 0` | asking price in dollars |
+| `deals[].comp_implied_value` | yes | number `> 0` | p50 $/sqft of same-type comps in its ZIP x its sqft |
+| `deals[].discount_vs_comps` | yes | number `< 1` | `(comp_implied_value - list_price) / comp_implied_value`, **enforced** |
+| `deals[].property_type` | no | string | `SINGLE_FAMILY`, `CONDOS`, ... |
+| `deals[].beds` / `baths` / `sqft` / `year_built` | no | number | |
+| `deals[].reno_scope` | no | `"light"`\|`"moderate"`\|`"full"` | estimated renovation scope |
+| `deals[].reno_mid` | no | number | mid renovation estimate, dollars |
+| `deals[].comp_basis` | no | string | which comp pool produced the value |
+| `deals[].rationale` | no | string | the model's own reasoning line |
+| `deals[].url` | no | string | listing link |
+
+Sort `deals` by `score` descending. Cap at ~12.
+
+### Disclosure states, stated once
+
+Sale prices are **not public record** in twelve states (AK, ID, KS, LA, MS, MO, MT, NM,
+ND, TX, UT, WY). Realtor.com therefore reports no sold price there, and the model's
+comps silently fall back to the last *asking* price -- verified: 0 of 11,170 stored Texas
+comps carry a sold price, against 100% for Arizona and California.
+
+So a Texan `discount_vs_comps` is a list-to-list comparison wearing the language of a
+discount to market value, and the page has no way to signal the difference. **The
+validator rejects any deal in one of those states outright.** 7,281 of the model's stored
+deals are Texan; this rule is what keeps every one of them off the site. Filter them in
+the generator -- the failure is not recoverable at render time.
+
+### `track_record`, and why it is policed
+
+The model explains about 9.5% of rank variance. Publishing its output without saying so
+would be the misrepresentation, so the front end renders this block above the list, and
+`null` renders an explicit "track record not established yet".
+
+It is optional but not partial: if present it must carry `resolved`, `spearman`,
+`ci_low` and `ci_high`. `resolved` must be **at least 30** -- the CLI refuses to draw a
+conclusion below that and the page must not either -- every correlation must be in
+`[-1, 1]`, and `spearman` must lie inside its own confidence interval.
+
+### The sign convention, stated once
+
+`discount_vs_comps` is **positive when the listing is priced BELOW comparable value**.
+The validator recomputes it from `list_price` and `comp_implied_value` and rejects a
+mismatch beyond rounding, because an inverted subtraction turns every bargain into a
+premium and still renders a page that looks entirely plausible. A positive `list_price`
+makes the true ratio strictly less than 1, so emitting a percent (`47`) instead of a
+fraction (`0.47`) can never agree and is caught by the same check.
+
 ## `f1.json`
 
 ```json
@@ -216,7 +305,10 @@ to `--output <path>`:
 | `nba-prediction` | `generate_web_picks.py --output PATH` |
 | `f1_prediction` | `generate_web_predictions.py --output PATH` |
 | `nfl-prediction` | `generate_web_picks.py --output PATH` (plus `weekly_update.py`) |
+| `real_estate` | `generate_web_deals.py --output PATH` — **exists**, and publishes itself |
 
-None of these exist yet. A generator that cannot produce a slate should still emit a
+`real_estate` needs none of steps 1-3: it has no workflow, no secret and no schedule
+here, because its launchd job commits and pushes the payload directly. The other three
+do not exist yet. A generator that cannot produce a slate should still emit a
 valid payload with a current `generated_at` and an empty list — that publishes an
 honest "no games scheduled" rather than failing the run.

@@ -48,6 +48,7 @@ const SPORTS = {
         stamp: 'nba-updated',
         cadence: 'daily',
         noun: 'picks',
+        listKey: 'games',
         staleAfter: 36 * MS_HOUR,
         season: { startMonth: 10, startDay: 20, endMonth: 6, endDay: 30, startPhrase: 'late October' },
         emptyLabel: 'No games on the schedule today.',
@@ -64,6 +65,7 @@ const SPORTS = {
         stamp: 'nfl-updated',
         cadence: 'weekly',
         noun: 'picks',
+        listKey: 'games',
         staleAfter: 10 * MS_DAY,
         season: { startMonth: 9, startDay: 4, endMonth: 2, endDay: 15, startPhrase: 'early September' },
         emptyLabel: 'No games on the schedule this week.',
@@ -81,14 +83,34 @@ const SPORTS = {
         stamp: 'f1-updated',
         cadence: 'weekly',
         noun: 'predictions',
+        listKey: 'predictions',
         staleAfter: 10 * MS_DAY,
         season: { startMonth: 3, startDay: 1, endMonth: 12, endDay: 10, startPhrase: 'March' },
         emptyLabel: 'No race scheduled this weekend.',
         render: renderF1,
     },
+    // Real estate has no season -- omitting `season` means never off-season. It is
+    // also the one feed published from a local scheduled job rather than a GitHub
+    // Action, because the scan scrapes Realtor.com and takes ~20 minutes; a weekly
+    // cadence gives it a 10-day staleness window.
+    real_estate: {
+        file: 'predictions/real_estate.json',
+        container: 'real-estate-deals',
+        stamp: 'real-estate-updated',
+        cadence: 'weekly',
+        noun: 'candidates',
+        listKey: 'deals',
+        staleAfter: 10 * MS_DAY,
+        emptyLabel: 'No listing currently clears the scoring threshold.',
+        slate: d => {
+            const markets = Array.isArray(d.markets) ? d.markets : [];
+            return markets.length ? `Scanning ${markets.join(' | ')}` : '';
+        },
+        render: renderDeals,
+    },
 };
 
-const SPORT_LABEL = { nba: 'NBA', nfl: 'NFL', f1: 'F1' };
+const SPORT_LABEL = { nba: 'NBA', nfl: 'NFL', f1: 'F1', real_estate: 'Real estate' };
 
 function esc(v) {
     return String(v == null ? '' : v).replace(/[&<>"']/g, c => (
@@ -204,6 +226,78 @@ function renderF1(data) {
     `;
 }
 
+function formatMoney(v) {
+    const n = Number(v);
+    if (!isFinite(n)) return '';
+    if (Math.abs(n) >= 1e6) return `$${(n / 1e6).toFixed(2)}M`;
+    if (Math.abs(n) >= 1e3) return `$${Math.round(n / 1e3)}K`;
+    return `$${Math.round(n)}`;
+}
+
+// The model explains 9.5% of rank variance. Publishing its picks without saying so
+// would be the misrepresentation, so the track record renders above the list and the
+// payload is refused by the validator if it quotes a record it cannot support.
+function renderTrackRecord(tr) {
+    if (!tr) {
+        return `<div class="deal-record">Track record not established yet -- `
+            + `fewer than 30 flagged listings have resolved.</div>`;
+    }
+    const pct = v => `${(Number(v) * 100).toFixed(1)}%`;
+    return `
+        <div class="deal-record">
+            <strong>Measured track record:</strong>
+            ${esc(String(tr.resolved))} flagged listings have since sold.
+            Mean acquisition discount to comparable value ${esc(pct(tr.mean_edge))};
+            ${esc(pct(tr.share_below_comp_value))} sold below it.
+            Score-to-outcome rank correlation
+            ${esc(Number(tr.spearman).toFixed(3))}
+            (95% CI ${esc(Number(tr.ci_low).toFixed(3))} to ${esc(Number(tr.ci_high).toFixed(3))}),
+            so the ranking carries real but modest information --
+            about ${esc((Number(tr.spearman) ** 2 * 100).toFixed(0))}% of rank variance.
+            Screening output, not advice.
+        </div>
+    `;
+}
+
+function renderDeals(data) {
+    const rows = data.deals.map(d => {
+        const disc = Number(d.discount_vs_comps);
+        const discClass = disc >= 0.3 ? 'confidence-high' : 'confidence-med';
+        const facts = [];
+        if (d.beds != null && d.baths != null) facts.push(`${d.beds}bd/${d.baths}ba`);
+        if (d.sqft != null) facts.push(`${Number(d.sqft).toLocaleString()} sqft`);
+        if (d.year_built != null) facts.push(`built ${d.year_built}`);
+        if (d.property_type) facts.push(String(d.property_type).replace(/_/g, ' ').toLowerCase());
+        // Why it is cheap belongs next to how cheap it is: a big discount on a
+        // full-gut candidate is not a big discount on move-in-ready.
+        if (d.reno_scope) {
+            facts.push(`${d.reno_scope} reno${d.reno_mid != null ? ` ~${formatMoney(d.reno_mid)}` : ''}`);
+        }
+        const addr = `${d.address}, ${d.city}, ${d.state} ${d.zip_code || ''}`.trim();
+        const title = d.url
+            ? `<a href="${esc(d.url)}" target="_blank" rel="noopener noreferrer">${esc(addr)}</a>`
+            : esc(addr);
+        return `
+            <div class="nba-game">
+                <div class="nba-matchup">
+                    <div class="nba-teams deal-address">${title}</div>
+                    <div class="nba-meta">${esc(facts.join(' | '))}</div>
+                    <div class="nba-meta deal-prices">
+                        Listed ${esc(formatMoney(d.list_price))}
+                        vs ${esc(formatMoney(d.comp_implied_value))} comparable value
+                    </div>
+                </div>
+                <div class="nba-pick">
+                    <div class="nba-pick-label">Below comps</div>
+                    <div class="nba-confidence ${discClass}">${(disc * 100).toFixed(0)}%</div>
+                    <div class="nba-pick-label">score ${esc(Number(d.score).toFixed(0))}</div>
+                </div>
+            </div>
+        `;
+    }).join('');
+    return renderTrackRecord(data.track_record) + rows;
+}
+
 // --- Loader ---
 
 async function loadSport(key) {
@@ -224,9 +318,11 @@ async function loadSport(key) {
         data = null;
     }
 
-    // A payload may override the built-in (approximate) season window.
+    // A payload may override the built-in (approximate) season window. A feed with
+    // no season window at all (real estate) is never off-season.
     const status = data && data.season_status;
-    const off = status ? status !== 'in_season' : !inSeason(cfg.season, now);
+    const off = status ? status !== 'in_season'
+        : (cfg.season ? !inSeason(cfg.season, now) : false);
 
     if (off) {
         // An unparseable next_season_start must fall back to the computed window --
@@ -279,7 +375,7 @@ async function loadSport(key) {
         return;
     }
 
-    const items = cfg.render === renderF1 ? data.predictions : data.games;
+    const items = data[cfg.listKey];
     if (!Array.isArray(items) || items.length === 0) {
         container.innerHTML = note('', cfg.emptyLabel);
         return;
