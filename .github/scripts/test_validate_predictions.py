@@ -555,3 +555,99 @@ class OpportunitiesBoard(ContractBase):
     def test_stale_generated_at_rejected(self):
         old = (NOW - timedelta(hours=9)).isoformat()
         self.rejects('opportunities', payload(OPPORTUNITIES, generated_at=old), 'stale payload')
+
+
+# Verbatim from predictions/README.md.
+MAGIC_FORMULA = {
+    'generated_at': STAMP, 'universe_pulled': '2026-04-15', 'universe_size': 50,
+    'screened': 18, 'unrankable': 9, 'min_market_cap_m': 1000.0,
+    'ideas': [{
+        'ticker': 'VSNT', 'name': 'Versant Media Group, Inc.',
+        'sector': 'Communication Services', 'rank': 1,
+        'earnings_yield': 0.230031, 'return_on_capital': 0.752497,
+        'market_cap': 5722673664.0, 'ebit_basis': 'TTM',
+    }],
+}
+
+
+def idea(**fields):
+    d = copy.deepcopy(MAGIC_FORMULA)
+    d['ideas'][0].update(fields)
+    return d
+
+
+class MagicFormulaScreen(ContractBase):
+    def test_documented_payload_validates(self):
+        self.assertEqual(len(self.ok('magicformula', MAGIC_FORMULA)), 1)
+
+    # universe_pulled is a second staleness axis: generated_at says when the screen was
+    # re-ranked (a weekly job keeps it permanently fresh), universe_pulled says when the
+    # name list was last pasted in by hand. The front end gates on it separately and
+    # cannot do that without a parseable date.
+    def test_universe_pulled_is_required(self):
+        d = copy.deepcopy(MAGIC_FORMULA)
+        del d['universe_pulled']
+        self.rejects('magicformula', d, 'universe_pulled')
+
+    def test_universe_pulled_must_be_an_iso_date(self):
+        self.rejects('magicformula', payload(MAGIC_FORMULA, universe_pulled='last April'),
+                     'ISO date')
+
+    def test_an_old_universe_is_still_a_valid_payload(self):
+        """Staleness is the front end's call to make. The gate only checks shape."""
+        self.assertEqual(len(self.ok('magicformula',
+                                     payload(MAGIC_FORMULA, universe_pulled='2001-01-01'))), 1)
+
+    def test_screened_cannot_exceed_the_universe(self):
+        self.rejects('magicformula', payload(MAGIC_FORMULA, universe_size=10, screened=18),
+                     'between 0 and universe_size')
+
+    def test_cannot_publish_more_ideas_than_names_that_passed(self):
+        self.rejects('magicformula', payload(MAGIC_FORMULA, screened=0),
+                     'only 0 names passed')
+
+    def test_empty_screen_is_a_valid_payload(self):
+        self.assertEqual(self.ok('magicformula',
+                                 payload(MAGIC_FORMULA, screened=0, ideas=[])), [])
+
+    # The unit traps. Both of these are type-valid and render as a plausible-looking
+    # wrong number, which is the only reason they are checked at all.
+    def test_earnings_yield_as_a_percent_is_rejected(self):
+        self.rejects('magicformula', idea(earnings_yield=23.0), 'not a percent')
+
+    def test_negative_earnings_yield_is_allowed(self):
+        """A loss-making name has a genuinely negative yield; only the magnitude is odd."""
+        self.assertEqual(len(self.ok('magicformula', idea(earnings_yield=-0.43))), 1)
+
+    def test_return_on_capital_above_100x_is_rejected(self):
+        self.rejects('magicformula', idea(return_on_capital=309.0), 'not a percent')
+
+    def test_a_genuinely_large_return_on_capital_is_allowed(self):
+        """GIB really does earn 3.1x its invested capital -- a small denominator, not a bug."""
+        self.assertEqual(len(self.ok('magicformula', idea(return_on_capital=3.0966))), 1)
+
+    def test_market_cap_in_millions_is_rejected(self):
+        self.rejects('magicformula', idea(market_cap=5722.0), 'not millions')
+
+    # A list labelled by rank that is not in rank order renders as a ranking that is not
+    # one, and nothing about the output looks wrong.
+    def test_ideas_must_be_in_ascending_rank_order(self):
+        d = copy.deepcopy(MAGIC_FORMULA)
+        second = copy.deepcopy(d['ideas'][0])
+        second['ticker'], second['rank'] = 'CROX', 2
+        d['ideas'] = [second, d['ideas'][0]]
+        d['screened'] = 18
+        self.rejects('magicformula', d, 'ascending rank order')
+
+    def test_rank_must_be_one_based(self):
+        self.rejects('magicformula', idea(rank=0), '1-based')
+
+    def test_rank_must_be_an_integer(self):
+        self.rejects('magicformula', idea(rank=1.5), 'integer')
+
+    def test_ticker_and_name_are_required_strings(self):
+        self.rejects('magicformula', idea(ticker=''), 'ticker')
+        self.rejects('magicformula', idea(name=None), 'name')
+
+    def test_ratios_must_be_numbers_not_strings(self):
+        self.rejects('magicformula', idea(earnings_yield='0.23'), 'must be a JSON number')
