@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-01T19:00:18.033530+00:00",
+  "generated_at": "2026-09-01T20:00:10.669917+00:00",
   "status": "ok",
-  "scans_seen": 19,
+  "scans_seen": 20,
   "window_scans": 24,
-  "min_hits": 14,
+  "min_hits": 15,
   "opportunities": [
     {
       "base": "ONG",
@@ -12,11 +12,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 19,
-      "scans": 19,
-      "net_apr": 2944.08,
-      "net_at_hold": 2.68866,
-      "cost_bps": 35.62
+      "hits": 20,
+      "scans": 20,
+      "net_apr": 2709.48,
+      "net_at_hold": 2.47441,
+      "cost_bps": 35.38
     },
     {
       "base": "ONG",
@@ -25,11 +25,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 19,
-      "scans": 19,
-      "net_apr": 2708.87,
-      "net_at_hold": 2.47386,
-      "cost_bps": 35.98
+      "hits": 20,
+      "scans": 20,
+      "net_apr": 2707.78,
+      "net_at_hold": 2.47286,
+      "cost_bps": 35.67
     },
     {
       "base": "ONG",
@@ -38,24 +38,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 19,
-      "scans": 19,
-      "net_apr": 2610.02,
-      "net_at_hold": 2.38358,
-      "cost_bps": 36.19
-    },
-    {
-      "base": "SKR",
-      "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 19,
-      "scans": 19,
-      "net_apr": 2062.64,
-      "net_at_hold": 1.88369,
-      "cost_bps": 38.89
+      "hits": 20,
+      "scans": 20,
+      "net_apr": 2606.62,
+      "net_at_hold": 2.38047,
+      "cost_bps": 35.19
     },
     {
       "base": "SKR",
@@ -64,50 +51,63 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 19,
-      "scans": 19,
-      "net_apr": 2046.02,
-      "net_at_hold": 1.86851,
-      "cost_bps": 28.89
+      "hits": 20,
+      "scans": 20,
+      "net_apr": 2039.79,
+      "net_at_hold": 1.86282,
+      "cost_bps": 29.29
+    },
+    {
+      "base": "CELR",
+      "type": "perp-perp",
+      "long_venue": "Crypto.com",
+      "short_venue": "KuCoin",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 20,
+      "scans": 20,
+      "net_apr": 185.02,
+      "net_at_hold": 0.16897,
+      "cost_bps": 36.48
+    },
+    {
+      "base": "CELR",
+      "type": "perp-perp",
+      "long_venue": "Crypto.com",
+      "short_venue": "Binance",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 20,
+      "scans": 20,
+      "net_apr": 153.27,
+      "net_at_hold": 0.13997,
+      "cost_bps": 34.48
+    },
+    {
+      "base": "SKL",
+      "type": "perp-perp",
+      "long_venue": "Crypto.com",
+      "short_venue": "Bybit",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 20,
+      "scans": 20,
+      "net_apr": 61.2,
+      "net_at_hold": 0.05589,
+      "cost_bps": 31.73
     },
     {
       "base": "SKR",
       "type": "perp-perp",
-      "long_venue": "Gate",
+      "long_venue": "Binance",
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 19,
-      "scans": 19,
-      "net_apr": 1991.55,
-      "net_at_hold": 1.81877,
-      "cost_bps": 41.0
-    },
-    {
-      "base": "SKR",
-      "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 19,
-      "scans": 19,
-      "net_apr": 1942.76,
-      "net_at_hold": 1.77421,
-      "cost_bps": 43.2
-    },
-    {
-      "base": "SKR",
-      "type": "perp-perp",
-      "long_venue": "KuCoin",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 19,
-      "scans": 19,
-      "net_apr": 1870.9,
-      "net_at_hold": 1.70858,
-      "cost_bps": 40.89
+      "scans": 20,
+      "net_apr": 2062.64,
+      "net_at_hold": 1.88369,
+      "cost_bps": 38.89
     }
   ]
 }
