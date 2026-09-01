@@ -3,7 +3,7 @@
 
     env -u PYTHONPATH python3.13 -m unittest discover -s .github/scripts -p 'test_*.py'
 
-Three external model repos generate against validate_predictions.py, so a rule that
+Four external model repos generate against validate_predictions.py, so a rule that
 silently stops firing means a bad payload reaches the published site. Every case below
 is a failure this gate has to keep catching; the "README example" cases assert the
 documented payloads in predictions/README.md stay valid.
@@ -37,6 +37,23 @@ F1 = {
     'generated_at': STAMP, 'year': 2026, 'race_name': 'Italian Grand Prix',
     'predictions': [{'driver': 'Max Verstappen', 'predicted_pos': 1.4}],
 }
+REAL_ESTATE = {
+    'generated_at': STAMP,
+    'markets': ['Phoenix, AZ', 'Tampa, FL'],
+    'track_record': {
+        'resolved': 498, 'spearman': 0.309, 'ci_low': 0.227, 'ci_high': 0.386,
+        'mean_edge': 0.0805, 'median_edge': 0.0823, 'share_below_comp_value': 0.6386,
+    },
+    'deals': [{
+        'address': '926 W Cocopah St', 'city': 'Phoenix', 'state': 'AZ',
+        'zip_code': '85007', 'score': 79.1, 'list_price': 270000,
+        'comp_implied_value': 514009, 'discount_vs_comps': 0.4747,
+        'property_type': 'SINGLE_FAMILY', 'beds': 2, 'baths': 2.0, 'sqft': 1512,
+        'year_built': 1940, 'reno_scope': 'full', 'reno_mid': 149688,
+        'comp_basis': '85007 SINGLE_FAMILY n=51 from sold prices',
+        'rationale': '47% below single family comp median $/sqft', 'url': 'https://x',
+    }],
+}
 
 
 def payload(base, **top):
@@ -63,7 +80,8 @@ class ContractBase(unittest.TestCase):
 
 class ReadmeExamples(ContractBase):
     def test_documented_payloads_validate(self):
-        for sport, data in (('nfl', NFL), ('nba', NBA), ('f1', F1)):
+        for sport, data in (('nfl', NFL), ('nba', NBA), ('f1', F1),
+                            ('real_estate', REAL_ESTATE)):
             with self.subTest(sport=sport):
                 self.assertEqual(len(self.ok(sport, data)), 1)
 
@@ -72,6 +90,8 @@ class ReadmeExamples(ContractBase):
         self.assertEqual(self.ok('nfl', payload(NFL, games=[])), [])
         self.assertEqual(self.ok('nba', payload(NBA, games=[])), [])
         self.assertEqual(self.ok('f1', payload(F1, predictions=[])), [])
+        # "nothing clears the bar right now" is a real statement too.
+        self.assertEqual(self.ok('real_estate', payload(REAL_ESTATE, deals=[])), [])
 
     def test_optional_fields_may_be_omitted(self):
         minimal = payload(NFL, games=[{
@@ -225,6 +245,93 @@ class Formula1(ContractBase):
     def test_race_name_and_year_validated(self):
         self.rejects('f1', payload(F1, race_name=''), 'non-empty string')
         self.rejects('f1', payload(F1, year='2026'), 'must be a JSON integer')
+
+
+class RealEstateDeals(ContractBase):
+    """The published-opportunity payload. Each case is a falsehood on the page."""
+
+    def deals(self, **over):
+        d = copy.deepcopy(REAL_ESTATE['deals'][0])
+        d.update(over)
+        return payload(REAL_ESTATE, deals=[d])
+
+    def test_non_disclosure_state_deals_are_refused(self):
+        # TX sold prices are not public record, so the model's comps hold LIST
+        # prices there and discount_vs_comps is a list-to-list comparison. 7,281
+        # of the model's stored deals are Texan and none may reach the page.
+        for state in ('TX', 'MO', 'UT', 'tx'):
+            with self.subTest(state=state):
+                self.rejects('real_estate', self.deals(state=state, city='Dallas'),
+                             'non-disclosure state')
+
+    def test_disclosure_state_deals_pass(self):
+        for state in ('AZ', 'FL', 'CA', 'NY'):
+            with self.subTest(state=state):
+                self.assertEqual(len(self.ok('real_estate', self.deals(state=state))), 1)
+
+    def test_discount_must_match_the_numbers_it_is_derived_from(self):
+        # An inverted subtraction turns every bargain into a premium and still
+        # renders a page that looks entirely plausible.
+        self.rejects('real_estate', self.deals(discount_vs_comps=-0.4747),
+                     'does not match')
+        # (514009 - 270000) / 514009 = 0.4747, not 0.9
+        self.rejects('real_estate', self.deals(discount_vs_comps=0.9), 'does not match')
+
+    def test_rounding_slack_is_allowed(self):
+        self.assertEqual(len(self.ok('real_estate', self.deals(discount_vs_comps=0.4748))), 1)
+
+    def test_percent_instead_of_fraction_is_refused(self):
+        # Caught by the derivation check, whose message names this exact mixup --
+        # a positive list_price makes the ratio strictly below 1, so a percent can
+        # never agree with it.
+        self.rejects('real_estate', self.deals(discount_vs_comps=47), 'never a percent')
+
+    def test_price_and_value_must_be_positive_numbers(self):
+        self.rejects('real_estate', self.deals(list_price=0), 'greater than zero')
+        self.rejects('real_estate', self.deals(comp_implied_value=-1), 'greater than zero')
+        self.rejects('real_estate', self.deals(list_price='270000'), 'must be a JSON number')
+        self.rejects('real_estate', self.deals(comp_implied_value=None), 'must be a JSON number')
+
+    def test_score_stays_on_the_models_scale(self):
+        self.rejects('real_estate', self.deals(score=101), '0-100 scale')
+        self.rejects('real_estate', self.deals(score=-1), '0-100 scale')
+        self.rejects('real_estate', self.deals(score=True), 'must be a JSON number')
+
+    def test_address_and_city_must_be_populated(self):
+        self.rejects('real_estate', self.deals(address=''), 'non-empty string')
+        self.rejects('real_estate', self.deals(city=None), 'non-empty string')
+
+    def test_markets_must_be_a_list_of_strings(self):
+        self.rejects('real_estate', payload(REAL_ESTATE, markets='Phoenix, AZ'),
+                     'must be a list')
+        self.rejects('real_estate', payload(REAL_ESTATE, markets=['']), 'non-empty string')
+
+    def test_track_record_may_be_null_but_not_partial(self):
+        self.assertEqual(len(self.ok('real_estate', payload(REAL_ESTATE, track_record=None))), 1)
+        self.rejects('real_estate', payload(REAL_ESTATE, track_record={'resolved': 498}),
+                     "missing 'spearman'")
+
+    def test_track_record_below_thirty_resolved_is_refused(self):
+        # The CLI refuses to draw a conclusion under 30; the page must not either.
+        tr = dict(REAL_ESTATE['track_record'], resolved=12)
+        self.rejects('real_estate', payload(REAL_ESTATE, track_record=tr), 'below 30')
+
+    def test_correlations_must_be_correlations(self):
+        tr = dict(REAL_ESTATE['track_record'], spearman=30.9)
+        self.rejects('real_estate', payload(REAL_ESTATE, track_record=tr), 'in [-1, 1]')
+
+    def test_spearman_must_lie_inside_its_own_ci(self):
+        tr = dict(REAL_ESTATE['track_record'], ci_low=0.4, ci_high=0.5)
+        self.rejects('real_estate', payload(REAL_ESTATE, track_record=tr),
+                     'outside its own CI')
+
+    def test_shared_rules_still_apply(self):
+        self.rejects('real_estate', payload(REAL_ESTATE, generated_at=None),
+                     'did not actually run')
+        self.rejects('real_estate', payload(REAL_ESTATE, generated_at='2026-09-09T13:04:22'),
+                     'no UTC offset')
+        stale = (NOW - timedelta(hours=9)).isoformat()
+        self.rejects('real_estate', payload(REAL_ESTATE, generated_at=stale), 'stale payload')
 
 
 if __name__ == '__main__':
