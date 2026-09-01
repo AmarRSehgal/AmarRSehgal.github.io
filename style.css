@@ -605,3 +605,75 @@ footer p {
         text-align: center;
     }
 }
+
+/* ===== Accessibility ===== */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 200;
+    padding: 10px 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--accent);
+    border-radius: 0 0 6px 0;
+    color: var(--accent);
+    font-size: 0.85rem;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+/* ===== Prediction states ===== */
+/* Distinguishable states so "off-season", "stale" and "broken" never read alike. */
+.prediction-none {
+    padding-left: 12px;
+    border-left: 2px solid var(--border);
+    line-height: 1.6;
+}
+
+.prediction-offseason {
+    border-left-color: var(--accent-dim);
+    color: var(--text);
+}
+
+.prediction-stale {
+    border-left-color: #fbbf24;
+}
+
+.prediction-error {
+    border-left-color: #f87171;
+}
+
+.prediction-pending {
+    border-left-color: var(--text-muted);
+}
+
+/* ===== Mobile: prediction rows ===== */
+@media (max-width: 640px) {
+    .nba-game {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .nba-pick {
+        text-align: left;
+    }
+
+    .f1-grid {
+        grid-template-columns: 28px 1fr 56px;
+        gap: 4px 8px;
+    }
+
+    .predictions-subtitle {
+        margin-top: -16px;
+    }
+}
