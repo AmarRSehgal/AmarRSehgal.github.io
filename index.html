@@ -278,6 +278,17 @@
                 </div>
 
                 <div class="project-card">
+                    <h3>Polymarket Whale Tracker</h3>
+                    <p>Scans Polymarket 5-minute BTC binary markets for wallets that consistently profit on late-flipping outcomes. A seven-day sweep covered 2,010 markets and 555K trades across 22K wallets, scoring each account on win rate, trade timing relative to close, and co-movement with other accounts.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>asyncio</span>
+                        <span>SQLite</span>
+                        <span>Rich</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
                     <h3>Prediction Market Maker</h3>
                     <p>Kalshi market-making bot using an Avellaneda-Stoikov reservation-price model, aimed at illiquid niche markets (weather, econ, niche sports) rather than headline political ones.</p>
                     <div class="project-tags">
@@ -314,6 +325,17 @@
                         <span>Python</span>
                         <span>LightGBM</span>
                         <span>SQLite</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Betting Odds Collector</h3>
+                    <p>Daily odds collector for six sports, stored as partitioned parquet -- the data layer the prediction models read from. The real design problem is the budget: a 500-credit monthly API cap against six sports that would otherwise bill 496 credits a month year-round. A horizon gate checks the free events endpoint first and only pays for odds once a game is actually within range.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>pandas</span>
+                        <span>Parquet</span>
+                        <span>launchd</span>
                     </div>
                 </div>
 
@@ -387,6 +409,38 @@
                         <span>Python</span>
                         <span>BeautifulSoup</span>
                         <span>SQLite</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Government Auction Scanner</h3>
+                    <p>Mispricing scanner across eleven federal and county asset-disposal venues -- surplus, seized, foreclosed. No venue publishes a value anchor, so rather than trusting a headline discount it establishes its own fair value from comps (or an AI estimate grounded in retrieved comps, flagged at lower confidence) and computes the break-even max bid net of frictions on both sides: buyer premium, tax and freight to acquire; commission, carry and repairs to exit.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Claude API</span>
+                        <span>Click</span>
+                        <span>Rich</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Federal Contract Scanner</h3>
+                    <p>Scans the nightly SAM.gov contract-opportunities extract (~82K active notices) for commodity resale opportunities: splits products from services by PSC code, flags which set-asides are actually reachable without formal certification, and buckets by commodity group and place of performance.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Click</span>
+                        <span>Rich</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Real Estate Deal Finder</h3>
+                    <p>Scrapes residential listings and scores each 0-100 across five weighted factors -- relative value, cash flow, seller motivation, upside, market -- against sold comps. It then re-scrapes solds to match its own flagged deals against their eventual sale prices, so the hit rate is measured rather than assumed.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>SQLite</span>
+                        <span>Rich</span>
+                        <span>Census ACS</span>
                     </div>
                 </div>
 
