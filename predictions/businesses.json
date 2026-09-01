@@ -1,0 +1,308 @@
+{
+  "generated_at": "2026-09-01T08:11:11.483643+00:00",
+  "sources": [
+    {
+      "name": "empireflippers",
+      "listings": 184,
+      "scored": 184,
+      "refused": 0,
+      "flagged": 86
+    },
+    {
+      "name": "flippa",
+      "listings": 99,
+      "scored": 0,
+      "refused": 97,
+      "flagged": 0
+    }
+  ],
+  "screened": 283,
+  "scored": 184,
+  "refused": 97,
+  "flagged": 86,
+  "bands": [
+    {
+      "population": "main street",
+      "cash_flow_type": "SDE",
+      "rungs": [
+        {
+          "below": 500000,
+          "multiple": 2.15
+        },
+        {
+          "below": 1000000,
+          "multiple": 3.0
+        },
+        {
+          "below": 2000000,
+          "multiple": 3.2
+        },
+        {
+          "below": null,
+          "multiple": 3.4
+        }
+      ]
+    },
+    {
+      "population": "main street",
+      "cash_flow_type": "EBITDA",
+      "rungs": [
+        {
+          "below": 500000,
+          "multiple": 2.15
+        },
+        {
+          "below": 1000000,
+          "multiple": 3.0
+        },
+        {
+          "below": 2000000,
+          "multiple": 3.2
+        },
+        {
+          "below": null,
+          "multiple": 4.25
+        }
+      ]
+    },
+    {
+      "population": "online",
+      "cash_flow_type": "SDE",
+      "rungs": [
+        {
+          "below": null,
+          "multiple": 2.5
+        }
+      ]
+    },
+    {
+      "population": "online",
+      "cash_flow_type": "EBITDA",
+      "rungs": [
+        {
+          "below": null,
+          "multiple": 2.5
+        }
+      ]
+    }
+  ],
+  "businesses": [
+    {
+      "title": "Food & Beverages - Amazon FBA, Amazon FBM #94642",
+      "source": "empireflippers",
+      "url": "https://empireflippers.com/listing/94642/",
+      "state": "ONLINE",
+      "city": "",
+      "asking_price": 96077,
+      "cash_flow": 164700,
+      "cash_flow_type": "SDE",
+      "multiple": 0.58,
+      "fair_value": 2.5,
+      "discount": 0.768,
+      "score": 62.6,
+      "vetted": true,
+      "traits": [
+        "online"
+      ]
+    },
+    {
+      "title": "Digital Media - Service, Subscription #87872",
+      "source": "empireflippers",
+      "url": "https://empireflippers.com/listing/87872/",
+      "state": "ONLINE",
+      "city": "",
+      "asking_price": 151738,
+      "cash_flow": 121392,
+      "cash_flow_type": "SDE",
+      "multiple": 1.25,
+      "fair_value": 2.5,
+      "discount": 0.5,
+      "score": 58.5,
+      "vetted": true,
+      "traits": [
+        "recurring",
+        "online"
+      ]
+    },
+    {
+      "title": "Apparel & Accessories - eCommerce, DropShipping #96523",
+      "source": "empireflippers",
+      "url": "https://empireflippers.com/listing/96523/",
+      "state": "ONLINE",
+      "city": "",
+      "asking_price": 221084,
+      "cash_flow": 204072,
+      "cash_flow_type": "SDE",
+      "multiple": 1.08,
+      "fair_value": 2.5,
+      "discount": 0.568,
+      "score": 55.5,
+      "vetted": true,
+      "traits": [
+        "online"
+      ]
+    },
+    {
+      "title": "Apparel & Accessories, Travel - eCommerce #94796",
+      "source": "empireflippers",
+      "url": "https://empireflippers.com/listing/94796/",
+      "state": "ONLINE",
+      "city": "",
+      "asking_price": 117371,
+      "cash_flow": 100608,
+      "cash_flow_type": "SDE",
+      "multiple": 1.17,
+      "fair_value": 2.5,
+      "discount": 0.532,
+      "score": 54.2,
+      "vetted": true,
+      "traits": [
+        "online"
+      ]
+    },
+    {
+      "title": "Business, Information - Display Advertising, Digital Product, Other #94607",
+      "source": "empireflippers",
+      "url": "https://empireflippers.com/listing/94607/",
+      "state": "ONLINE",
+      "city": "",
+      "asking_price": 228420,
+      "cash_flow": 182736,
+      "cash_flow_type": "SDE",
+      "multiple": 1.25,
+      "fair_value": 2.5,
+      "discount": 0.5,
+      "score": 53.1,
+      "vetted": true,
+      "traits": [
+        "online"
+      ]
+    },
+    {
+      "title": "Entertainment - YouTube #94759",
+      "source": "empireflippers",
+      "url": "https://empireflippers.com/listing/94759/",
+      "state": "ONLINE",
+      "city": "",
+      "asking_price": 58814,
+      "cash_flow": 64164,
+      "cash_flow_type": "SDE",
+      "multiple": 0.92,
+      "fair_value": 2.5,
+      "discount": 0.632,
+      "score": 52.9,
+      "vetted": true,
+      "traits": [
+        "online"
+      ]
+    },
+    {
+      "title": "Health & Fitness, Home - eCommerce #91698",
+      "source": "empireflippers",
+      "url": "https://empireflippers.com/listing/91698/",
+      "state": "ONLINE",
+      "city": "",
+      "asking_price": 408325,
+      "cash_flow": 306240,
+      "cash_flow_type": "SDE",
+      "multiple": 1.33,
+      "fair_value": 2.5,
+      "discount": 0.468,
+      "score": 34.3,
+      "vetted": true,
+      "traits": [
+        "online"
+      ]
+    },
+    {
+      "title": "Apparel & Accessories - Amazon FBA #92512",
+      "source": "empireflippers",
+      "url": "https://empireflippers.com/listing/92512/",
+      "state": "ONLINE",
+      "city": "",
+      "asking_price": 725544,
+      "cash_flow": 483696,
+      "cash_flow_type": "SDE",
+      "multiple": 1.5,
+      "fair_value": 2.5,
+      "discount": 0.4,
+      "score": 31.9,
+      "vetted": true,
+      "traits": [
+        "online"
+      ]
+    },
+    {
+      "title": "Apparel & Accessories, Beauty, Home - eCommerce, DropShipping #92870",
+      "source": "empireflippers",
+      "url": "https://empireflippers.com/listing/92870/",
+      "state": "ONLINE",
+      "city": "",
+      "asking_price": 352273,
+      "cash_flow": 234852,
+      "cash_flow_type": "SDE",
+      "multiple": 1.5,
+      "fair_value": 2.5,
+      "discount": 0.4,
+      "score": 31.9,
+      "vetted": true,
+      "traits": [
+        "online"
+      ]
+    },
+    {
+      "title": "Business - Digital Product, Agency #92592",
+      "source": "empireflippers",
+      "url": "https://empireflippers.com/listing/92592/",
+      "state": "ONLINE",
+      "city": "",
+      "asking_price": 212652,
+      "cash_flow": 141768,
+      "cash_flow_type": "SDE",
+      "multiple": 1.5,
+      "fair_value": 2.5,
+      "discount": 0.4,
+      "score": 31.9,
+      "vetted": true,
+      "traits": [
+        "online"
+      ]
+    },
+    {
+      "title": "Business, Technology - Service, Agency #92601",
+      "source": "empireflippers",
+      "url": "https://empireflippers.com/listing/92601/",
+      "state": "ONLINE",
+      "city": "",
+      "asking_price": 197341,
+      "cash_flow": 131556,
+      "cash_flow_type": "SDE",
+      "multiple": 1.5,
+      "fair_value": 2.5,
+      "discount": 0.4,
+      "score": 31.9,
+      "vetted": true,
+      "traits": [
+        "online"
+      ]
+    },
+    {
+      "title": "Design, Digital Media - Digital Product #87775",
+      "source": "empireflippers",
+      "url": "https://empireflippers.com/listing/87775/",
+      "state": "ONLINE",
+      "city": "",
+      "asking_price": 171924,
+      "cash_flow": 114612,
+      "cash_flow_type": "SDE",
+      "multiple": 1.5,
+      "fair_value": 2.5,
+      "discount": 0.4,
+      "score": 31.9,
+      "vetted": true,
+      "traits": [
+        "online"
+      ]
+    }
+  ]
+}

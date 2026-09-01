@@ -175,7 +175,42 @@ const SPORTS = {
         },
         render: renderIdeas,
     },
+    // Small-business acquisition screen. No season. Published nightly by a local
+    // launchd job, and deliberately narrower than the screener's own CSVs: only the
+    // marketplaces that answer plain HTTP are in this feed. BizBuySell is
+    // Akamai-blocked and needs a manual pass, so its rows are months stale between
+    // sweeps and would decay into dead links on a page claiming to be current.
+    //
+    // staleAfter matches the generator's own data-freshness gate (3 days). That gate
+    // is why this feed needs no `gate` of its own: the generator refuses to write a
+    // payload at all when the sweep behind it has gone stale, so a fresh
+    // `generated_at` here really does imply fresh listings -- unlike the Magic Formula
+    // feed, where the re-rank and the universe age independently.
+    business_hunter: {
+        file: 'predictions/businesses.json',
+        container: 'business-hunter-deals',
+        stamp: 'business-hunter-updated',
+        cadence: 'daily',
+        noun: 'candidates',
+        listKey: 'businesses',
+        staleAfter: 3 * MS_DAY,
+        emptyLabel: 'Nothing currently prices below its fair-value band.',
+        slate: d => {
+            const names = (Array.isArray(d.sources) ? d.sources : [])
+                .map(s => SOURCE_LABEL[s.name] || s.name).join(' | ');
+            const shown = Array.isArray(d.businesses) ? d.businesses.length : 0;
+            const parts = [`Top ${shown} of ${d.flagged} below band`];
+            // The refused count is the honest part: those rows were looked at and
+            // deliberately not scored, rather than quietly missing.
+            parts.push(`${d.scored} scored, ${d.refused} refused of ${d.screened} screened`);
+            return `${parts.join(' -- ')}${names ? ` | ${names}` : ''}`;
+        },
+        render: renderBusinesses,
+    },
 };
+
+const SOURCE_LABEL = { empireflippers: 'Empire Flippers', flippa: 'Flippa',
+                       bizbuysell: 'BizBuySell' };
 
 // A quarter plus a fortnight of slack. The source refreshes its fundamentals when its
 // data provider delivers new filings, so a list older than this predates the current
@@ -183,6 +218,7 @@ const SPORTS = {
 const UNIVERSE_STALE = 105 * MS_DAY;
 
 const SPORT_LABEL = { nba: 'NBA', nfl: 'NFL', f1: 'F1', real_estate: 'Real estate',
+                      business_hunter: 'Business acquisitions',
                       magic_formula: 'Magic Formula' };
 
 function esc(v) {
@@ -310,6 +346,59 @@ function formatMoney(v) {
 // The model explains 9.5% of rank variance. Publishing its picks without saying so
 // would be the misrepresentation, so the track record renders above the list and the
 // payload is refused by the validator if it quotes a record it cannot support.
+function renderBusinesses(data) {
+    const note = `
+        <div class="deal-record">
+            <strong>How to read this:</strong> the multiple is judged against a
+            fair-value band for that listing's <em>earnings definition and size</em>,
+            not a flat number -- SDE is EBITDA plus owner comp, so the same business
+            prices at a higher multiple of one than the other. Bands come from IBBA
+            Market Pulse and BizBuySell closed medians; online businesses get their own
+            flat band. Financials are self-reported. "Vetted" means the marketplace
+            screened the P&amp;L, <em>not</em> that anyone audited it. A cheap multiple
+            is usually owner wages dressed as profit, so this is screening output for
+            diligence -- not advice, and not a buy signal.
+        </div>
+    `;
+    const rows = data.businesses.map(b => {
+        const disc = Number(b.discount);
+        const discClass = disc >= 0.5 ? 'confidence-high' : 'confidence-med';
+        const facts = [SOURCE_LABEL[b.source] || b.source];
+        if (b.vetted) facts.push('vetted P&L');
+        if (b.state && b.state !== 'ONLINE') {
+            facts.push([b.city, b.state].filter(Boolean).join(', '));
+        } else {
+            facts.push('online');
+        }
+        (Array.isArray(b.traits) ? b.traits : [])
+            .filter(t => t !== 'online').forEach(t => facts.push(t));
+        const title = b.url
+            ? `<a href="${esc(b.url)}" target="_blank" rel="noopener noreferrer">${esc(b.title)}</a>`
+            : esc(b.title);
+        return `
+            <div class="nba-game">
+                <div class="nba-matchup">
+                    <div class="nba-teams deal-address">${title}</div>
+                    <div class="nba-meta">${esc(facts.join(' | '))}</div>
+                    <div class="nba-meta deal-prices">
+                        ${esc(formatMoney(b.asking_price))} asking on
+                        ${esc(formatMoney(b.cash_flow))} ${esc(b.cash_flow_type)}
+                        -- ${esc(Number(b.multiple).toFixed(2))}x vs
+                        ${esc(Number(b.fair_value).toFixed(2))}x band
+                    </div>
+                </div>
+                <div class="nba-pick">
+                    <div class="nba-pick-label">Below band</div>
+                    <div class="nba-confidence ${discClass}">${(disc * 100).toFixed(0)}%</div>
+                    <div class="nba-pick-label">score ${esc(Number(b.score).toFixed(0))}</div>
+                </div>
+            </div>
+        `;
+    }).join('');
+    return note + rows;
+}
+
+
 function renderTrackRecord(tr) {
     if (!tr) {
         return `<div class="deal-record">Track record not established yet -- `

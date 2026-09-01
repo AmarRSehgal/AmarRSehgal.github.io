@@ -56,6 +56,29 @@ REAL_ESTATE = {
 }
 
 
+BUSINESS_HUNTER = {
+    'generated_at': STAMP,
+    'sources': [
+        {'name': 'empireflippers', 'listings': 184, 'scored': 184, 'refused': 0,
+         'flagged': 86},
+        {'name': 'flippa', 'listings': 99, 'scored': 0, 'refused': 97, 'flagged': 0},
+    ],
+    'screened': 283,
+    'scored': 184,
+    'refused': 97,
+    'flagged': 86,
+    'bands': [{'population': 'online', 'cash_flow_type': 'SDE',
+               'rungs': [{'below': None, 'multiple': 2.5}]}],
+    'businesses': [{
+        'title': 'Food & Beverages - Amazon FBA #94642', 'source': 'empireflippers',
+        'url': 'https://empireflippers.com/listing/94642/', 'state': 'ONLINE',
+        'city': '', 'asking_price': 96077, 'cash_flow': 164700,
+        'cash_flow_type': 'SDE', 'multiple': 0.58, 'fair_value': 2.5,
+        'discount': 0.768, 'score': 62.6, 'vetted': True, 'traits': ['online'],
+    }],
+}
+
+
 def payload(base, **top):
     d = copy.deepcopy(base)
     d.update(top)
@@ -81,7 +104,8 @@ class ContractBase(unittest.TestCase):
 class ReadmeExamples(ContractBase):
     def test_documented_payloads_validate(self):
         for sport, data in (('nfl', NFL), ('nba', NBA), ('f1', F1),
-                            ('real_estate', REAL_ESTATE)):
+                            ('real_estate', REAL_ESTATE),
+                            ('business_hunter', BUSINESS_HUNTER)):
             with self.subTest(sport=sport):
                 self.assertEqual(len(self.ok(sport, data)), 1)
 
@@ -351,6 +375,123 @@ OPPORTUNITIES = {
         ],
     }],
 }
+
+
+class BusinessHunter(ContractBase):
+    """The acquisition screen. Each case is a falsehood the page would state."""
+
+    def biz(self, **over):
+        b = copy.deepcopy(BUSINESS_HUNTER['businesses'][0])
+        b.update(over)
+        return payload(BUSINESS_HUNTER, businesses=[b])
+
+    def counts(self, **over):
+        return payload(BUSINESS_HUNTER, **over)
+
+    def test_documented_payload_validates(self):
+        self.assertEqual(len(self.ok('business_hunter', BUSINESS_HUNTER)), 1)
+
+    def test_empty_screen_is_valid(self):
+        # "nothing prices below its band tonight" is a real statement.
+        self.assertEqual(
+            self.ok('business_hunter', self.counts(businesses=[])), [])
+
+    def test_refused_earnings_labels_can_never_be_published(self):
+        # Flippa's self-reported monthly net_profit has a ~0.98x median, so on a
+        # page ranked by discount these would place FIRST -- the least credible
+        # listings presented as the best finds. The screener refuses to score
+        # them; this is the independent check that they never come back.
+        for label in ('net_profit', ''):
+            with self.subTest(label=label):
+                self.rejects('business_hunter', self.biz(cash_flow_type=label),
+                             'refused earnings label')
+
+    def test_unknown_earnings_label_refused(self):
+        self.rejects('business_hunter', self.biz(cash_flow_type='vibes'),
+                     'not one of')
+
+    def test_scorable_labels_pass(self):
+        # cashflow is BizBuySell's own field name for SDE.
+        for label in ('SDE', 'EBITDA', 'cashflow'):
+            with self.subTest(label=label):
+                self.assertEqual(
+                    len(self.ok('business_hunter', self.biz(cash_flow_type=label))), 1)
+
+    def test_multiple_must_match_the_numbers_beside_it(self):
+        # The page prints price, cash flow AND the ratio; a disagreement means it
+        # is contradicting itself in a single row.
+        self.rejects('business_hunter', self.biz(multiple=9.9), 'does not match')
+
+    def test_discount_must_match_multiple_and_band(self):
+        # An inverted subtraction turns every premium into a bargain and still
+        # renders an entirely plausible page.
+        self.rejects('business_hunter', self.biz(discount=-0.768), 'does not match')
+        self.rejects('business_hunter', self.biz(discount=0.1), 'does not match')
+
+    def test_percent_instead_of_fraction_refused(self):
+        self.rejects('business_hunter', self.biz(discount=76.8), 'does not match')
+
+    def test_rounding_slack_allowed(self):
+        self.assertEqual(len(self.ok('business_hunter', self.biz(discount=0.7681))), 1)
+
+    def test_listing_at_or_above_its_band_is_not_an_opportunity(self):
+        """The regression this check exists for: trait bonuses used to be additive,
+        so absentee/recurring/online keywords manufactured a positive score on
+        businesses priced at or above fair value -- 297 of 640 flagged rows."""
+        self.rejects('business_hunter',
+                     self.biz(multiple=2.5, fair_value=2.5, discount=0.0,
+                              asking_price=411750, cash_flow=164700),
+                     'at or above its fair_value band')
+
+    def test_zero_score_refused(self):
+        self.rejects('business_hunter', self.biz(score=0), 'must be positive')
+
+    def test_url_required_because_the_feed_publishes_links(self):
+        self.rejects('business_hunter', self.biz(url=''), 'non-empty string')
+
+    def test_vetted_must_be_a_boolean(self):
+        # "vetted" claims the marketplace screened the P&L; a truthy string would
+        # let any value assert that.
+        self.rejects('business_hunter', self.biz(vetted='yes'), 'must be a JSON boolean')
+
+    def test_unknown_trait_refused(self):
+        self.rejects('business_hunter', self.biz(traits=['moonshot']), 'expected one of')
+
+    def test_negative_or_zero_money_refused(self):
+        for field in ('asking_price', 'cash_flow', 'multiple', 'fair_value'):
+            with self.subTest(field=field):
+                self.rejects('business_hunter', self.biz(**{field: 0}),
+                             'greater than zero')
+
+    def test_cannot_publish_more_than_were_flagged(self):
+        self.rejects('business_hunter', self.counts(flagged=0),
+                     'only 0 flagged')
+
+    def test_flagged_cannot_exceed_scored(self):
+        self.rejects('business_hunter', self.counts(scored=1, flagged=86),
+                     'exceeds scored')
+
+    def test_scored_plus_refused_cannot_exceed_screened(self):
+        self.rejects('business_hunter', self.counts(screened=10), 'exceeds screened')
+
+    def test_per_source_counts_must_sum_to_the_totals(self):
+        bad = copy.deepcopy(BUSINESS_HUNTER['sources'])
+        bad[0]['listings'] = 1
+        self.rejects('business_hunter', self.counts(sources=bad),
+                     'per-source listings sum to')
+
+    def test_per_source_flagged_must_sum_to_the_total(self):
+        bad = copy.deepcopy(BUSINESS_HUNTER['sources'])
+        bad[0]['flagged'] = 0
+        self.rejects('business_hunter', self.counts(sources=bad),
+                     'per-source flagged sum to')
+
+    def test_negative_counts_refused(self):
+        self.rejects('business_hunter', self.counts(refused=-1), 'cannot be negative')
+
+    def test_naive_generated_at_refused(self):
+        self.rejects('business_hunter',
+                     self.counts(generated_at='2026-09-01T08:00:00'), 'no UTC offset')
 
 
 class OpportunitiesBoard(ContractBase):
