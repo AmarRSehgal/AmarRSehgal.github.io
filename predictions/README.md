@@ -147,6 +147,102 @@ Same shape and the same sign convention, minus `season`/`week`/`kickoff`, plus a
 `date` is required and must be `YYYY-MM-DD` — it is rendered above the picks
 ("Thursday, October 22 slate"), so it is the slate's date, not the generation date.
 
+## `mlb.json`
+
+Same shape and the same sign convention as `nba.json`, **minus `pred_spread`**, plus a
+`track_record`. **Published by a local launchd job, not a GitHub Action**
+(`~/personal/mlb-prediction/run_daily.sh`, daily 09:30 local, installed per
+`~/personal/automation/LAUNCHD.md`). It has to be local: three of the model's feature
+groups come from frozen FanGraphs CSVs in a gitignored `data/raw/`, and pybaseball can no
+longer refetch them (FanGraphs and Baseball Reference both return HTTP 403 to it), so CI
+has no way to reproduce the inputs. The wrapper runs this validator itself before it
+copies the payload in, so the contract is enforced identically either way.
+
+```json
+{
+  "generated_at": "2026-09-01T08:12:10.613410+00:00",
+  "date": "2026-09-01",
+  "season_status": "in_season",
+  "games": [
+    {
+      "away_team": "SDP", "home_team": "CIN",
+      "away_team_full": "San Diego Padres", "home_team_full": "Cincinnati Reds",
+      "pick": "SDP", "ml_win_prob": 0.4755, "confidence": 0.5245,
+      "game_num": 1, "kickoff": "2026-09-01T22:40:00Z",
+      "away_starter": "Randy Vasquez", "home_starter": "Nick Lodolo"
+    }
+  ],
+  "track_record": {
+    "season": 2026, "n_games": 2097,
+    "accuracy": 0.5241, "baseline_accuracy": 0.5207,
+    "baseline_label": "always pick the home team",
+    "mcnemar_p_vs_baseline": 0.823, "beats_baseline": false,
+    "high_conf_threshold": 0.60, "high_conf_n": 388,
+    "high_conf_stated": 0.6475, "high_conf_realized": 0.5696,
+    "calibration_gap": -0.0779
+  },
+  "methodology": "..."
+}
+```
+
+| field | required | type | meaning |
+|---|---|---|---|
+| `generated_at` | yes | ISO 8601 + offset | see the shared rules |
+| `date` | yes | `YYYY-MM-DD` | the slate's date, rendered as "Tuesday, September 1 slate" |
+| `games[].away_team` / `home_team` | yes | non-empty string | short code (`SDP`) |
+| `games[].pick` | yes | string | **byte-equal to `away_team` or `home_team`** |
+| `games[].ml_win_prob` | yes | number in `[0,1]` | **home team's** win probability |
+| `games[].confidence` | yes | number in `[0,1]`, `>= 0.5` | confidence in `pick`, i.e. `max(p, 1-p)` |
+| `games[].pred_spread` | **no** | number | omit it — see below. Validated if present anyway |
+| `games[].game_num` | no | int | `1`, or `1`/`2` for a doubleheader — must make each row unique |
+| `games[].kickoff` | no | ISO 8601 + offset | first pitch |
+| `games[].away_starter` / `home_starter` | no | string | probable starter, or `"TBD"` |
+| `track_record` | no | object or `null` | see below |
+
+### Why there is no `pred_spread`
+
+The nba/nfl payloads require it. This model predicts a **win probability only** — it has
+no run-margin output — so there is nothing honest to put there, and emitting a derived
+one would be precisely the fabricated `Spread: 0` this contract rejects for `null`.
+`renderTeamGames` now omits the spread line when the field is absent rather than
+rendering `Spread: NaN`.
+
+### Why the slate is not sorted by confidence
+
+It is published in **first-pitch order**, deliberately. A confidence-ranked "top picks"
+board would headline the one claim the model repo has measured and disproved: over the
+2026 season its picks at >=60% stated confidence realized **0.5696 against 0.6475
+stated**, and the gap widens as confidence rises. Ranking by confidence presents "most
+likely to win" as "best opportunity", which it is not — the model's confident picks are
+lopsided matchups (102 of 291 were fades of OAK, COL and LAA), and a book prices a 65%
+favourite near 1.84:1, where break-even **is** 65%.
+
+### `track_record` — a different shape from `real_estate.json`'s
+
+Accuracy against a baseline, not a rank correlation, and validated by
+`check_mlb_track_record` rather than `check_track_record`. Forcing an accuracy into a
+`spearman` field would be a false statement about what was measured.
+
+| field | required | type | meaning |
+|---|---|---|---|
+| `n_games` | yes | int `>= 100` | below that, emit `track_record: null` rather than quote noise |
+| `accuracy` | yes | number in `[0,1]` | the model's realized accuracy |
+| `baseline_accuracy` | yes | number in `[0,1]` | always-pick-home over the same games |
+| `mcnemar_p_vs_baseline` | yes | number in `[0,1]` | paired test against that baseline |
+| `beats_baseline` | no | bool | **enforced**: true only when `accuracy > baseline` AND `p < 0.05` |
+| `high_conf_stated` / `high_conf_realized` | no | number in `[0,1]` | **must be published together** |
+| `high_conf_n` | with the pair | int | games behind them |
+| `calibration_gap` | no | number | **enforced** to equal `realized - stated` |
+| `season`, `baseline_label`, `high_conf_threshold` | no | — | display only |
+
+Three of those rules exist to stop the page making a claim the numbers do not support:
+`beats_baseline` may not contradict the two figures beside it, `calibration_gap` may not
+disagree with its own operands, and realized accuracy may not be published without the
+confidence it was stated at — realized alone is the misleading half.
+
+It is recomputed on every run by `strategies.holdout.season_track_record`, never
+hardcoded, so it cannot rot.
+
 ## `real_estate.json`
 
 Flagged residential listings from the `real_estate` deal screen. **Published by a local
