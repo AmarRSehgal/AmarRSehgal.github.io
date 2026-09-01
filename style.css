@@ -714,3 +714,32 @@ button:focus-visible {
     font-size: 0.85rem;
     margin-left: 0.4rem;
 }
+
+/* Opportunities board: one block per source, each carrying its own caveat. */
+.opportunity-source {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.opportunity-source:last-of-type { border-bottom: none; }
+
+.opportunity-source-head {
+    margin-bottom: 0.5rem;
+    text-transform: none;
+}
+
+.opportunity-source-head strong { color: #cbd5e1; }
+
+/* The caveat is deliberately styled as body text rather than fine print: on this
+   board it is load-bearing, not a disclaimer to skim past. */
+.prediction-note {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #9aa4b2;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid #4a5568;
+    padding: 0.6rem 0.9rem;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+}

@@ -336,3 +336,81 @@ class RealEstateDeals(ContractBase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+OPPORTUNITIES = {
+    'generated_at': STAMP,
+    'methodology': 'Ranked within each source; no cross-source score.',
+    'sources': [{
+        'source': 'funding_drift',
+        'label': 'Perp funding vs realized drift',
+        'status': 'fresh',
+        'caveat': 'An observation, not a trade recommendation.',
+        'opportunities': [
+            {'title': 'BTR on HTX', 'metric_value': 1.085, 'metric_display': '+108.5%'},
+        ],
+    }],
+}
+
+
+class OpportunitiesBoard(ContractBase):
+    def section(self, **over):
+        sec = dict(OPPORTUNITIES['sources'][0])
+        sec.update(over)
+        return payload(OPPORTUNITIES, sources=[sec])
+
+    def test_documented_payload_validates(self):
+        self.assertEqual(len(self.ok('opportunities', OPPORTUNITIES)), 1)
+
+    def test_quiet_source_is_valid(self):
+        # "the scan ran and found nothing" is a real statement about the market.
+        self.assertEqual(len(self.ok('opportunities',
+                                     self.section(status='empty', opportunities=[]))), 1)
+
+    def test_stale_source_may_publish_nothing(self):
+        self.assertEqual(len(self.ok('opportunities',
+                                     self.section(status='stale', opportunities=[]))), 1)
+
+    def test_stale_source_may_not_publish_items(self):
+        # The whole point of the stale state is to stop old numbers being shown as live.
+        self.rejects('opportunities', self.section(status='stale'), 'must show nothing')
+
+    def test_missing_source_may_not_publish_items(self):
+        self.rejects('opportunities', self.section(status='missing'), 'must show nothing')
+
+    def test_unknown_status_rejected(self):
+        self.rejects('opportunities', self.section(status='Fresh'), 'must be one of')
+
+    def test_caveat_is_required(self):
+        sec = dict(OPPORTUNITIES['sources'][0])
+        del sec['caveat']
+        self.rejects('opportunities', payload(OPPORTUNITIES, sources=[sec]), 'missing')
+
+    def test_empty_caveat_rejected(self):
+        self.rejects('opportunities', self.section(caveat=''), 'caveat')
+
+    def test_metric_value_must_be_a_number(self):
+        # A string sorts lexicographically and silently reorders the board.
+        bad = [{'title': 'X', 'metric_value': '1.5', 'metric_display': '1.5'}]
+        self.rejects('opportunities', self.section(opportunities=bad), 'metric_value')
+
+    def test_metric_value_may_not_be_a_bool(self):
+        bad = [{'title': 'X', 'metric_value': True, 'metric_display': 'yes'}]
+        self.rejects('opportunities', self.section(opportunities=bad), 'metric_value')
+
+    def test_item_needs_a_display_string(self):
+        bad = [{'title': 'X', 'metric_value': 1.0}]
+        self.rejects('opportunities', self.section(opportunities=bad), 'metric_display')
+
+    def test_duplicate_source_keys_rejected(self):
+        two = OPPORTUNITIES['sources'] * 2
+        self.rejects('opportunities', payload(OPPORTUNITIES, sources=two), 'duplicate source')
+
+    def test_methodology_is_required(self):
+        d = payload(OPPORTUNITIES)
+        del d['methodology']
+        self.rejects('opportunities', d, 'missing required keys')
+
+    def test_stale_generated_at_rejected(self):
+        old = (NOW - timedelta(hours=9)).isoformat()
+        self.rejects('opportunities', payload(OPPORTUNITIES, generated_at=old), 'stale payload')

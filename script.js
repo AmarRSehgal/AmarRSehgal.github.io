@@ -108,6 +108,29 @@ const SPORTS = {
         },
         render: renderDeals,
     },
+    // Cross-source board. No season. Published by a local aggregator job that merely
+    // MERGES what each source repo already wrote, so it can be fresh while the sources
+    // beneath it are not -- which is exactly why each section carries its own age and
+    // the aggregator refuses to publish items for a section past its own budget.
+    // `listKey` is 'sources': the list holds sections, not opportunities.
+    opportunities: {
+        file: 'predictions/opportunities.json',
+        container: 'opportunities-board',
+        stamp: 'opportunities-updated',
+        cadence: 'daily',
+        noun: 'sources',
+        listKey: 'sources',
+        staleAfter: 3 * MS_DAY,
+        emptyLabel: 'No source has reported yet.',
+        slate: d => {
+            const fresh = Number(d.fresh_sources);
+            const total = Array.isArray(d.sources) ? d.sources.length : 0;
+            const n = Number(d.total_opportunities);
+            if (!total) return '';
+            return `${n} across ${fresh}/${total} live sources`;
+        },
+        render: renderOpportunities,
+    },
     // Magic Formula stock screen. No season either, and published from a local weekly
     // job like real estate. The `gate` is the part that matters: this feed has two
     // independent staleness axes and `staleAfter` only covers one of them.
@@ -346,6 +369,56 @@ function renderDeals(data) {
         `;
     }).join('');
     return renderTrackRecord(data.track_record) + rows;
+}
+
+// The board is the only NESTED feed: each entry is a per-source section that carries
+// its own freshness and its own caveat. The caveat is rendered as part of the section
+// rather than tucked into a footnote, because several of these generators exist mainly
+// to warn about their own output -- funding-drift's own study found its ranking is
+// ~99% price momentum. A board that stripped that would be actively misleading.
+function renderOpportunities(data) {
+    const sections = Array.isArray(data.sources) ? data.sources : [];
+    const quiet = { stale: 'went quiet', missing: 'has not run yet', error: 'could not be read' };
+
+    const blocks = sections.map(s => {
+        const items = Array.isArray(s.opportunities) ? s.opportunities : [];
+        const age = s.age_hours != null ? `${Number(s.age_hours).toFixed(0)}h ago` : '';
+        let body;
+        if (items.length) {
+            body = items.map(o => {
+                const link = o.link
+                    ? `<a href="${esc(o.link)}" target="_blank" rel="noopener noreferrer">${esc(o.title)}</a>`
+                    : esc(o.title);
+                return `
+                    <div class="nba-game">
+                        <div class="nba-matchup">
+                            <div class="nba-teams">${link}</div>
+                            <div class="nba-meta">${esc(o.detail || '')}</div>
+                        </div>
+                        <div class="nba-pick">
+                            <div class="nba-confidence confidence-med">${esc(o.metric_display)}</div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        } else {
+            // Distinguish "scanned, found nothing" from "did not scan". They look the
+            // same on a page that only shows an empty list, and they mean opposite things.
+            const why = quiet[s.status] || 'found nothing that cleared the bar';
+            body = `<p class="prediction-none">${esc(s.note || `This source ${why}.`)}</p>`;
+        }
+        return `
+            <div class="opportunity-source">
+                <div class="nba-meta opportunity-source-head">
+                    <strong>${esc(s.label)}</strong>${age ? ` -- scanned ${esc(age)}` : ''}
+                </div>
+                ${body}
+                <div class="prediction-note">${esc(s.caveat)}</div>
+            </div>
+        `;
+    }).join('');
+
+    return blocks + `<div class="prediction-note">${esc(data.methodology || '')}</div>`;
 }
 
 function renderIdeas(data) {
