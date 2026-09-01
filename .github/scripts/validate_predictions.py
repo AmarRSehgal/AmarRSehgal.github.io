@@ -89,7 +89,18 @@ SPECS = {
     # sections, each with its own status, caveat and item list.
     'opportunities': (('generated_at', 'sources', 'methodology'), 'sources',
                       ('source', 'label', 'status', 'caveat', 'opportunities')),
+    # Cross-exchange funding carry. The numbers here are PERCENTS, not
+    # probabilities -- net_apr is 42.1 for 42.1%/yr and routinely exceeds 100.
+    # Do not "fix" it into the [0, 1] rule the sports feeds use.
+    'funding': (('generated_at', 'status', 'scans_seen', 'opportunities'), 'opportunities',
+                ('base', 'type', 'long_venue', 'short_venue', 'min_hold_h',
+                 'hits', 'scans', 'net_apr', 'net_at_hold')),
 }
+
+# 'building_history' is not a failure: the funding board only publishes routes
+# that stayed positive across most of the last day of scans, so a fresh install
+# has nothing to say yet and must say that rather than "no opportunities".
+FUNDING_STATUS = ('ok', 'building_history')
 
 # A section may only carry items when its own scan is current. 'stale' and 'missing'
 # exist precisely so the page can say "this source went quiet" instead of showing old
@@ -440,6 +451,51 @@ def check_idea(where, item):
         raise Invalid(f'{where}.rank={rank} must be 1-based')
 
 
+def check_funding_route(where, r):
+    """A published route claims it was worth doing repeatedly, so check that.
+
+    The generator only publishes routes that stayed net-positive across most of
+    the last day's scans. If a non-positive or impossible route reaches here the
+    persistence filter has broken, and that failure is invisible on the page --
+    it just looks like a thin board.
+    """
+    require_str(where, 'base', r['base'])
+    long_venue = require_str(where, 'long_venue', r['long_venue'])
+    short_venue = require_str(where, 'short_venue', r['short_venue'])
+    opp_type = require_str(where, 'type', r['type'])
+
+    if opp_type not in ('spot-perp', 'perp-perp'):
+        raise Invalid(f"{where}.type={opp_type!r} must be 'spot-perp' or 'perp-perp'")
+    # A same-venue spot+perp is a real strategy; a same-venue perp+perp is a
+    # position against itself and earns exactly nothing.
+    if opp_type == 'perp-perp' and long_venue == short_venue:
+        raise Invalid(f'{where} is perp-perp with both legs on {long_venue!r} -- '
+                      f'that is a position against itself, not a carry')
+
+    hold = require_int(where, 'min_hold_h', r['min_hold_h'])
+    if hold < 1:
+        raise Invalid(f'{where}.min_hold_h={hold} must be at least 1 hour')
+
+    hits = require_int(where, 'hits', r['hits'])
+    scans = require_int(where, 'scans', r['scans'])
+    if hits < 1 or scans < 1:
+        raise Invalid(f'{where} hits={hits} scans={scans} must both be >= 1')
+    if hits > scans:
+        raise Invalid(f'{where} hits={hits} exceeds scans={scans} -- a route cannot '
+                      f'have been positive more often than it was looked at')
+
+    apr = require_number(where, 'net_apr', r['net_apr'])
+    at_hold = require_number(where, 'net_at_hold', r['net_at_hold'])
+    if apr <= 0:
+        raise Invalid(f'{where}.net_apr={apr} is not positive. Only routes that were '
+                      f'worth doing get published, so a non-positive one means the '
+                      f'persistence filter let a losing route through.')
+    if at_hold <= 0:
+        raise Invalid(f'{where}.net_at_hold={at_hold} is not positive but net_apr is '
+                      f'{apr} -- these are the same return over different horizons '
+                      f'and cannot disagree in sign')
+
+
 def check_f1_entry(where, p):
     require_str(where, 'driver', p['driver'])
     require_number(where, 'predicted_pos', p['predicted_pos'])
@@ -496,7 +552,20 @@ def validate(sport, data, now=None):
     check_freshness(parse_timestamp(data['generated_at']), now)
     check_optional_season_fields(data)
 
-    if sport == 'nba':
+    if sport == 'funding':
+        if data['status'] not in FUNDING_STATUS:
+            raise Invalid(f'status={data["status"]!r} must be one of {list(FUNDING_STATUS)}')
+        seen = require_int('<payload>', 'scans_seen', data['scans_seen'])
+        if seen < 0:
+            raise Invalid(f'scans_seen={seen} cannot be negative')
+        # "Still building history" and "nothing is worth doing" are different
+        # claims and the page renders them differently. Publishing a board while
+        # status says the history is too thin to judge asserts both at once.
+        if data['status'] == 'building_history' and data['opportunities']:
+            raise Invalid(f'status=building_history but {len(data["opportunities"])} '
+                          f'opportunities are published -- the page would show a board '
+                          f'while saying it has no basis for one')
+    elif sport == 'nba':
         check_date_string('<payload>', 'date', data['date'])
     elif sport == 'nfl':
         require_int('<payload>', 'season', data['season'])
@@ -544,6 +613,8 @@ def validate(sport, data, now=None):
             check_source_section(where, item)
         elif sport == 'f1':
             check_f1_entry(where, item)
+        elif sport == 'funding':
+            check_funding_route(where, item)
         elif sport == 'magicformula':
             check_idea(where, item)
         elif sport == 'business_hunter':

@@ -59,6 +59,26 @@ const SPORTS = {
         },
         render: renderTeamGames,
     },
+    // MLB carries no pred_spread (win probability only) and its slate is published
+    // in first-pitch order rather than sorted by confidence -- see the note rendered
+    // under it, and predictions/README.md.
+    mlb: {
+        file: 'predictions/mlb.json',
+        container: 'mlb-picks',
+        stamp: 'mlb-updated',
+        cadence: 'daily',
+        noun: 'picks',
+        listKey: 'games',
+        staleAfter: 36 * MS_HOUR,
+        season: { startMonth: 3, startDay: 20, endMonth: 11, endDay: 5, startPhrase: 'late March' },
+        emptyLabel: 'No games on the schedule today.',
+        slate: d => {
+            const day = parseIsoDay(d.date);
+            return isNaN(day) ? '' : `${day.toLocaleDateString('en-US',
+                { weekday: 'long', month: 'long', day: 'numeric' })} slate`;
+        },
+        render: renderMlbGames,
+    },
     nfl: {
         file: 'predictions/nfl.json',
         container: 'nfl-picks',
@@ -207,6 +227,32 @@ const SPORTS = {
         },
         render: renderBusinesses,
     },
+    // Cross-exchange funding carry, published hourly from a local job. The board is
+    // deliberately NOT the scanner's top rows -- those are whichever altcoin is mid
+    // funding spike, at four-figure APRs that are correct arithmetic and a false
+    // promise, because the rate reverts long before the hold completes. Only routes
+    // that stayed positive across most of the last day of scans are published, so a
+    // short or empty board is the normal honest state rather than a broken feed.
+    funding: {
+        file: 'predictions/funding.json',
+        container: 'funding-opportunities',
+        stamp: 'funding-updated',
+        cadence: 'hourly',
+        noun: 'routes',
+        listKey: 'opportunities',
+        // Funding settles as often as hourly, so a board much older than this is
+        // describing a market that has already turned over.
+        staleAfter: 6 * MS_HOUR,
+        emptyLabel: 'No route held a positive net carry across the last day of scans.',
+        slate: d => {
+            if (d.status === 'building_history') {
+                return `Collecting scan history -- ${d.scans_seen || 0} hourly scans so far. `
+                     + 'A route has to stay positive across most of a day before it is published.';
+            }
+            return `Positive in ${d.min_hits}+ of the last ${d.scans_seen} hourly scans`;
+        },
+        render: renderFunding,
+    },
 };
 
 const SOURCE_LABEL = { empireflippers: 'Empire Flippers', flippa: 'Flippa',
@@ -217,9 +263,9 @@ const SOURCE_LABEL = { empireflippers: 'Empire Flippers', flippa: 'Flippa',
 // quarter's numbers entirely.
 const UNIVERSE_STALE = 105 * MS_DAY;
 
-const SPORT_LABEL = { nba: 'NBA', nfl: 'NFL', f1: 'F1', real_estate: 'Real estate',
+const SPORT_LABEL = { nba: 'NBA', nfl: 'NFL', mlb: 'MLB', f1: 'F1', real_estate: 'Real estate',
                       business_hunter: 'Business acquisitions',
-                      magic_formula: 'Magic Formula' };
+                      magic_formula: 'Magic Formula', funding: 'Funding carry' };
 
 function esc(v) {
     return String(v == null ? '' : v).replace(/[&<>"']/g, c => (
@@ -297,12 +343,16 @@ function renderTeamGames(data) {
         const confClass = conf >= 0.6 ? 'confidence-high' : 'confidence-med';
         const awayCls = g.pick === g.away_team ? 'pick-team' : '';
         const homeCls = g.pick === g.home_team ? 'pick-team' : '';
-        const spread = Number(g.pred_spread);
-        const meta = [
-            `Spread: ${spread > 0 ? '+' : ''}${spread}`,
-            `Home win: ${(Number(g.ml_win_prob) * 100).toFixed(0)}%`,
-        ];
+        const meta = [];
+        // Not every feed predicts a margin -- mlb.json has no pred_spread at all,
+        // and Number(undefined) would render a confident "Spread: NaN".
+        if (g.pred_spread != null) {
+            const spread = Number(g.pred_spread);
+            meta.push(`Spread: ${spread > 0 ? '+' : ''}${spread}`);
+        }
+        meta.push(`Home win: ${(Number(g.ml_win_prob) * 100).toFixed(0)}%`);
         if (g.pred_total != null) meta.push(`Total: ${g.pred_total}`);
+        if (g._starters) meta.push(g._starters);
         if (g.kickoff) meta.push(formatKickoff(g.kickoff));
         return `
             <div class="nba-game">
@@ -321,6 +371,55 @@ function renderTeamGames(data) {
             </div>
         `;
     }).join('');
+}
+
+// MLB reuses the team-game rows and adds the two things that matter for a
+// baseball slate: who is starting, and what the model's record actually is.
+function renderMlbGames(data) {
+    const withStarters = {
+        ...data,
+        games: data.games.map(g => {
+            const sp = [g.away_starter, g.home_starter].filter(Boolean);
+            if (sp.length !== 2) return g;
+            return { ...g, pred_total: g.pred_total,
+                     kickoff: g.kickoff, _starters: `${sp[0]} vs ${sp[1]}` };
+        }),
+    };
+    return renderMlbRecord(data.track_record) + renderTeamGames(withStarters);
+}
+
+function renderMlbRecord(tr) {
+    if (!tr) {
+        return `<div class="deal-record">Track record not established for this `
+            + `season yet.</div>`;
+    }
+    const pct = v => `${(Number(v) * 100).toFixed(1)}%`;
+    const verdict = tr.beats_baseline
+        ? `beats that baseline (McNemar p=${esc(String(tr.mcnemar_p_vs_baseline))})`
+        : `does NOT beat that baseline (McNemar p=${esc(String(tr.mcnemar_p_vs_baseline))})`;
+    let calib = '';
+    // The confident picks are the number that looks good and is not an edge:
+    // they are lopsided matchups a book prices at short odds, where break-even
+    // is the model's own stated probability -- not the 52.4% of a pick-em game.
+    if (tr.high_conf_stated != null && tr.high_conf_realized != null) {
+        const gap = Number(tr.high_conf_realized) - Number(tr.high_conf_stated);
+        calib = ` Its ${esc(String(tr.high_conf_n))} picks at `
+            + `${esc(pct(tr.high_conf_threshold != null ? tr.high_conf_threshold : 0.6))}+ `
+            + `stated confidence realized ${esc(pct(tr.high_conf_realized))} against `
+            + `${esc(pct(tr.high_conf_stated))} stated -- `
+            + `${gap < 0 ? 'overconfident' : 'well calibrated'} by `
+            + `${esc((Math.abs(gap) * 100).toFixed(1))} points, so a high number `
+            + `there is matchup lopsidedness, not an edge over the price.`;
+    }
+    return `
+        <div class="deal-record">
+            <strong>Measured track record, ${esc(String(tr.season))} season:</strong>
+            ${esc(pct(tr.accuracy))} over ${esc(String(tr.n_games))} games against
+            ${esc(pct(tr.baseline_accuracy))} for ${esc(tr.baseline_label || 'the baseline')},
+            so it ${verdict}.${calib}
+            Model output, not a betting recommendation.
+        </div>
+    `;
 }
 
 function renderF1(data) {
@@ -533,6 +632,39 @@ function renderIdeas(data) {
                     <div class="nba-pick-label">Earnings yield</div>
                     <div class="nba-confidence ${eyClass}">${(ey * 100).toFixed(1)}%</div>
                     <div class="nba-pick-label">rank ${esc(d.rank)}</div>
+                </div>
+            </div>
+        `;
+    }).join('');
+}
+
+function renderFunding(data) {
+    return data.opportunities.map(o => {
+        // Lead with the per-hold return, not the annualised one. A funding carry is
+        // held for hours, so "+0.038% over an 8h hold" is what actually happens and
+        // "~42% APR" is the extrapolation from it. Showing the extrapolation first
+        // is how a board of four-figure percentages stops reading as a claim.
+        const hold = `${o.min_hold_h}h`;
+        const legs = o.long_instrument === 'spot'
+            ? `long ${o.long_venue} spot, short ${o.short_venue} perp`
+            : `long ${o.long_venue}, short ${o.short_venue}`;
+        const meta = [legs];
+        if (o.cost_bps != null) meta.push(`round trip ${Number(o.cost_bps).toFixed(0)}bp`);
+        const rate = Number(o.net_at_hold);
+        const apr = Number(o.net_apr);
+        // Persistence is the reason the row is on the page at all, so show it.
+        const hitRate = o.scans ? o.hits / o.scans : 0;
+        const confClass = hitRate >= 0.9 ? 'confidence-high' : 'confidence-med';
+        return `
+            <div class="nba-game">
+                <div class="nba-matchup">
+                    <div class="nba-teams">${esc(o.base)}</div>
+                    <div class="nba-meta">${esc(meta.join(' | '))}</div>
+                </div>
+                <div class="nba-pick">
+                    <div class="nba-pick-label">Net per ${esc(hold)} hold</div>
+                    <div class="nba-confidence ${confClass}">${rate >= 0 ? '+' : ''}${rate.toFixed(3)}%</div>
+                    <div class="nba-meta">~${apr.toFixed(0)}% APR | ${esc(o.hits)}/${esc(o.scans)} scans</div>
                 </div>
             </div>
         `;

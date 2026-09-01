@@ -651,3 +651,103 @@ class MagicFormulaScreen(ContractBase):
 
     def test_ratios_must_be_numbers_not_strings(self):
         self.rejects('magicformula', idea(earnings_yield='0.23'), 'must be a JSON number')
+
+
+# Verbatim from predictions/README.md.
+FUNDING = {
+    'generated_at': STAMP, 'status': 'ok', 'scans_seen': 24,
+    'window_scans': 24, 'min_hits': 18,
+    'opportunities': [{
+        'base': 'BTC', 'type': 'spot-perp', 'long_venue': 'Binance',
+        'short_venue': 'Hyperliquid', 'long_instrument': 'spot', 'min_hold_h': 8,
+        'hits': 22, 'scans': 24, 'net_apr': 42.13, 'net_at_hold': 0.03847,
+        'cost_bps': 21.5,
+    }],
+}
+
+
+class FundingBoard(ContractBase):
+    """The funding board publishes routes that stayed positive across a day of
+    scans. Every rule here exists because the corresponding failure is INVISIBLE
+    on the page -- a broken persistence filter just looks like a thin board."""
+
+    def test_readme_example_is_valid(self):
+        self.ok('funding', payload(FUNDING))
+
+    def test_empty_board_is_valid(self):
+        """Usually there is genuinely nothing persistent. That is the finding."""
+        self.ok('funding', payload(FUNDING, opportunities=[]))
+
+    def test_building_history_with_an_empty_board_is_valid(self):
+        self.ok('funding', payload(FUNDING, status='building_history',
+                                   scans_seen=3, opportunities=[]))
+
+    def test_building_history_may_not_carry_a_board(self):
+        """The page would show routes while saying it has no basis for any."""
+        d = payload(FUNDING, status='building_history', scans_seen=3)
+        self.rejects('funding', d, 'no basis for one')
+
+    def test_unknown_status_rejected(self):
+        self.rejects('funding', payload(FUNDING, status='fresh'), 'must be one of')
+
+    def test_negative_scans_seen_rejected(self):
+        self.rejects('funding', payload(FUNDING, scans_seen=-1), 'cannot be negative')
+
+    def test_non_positive_apr_rejected(self):
+        """Only routes worth doing get published; a losing one means the filter broke."""
+        d = copy.deepcopy(payload(FUNDING))
+        d['opportunities'][0]['net_apr'] = -3.0
+        self.rejects('funding', d, 'persistence filter')
+
+    def test_sign_disagreement_between_horizons_rejected(self):
+        d = copy.deepcopy(payload(FUNDING))
+        d['opportunities'][0]['net_at_hold'] = -0.01
+        self.rejects('funding', d, 'cannot disagree in sign')
+
+    def test_hits_cannot_exceed_scans(self):
+        d = copy.deepcopy(payload(FUNDING))
+        d['opportunities'][0]['hits'] = 30
+        self.rejects('funding', d, 'exceeds scans')
+
+    def test_same_venue_perp_perp_rejected(self):
+        """Both legs on one venue is a position against itself, not a carry."""
+        d = copy.deepcopy(payload(FUNDING))
+        d['opportunities'][0].update(type='perp-perp', long_venue='Bybit',
+                                     short_venue='Bybit')
+        self.rejects('funding', d, 'position against itself')
+
+    def test_same_venue_spot_perp_is_fine(self):
+        d = copy.deepcopy(payload(FUNDING))
+        d['opportunities'][0].update(long_venue='Binance', short_venue='Binance')
+        self.ok('funding', d)
+
+    def test_unknown_type_rejected(self):
+        d = copy.deepcopy(payload(FUNDING))
+        d['opportunities'][0]['type'] = 'perp-spot'
+        self.rejects('funding', d, "must be 'spot-perp' or 'perp-perp'")
+
+    def test_zero_hold_rejected(self):
+        d = copy.deepcopy(payload(FUNDING))
+        d['opportunities'][0]['min_hold_h'] = 0
+        self.rejects('funding', d, 'at least 1 hour')
+
+    def test_apr_over_one_is_not_a_probability_error(self):
+        """net_apr is a PERCENT and routinely exceeds 100. The [0,1] rule the
+        sports feeds use must not be applied here."""
+        d = copy.deepcopy(payload(FUNDING))
+        d['opportunities'][0]['net_apr'] = 1450.0
+        self.ok('funding', d)
+
+    def test_stringified_number_rejected(self):
+        d = copy.deepcopy(payload(FUNDING))
+        d['opportunities'][0]['net_apr'] = '42.13'
+        self.rejects('funding', d, 'must be a JSON number')
+
+    def test_missing_route_field_rejected(self):
+        d = copy.deepcopy(payload(FUNDING))
+        del d['opportunities'][0]['hits']
+        self.rejects('funding', d, "missing ['hits']")
+
+    def test_stale_generated_at_rejected(self):
+        old = (NOW - timedelta(hours=9)).isoformat()
+        self.rejects('funding', payload(FUNDING, generated_at=old), 'stale payload')
