@@ -1,32 +1,21 @@
 {
-  "generated_at": "2026-09-01T08:06:52Z",
+  "generated_at": "2026-09-01T08:12:41Z",
   "sources": [
-    {
-      "source": "crypto_arb",
-      "label": "Cross-exchange crypto arbitrage",
-      "status": "missing",
-      "as_of": null,
-      "age_hours": null,
-      "count": 0,
-      "caveat": "Fee-adjusted quotes sampled over a short live scan, not executed trades. Ignores withdrawal time, transfer risk and depth beyond the top of book.",
-      "note": "No payload on disk yet -- this source has not run.",
-      "opportunities": []
-    },
     {
       "source": "funding_drift",
       "label": "Perp funding vs realized drift",
       "status": "fresh",
       "as_of": "2026-09-01T07:56:32Z",
-      "age_hours": 0.2,
+      "age_hours": 0.3,
       "count": 15,
-      "caveat": "An observation, NOT a trade recommendation. The repo's own study found this ranking is ~99% price momentum (rank correlation 0.996 with plain return) and that the convergence reading of the funding term is backwards.",
+      "caveat": "An observation, NOT a trade recommendation. This repo's own study found the ranking is ~99% price momentum (rank correlation 0.996 with plain return) and that the convergence reading of the funding term is backwards.",
       "note": null,
       "opportunities": [
         {
           "title": "BTR on HTX",
           "detail": "24h return 108.5%, funding -0.0%",
           "metric_value": 1.085102271808124,
-          "metric_display": "108.5%",
+          "metric_display": "drift 108.5%",
           "link": null,
           "rank": 1,
           "source": "funding_drift"
@@ -35,7 +24,7 @@
           "title": "CYS on Bybit",
           "detail": "24h return -43.4%, funding 0.0%",
           "metric_value": 0.43418,
-          "metric_display": "-43.4%",
+          "metric_display": "drift -43.4%",
           "link": null,
           "rank": 2,
           "source": "funding_drift"
@@ -44,82 +33,165 @@
           "title": "ONG on Bybit",
           "detail": "24h return 11.0%, funding -23.2%, funding-dominant",
           "metric_value": 0.34250312,
-          "metric_display": "34.3%",
+          "metric_display": "drift 34.3%",
           "link": null,
           "rank": 3,
-          "source": "funding_drift"
-        },
-        {
-          "title": "USELESS on OKX",
-          "detail": "24h return 33.9%, funding -0.2%",
-          "metric_value": 0.3408225318741188,
-          "metric_display": "34.1%",
-          "link": null,
-          "rank": 4,
-          "source": "funding_drift"
-        },
-        {
-          "title": "ARB on OKX",
-          "detail": "24h return 31.1%, funding -0.0%",
-          "metric_value": 0.3114473817758636,
-          "metric_display": "31.1%",
-          "link": null,
-          "rank": 5,
-          "source": "funding_drift"
-        },
-        {
-          "title": "0G on Bybit",
-          "detail": "24h return 27.2%, funding -1.8%",
-          "metric_value": 0.29011168000000004,
-          "metric_display": "29.0%",
-          "link": null,
-          "rank": 6,
-          "source": "funding_drift"
-        },
-        {
-          "title": "BLESS on HTX",
-          "detail": "24h return -22.1%, funding 0.2%",
-          "metric_value": 0.22265580462171478,
-          "metric_display": "-22.3%",
-          "link": null,
-          "rank": 7,
-          "source": "funding_drift"
-        },
-        {
-          "title": "\u725b\u6765 on Binance",
-          "detail": "24h return -19.7%, funding 0.2%",
-          "metric_value": 0.19915386000000002,
-          "metric_display": "-19.9%",
-          "link": null,
-          "rank": 8,
           "source": "funding_drift"
         }
       ]
     },
     {
-      "source": "magic_formula",
-      "label": "Magic Formula screen",
+      "source": "funding_rate_arb",
+      "label": "Funding-rate carry",
       "status": "missing",
       "as_of": null,
       "age_hours": null,
       "count": 0,
-      "caveat": "A mechanical rank of a manually pasted universe. Not a recommendation, and the ranking says nothing about whether the business is sound.",
+      "caveat": "Quoted APRs annualize the CURRENT funding rate, which reprices every few hours. They are not a return you can lock in, and they ignore execution, borrow limits and the capital tied up on both legs.",
       "note": "No payload on disk yet -- this source has not run.",
       "opportunities": []
     },
     {
-      "source": "sam_contracts",
+      "source": "magic_formula",
+      "label": "Magic Formula screen",
+      "status": "fresh",
+      "as_of": "2026-09-01T07:56:17Z",
+      "age_hours": 0.3,
+      "count": 10,
+      "caveat": "A mechanical rank of a hand-pasted universe. It says nothing about whether the business is sound, and nothing here is advice. The name list was pasted 139 days ago (2026-04-15); this is a re-rank of a stale universe, not a fresh screen.",
+      "note": null,
+      "opportunities": [
+        {
+          "title": "VSNT - Versant Media Group, Inc.",
+          "detail": "ROC 75.2% | $5.7B | Communication Services",
+          "metric_value": -1.0,
+          "metric_display": "EY 23.0%",
+          "link": null,
+          "rank": 1,
+          "source": "magic_formula"
+        },
+        {
+          "title": "CROX - Crocs, Inc.",
+          "detail": "ROC 110.5% | $5.8B | Consumer Cyclical",
+          "metric_value": -2.0,
+          "metric_display": "EY 11.4%",
+          "link": null,
+          "rank": 2,
+          "source": "magic_formula"
+        },
+        {
+          "title": "GIB - CGI Inc.",
+          "detail": "ROC 309.7% | $15.6B | Technology",
+          "metric_value": -3.0,
+          "metric_display": "EY 10.2%",
+          "link": null,
+          "rank": 3,
+          "source": "magic_formula"
+        }
+      ]
+    },
+    {
+      "source": "real_estate",
+      "label": "Real estate deal screen",
+      "status": "fresh",
+      "as_of": "2026-09-01T08:07:17Z",
+      "age_hours": 0.1,
+      "count": 12,
+      "caveat": "Discounts are against comparable-sale estimates, not appraisals, and the screen has never seen the inside of any of these. Screening output only.",
+      "note": null,
+      "opportunities": [
+        {
+          "title": "2650 W Union Hills Dr Lot 118, Phoenix AZ",
+          "detail": "listed $35.0K vs $201.1K comparable value",
+          "metric_value": 0.826,
+          "metric_display": "83% below comps",
+          "link": "https://www.realtor.com/realestateandhomes-detail/2650-W-Union-Hills-Dr-Lot-118_Phoenix_AZ_85027_M96995-69815",
+          "rank": 1,
+          "source": "real_estate"
+        },
+        {
+          "title": "4213 W Cayuga St, Tampa FL",
+          "detail": "listed $1.2M vs $5.4M comparable value",
+          "metric_value": 0.7791,
+          "metric_display": "78% below comps",
+          "link": "https://www.realtor.com/realestateandhomes-detail/4213-W-Cayuga-St_Tampa_FL_33614_M61586-18825",
+          "rank": 2,
+          "source": "real_estate"
+        },
+        {
+          "title": "6917 Bream St, Tampa FL",
+          "detail": "listed $159.0K vs $376.6K comparable value",
+          "metric_value": 0.5778,
+          "metric_display": "58% below comps",
+          "link": "https://www.realtor.com/realestateandhomes-detail/6917-Bream-St_Tampa_FL_33617_M54082-72710",
+          "rank": 3,
+          "source": "real_estate"
+        }
+      ]
+    },
+    {
+      "source": "contracts",
       "label": "Federal resale lanes",
       "status": "missing",
       "as_of": null,
       "age_hours": null,
       "count": 0,
-      "caveat": "Finding a lane is not winning one. SAM entity registration (UEI) takes weeks and gates every bid, set-asides are hard gates, and the extract carries no line-item quantities -- so none of these carry a computed margin.",
+      "caveat": "Finding a lane is not winning one. SAM entity registration takes weeks and gates every bid, set-asides are hard gates, and the extract carries no line-item quantities -- so none of these carry a computed margin.",
       "note": "No payload on disk yet -- this source has not run.",
+      "opportunities": []
+    },
+    {
+      "source": "stock_signals",
+      "label": "Swing-trade signals",
+      "status": "fresh",
+      "as_of": "2026-09-01T08:12:23Z",
+      "age_hours": 0.0,
+      "count": 12,
+      "caveat": "Rule output on daily bars, not a recommendation. It carries no position sizing or risk limits, and most rows are positions already open rather than fresh buys. Measured on 12 broad and sector ETFs (survivorship-free) 2019-01-01..2025-07-01, this strategy returned 48.3% against 145.6% for simply holding the same universe, at Sharpe 0.46 against 0.80. It beat same-window buy-and-hold in 3 of 17 walk-forward windows. What does hold up is drawdown: -31.6% against -35.8% for the benchmark.",
+      "note": null,
+      "opportunities": [
+        {
+          "title": "ADBE - hold long",
+          "detail": "unrealized 6.5%, held 7d, entered 2026-08-24",
+          "metric_value": 6.125,
+          "metric_display": "6/6 factors",
+          "link": null,
+          "rank": 1,
+          "source": "stock_signals"
+        },
+        {
+          "title": "PFE - hold long",
+          "detail": "unrealized 5.6%, held 20d, entered 2026-08-11",
+          "metric_value": 6.0476190476190474,
+          "metric_display": "6/6 factors",
+          "link": null,
+          "rank": 2,
+          "source": "stock_signals"
+        },
+        {
+          "title": "COP - hold long",
+          "detail": "unrealized 12.3%, held 26d, entered 2026-08-05",
+          "metric_value": 6.037037037037037,
+          "metric_display": "6/6 factors",
+          "link": null,
+          "rank": 3,
+          "source": "stock_signals"
+        }
+      ]
+    },
+    {
+      "source": "polymarket_btc",
+      "label": "Polymarket BTC 5-min binaries",
+      "status": "empty",
+      "as_of": "2026-09-01T08:06:44Z",
+      "age_hours": 0.1,
+      "count": 0,
+      "caveat": "Publishes an observation, not picks. The repo's own backtest on real fills found the market's own price forecasts the settlement BETTER than the model, and that what survives costs is feed latency rather than the pricing model. Simulation only -- the repo has no order-placement path. Latest scan: model Brier 0.1566 vs market 0.1552, so the market is ahead (lower is better). Post-cost returns cross zero at 3.6s of BTC feed staleness, against a 3.75s decision cadence.",
+      "note": "Scan ran and found nothing that cleared the bar.",
       "opportunities": []
     }
   ],
-  "total_opportunities": 8,
-  "fresh_sources": 1,
-  "methodology": "Each source scans on its own schedule and is ranked WITHIN itself. There is deliberately no cross-source score: a crypto arb in basis points, an earnings yield and a contract cadence are not commensurable, and one combined leaderboard over them would be invented. Every section carries its own caveat; read it before the numbers. Nothing here is advice, and none of it is an executed trade."
+  "total_opportunities": 12,
+  "fresh_sources": 5,
+  "methodology": "A digest: the top 3 from each scanner, so one glance shows what is live right now. Each scanner runs on its own schedule and publishes its own full panel; this merges them and runs nothing itself, so a slow source can only make its own row go quiet. Items are ranked WITHIN a source and there is deliberately no cross-source score -- basis points, an earnings yield and a contract cadence are not commensurable, and one leaderboard over them would be invented. Every section carries its own caveat; read it before the numbers. Nothing here is advice, none of it is an executed trade, and a section that has gone stale shows nothing rather than yesterday's numbers."
 }
