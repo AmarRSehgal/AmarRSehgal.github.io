@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Gate a freshly generated predictions payload before it replaces the published one.
 
-Usage: validate_predictions.py {nba|nfl|f1|real_estate} <candidate.json>
+Usage: validate_predictions.py {nba|nfl|f1|real_estate|magicformula} <candidate.json>
 
 Exits non-zero on anything the front end cannot render honestly. The point is that a
 half-broken generator run fails the workflow loudly instead of publishing a file that
@@ -38,6 +38,19 @@ NON_DISCLOSURE_STATES = frozenset({
 # the ratio to 4dp.
 DISCOUNT_TOLERANCE = 0.005
 
+# Earnings yield is a fraction, not a percent, and the two are indistinguishable by
+# type. A realistic EY never leaves this band, so 23.0 (meaning 23%) fails here instead
+# of rendering as 2300% on the page. Return on capital is genuinely unbounded -- a
+# near-zero capital base gives a huge honest number -- so its bound is only a sanity
+# check; the EY band is what actually catches a unit error, and since both ratios come
+# off the same code path, catching one catches the other.
+MAX_EARNINGS_YIELD = 5.0
+MAX_RETURN_ON_CAPITAL = 100.0
+
+# Market cap is in dollars. Quoting it in millions ($5722 for a $5.7B company) renders
+# as "$5.7K" -- plausible-looking and completely wrong.
+MIN_MARKET_CAP = 1e6
+
 # sport -> (required top-level keys, list key, per-item required keys)
 SPECS = {
     'nba': (('generated_at', 'date', 'games'), 'games',
@@ -49,6 +62,10 @@ SPECS = {
     'real_estate': (('generated_at', 'markets', 'deals'), 'deals',
                     ('address', 'city', 'state', 'score', 'list_price',
                      'comp_implied_value', 'discount_vs_comps')),
+    'magicformula': (('generated_at', 'universe_pulled', 'universe_size', 'screened',
+                      'ideas'), 'ideas',
+                     ('ticker', 'name', 'rank', 'earnings_yield', 'return_on_capital',
+                      'market_cap')),
 }
 
 
@@ -329,10 +346,22 @@ def validate(sport, data, now=None):
             raise Invalid(f'{where} missing {item_missing}')
         if sport == 'f1':
             check_f1_entry(where, item)
+        elif sport == 'magicformula':
+            check_idea(where, item)
         elif sport == 'real_estate':
             check_deal(where, item)
         else:
             check_team_game(where, item)
+
+    if sport == 'magicformula':
+        if len(items) > data['screened']:
+            raise Invalid(f'{len(items)} ideas published but only {data["screened"]} '
+                          f'names passed the screen')
+        # A list labelled by rank that is not in rank order renders as a ranking that
+        # is not one, and nothing about the output looks wrong.
+        ranks = [item['rank'] for item in items]
+        if ranks != sorted(ranks):
+            raise Invalid(f'ideas are not in ascending rank order: {ranks}')
 
     return items
 
@@ -340,7 +369,7 @@ def validate(sport, data, now=None):
 def main(argv):
     if len(argv) != 3:
         print('::error::usage: validate_predictions.py '
-              '{nba|nfl|f1|real_estate} <candidate.json>')
+              '{nba|nfl|f1|real_estate|magicformula} <candidate.json>')
         return 1
     sport, path = argv[1], argv[2]
 
