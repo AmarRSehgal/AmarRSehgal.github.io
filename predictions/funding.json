@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T00:00:09.838654+00:00",
+  "generated_at": "2026-09-02T01:00:10.035709+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 2688.95,
-      "net_at_hold": 2.45566,
+      "net_apr": 2508.67,
+      "net_at_hold": 2.29103,
       "cost_bps": 35.1
     },
     {
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 2574.9,
-      "net_at_hold": 2.35151,
-      "cost_bps": 35.06
+      "net_apr": 2462.42,
+      "net_at_hold": 2.24879,
+      "cost_bps": 34.23
     },
     {
       "base": "ONG",
@@ -40,9 +40,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 2382.81,
-      "net_at_hold": 2.17608,
-      "cost_bps": 35.38
+      "net_apr": 2289.86,
+      "net_at_hold": 2.0912,
+      "cost_bps": 35.19
     },
     {
       "base": "SKR",
@@ -53,8 +53,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1972.1,
-      "net_at_hold": 1.80101,
+      "net_apr": 1952.56,
+      "net_at_hold": 1.78316,
       "cost_bps": 29.61
     },
     {
@@ -66,22 +66,9 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 2011.15,
-      "net_at_hold": 1.83667,
+      "net_apr": 2003.27,
+      "net_at_hold": 1.82947,
       "cost_bps": 39.54
-    },
-    {
-      "base": "SKR",
-      "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 23,
-      "scans": 24,
-      "net_apr": 1937.29,
-      "net_at_hold": 1.76922,
-      "cost_bps": 38.24
     },
     {
       "base": "SKR",
@@ -92,9 +79,9 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 1930.02,
-      "net_at_hold": 1.76257,
-      "cost_bps": 42.46
+      "net_apr": 1915.08,
+      "net_at_hold": 1.74893,
+      "cost_bps": 42.0
     },
     {
       "base": "SKR",
@@ -105,9 +92,22 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 1856.26,
-      "net_at_hold": 1.69522,
+      "net_apr": 1850.73,
+      "net_at_hold": 1.69016,
       "cost_bps": 41.54
+    },
+    {
+      "base": "SKR",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 23,
+      "scans": 24,
+      "net_apr": 1823.89,
+      "net_at_hold": 1.66565,
+      "cost_bps": 38.24
     }
   ]
 }
