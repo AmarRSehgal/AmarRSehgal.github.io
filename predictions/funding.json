@@ -1,23 +1,10 @@
 {
-  "generated_at": "2026-09-02T21:00:11.986923+00:00",
+  "generated_at": "2026-09-02T22:00:12.740739+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
-    {
-      "base": "ONG",
-      "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 246.45,
-      "net_at_hold": 0.22507,
-      "cost_bps": 30.63
-    },
     {
       "base": "ONG",
       "type": "perp-perp",
@@ -27,9 +14,22 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 383.2,
-      "net_at_hold": 0.34995,
+      "net_apr": 364.84,
+      "net_at_hold": 0.33319,
       "cost_bps": 31.05
+    },
+    {
+      "base": "ONG",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 23,
+      "scans": 24,
+      "net_apr": 221.17,
+      "net_at_hold": 0.20198,
+      "cost_bps": 30.22
     },
     {
       "base": "GRASS",
@@ -53,8 +53,8 @@
       "min_hold_h": 8,
       "hits": 22,
       "scans": 24,
-      "net_apr": 216.89,
-      "net_at_hold": 0.19807,
+      "net_apr": 198.72,
+      "net_at_hold": 0.18148,
       "cost_bps": 33.07
     },
     {
@@ -68,7 +68,7 @@
       "scans": 24,
       "net_apr": 184.78,
       "net_at_hold": 0.16875,
-      "cost_bps": 61.94
+      "cost_bps": 59.61
     },
     {
       "base": "ACE",
@@ -79,9 +79,9 @@
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 124.65,
-      "net_at_hold": 0.11383,
-      "cost_bps": 59.62
+      "net_apr": 77.68,
+      "net_at_hold": 0.07094,
+      "cost_bps": 59.74
     },
     {
       "base": "SKR",
@@ -92,8 +92,8 @@
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 659.26,
-      "net_at_hold": 0.60207,
+      "net_apr": 695.84,
+      "net_at_hold": 0.63547,
       "cost_bps": 27.45
     }
   ]
