@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T19:00:07.540466+00:00",
+  "generated_at": "2026-09-03T21:00:10.773317+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 203.37,
-      "net_at_hold": 0.18572,
-      "cost_bps": 31.32
+      "net_apr": 239.78,
+      "net_at_hold": 0.21898,
+      "cost_bps": 31.64
     },
     {
       "base": "ACE",
@@ -45,19 +45,6 @@
       "cost_bps": 64.61
     },
     {
-      "base": "SKR",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 22,
-      "scans": 24,
-      "net_apr": 973.68,
-      "net_at_hold": 0.88921,
-      "cost_bps": 26.9
-    },
-    {
       "base": "ACE",
       "type": "perp-perp",
       "long_venue": "Bitget",
@@ -71,6 +58,19 @@
       "cost_bps": 63.67
     },
     {
+      "base": "SKR",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 21,
+      "scans": 24,
+      "net_apr": 826.6,
+      "net_at_hold": 0.75489,
+      "cost_bps": 26.9
+    },
+    {
       "base": "T",
       "type": "perp-perp",
       "long_venue": "KuCoin",
@@ -79,9 +79,9 @@
       "min_hold_h": 4,
       "hits": 20,
       "scans": 24,
-      "net_apr": 900.46,
-      "net_at_hold": 0.41117,
-      "cost_bps": 32.24
+      "net_apr": 825.71,
+      "net_at_hold": 0.37704,
+      "cost_bps": 32.35
     },
     {
       "base": "ACE",
@@ -90,11 +90,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 20,
+      "hits": 19,
       "scans": 24,
-      "net_apr": 148.93,
-      "net_at_hold": 0.13601,
-      "cost_bps": 62.35
+      "net_apr": 162.87,
+      "net_at_hold": 0.14874,
+      "cost_bps": 62.71
     },
     {
       "base": "GRASS",
@@ -103,7 +103,7 @@
       "short_venue": "Crypto.com",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 20,
+      "hits": 19,
       "scans": 24,
       "net_apr": 66.63,
       "net_at_hold": 0.06085,
