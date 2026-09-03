@@ -1,35 +1,22 @@
 {
-  "generated_at": "2026-09-03T17:00:11.662965+00:00",
+  "generated_at": "2026-09-03T18:00:12.197435+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
     {
-      "base": "SKR",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 23,
-      "scans": 24,
-      "net_apr": 1120.76,
-      "net_at_hold": 1.02353,
-      "cost_bps": 26.89
-    },
-    {
-      "base": "ACE",
+      "base": "ONG",
       "type": "perp-perp",
       "long_venue": "Gate",
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 22,
+      "hits": 23,
       "scans": 24,
-      "net_apr": 205.31,
-      "net_at_hold": 0.1875,
-      "cost_bps": 66.17
+      "net_apr": 203.37,
+      "net_at_hold": 0.18572,
+      "cost_bps": 31.32
     },
     {
       "base": "ACE",
@@ -38,24 +25,37 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 22,
+      "hits": 23,
       "scans": 24,
-      "net_apr": 201.6,
-      "net_at_hold": 0.18411,
-      "cost_bps": 63.67
+      "net_apr": 198.72,
+      "net_at_hold": 0.18148,
+      "cost_bps": 63.17
     },
     {
-      "base": "ONG",
+      "base": "ACE",
       "type": "perp-perp",
       "long_venue": "Gate",
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
+      "hits": 23,
+      "scans": 24,
+      "net_apr": 191.73,
+      "net_at_hold": 0.17509,
+      "cost_bps": 64.61
+    },
+    {
+      "base": "SKR",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
       "hits": 22,
       "scans": 24,
-      "net_apr": 187.32,
-      "net_at_hold": 0.17107,
-      "cost_bps": 31.02
+      "net_apr": 1138.0,
+      "net_at_hold": 1.03927,
+      "cost_bps": 26.9
     },
     {
       "base": "ACE",
@@ -71,19 +71,6 @@
       "cost_bps": 63.67
     },
     {
-      "base": "GRASS",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Crypto.com",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 22,
-      "scans": 24,
-      "net_apr": 66.63,
-      "net_at_hold": 0.06085,
-      "cost_bps": 20.3
-    },
-    {
       "base": "T",
       "type": "perp-perp",
       "long_venue": "KuCoin",
@@ -95,6 +82,19 @@
       "net_apr": 955.53,
       "net_at_hold": 0.43632,
       "cost_bps": 32.33
+    },
+    {
+      "base": "GRASS",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Crypto.com",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 21,
+      "scans": 24,
+      "net_apr": 66.63,
+      "net_at_hold": 0.06085,
+      "cost_bps": 20.3
     },
     {
       "base": "ACE",
