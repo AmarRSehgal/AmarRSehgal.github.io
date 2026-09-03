@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T06:07:47.606103+00:00",
+  "generated_at": "2026-09-03T07:00:11.173481+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 22,
       "scans": 24,
-      "net_apr": 228.04,
-      "net_at_hold": 0.20826,
-      "cost_bps": 31.02
+      "net_apr": 212.69,
+      "net_at_hold": 0.19424,
+      "cost_bps": 31.06
     },
     {
       "base": "ONG",
@@ -38,24 +38,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 22,
+      "hits": 21,
       "scans": 24,
-      "net_apr": 166.82,
-      "net_at_hold": 0.15235,
-      "cost_bps": 29.02
-    },
-    {
-      "base": "ONG",
-      "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 22,
-      "scans": 24,
-      "net_apr": 131.21,
-      "net_at_hold": 0.11983,
-      "cost_bps": 32.42
+      "net_apr": 147.85,
+      "net_at_hold": 0.13502,
+      "cost_bps": 29.04
     },
     {
       "base": "ACE",
@@ -68,7 +55,20 @@
       "scans": 24,
       "net_apr": 146.08,
       "net_at_hold": 0.13341,
-      "cost_bps": 61.21
+      "cost_bps": 60.36
+    },
+    {
+      "base": "ONG",
+      "type": "perp-perp",
+      "long_venue": "Binance",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 21,
+      "scans": 24,
+      "net_apr": 129.8,
+      "net_at_hold": 0.11854,
+      "cost_bps": 32.4
     },
     {
       "base": "ACE",
@@ -79,9 +79,9 @@
       "min_hold_h": 8,
       "hits": 21,
       "scans": 24,
-      "net_apr": 68.23,
-      "net_at_hold": 0.06231,
-      "cost_bps": 61.21
+      "net_apr": 87.14,
+      "net_at_hold": 0.07958,
+      "cost_bps": 60.36
     },
     {
       "base": "T",
@@ -94,7 +94,7 @@
       "scans": 24,
       "net_apr": 2944.85,
       "net_at_hold": 1.34468,
-      "cost_bps": 33.43
+      "cost_bps": 32.33
     },
     {
       "base": "SKR",
