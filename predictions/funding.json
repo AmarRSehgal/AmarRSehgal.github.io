@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T10:00:12.113989+00:00",
+  "generated_at": "2026-09-04T11:00:12.051655+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 777.9,
-      "net_at_hold": 0.71041,
-      "cost_bps": 30.68
+      "net_apr": 796.27,
+      "net_at_hold": 0.72719,
+      "cost_bps": 31.43
     },
     {
       "base": "ACE",
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 158.0,
-      "net_at_hold": 0.14429,
-      "cost_bps": 52.52
+      "net_apr": 152.07,
+      "net_at_hold": 0.13888,
+      "cost_bps": 51.78
     },
     {
       "base": "ONG",
@@ -38,11 +38,24 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
+      "hits": 21,
+      "scans": 24,
+      "net_apr": 975.34,
+      "net_at_hold": 0.89073,
+      "cost_bps": 33.15
+    },
+    {
+      "base": "ONG",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 976.17,
-      "net_at_hold": 0.89148,
-      "cost_bps": 33.09
+      "net_apr": 893.24,
+      "net_at_hold": 0.81574,
+      "cost_bps": 30.8
     },
     {
       "base": "ACE",
@@ -55,20 +68,7 @@
       "scans": 24,
       "net_apr": 127.88,
       "net_at_hold": 0.11678,
-      "cost_bps": 52.57
-    },
-    {
-      "base": "ONG",
-      "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 19,
-      "scans": 24,
-      "net_apr": 900.6,
-      "net_at_hold": 0.82247,
-      "cost_bps": 30.18
+      "cost_bps": 52.09
     },
     {
       "base": "SKR",
@@ -79,8 +79,8 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 295.79,
-      "net_at_hold": 0.27013,
+      "net_apr": 355.92,
+      "net_at_hold": 0.32504,
       "cost_bps": 20.5
     },
     {
@@ -92,9 +92,9 @@
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 83.26,
-      "net_at_hold": 0.07604,
-      "cost_bps": 57.01
+      "net_apr": 70.61,
+      "net_at_hold": 0.06448,
+      "cost_bps": 54.61
     }
   ]
 }
