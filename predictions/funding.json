@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T11:00:12.051655+00:00",
+  "generated_at": "2026-09-04T12:00:12.470537+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -16,7 +16,7 @@
       "scans": 24,
       "net_apr": 796.27,
       "net_at_hold": 0.72719,
-      "cost_bps": 31.43
+      "cost_bps": 31.8
     },
     {
       "base": "ACE",
@@ -27,8 +27,8 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 152.07,
-      "net_at_hold": 0.13888,
+      "net_apr": 150.73,
+      "net_at_hold": 0.13765,
       "cost_bps": 51.78
     },
     {
@@ -38,11 +38,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 21,
+      "hits": 22,
       "scans": 24,
-      "net_apr": 975.34,
-      "net_at_hold": 0.89073,
-      "cost_bps": 33.15
+      "net_apr": 942.49,
+      "net_at_hold": 0.86072,
+      "cost_bps": 33.09
     },
     {
       "base": "ONG",
@@ -51,11 +51,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 20,
+      "hits": 21,
       "scans": 24,
-      "net_apr": 893.24,
-      "net_at_hold": 0.81574,
-      "cost_bps": 30.8
+      "net_apr": 885.87,
+      "net_at_hold": 0.80902,
+      "cost_bps": 30.18
     },
     {
       "base": "ACE",
@@ -64,11 +64,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 20,
+      "hits": 19,
       "scans": 24,
-      "net_apr": 127.88,
-      "net_at_hold": 0.11678,
-      "cost_bps": 52.09
+      "net_apr": 109.83,
+      "net_at_hold": 0.1003,
+      "cost_bps": 52.24
     },
     {
       "base": "SKR",
@@ -77,24 +77,24 @@
       "short_venue": "Crypto.com",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 19,
+      "hits": 18,
       "scans": 24,
-      "net_apr": 355.92,
-      "net_at_hold": 0.32504,
+      "net_apr": 364.15,
+      "net_at_hold": 0.33256,
       "cost_bps": 20.5
     },
     {
-      "base": "ACE",
+      "base": "LA",
       "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Aster",
+      "long_venue": "Gate",
+      "short_venue": "GRVT",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 70.61,
-      "net_at_hold": 0.06448,
-      "cost_bps": 54.61
+      "net_apr": 149.8,
+      "net_at_hold": 0.1368,
+      "cost_bps": 42.06
     }
   ]
 }
