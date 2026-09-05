@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T11:50:39.758549+00:00",
+  "generated_at": "2026-09-05T13:01:06.505874+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 586.69,
-      "net_at_hold": 0.53579,
-      "cost_bps": 32.04
+      "net_apr": 565.48,
+      "net_at_hold": 0.51642,
+      "cost_bps": 32.62
     },
     {
       "base": "ONG",
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 447.86,
-      "net_at_hold": 0.409,
-      "cost_bps": 31.58
+      "net_apr": 437.16,
+      "net_at_hold": 0.39924,
+      "cost_bps": 32.1
     },
     {
       "base": "NIGHT",
@@ -55,33 +55,7 @@
       "scans": 24,
       "net_apr": 1631.1,
       "net_at_hold": 1.48959,
-      "cost_bps": 53.97
-    },
-    {
-      "base": "ONG",
-      "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 21,
-      "scans": 24,
-      "net_apr": 565.65,
-      "net_at_hold": 0.51658,
-      "cost_bps": 33.38
-    },
-    {
-      "base": "FOLKS",
-      "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "Lighter",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 21,
-      "scans": 24,
-      "net_apr": 76.0,
-      "net_at_hold": 0.06941,
-      "cost_bps": 20.0
+      "cost_bps": 53.89
     },
     {
       "base": "NIGHT",
@@ -108,6 +82,32 @@
       "net_apr": 1447.0,
       "net_at_hold": 0.66073,
       "cost_bps": 36.44
+    },
+    {
+      "base": "ONG",
+      "type": "perp-perp",
+      "long_venue": "Binance",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 20,
+      "scans": 24,
+      "net_apr": 528.1,
+      "net_at_hold": 0.48228,
+      "cost_bps": 33.84
+    },
+    {
+      "base": "FOLKS",
+      "type": "perp-perp",
+      "long_venue": "Binance",
+      "short_venue": "Lighter",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 20,
+      "scans": 24,
+      "net_apr": 76.03,
+      "net_at_hold": 0.06943,
+      "cost_bps": 20.0
     }
   ]
 }
