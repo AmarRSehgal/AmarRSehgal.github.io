@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T22:09:12.387178+00:00",
+  "generated_at": "2026-09-05T23:10:11.050519+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -38,11 +38,11 @@
       "short_venue": "Coinbase",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 19,
+      "hits": 18,
       "scans": 24,
-      "net_apr": 2005.28,
-      "net_at_hold": 1.83131,
-      "cost_bps": 35.71
+      "net_apr": 1654.83,
+      "net_at_hold": 1.51126,
+      "cost_bps": 35.69
     },
     {
       "base": "NIGHT",
@@ -51,24 +51,11 @@
       "short_venue": "Coinbase",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 19,
+      "hits": 18,
       "scans": 24,
-      "net_apr": 1808.6,
-      "net_at_hold": 1.65169,
-      "cost_bps": 53.44
-    },
-    {
-      "base": "NIGHT",
-      "type": "perp-perp",
-      "long_venue": "KuCoin",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 19,
-      "scans": 24,
-      "net_apr": 1564.1,
-      "net_at_hold": 0.7142,
-      "cost_bps": 38.0
+      "net_apr": 1459.67,
+      "net_at_hold": 1.33303,
+      "cost_bps": 51.67
     },
     {
       "base": "NIGHT",
@@ -77,24 +64,24 @@
       "short_venue": "Coinbase",
       "long_instrument": "perp",
       "min_hold_h": 4,
-      "hits": 19,
+      "hits": 18,
       "scans": 24,
-      "net_apr": 1552.42,
-      "net_at_hold": 0.70887,
-      "cost_bps": 38.09
+      "net_apr": 1237.72,
+      "net_at_hold": 0.56517,
+      "cost_bps": 38.05
     },
     {
       "base": "NIGHT",
       "type": "perp-perp",
-      "long_venue": "Bitget",
+      "long_venue": "KuCoin",
       "short_venue": "Coinbase",
       "long_instrument": "perp",
       "min_hold_h": 4,
       "hits": 18,
       "scans": 24,
-      "net_apr": 1325.97,
-      "net_at_hold": 0.60546,
-      "cost_bps": 47.06
+      "net_apr": 1213.26,
+      "net_at_hold": 0.554,
+      "cost_bps": 38.0
     }
   ]
 }
