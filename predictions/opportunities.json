@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-05T17:04:04Z",
+  "generated_at": "2026-09-05T23:10:05Z",
   "sources": [
     {
       "source": "ad_capital",
       "label": "AD Capital universe scan",
       "status": "stale",
       "as_of": "2026-09-01T08:19:12Z",
-      "age_hours": 104.7,
+      "age_hours": 110.8,
       "count": 0,
       "caveat": "A mechanical factor scan of a 374-name universe, not a recommendation. The stop and target are volatility-sized bands, not predictions, and nothing here has had a fundamental read. The paper book running this signal is 2.97pp behind SPY since 2026-04-13 (8.83% vs 11.8%).",
-      "note": "Last scan was 105h ago, past this source's 96h budget. Showing nothing rather than passing it off as current.",
+      "note": "Last scan was 111h ago, past this source's 96h budget. Showing nothing rather than passing it off as current.",
       "opportunities": []
     },
     {
@@ -17,7 +17,7 @@
       "label": "Perp funding vs realized drift",
       "status": "fresh",
       "as_of": "2026-09-04T15:15:08Z",
-      "age_hours": 25.8,
+      "age_hours": 31.9,
       "count": 15,
       "caveat": "An observation, NOT a trade recommendation. This repo's own study found the ranking is ~99% price momentum (rank correlation 0.996 with plain return) and that the convergence reading of the funding term is backwards.",
       "note": null,
@@ -55,7 +55,7 @@
       "source": "funding_rate_arb",
       "label": "Funding-rate carry",
       "status": "fresh",
-      "as_of": "2026-09-05T16:03:10Z",
+      "as_of": "2026-09-05T22:09:12Z",
       "age_hours": 1.0,
       "count": 7,
       "caveat": "Quoted APRs annualize the CURRENT funding rate, which reprices every few hours. They are not a return you can lock in, and they ignore execution, borrow limits and the capital tied up on both legs.",
@@ -64,8 +64,8 @@
         {
           "title": "?  ? / ?",
           "detail": "",
-          "metric_value": 1824.34,
-          "metric_display": "182434.0% net APR",
+          "metric_value": 2005.28,
+          "metric_display": "200528.0% net APR",
           "link": null,
           "rank": 1,
           "source": "funding_rate_arb"
@@ -73,8 +73,8 @@
         {
           "title": "?  ? / ?",
           "detail": "",
-          "metric_value": 1629.32,
-          "metric_display": "162932.0% net APR",
+          "metric_value": 1808.6,
+          "metric_display": "180860.0% net APR",
           "link": null,
           "rank": 2,
           "source": "funding_rate_arb"
@@ -82,8 +82,8 @@
         {
           "title": "?  ? / ?",
           "detail": "",
-          "metric_value": 1382.77,
-          "metric_display": "138277.0% net APR",
+          "metric_value": 1564.1,
+          "metric_display": "156410.0% net APR",
           "link": null,
           "rank": 3,
           "source": "funding_rate_arb"
@@ -95,7 +95,7 @@
       "label": "Magic Formula screen",
       "status": "fresh",
       "as_of": "2026-09-01T08:13:48Z",
-      "age_hours": 104.8,
+      "age_hours": 110.9,
       "count": 10,
       "caveat": "A mechanical rank of a hand-pasted universe. It says nothing about whether the business is sound, and nothing here is advice. The name list was pasted 143 days ago (2026-04-15); this is a re-rank of a stale universe, not a fresh screen.",
       "note": null,
@@ -134,7 +134,7 @@
       "label": "Real estate deal screen",
       "status": "fresh",
       "as_of": "2026-09-01T08:07:17Z",
-      "age_hours": 104.9,
+      "age_hours": 111.0,
       "count": 12,
       "caveat": "Discounts are against comparable-sale estimates, not appraisals, and the screen has never seen the inside of any of these. Screening output only.",
       "note": null,
@@ -173,44 +173,44 @@
       "label": "Federal resale lanes",
       "status": "stale",
       "as_of": "2026-09-01T08:17:29Z",
-      "age_hours": 104.8,
+      "age_hours": 110.9,
       "count": 0,
       "caveat": "Finding a lane is not winning one. SAM entity registration takes weeks and gates every bid, set-asides are hard gates, and the extract carries no line-item quantities -- so none of these carry a computed margin.",
-      "note": "Last scan was 105h ago, past this source's 48h budget. Showing nothing rather than passing it off as current.",
+      "note": "Last scan was 111h ago, past this source's 48h budget. Showing nothing rather than passing it off as current.",
       "opportunities": []
     },
     {
       "source": "stock_signals",
       "label": "Swing-trade signals",
       "status": "fresh",
-      "as_of": "2026-09-04T21:00:08Z",
-      "age_hours": 20.1,
+      "as_of": "2026-09-05T21:08:19Z",
+      "age_hours": 2.0,
       "count": 12,
       "caveat": "Rule output on daily bars, not a recommendation. It carries no position sizing or risk limits, and most rows are positions already open rather than fresh buys. Measured on 12 broad and sector ETFs (survivorship-free) 2019-01-01..2025-07-01, this strategy returned 48.3% against 145.6% for simply holding the same universe, at Sharpe 0.46 against 0.80. It beat same-window buy-and-hold in 3 of 17 walk-forward windows. What does hold up is drawdown: -31.6% against -35.8% for the benchmark.",
       "note": null,
       "opportunities": [
         {
-          "title": "DIS - hold long",
-          "detail": "unrealized -3.0%, held 9d, entered 2026-08-25",
-          "metric_value": 5.1,
-          "metric_display": "5/6 factors",
+          "title": "GILD - hold long",
+          "detail": "unrealized 16.1%, held 36d, entered 2026-07-30",
+          "metric_value": 6.027027027027027,
+          "metric_display": "6/6 factors",
           "link": null,
           "rank": 1,
           "source": "stock_signals"
         },
         {
-          "title": "ADBE - hold long",
-          "detail": "unrealized 3.9%, held 10d, entered 2026-08-24",
-          "metric_value": 5.090909090909091,
-          "metric_display": "5/6 factors",
+          "title": "MDT - hold long",
+          "detail": "unrealized 20.0%, held 74d, entered 2026-06-22",
+          "metric_value": 6.013333333333334,
+          "metric_display": "6/6 factors",
           "link": null,
           "rank": 2,
           "source": "stock_signals"
         },
         {
-          "title": "PFE - hold long",
-          "detail": "unrealized 6.9%, held 23d, entered 2026-08-11",
-          "metric_value": 5.041666666666667,
+          "title": "DIS - hold long",
+          "detail": "unrealized -4.7%, held 10d, entered 2026-08-25",
+          "metric_value": 5.090909090909091,
           "metric_display": "5/6 factors",
           "link": null,
           "rank": 3,
@@ -223,7 +223,7 @@
       "label": "Severe weather risk",
       "status": "fresh",
       "as_of": "2026-09-05T14:09:58Z",
-      "age_hours": 2.9,
+      "age_hours": 9.0,
       "count": 10,
       "caveat": "Not a weather warning -- use the National Weather Service for those. The score is how much current conditions resemble the run-up to a severe event, not a probability that one occurs.",
       "note": null,
@@ -260,16 +260,16 @@
     {
       "source": "polymarket_btc",
       "label": "Polymarket BTC 5-min binaries",
-      "status": "empty",
+      "status": "stale",
       "as_of": "2026-09-04T14:46:52Z",
-      "age_hours": 26.3,
+      "age_hours": 32.4,
       "count": 0,
       "caveat": "Publishes an observation, not picks. The repo's own backtest on real fills found the market's own price forecasts the settlement BETTER than the model, and that what survives costs is feed latency rather than the pricing model. Simulation only -- the repo has no order-placement path. Latest scan: model Brier 0.153 vs market 0.1503, so the market is ahead (lower is better).",
-      "note": "Scan ran and found nothing that cleared the bar.",
+      "note": "Last scan was 32h ago, past this source's 30h budget. Showing nothing rather than passing it off as current.",
       "opportunities": []
     }
   ],
   "total_opportunities": 18,
-  "fresh_sources": 7,
+  "fresh_sources": 6,
   "methodology": "A digest: the top 3 from each scanner, so one glance shows what is live right now. Each scanner runs on its own schedule and publishes its own full panel; this merges them and runs nothing itself, so a slow source can only make its own row go quiet. Items are ranked WITHIN a source and there is deliberately no cross-source score -- basis points, an earnings yield and a contract cadence are not commensurable, and one leaderboard over them would be invented. Every section carries its own caveat; read it before the numbers. Nothing here is advice, none of it is an executed trade, and a section that has gone stale shows nothing rather than yesterday's numbers."
 }
