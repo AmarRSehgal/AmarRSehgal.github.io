@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T06:00:06.925173+00:00",
+  "generated_at": "2026-09-06T07:00:07.492583+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 239.4,
-      "net_at_hold": 0.21863,
-      "cost_bps": 31.74
+      "net_apr": 221.5,
+      "net_at_hold": 0.20228,
+      "cost_bps": 32.23
     },
     {
       "base": "SOPH",
@@ -25,11 +25,24 @@
       "short_venue": "Crypto.com",
       "long_instrument": "perp",
       "min_hold_h": 8,
+      "hits": 22,
+      "scans": 24,
+      "net_apr": 279.29,
+      "net_at_hold": 0.25505,
+      "cost_bps": 39.24
+    },
+    {
+      "base": "CAP",
+      "type": "perp-perp",
+      "long_venue": "OKX",
+      "short_venue": "Lighter",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
       "hits": 21,
       "scans": 24,
-      "net_apr": 279.24,
-      "net_at_hold": 0.25502,
-      "cost_bps": 37.15
+      "net_apr": 117.44,
+      "net_at_hold": 0.10725,
+      "cost_bps": 17.28
     },
     {
       "base": "ONG",
@@ -40,22 +53,35 @@
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 181.44,
-      "net_at_hold": 0.1657,
-      "cost_bps": 31.09
+      "net_apr": 179.81,
+      "net_at_hold": 0.16421,
+      "cost_bps": 31.63
     },
     {
       "base": "CAP",
       "type": "perp-perp",
-      "long_venue": "OKX",
+      "long_venue": "Bitget",
       "short_venue": "Lighter",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 116.05,
-      "net_at_hold": 0.10598,
-      "cost_bps": 17.28
+      "net_apr": 64.28,
+      "net_at_hold": 0.0587,
+      "cost_bps": 20.63
+    },
+    {
+      "base": "ZK",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Crypto.com",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 19,
+      "scans": 24,
+      "net_apr": 154.82,
+      "net_at_hold": 0.14138,
+      "cost_bps": 29.92
     },
     {
       "base": "PONS",
@@ -82,32 +108,6 @@
       "net_apr": 106.59,
       "net_at_hold": 0.09735,
       "cost_bps": 20.45
-    },
-    {
-      "base": "CAP",
-      "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Lighter",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 19,
-      "scans": 24,
-      "net_apr": 67.41,
-      "net_at_hold": 0.06156,
-      "cost_bps": 19.6
-    },
-    {
-      "base": "ZK",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Crypto.com",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 154.76,
-      "net_at_hold": 0.14133,
-      "cost_bps": 29.97
     }
   ]
 }
