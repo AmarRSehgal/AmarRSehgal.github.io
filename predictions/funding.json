@@ -1,23 +1,10 @@
 {
-  "generated_at": "2026-09-06T11:00:09.519822+00:00",
+  "generated_at": "2026-09-06T12:00:09.441098+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
-    {
-      "base": "ONG",
-      "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 23,
-      "scans": 24,
-      "net_apr": 221.39,
-      "net_at_hold": 0.20218,
-      "cost_bps": 31.81
-    },
     {
       "base": "SOPH",
       "type": "perp-perp",
@@ -25,24 +12,24 @@
       "short_venue": "Crypto.com",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 22,
+      "hits": 23,
       "scans": 24,
-      "net_apr": 305.65,
-      "net_at_hold": 0.27913,
-      "cost_bps": 42.75
+      "net_apr": 319.92,
+      "net_at_hold": 0.29216,
+      "cost_bps": 41.93
     },
     {
-      "base": "CAP",
+      "base": "ONG",
       "type": "perp-perp",
-      "long_venue": "OKX",
-      "short_venue": "Lighter",
+      "long_venue": "Gate",
+      "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 21,
+      "hits": 22,
       "scans": 24,
-      "net_apr": 113.36,
-      "net_at_hold": 0.10352,
-      "cost_bps": 17.27
+      "net_apr": 221.5,
+      "net_at_hold": 0.20228,
+      "cost_bps": 31.74
     },
     {
       "base": "ZK",
@@ -53,9 +40,22 @@
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 154.76,
-      "net_at_hold": 0.14133,
-      "cost_bps": 29.84
+      "net_apr": 154.48,
+      "net_at_hold": 0.14108,
+      "cost_bps": 29.82
+    },
+    {
+      "base": "CAP",
+      "type": "perp-perp",
+      "long_venue": "OKX",
+      "short_venue": "Lighter",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 20,
+      "scans": 24,
+      "net_apr": 115.4,
+      "net_at_hold": 0.10539,
+      "cost_bps": 17.27
     },
     {
       "base": "CAP",
@@ -64,24 +64,50 @@
       "short_venue": "Lighter",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 20,
+      "hits": 19,
       "scans": 24,
-      "net_apr": 63.24,
-      "net_at_hold": 0.05776,
+      "net_apr": 62.9,
+      "net_at_hold": 0.05744,
       "cost_bps": 20.23
     },
     {
-      "base": "CAP",
+      "base": "NIGHT",
       "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Lighter",
+      "long_venue": "Coinbase",
+      "short_venue": "Gate",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 19,
+      "hits": 18,
       "scans": 24,
-      "net_apr": 67.41,
-      "net_at_hold": 0.06156,
-      "cost_bps": 19.59
+      "net_apr": 1887.6,
+      "net_at_hold": 1.72384,
+      "cost_bps": 35.47
+    },
+    {
+      "base": "NIGHT",
+      "type": "perp-perp",
+      "long_venue": "Coinbase",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 1704.94,
+      "net_at_hold": 1.55702,
+      "cost_bps": 51.12
+    },
+    {
+      "base": "NIGHT",
+      "type": "perp-perp",
+      "long_venue": "Coinbase",
+      "short_venue": "OKX",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 1496.29,
+      "net_at_hold": 0.68324,
+      "cost_bps": 35.71
     }
   ]
 }
