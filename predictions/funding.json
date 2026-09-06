@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T07:00:07.492583+00:00",
+  "generated_at": "2026-09-06T08:00:11.487940+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 221.5,
-      "net_at_hold": 0.20228,
-      "cost_bps": 32.23
+      "net_apr": 207.22,
+      "net_at_hold": 0.18924,
+      "cost_bps": 31.74
     },
     {
       "base": "SOPH",
@@ -27,8 +27,8 @@
       "min_hold_h": 8,
       "hits": 22,
       "scans": 24,
-      "net_apr": 279.29,
-      "net_at_hold": 0.25505,
+      "net_apr": 279.5,
+      "net_at_hold": 0.25525,
       "cost_bps": 39.24
     },
     {
@@ -40,9 +40,9 @@
       "min_hold_h": 8,
       "hits": 21,
       "scans": 24,
-      "net_apr": 117.44,
-      "net_at_hold": 0.10725,
-      "cost_bps": 17.28
+      "net_apr": 114.65,
+      "net_at_hold": 0.10471,
+      "cost_bps": 17.27
     },
     {
       "base": "ONG",
@@ -53,9 +53,22 @@
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 179.81,
-      "net_at_hold": 0.16421,
+      "net_apr": 177.05,
+      "net_at_hold": 0.16169,
       "cost_bps": 31.63
+    },
+    {
+      "base": "ZK",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Crypto.com",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 20,
+      "scans": 24,
+      "net_apr": 154.76,
+      "net_at_hold": 0.14133,
+      "cost_bps": 29.9
     },
     {
       "base": "CAP",
@@ -68,20 +81,7 @@
       "scans": 24,
       "net_apr": 64.28,
       "net_at_hold": 0.0587,
-      "cost_bps": 20.63
-    },
-    {
-      "base": "ZK",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Crypto.com",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 19,
-      "scans": 24,
-      "net_apr": 154.82,
-      "net_at_hold": 0.14138,
-      "cost_bps": 29.92
+      "cost_bps": 19.6
     },
     {
       "base": "PONS",
@@ -97,17 +97,17 @@
       "cost_bps": 19.41
     },
     {
-      "base": "SKR",
+      "base": "CAP",
       "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Crypto.com",
+      "long_venue": "Crypto.com",
+      "short_venue": "Lighter",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 106.59,
-      "net_at_hold": 0.09735,
-      "cost_bps": 20.45
+      "net_apr": 63.59,
+      "net_at_hold": 0.05808,
+      "cost_bps": 20.23
     }
   ]
 }
