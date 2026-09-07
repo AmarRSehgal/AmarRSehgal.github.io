@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T23:00:10.279507+00:00",
+  "generated_at": "2026-09-07T00:00:09.847729+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 440.78,
-      "net_at_hold": 0.40254,
+      "net_apr": 440.62,
+      "net_at_hold": 0.40239,
       "cost_bps": 32.15
     },
     {
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 52.58,
-      "net_at_hold": 0.04802,
-      "cost_bps": 29.17
+      "net_apr": 51.42,
+      "net_at_hold": 0.04696,
+      "cost_bps": 29.14
     },
     {
       "base": "ONG",
@@ -45,17 +45,30 @@
       "cost_bps": 33.34
     },
     {
-      "base": "SOPH",
+      "base": "ONG",
       "type": "perp-perp",
-      "long_venue": "KuCoin",
-      "short_venue": "Crypto.com",
+      "long_venue": "Binance",
+      "short_venue": "Aster",
       "long_instrument": "perp",
-      "min_hold_h": 4,
+      "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 75.66,
-      "net_at_hold": 0.03455,
-      "cost_bps": 34.39
+      "net_apr": 215.12,
+      "net_at_hold": 0.19646,
+      "cost_bps": 33.61
+    },
+    {
+      "base": "ACE",
+      "type": "perp-perp",
+      "long_venue": "Binance",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 20,
+      "scans": 24,
+      "net_apr": 95.77,
+      "net_at_hold": 0.08746,
+      "cost_bps": 43.92
     },
     {
       "base": "NIGHT",
@@ -66,8 +79,8 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 1875.7,
-      "net_at_hold": 1.71297,
+      "net_apr": 1639.52,
+      "net_at_hold": 1.49728,
       "cost_bps": 35.45
     },
     {
@@ -84,30 +97,17 @@
       "cost_bps": 36.18
     },
     {
-      "base": "ONG",
+      "base": "STORJ",
       "type": "perp-perp",
-      "long_venue": "Binance",
+      "long_venue": "Bybit",
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 210.87,
-      "net_at_hold": 0.19258,
-      "cost_bps": 33.69
-    },
-    {
-      "base": "SOPH",
-      "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "Crypto.com",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 19,
-      "scans": 24,
-      "net_apr": 119.33,
-      "net_at_hold": 0.05449,
-      "cost_bps": 32.39
+      "net_apr": 306.92,
+      "net_at_hold": 0.28029,
+      "cost_bps": 32.63
     }
   ]
 }
