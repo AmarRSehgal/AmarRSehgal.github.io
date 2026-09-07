@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T02:00:10.757083+00:00",
+  "generated_at": "2026-09-07T03:00:09.632166+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 42.54,
-      "net_at_hold": 0.03885,
-      "cost_bps": 29.13
+      "net_apr": 35.42,
+      "net_at_hold": 0.03235,
+      "cost_bps": 29.11
     },
     {
       "base": "SOPH",
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 436.16,
-      "net_at_hold": 0.39832,
-      "cost_bps": 32.13
+      "net_apr": 359.44,
+      "net_at_hold": 0.32825,
+      "cost_bps": 29.85
     },
     {
       "base": "ONG",
@@ -40,8 +40,8 @@
       "min_hold_h": 8,
       "hits": 22,
       "scans": 24,
-      "net_apr": 198.83,
-      "net_at_hold": 0.18158,
+      "net_apr": 213.71,
+      "net_at_hold": 0.19517,
       "cost_bps": 32.92
     },
     {
@@ -53,22 +53,9 @@
       "min_hold_h": 8,
       "hits": 21,
       "scans": 24,
-      "net_apr": 423.41,
-      "net_at_hold": 0.38668,
-      "cost_bps": 36.6
-    },
-    {
-      "base": "ONG",
-      "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 20,
-      "scans": 24,
-      "net_apr": 215.12,
-      "net_at_hold": 0.19646,
-      "cost_bps": 34.12
+      "net_apr": 379.48,
+      "net_at_hold": 0.34656,
+      "cost_bps": 36.61
     },
     {
       "base": "ACE",
@@ -94,7 +81,20 @@
       "scans": 24,
       "net_apr": 1170.03,
       "net_at_hold": 1.06852,
-      "cost_bps": 35.45
+      "cost_bps": 35.46
+    },
+    {
+      "base": "ONG",
+      "type": "perp-perp",
+      "long_venue": "Binance",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 19,
+      "scans": 24,
+      "net_apr": 219.37,
+      "net_at_hold": 0.20033,
+      "cost_bps": 34.55
     },
     {
       "base": "STORJ",
@@ -103,11 +103,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 19,
+      "hits": 18,
       "scans": 24,
-      "net_apr": 321.92,
-      "net_at_hold": 0.29399,
-      "cost_bps": 32.64
+      "net_apr": 321.16,
+      "net_at_hold": 0.2933,
+      "cost_bps": 32.63
     }
   ]
 }
