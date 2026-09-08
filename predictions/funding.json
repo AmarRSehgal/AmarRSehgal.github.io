@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T19:00:10.444525+00:00",
+  "generated_at": "2026-09-08T20:00:12.216401+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -16,7 +16,7 @@
       "scans": 24,
       "net_apr": 263.47,
       "net_at_hold": 0.24061,
-      "cost_bps": 33.09
+      "cost_bps": 32.62
     },
     {
       "base": "ONG",
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 258.43,
-      "net_at_hold": 0.23601,
-      "cost_bps": 31.97
+      "net_apr": 265.45,
+      "net_at_hold": 0.24242,
+      "cost_bps": 31.67
     },
     {
       "base": "ONG",
@@ -42,7 +42,7 @@
       "scans": 24,
       "net_apr": 251.5,
       "net_at_hold": 0.22968,
-      "cost_bps": 30.86
+      "cost_bps": 30.71
     },
     {
       "base": "ONG",
@@ -56,6 +56,32 @@
       "net_apr": 727.81,
       "net_at_hold": 0.66466,
       "cost_bps": 33.98
+    },
+    {
+      "base": "SKR",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Crypto.com",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 188.4,
+      "net_at_hold": 0.17206,
+      "cost_bps": 20.46
+    },
+    {
+      "base": "MORPHO",
+      "type": "perp-perp",
+      "long_venue": "Crypto.com",
+      "short_venue": "Lighter",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 94.08,
+      "net_at_hold": 0.08592,
+      "cost_bps": 20.41
     }
   ]
 }
