@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T09:00:11.245444+00:00",
+  "generated_at": "2026-09-09T10:00:09.896038+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -16,7 +16,7 @@
       "scans": 24,
       "net_apr": 255.97,
       "net_at_hold": 0.23376,
-      "cost_bps": 32.4
+      "cost_bps": 32.41
     },
     {
       "base": "BZ",
@@ -25,11 +25,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 20,
+      "hits": 19,
       "scans": 24,
-      "net_apr": 85.91,
-      "net_at_hold": 0.07845,
-      "cost_bps": 39.4
+      "net_apr": 82.47,
+      "net_at_hold": 0.07531,
+      "cost_bps": 39.51
     },
     {
       "base": "ONG",
@@ -38,11 +38,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 19,
+      "hits": 18,
       "scans": 24,
-      "net_apr": 240.79,
-      "net_at_hold": 0.2199,
-      "cost_bps": 33.69
+      "net_apr": 259.89,
+      "net_at_hold": 0.23734,
+      "cost_bps": 33.66
     },
     {
       "base": "BZ",
@@ -51,24 +51,11 @@
       "short_venue": "GRVT",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 19,
-      "scans": 24,
-      "net_apr": 63.86,
-      "net_at_hold": 0.05832,
-      "cost_bps": 38.16
-    },
-    {
-      "base": "WAVES",
-      "type": "perp-perp",
-      "long_venue": "KuCoin",
-      "short_venue": "Binance",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 1513.78,
-      "net_at_hold": 1.38245,
-      "cost_bps": 32.0
+      "net_apr": 62.71,
+      "net_at_hold": 0.05727,
+      "cost_bps": 38.31
     }
   ]
 }
