@@ -1,428 +1,275 @@
 {
-  "generated_at": "2026-09-09T14:32:56.213275+00:00",
+  "generated_at": "2026-09-09T16:30:05Z",
   "sources": [
     {
-      "source": "crypto_carry",
-      "label": "Crypto carry",
-      "caveat": "Net APR after taker fees on both legs, before slippage, borrow and the risk that funding flips while the position is on. Routes are only published once they persist across scans.",
-      "opportunities": [
-        {
-          "title": "? - ? / ?",
-          "detail": "22 scans confirming, funding every ?h",
-          "metric_value": 1130.97,
-          "metric_display": "113097.0% net APR"
-        },
-        {
-          "title": "? - ? / ?",
-          "detail": "21 scans confirming, funding every ?h",
-          "metric_value": 1170.67,
-          "metric_display": "117067.0% net APR"
-        },
-        {
-          "title": "? - ? / ?",
-          "detail": "20 scans confirming, funding every ?h",
-          "metric_value": 1148.61,
-          "metric_display": "114861.0% net APR"
-        },
-        {
-          "title": "? - ? / ?",
-          "detail": "20 scans confirming, funding every ?h",
-          "metric_value": 951.74,
-          "metric_display": "95174.0% net APR"
-        },
-        {
-          "title": "? - ? / ?",
-          "detail": "20 scans confirming, funding every ?h",
-          "metric_value": 241.77,
-          "metric_display": "24177.0% net APR"
-        }
-      ],
-      "note": "",
-      "age_hours": 0.0,
-      "items_available": 5,
-      "elapsed_s": 5.6,
-      "status": "fresh"
+      "source": "ad_capital",
+      "label": "AD Capital universe scan",
+      "status": "stale",
+      "as_of": "2026-09-01T08:19:12Z",
+      "age_hours": 200.2,
+      "count": 0,
+      "caveat": "A mechanical factor scan of a 374-name universe, not a recommendation. The stop and target are volatility-sized bands, not predictions, and nothing here has had a fundamental read. The paper book running this signal is 2.97pp behind SPY since 2026-04-13 (8.83% vs 11.8%).",
+      "note": "Last scan was 200h ago, past this source's 96h budget. Showing nothing rather than passing it off as current.",
+      "opportunities": []
     },
     {
-      "source": "crypto_drift",
-      "label": "Crypto funding divergence",
-      "caveat": "An observation, not a trade. This repo's own study found the drift ranking is ~99% price momentum and that the convergence reading of the funding term is backwards.",
+      "source": "funding_drift",
+      "label": "Perp funding vs realized drift",
+      "status": "fresh",
+      "as_of": "2026-09-09T15:15:07Z",
+      "age_hours": 1.2,
+      "count": 15,
+      "caveat": "An observation, NOT a trade recommendation. This repo's own study found the ranking is ~99% price momentum (rank correlation 0.996 with plain return) and that the convergence reading of the funding term is backwards.",
+      "note": null,
       "opportunities": [
         {
           "title": "IOST on OKX",
-          "detail": "24h return 58.1%, funding -0.54% - return-dominant",
-          "metric_value": 0.58652,
-          "metric_display": "58.7% drift"
+          "detail": "24h return 65.5%, funding -0.8%",
+          "metric_value": 0.6637536260081214,
+          "metric_display": "drift 66.4%",
+          "link": null,
+          "rank": 1,
+          "source": "funding_drift"
         },
         {
-          "title": "SOPH on dYdX",
-          "detail": "24h return -32.4%, funding 0.03% - return-dominant",
-          "metric_value": -0.32429,
-          "metric_display": "-32.4% drift"
-        },
-        {
-          "title": "\u725b\u6765 on Gate",
-          "detail": "24h return 28.4%, funding -0.26% - return-dominant",
-          "metric_value": 0.286814,
-          "metric_display": "28.7% drift"
+          "title": "SOPH on Bitget",
+          "detail": "24h return -32.5%, funding 0.0%",
+          "metric_value": 0.325432,
+          "metric_display": "drift -32.5%",
+          "link": null,
+          "rank": 2,
+          "source": "funding_drift"
         },
         {
           "title": "RAYSOL on Binance",
-          "detail": "24h return 25.6%, funding -0.27% - return-dominant",
-          "metric_value": 0.258569,
-          "metric_display": "25.9% drift"
-        },
-        {
-          "title": "BR on Bybit",
-          "detail": "24h return 23.0%, funding 0.03% - return-dominant",
-          "metric_value": 0.2299,
-          "metric_display": "23.0% drift"
-        },
-        {
-          "title": "AKE on Bitget",
-          "detail": "24h return -22.3%, funding -1.04% - return-dominant",
-          "metric_value": -0.212434,
-          "metric_display": "-21.2% drift"
-        },
-        {
-          "title": "VVV on Bitget",
-          "detail": "24h return 19.8%, funding -0.03% - return-dominant",
-          "metric_value": 0.198066,
-          "metric_display": "19.8% drift"
-        },
-        {
-          "title": "KAT on Binance",
-          "detail": "24h return 18.5%, funding -0.35% - return-dominant",
-          "metric_value": 0.188451,
-          "metric_display": "18.8% drift"
+          "detail": "24h return 25.7%, funding -0.4%",
+          "metric_value": 0.2607869,
+          "metric_display": "drift 26.1%",
+          "link": null,
+          "rank": 3,
+          "source": "funding_drift"
         }
-      ],
-      "note": "",
-      "age_hours": 0.0,
-      "items_available": 15,
-      "elapsed_s": 2.9,
-      "status": "fresh"
+      ]
     },
     {
-      "source": "equity_signals",
-      "label": "Equity swing signals",
-      "caveat": "Backtested strategy output on a pre-optimised ticker set, so it carries selection bias by construction. Unrealized return is paper only -- no costs, no slippage, no position sizing.",
+      "source": "funding_rate_arb",
+      "label": "Funding-rate carry",
+      "status": "fresh",
+      "as_of": "2026-09-09T16:00:09Z",
+      "age_hours": 0.5,
+      "count": 5,
+      "caveat": "Quoted APRs annualize the CURRENT funding rate, which reprices every few hours. They are not a return you can lock in, and they ignore execution, borrow limits and the capital tied up on both legs.",
+      "note": null,
       "opportunities": [
         {
-          "title": "GILD - HOLD_LONG",
-          "detail": "factor score 6/6, held 40d",
-          "metric_value": 0.127826,
-          "metric_display": "12.8% unrealized"
+          "title": "?  ? / ?",
+          "detail": "",
+          "metric_value": 1150.38,
+          "metric_display": "115038.0% net APR",
+          "link": null,
+          "rank": 1,
+          "source": "funding_rate_arb"
         },
         {
-          "title": "CMCSA - HOLD_LONG",
-          "detail": "factor score 6/6, held 46d",
-          "metric_value": 0.23615,
-          "metric_display": "23.6% unrealized"
+          "title": "?  ? / ?",
+          "detail": "",
+          "metric_value": 1148.25,
+          "metric_display": "114825.0% net APR",
+          "link": null,
+          "rank": 2,
+          "source": "funding_rate_arb"
         },
         {
-          "title": "AMGN - HOLD_LONG",
-          "detail": "factor score 6/6, held 83d",
-          "metric_value": 0.139414,
-          "metric_display": "13.9% unrealized"
-        },
-        {
-          "title": "DIS - HOLD_LONG",
-          "detail": "factor score 5/6, held 14d",
-          "metric_value": -0.049231,
-          "metric_display": "-4.9% unrealized"
-        },
-        {
-          "title": "PFE - HOLD_LONG",
-          "detail": "factor score 5/6, held 28d",
-          "metric_value": 0.031552,
-          "metric_display": "3.2% unrealized"
-        },
-        {
-          "title": "SCHW - HOLD_LONG",
-          "detail": "factor score 5/6, held 55d",
-          "metric_value": 0.055353,
-          "metric_display": "5.5% unrealized"
-        },
-        {
-          "title": "MDT - HOLD_LONG",
-          "detail": "factor score 5/6, held 78d",
-          "metric_value": 0.177512,
-          "metric_display": "17.8% unrealized"
-        },
-        {
-          "title": "VRTX - HOLD_LONG",
-          "detail": "factor score 5/6, held 84d",
-          "metric_value": 0.168014,
-          "metric_display": "16.8% unrealized"
+          "title": "?  ? / ?",
+          "detail": "",
+          "metric_value": 1130.12,
+          "metric_display": "113012.0% net APR",
+          "link": null,
+          "rank": 3,
+          "source": "funding_rate_arb"
         }
-      ],
-      "note": "",
-      "age_hours": 0.0,
-      "items_available": 12,
-      "elapsed_s": 31.5,
-      "status": "fresh"
+      ]
     },
     {
-      "source": "equity_value",
+      "source": "magic_formula",
       "label": "Magic Formula screen",
-      "caveat": "A mechanical rank on trailing fundamentals, not a view on any business. The underlying universe is refreshed by hand, so check its pull date before acting on the ordering.",
+      "status": "fresh",
+      "as_of": "2026-09-07T15:02:20Z",
+      "age_hours": 49.5,
+      "count": 10,
+      "caveat": "A mechanical rank of a hand-pasted universe. It says nothing about whether the business is sound, and nothing here is advice. The name list was pasted 147 days ago (2026-04-15); this is a re-rank of a stale universe, not a fresh screen.",
+      "note": null,
       "opportunities": [
         {
           "title": "VSNT - Versant Media Group, Inc.",
-          "detail": "Communication Services, ROC 75%, $5,279M cap",
-          "metric_value": 0.242437,
-          "metric_display": "24.2% earnings yield"
-        },
-        {
-          "title": "HRB - H&R Block, Inc.",
-          "detail": "Consumer Cyclical, ROC 107%, $5,647M cap",
-          "metric_value": 0.13742,
-          "metric_display": "13.7% earnings yield"
+          "detail": "ROC 75.2% | $5.4B | Communication Services",
+          "metric_value": -1.0,
+          "metric_display": "EY 24.1%",
+          "link": null,
+          "rank": 1,
+          "source": "magic_formula"
         },
         {
           "title": "CROX - Crocs, Inc.",
-          "detail": "Consumer Cyclical, ROC 111%, $5,403M cap",
-          "metric_value": 0.120372,
-          "metric_display": "12.0% earnings yield"
+          "detail": "ROC 110.5% | $5.6B | Consumer Cyclical",
+          "metric_value": -2.0,
+          "metric_display": "EY 11.8%",
+          "link": null,
+          "rank": 2,
+          "source": "magic_formula"
         },
         {
-          "title": "GIB - CGI Inc.",
-          "detail": "Technology, ROC 310%, $14,239M cap",
-          "metric_value": 0.106981,
-          "metric_display": "10.7% earnings yield"
-        },
-        {
-          "title": "YELP - Yelp Inc.",
-          "detail": "Communication Services, ROC 39%, $1,121M cap",
-          "metric_value": 0.150128,
-          "metric_display": "15.0% earnings yield"
-        },
-        {
-          "title": "MD - Pediatrix Medical Group, Inc.",
-          "detail": "Healthcare, ROC 69%, $2,151M cap",
-          "metric_value": 0.110657,
-          "metric_display": "11.1% earnings yield"
-        },
-        {
-          "title": "PRDO - Perdoceo Education Corporation",
-          "detail": "Consumer Defensive, ROC 34%, $2,056M cap",
-          "metric_value": 0.164514,
-          "metric_display": "16.5% earnings yield"
-        },
-        {
-          "title": "TNET - TriNet Group, Inc.",
-          "detail": "Industrials, ROC 109%, $2,998M cap",
-          "metric_value": 0.083481,
-          "metric_display": "8.3% earnings yield"
+          "title": "HRB - H&R Block, Inc.",
+          "detail": "ROC 107.3% | $6.0B | Consumer Cyclical",
+          "metric_value": -3.0,
+          "metric_display": "EY 13.0%",
+          "link": null,
+          "rank": 3,
+          "source": "magic_formula"
         }
-      ],
-      "note": "",
-      "age_hours": 0.0,
-      "items_available": 10,
-      "elapsed_s": 127.1,
-      "warning": "universe is 147d old (> 105d) -- paste a fresh top 50",
-      "status": "fresh"
+      ]
     },
     {
       "source": "real_estate",
-      "label": "Residential deals",
-      "caveat": "Discount is against scraped sold comps, which do not know about condition, liens or why the seller is motivated. A big discount usually means the house needs the difference.",
+      "label": "Real estate deal screen",
+      "status": "fresh",
+      "as_of": "2026-09-06T15:04:48Z",
+      "age_hours": 73.4,
+      "count": 12,
+      "caveat": "Discounts are against comparable-sale estimates, not appraisals, and the screen has never seen the inside of any of these. Screening output only.",
+      "note": null,
       "opportunities": [
         {
-          "title": "3019 E Louisiana Ave, Tampa FL",
-          "detail": "$101,000 list vs $196,981 comps, score 80",
-          "metric_value": 0.4873,
-          "metric_display": "49% under comps",
-          "link": "https://www.realtor.com/realestateandhomes-detail/3019-E-Louisiana-Ave_Tampa_FL_33610_M59188-93803"
-        },
-        {
-          "title": "926 W Cocopah St, Phoenix AZ",
-          "detail": "$270,000 list vs $514,009 comps, score 79",
-          "metric_value": 0.4747,
-          "metric_display": "47% under comps",
-          "link": "https://www.realtor.com/realestateandhomes-detail/926-W-Cocopah-St_Phoenix_AZ_85007_M16536-42192"
-        },
-        {
-          "title": "88 Hoff St Apt 101, San Francisco CA",
-          "detail": "$472,935 list vs $1,068,931 comps, score 78",
-          "metric_value": 0.5576,
-          "metric_display": "56% under comps",
-          "link": "https://www.realtor.com/realestateandhomes-detail/88-Hoff-St-Apt-101_San-Francisco_CA_94110_M16098-79408"
-        },
-        {
-          "title": "7921 Lakeshore Dr, Tampa FL",
-          "detail": "$215,000 list vs $347,772 comps, score 78",
-          "metric_value": 0.3818,
-          "metric_display": "38% under comps",
-          "link": "https://www.realtor.com/realestateandhomes-detail/7921-Lakeshore-Dr_Tampa_FL_33604_M56761-43454"
-        },
-        {
-          "title": "8007 N Klondyke St, Tampa FL",
-          "detail": "$124,900 list vs $260,689 comps, score 77",
-          "metric_value": 0.5209,
-          "metric_display": "52% under comps",
-          "link": "https://www.realtor.com/realestateandhomes-detail/8007-N-Klondyke-St_Tampa_FL_33604_M56407-03542"
-        },
-        {
-          "title": "370 Bartlett St Apt 3, San Francisco CA",
-          "detail": "$525,000 list vs $917,002 comps, score 77",
-          "metric_value": 0.4275,
-          "metric_display": "43% under comps",
-          "link": "https://www.realtor.com/realestateandhomes-detail/370-Bartlett-St-Apt-3_San-Francisco_CA_94110_M93648-33294"
+          "title": "2650 W Union Hills Dr Lot 118, Phoenix AZ",
+          "detail": "listed $35.0K vs $200.7K comparable value",
+          "metric_value": 0.8256,
+          "metric_display": "83% below comps",
+          "link": "https://www.realtor.com/realestateandhomes-detail/2650-W-Union-Hills-Dr-Lot-118_Phoenix_AZ_85027_M96995-69815",
+          "rank": 1,
+          "source": "real_estate"
         },
         {
           "title": "4213 W Cayuga St, Tampa FL",
-          "detail": "$1,195,000 list vs $5,410,786 comps, score 77",
+          "detail": "listed $1.2M vs $5.4M comparable value",
           "metric_value": 0.7791,
-          "metric_display": "78% under comps",
-          "link": "https://www.realtor.com/realestateandhomes-detail/4213-W-Cayuga-St_Tampa_FL_33614_M61586-18825"
+          "metric_display": "78% below comps",
+          "link": "https://www.realtor.com/realestateandhomes-detail/4213-W-Cayuga-St_Tampa_FL_33614_M61586-18825",
+          "rank": 2,
+          "source": "real_estate"
         },
         {
-          "title": "19-23 Salmon St, San Francisco CA",
-          "detail": "$980,000 list vs $1,405,413 comps, score 77",
-          "metric_value": 0.3027,
-          "metric_display": "30% under comps",
-          "link": "https://www.realtor.com/realestateandhomes-detail/19-Salmon-St_San-Francisco_CA_94133_M14457-05234"
+          "title": "2710 Sutter St, San Francisco CA",
+          "detail": "listed $599.0K vs $2.1M comparable value",
+          "metric_value": 0.7192,
+          "metric_display": "72% below comps",
+          "link": "https://www.realtor.com/realestateandhomes-detail/2710-Sutter-St_San-Francisco_CA_94115_M17337-73963",
+          "rank": 3,
+          "source": "real_estate"
         }
-      ],
-      "note": "",
-      "age_hours": 0.0,
-      "items_available": 12,
-      "elapsed_s": 0.8,
-      "status": "fresh"
+      ]
     },
     {
-      "source": "gov_contracts",
-      "label": "Federal supply lanes",
-      "caveat": "SAM registration takes days to weeks, so anything closing this week is unreachable if you are not already registered. Line-item quantities live in attachments this scan cannot read.",
+      "source": "contracts",
+      "label": "Federal resale lanes",
+      "status": "stale",
+      "as_of": "2026-09-01T08:17:29Z",
+      "age_hours": 200.2,
+      "count": 0,
+      "caveat": "Finding a lane is not winning one. SAM entity registration takes weeks and gates every bid, set-asides are hard gates, and the extract carries no line-item quantities -- so none of these carry a computed margin.",
+      "note": "Last scan was 200h ago, past this source's 48h budget. Showing nothing rather than passing it off as current.",
+      "opportunities": []
+    },
+    {
+      "source": "stock_signals",
+      "label": "Swing-trade signals",
+      "status": "fresh",
+      "as_of": "2026-09-08T21:00:37Z",
+      "age_hours": 19.5,
+      "count": 12,
+      "caveat": "Rule output on daily bars, not a recommendation. It carries no position sizing or risk limits, and most rows are positions already open rather than fresh buys. Measured on 12 broad and sector ETFs (survivorship-free) 2019-01-01..2025-07-01, this strategy returned 48.3% against 145.6% for simply holding the same universe, at Sharpe 0.46 against 0.80. It beat same-window buy-and-hold in 3 of 17 walk-forward windows. What does hold up is drawdown: -31.6% against -35.8% for the benchmark.",
+      "note": null,
       "opportunities": [
         {
-          "title": "4 Fuel Tank Crates",
-          "detail": "FA4887  56 CONS CC - AZ, small-biz",
-          "metric_value": 1000000.0,
-          "metric_display": "closes 2026-09-09",
-          "link": "https://sam.gov/opp/b50386ad57c84356ad24ae81d093c689/view"
+          "title": "GILD - hold long",
+          "detail": "unrealized 16.1%, held 36d, entered 2026-07-30",
+          "metric_value": 6.027027027027027,
+          "metric_display": "6/6 factors",
+          "link": null,
+          "rank": 1,
+          "source": "stock_signals"
         },
         {
-          "title": "8415--VA Staff Uniform Clothing with Embroidered Logo Salt Lake City, UT",
-          "detail": "NETWORK CONTRACT OFFICE 19 (36C259) - UT, small-biz",
-          "metric_value": 1000000.0,
-          "metric_display": "closes 2026-09-09",
-          "link": "https://sam.gov/opp/9a48ed3212374cb6af0436f6330bbbd5/view"
+          "title": "MDT - hold long",
+          "detail": "unrealized 20.0%, held 74d, entered 2026-06-22",
+          "metric_value": 6.013333333333334,
+          "metric_display": "6/6 factors",
+          "link": null,
+          "rank": 2,
+          "source": "stock_signals"
         },
         {
-          "title": "BDOC Controller Desks and Support Equipment",
-          "detail": "W7NU USPFO ACTIVITY OHANG 179 - OH, small-biz",
-          "metric_value": 1000000.0,
-          "metric_display": "closes 2026-09-09",
-          "link": "https://sam.gov/opp/0c1c50792ba6421db23883361b4807c9/view"
-        },
-        {
-          "title": "BULK TURKEY for use in Domestic Food Assistance Programs",
-          "detail": "USDA  AMS  3J14 - , small-biz",
-          "metric_value": 1000000.0,
-          "metric_display": "closes 2026-09-09",
-          "link": "https://sam.gov/opp/226933cc838a428bbbbdcfd20fc14ae8/view"
-        },
-        {
-          "title": "Civil Engineering PRIME BEEF Gear",
-          "detail": "W7NN USPFO ACTIVITY NHANG 157 - NH, small-biz",
-          "metric_value": 1000000.0,
-          "metric_display": "closes 2026-09-09",
-          "link": "https://sam.gov/opp/63b4f64bc9a24b71b513a0dc0a80ad13/view"
-        },
-        {
-          "title": "Commercial Kitchen Equipment",
-          "detail": "W7MT USPFO ACTIVITY ALANG 187 - AL, small-biz",
-          "metric_value": 1000000.0,
-          "metric_display": "closes 2026-09-09",
-          "link": "https://sam.gov/opp/f3409ecdbd564e0ca5d19d66f99c30aa/view"
-        },
-        {
-          "title": "fresh bread bakery products support dow troop customers el paso tx zone - DLA TROOP SUPPORT",
-          "detail": "Subsistence/FOOD, biweekly, next ~2026-09-12",
-          "metric_value": 2.0,
-          "metric_display": "2 past solicitations",
-          "link": "https://sam.gov/opp/41d78351541d486da71e43bc4a7b337b/view"
-        },
-        {
-          "title": "bread - FCI EDGEFIELD",
-          "detail": "Subsistence/FOOD, quarterly, next ~2026-08-15",
-          "metric_value": 6.0,
-          "metric_display": "6 past solicitations",
-          "link": "https://sam.gov/opp/424aea8fdde6459abfd86109b8a5b88b/view"
+          "title": "DIS - hold long",
+          "detail": "unrealized -4.7%, held 10d, entered 2026-08-25",
+          "metric_value": 5.090909090909091,
+          "metric_display": "5/6 factors",
+          "link": null,
+          "rank": 3,
+          "source": "stock_signals"
         }
-      ],
-      "note": "",
-      "age_hours": 0.0,
-      "items_available": 14,
-      "elapsed_s": 0.5,
-      "status": "fresh"
+      ]
     },
     {
       "source": "weather_risk",
       "label": "Severe weather risk",
+      "status": "fresh",
+      "as_of": "2026-09-09T14:00:34Z",
+      "age_hours": 2.5,
+      "count": 10,
       "caveat": "Not a weather warning -- use the National Weather Service for those. The score is how much current conditions resemble the run-up to a severe event, not a probability that one occurs.",
+      "note": null,
       "opportunities": [
         {
           "title": "New Orleans",
-          "detail": "compound risk moderate, 9 forecast anomalies",
+          "detail": "moderate compound risk, 9 forecast anomalies",
           "metric_value": 0.8895,
-          "metric_display": "88.9% Extreme"
+          "metric_display": "88.9% Extreme",
+          "link": null,
+          "rank": 1,
+          "source": "weather_risk"
         },
         {
           "title": "Oklahoma City",
-          "detail": "compound risk moderate, 9 forecast anomalies",
+          "detail": "moderate compound risk, 9 forecast anomalies",
           "metric_value": 0.7639,
-          "metric_display": "76.4% Extreme"
+          "metric_display": "76.4% Extreme",
+          "link": null,
+          "rank": 2,
+          "source": "weather_risk"
         },
         {
           "title": "Kansas City",
-          "detail": "compound risk moderate, 4 forecast anomalies",
+          "detail": "moderate compound risk, 4 forecast anomalies",
           "metric_value": 0.7325,
-          "metric_display": "73.2% Extreme"
-        },
-        {
-          "title": "Miami",
-          "detail": "compound risk high, 6 forecast anomalies",
-          "metric_value": 0.6556,
-          "metric_display": "65.6% Extreme"
-        },
-        {
-          "title": "Tampa",
-          "detail": "compound risk high, 10 forecast anomalies",
-          "metric_value": 0.6111,
-          "metric_display": "61.1% Extreme"
-        },
-        {
-          "title": "Atlanta",
-          "detail": "compound risk moderate, 6 forecast anomalies",
-          "metric_value": 0.5674,
-          "metric_display": "56.7% High"
-        },
-        {
-          "title": "Houston",
-          "detail": "compound risk moderate, 1 forecast anomaly",
-          "metric_value": 0.4865,
-          "metric_display": "48.6% High"
-        },
-        {
-          "title": "Denver",
-          "detail": "compound risk moderate, 2 forecast anomalies",
-          "metric_value": 0.449,
-          "metric_display": "44.9% High"
+          "metric_display": "73.2% Extreme",
+          "link": null,
+          "rank": 3,
+          "source": "weather_risk"
         }
-      ],
-      "note": "",
-      "age_hours": 0.0,
-      "items_available": 10,
-      "elapsed_s": 2.4,
-      "status": "fresh"
+      ]
+    },
+    {
+      "source": "polymarket_btc",
+      "label": "Polymarket BTC 5-min binaries",
+      "status": "empty",
+      "as_of": "2026-09-09T14:46:51Z",
+      "age_hours": 1.7,
+      "count": 0,
+      "caveat": "Publishes an observation, not picks. The repo's own backtest on real fills found the market's own price forecasts the settlement BETTER than the model, and that what survives costs is feed latency rather than the pricing model. Simulation only -- the repo has no order-placement path. Latest scan: model Brier 0.1587 vs market 0.1555, so the market is ahead (lower is better). Post-cost returns cross zero at 1.8s of BTC feed staleness, against a 3.75s decision cadence.",
+      "note": "Scan ran and found nothing that cleared the bar.",
+      "opportunities": []
     }
   ],
-  "methodology": "Each section is produced by its own repo's generator and is scored in its own unit -- an APR, a discount to comps, an earnings yield, a model score. Those units are not comparable, so items are ranked within a section and there is deliberately no combined leaderboard. A section past its own freshness budget shows nothing rather than stale numbers. Everything here is screen output that still needs its own diligence; none of it is advice.",
+  "total_opportunities": 18,
   "fresh_sources": 7,
-  "total_opportunities": 53,
-  "down_sources": []
+  "methodology": "A digest: the top 3 from each scanner, so one glance shows what is live right now. Each scanner runs on its own schedule and publishes its own full panel; this merges them and runs nothing itself, so a slow source can only make its own row go quiet. Items are ranked WITHIN a source and there is deliberately no cross-source score -- basis points, an earnings yield and a contract cadence are not commensurable, and one leaderboard over them would be invented. Every section carries its own caveat; read it before the numbers. Nothing here is advice, none of it is an executed trade, and a section that has gone stale shows nothing rather than yesterday's numbers."
 }
