@@ -1,10 +1,23 @@
 {
-  "generated_at": "2026-09-09T21:00:10.955613+00:00",
+  "generated_at": "2026-09-09T22:00:12.989072+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
+    {
+      "base": "WAVES",
+      "type": "perp-perp",
+      "long_venue": "KuCoin",
+      "short_venue": "Binance",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 19,
+      "scans": 24,
+      "net_apr": 232.69,
+      "net_at_hold": 0.2125,
+      "cost_bps": 32.0
+    },
     {
       "base": "ONE",
       "type": "perp-perp",
@@ -16,20 +29,7 @@
       "scans": 24,
       "net_apr": 1003.06,
       "net_at_hold": 0.91604,
-      "cost_bps": 47.13
-    },
-    {
-      "base": "WAVES",
-      "type": "perp-perp",
-      "long_venue": "KuCoin",
-      "short_venue": "Binance",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 234.88,
-      "net_at_hold": 0.2145,
-      "cost_bps": 32.0
+      "cost_bps": 47.14
     }
   ]
 }
