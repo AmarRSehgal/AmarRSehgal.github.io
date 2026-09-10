@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T07:00:05.965892+00:00",
+  "generated_at": "2026-09-10T08:00:11.366536+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -12,11 +12,24 @@
       "short_venue": "Crypto.com",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 19,
+      "hits": 20,
       "scans": 24,
-      "net_apr": 1066.88,
-      "net_at_hold": 0.97432,
-      "cost_bps": 61.23
+      "net_apr": 1069.74,
+      "net_at_hold": 0.97693,
+      "cost_bps": 61.28
+    },
+    {
+      "base": "TOWNS",
+      "type": "perp-perp",
+      "long_venue": "KuCoin",
+      "short_venue": "Crypto.com",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 832.04,
+      "net_at_hold": 0.37993,
+      "cost_bps": 42.23
     }
   ]
 }
