@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T16:00:11.099643+00:00",
+  "generated_at": "2026-09-10T17:00:10.788454+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -29,7 +29,7 @@
       "scans": 24,
       "net_apr": 1017.22,
       "net_at_hold": 0.46449,
-      "cost_bps": 37.23
+      "cost_bps": 37.3
     },
     {
       "base": "TOWNS",
@@ -42,7 +42,20 @@
       "scans": 24,
       "net_apr": 1061.02,
       "net_at_hold": 0.48449,
-      "cost_bps": 35.21
+      "cost_bps": 35.23
+    },
+    {
+      "base": "ONG",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 21,
+      "scans": 24,
+      "net_apr": 281.93,
+      "net_at_hold": 0.25747,
+      "cost_bps": 33.61
     },
     {
       "base": "TOWNS",
@@ -58,17 +71,17 @@
       "cost_bps": 52.59
     },
     {
-      "base": "ONG",
+      "base": "JOE",
       "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Aster",
+      "long_venue": "Crypto.com",
+      "short_venue": "KuCoin",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 20,
+      "hits": 19,
       "scans": 24,
-      "net_apr": 279.62,
-      "net_at_hold": 0.25536,
-      "cost_bps": 33.13
+      "net_apr": 51.66,
+      "net_at_hold": 0.04718,
+      "cost_bps": 35.29
     },
     {
       "base": "TOWNS",
@@ -81,7 +94,7 @@
       "scans": 24,
       "net_apr": 873.97,
       "net_at_hold": 0.46044,
-      "cost_bps": 71.81
+      "cost_bps": 72.65
     },
     {
       "base": "TOWNS",
@@ -95,19 +108,6 @@
       "net_apr": 439.84,
       "net_at_hold": 0.20084,
       "cost_bps": 67.9
-    },
-    {
-      "base": "\u725b\u6765",
-      "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 141.22,
-      "net_at_hold": 0.12897,
-      "cost_bps": 63.75
     }
   ]
 }
