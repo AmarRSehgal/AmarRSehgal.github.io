@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T08:00:11.366536+00:00",
+  "generated_at": "2026-09-10T09:00:11.155459+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -12,11 +12,11 @@
       "short_venue": "Crypto.com",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 20,
+      "hits": 21,
       "scans": 24,
-      "net_apr": 1069.74,
-      "net_at_hold": 0.97693,
-      "cost_bps": 61.28
+      "net_apr": 1072.61,
+      "net_at_hold": 0.97955,
+      "cost_bps": 61.23
     },
     {
       "base": "TOWNS",
@@ -25,11 +25,24 @@
       "short_venue": "Crypto.com",
       "long_instrument": "perp",
       "min_hold_h": 4,
+      "hits": 19,
+      "scans": 24,
+      "net_apr": 832.16,
+      "net_at_hold": 0.37998,
+      "cost_bps": 42.2
+    },
+    {
+      "base": "CAP",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Crypto.com",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 832.04,
-      "net_at_hold": 0.37993,
-      "cost_bps": 42.23
+      "net_apr": 83.29,
+      "net_at_hold": 0.07606,
+      "cost_bps": 20.21
     }
   ]
 }
