@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T18:00:11.360082+00:00",
+  "generated_at": "2026-09-11T19:00:10.371249+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -25,24 +25,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 21,
+      "hits": 22,
       "scans": 24,
-      "net_apr": 421.68,
-      "net_at_hold": 0.38509,
-      "cost_bps": 34.61
-    },
-    {
-      "base": "AI",
-      "type": "perp-perp",
-      "long_venue": "Hyperliquid",
-      "short_venue": "Lighter",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 21,
-      "scans": 24,
-      "net_apr": 330.69,
-      "net_at_hold": 0.302,
-      "cost_bps": 17.0
+      "net_apr": 418.37,
+      "net_at_hold": 0.38208,
+      "cost_bps": 34.62
     },
     {
       "base": "ONG",
@@ -51,11 +38,37 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
+      "hits": 21,
+      "scans": 24,
+      "net_apr": 312.62,
+      "net_at_hold": 0.2855,
+      "cost_bps": 38.26
+    },
+    {
+      "base": "AI",
+      "type": "perp-perp",
+      "long_venue": "Hyperliquid",
+      "short_venue": "Lighter",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 345.42,
-      "net_at_hold": 0.31545,
-      "cost_bps": 38.02
+      "net_apr": 457.27,
+      "net_at_hold": 0.4176,
+      "cost_bps": 17.0
+    },
+    {
+      "base": "PUFFER",
+      "type": "perp-perp",
+      "long_venue": "Bybit",
+      "short_venue": "Binance",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 20,
+      "scans": 24,
+      "net_apr": 285.75,
+      "net_at_hold": 0.26096,
+      "cost_bps": 41.9
     },
     {
       "base": "JOE",
@@ -92,22 +105,9 @@
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 117.79,
-      "net_at_hold": 0.10757,
+      "net_apr": 117.7,
+      "net_at_hold": 0.10749,
       "cost_bps": 35.38
-    },
-    {
-      "base": "PUFFER",
-      "type": "perp-perp",
-      "long_venue": "Bybit",
-      "short_venue": "Binance",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 19,
-      "scans": 24,
-      "net_apr": 291.61,
-      "net_at_hold": 0.26631,
-      "cost_bps": 41.86
     }
   ]
 }
