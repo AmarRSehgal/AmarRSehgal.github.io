@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T12:13:20.431564+00:00",
+  "generated_at": "2026-09-12T13:00:10.022618+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 805.14,
-      "net_at_hold": 0.73529,
+      "net_apr": 894.32,
+      "net_at_hold": 0.81673,
       "cost_bps": 35.76
     },
     {
@@ -27,8 +27,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 648.15,
-      "net_at_hold": 0.59192,
+      "net_apr": 743.04,
+      "net_at_hold": 0.67858,
       "cost_bps": 54.57
     },
     {
@@ -38,10 +38,10 @@
       "short_venue": "KuCoin",
       "long_instrument": "perp",
       "min_hold_h": 4,
-      "hits": 23,
+      "hits": 24,
       "scans": 24,
-      "net_apr": 440.85,
-      "net_at_hold": 0.2013,
+      "net_apr": 452.34,
+      "net_at_hold": 0.20655,
       "cost_bps": 38.0
     },
     {
@@ -51,24 +51,11 @@
       "short_venue": "OKX",
       "long_instrument": "perp",
       "min_hold_h": 4,
-      "hits": 22,
+      "hits": 23,
       "scans": 24,
-      "net_apr": 470.27,
-      "net_at_hold": 0.21474,
-      "cost_bps": 39.81
-    },
-    {
-      "base": "JOE",
-      "type": "perp-perp",
-      "long_venue": "Crypto.com",
-      "short_venue": "Bitget",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 21,
-      "scans": 24,
-      "net_apr": 112.26,
-      "net_at_hold": 0.10252,
-      "cost_bps": 31.73
+      "net_apr": 490.0,
+      "net_at_hold": 0.22375,
+      "cost_bps": 39.59
     },
     {
       "base": "NIGHT",
@@ -77,11 +64,24 @@
       "short_venue": "Bitget",
       "long_instrument": "perp",
       "min_hold_h": 4,
+      "hits": 21,
+      "scans": 24,
+      "net_apr": 555.34,
+      "net_at_hold": 0.25358,
+      "cost_bps": 40.64
+    },
+    {
+      "base": "JOE",
+      "type": "perp-perp",
+      "long_venue": "Crypto.com",
+      "short_venue": "Bitget",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 505.24,
-      "net_at_hold": 0.2307,
-      "cost_bps": 42.77
+      "net_apr": 111.95,
+      "net_at_hold": 0.10224,
+      "cost_bps": 31.73
     },
     {
       "base": "JOE",
@@ -90,10 +90,10 @@
       "short_venue": "KuCoin",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 20,
+      "hits": 19,
       "scans": 24,
-      "net_apr": 77.38,
-      "net_at_hold": 0.07066,
+      "net_apr": 77.35,
+      "net_at_hold": 0.07064,
       "cost_bps": 35.34
     }
   ]
