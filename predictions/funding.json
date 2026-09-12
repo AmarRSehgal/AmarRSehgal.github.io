@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T11:00:10.474174+00:00",
+  "generated_at": "2026-09-12T12:13:20.431564+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -29,7 +29,20 @@
       "scans": 24,
       "net_apr": 648.15,
       "net_at_hold": 0.59192,
-      "cost_bps": 52.56
+      "cost_bps": 54.57
+    },
+    {
+      "base": "NIGHT",
+      "type": "perp-perp",
+      "long_venue": "Coinbase",
+      "short_venue": "KuCoin",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 23,
+      "scans": 24,
+      "net_apr": 440.85,
+      "net_at_hold": 0.2013,
+      "cost_bps": 38.0
     },
     {
       "base": "NIGHT",
@@ -45,19 +58,6 @@
       "cost_bps": 39.81
     },
     {
-      "base": "NIGHT",
-      "type": "perp-perp",
-      "long_venue": "Coinbase",
-      "short_venue": "KuCoin",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 22,
-      "scans": 24,
-      "net_apr": 452.34,
-      "net_at_hold": 0.20655,
-      "cost_bps": 38.0
-    },
-    {
       "base": "JOE",
       "type": "perp-perp",
       "long_venue": "Crypto.com",
@@ -66,22 +66,9 @@
       "min_hold_h": 8,
       "hits": 21,
       "scans": 24,
-      "net_apr": 112.95,
-      "net_at_hold": 0.10315,
-      "cost_bps": 31.74
-    },
-    {
-      "base": "JOE",
-      "type": "perp-perp",
-      "long_venue": "Crypto.com",
-      "short_venue": "KuCoin",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 21,
-      "scans": 24,
-      "net_apr": 77.4,
-      "net_at_hold": 0.07068,
-      "cost_bps": 35.35
+      "net_apr": 112.26,
+      "net_at_hold": 0.10252,
+      "cost_bps": 31.73
     },
     {
       "base": "NIGHT",
@@ -97,17 +84,17 @@
       "cost_bps": 42.77
     },
     {
-      "base": "ONG",
+      "base": "JOE",
       "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "Aster",
+      "long_venue": "Crypto.com",
+      "short_venue": "KuCoin",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 18,
+      "hits": 20,
       "scans": 24,
-      "net_apr": 155.92,
-      "net_at_hold": 0.14239,
-      "cost_bps": 34.73
+      "net_apr": 77.38,
+      "net_at_hold": 0.07066,
+      "cost_bps": 35.34
     }
   ]
 }
