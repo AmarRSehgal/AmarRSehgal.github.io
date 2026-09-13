@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T18:00:51.794045+00:00",
+  "generated_at": "2026-09-13T03:00:11.742572+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1021.33,
-      "net_at_hold": 0.93272,
+      "net_apr": 1096.56,
+      "net_at_hold": 1.00142,
       "cost_bps": 35.78
     },
     {
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 853.32,
-      "net_at_hold": 0.77929,
-      "cost_bps": 54.78
+      "net_apr": 941.51,
+      "net_at_hold": 0.85983,
+      "cost_bps": 54.69
     },
     {
       "base": "NIGHT",
@@ -40,9 +40,22 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 600.83,
-      "net_at_hold": 0.27435,
+      "net_apr": 655.36,
+      "net_at_hold": 0.29925,
       "cost_bps": 38.0
+    },
+    {
+      "base": "STORJ",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 23,
+      "scans": 24,
+      "net_apr": 3972.12,
+      "net_at_hold": 3.62751,
+      "cost_bps": 45.78
     },
     {
       "base": "NIGHT",
@@ -53,22 +66,9 @@
       "min_hold_h": 4,
       "hits": 23,
       "scans": 24,
-      "net_apr": 638.99,
-      "net_at_hold": 0.29178,
-      "cost_bps": 38.51
-    },
-    {
-      "base": "STORJ",
-      "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 22,
-      "scans": 24,
-      "net_apr": 3991.65,
-      "net_at_hold": 3.64535,
-      "cost_bps": 45.9
+      "net_apr": 678.7,
+      "net_at_hold": 0.30991,
+      "cost_bps": 38.19
     },
     {
       "base": "NIGHT",
@@ -79,8 +79,8 @@
       "min_hold_h": 4,
       "hits": 22,
       "scans": 24,
-      "net_apr": 569.19,
-      "net_at_hold": 0.2599,
+      "net_apr": 633.47,
+      "net_at_hold": 0.28926,
       "cost_bps": 40.59
     },
     {
@@ -90,11 +90,11 @@
       "short_venue": "Crypto.com",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 20,
+      "hits": 19,
       "scans": 24,
-      "net_apr": 260.36,
-      "net_at_hold": 0.23777,
-      "cost_bps": 45.51
+      "net_apr": 280.76,
+      "net_at_hold": 0.2564,
+      "cost_bps": 45.02
     }
   ]
 }
