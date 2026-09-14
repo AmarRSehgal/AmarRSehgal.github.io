@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T13:00:14.456182+00:00",
+  "generated_at": "2026-09-14T14:00:12.954930+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 837.06,
-      "net_at_hold": 0.76444,
+      "net_apr": 816.54,
+      "net_at_hold": 0.7457,
       "cost_bps": 35.9
     },
     {
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 641.99,
-      "net_at_hold": 0.58629,
-      "cost_bps": 50.79
+      "net_apr": 617.48,
+      "net_at_hold": 0.56391,
+      "cost_bps": 50.83
     },
     {
       "base": "NIGHT",
@@ -40,8 +40,8 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 452.14,
-      "net_at_hold": 0.20646,
+      "net_apr": 421.69,
+      "net_at_hold": 0.19255,
       "cost_bps": 37.36
     },
     {
@@ -53,22 +53,22 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 355.77,
-      "net_at_hold": 0.16245,
+      "net_apr": 339.34,
+      "net_at_hold": 0.15495,
       "cost_bps": 38.0
     },
     {
-      "base": "ARK",
+      "base": "LSK",
       "type": "perp-perp",
       "long_venue": "Gate",
-      "short_venue": "Hyperliquid",
+      "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 1695.92,
-      "net_at_hold": 1.54879,
-      "cost_bps": 28.56
+      "net_apr": 5168.39,
+      "net_at_hold": 4.71999,
+      "cost_bps": 59.27
     },
     {
       "base": "NIGHT",
@@ -79,35 +79,35 @@
       "min_hold_h": 4,
       "hits": 23,
       "scans": 24,
-      "net_apr": 343.5,
-      "net_at_hold": 0.15685,
+      "net_apr": 343.29,
+      "net_at_hold": 0.15675,
       "cost_bps": 40.88
     },
     {
-      "base": "LSK",
+      "base": "ARK",
       "type": "perp-perp",
       "long_venue": "Gate",
-      "short_venue": "Aster",
+      "short_venue": "Hyperliquid",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 22,
       "scans": 24,
-      "net_apr": 4806.57,
-      "net_at_hold": 4.38956,
-      "cost_bps": 57.55
+      "net_apr": 1708.53,
+      "net_at_hold": 1.5603,
+      "cost_bps": 28.43
     },
     {
-      "base": "STEEM",
+      "base": "LSK",
       "type": "perp-perp",
-      "long_venue": "KuCoin",
+      "long_venue": "Bitget",
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 21,
       "scans": 24,
-      "net_apr": 673.15,
-      "net_at_hold": 0.61475,
-      "cost_bps": 45.97
+      "net_apr": 4753.45,
+      "net_at_hold": 4.34105,
+      "cost_bps": 62.19
     }
   ]
 }
