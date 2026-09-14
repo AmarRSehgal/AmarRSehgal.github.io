@@ -272,6 +272,172 @@ function renderFundingFull(data) {
         + `that reprices every few hours and is not a return you can lock in.</div>`;
 }
 
+
+// --- Measured history ----------------------------------------------------------
+//
+// Detail pages only: the home page shows what a model says now, this shows how it has
+// actually done. Every number here is read off the payload -- nothing is computed in
+// the browser and nothing is assumed. Five feeds have no measured record yet and say
+// so, because "no track record published" and "a track record too weak to mention" are
+// different statements and a blank panel would merge them.
+
+const pct = v => `${(Number(v) * 100).toFixed(1)}%`;
+
+const NO_RECORD = {
+    nba: 'The 2025-26 backtest scored 65.5% over 1,075 games, and 77.1% on picks it '
+       + 'called at 70%+ confidence -- but that is a backtest held in the repo, not an '
+       + 'out-of-sample record of the picks published here, so it is not quoted as one. '
+       + 'The NBA season restarts in late October; a live record starts accruing then.',
+    f1: 'No out-of-sample record yet. This feed published for the first time on '
+      + '2026-09-14 after five months of a broken CI workflow, so no prediction it made '
+      + 'has had a race to be graded against. Finishing order is scored against the '
+      + 'actual classification as each race completes, the same way the NFL picks are.',
+    magic_formula: 'No realised record yet. The portfolio side of the project tracks '
+       + 'actual positions against SPY since inception, but the screen published here is '
+       + 'a ranking rather than a set of entries, so there is nothing to mark to market.',
+    opportunities: 'Nothing to measure: this board merges what other feeds already '
+       + 'published and makes no prediction of its own. Each source carries its own '
+       + 'record on its own page.',
+};
+
+// Below this the accuracy is noise and the panel must say so beside the number. Same
+// threshold the site's validator calls FRAGILE_SAMPLE.
+const FRAGILE_SAMPLE = 100;
+
+const HISTORY = {
+    nfl: d => {
+        const t = d.track_record;
+        if (!t) return null;
+        const rows = [
+            ['Published picks graded', String(t.n_games)],
+            ['Correct', `${pct(t.accuracy)} (${Math.round(t.accuracy * t.n_games)} of ${t.n_games})`],
+            [t.baseline_label || 'baseline', pct(t.baseline_accuracy)],
+            ['McNemar p', String(t.mcnemar_p_vs_baseline)],
+            ['Beats that baseline', t.beats_baseline ? 'yes' : 'not established'],
+        ];
+        if (t.weeks_scored) rows.splice(1, 0, ['Weeks scored', t.weeks_scored.join(', ')]);
+        if (t.mean_abs_spread_error != null) {
+            rows.push(['Mean spread error', `${t.mean_abs_spread_error} pts`]);
+        }
+        if (t.high_conf_stated != null) {
+            rows.push([`Picks at ${pct(t.high_conf_threshold)}+ stated`,
+                       `${pct(t.high_conf_stated)} stated vs ${pct(t.high_conf_realized)} realised`]);
+        }
+        const fragile = t.n_games < FRAGILE_SAMPLE;
+        return { rows, note: (t.basis ? `Scored from the ${t.basis}. ` : '')
+            + (fragile
+                ? `At ${t.n_games} games this is far too small a sample to mean anything `
+                  + `-- one week of NFL football is noise, a good week and a real edge look `
+                  + `identical here, and "beats the baseline" stays unestablished until the `
+                  + `difference is significant. It is published because what was forecast `
+                  + `and what happened are both facts; the accuracy is not yet a claim.`
+                : 'Measured against always-picking-home, the only baseline worth the '
+                  + 'comparison.') };
+    },
+    mlb: d => {
+        const t = d.track_record;
+        if (!t) return null;
+        const rows = [
+            [`${t.season} season accuracy`, `${pct(t.accuracy)} over ${t.n_games} games`],
+            [t.baseline_label || 'baseline', pct(t.baseline_accuracy)],
+            ['Beats that baseline', t.beats_baseline ? 'yes' : 'NO'],
+            ['McNemar p', String(t.mcnemar_p_vs_baseline)],
+        ];
+        if (t.high_conf_stated != null) {
+            rows.push([`Picks at ${pct(t.high_conf_threshold)}+ stated`, String(t.high_conf_n)]);
+            rows.push(['Stated vs realised', `${pct(t.high_conf_stated)} vs ${pct(t.high_conf_realized)}`]);
+        }
+        const gap = t.high_conf_realized != null
+            ? Number(t.high_conf_realized) - Number(t.high_conf_stated) : null;
+        return { rows, note: 'Accuracy against the always-pick-home baseline is the only '
+            + 'comparison that means anything in baseball. '
+            + (gap != null && gap < 0
+                ? `The confident picks are overconfident by ${(Math.abs(gap) * 100).toFixed(1)} `
+                  + 'points: a high number there is matchup lopsidedness, which a book also '
+                  + 'prices short, not an edge over the price.'
+                : 'Model output, not a betting recommendation.') };
+    },
+    real_estate: d => {
+        const t = d.track_record;
+        if (!t) return null;
+        return {
+            rows: [
+                ['Flagged listings since sold', String(t.resolved)],
+                ['Mean discount to comp value', pct(t.mean_edge)],
+                ['Median discount', pct(t.median_edge)],
+                ['Sold below comp value', pct(t.share_below_comp_value)],
+                ['Score-to-outcome correlation', `${Number(t.spearman).toFixed(3)} `
+                    + `(95% CI ${Number(t.ci_low).toFixed(3)} to ${Number(t.ci_high).toFixed(3)})`],
+            ],
+            note: `The ranking carries real but modest information -- about `
+                + `${(Number(t.spearman) ** 2 * 100).toFixed(0)}% of rank variance. Measured `
+                + `against what the houses actually sold for, not against the model's own `
+                + `scores. Screening output, not advice.`,
+        };
+    },
+    business_hunter: d => {
+        const t = d.track_record;
+        if (!t) {
+            return { rows: [], note: 'Track record not established yet -- fewer than 30 '
+                + 'flagged listings have resolved. Small-business sales close slowly and '
+                + 'many listings are withdrawn rather than sold, so this accrues over '
+                + 'quarters rather than weeks.' };
+        }
+        return {
+            rows: [
+                ['Flagged listings since sold', String(t.resolved)],
+                ['Mean acquisition discount', pct(t.mean_edge)],
+                ['Sold below comparable value', pct(t.share_below_comp_value)],
+                ['Score-to-outcome correlation', Number(t.spearman).toFixed(3)],
+            ],
+            note: 'Financials are self-reported throughout, so this measures the screen '
+                + 'against reported numbers rather than audited ones.',
+        };
+    },
+    // Persistence IS this feed's history: a route is only published because it held up
+    // across a day of hourly scans, and each row carries its own hit count.
+    funding: d => {
+        const ops = d.opportunities || [];
+        if (!ops.length) {
+            return { rows: [], note: 'No route held a positive net carry across the last '
+                + 'day of scans, so there is no persistence to report. That is the usual '
+                + 'state and it is the finding, not a gap.' };
+        }
+        const hits = ops.reduce((a, o) => a + (o.hits || 0), 0);
+        const scans = ops.reduce((a, o) => a + (o.scans || 0), 0);
+        const perfect = ops.filter(o => o.hits === o.scans).length;
+        const best = ops.reduce((a, o) => Math.max(a, Number(o.net_at_hold) || 0), 0);
+        return {
+            rows: [
+                ['Hourly scans held', String(d.scans_seen)],
+                ['Minimum hits to publish', `${d.min_hits} of ${d.window_scans}`],
+                ['Published routes', String(ops.length)],
+                ['Positive in every scan', `${perfect} of ${ops.length}`],
+                ['Aggregate hit rate', scans ? pct(hits / scans) : 'n/a'],
+                ['Best net per hold', `+${best.toFixed(3)}%`],
+            ],
+            note: 'This is persistence, not realised PnL: it says the spread kept being '
+                + 'there, not that it was captured. Nothing here is traded, so there is no '
+                + 'execution, slippage or borrow cost in these numbers.',
+        };
+    },
+};
+
+function historyPanel(key, data) {
+    const build = HISTORY[key];
+    const h = build ? build(data) : null;
+    if (!h) {
+        const why = NO_RECORD[key];
+        if (!why) return '';
+        return `<h3>Measured history</h3><p class="feed-norecord">${esc(why)}</p>`;
+    }
+    const body = h.rows.map(([k, v]) =>
+        `<div class="feed-fact"><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('');
+    return `<h3>Measured history</h3>`
+        + (body ? `<dl class="feed-facts">${body}</dl>` : '')
+        + `<p class="feed-norecord">${esc(h.note)}</p>`;
+}
+
 // --- Panels -------------------------------------------------------------------
 
 function projectPanel(proj) {
@@ -390,10 +556,14 @@ async function boot() {
     // The facts panel describes a run. With no payload there is no run to describe, and
     // an empty table under a heading reads as a rendering bug rather than a down feed.
     const factsEl = document.getElementById('feed-facts');
+    const histEl = document.getElementById('feed-history');
     if (data && data.generated_at) {
         factsEl.innerHTML = factsPanel(key, data, cfg);
+        const hist = historyPanel(key, data);
+        if (hist) histEl.innerHTML = hist; else histEl.remove();
     } else {
         factsEl.remove();
+        histEl.remove();
     }
 }
 

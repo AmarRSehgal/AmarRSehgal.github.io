@@ -970,3 +970,21 @@ button:focus-visible {
         gap: 2rem;
     }
 }
+
+.feed-norecord {
+    margin-top: 0.8rem !important;
+    font-size: 0.8rem !important;
+    line-height: 1.6;
+}
+
+.feed-facts + .feed-norecord {
+    padding-top: 0.8rem;
+    border-top: 1px solid var(--border);
+}
+
+/* An archived run on a detail page. Read as "kept on purpose", not as an error --
+   distinctly not the amber of a stale-input warning. */
+.prediction-archived {
+    background: rgba(110, 168, 254, 0.06);
+    border-left-color: var(--accent-dim);
+}
