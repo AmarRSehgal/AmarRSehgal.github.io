@@ -1,0 +1,30 @@
+# The only workflow this repo has, and the only one it can run without a secret.
+#
+# There used to be three generator workflows here (NBA, NFL, F1). Each checked out a
+# PRIVATE model repo, which needs a PAT that was never created, so all three failed in
+# under 20 seconds on every scheduled run for five months -- and because the F1 model
+# had no other publisher, the site said "Not published yet" the whole time. Every feed
+# now publishes from a launchd job on the machine that holds the data; see
+# predictions/README.md "Publishing setup". What is left for CI is the thing CI is
+# actually good at here: proving the contract those generators are written against
+# still behaves.
+name: Contract tests
+
+on:
+  push:
+    paths:
+      - '.github/scripts/**'
+      - '.github/workflows/tests.yml'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Run the payload-contract tests
+        run: python3 -m unittest discover -s .github/scripts -p 'test_*.py' -v

@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Gate a freshly generated predictions payload before it replaces the published one.
 
-Usage: validate_predictions.py {nba|nfl|f1|real_estate|magicformula|opportunities|business_hunter}
+Usage: validate_predictions.py {nba|nfl|mlb|f1|real_estate|magicformula|opportunities
+                               |business_hunter|funding|contracts}
            <candidate.json>
 
 Exits non-zero on anything the front end cannot render honestly. The point is that a
@@ -65,6 +66,26 @@ MAX_RETURN_ON_CAPITAL = 100.0
 # as "$5.7K" -- plausible-looking and completely wrong.
 MIN_MARKET_CAP = 1e6
 
+# Evidence tiers from sam-contracts/lanes.py, strongest first. Only OBSERVED means this
+# machine actually watched the buy repeat across snapshots; the other three are hints
+# read off a single posting. The page words them differently, so a tier it does not
+# know would render a guess as a finding.
+EVIDENCE_TIERS = ('OBSERVED', 'POSTED-HISTORY', 'PERIOD-MARKER', 'CLUSTER')
+
+# Recurrence inferred from one solicitation is not recurrence, and "recurring lane" is
+# the entire value proposition of this feed -- a lane is worth a SAM registration only
+# if the buy comes back.
+MIN_OBSERVED_SOLICITATIONS = 2
+
+# OPEN and small-business are self-certified. HUBZone / 8(a) / SDVOSB / WOSB are hard
+# gates needing a formal certification that takes months, so publishing one as
+# "biddable now" invites days of work on a bid that cannot be submitted at all.
+REACHABLE_ACCESS = ('OPEN', 'small-biz')
+
+# Every link in this feed points back to the authoritative notice. Anything else is
+# either a bug or an untrusted URL being published under this site's name.
+SAM_LINK_PREFIX = 'https://sam.gov/opp/'
+
 # sport -> (required top-level keys, list key, per-item required keys)
 SPECS = {
     'nba': (('generated_at', 'date', 'games'), 'games',
@@ -100,6 +121,19 @@ SPECS = {
     'funding': (('generated_at', 'status', 'scans_seen', 'opportunities'), 'opportunities',
                 ('base', 'type', 'long_venue', 'short_venue', 'min_hold_h',
                  'hits', 'scans', 'net_apr', 'net_at_hold')),
+    # Federal resale lanes from SAM.gov. The only feed here that CANNOT be regenerated
+    # in CI: the daily extract carries just the currently-active notices, so recurrence
+    # is visible only to a job that has been recording snapshots on one machine. That
+    # makes `snapshots` / `observing_snapshots` the evidence behind every cadence claim
+    # rather than decoration, which is why they are required keys.
+    #
+    # It also carries TWO lists. `lanes` is the ranked recurrence finding and is the
+    # list_key; `open` is what a self-cert bidder could quote on today and shares no
+    # field with it, so it is checked in the per-feed block below.
+    'contracts': (('generated_at', 'snapshot_date', 'snapshots', 'observing_snapshots',
+                   'notices_tracked', 'lanes', 'open'), 'lanes',
+                  ('office', 'agency', 'group', 'lane', 'evidence', 'solicitations',
+                   'cadence', 'states', 'link')),
 }
 
 # 'building_history' is not a failure: the funding board only publishes routes
@@ -573,6 +607,116 @@ def check_f1_entry(where, p):
     require_number(where, 'predicted_pos', p['predicted_pos'])
 
 
+def check_contracts_payload(data):
+    """Payload-level checks for the federal-lanes feed: the counters and the `open` list.
+
+    The counters are not decoration. Every cadence on the page is an inference from how
+    many days this machine has actually recorded, so a payload claiming observed
+    recurrence off one snapshot is claiming something it cannot know.
+    """
+    check_date_string('<payload>', 'snapshot_date', data['snapshot_date'])
+    snapshot_day = data['snapshot_date']
+
+    snapshots = require_int('<payload>', 'snapshots', data['snapshots'])
+    observing = require_int('<payload>', 'observing_snapshots', data['observing_snapshots'])
+    tracked = require_int('<payload>', 'notices_tracked', data['notices_tracked'])
+    if snapshots < 1:
+        raise Invalid('snapshots=0 -- nothing has been recorded, so there is nothing to publish')
+    if not 0 <= observing <= snapshots:
+        raise Invalid(f'observing_snapshots={observing} must be between 0 and '
+                      f'snapshots={snapshots}. It counts the snapshots that actually saw '
+                      f'new data; re-ingesting an unchanged extract is not a day of history')
+    if tracked < 1:
+        raise Invalid('notices_tracked=0 with a payload to publish')
+
+    # OBSERVED means "seen repeat across distinct snapshot days". With fewer than two
+    # days of real history no lane can honestly carry it, whatever the generator said.
+    if observing < MIN_OBSERVED_SOLICITATIONS:
+        claimed = [i for i, l in enumerate(data['lanes'])
+                   if isinstance(l, dict) and l.get('evidence') == 'OBSERVED']
+        if claimed:
+            raise Invalid(f'lanes{claimed} claim evidence=OBSERVED on only {observing} '
+                          f'snapshot(s) with new data -- recurrence cannot have been '
+                          f'observed yet')
+
+    notices = data['open']
+    if not isinstance(notices, list):
+        raise Invalid('open must be a list of currently-biddable notices')
+    for i, n in enumerate(notices):
+        where = f'open[{i}]'
+        if not isinstance(n, dict):
+            raise Invalid(f'{where} must be an object')
+        missing = [k for k in ('title', 'office', 'group', 'deadline', 'access', 'link')
+                   if k not in n]
+        if missing:
+            raise Invalid(f'{where} missing {missing}')
+        check_open_notice(where, n, snapshot_day)
+
+
+def check_lane(where, lane):
+    """One recurring-buy lane. The evidence tier is the load-bearing field."""
+    require_str(where, 'office', lane['office'])
+    require_str(where, 'agency', lane['agency'])
+    require_str(where, 'group', lane['group'])
+    require_str(where, 'lane', lane['lane'])
+    check_sam_link(where, lane['link'])
+
+    evidence = require_str(where, 'evidence', lane['evidence'])
+    if evidence not in EVIDENCE_TIERS:
+        raise Invalid(f'{where}: evidence={evidence!r} must be one of {EVIDENCE_TIERS} -- '
+                      f'the page words each tier differently and cannot render an '
+                      f'unknown one without overstating it')
+
+    n = require_int(where, 'solicitations', lane['solicitations'])
+    if n < 1:
+        raise Invalid(f'{where}: solicitations={n} -- a lane nothing was seen in is not a lane')
+    if evidence == 'OBSERVED' and n < MIN_OBSERVED_SOLICITATIONS:
+        raise Invalid(f'{where}: evidence=OBSERVED on {n} solicitation(s). OBSERVED asserts '
+                      f'this machine watched the buy REPEAT; emit a weaker tier instead')
+
+    states = lane['states']
+    if not isinstance(states, list):
+        raise Invalid(f'{where}: states must be a list of two-letter codes')
+    for i, st in enumerate(states):
+        require_str(f'{where}.states[{i}]', 'value', st)
+
+    # cadence may be '' (unknown), but if a cadence is claimed it has to be backed by a
+    # measured gap. "biweekly" with no cadence_days is a label with nothing behind it.
+    cadence = lane['cadence']
+    if not isinstance(cadence, str):
+        raise Invalid(f'{where}: cadence={cadence!r} must be a string ("" when unknown)')
+    if cadence and lane.get('cadence_days') is None:
+        raise Invalid(f'{where}: cadence={cadence!r} claimed with cadence_days=null -- '
+                      f'emit the measured gap or emit no cadence')
+
+
+def check_open_notice(where, n, snapshot_day):
+    """One notice presented as biddable RIGHT NOW."""
+    require_str(where, 'title', n['title'])
+    require_str(where, 'office', n['office'])
+    check_sam_link(where, n['link'])
+    check_date_string(where, 'deadline', n['deadline'])
+
+    access = require_str(where, 'access', n['access'])
+    if access not in REACHABLE_ACCESS:
+        raise Invalid(f'{where}: access={access!r} must be one of {REACHABLE_ACCESS}. A '
+                      f'set-aside needing formal certification is not biddable by a '
+                      f'self-cert bidder and must not be published as an opportunity')
+
+    # Compared against the payload's own snapshot date rather than the wall clock, so
+    # the check is about generator correctness and cannot fail on a midnight race.
+    if n['deadline'] < snapshot_day:
+        raise Invalid(f'{where}: deadline={n["deadline"]} already closed as of '
+                      f'snapshot_date={snapshot_day} -- publishing it as open is the '
+                      f'one thing this panel must never do')
+
+
+def check_sam_link(where, link):
+    require_str(where, 'link', link)
+    if not link.startswith(SAM_LINK_PREFIX):
+        raise Invalid(f'{where}: link={link!r} must point at {SAM_LINK_PREFIX}...')
+
+
 def check_source_section(where, sec):
     """One per-source section of the opportunities board."""
     status = require_str(where, 'status', sec['status'])
@@ -669,6 +813,8 @@ def validate(sport, data, now=None):
         if not 0 <= screened <= size:
             raise Invalid(f'screened={screened} must be between 0 and '
                           f'universe_size={size}')
+    elif sport == 'contracts':
+        check_contracts_payload(data)
     else:
         require_int('<payload>', 'year', data['year'])
         require_str('<payload>', 'race_name', data['race_name'])
@@ -686,6 +832,8 @@ def validate(sport, data, now=None):
             raise Invalid(f'{where} missing {item_missing}')
         if sport == 'opportunities':
             check_source_section(where, item)
+        elif sport == 'contracts':
+            check_lane(where, item)
         elif sport == 'f1':
             check_f1_entry(where, item)
         elif sport == 'funding':
