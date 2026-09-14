@@ -381,6 +381,77 @@ class RealEstateDeals(ContractBase):
         self.rejects('real_estate', payload(REAL_ESTATE, generated_at=stale), 'stale payload')
 
 
+
+class GameResults(ContractBase):
+    """A result attached to a played game. `correct` drives a hit/miss mark on the
+    page and is derivable from the other fields, so it is checked against them --
+    a green tick on a game the model got wrong is the worst thing this feed could do."""
+
+    def played(self, **over):
+        d = copy.deepcopy(payload(NFL))
+        res = {'away_pts': 10, 'home_pts': 13, 'winner': 'PHI', 'correct': True}
+        res.update(over)
+        d['games'][0]['result'] = res
+        return d
+
+    def test_result_is_optional(self):
+        self.ok('nfl', payload(NFL))
+
+    def test_played_game_validates(self):
+        self.ok('nfl', self.played())
+
+    def test_correct_must_agree_with_pick_and_winner(self):
+        self.rejects('nfl', self.played(correct=False), 'contradicts pick')
+
+    def test_winner_must_be_one_of_the_two_teams(self):
+        self.rejects('nfl', self.played(winner='SEA', correct=False),
+                     'is not one of the two teams')
+
+    def test_winner_losing_on_the_scoreboard_rejected(self):
+        self.rejects('nfl', self.played(away_pts=30, correct=False), 'contradicts the score')
+
+    def test_partial_result_rejected(self):
+        d = self.played()
+        del d['games'][0]['result']['winner']
+        self.rejects('nfl', d, 'omit result entirely')
+
+
+
+class Portfolio(ContractBase):
+    """Real entries taken off the Magic Formula screen. A ranking has no outcome, so
+    the screen can look good indefinitely on its own; these are the only part that
+    can be wrong in a way that costs money."""
+
+    def book(self, **over):
+        d = copy.deepcopy(payload(MAGIC_FORMULA))
+        port = {'positions': [{'ticker': 'HRB', 'buy_date': '2026-04-15', 'open': True,
+                               'return_pct': 0.4803, 'pnl': 96.05}],
+                'cost_basis': 1000.0, 'market_value': 1327.82, 'return_pct': 0.3278,
+                'benchmark': 'SPY', 'benchmark_return_pct': 0.0899,
+                'excess_return_pct': 0.2379}
+        port.update(over)
+        d['portfolio'] = port
+        return d
+
+    def test_portfolio_is_optional(self):
+        self.ok('magicformula', payload(MAGIC_FORMULA))
+
+    def test_valid_portfolio(self):
+        self.ok('magicformula', self.book())
+
+    def test_return_must_follow_from_value_and_cost(self):
+        self.rejects('magicformula', self.book(return_pct=0.9), 'disagrees with market_value')
+
+    def test_excess_must_be_return_minus_benchmark(self):
+        self.rejects('magicformula', self.book(excess_return_pct=0.5),
+                     'is not return_pct minus')
+
+    def test_unquotable_position_may_skip_its_numbers(self):
+        d = self.book(positions=[{'ticker': 'XYZ', 'buy_date': '2026-04-15',
+                                  'open': True, 'price_unavailable': True}])
+        self.ok('magicformula', d)
+
+
 if __name__ == '__main__':
     unittest.main()
 
@@ -858,4 +929,3 @@ class FederalContractLanes(ContractBase):
         d = copy.deepcopy(payload(CONTRACTS))
         del d['open']
         self.rejects('contracts', d, "missing required keys ['open']")
-
