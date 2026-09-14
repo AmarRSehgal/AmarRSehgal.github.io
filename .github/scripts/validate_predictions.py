@@ -469,7 +469,18 @@ def check_track_record(tr):
             require_number(where, key, tr[key])
 
 
-def check_mlb_track_record(tr):
+# Minimum games before an accuracy may be quoted at all, per sport. It is not one
+# number because the sports are not one size: MLB plays 2,430 games a season, so 100 is
+# a fortnight; the NFL plays 272, so a 100-game floor would mean no record until week 7
+# of every season and none at all in the first six weeks a feed exists. 10 is most of a
+# single NFL week, which is the smallest honest unit here. The floor exists
+# to stop a number that is pure noise being read as skill -- below FRAGILE_SAMPLE the
+# front end is required to say so in the same breath as the number.
+MIN_TRACK_GAMES = {'mlb': 100, 'nfl': 10}
+FRAGILE_SAMPLE = 100
+
+
+def check_mlb_track_record(tr, sport='mlb'):
     """
     MLB's record is accuracy against a baseline, not a rank correlation.
 
@@ -490,9 +501,11 @@ def check_mlb_track_record(tr):
             raise Invalid(f'{where} is present but missing {key!r} -- emit null '
                           f'instead of a partial record')
     n = require_int(where, 'n_games', tr['n_games'])
-    if n < 100:
-        raise Invalid(f'{where}.n_games={n} is below 100. Emit track_record=null '
-                      f'rather than quoting an accuracy that is noise at that size.')
+    floor = MIN_TRACK_GAMES.get(sport, FRAGILE_SAMPLE)
+    if n < floor:
+        raise Invalid(f'{where}.n_games={n} is below {floor} for {sport}. Emit '
+                      f'track_record=null rather than quoting an accuracy that is '
+                      f'noise at that size.')
     acc = require_probability(where, 'accuracy', tr['accuracy'])
     base = require_probability(where, 'baseline_accuracy', tr['baseline_accuracy'])
     pval = require_number(where, 'mcnemar_p_vs_baseline', tr['mcnemar_p_vs_baseline'])
@@ -787,6 +800,10 @@ def validate(sport, data, now=None):
         check_date_string('<payload>', 'date', data['date'])
         check_mlb_track_record(data.get('track_record'))
     elif sport == 'nfl':
+        # Same shape as mlb's, and checked by the same function on purpose: both are
+        # "accuracy against a baseline, plus calibration of the confident picks", and
+        # two copies of that rule would drift.
+        check_mlb_track_record(data.get('track_record'), sport='nfl')
         require_int('<payload>', 'season', data['season'])
         week = require_int('<payload>', 'week', data['week'])
         if not 1 <= week <= 25:

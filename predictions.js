@@ -732,21 +732,39 @@ async function loadFeed(key, opts) {
     const age = now - generated;
     stampEl.textContent = `Updated: ${formatStamp(data.generated_at)}`;
 
-    // Deliberately do NOT render stale numbers -- presenting an old slate as today's
-    // is the failure mode this whole block exists to prevent.
-    if (age > cfg.staleAfter) {
+    // Stale handling differs by surface, and the difference is the whole point.
+    //
+    // The home page asserts "this is current", so it must NOT render stale numbers --
+    // presenting an old slate as today's is the failure this block was written for.
+    //
+    // A detail page asserts nothing of the kind: it is that model's own page, where the
+    // last run is the record of what was forecast and is worth keeping. So it renders
+    // the rows under an explicit archive banner instead of throwing them away, up to a
+    // much longer window (`archiveAfter`). Discarding a past forecast is also how a
+    // model's history quietly stops being auditable.
+    const stale = age > cfg.staleAfter;
+    let archived = null;
+    if (stale) {
         stampEl.textContent = `Last published ${relativeAge(age)}`;
-        container.innerHTML = note('prediction-stale',
-            `${label} ${cfg.noun} are out of date -- last published ${relativeAge(age)} `
-            + `(${formatStamp(data.generated_at)}). Showing nothing rather than a stale slate.`);
-        return data;
+        const archiveAfter = cfg.archiveAfter || (cfg.staleAfter * 12);
+        if (!opts.full || age > archiveAfter) {
+            container.innerHTML = note('prediction-stale',
+                `${label} ${cfg.noun} are out of date -- last published ${relativeAge(age)} `
+                + `(${formatStamp(data.generated_at)}). Showing nothing rather than a stale slate.`
+                + (opts.full ? '' : ' The full run is kept on this feed\u2019s own page.'));
+            return data;
+        }
+        archived = `This is the LAST PUBLISHED run, from ${formatStamp(data.generated_at)} `
+            + `(${relativeAge(age)}) -- kept here as the record of what was forecast. It is `
+            + `not current, and it is not on the home page for that reason.`;
     }
 
     // A warning sits ABOVE the content rather than replacing it. Suppressing a feed and
     // failing to load one look identical to a reader; saying what is wrong with output
     // that is still on screen tells them more than an empty panel with an excuse.
     const warned = cfg.warn ? cfg.warn(data, now) : null;
-    const banner = warned ? `<p class="prediction-banner ${warned.cls}">${esc(warned.text)}</p>` : '';
+    const banner = (archived ? `<p class="prediction-banner prediction-archived">${esc(archived)}</p>` : '')
+        + (warned ? `<p class="prediction-banner ${warned.cls}">${esc(warned.text)}</p>` : '');
 
     const items = data[cfg.listKey];
     if (!Array.isArray(items) || items.length === 0) {
