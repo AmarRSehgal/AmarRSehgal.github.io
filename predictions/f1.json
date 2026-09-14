@@ -1,7 +1,211 @@
 {
-  "generated_at": null,
-  "year": null,
-  "race_name": null,
-  "predictions": [],
-  "note": "Predictions will appear here once the GitHub Action runs. See .github/workflows/f1_predictions.yml"
+  "generated_at": "2026-09-14T23:09:36Z",
+  "year": 2026,
+  "season": 2026,
+  "race_name": "Spanish Grand Prix",
+  "round": 14,
+  "season_status": "in_season",
+  "next_season_start": null,
+  "predictions": [
+    {
+      "driver": "Kimi Antonelli",
+      "predicted_pos": 5.16,
+      "position": 1,
+      "driver_code": "ANT",
+      "driver_full": "Kimi Antonelli",
+      "team": "Mercedes",
+      "win_prob": 0.41,
+      "podium_prob": 0.587
+    },
+    {
+      "driver": "Lando Norris",
+      "predicted_pos": 5.27,
+      "position": 2,
+      "driver_code": "NOR",
+      "driver_full": "Lando Norris",
+      "team": "McLaren",
+      "win_prob": 0.23,
+      "podium_prob": 0.573
+    },
+    {
+      "driver": "Max Verstappen",
+      "predicted_pos": 5.54,
+      "position": 3,
+      "driver_code": "VER",
+      "driver_full": "Max Verstappen",
+      "team": "Red Bull Racing",
+      "win_prob": 0.12,
+      "podium_prob": 0.51
+    },
+    {
+      "driver": "Charles Leclerc",
+      "predicted_pos": 5.6,
+      "position": 4,
+      "driver_code": "LEC",
+      "driver_full": "Charles Leclerc",
+      "team": "Ferrari",
+      "win_prob": 0.05,
+      "podium_prob": 0.397
+    },
+    {
+      "driver": "George Russell",
+      "predicted_pos": 6.63,
+      "position": 5,
+      "driver_code": "RUS",
+      "driver_full": "George Russell",
+      "team": "Mercedes",
+      "win_prob": 0.077,
+      "podium_prob": 0.33
+    },
+    {
+      "driver": "Lewis Hamilton",
+      "predicted_pos": 6.7,
+      "position": 6,
+      "driver_code": "HAM",
+      "driver_full": "Lewis Hamilton",
+      "team": "Ferrari",
+      "win_prob": 0.043,
+      "podium_prob": 0.26
+    },
+    {
+      "driver": "Oscar Piastri",
+      "predicted_pos": 7.21,
+      "position": 7,
+      "driver_code": "PIA",
+      "driver_full": "Oscar Piastri",
+      "team": "McLaren",
+      "win_prob": 0.047,
+      "podium_prob": 0.25
+    },
+    {
+      "driver": "Arvid Lindblad",
+      "predicted_pos": 8.86,
+      "position": 8,
+      "driver_code": "LIN",
+      "driver_full": "Arvid Lindblad",
+      "team": "Racing Bulls",
+      "win_prob": 0.007,
+      "podium_prob": 0.027
+    },
+    {
+      "driver": "Liam Lawson",
+      "predicted_pos": 9.0,
+      "position": 9,
+      "driver_code": "LAW",
+      "driver_full": "Liam Lawson",
+      "team": "Red Bull Racing",
+      "win_prob": 0.013,
+      "podium_prob": 0.043
+    },
+    {
+      "driver": "Pierre Gasly",
+      "predicted_pos": 10.4,
+      "position": 10,
+      "driver_code": "GAS",
+      "driver_full": "Pierre Gasly",
+      "team": "Alpine",
+      "win_prob": 0.003,
+      "podium_prob": 0.013
+    },
+    {
+      "driver": "Franco Colapinto",
+      "predicted_pos": 10.64,
+      "position": 11,
+      "driver_code": "COL",
+      "driver_full": "Franco Colapinto",
+      "team": "Alpine",
+      "win_prob": 0.0,
+      "podium_prob": 0.003
+    },
+    {
+      "driver": "Nico Hulkenberg",
+      "predicted_pos": 10.72,
+      "position": 12,
+      "driver_code": "HUL",
+      "driver_full": "Nico Hulkenberg",
+      "team": "Audi",
+      "win_prob": 0.0,
+      "podium_prob": 0.007
+    },
+    {
+      "driver": "Gabriel Bortoleto",
+      "predicted_pos": 11.19,
+      "position": 13,
+      "driver_code": "BOR",
+      "driver_full": "Gabriel Bortoleto",
+      "team": "Audi",
+      "win_prob": 0.0,
+      "podium_prob": 0.0
+    },
+    {
+      "driver": "Yuki Tsunoda",
+      "predicted_pos": 13.46,
+      "position": 14,
+      "driver_code": "TSU",
+      "driver_full": "Yuki Tsunoda",
+      "team": "Racing Bulls",
+      "win_prob": 0.0,
+      "podium_prob": 0.0
+    },
+    {
+      "driver": "Esteban Ocon",
+      "predicted_pos": 14.9,
+      "position": 15,
+      "driver_code": "OCO",
+      "driver_full": "Esteban Ocon",
+      "team": "Haas F1 Team",
+      "win_prob": 0.0,
+      "podium_prob": 0.0
+    },
+    {
+      "driver": "Alexander Albon",
+      "predicted_pos": 16.93,
+      "position": 16,
+      "driver_code": "ALB",
+      "driver_full": "Alexander Albon",
+      "team": "Williams",
+      "win_prob": 0.0,
+      "podium_prob": 0.0
+    },
+    {
+      "driver": "Carlos Sainz",
+      "predicted_pos": 17.26,
+      "position": 17,
+      "driver_code": "SAI",
+      "driver_full": "Carlos Sainz",
+      "team": "Williams",
+      "win_prob": 0.0,
+      "podium_prob": 0.0
+    },
+    {
+      "driver": "Fernando Alonso",
+      "predicted_pos": 17.59,
+      "position": 18,
+      "driver_code": "ALO",
+      "driver_full": "Fernando Alonso",
+      "team": "Aston Martin",
+      "win_prob": 0.0,
+      "podium_prob": 0.0
+    },
+    {
+      "driver": "Sergio Perez",
+      "predicted_pos": 17.79,
+      "position": 19,
+      "driver_code": "PER",
+      "driver_full": "Sergio Perez",
+      "team": "Cadillac",
+      "win_prob": 0.0,
+      "podium_prob": 0.0
+    },
+    {
+      "driver": "Valtteri Bottas",
+      "predicted_pos": 18.32,
+      "position": 20,
+      "driver_code": "BOT",
+      "driver_full": "Valtteri Bottas",
+      "team": "Cadillac",
+      "win_prob": 0.0,
+      "podium_prob": 0.0
+    }
+  ]
 }
