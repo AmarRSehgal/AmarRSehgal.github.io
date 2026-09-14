@@ -1,11 +1,30 @@
 {
-  "generated_at": "2026-09-01T08:17:29.172754+00:00",
-  "snapshot_date": "2026-09-01",
-  "snapshots": 2,
-  "observing_snapshots": 2,
+  "generated_at": "2026-09-14T23:11:01.633332+00:00",
+  "snapshot_date": "2026-09-14",
+  "snapshots": 15,
+  "observing_snapshots": 14,
   "days_since_new_data": 0,
-  "notices_tracked": 58966,
+  "notices_tracked": 71086,
   "lanes": [
+    {
+      "office": "DLA TROOP SUPPORT",
+      "agency": "DEPT OF DEFENSE",
+      "group": "Subsistence/FOOD",
+      "lane": "fresh bread bakery products support dow troop customers el paso tx zone",
+      "evidence": "OBSERVED",
+      "solicitations": 2,
+      "cadence": "biweekly",
+      "cadence_days": 11,
+      "cadence_source": "dates",
+      "regularity": null,
+      "span_days": 11,
+      "next_expected": "2026-09-12",
+      "open_deadline": "",
+      "states": [
+        "TX"
+      ],
+      "link": "https://sam.gov/opp/41d78351541d486da71e43bc4a7b337b/view"
+    },
     {
       "office": "FCI EDGEFIELD",
       "agency": "JUSTICE, DEPARTMENT OF",
@@ -47,23 +66,6 @@
     {
       "office": "W6QM MICC-FT DRUM",
       "agency": "DEPT OF DEFENSE",
-      "group": "Clothing/textiles",
-      "lane": "riot gear",
-      "evidence": "POSTED-HISTORY",
-      "solicitations": 3,
-      "cadence": "bimonthly",
-      "cadence_days": 70,
-      "cadence_source": "dates",
-      "regularity": 0.22,
-      "span_days": 141,
-      "next_expected": "2026-11-06",
-      "open_deadline": "2026-09-04",
-      "states": [],
-      "link": "https://sam.gov/opp/4ce15fa728c6435cae4e8c0c14473907/view"
-    },
-    {
-      "office": "W6QM MICC-FT DRUM",
-      "agency": "DEPT OF DEFENSE",
       "group": "Fuels/lubricants",
       "lane": "microcrystalline wax",
       "evidence": "POSTED-HISTORY",
@@ -98,117 +100,115 @@
       "link": "https://sam.gov/opp/c33de8c49a16410b9536726e8baecf16/view"
     },
     {
-      "office": "FCC VICTORVILLE",
+      "office": "W6QM MICC-FT DRUM",
+      "agency": "DEPT OF DEFENSE",
+      "group": "Clothing/textiles",
+      "lane": "riot gear",
+      "evidence": "POSTED-HISTORY",
+      "solicitations": 3,
+      "cadence": "bimonthly",
+      "cadence_days": 70,
+      "cadence_source": "dates",
+      "regularity": 0.22,
+      "span_days": 141,
+      "next_expected": "2026-11-06",
+      "open_deadline": "",
+      "states": [],
+      "link": "https://sam.gov/opp/4ce15fa728c6435cae4e8c0c14473907/view"
+    },
+    {
+      "office": "FCC COLEMAN",
       "agency": "JUSTICE, DEPARTMENT OF",
       "group": "Subsistence/FOOD",
-      "lane": "subsistence bid",
+      "lane": "fcc coleman produce",
+      "evidence": "PERIOD-MARKER",
+      "solicitations": 2,
+      "cadence": "monthly",
+      "cadence_days": 30,
+      "cadence_source": "dates",
+      "regularity": null,
+      "span_days": 30,
+      "next_expected": "2026-10-09",
+      "open_deadline": "2026-09-18",
+      "states": [
+        "FL"
+      ],
+      "link": "https://sam.gov/opp/89f5d01ea7cd4ee3ad8146c8755040c3/view"
+    },
+    {
+      "office": "FCI DANBURY",
+      "agency": "JUSTICE, DEPARTMENT OF",
+      "group": "Subsistence/FOOD",
+      "lane": "fci danbury subsistence",
       "evidence": "PERIOD-MARKER",
       "solicitations": 2,
       "cadence": "biweekly",
-      "cadence_days": 14,
+      "cadence_days": 12,
       "cadence_source": "dates",
       "regularity": null,
-      "span_days": 14,
-      "next_expected": "2026-09-09",
-      "open_deadline": "2026-09-04",
+      "span_days": 12,
+      "next_expected": "2026-09-13",
+      "open_deadline": "2027-08-28",
       "states": [
-        "CA"
+        "CT"
       ],
-      "link": "https://sam.gov/opp/942ee139af194ad78edb243e76ca48fa/view"
-    },
-    {
-      "office": "FCC OAKDALE",
-      "agency": "JUSTICE, DEPARTMENT OF",
-      "group": "Subsistence/FOOD",
-      "lane": "fcc oakdale bread",
-      "evidence": "PERIOD-MARKER",
-      "solicitations": 2,
-      "cadence": "multi-year",
-      "cadence_days": 2346,
-      "cadence_source": "dates",
-      "regularity": null,
-      "span_days": 2346,
-      "next_expected": "2033-01-13",
-      "open_deadline": "",
-      "states": [
-        "LA"
-      ],
-      "link": "https://sam.gov/opp/d54d6cfaa47e49eeaae0128c3b00a9b5/view"
-    },
-    {
-      "office": "FTC OKLAHOMA CITY",
-      "agency": "JUSTICE, DEPARTMENT OF",
-      "group": "Subsistence/FOOD",
-      "lane": "ftc okl dairy meats general subsistence kosher",
-      "evidence": "PERIOD-MARKER",
-      "solicitations": 2,
-      "cadence": "quarterly",
-      "cadence_days": 89,
-      "cadence_source": "dates",
-      "regularity": null,
-      "span_days": 89,
-      "next_expected": "2026-08-24",
-      "open_deadline": "",
-      "states": [
-        "OK"
-      ],
-      "link": "https://sam.gov/opp/b4032a4da5544402be52b62ce0afbec8/view"
+      "link": "https://sam.gov/opp/e8215bb2434444329c39d046d4775073/view"
     }
   ],
   "open": [
     {
-      "title": "7320--MWV Commercial Dishwasher & Soil break down system RFQ Amendment 1",
-      "office": "245-NETWORK CONTRACT OFFICE 5 (36C245)",
+      "title": "129th Tumbler Cups",
+      "office": "W7MX USPFO ACTIVITY CAANG 129",
       "group": "Food prep/serving equip",
-      "state": "WV",
-      "deadline": "2026-09-01",
+      "state": "CA",
+      "deadline": "2026-09-14",
       "access": "small-biz",
-      "link": "https://sam.gov/opp/23a2ae8b0f244dc0a341efa770c39876/view"
+      "link": "https://sam.gov/opp/ba4deab90eac4d968095b250c3212031/view"
     },
     {
-      "title": "82 SFS - Universal Weapon Racks",
-      "office": "FA3020  82 CONS LGC",
+      "title": "48 CMS Fuels Shop Rolling Cabinets",
+      "office": "FA5587  48 CONS (ADMIN ONLY NO REQ)",
       "group": "Furniture",
-      "state": "TX",
-      "deadline": "2026-09-01",
-      "access": "small-biz",
-      "link": "https://sam.gov/opp/2b59900b0cce455f86b95253c381dca4/view"
+      "state": "",
+      "deadline": "2026-09-14",
+      "access": "OPEN",
+      "link": "https://sam.gov/opp/8510560a7daf4d6d9181304d6dd9ae18/view"
     },
     {
-      "title": "Cabinets & Storage",
-      "office": "FA2521  45 CONS PK",
+      "title": "5-GAL WATER JUG SERVICE",
+      "office": "W6QM MICC-FT DRUM",
+      "group": "Subsistence/FOOD",
+      "state": "",
+      "deadline": "2026-09-14",
+      "access": "OPEN",
+      "link": "https://sam.gov/opp/975450d9e9364262bb37fb36e46073b3/view"
+    },
+    {
+      "title": "7125 -- Pharmacy TL-30 Safe",
+      "office": "248-NETWORK CONTRACT OFFICE 8 (36C248)",
       "group": "Furniture",
       "state": "FL",
-      "deadline": "2026-09-01",
-      "access": "small-biz",
-      "link": "https://sam.gov/opp/0902af39b4e44052ab3c407fd41b9b78/view"
+      "deadline": "2026-09-14",
+      "access": "OPEN",
+      "link": "https://sam.gov/opp/4cee7242872a4842af3460d6a44a059e/view"
     },
     {
-      "title": "Equipment",
-      "office": "W6QM MICC-FT DRUM",
-      "group": "Food prep/serving equip",
-      "state": "",
-      "deadline": "2026-09-01",
-      "access": "small-biz",
-      "link": "https://sam.gov/opp/67e4af27d3a64176aea8ee666372c2ac/view"
-    },
-    {
-      "title": "FCI Fairton FY27 1st Qtr Subsistence",
-      "office": "FCI FAIRTON",
-      "group": "Subsistence/FOOD",
-      "state": "NJ",
-      "deadline": "2026-09-01",
-      "access": "small-biz",
-      "link": "https://sam.gov/opp/6f16eb56cfdd4669b70b668fdbec37a5/view"
-    },
-    {
-      "title": "FCI SEAGOVILLE",
-      "office": "FCI SEAGOVILLE",
-      "group": "Subsistence/FOOD",
+      "title": "BMET Work Center Furniture Package-Workbenches and Installation",
+      "office": "FA3016  502 CONS CL",
+      "group": "Furniture",
       "state": "TX",
-      "deadline": "2026-09-01",
+      "deadline": "2026-09-14",
       "access": "small-biz",
-      "link": "https://sam.gov/opp/5173f112e94f4d09afd6251c73319ba5/view"
+      "link": "https://sam.gov/opp/4e032788f4d34b86b1dcab6937ad2156/view"
+    },
+    {
+      "title": "Bldg. 9 2nd Floor Office Furniture",
+      "office": "W7MV USPFO ACTIVITY AZANG 162",
+      "group": "Furniture",
+      "state": "AZ",
+      "deadline": "2026-09-14",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/3e4fd7637a1c4bf6812319db0fa637a0/view"
     }
   ]
 }
