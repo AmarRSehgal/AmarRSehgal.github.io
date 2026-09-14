@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T15:02:40.068190+00:00",
+  "generated_at": "2026-09-14T23:47:58.700805+00:00",
   "universe_pulled": "2026-04-15",
   "universe_size": 50,
   "screened": 17,
@@ -11,9 +11,9 @@
       "name": "Versant Media Group, Inc.",
       "sector": "Communication Services",
       "rank": 1,
-      "earnings_yield": 0.247545,
+      "earnings_yield": 0.245714,
       "return_on_capital": 0.752497,
-      "market_cap": 5214703104.0,
+      "market_cap": 5227923968.0,
       "ebit_basis": "TTM"
     },
     {
@@ -21,9 +21,9 @@
       "name": "H&R Block, Inc.",
       "sector": "Consumer Cyclical",
       "rank": 2,
-      "earnings_yield": 0.139365,
+      "earnings_yield": 0.137795,
       "return_on_capital": 1.072622,
-      "market_cap": 5683791872.0,
+      "market_cap": 5638183424.0,
       "ebit_basis": "TTM"
     },
     {
@@ -31,9 +31,9 @@
       "name": "Crocs, Inc.",
       "sector": "Consumer Cyclical",
       "rank": 3,
-      "earnings_yield": 0.121934,
+      "earnings_yield": 0.122777,
       "return_on_capital": 1.105119,
-      "market_cap": 5320464896.0,
+      "market_cap": 5345396224.0,
       "ebit_basis": "TTM"
     },
     {
@@ -41,29 +41,29 @@
       "name": "CGI Inc.",
       "sector": "Technology",
       "rank": 4,
-      "earnings_yield": 0.106529,
+      "earnings_yield": 0.10355,
       "return_on_capital": 3.096635,
-      "market_cap": 14947737600.0,
-      "ebit_basis": "TTM"
-    },
-    {
-      "ticker": "MD",
-      "name": "Pediatrix Medical Group, Inc.",
-      "sector": "Healthcare",
-      "rank": 5,
-      "earnings_yield": 0.111295,
-      "return_on_capital": 0.688511,
-      "market_cap": 2136961024.0,
+      "market_cap": 15097868288.0,
       "ebit_basis": "TTM"
     },
     {
       "ticker": "YELP",
       "name": "Yelp Inc.",
       "sector": "Communication Services",
-      "rank": 6,
-      "earnings_yield": 0.147926,
+      "rank": 5,
+      "earnings_yield": 0.144288,
       "return_on_capital": 0.38865,
-      "market_cap": 1185117440.0,
+      "market_cap": 1184574848.0,
+      "ebit_basis": "TTM"
+    },
+    {
+      "ticker": "MD",
+      "name": "Pediatrix Medical Group, Inc.",
+      "sector": "Healthcare",
+      "rank": 6,
+      "earnings_yield": 0.11077,
+      "return_on_capital": 0.688511,
+      "market_cap": 2186525440.0,
       "ebit_basis": "TTM"
     },
     {
@@ -71,9 +71,9 @@
       "name": "Perdoceo Education Corporation",
       "sector": "Consumer Defensive",
       "rank": 7,
-      "earnings_yield": 0.165013,
+      "earnings_yield": 0.164728,
       "return_on_capital": 0.342883,
-      "market_cap": 2076306688.0,
+      "market_cap": 2068797568.0,
       "ebit_basis": "TTM"
     },
     {
@@ -83,7 +83,7 @@
       "rank": 8,
       "earnings_yield": 0.083375,
       "return_on_capital": 1.086331,
-      "market_cap": 3115324928.0,
+      "market_cap": 3154114304.0,
       "ebit_basis": "TTM"
     },
     {
@@ -93,7 +93,7 @@
       "rank": 9,
       "earnings_yield": 0.13331,
       "return_on_capital": 0.388139,
-      "market_cap": 2424381184.0,
+      "market_cap": 2419139840.0,
       "ebit_basis": "TTM"
     },
     {
@@ -101,10 +101,90 @@
       "name": "Upwork Inc.",
       "sector": "Communication Services",
       "rank": 10,
-      "earnings_yield": 0.139334,
+      "earnings_yield": 0.139742,
       "return_on_capital": 0.33964,
-      "market_cap": 1087283840.0,
+      "market_cap": 1086659328.0,
       "ebit_basis": "TTM"
     }
-  ]
+  ],
+  "portfolio": {
+    "positions": [
+      {
+        "ticker": "TNET",
+        "shares": 5.2219,
+        "buy_price": 38.3,
+        "buy_date": "2026-04-15",
+        "cost_basis": 200.0,
+        "days_held": 152,
+        "open": true,
+        "price": 68.71,
+        "pnl": 158.8,
+        "return_pct": 0.794,
+        "market_value": 358.8
+      },
+      {
+        "ticker": "HRB",
+        "shares": 6.4725,
+        "buy_price": 30.9,
+        "buy_date": "2026-04-15",
+        "cost_basis": 200.0,
+        "days_held": 152,
+        "open": true,
+        "price": 45.74,
+        "pnl": 96.05,
+        "return_pct": 0.4803,
+        "market_value": 296.05
+      },
+      {
+        "ticker": "HRMY",
+        "shares": 6.8446,
+        "buy_price": 29.22,
+        "buy_date": "2026-04-15",
+        "cost_basis": 200.0,
+        "days_held": 152,
+        "open": true,
+        "price": 41.54,
+        "pnl": 84.33,
+        "return_pct": 0.4216,
+        "market_value": 284.32
+      },
+      {
+        "ticker": "GIB",
+        "shares": 2.7001,
+        "buy_price": 74.07,
+        "buy_date": "2026-04-15",
+        "cost_basis": 200.0,
+        "days_held": 152,
+        "open": true,
+        "price": 72.91,
+        "pnl": -3.13,
+        "return_pct": -0.0157,
+        "market_value": 196.86
+      },
+      {
+        "ticker": "PXED",
+        "shares": 7.0796,
+        "buy_price": 28.25,
+        "buy_date": "2026-04-15",
+        "cost_basis": 200.0,
+        "days_held": 152,
+        "open": true,
+        "price": 27.09,
+        "pnl": -8.21,
+        "return_pct": -0.0411,
+        "market_value": 191.79
+      }
+    ],
+    "open_positions": 5,
+    "closed_positions": 0,
+    "since": "2026-04-15",
+    "cost_basis": 999.99,
+    "market_value": 1327.82,
+    "unrealized_pnl": 327.83,
+    "realized_pnl": 0.0,
+    "return_pct": 0.3278,
+    "benchmark": "SPY",
+    "benchmark_return_pct": 0.0899,
+    "excess_return_pct": 0.2379
+  }
 }
