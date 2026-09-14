@@ -1,109 +1,109 @@
 {
-  "generated_at": "2026-09-14T23:47:58.700805+00:00",
-  "universe_pulled": "2026-04-15",
+  "generated_at": "2026-09-14T23:56:08.723267+00:00",
+  "universe_pulled": "2026-09-11",
   "universe_size": 50,
-  "screened": 17,
-  "unrankable": 10,
-  "min_market_cap_m": 1000.0,
+  "screened": 43,
+  "unrankable": 7,
+  "min_market_cap_m": 500.0,
   "ideas": [
+    {
+      "ticker": "TDC",
+      "name": "Teradata Corporation",
+      "sector": "Technology",
+      "rank": 1,
+      "earnings_yield": 0.254924,
+      "return_on_capital": 4.8125,
+      "market_cap": 2731410176.0,
+      "ebit_basis": "TTM"
+    },
+    {
+      "ticker": "IRWD",
+      "name": "Ironwood Pharmaceuticals, Inc.",
+      "sector": "Healthcare",
+      "rank": 2,
+      "earnings_yield": 0.238249,
+      "return_on_capital": 5.365192,
+      "market_cap": 689050624.0,
+      "ebit_basis": "TTM"
+    },
+    {
+      "ticker": "AFMJF",
+      "name": "Alphamin Resources Corp.",
+      "sector": "Basic Materials",
+      "rank": 3,
+      "earnings_yield": 0.345602,
+      "return_on_capital": 0.953121,
+      "market_cap": 1287774464.0,
+      "ebit_basis": "TTM"
+    },
+    {
+      "ticker": "ABUS",
+      "name": "Arbutus Biopharma Corporation",
+      "sector": "Healthcare",
+      "rank": 4,
+      "earnings_yield": 0.165374,
+      "return_on_capital": 1.730634,
+      "market_cap": 1016282496.0,
+      "ebit_basis": "TTM"
+    },
+    {
+      "ticker": "THXPF",
+      "name": "Thor Explorations Ltd.",
+      "sector": "Basic Materials",
+      "rank": 5,
+      "earnings_yield": 0.499529,
+      "return_on_capital": 0.687395,
+      "market_cap": 613180608.0,
+      "ebit_basis": "TTM"
+    },
     {
       "ticker": "VSNT",
       "name": "Versant Media Group, Inc.",
       "sector": "Communication Services",
-      "rank": 1,
+      "rank": 6,
       "earnings_yield": 0.245714,
       "return_on_capital": 0.752497,
       "market_cap": 5227923968.0,
       "ebit_basis": "TTM"
     },
     {
+      "ticker": "ANPMF",
+      "name": "Andean Precious Metals Corp.",
+      "sector": "Basic Materials",
+      "rank": 7,
+      "earnings_yield": 0.266672,
+      "return_on_capital": 0.673943,
+      "market_cap": 704811648.0,
+      "ebit_basis": "TTM"
+    },
+    {
+      "ticker": "OTEX",
+      "name": "Open Text Corporation",
+      "sector": "Technology",
+      "rank": 8,
+      "earnings_yield": 0.115445,
+      "return_on_capital": 8.011845,
+      "market_cap": 5811763712.0,
+      "ebit_basis": "TTM"
+    },
+    {
+      "ticker": "INVA",
+      "name": "Innoviva, Inc.",
+      "sector": "Healthcare",
+      "rank": 9,
+      "earnings_yield": 0.346743,
+      "return_on_capital": 0.633967,
+      "market_cap": 1509930624.0,
+      "ebit_basis": "TTM"
+    },
+    {
       "ticker": "HRB",
       "name": "H&R Block, Inc.",
       "sector": "Consumer Cyclical",
-      "rank": 2,
+      "rank": 10,
       "earnings_yield": 0.137795,
       "return_on_capital": 1.072622,
       "market_cap": 5638183424.0,
-      "ebit_basis": "TTM"
-    },
-    {
-      "ticker": "CROX",
-      "name": "Crocs, Inc.",
-      "sector": "Consumer Cyclical",
-      "rank": 3,
-      "earnings_yield": 0.122777,
-      "return_on_capital": 1.105119,
-      "market_cap": 5345396224.0,
-      "ebit_basis": "TTM"
-    },
-    {
-      "ticker": "GIB",
-      "name": "CGI Inc.",
-      "sector": "Technology",
-      "rank": 4,
-      "earnings_yield": 0.10355,
-      "return_on_capital": 3.096635,
-      "market_cap": 15097868288.0,
-      "ebit_basis": "TTM"
-    },
-    {
-      "ticker": "YELP",
-      "name": "Yelp Inc.",
-      "sector": "Communication Services",
-      "rank": 5,
-      "earnings_yield": 0.144288,
-      "return_on_capital": 0.38865,
-      "market_cap": 1184574848.0,
-      "ebit_basis": "TTM"
-    },
-    {
-      "ticker": "MD",
-      "name": "Pediatrix Medical Group, Inc.",
-      "sector": "Healthcare",
-      "rank": 6,
-      "earnings_yield": 0.11077,
-      "return_on_capital": 0.688511,
-      "market_cap": 2186525440.0,
-      "ebit_basis": "TTM"
-    },
-    {
-      "ticker": "PRDO",
-      "name": "Perdoceo Education Corporation",
-      "sector": "Consumer Defensive",
-      "rank": 7,
-      "earnings_yield": 0.164728,
-      "return_on_capital": 0.342883,
-      "market_cap": 2068797568.0,
-      "ebit_basis": "TTM"
-    },
-    {
-      "ticker": "TNET",
-      "name": "TriNet Group, Inc.",
-      "sector": "Industrials",
-      "rank": 8,
-      "earnings_yield": 0.083375,
-      "return_on_capital": 1.086331,
-      "market_cap": 3154114304.0,
-      "ebit_basis": "TTM"
-    },
-    {
-      "ticker": "HRMY",
-      "name": "Harmony Biosciences Holdings, Inc.",
-      "sector": "Healthcare",
-      "rank": 9,
-      "earnings_yield": 0.13331,
-      "return_on_capital": 0.388139,
-      "market_cap": 2419139840.0,
-      "ebit_basis": "TTM"
-    },
-    {
-      "ticker": "UPWK",
-      "name": "Upwork Inc.",
-      "sector": "Communication Services",
-      "rank": 10,
-      "earnings_yield": 0.139742,
-      "return_on_capital": 0.33964,
-      "market_cap": 1086659328.0,
       "ebit_basis": "TTM"
     }
   ],
