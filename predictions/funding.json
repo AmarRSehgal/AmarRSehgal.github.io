@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T09:00:14.974374+00:00",
+  "generated_at": "2026-09-14T10:00:07.480179+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 896.21,
-      "net_at_hold": 0.81845,
+      "net_apr": 884.77,
+      "net_at_hold": 0.80801,
       "cost_bps": 35.89
     },
     {
@@ -27,8 +27,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 734.55,
-      "net_at_hold": 0.67082,
+      "net_apr": 700.28,
+      "net_at_hold": 0.63953,
       "cost_bps": 50.83
     },
     {
@@ -40,8 +40,8 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 522.34,
-      "net_at_hold": 0.23851,
+      "net_apr": 506.14,
+      "net_at_hold": 0.23111,
       "cost_bps": 37.36
     },
     {
@@ -53,8 +53,8 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 432.74,
-      "net_at_hold": 0.1976,
+      "net_apr": 411.72,
+      "net_at_hold": 0.188,
       "cost_bps": 38.0
     },
     {
@@ -66,9 +66,9 @@
       "min_hold_h": 4,
       "hits": 23,
       "scans": 24,
-      "net_apr": 466.49,
-      "net_at_hold": 0.21301,
-      "cost_bps": 40.8
+      "net_apr": 428.01,
+      "net_at_hold": 0.19544,
+      "cost_bps": 40.81
     },
     {
       "base": "ARK",
@@ -77,14 +77,14 @@
       "short_venue": "Hyperliquid",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 20,
+      "hits": 21,
       "scans": 24,
-      "net_apr": 1721.94,
-      "net_at_hold": 1.57255,
-      "cost_bps": 31.35
+      "net_apr": 1721.14,
+      "net_at_hold": 1.57182,
+      "cost_bps": 28.66
     },
     {
-      "base": "STORJ",
+      "base": "LSK",
       "type": "perp-perp",
       "long_venue": "Gate",
       "short_venue": "Aster",
@@ -92,9 +92,9 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 3073.63,
-      "net_at_hold": 2.80696,
-      "cost_bps": 40.18
+      "net_apr": 3462.05,
+      "net_at_hold": 3.16169,
+      "cost_bps": 64.59
     },
     {
       "base": "STORJ",
@@ -107,7 +107,7 @@
       "scans": 24,
       "net_apr": 1630.8,
       "net_at_hold": 1.48932,
-      "cost_bps": 74.73
+      "cost_bps": 40.11
     }
   ]
 }
