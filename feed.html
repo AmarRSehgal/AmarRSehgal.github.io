@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model feed -- Amar Sehgal</title>
+    <meta name="description" content="Full output and build notes for one of Amar Sehgal's live prediction models.">
+    <meta name="author" content="Amar Sehgal">
+    <meta name="theme-color" content="#0a0a0a">
+    <!-- Every feed shares this page, so the per-feed title and description are set by
+         feed.js from the query string. Deliberately noindex: nine URLs whose content is
+         written by a script and changes hourly are not pages a search engine should be
+         ranking, and the home page is the canonical entry point. -->
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='700' fill='%236ea8fe' text-anchor='middle'%3EAS%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">AS</a>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html#predictions">All predictions</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-controls="nav-links" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main">
+    <section id="feed-detail">
+        <div class="container">
+            <a class="feed-back" href="index.html#predictions">&larr; All predictions</a>
+
+            <!-- Filled by feed.js. The unknown-feed case replaces the whole block. -->
+            <div class="feed-head">
+                <h1 id="feed-title">Loading...</h1>
+                <p id="feed-tagline" class="feed-tagline"></p>
+                <div class="feed-stampline">
+                    <span id="feed-updated" class="prediction-date">Loading...</span>
+                    <span id="feed-cadence" class="feed-cadence"></span>
+                </div>
+            </div>
+
+            <div class="feed-layout">
+                <div class="feed-main">
+                    <h2 class="feed-sub">Current output</h2>
+                    <div id="feed-content" class="prediction-content">
+                        <p class="prediction-loading">Fetching the latest run...</p>
+                    </div>
+                </div>
+
+                <aside class="feed-aside">
+                    <div id="feed-project" class="feed-panel"></div>
+                    <div id="feed-facts" class="feed-panel"></div>
+                </aside>
+            </div>
+
+            <div id="feed-nav" class="feed-siblings"></div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="footer-year">2026</span> Amar Sehgal</p>
+        </div>
+    </footer>
+
+    <script src="predictions.js"></script>
+    <script src="feed.js"></script>
+</body>
+</html>

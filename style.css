@@ -743,3 +743,230 @@ button:focus-visible {
     margin-top: 0.5rem;
     border-radius: 4px;
 }
+
+/* A warning that sits ABOVE a feed's content rather than replacing it. Used where the
+   output is still real but something about its inputs is not current -- the Magic
+   Formula universe being months behind the current filings is the case this exists
+   for. Suppressing the panel instead was worse: a hidden feed and a broken feed look
+   the same, and the reader loses the ranking as well as the caveat. */
+.prediction-banner {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #cbd5e1;
+    background: rgba(251, 191, 36, 0.06);
+    border-left: 3px solid #fbbf24;
+    padding: 0.6rem 0.9rem;
+    margin: 0 0 0.9rem;
+    border-radius: 4px;
+}
+
+/* The soft variant: the input IS current, and the banner is just saying so. */
+.prediction-warn {
+    color: #9aa4b2;
+    background: rgba(255, 255, 255, 0.03);
+    border-left-color: #4a5568;
+}
+
+.prediction-warn-hard {
+    border-left-color: #fbbf24;
+}
+
+/* ===== Prediction headings link to their own page ===== */
+.prediction-title-link {
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.4rem;
+}
+
+.prediction-title-link:hover,
+.prediction-title-link:focus-visible {
+    color: var(--accent);
+}
+
+/* The arrow only appears on hover/focus, so nine of them do not turn the section into
+   a wall of chevrons -- but it is always in the DOM, so nothing reflows on hover. */
+.prediction-title-arrow {
+    font-size: 0.8em;
+    opacity: 0;
+    transform: translateX(-4px);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.prediction-title-link:hover .prediction-title-arrow,
+.prediction-title-link:focus-visible .prediction-title-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ===== feed.html ===== */
+#feed-detail {
+    padding: 3rem 0 4rem;
+}
+
+.feed-back {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+.feed-back:hover { color: var(--accent); }
+
+.feed-head {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.feed-head h1 {
+    font-size: 1.9rem;
+    margin: 0 0 0.5rem;
+}
+
+.feed-tagline {
+    color: #9aa4b2;
+    max-width: 60ch;
+    margin: 0 0 0.9rem;
+    line-height: 1.6;
+}
+
+.feed-stampline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.2rem;
+    align-items: baseline;
+}
+
+.feed-cadence {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-transform: lowercase;
+}
+
+/* Output first and wide; the notes sit beside it on a desktop and below it on a phone,
+   because the numbers are what someone came for and the caveats are what keeps them
+   honest -- neither belongs behind a fold. */
+.feed-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr);
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.feed-sub {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin: 0 0 1rem;
+}
+
+.feed-panel {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.1rem 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.feed-panel h3 {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin: 0 0 0.9rem;
+}
+
+.feed-panel h4 {
+    font-size: 0.85rem;
+    color: #cbd5e1;
+    margin: 1rem 0 0.3rem;
+}
+
+.feed-panel p {
+    font-size: 0.85rem;
+    line-height: 1.65;
+    color: #9aa4b2;
+    margin: 0;
+}
+
+.feed-repo {
+    margin-top: 1.1rem !important;
+    padding-top: 0.8rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem !important;
+}
+
+.feed-facts {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.feed-fact {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.feed-fact:last-child { border-bottom: none; }
+
+.feed-fact dt {
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+
+.feed-fact dd {
+    margin: 0;
+    color: #cbd5e1;
+    text-align: right;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.8rem;
+    overflow-wrap: anywhere;
+}
+
+.feed-siblings {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.feed-siblings h3 {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin: 0 0 0.9rem;
+}
+
+.feed-sibling-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.75rem;
+}
+
+.feed-sibling-links a {
+    font-size: 0.85rem;
+    color: #9aa4b2;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.3rem 0.8rem;
+}
+
+.feed-sibling-links a:hover,
+.feed-sibling-links a:focus-visible {
+    color: var(--accent);
+    border-color: var(--accent-dim);
+}
+
+@media (max-width: 860px) {
+    .feed-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2rem;
+    }
+}
