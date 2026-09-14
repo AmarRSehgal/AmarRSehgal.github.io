@@ -85,6 +85,29 @@ def payload(base, **top):
     return d
 
 
+CONTRACTS = {
+    'generated_at': STAMP, 'snapshot_date': '2026-09-09',
+    'snapshots': 15, 'observing_snapshots': 14, 'days_since_new_data': 0,
+    'notices_tracked': 71086,
+    'lanes': [{
+        'office': 'DLA TROOP SUPPORT', 'agency': 'DEPT OF DEFENSE',
+        'group': 'Subsistence/FOOD',
+        'lane': 'fresh bread bakery products support dow troop customers el paso tx zone',
+        'evidence': 'OBSERVED', 'solicitations': 2, 'cadence': 'biweekly',
+        'cadence_days': 11, 'cadence_source': 'dates', 'regularity': None,
+        'span_days': 11, 'next_expected': '2026-09-12', 'open_deadline': '',
+        'states': ['TX'],
+        'link': 'https://sam.gov/opp/41d78351541d486da71e43bc4a7b337b/view',
+    }],
+    'open': [{
+        'sol': 'W912L9-26-Q-0042', 'title': '129th Tumbler Cups',
+        'office': 'W7MX USPFO ACTIVITY CAANG 129', 'group': 'Food prep/serving equip',
+        'state': 'CA', 'deadline': '2026-09-14', 'access': 'small-biz',
+        'link': 'https://sam.gov/opp/ba4deab90eac4d968095b250c3212031/view',
+    }],
+}
+
+
 def game(base, **fields):
     d = copy.deepcopy(base)
     d['games'][0].update(fields)
@@ -751,3 +774,88 @@ class FundingBoard(ContractBase):
     def test_stale_generated_at_rejected(self):
         old = (NOW - timedelta(hours=9)).isoformat()
         self.rejects('funding', payload(FUNDING, generated_at=old), 'stale payload')
+
+class FederalContractLanes(ContractBase):
+    """The lanes feed asserts that a federal buy RECURS -- which is the only reason
+    to spend weeks on a SAM registration for it. Every rule here guards a claim the
+    page makes that the underlying data may not support, and none of them are visible
+    as wrongness on the rendered panel: a lane inferred from one posting looks exactly
+    like one watched for a month."""
+
+    def test_readme_example_is_valid(self):
+        self.assertEqual(len(self.ok('contracts', payload(CONTRACTS))), 1)
+
+    def test_empty_is_valid(self):
+        """No recurring lane and nothing open is a real finding, not a failure."""
+        self.assertEqual(self.ok('contracts', payload(CONTRACTS, lanes=[], open=[])), [])
+
+    def test_f1_keys_are_not_demanded(self):
+        """contracts once fell through to the f1 branch and was asked for a race name."""
+        d = payload(CONTRACTS)
+        self.assertNotIn('year', d)
+        self.ok('contracts', d)
+
+    def test_unknown_evidence_tier_rejected(self):
+        d = copy.deepcopy(payload(CONTRACTS))
+        d['lanes'][0]['evidence'] = 'LIKELY'
+        self.rejects('contracts', d, 'must be one of')
+
+    def test_observed_on_a_single_solicitation_rejected(self):
+        """OBSERVED asserts the buy was watched to repeat. Once is not a repeat."""
+        d = copy.deepcopy(payload(CONTRACTS))
+        d['lanes'][0]['solicitations'] = 1
+        self.rejects('contracts', d, 'watched the buy REPEAT')
+
+    def test_weaker_tier_on_a_single_solicitation_is_fine(self):
+        d = copy.deepcopy(payload(CONTRACTS))
+        d['lanes'][0].update(evidence='CLUSTER', solicitations=1)
+        self.ok('contracts', d)
+
+    def test_observed_without_enough_recorded_history_rejected(self):
+        """The store is the evidence. Two days of it cannot show a monthly cadence."""
+        d = copy.deepcopy(payload(CONTRACTS, observing_snapshots=1))
+        self.rejects('contracts', d, 'recurrence cannot have been observed yet')
+
+    def test_observing_snapshots_cannot_exceed_snapshots(self):
+        self.rejects('contracts', payload(CONTRACTS, observing_snapshots=16),
+                     'must be between 0 and')
+
+    def test_cadence_without_a_measured_gap_rejected(self):
+        """A cadence label with no cadence_days behind it is a word, not a finding."""
+        d = copy.deepcopy(payload(CONTRACTS))
+        d['lanes'][0]['cadence_days'] = None
+        self.rejects('contracts', d, 'emit the measured gap')
+
+    def test_no_cadence_claim_is_fine(self):
+        d = copy.deepcopy(payload(CONTRACTS))
+        d['lanes'][0].update(cadence='', cadence_days=None)
+        self.ok('contracts', d)
+
+    def test_unreachable_set_aside_rejected(self):
+        """HUBZone/8(a)/SDVOSB/WOSB need a certification that takes months. Listing one
+        as biddable costs a reader days on a bid they cannot submit."""
+        d = copy.deepcopy(payload(CONTRACTS))
+        d['open'][0]['access'] = 'restricted'
+        self.rejects('contracts', d, 'self-cert bidder')
+
+    def test_closed_notice_in_the_open_list_rejected(self):
+        d = copy.deepcopy(payload(CONTRACTS))
+        d['open'][0]['deadline'] = '2026-09-08'
+        self.rejects('contracts', d, 'already closed')
+
+    def test_deadline_on_the_snapshot_day_is_still_open(self):
+        d = copy.deepcopy(payload(CONTRACTS))
+        d['open'][0]['deadline'] = d['snapshot_date']
+        self.ok('contracts', d)
+
+    def test_offsite_link_rejected(self):
+        """Every row is a pointer back to the authoritative notice."""
+        d = copy.deepcopy(payload(CONTRACTS))
+        d['lanes'][0]['link'] = 'https://example.com/opp/1/view'
+        self.rejects('contracts', d, 'must point at')
+
+    def test_open_list_must_be_present(self):
+        d = copy.deepcopy(payload(CONTRACTS))
+        del d['open']
+        self.rejects('contracts', d, "missing required keys ['open']")
+

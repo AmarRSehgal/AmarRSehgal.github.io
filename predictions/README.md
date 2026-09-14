@@ -609,66 +609,147 @@ The front end leads with `net_at_hold` (what actually happens over one hold) and
 `net_apr` as the smaller derived figure, so the annualised number reads as an
 extrapolation rather than a claim.
 
-## Publishing setup (required, currently missing)
+## `contracts.json`
 
-Three things are missing, and they have to be done **in this order** — each step is
-useless without the one before it.
+Recurring federal resale lanes from SAM.gov, from `AmarRSehgal/sam-contracts`. Published
+**daily** by a local launchd job. Consumed by the `contracts` section of the
+opportunities board; it has no panel of its own.
 
-### 1. Push the repo
-
-`origin/main` is behind the local branch, so the fixed workflows, the validator and the
-NFL section only exist locally. The remote still carries the original workflows, which
-point at the wrong GitHub account. Nothing below takes effect until this is pushed.
-
-### 2. Add the `REPO_ACCESS_TOKEN` secret
-
-The workflows check out the private model repos. The repository currently has **zero
-secrets**, so `secrets.REPO_ACCESS_TOKEN` is empty and `actions/checkout` aborts with
-`Input required and not supplied: token` — which is exactly what happened to all 70 runs
-between 2026-04-19 and 2026-06-18. Create a fine-grained PAT with `Contents: read` on
-`AmarRSehgal/nba-prediction`, `AmarRSehgal/f1_prediction` and
-`AmarRSehgal/nfl-prediction`, then:
-
-```
-gh secret set REPO_ACCESS_TOKEN --repo AmarRSehgal/AmarRSehgal.github.io
-```
-
-Each workflow fails fast with a named error if this is absent, so a missing secret can
-no longer look like a checkout bug.
-
-### 3. Re-enable the schedules
-
-GitHub auto-disables scheduled workflows after 60 days of repository inactivity, which
-is why the schedules stopped firing entirely on 2026-06-18. Both are currently in
-`disabled_inactivity`, which also blocks `workflow_dispatch` — a manual dry run returns
-`HTTP 422: Cannot trigger a 'workflow_dispatch' on a disabled workflow`, so they cannot
-be tested until they are enabled.
-
-```
-gh workflow enable "Daily NBA Picks"     --repo AmarRSehgal/AmarRSehgal.github.io
-gh workflow enable "F1 Race Predictions" --repo AmarRSehgal/AmarRSehgal.github.io
-gh workflow enable "Weekly NFL Picks"    --repo AmarRSehgal/AmarRSehgal.github.io
+```json
+{
+  "generated_at": "2026-09-14T15:07:02Z",
+  "snapshot_date": "2026-09-14",
+  "snapshots": 15,
+  "observing_snapshots": 14,
+  "days_since_new_data": 0,
+  "notices_tracked": 71086,
+  "lanes": [
+    {
+      "office": "DLA TROOP SUPPORT", "agency": "DEPT OF DEFENSE",
+      "group": "Subsistence/FOOD",
+      "lane": "fresh bread bakery products support dow troop customers el paso tx zone",
+      "evidence": "OBSERVED", "solicitations": 2,
+      "cadence": "biweekly", "cadence_days": 11, "cadence_source": "dates",
+      "regularity": null, "span_days": 11, "next_expected": "2026-09-12",
+      "open_deadline": "", "states": ["TX"],
+      "link": "https://sam.gov/opp/41d78351541d486da71e43bc4a7b337b/view"
+    }
+  ],
+  "open": [
+    {
+      "sol": "W912L9-26-Q-0042", "title": "129th Tumbler Cups",
+      "office": "W7MX USPFO ACTIVITY CAANG 129", "group": "Food prep/serving equip",
+      "state": "CA", "deadline": "2026-09-14", "access": "small-biz",
+      "link": "https://sam.gov/opp/ba4deab90eac4d968095b250c3212031/view"
+    }
+  ]
+}
 ```
 
-("Weekly NFL Picks" only exists after step 1 — it has never been on the remote.)
+### Why this one cannot run in CI
 
-### 4. The generators
+Every other feed here could in principle be regenerated from a clean checkout. This one
+cannot. The SAM.gov daily extract carries only **currently-active** notices, so
+recurrence is not in the data — it is only visible to a process that has been recording
+snapshots day after day on one machine. A fresh CI checkout has no history and could
+never emit the `OBSERVED` tier at all. `snapshots` and `observing_snapshots` are the
+evidence behind every cadence claim on the page, which is why they are required keys
+rather than metadata.
 
-Each model repo must expose the generator the workflow calls, writing the schema above
-to `--output <path>`:
+`observing_snapshots` counts only the snapshots that saw **new** data. Re-ingesting an
+extract SAM.gov has not refreshed is not another day of history, and counting it as one
+would let a cadence be "confirmed" by the same notice seen twice.
 
-| repo | entrypoint |
-|---|---|
-| `nba-prediction` | `generate_web_picks.py --output PATH` |
-| `f1_prediction` | `generate_web_predictions.py --output PATH` |
-| `nfl-prediction` | `generate_web_picks.py --output PATH` (plus `weekly_update.py`) |
-| `real_estate` | `generate_web_deals.py --output PATH` — **exists**, and publishes itself |
+### Two lists, not one
 
-`real_estate` needs none of steps 1-3: it has no workflow, no secret and no schedule
-here, because its launchd job commits and pushes the payload directly. The other three
-do not exist yet. A generator that cannot produce a slate should still emit a
-valid payload with a current `generated_at` and an empty list — that publishes an
-honest "no games scheduled" rather than failing the run.
+`lanes` is the ranked recurrence finding and is what the validator treats as the item
+list. `open` is what a self-certified bidder could quote on *today*. They share no
+fields and are checked separately.
+
+### Per-lane rules (all enforced)
+
+- `evidence` is one of `OBSERVED`, `POSTED-HISTORY`, `PERIOD-MARKER`, `CLUSTER`
+  (strongest first; see `sam-contracts/lanes.py`). An unknown tier is rejected rather
+  than rendered, because the page words each one differently and would otherwise
+  present a hint as a finding.
+- `evidence: OBSERVED` requires **at least 2 solicitations** and at least 2
+  `observing_snapshots`. OBSERVED asserts this machine watched the buy repeat; once is
+  not a repeat, and one day of history cannot show a cadence.
+- A non-empty `cadence` requires a non-null `cadence_days`. "biweekly" with nothing
+  measured behind it is a word, not a finding.
+- `link` must point at `https://sam.gov/opp/...`.
+
+### Per-open-notice rules (all enforced)
+
+- `access` must be `OPEN` or `small-biz`. Those are self-certified. HUBZone, 8(a),
+  SDVOSB and WOSB are hard gates needing a certification that takes months, so
+  publishing one as biddable costs a reader days on a bid they cannot submit.
+- `deadline` must not be before `snapshot_date`. Presenting a closed solicitation as
+  open is the one thing this panel must never do. The comparison is against the
+  payload's own snapshot date rather than the wall clock, so the check is about
+  generator correctness and cannot fail on a midnight race.
+
+### No contact fields, deliberately
+
+The extract carries contracting-officer names, emails and phone numbers. They are
+public record on sam.gov, but republishing individuals' contact details on a personal
+site buys nothing — the `link` reaches the same information for anyone who wants it.
+
+## Publishing setup
+
+**Every feed on this page is published by a launchd job on Amar's Mac.** There is no
+generator in CI, and none of them needs a secret. `.github/workflows/tests.yml` runs
+the contract tests and is the only workflow left.
+
+Each job owns one file under `predictions/`, and the shape is the same for all of them:
+
+1. Generate into a **staging path** (`mktemp`), never over the published file.
+2. Run `.github/scripts/validate_predictions.py <feed> <candidate>`. **The validator is
+   the contract** -- a rejected payload is not published, and the job says so.
+3. Refuse to publish if the website working tree has changes outside that one file.
+   Seven repos commit into this repo; none of them may sweep up another's work.
+4. Commit that single path and push, retrying on top of `origin` **without
+   `--autostash`**, so a lost race can never stash somebody else's in-flight edits.
+
+| feed | repo | job | cadence |
+|---|---|---|---|
+| `nba.json` | `nba-prediction` | `com.amar.nba_prediction` | daily 09:00 |
+| `mlb.json` | `mlb-prediction` | `com.amar.mlb_prediction` | daily 09:30 |
+| `nfl.json` | `nfl-prediction` | `com.amar.nfl_prediction` | weekly Tue 09:30 |
+| `f1.json` | `f1_prediction` | `com.amar.f1_prediction` | weekly Thu 08:00 |
+| `real_estate.json` | `real_estate` | `com.amar.real_estate` | weekly Sun 08:00 |
+| `magicformula.json` | `magic-formula-portfolio` | `com.amar.magic_formula` | weekly Mon 08:00 |
+| `businesses.json` | `business-hunter` | `com.amar.business_hunter` | daily 07:15 |
+| `funding.json` | `funding-rate-arb` | `com.amar.funding_rate_arb` | hourly |
+| `contracts.json` | `sam-contracts` | `com.amar.sam_contracts` | daily 08:00 |
+| `opportunities.json` | `opportunities` | `com.amar.opportunities` | 3x daily |
+
+Mechanism, install and the gotchas that actually bite: `~/personal/automation/LAUNCHD.md`.
+
+### Why not CI
+
+This repo carried three generator workflows (NBA, NFL, F1) from the start. Each checked
+out a **private** model repo, which needs a fine-grained PAT as `REPO_ACCESS_TOKEN`.
+That secret was never created, so `actions/checkout` aborted and **every scheduled run
+failed, for five months, without exception.** They were deleted on 2026-09-14.
+
+Creating the PAT would not have fixed them, which is the more useful lesson:
+
+- **`nba-prediction` and `nfl-prediction` cannot bootstrap in CI at all.** Their
+  workflows restored `data/` from an `actions/cache`, but `data/*.db` is gitignored --
+  the 20 MB SQLite exists only on this machine. A cold cache means no database.
+- **`sam-contracts` cannot ever run in CI.** Recurrence is only observable to a process
+  that has been recording daily snapshots; see "Why this one cannot run in CI" above.
+- **`funding-rate-arb` is geo-blocked.** Several venues refuse datacenter IPs, so it
+  needs a residential connection.
+- **`f1_prediction` was the only one that genuinely could have run in CI** -- and it was
+  the one feed with no local job, so it was the one that showed "Not published yet" on
+  the live site for five months. One publishing model for everything is worth more than
+  the one feed that could have used the other one.
+
+A generator that cannot produce a slate should still emit a valid payload with a current
+`generated_at` and an empty list. That publishes an honest "no games scheduled" instead
+of failing the run.
 
 ## `opportunities.json`
 
