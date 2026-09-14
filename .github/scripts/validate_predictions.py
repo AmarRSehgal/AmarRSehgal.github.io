@@ -615,6 +615,87 @@ def check_funding_route(where, r):
                       f'and cannot disagree in sign')
 
 
+def check_game_result(where, g):
+    """The final score attached to a game that has already been played.
+
+    `correct` is the field the page renders a hit/miss mark from, and it is derivable
+    from the other three -- so it is checked against them rather than trusted. A
+    generator that computed it from a stale pick would otherwise publish a green tick
+    on a game it got wrong, which is the single worst thing this feed could do.
+    """
+    r = g.get('result')
+    if r is None:
+        return
+    if not isinstance(r, dict):
+        raise Invalid(f'{where}.result must be an object or absent')
+    for key in ('away_pts', 'home_pts', 'winner', 'correct'):
+        if key not in r:
+            raise Invalid(f'{where}.result missing {key!r} -- omit result entirely '
+                          f'rather than publishing a partial one')
+    away = require_int(f'{where}.result', 'away_pts', r['away_pts'])
+    home = require_int(f'{where}.result', 'home_pts', r['home_pts'])
+    if away < 0 or home < 0:
+        raise Invalid(f'{where}.result has a negative score')
+    winner = require_str(f'{where}.result', 'winner', r['winner'])
+    if winner not in (g['away_team'], g['home_team']):
+        raise Invalid(f'{where}.result.winner={winner!r} is not one of the two teams')
+    if away != home and winner != (g['home_team'] if home > away else g['away_team']):
+        raise Invalid(f'{where}.result.winner={winner!r} contradicts the score '
+                      f'{away}-{home}')
+    if type(r['correct']) is not bool:
+        raise Invalid(f'{where}.result.correct must be a boolean')
+    if r['correct'] != (g['pick'] == winner):
+        raise Invalid(f'{where}.result.correct={r["correct"]} contradicts pick='
+                      f'{g["pick"]!r} against winner={winner!r}')
+
+
+def check_portfolio(port):
+    """Real positions marked against live prices, published beside the screen.
+
+    A ranking has no outcome, so a screen can look good indefinitely on its own. These
+    are the entries actually taken off it, which is the only part that can be wrong in
+    a way that costs something -- so the totals are checked against the rows.
+    """
+    if port is None:
+        return
+    if not isinstance(port, dict):
+        raise Invalid('portfolio must be an object or null')
+    rows = port.get('positions')
+    if not isinstance(rows, list) or not rows:
+        raise Invalid('portfolio.positions must be a non-empty list')
+    for i, r in enumerate(rows):
+        w = f'portfolio.positions[{i}]'
+        require_str(w, 'ticker', r.get('ticker'))
+        require_str(w, 'buy_date', r.get('buy_date'))
+        check_date_string(w, 'buy_date', r['buy_date'])
+        if type(r.get('open')) is not bool:
+            raise Invalid(f'{w}.open must be a boolean')
+        # A position with no fetchable quote must say so rather than be carried at
+        # cost, which would score it as exactly flat and drag the total toward zero.
+        if r.get('price_unavailable'):
+            continue
+        require_number(w, 'return_pct', r.get('return_pct'))
+        require_number(w, 'pnl', r.get('pnl'))
+
+    cost = require_number('portfolio', 'cost_basis', port.get('cost_basis'))
+    value = require_number('portfolio', 'market_value', port.get('market_value'))
+    if cost <= 0:
+        raise Invalid('portfolio.cost_basis must be positive')
+    ret = port.get('return_pct')
+    if ret is not None:
+        derived = (value - cost) / cost
+        if abs(require_number('portfolio', 'return_pct', ret) - derived) > 0.0005:
+            raise Invalid(f'portfolio.return_pct={ret} disagrees with market_value '
+                          f'{value} against cost_basis {cost} (={derived:.4f})')
+    excess = port.get('excess_return_pct')
+    if excess is not None and ret is not None:
+        bench = require_number('portfolio', 'benchmark_return_pct',
+                               port.get('benchmark_return_pct'))
+        if abs(excess - (ret - bench)) > 0.0005:
+            raise Invalid(f'portfolio.excess_return_pct={excess} is not return_pct '
+                          f'minus benchmark_return_pct')
+
+
 def check_f1_entry(where, p):
     require_str(where, 'driver', p['driver'])
     require_number(where, 'predicted_pos', p['predicted_pos'])
@@ -830,6 +911,7 @@ def validate(sport, data, now=None):
         if not 0 <= screened <= size:
             raise Invalid(f'screened={screened} must be between 0 and '
                           f'universe_size={size}')
+        check_portfolio(data.get('portfolio'))
     elif sport == 'contracts':
         check_contracts_payload(data)
     else:
@@ -863,8 +945,11 @@ def validate(sport, data, now=None):
             check_deal(where, item)
         elif sport == 'mlb':
             check_team_game(where, item, spread_required=False)
+            check_game_result(where, item)
         else:
             check_team_game(where, item)
+            if sport in ('nfl', 'nba'):
+                check_game_result(where, item)
 
     if sport == 'magicformula':
         if len(items) > data['screened']:

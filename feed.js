@@ -292,9 +292,6 @@ const NO_RECORD = {
       + '2026-09-14 after five months of a broken CI workflow, so no prediction it made '
       + 'has had a race to be graded against. Finishing order is scored against the '
       + 'actual classification as each race completes, the same way the NFL picks are.',
-    magic_formula: 'No realised record yet. The portfolio side of the project tracks '
-       + 'actual positions against SPY since inception, but the screen published here is '
-       + 'a ranking rather than a set of entries, so there is nothing to mark to market.',
     opportunities: 'Nothing to measure: this board merges what other feeds already '
        + 'published and makes no prediction of its own. Each source carries its own '
        + 'record on its own page.',
@@ -375,6 +372,31 @@ const HISTORY = {
                 + `scores. Screening output, not advice.`,
         };
     },
+    magic_formula: d => {
+        const p = d.portfolio;
+        if (!p) return null;
+        const sign = v => (v >= 0 ? '+' : '') + (v * 100).toFixed(1) + '%';
+        const rows = [
+            ['Positions', `${p.open_positions} open, ${p.closed_positions} closed`],
+            ['Since', p.since],
+            ['Invested', P.formatMoney(p.cost_basis)],
+            ['Market value', P.formatMoney(p.market_value)],
+            ['Return', sign(p.return_pct)],
+        ];
+        if (p.benchmark_return_pct != null) {
+            rows.push([`${p.benchmark} over the same window`, sign(p.benchmark_return_pct)]);
+            rows.push(['Excess', sign(p.excess_return_pct)]);
+        }
+        if (p.realized_pnl) rows.push(['Realised PnL', P.formatMoney(p.realized_pnl)]);
+        return { rows, note: 'This is the book, not the screen: real entries at real '
+            + 'prices, marked against live quotes. At '
+            + `${p.open_positions + p.closed_positions} positions over `
+            + `${Math.round((Date.now() - new Date(p.since)) / 86400000)} days it is far `
+            + 'too small and too short to attribute to the formula rather than to luck, '
+            + 'and Magic Formula is a multi-year strategy by construction. The benchmark '
+            + 'runs from the first buy date so it is not an index that was already fully '
+            + 'invested being compared to a book still being built.' };
+    },
     business_hunter: d => {
         const t = d.track_record;
         if (!t) {
@@ -436,6 +458,110 @@ function historyPanel(key, data) {
     return `<h3>Measured history</h3>`
         + (body ? `<dl class="feed-facts">${body}</dl>` : '')
         + `<p class="feed-norecord">${esc(h.note)}</p>`;
+}
+
+
+// A played game renders its score and a hit/miss mark beside the pick it was given.
+// `correct` comes off the payload rather than being recomputed here -- the validator
+// already checks it against the score, and two places deciding it is two places to
+// disagree.
+function renderGamesWithResults(data) {
+    const money = n => (n >= 0 ? '+' : '') + n;
+    const rows = data.games.map(g => {
+        const r = g.result;
+        const conf = Number(g.confidence);
+        const meta = [];
+        if (g.pred_spread != null) meta.push(`spread ${g.pred_spread > 0 ? '+' : ''}${g.pred_spread}`);
+        meta.push(`home win ${(Number(g.ml_win_prob) * 100).toFixed(0)}%`);
+        if (g.away_starter && g.home_starter) meta.push(`${g.away_starter} vs ${g.home_starter}`);
+        if (r) {
+            meta.push(`final ${r.away_pts}-${r.home_pts}`);
+            if (r.actual_spread != null && g.pred_spread != null) {
+                meta.push(`missed the line by ${Math.abs(r.actual_spread - g.pred_spread).toFixed(1)}`);
+            }
+        } else if (g.kickoff) {
+            meta.push(P.formatKickoff(g.kickoff));
+        }
+        const mark = r
+            ? `<span class="game-mark ${r.correct ? 'game-hit' : 'game-miss'}">`
+              + `${r.correct ? 'correct' : 'wrong'}</span>`
+            : '<span class="game-mark game-pending">not played</span>';
+        return `
+            <div class="nba-game">
+                <div class="nba-matchup">
+                    <div class="nba-teams">
+                        <span class="${g.pick === g.away_team ? 'pick-team' : ''}">${esc(g.away_team)}</span>
+                        @
+                        <span class="${g.pick === g.home_team ? 'pick-team' : ''}">${esc(g.home_team)}</span>
+                        ${r ? `<span class="game-score">${r.away_pts}-${r.home_pts}</span>` : ''}
+                    </div>
+                    <div class="nba-meta">${esc(meta.join(' | '))}</div>
+                </div>
+                <div class="nba-pick">
+                    <div class="nba-pick-label">Pick</div>
+                    <div class="nba-confidence ${conf >= 0.6 ? 'confidence-high' : 'confidence-med'}">${esc(g.pick)} (${(conf * 100).toFixed(0)}%)</div>
+                    ${mark}
+                </div>
+            </div>
+        `;
+    }).join('');
+    const played = data.games.filter(g => g.result);
+    const hits = played.filter(g => g.result.correct).length;
+    const head = played.length
+        ? `<div class="prediction-slate">${hits} of ${played.length} played so far this `
+          + `slate</div>`
+        : '';
+    return head + rows;
+}
+
+// Per-instrument PnL and the book's own return. The screen is a ranking and a ranking
+// has no outcome -- these are the entries actually taken off it, which is the only part
+// that can be wrong in a way that costs something.
+function renderPortfolio(port) {
+    if (!port) return '';
+    const sign = v => (v >= 0 ? '+' : '') + (v * 100).toFixed(1) + '%';
+    const dollars = v => (v >= 0 ? '+' : '-') + P.formatMoney(Math.abs(v));
+    const rows = port.positions.map(r => {
+        const cls = r.price_unavailable ? 'confidence-med'
+            : (r.return_pct >= 0 ? 'confidence-high' : 'confidence-low');
+        const facts = [`${r.shares} sh at ${P.formatMoney(r.buy_price)}`,
+                       `bought ${r.buy_date}`, `${r.days_held}d held`];
+        if (!r.open) facts.push(`sold ${r.sell_date} (${r.sell_reason || 'manual'})`);
+        return `
+            <div class="nba-game">
+                <div class="nba-matchup">
+                    <div class="nba-teams"><span class="pick-team">${esc(r.ticker)}</span>
+                        <span class="idea-name">${r.open ? 'open' : 'closed'}</span></div>
+                    <div class="nba-meta">${esc(facts.join(' | '))}</div>
+                </div>
+                <div class="nba-pick">
+                    <div class="nba-pick-label">${r.open ? 'Unrealised' : 'Realised'}</div>
+                    <div class="nba-confidence ${cls}">${r.price_unavailable
+                        ? 'no quote' : sign(r.return_pct)}</div>
+                    ${r.price_unavailable ? '' : `<div class="nba-meta">${esc(dollars(r.pnl))}</div>`}
+                </div>
+            </div>
+        `;
+    }).join('');
+    const bench = port.benchmark_return_pct != null
+        ? ` against ${sign(port.benchmark_return_pct)} for ${esc(port.benchmark)} over the `
+          + `same window -- ${sign(port.excess_return_pct)} excess`
+        : '';
+    return `<h2 class="feed-sub feed-sub-spaced">The book</h2>`
+        + `<div class="prediction-slate">${port.open_positions} open, `
+        + `${port.closed_positions} closed since ${esc(port.since)} -- `
+        + `${esc(P.formatMoney(port.cost_basis))} invested, now `
+        + `${esc(P.formatMoney(port.market_value))} (${sign(port.return_pct)})${bench}</div>`
+        + rows
+        + `<div class="prediction-note">Real entries at real prices from the screen, `
+        + `marked against live quotes. Five positions is far too few to attribute to the `
+        + `formula rather than to luck, and the benchmark is measured from the first buy `
+        + `date so it is not comparing a book being built against an index already fully `
+        + `invested.</div>`;
+}
+
+function renderMagicFormulaFull(data) {
+    return P.FEEDS.magic_formula.render(data) + renderPortfolio(data.portfolio);
 }
 
 // --- Panels -------------------------------------------------------------------
@@ -525,6 +651,11 @@ if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 // same config object.
 if (P.FEEDS.f1) P.FEEDS.f1.renderFull = renderF1Full;
 if (P.FEEDS.funding) P.FEEDS.funding.renderFull = renderFundingFull;
+if (P.FEEDS.nfl) P.FEEDS.nfl.renderFull = renderGamesWithResults;
+if (P.FEEDS.nba) P.FEEDS.nba.renderFull = renderGamesWithResults;
+if (P.FEEDS.mlb) P.FEEDS.mlb.renderFull = d =>
+    P.FEEDS.mlb.render({ ...d, games: [] }) + renderGamesWithResults(d);
+if (P.FEEDS.magic_formula) P.FEEDS.magic_formula.renderFull = renderMagicFormulaFull;
 
 async function boot() {
     const key = new URLSearchParams(window.location.search).get('feed');

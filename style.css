@@ -988,3 +988,27 @@ button:focus-visible {
     background: rgba(110, 168, 254, 0.06);
     border-left-color: var(--accent-dim);
 }
+
+/* Hit / miss beside a pick on a played event. Colour alone does not carry it -- the
+   word is there too, for anyone who cannot separate the two greens and reds. */
+.game-mark {
+    display: inline-block;
+    margin-top: 0.3rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.game-hit { color: #4ade80; }
+.game-miss { color: #f87171; }
+.game-pending { color: var(--text-muted); }
+
+.game-score {
+    margin-left: 0.5rem;
+    font-size: 0.85em;
+    color: var(--text-muted);
+}
+
+.confidence-low { color: #f87171; }
+
+.feed-sub-spaced { margin-top: 2.5rem; }
