@@ -80,7 +80,7 @@ const feedSrc = read('feed.js');
 
 // --- Detail page: every feed, in full, through feed.js's own boot ----------------
 for (const key of ['options_levels', 'swing_book', 'mf_book', 'funding', 'nfl', 'nba',
-                   'mlb', 'f1', 'real_estate', 'magic_formula']) {
+                   'mlb', 'f1', 'real_estate', 'magic_formula', 'polymarket_whales']) {
     const els = freshDom(`?feed=${key}`);
     (0, eval)(predictionsSrc);
     (0, eval)(feedSrc);

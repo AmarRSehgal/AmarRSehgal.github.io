@@ -123,6 +123,34 @@ const SPORTS = {
         },
         render: renderF1,
     },
+    // A SNAPSHOT, not a forecast, and the only feed here that predicts nothing. It was
+    // built to look for manipulation in Polymarket's 5-minute BTC markets and did not
+    // find any; the repo deliberately carries no manipulation field and the verdict is
+    // latency arbitrage. The page therefore leads with the traders and the disclaimer,
+    // and never uses the word the project retired. No P&L: this measures other people's
+    // trading, not ours, so there is nothing of ours to score.
+    polymarket_whales: {
+        file: 'predictions/polymarket_whales.json',
+        container: 'whale-activity',
+        stamp: 'whale-updated',
+        cadence: 'daily',
+        noun: 'traders',
+        listKey: 'traders',
+        staleAfter: 36 * MS_HOUR,
+        emptyLabel: 'No wallet cleared the size threshold in this window.',
+        slate: d => {
+            const m = d.markets || {};
+            const bits = [];
+            if (m.resolved) bits.push(`${m.resolved} markets resolved`);
+            if (m.late_flip != null && m.resolved) {
+                bits.push(`${m.late_flip} flipped late (${(m.late_flip_rate * 100).toFixed(1)}%)`);
+            }
+            if (m.traded_notional) bits.push(`${formatMoney(m.traded_notional)} traded`);
+            if (d.window && d.window.hours) bits.push(`last ${d.window.hours}h`);
+            return bits.join(' | ');
+        },
+        render: renderWhales,
+    },
     // Real estate has no season -- omitting `season` means never off-season. It is
     // also the one feed published from a local scheduled job rather than a GitHub
     // Action, because the scan scrapes Realtor.com and takes ~20 minutes; a weekly
@@ -419,7 +447,8 @@ const SPORT_LABEL = { swing_book: 'Swing book', mf_book: 'Magic Formula book',
                       nba: 'NBA', nfl: 'NFL', mlb: 'MLB', f1: 'F1', real_estate: 'Real estate',
                       business_hunter: 'Business acquisitions',
                       magic_formula: 'Magic Formula', funding: 'Funding carry',
-                      options_levels: 'Options level breaks' };
+                      options_levels: 'Options level breaks',
+                      polymarket_whales: 'Polymarket whale watch' };
 
 function esc(v) {
     return String(v == null ? '' : v).replace(/[&<>"']/g, c => (
@@ -810,6 +839,46 @@ function bookSlate(d) {
     }
     if (d.excess_return_pct != null) bits.push(`${pct(d.excess_return_pct)} excess`);
     return bits.join(' | ');
+}
+
+// Wallets ranked by what they made in the window. `edge` is the audit verdict on the
+// wallet's OWN full order flow, and "insufficient-history" is the common and honest
+// answer -- a wallet seen for a day cannot be graded, and saying so beats a number.
+const WHALE_EDGE_LABEL = {
+    'late-window': 'edge in the final seconds',
+    broad: 'profitable across the whole window',
+    'insufficient-history': 'too little history to grade',
+    none: 'no measurable edge',
+};
+
+function renderWhales(data) {
+    const rows = data.traders.map(t => {
+        const roi = Number(t.net_roi);
+        const facts = [`${Number(t.trades).toLocaleString()} trades`];
+        if (t.markets_graded) facts.push(`${t.markets_graded} markets graded`);
+        if (t.wins != null) facts.push(`${t.wins}W/${t.losses}L`);
+        if (t.median_secs_before_close != null) {
+            facts.push(`trades ${t.median_secs_before_close}s before close (median)`);
+        }
+        facts.push(WHALE_EDGE_LABEL[t.edge] || t.edge);
+        return `
+            <div class="nba-game">
+                <div class="nba-matchup">
+                    <div class="nba-teams"><span class="pick-team">${esc(t.wallet)}</span></div>
+                    <div class="nba-meta">${esc(facts.join(' | '))}</div>
+                </div>
+                <div class="nba-pick">
+                    <div class="nba-pick-label">Window</div>
+                    <div class="nba-confidence ${t.window_pnl >= 0 ? 'confidence-high' : 'confidence-low'}">${
+                        esc((t.window_pnl >= 0 ? '+' : '-') + formatMoney(Math.abs(t.window_pnl || 0)))}</div>
+                    <div class="nba-meta">${esc(`${(Number(t.win_rate) * 100).toFixed(1)}% wins, `
+                        + `${roi >= 0 ? '+' : ''}${(roi * 100).toFixed(1)}% ROI`)}</div>
+                </div>
+            </div>`;
+    }).join('');
+    // The disclaimer is rendered from the payload, not written here, so the page cannot
+    // drift from the finding it is reporting.
+    return rows + `<div class="prediction-note">${esc(data.disclaimer || '')}</div>`;
 }
 
 function renderBook(data) {

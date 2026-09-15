@@ -192,6 +192,22 @@ const PROJECTS = {
             + 'would dominate every other signal and the model would be reading the '
             + 'market back to you.',
     },
+    polymarket_whales: {
+        title: 'Polymarket Whale Watch',
+        tagline: 'Who is actually making money on Polymarket\u2019s 5-minute BTC markets, '
+            + 'and whether any of them has an edge in the closing seconds.',
+        repo: 'polymarket-whale-tracker',
+        stack: ['Python', 'asyncio', 'SQLite', 'Polymarket Gamma + Data APIs'],
+        what: 'A daily snapshot of the largest winners across every 5-minute BTC market '
+            + 'that resolved in the last 24 hours, with the biggest audited against '
+            + 'their own full order flow.',
+        data: 'Polymarket Gamma and Data APIs for markets and trades, Binance 1s klines '
+            + 'for the settlement price. No API key, no account, nothing private.',
+        states: 'A wallet appears only if it cleared the size threshold in the window. '
+            + '\u201cToo little history to grade\u201d is the usual verdict and is '
+            + 'reported as such rather than guessed at.',
+        cadence: 'daily',
+    },
     nba: {
         title: 'NBA Moneyline Picks',
         tagline: 'Daily win probabilities and predicted spreads for the night’s slate.',
@@ -582,6 +598,12 @@ const NO_RECORD = {
        + 'called at 70%+ confidence -- but that is a backtest held in the repo, not an '
        + 'out-of-sample record of the picks published here, so it is not quoted as one. '
        + 'The NBA season restarts in late October; a live record starts accruing then.',
+    polymarket_whales: 'Nothing to measure, and deliberately so. This feed scores OTHER '
+       + 'people\u2019s trading, not a forecast of ours, so there is no call here to be '
+       + 'graded and no P&L to report. The project was built to look for manipulation '
+       + 'and did not find any -- the verdict is latency arbitrage against slow makers, '
+       + 'which is legal and unremarkable -- so it carries no manipulation field at all, '
+       + 'and neither does this page.',
     opportunities: 'Nothing to measure: this board merges what other feeds already '
        + 'published and makes no prediction of its own. Each source carries its own '
        + 'record on its own page.',
