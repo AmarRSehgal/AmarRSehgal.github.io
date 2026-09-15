@@ -78,7 +78,11 @@ const SPORTS = {
         cadence: 'weekly',
         noun: 'picks',
         listKey: 'games',
-        staleAfter: 10 * MS_DAY,
+                // 36h, not ten days. The slate only turns over weekly, but the job
+        // publishes DAILY since 2026-09-15, and a ten-day window cannot tell a
+        // healthy feed from one that died on a Tuesday -- which is exactly what
+        // happened, unnoticed, until it was spotted by eye.
+        staleAfter: 36 * MS_HOUR,
         season: { startMonth: 9, startDay: 4, endMonth: 2, endDay: 15, startPhrase: 'early September' },
         emptyLabel: 'No games on the schedule this week.',
         slate: d => {
@@ -96,9 +100,27 @@ const SPORTS = {
         cadence: 'weekly',
         noun: 'predictions',
         listKey: 'predictions',
-        staleAfter: 10 * MS_DAY,
+                // 36h: this publishes daily now, including between race weekends when it
+        // says it is waiting on qualifying. A ten-day window was sized for the old
+        // Thursday-only job and would hide a dead one for a week and a half.
+        staleAfter: 36 * MS_HOUR,
         season: { startMonth: 3, startDay: 1, endMonth: 12, endDay: 10, startPhrase: 'March' },
-        emptyLabel: 'No race scheduled this weekend.',
+        // Between race weekends there is nothing to forecast yet: the model's features
+        // include the qualifying grid, and qualifying runs the day before the race. That
+        // is a real state and distinct from "no race this weekend" -- saying the latter
+        // while a named Grand Prix sits days away reads as a broken feed.
+        emptyLabel: d => {
+            if (d.awaiting === 'qualifying' && d.race_name) {
+                // parseIsoDay first: formatDay takes a Date, and a bare YYYY-MM-DD
+                // string reaches it as a string and throws.
+                const day = d.race_date ? parseIsoDay(d.race_date) : null;
+                const when = day && !isNaN(day) ? formatDay(day) : null;
+                return `Next up: the ${d.race_name}${d.round ? ` (round ${d.round})` : ''}`
+                    + `${when ? `, ${when}` : ''}. The grid is forecast from qualifying, so `
+                    + `predictions land once qualifying has run -- not before.`;
+            }
+            return 'No race scheduled this weekend.';
+        },
         render: renderF1,
     },
     // Real estate has no season -- omitting `season` means never off-season. It is
@@ -1158,7 +1180,12 @@ async function loadFeed(key, opts) {
 
     const items = data[cfg.listKey];
     if (!Array.isArray(items) || items.length === 0) {
-        container.innerHTML = banner + note('', cfg.emptyLabel);
+        // A feed may compute its empty message from the payload: "nothing to show" and
+        // WHY there is nothing to show are different statements, and the second one is
+        // the useful one.
+        const label = typeof cfg.emptyLabel === 'function'
+            ? cfg.emptyLabel(data) : cfg.emptyLabel;
+        container.innerHTML = banner + note('', label);
         return data;
     }
 
