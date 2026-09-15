@@ -40,8 +40,12 @@ a:hover {
     color: #fff;
 }
 
+/* The shell is wide; the PROSE is not. Line length is capped where text is read
+   (.feed-tagline at 60ch, .hero-summary, .about-content p), so widening this gives the
+   data -- tables, grids, the feed's two-column layout -- the room it was being denied
+   without stretching any paragraph past a comfortable measure. */
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -58,7 +62,7 @@ nav {
 }
 
 .nav-container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
     display: flex;

@@ -1,5 +1,132 @@
 {
-  "generated_at": "2026-09-15T19:56:50Z",
+  "generated_at": "2026-09-15T20:04:47Z",
+  "track_record": {
+    "races_scored": 1,
+    "basis": "grids published to the site before each race, from the run ledger",
+    "winners_correct": 1,
+    "winner_hit_rate": 1.0,
+    "podium_hits": 3,
+    "podium_slots": 3,
+    "mean_abs_position_error": 2.1,
+    "mean_spearman": 0.759,
+    "races": [
+      {
+        "year": 2026,
+        "round": 14,
+        "race_name": "Spanish Grand Prix",
+        "published_at": "2026-09-14T23:09:36Z",
+        "drivers_scored": 20,
+        "predicted_winner": "ANT",
+        "actual_winner": "ANT",
+        "winner_correct": true,
+        "podium_hits": 3,
+        "mean_abs_position_error": 2.1,
+        "spearman": 0.759,
+        "finishers": [
+          {
+            "driver": "ANT",
+            "predicted": 1,
+            "actual": 1
+          },
+          {
+            "driver": "VER",
+            "predicted": 3,
+            "actual": 2
+          },
+          {
+            "driver": "NOR",
+            "predicted": 2,
+            "actual": 3
+          },
+          {
+            "driver": "LEC",
+            "predicted": 4,
+            "actual": 4
+          },
+          {
+            "driver": "RUS",
+            "predicted": 5,
+            "actual": 5
+          },
+          {
+            "driver": "LAW",
+            "predicted": 9,
+            "actual": 6
+          },
+          {
+            "driver": "COL",
+            "predicted": 11,
+            "actual": 7
+          },
+          {
+            "driver": "PIA",
+            "predicted": 7,
+            "actual": 8
+          },
+          {
+            "driver": "LIN",
+            "predicted": 8,
+            "actual": 9
+          },
+          {
+            "driver": "HUL",
+            "predicted": 12,
+            "actual": 10
+          },
+          {
+            "driver": "OCO",
+            "predicted": 15,
+            "actual": 11
+          },
+          {
+            "driver": "GAS",
+            "predicted": 10,
+            "actual": 12
+          },
+          {
+            "driver": "BOR",
+            "predicted": 13,
+            "actual": 13
+          },
+          {
+            "driver": "TSU",
+            "predicted": 14,
+            "actual": 14
+          },
+          {
+            "driver": "ALB",
+            "predicted": 16,
+            "actual": 15
+          },
+          {
+            "driver": "ALO",
+            "predicted": 18,
+            "actual": 17
+          },
+          {
+            "driver": "BOT",
+            "predicted": 20,
+            "actual": 18
+          },
+          {
+            "driver": "SAI",
+            "predicted": 17,
+            "actual": 19
+          },
+          {
+            "driver": "PER",
+            "predicted": 19,
+            "actual": 20
+          },
+          {
+            "driver": "HAM",
+            "predicted": 6,
+            "actual": 22
+          }
+        ]
+      }
+    ]
+  },
   "year": 2026,
   "season": 2026,
   "race_name": "Azerbaijan Grand Prix",

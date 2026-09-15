@@ -582,10 +582,6 @@ const NO_RECORD = {
        + 'called at 70%+ confidence -- but that is a backtest held in the repo, not an '
        + 'out-of-sample record of the picks published here, so it is not quoted as one. '
        + 'The NBA season restarts in late October; a live record starts accruing then.',
-    f1: 'No out-of-sample record yet. This feed published for the first time on '
-      + '2026-09-14 after five months of a broken CI workflow, so no prediction it made '
-      + 'has had a race to be graded against. Finishing order is scored against the '
-      + 'actual classification as each race completes, the same way the NFL picks are.',
     opportunities: 'Nothing to measure: this board merges what other feeds already '
        + 'published and makes no prediction of its own. Each source carries its own '
        + 'record on its own page.',
@@ -621,6 +617,26 @@ const HISTORY = {
                  + ' This book runs forward to test that finding, not to showcase a result.';
         }
         return { rows, note };
+    },
+    f1: d => {
+        const t = d.track_record;
+        if (!t) return null;
+        const rows = [
+            ['Races scored', String(t.races_scored)],
+            ['Winner called', `${t.winners_correct} of ${t.races_scored}`],
+            ['Podium slots hit', `${t.podium_hits} of ${t.podium_slots}`],
+            ['Mean position error', `${t.mean_abs_position_error} places`],
+        ];
+        if (t.mean_spearman != null) rows.push(['Rank correlation', String(t.mean_spearman)]);
+        const fragile = t.races_scored < 5;
+        return { rows, note: (t.basis ? `Scored from the ${t.basis}. ` : '')
+            + (fragile
+                ? `At ${t.races_scored} race${t.races_scored === 1 ? '' : 's'} this is far `
+                  + `too small a sample to read as skill -- calling one winner and calling `
+                  + `none look identical at this length. It is published because what was `
+                  + `forecast and what happened are both facts; the hit rate is not yet a claim.`
+                : 'Every grid was published before its race and is graded against the '
+                  + 'official classification.') };
     },
     swing_book: d => bookHistory(d),
     mf_book: d => bookHistory(d),
@@ -878,7 +894,32 @@ function curveSessions(data) {
         + 'this site computed.' };
 }
 
+// One row per race already run, newest first: what was forecast beside what happened.
+function f1Races(data) {
+    const t = data.track_record;
+    if (!t || !Array.isArray(t.races) || !t.races.length) return null;
+    const rows = t.races.map(r => {
+        const facts = [`predicted ${r.predicted_winner}, won by ${r.actual_winner}`,
+                       `podium ${r.podium_hits}/3`,
+                       `mean error ${r.mean_abs_position_error} places`];
+        if (r.spearman != null) facts.push(`rho ${r.spearman}`);
+        return {
+            when: `R${r.round} ${r.race_name}`,
+            facts: facts.join(' | '),
+            label: 'Winner',
+            value: r.winner_correct ? 'HIT' : 'miss',
+            cls: r.winner_correct ? 'confidence-high' : 'confidence-low',
+            sub: `${r.drivers_scored} drivers scored`,
+        };
+    });
+    return { title: 'Race history', rows,
+        note: 'Each grid was published to this page before its race and is '
+        + 'graded against the official classification. Mean error is the average number '
+        + 'of places between the forecast finishing position and the real one.' };
+}
+
 const SESSIONS = {
+    f1: f1Races,
     options_levels: optionsSessions,
     swing_book: curveSessions,
     mf_book: curveSessions,
@@ -900,7 +941,10 @@ function sessionsPanel(key, data) {
                     <div class="nba-meta">${P.esc(r.sub)}</div>
                 </div>
             </div>`).join('');
-    return `<h2 class="feed-sub">Session history</h2>`
+    // Named by the feed: "sessions" is right for a book that trades a day at a time and
+    // wrong for a race calendar, and a heading that misnames its own rows is the kind of
+    // small dishonesty the rest of this page is careful to avoid.
+    return `<h2 class="feed-sub">${P.esc(h.title || 'Session history')}</h2>`
         + `<div class="prediction-content">${rows}`
         + `<div class="prediction-note">${P.esc(h.note)}</div></div>`;
 }
