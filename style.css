@@ -45,7 +45,7 @@ a:hover {
    data -- tables, grids, the feed's two-column layout -- the room it was being denied
    without stretching any paragraph past a comfortable measure. */
 .container {
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -62,7 +62,7 @@ nav {
 }
 
 .nav-container {
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 24px;
     display: flex;
@@ -261,7 +261,11 @@ h2::before {
 /* ===== Projects ===== */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    /* 300px, not 240px. auto-fill packs as many columns as the minimum allows, so on a
+       1600px shell a 240px floor produced six cramped columns of project cards whose
+       titles and stack lines then wrapped two or three times each. Cards read better
+       four-across and wide than six-across and narrow. */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
 
@@ -855,7 +859,11 @@ button:focus-visible {
    honest -- neither belongs behind a fold. */
 .feed-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr);
+    /* The aside holds short fact rows and caveat prose; it does not get better past
+       ~30rem, so it is capped in absolute terms and the remaining width all goes to the
+       output column. A pair of fr units would have split every extra pixel between them
+       and left the notes panel stretched across half a wide screen. */
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, 26rem);
     gap: 2.5rem;
     align-items: start;
 }
