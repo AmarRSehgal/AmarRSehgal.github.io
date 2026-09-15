@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T18:26:19.066009+00:00",
+  "generated_at": "2026-09-15T18:31:25.710062+00:00",
   "as_of": "2026-09-15",
   "status": "in_position",
   "account": "PA35ZGJSY8J9",
@@ -21,9 +21,9 @@
     "max_premium_per_trade": 2000.0,
     "max_concurrent": 2
   },
-  "equity": 99279.8,
-  "polls": 4,
-  "last_poll_at": "2026-09-15T18:26:16.820537+00:00",
+  "equity": 99089.8,
+  "polls": 5,
+  "last_poll_at": "2026-09-15T18:31:23.310538+00:00",
   "levels": [
     {
       "symbol": "AXON",
@@ -196,7 +196,7 @@
       "exit_order_id": null,
       "exit_fill": null,
       "realized_pnl": null,
-      "unrealized_pnl": -25.0,
+      "unrealized_pnl": -85.0,
       "option_symbol": "COIN261002P00187500",
       "strike": 187.5,
       "expiry": "2026-10-02",
@@ -217,7 +217,7 @@
       "detected_at": "2026-09-15T18:10:55.450088+00:00",
       "filled_contracts": 1,
       "entry_filled_at": "2026-09-15T18:10:58.114237492Z",
-      "market_value": 1670.0,
+      "market_value": 1610.0,
       "avg_entry_price": 16.95
     },
     {
@@ -229,7 +229,7 @@
       "exit_order_id": null,
       "exit_fill": null,
       "realized_pnl": null,
-      "unrealized_pnl": -10.0,
+      "unrealized_pnl": -50.0,
       "option_symbol": "MSTR261002P00139000",
       "strike": 139.0,
       "expiry": "2026-10-02",
@@ -250,7 +250,7 @@
       "detected_at": "2026-09-15T18:10:55.450088+00:00",
       "filled_contracts": 1,
       "entry_filled_at": "2026-09-15T18:10:58.679558291Z",
-      "market_value": 1260.0,
+      "market_value": 1220.0,
       "avg_entry_price": 12.7
     },
     {
@@ -295,7 +295,7 @@
       "exit_order_id": null,
       "exit_fill": null,
       "realized_pnl": null,
-      "unrealized_pnl": -105.0,
+      "unrealized_pnl": -135.0,
       "option_symbol": "ON261002C00073000",
       "strike": 73.0,
       "expiry": "2026-10-02",
@@ -316,7 +316,7 @@
       "detected_at": "2026-09-15T18:10:55.450088+00:00",
       "filled_contracts": 3,
       "entry_filled_at": "2026-09-15T18:11:01.010741159Z",
-      "market_value": 1395.0,
+      "market_value": 1365.0,
       "avg_entry_price": 5.0
     },
     {
@@ -328,7 +328,7 @@
       "exit_order_id": null,
       "exit_fill": null,
       "realized_pnl": null,
-      "unrealized_pnl": -370.0,
+      "unrealized_pnl": -430.0,
       "option_symbol": "MDB261002C00385000",
       "strike": 385.0,
       "expiry": "2026-10-02",
@@ -349,7 +349,7 @@
       "detected_at": "2026-09-15T18:10:55.450088+00:00",
       "filled_contracts": 1,
       "entry_filled_at": "2026-09-15T18:11:01.786663112Z",
-      "market_value": 1580.0,
+      "market_value": 1520.0,
       "avg_entry_price": 19.5
     }
   ],
@@ -362,7 +362,7 @@
     "rejected": 0,
     "unfilled": 0,
     "realized_pnl": 0,
-    "unrealized_pnl": -720.0,
+    "unrealized_pnl": -910.0,
     "wins": 0,
     "losses": 0,
     "gate_passed": 0
@@ -378,10 +378,10 @@
     "rejected": 0,
     "unfilled": 0,
     "starting_equity": 100000.0,
-    "equity": 99279.8,
+    "equity": 99089.8,
     "realized_pnl": 0,
-    "equity_pnl": -720.2,
-    "return_pct": -0.007201999999999971,
+    "equity_pnl": -910.2,
+    "return_pct": -0.009101999999999971,
     "brief_cost_usd": 0.78,
     "equity_curve": [
       [
@@ -390,7 +390,7 @@
       ],
       [
         "2026-09-15",
-        99279.8
+        99089.8
       ]
     ],
     "history": [
@@ -415,10 +415,10 @@
       },
       {
         "session": "2026-09-15",
-        "equity": 99279.8,
+        "equity": 99089.8,
         "equity_open": 100000.0,
         "watchlist": 10,
-        "polls": 4,
+        "polls": 5,
         "regime": "",
         "brief_cost_usd": 0.0,
         "taken": 5,
@@ -427,7 +427,7 @@
         "rejected": 0,
         "unfilled": 0,
         "realized_pnl": 0,
-        "unrealized_pnl": -720.0,
+        "unrealized_pnl": -910.0,
         "wins": 0,
         "losses": 0,
         "gate_passed": 0
