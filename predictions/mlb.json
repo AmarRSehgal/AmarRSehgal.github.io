@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T19:35:57.374783+00:00",
+  "generated_at": "2026-09-15T20:14:28.141171+00:00",
   "date": "2026-09-15",
   "season_status": "in_season",
   "games": [
@@ -212,6 +212,293 @@
     "high_conf_stated": 0.6464,
     "high_conf_realized": 0.5604,
     "calibration_gap": -0.086
+  },
+  "published_record": {
+    "n_games": 22,
+    "accuracy": 0.3182,
+    "baseline_accuracy": 0.5,
+    "baseline_label": "always pick the home team",
+    "basis": "picks as published on the site before first pitch, scored against finals",
+    "by_day": [
+      {
+        "date": "2026-09-14",
+        "games": 7,
+        "correct": 3,
+        "accuracy": 0.4286,
+        "bets": 7,
+        "pnl": -208.0,
+        "roi": -0.2971
+      },
+      {
+        "date": "2026-09-02",
+        "games": 6,
+        "correct": 1,
+        "accuracy": 0.1667,
+        "bets": 5,
+        "pnl": -344.0,
+        "roi": -0.688
+      },
+      {
+        "date": "2026-09-01",
+        "games": 9,
+        "correct": 3,
+        "accuracy": 0.3333,
+        "bets": 9,
+        "pnl": -357.0,
+        "roi": -0.3967
+      }
+    ],
+    "betting": {
+      "bets": 21,
+      "unpriced": 1,
+      "record": "7-14",
+      "hit_rate": 0.333,
+      "stake": 100.0,
+      "staked": 2100.0,
+      "pnl": -909.0,
+      "roi": -0.4329,
+      "avg_price": 1.808,
+      "break_even_hit_rate": 0.562,
+      "books": [
+        "draftkings",
+        "fanduel",
+        "betmgm"
+      ],
+      "basis": "flat $100 at the last price quoted before kickoff on DraftKings, FanDuel or BetMGM",
+      "settled": [
+        {
+          "label": "2026-09-01",
+          "home": "Cincinnati Reds",
+          "away": "San Diego Padres",
+          "kickoff": "2026-09-01T22:40:00Z",
+          "selection": "San Diego Padres",
+          "price": 1.75,
+          "book": "FanDuel",
+          "won": false,
+          "pnl": -100.0
+        },
+        {
+          "label": "2026-09-01",
+          "home": "Pittsburgh Pirates",
+          "away": "San Francisco Giants",
+          "kickoff": "2026-09-01T22:40:00Z",
+          "selection": "Pittsburgh Pirates",
+          "price": 1.62,
+          "book": "FanDuel",
+          "won": true,
+          "pnl": 62.0
+        },
+        {
+          "label": "2026-09-01",
+          "home": "Tampa Bay Rays",
+          "away": "New York Mets",
+          "kickoff": "2026-09-01T22:40:00Z",
+          "selection": "Tampa Bay Rays",
+          "price": 1.81,
+          "book": "FanDuel",
+          "won": true,
+          "pnl": 81.0
+        },
+        {
+          "label": "2026-09-01",
+          "home": "Cleveland Guardians",
+          "away": "Toronto Blue Jays",
+          "kickoff": "2026-09-01T22:40:00Z",
+          "selection": "Toronto Blue Jays",
+          "price": 2.53,
+          "book": "DraftKings",
+          "won": false,
+          "pnl": -100.0
+        },
+        {
+          "label": "2026-09-01",
+          "home": "Boston Red Sox",
+          "away": "Seattle Mariners",
+          "kickoff": "2026-09-01T22:45:00Z",
+          "selection": "Boston Red Sox",
+          "price": 1.85,
+          "book": "BetMGM",
+          "won": false,
+          "pnl": -100.0
+        },
+        {
+          "label": "2026-09-01",
+          "home": "Washington Nationals",
+          "away": "Atlanta Braves",
+          "kickoff": "2026-09-01T22:45:00Z",
+          "selection": "Atlanta Braves",
+          "price": 1.61,
+          "book": "FanDuel",
+          "won": false,
+          "pnl": -100.0
+        },
+        {
+          "label": "2026-09-01",
+          "home": "Minnesota Twins",
+          "away": "Detroit Tigers",
+          "kickoff": "2026-09-01T23:40:00Z",
+          "selection": "Minnesota Twins",
+          "price": 2.0,
+          "book": "DraftKings",
+          "won": true,
+          "pnl": 100.0
+        },
+        {
+          "label": "2026-09-01",
+          "home": "Kansas City Royals",
+          "away": "Miami Marlins",
+          "kickoff": "2026-09-01T23:40:00Z",
+          "selection": "Kansas City Royals",
+          "price": 1.85,
+          "book": "FanDuel",
+          "won": false,
+          "pnl": -100.0
+        },
+        {
+          "label": "2026-09-01",
+          "home": "Chicago Cubs",
+          "away": "Milwaukee Brewers",
+          "kickoff": "2026-09-01T23:40:00Z",
+          "selection": "Chicago Cubs",
+          "price": 1.79,
+          "book": "FanDuel",
+          "won": false,
+          "pnl": -100.0
+        },
+        {
+          "label": "2026-09-02",
+          "home": "Houston Astros",
+          "away": "Chicago White Sox",
+          "kickoff": "2026-09-02T00:10:00Z",
+          "selection": "Chicago White Sox",
+          "price": 1.89,
+          "book": "FanDuel",
+          "won": false,
+          "pnl": -100.0
+        },
+        {
+          "label": "2026-09-02",
+          "home": "Colorado Rockies",
+          "away": "Baltimore Orioles",
+          "kickoff": "2026-09-02T00:40:00Z",
+          "selection": "Baltimore Orioles",
+          "price": 1.71,
+          "book": "BetMGM",
+          "won": false,
+          "pnl": -100.0
+        },
+        {
+          "label": "2026-09-02",
+          "home": "Los Angeles Angels",
+          "away": "New York Yankees",
+          "kickoff": "2026-09-02T01:38:00Z",
+          "selection": "New York Yankees",
+          "price": 1.56,
+          "book": "FanDuel",
+          "won": true,
+          "pnl": 56.0
+        },
+        {
+          "label": "2026-09-02",
+          "home": "Arizona Diamondbacks",
+          "away": "Philadelphia Phillies",
+          "kickoff": "2026-09-02T01:40:00Z",
+          "selection": "Philadelphia Phillies",
+          "price": 1.74,
+          "book": "FanDuel",
+          "won": false,
+          "pnl": -100.0
+        },
+        {
+          "label": "2026-09-02",
+          "home": "Los Angeles Dodgers",
+          "away": "St. Louis Cardinals",
+          "kickoff": "2026-09-02T02:10:00Z",
+          "selection": "Los Angeles Dodgers",
+          "price": 1.56,
+          "book": "FanDuel",
+          "won": false,
+          "pnl": -100.0
+        },
+        {
+          "label": "2026-09-14",
+          "home": "Cincinnati Reds",
+          "away": "Los Angeles Dodgers",
+          "kickoff": "2026-09-14T22:40:00Z",
+          "selection": "Los Angeles Dodgers",
+          "price": 1.47,
+          "book": "FanDuel",
+          "won": true,
+          "pnl": 47.0
+        },
+        {
+          "label": "2026-09-14",
+          "home": "Cleveland Guardians",
+          "away": "Chicago White Sox",
+          "kickoff": "2026-09-14T22:40:00Z",
+          "selection": "Cleveland Guardians",
+          "price": 1.76,
+          "book": "DraftKings",
+          "won": false,
+          "pnl": -100.0
+        },
+        {
+          "label": "2026-09-14",
+          "home": "Toronto Blue Jays",
+          "away": "Detroit Tigers",
+          "kickoff": "2026-09-14T23:07:00Z",
+          "selection": "Toronto Blue Jays",
+          "price": 1.72,
+          "book": "FanDuel",
+          "won": false,
+          "pnl": -100.0
+        },
+        {
+          "label": "2026-09-14",
+          "home": "New York Mets",
+          "away": "Baltimore Orioles",
+          "kickoff": "2026-09-14T23:10:00Z",
+          "selection": "New York Mets",
+          "price": 1.82,
+          "book": "FanDuel",
+          "won": false,
+          "pnl": -100.0
+        },
+        {
+          "label": "2026-09-14",
+          "home": "Chicago Cubs",
+          "away": "Atlanta Braves",
+          "kickoff": "2026-09-14T23:40:00Z",
+          "selection": "Chicago Cubs",
+          "price": 1.75,
+          "book": "FanDuel",
+          "won": true,
+          "pnl": 75.0
+        },
+        {
+          "label": "2026-09-14",
+          "home": "Minnesota Twins",
+          "away": "New York Yankees",
+          "kickoff": "2026-09-14T23:40:00Z",
+          "selection": "Minnesota Twins",
+          "price": 2.47,
+          "book": "DraftKings",
+          "won": false,
+          "pnl": -100.0
+        },
+        {
+          "label": "2026-09-14",
+          "home": "St. Louis Cardinals",
+          "away": "San Francisco Giants",
+          "kickoff": "2026-09-14T23:45:00Z",
+          "selection": "St. Louis Cardinals",
+          "price": 1.7,
+          "book": "FanDuel",
+          "won": true,
+          "pnl": 70.0
+        }
+      ]
+    }
   },
   "methodology": "Ensemble of logistic regression, XGBoost and LightGBM over margin-adjusted Elo, rolling team form, Pythagorean expectation, rest and park factors, refit on every game played before the slate date. The three FanGraphs season-aggregate feature groups are excluded: they join end-of-season totals onto in-season games, which leaks the result being predicted. This model has no demonstrated edge -- over the 2026 season it does not beat always picking the home team at any conventional significance level, and its high-confidence picks realize BELOW their stated probability. Published as model output, not as a betting recommendation."
 }

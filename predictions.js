@@ -588,6 +588,13 @@ function renderF1(data) {
     `;
 }
 
+// Sign OUTSIDE the currency symbol. formatMoney(-23) gives "$-23", which reads as a
+// typo rather than a loss, and every P&L on this site is signed.
+function formatSigned(v) {
+    const n = Number(v);
+    if (!isFinite(n)) return '';
+    return (n < 0 ? '-' : '+') + formatMoney(Math.abs(n));
+}
 function formatMoney(v) {
     const n = Number(v);
     if (!isFinite(n)) return '';
@@ -1202,6 +1209,6 @@ window.Predictions = {
     LABEL: SPORT_LABEL,
     load: loadFeed,
     esc, note, formatStamp, formatDay, formatMoney, formatKickoff,
-    relativeAge, parseIsoDay,
+    relativeAge, parseIsoDay, formatSigned,
     MS_HOUR, MS_DAY,
 };
