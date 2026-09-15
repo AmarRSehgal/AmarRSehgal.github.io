@@ -122,6 +122,18 @@ SWING_BOOK = {
 }
 
 
+OPTIONS_LEVELS = {
+    'generated_at': STAMP, 'account': 'PA35ZGJSY8J9', 'paper': True,
+    'started': '2026-09-14', 'starting_equity': 100000.0, 'equity': 100000.0,
+    'status': 'armed', 'gate_mode': 'observe', 'universe_size': 574,
+    'backtest': {'verdict': 'negative expectancy',
+                 'note': 'Signal is ~0.019%/trade against a 0.09% cost hurdle.'},
+    'levels': [{'symbol': 'MRVL', 'or_high': 223.39, 'or_low': 213.63,
+                'long_trigger': 224.85, 'short_trigger': 212.16,
+                'width_pct': 0.0438, 'gap_pct': -0.0853, 'rank': 4}],
+}
+
+
 def game(base, **fields):
     d = copy.deepcopy(base)
     d['games'][0].update(fields)
@@ -514,6 +526,65 @@ class PaperBooks(ContractBase):
         self.rejects('swing_book', payload(SWING_BOOK, backtest={'sharpe': 0.4}),
                      'missing')
 
+
+
+class OptionsLevelsContract(ContractBase):
+    """The one feed publishing a strategy its own backtest rejected.
+
+    Two of these rules exist only because of that: the caveat and the gate mode are what
+    keep the page from reading as a claim of edge.
+    """
+
+    def test_valid_payload(self):
+        self.assertEqual(len(self.ok('options_levels', OPTIONS_LEVELS)), 1)
+
+    def test_no_levels_is_valid(self):
+        """A holiday, or a day no name cleared the screen. Both are real states."""
+        d = copy.deepcopy(OPTIONS_LEVELS)
+        d['levels'] = []
+        self.assertEqual(self.ok('options_levels', d), [])
+
+    def test_backtest_note_is_required(self):
+        d = copy.deepcopy(OPTIONS_LEVELS)
+        d['backtest'] = {'verdict': 'negative expectancy'}
+        self.rejects('options_levels', d, 'backtest.note is required')
+
+    def test_blank_note_does_not_satisfy_the_caveat(self):
+        d = copy.deepcopy(OPTIONS_LEVELS)
+        d['backtest']['note'] = '   '
+        self.rejects('options_levels', d, 'backtest.note is required')
+
+    def test_gate_mode_must_be_known(self):
+        d = copy.deepcopy(OPTIONS_LEVELS)
+        d['gate_mode'] = 'off'
+        self.rejects('options_levels', d, "must be 'observe' or 'strict'")
+
+    def test_paper_flag_must_be_true(self):
+        d = copy.deepcopy(OPTIONS_LEVELS)
+        d['paper'] = False
+        self.rejects('options_levels', d, 'may not be published as anything else')
+
+    def test_long_trigger_must_sit_above_the_range(self):
+        """A trigger inside the opening range fires on the marginal tag the buffer
+        exists to reject -- that is a different strategy than the page names."""
+        d = copy.deepcopy(OPTIONS_LEVELS)
+        d['levels'][0]['long_trigger'] = 220.00
+        self.rejects('options_levels', d, 'is not above or_high')
+
+    def test_short_trigger_must_sit_below_the_range(self):
+        d = copy.deepcopy(OPTIONS_LEVELS)
+        d['levels'][0]['short_trigger'] = 218.00
+        self.rejects('options_levels', d, 'is not below or_low')
+
+    def test_inverted_range_rejected(self):
+        d = copy.deepcopy(OPTIONS_LEVELS)
+        d['levels'][0]['or_low'] = 300.0
+        self.rejects('options_levels', d, 'is above or_high')
+
+    def test_unknown_status_rejected(self):
+        d = copy.deepcopy(OPTIONS_LEVELS)
+        d['status'] = 'running'
+        self.rejects('options_levels', d, 'not a known session state')
 
 if __name__ == '__main__':
     unittest.main()

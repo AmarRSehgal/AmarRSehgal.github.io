@@ -137,6 +137,22 @@ SPECS = {
                  'positions'), 'positions',
                 ('ticker', 'qty', 'avg_entry', 'price', 'market_value', 'pnl',
                  'return_pct')),
+    # Opening-range level breaks, third paper book. Two requirements no other feed has,
+    # because this strategy BACKTESTED NEGATIVE and is published anyway:
+    #
+    #   `backtest.note`  -- the page's honesty depends on that caveat being present. If a
+    #                       generator drops it, the site silently becomes a portfolio
+    #                       asserting an edge the author's own research denies. Required
+    #                       so that failure is loud rather than cosmetic.
+    #   `gate_mode`      -- 'observe' means trades are taken whether or not the Rule Zero
+    #                       gate approved them. A reader assuming 'strict' would badly
+    #                       misread the P&L, so the mode travels with the numbers.
+    'options_levels': (('generated_at', 'account', 'paper', 'started', 'starting_equity',
+                        'equity', 'status', 'gate_mode', 'universe_size', 'backtest',
+                        'levels'),
+                       'levels',
+                       ('symbol', 'or_high', 'or_low', 'long_trigger', 'short_trigger',
+                        'width_pct', 'gap_pct', 'rank')),
     # Federal resale lanes from SAM.gov. The only feed here that CANNOT be regenerated
     # in CI: the daily extract carries just the currently-active notices, so recurrence
     # is visible only to a job that has been recording snapshots on one machine. That
@@ -776,6 +792,29 @@ def check_book_payload(data, sport):
                 raise Invalid(f'backtest is present but missing {key!r}')
 
 
+def check_level(where, lv):
+    """One armed opening-range level.
+
+    The buffer is the whole rule (Rulebook Sec.10): a trigger sitting inside the opening
+    range would fire on exactly the marginal tag the buffer exists to reject, so a payload
+    like that describes a different strategy than the one the page names.
+    """
+    require_str(where, 'symbol', lv['symbol'])
+    hi = require_number(where, 'or_high', lv['or_high'])
+    lo = require_number(where, 'or_low', lv['or_low'])
+    lng = require_number(where, 'long_trigger', lv['long_trigger'])
+    sht = require_number(where, 'short_trigger', lv['short_trigger'])
+    require_number(where, 'width_pct', lv['width_pct'])
+    require_number(where, 'gap_pct', lv['gap_pct'])
+    require_int(where, 'rank', lv['rank'])
+    if lo > hi:
+        raise Invalid(f'{where}: or_low={lo} is above or_high={hi}')
+    if lng <= hi:
+        raise Invalid(f'{where}: long_trigger={lng} is not above or_high={hi}')
+    if sht >= lo:
+        raise Invalid(f'{where}: short_trigger={sht} is not below or_low={lo}')
+
+
 def check_book_position(where, pos):
     require_str(where, 'ticker', pos['ticker'])
     for key in ('qty', 'avg_entry', 'price', 'market_value', 'pnl', 'return_pct'):
@@ -990,6 +1029,17 @@ def validate(sport, data, now=None):
         keys = [x.get('source') for x in data['sources'] if isinstance(x, dict)]
         if len(set(keys)) != len(keys):
             raise Invalid(f'duplicate source keys in sources: {keys}')
+    elif sport == 'options_levels':
+        if data['paper'] is not True:
+            raise Invalid('paper must be true: this book may not be published as anything else')
+        if data['gate_mode'] not in ('observe', 'strict'):
+            raise Invalid(f"gate_mode={data['gate_mode']!r} must be 'observe' or 'strict'")
+        if data['status'] not in ('armed', 'in_position', 'closed', 'no_session'):
+            raise Invalid(f"status={data['status']!r} is not a known session state")
+        bt = data['backtest']
+        if not isinstance(bt, dict) or not str(bt.get('note', '')).strip():
+            raise Invalid('backtest.note is required: this strategy tested negative and '
+                          'the page has to say so on every load')
     elif sport == 'magicformula':
         check_date_string('<payload>', 'universe_pulled', data['universe_pulled'])
         size = require_int('<payload>', 'universe_size', data['universe_size'])
@@ -1023,6 +1073,8 @@ def validate(sport, data, now=None):
             check_lane(where, item)
         elif sport in ('swing_book', 'mf_book'):
             check_book_position(where, item)
+        elif sport == 'options_levels':
+            check_level(where, item)
         elif sport == 'f1':
             check_f1_entry(where, item)
         elif sport == 'funding':
