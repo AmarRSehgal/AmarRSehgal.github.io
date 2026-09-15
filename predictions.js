@@ -825,7 +825,16 @@ function olMoney(v) {
 
 function olBrief(data) {
     const b = data.brief;
-    if (!b) return '';
+    // Three states, and they are NOT the same thing. The brief is built once in the
+    // pre-market window and there is no backfill, so a null brief means the window was
+    // missed entirely -- on 2026-09-15 a four-hour DNS outage covered all of it, and the
+    // session then opened at 13:25 ET with no brief and said nothing about it. Returning
+    // '' here was the silent drop the `!b.ok` branch below was written to prevent.
+    if (!b) {
+        return note('prediction-note', 'No pre-market brief for this session -- it is '
+            + 'built once before the open and was not built, so the screen below ran '
+            + 'unfiltered. Nothing was excluded that a brief might have excluded.');
+    }
     if (!b.ok) {
         // The brief is advisory and fails soft. Say so rather than showing nothing,
         // so a silently-missing brief is distinguishable from a quiet one.
