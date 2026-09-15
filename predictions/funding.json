@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T19:00:10.299062+00:00",
+  "generated_at": "2026-09-15T20:00:10.272941+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1378.03,
-      "net_at_hold": 1.25848,
-      "cost_bps": 51.2
+      "net_apr": 1267.0,
+      "net_at_hold": 1.15708,
+      "cost_bps": 49.16
     },
     {
       "base": "LSK",
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1330.93,
-      "net_at_hold": 1.21546,
-      "cost_bps": 48.56
+      "net_apr": 1207.65,
+      "net_at_hold": 1.10288,
+      "cost_bps": 46.13
     },
     {
       "base": "NIGHT",
@@ -40,9 +40,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 718.43,
-      "net_at_hold": 0.6561,
-      "cost_bps": 35.94
+      "net_apr": 684.17,
+      "net_at_hold": 0.62482,
+      "cost_bps": 35.95
     },
     {
       "base": "NIGHT",
@@ -55,7 +55,7 @@
       "scans": 24,
       "net_apr": 529.24,
       "net_at_hold": 0.48333,
-      "cost_bps": 55.19
+      "cost_bps": 55.22
     },
     {
       "base": "LSK",
@@ -66,9 +66,9 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 1584.83,
-      "net_at_hold": 1.44734,
-      "cost_bps": 51.32
+      "net_apr": 1571.91,
+      "net_at_hold": 1.43553,
+      "cost_bps": 49.05
     },
     {
       "base": "NIGHT",
@@ -81,7 +81,7 @@
       "scans": 24,
       "net_apr": 312.63,
       "net_at_hold": 0.14276,
-      "cost_bps": 37.37
+      "cost_bps": 36.47
     },
     {
       "base": "CVC",
@@ -92,22 +92,22 @@
       "min_hold_h": 4,
       "hits": 22,
       "scans": 24,
-      "net_apr": 1189.93,
-      "net_at_hold": 0.54335,
+      "net_apr": 1111.36,
+      "net_at_hold": 0.50747,
       "cost_bps": 35.17
     },
     {
-      "base": "ZIL",
+      "base": "NIGHT",
       "type": "perp-perp",
-      "long_venue": "OKX",
-      "short_venue": "Bybit",
+      "long_venue": "Coinbase",
+      "short_venue": "Binance",
       "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 22,
+      "min_hold_h": 4,
+      "hits": 21,
       "scans": 24,
-      "net_apr": 371.55,
-      "net_at_hold": 0.33931,
-      "cost_bps": 31.16
+      "net_apr": 430.2,
+      "net_at_hold": 0.19644,
+      "cost_bps": 36.0
     }
   ]
 }
