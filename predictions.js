@@ -749,8 +749,13 @@ async function loadFeed(key, opts) {
     const now = new Date();
 
     let data = null;
+    // 404 and "the fetch blew up" are different facts and the page says different
+    // things about them. A feed whose file does not exist yet has never published --
+    // telling a reader it "may be down" invents an outage that is not happening.
+    let missing = false;
     try {
         const resp = await fetch(cfg.file, { cache: 'no-cache' });
+        if (resp.status === 404) { missing = true; throw new Error('404'); }
         if (!resp.ok) throw new Error(String(resp.status));
         data = await resp.json();
     } catch (e) {
@@ -781,6 +786,12 @@ async function loadFeed(key, opts) {
     }
 
     if (!data) {
+        if (missing) {
+            stampEl.textContent = 'Not published yet';
+            container.innerHTML = note('prediction-pending',
+                `The ${label} has not published to this page yet.`);
+            return null;
+        }
         stampEl.textContent = 'Unavailable';
         container.innerHTML = note('prediction-error',
             `Could not load the ${label} model output. The feed may be down.`);
