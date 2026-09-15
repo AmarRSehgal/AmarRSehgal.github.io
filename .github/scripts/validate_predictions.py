@@ -101,6 +101,12 @@ SPECS = {
             ('away_team', 'home_team', 'pick', 'ml_win_prob', 'confidence')),
     'f1': (('generated_at', 'year', 'race_name', 'predictions'), 'predictions',
            ('driver', 'predicted_pos')),
+    # What the news is actually covering. `caveat` is REQUIRED: the ranking is by how
+    # many independent outlets carry a topic, NOT by sentiment, because VADER mis-scores
+    # news language -- a payload without that sentence would let the page read as a
+    # sentiment index, which it is not.
+    'news': (('generated_at', 'window_hours', 'articles_in_window', 'caveat', 'topics'),
+             'topics', ('term', 'articles', 'sources', 'sentiment_direction')),
     # A snapshot of who is winning on Polymarket's 5-minute BTC markets, not a forecast.
     # `disclaimer` is REQUIRED: the project looked for manipulation, did not find any, and
     # deliberately carries no manipulation field. A payload that lost that sentence would
@@ -615,6 +621,25 @@ def check_idea(where, item):
     rank = require_int(where, 'rank', item['rank'])
     if rank < 1:
         raise Invalid(f'{where}.rank={rank} must be 1-based')
+
+
+SENTIMENT_DIRECTION = ('positive', 'negative', 'mixed', 'unknown')
+
+
+def check_news_topic(where: str, t: dict) -> None:
+    """One topic. Coverage is the measurement; sentiment is a coarse direction at most."""
+    require_str(where, 'term', t['term'])
+    arts = require_int(where, 'articles', t['articles'])
+    srcs = require_int(where, 'sources', t['sources'])
+    if srcs > arts:
+        raise Invalid(f'{where}: sources={srcs} exceeds articles={arts}')
+    if t['sentiment_direction'] not in SENTIMENT_DIRECTION:
+        raise Invalid(f"{where}: sentiment_direction={t['sentiment_direction']!r} must "
+                      f"be one of {SENTIMENT_DIRECTION}")
+    # A numeric mean is allowed but must not be the only thing carried: the direction is
+    # what the page shows, because the mean implies a precision VADER does not have here.
+    if 'sentiment_mean' in t and t['sentiment_mean'] is not None:
+        require_number(where, 'sentiment_mean', t['sentiment_mean'])
 
 
 WHALE_EDGE = ('late-window', 'broad', 'insufficient-history', 'none')
@@ -1148,6 +1173,13 @@ def validate(sport, data, now=None):
         check_book_payload(data, sport)
     elif sport == 'polymarket_whales':
         check_whales_payload(data)
+    elif sport == 'news':
+        require_int('<payload>', 'window_hours', data['window_hours'])
+        require_int('<payload>', 'articles_in_window', data['articles_in_window'])
+        c = require_str('<payload>', 'caveat', data['caveat'])
+        if 'not by sentiment' not in c:
+            raise Invalid('caveat must still say the ranking is not by sentiment -- '
+                          'that is what stops the page reading as a sentiment index')
     elif sport == 'f1':
         require_int('<payload>', 'year', data['year'])
         require_str('<payload>', 'race_name', data['race_name'])
@@ -1181,6 +1213,8 @@ def validate(sport, data, now=None):
             check_f1_entry(where, item)
         elif sport == 'polymarket_whales':
             check_whale(where, item)
+        elif sport == 'news':
+            check_news_topic(where, item)
         elif sport == 'funding':
             check_funding_route(where, item)
         elif sport == 'magicformula':

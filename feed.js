@@ -192,6 +192,22 @@ const PROJECTS = {
             + 'would dominate every other signal and the model would be reading the '
             + 'market back to you.',
     },
+    news: {
+        title: 'News Coverage',
+        tagline: 'What the press is actually covering right now, ranked by how many '
+            + 'independent outlets are carrying each story.',
+        repo: 'news-sentiment-tracker',
+        stack: ['Python', 'feedparser', 'VADER', 'SQLite FTS5'],
+        what: 'The topics with the broadest coverage in the last 24 hours across 40+ '
+            + 'news feeds and 17 social sources, with a surge figure comparing each '
+            + 'topic against its own recent norm.',
+        data: '55+ public RSS feeds. RSS serves only the last 24-48h, so the archive is '
+            + 'built by fetching continuously rather than backfilled.',
+        states: 'Ranked by BREADTH, never by sentiment. VADER mis-scores news language, '
+            + 'so tone is shown as a coarse direction and only where the sample '
+            + 'supports it \u2014 it is context on a topic, not a signal.',
+        cadence: 'hourly',
+    },
     polymarket_whales: {
         title: 'Polymarket Whale Watch',
         tagline: 'Who is actually making money on Polymarket\u2019s 5-minute BTC markets, '
@@ -598,6 +614,11 @@ const NO_RECORD = {
        + 'called at 70%+ confidence -- but that is a backtest held in the repo, not an '
        + 'out-of-sample record of the picks published here, so it is not quoted as one. '
        + 'The NBA season restarts in late October; a live record starts accruing then.',
+    news: 'Nothing to measure: this reports what is being covered, and coverage is an '
+       + 'observation rather than a forecast. There is no call here to be graded. The '
+       + 'sentiment direction is deliberately not scored either \u2014 VADER mis-reads '
+       + 'news language, and a track record for a number the project does not trust '
+       + 'would be worse than none.',
     polymarket_whales: 'Nothing to measure, and deliberately so. This feed scores OTHER '
        + 'people\u2019s trading, not a forecast of ours, so there is no call here to be '
        + 'graded and no P&L to report. The project was built to look for manipulation '
