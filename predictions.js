@@ -241,6 +241,34 @@ const SPORTS = {
         },
         render: renderFunding,
     },
+    // --- Board sections, promoted to panels of their own ---------------------
+    //
+    // These six live inside predictions/opportunities.json rather than in a file each:
+    // the aggregator merges what every scanner published and writes one payload. They
+    // used to render as one combined board, which meant six unrelated scanners shared a
+    // single "Updated:" line -- so a scanner that had gone quiet for a week looked as
+    // current as one that ran an hour ago.
+    //
+    // Split out, each panel reads its own section and uses that section's OWN `as_of`
+    // and status. A quiet source now says so in its own header instead of hiding behind
+    // the freshest one on the board. `section` is what tells the loader to unwrap.
+    //
+    // Sources whose repo already has a full panel here (magic_formula, real_estate,
+    // funding_rate_arb) are deliberately NOT promoted -- they would be the same repo
+    // twice, once in full and once as a three-row summary.
+    funding_drift: boardSection('funding_drift', 'funding-drift',
+        'No market currently shows a drift worth flagging.'),
+    contracts: boardSection('contracts', 'contracts',
+        'No recurring lane currently clears the evidence bar.'),
+    stock_signals: boardSection('stock_signals', 'stock-signals',
+        'No name currently carries a live swing signal.'),
+    weather_risk: boardSection('weather_risk', 'weather-risk',
+        'No city currently scores a severe-weather risk worth flagging.'),
+    ad_capital: boardSection('ad_capital', 'ad-capital',
+        'The scan ran and nothing cleared the bar.'),
+    polymarket_btc: boardSection('polymarket_btc', 'polymarket-btc',
+        'The model does not currently out-forecast the market, which is the finding.'),
+
     // The two live paper books. Both on their own dedicated Alpaca paper account, both
     // $100k, both publishing hourly-ish from a scheduled job. `staleAfter` is two
     // sessions: a book that has not reported since the day before last is a broken
@@ -301,6 +329,48 @@ const SPORTS = {
     },
 };
 
+// One section of the cross-source board, rendered as its own panel. `staleAfter` is
+// generous because these scanners run on very different clocks -- the per-section
+// status from the aggregator is the real freshness signal and it is rendered directly.
+function boardSection(key, slug, emptyLabel) {
+    return {
+        file: 'predictions/opportunities.json',
+        section: key,
+        container: `${slug}-rows`,
+        stamp: `${slug}-updated`,
+        cadence: 'daily',
+        noun: 'rows',
+        listKey: 'opportunities',
+        staleAfter: 7 * MS_DAY,
+        emptyLabel,
+        render: renderSectionRows,
+    };
+}
+
+function renderSectionRows(data) {
+    const rows = data.opportunities.map(o => {
+        const link = o.link
+            ? `<a href="${esc(o.link)}" target="_blank" rel="noopener noreferrer">${esc(o.title)}</a>`
+            : esc(o.title);
+        return `
+            <div class="nba-game">
+                <div class="nba-matchup">
+                    <div class="nba-teams">${link}</div>
+                    <div class="nba-meta">${esc(o.detail || '')}</div>
+                </div>
+                <div class="nba-pick">
+                    <div class="nba-confidence confidence-med">${esc(o.metric_display)}</div>
+                </div>
+            </div>
+        `;
+    }).join('');
+    // The caveat travels with the rows, exactly as it did on the combined board.
+    // Several of these generators exist mainly to warn about their own output, and
+    // splitting the board apart must not be how that warning gets dropped.
+    return rows + (data.caveat
+        ? `<div class="prediction-note">${esc(data.caveat)}</div>` : '');
+}
+
 const SOURCE_LABEL = { empireflippers: 'Empire Flippers', flippa: 'Flippa',
                        bizbuysell: 'BizBuySell' };
 
@@ -309,7 +379,11 @@ const SOURCE_LABEL = { empireflippers: 'Empire Flippers', flippa: 'Flippa',
 // quarter's numbers entirely.
 const UNIVERSE_STALE = 105 * MS_DAY;
 
-const SPORT_LABEL = { swing_book: 'Swing book', mf_book: 'Magic Formula book', nba: 'NBA', nfl: 'NFL', mlb: 'MLB', f1: 'F1', real_estate: 'Real estate',
+const SPORT_LABEL = { swing_book: 'Swing book', mf_book: 'Magic Formula book',
+                      funding_drift: 'Funding drift scan', contracts: 'Federal lanes scan',
+                      stock_signals: 'Swing signals', weather_risk: 'Severe weather scan',
+                      ad_capital: 'AD Capital scan', polymarket_btc: 'Polymarket BTC scan',
+                      nba: 'NBA', nfl: 'NFL', mlb: 'MLB', f1: 'F1', real_estate: 'Real estate',
                       business_hunter: 'Business acquisitions',
                       magic_formula: 'Magic Formula', funding: 'Funding carry',
                       options_levels: 'Options level breaks' };
@@ -849,6 +923,16 @@ async function loadFeed(key, opts) {
         data = null;
     }
 
+    // A section feed carries the whole board; unwrap to the one source this panel is
+    // for, and adopt that section's OWN as_of. Using the board's generated_at here is
+    // exactly the bug the split was made to fix -- the aggregator is fresh whenever it
+    // last ran, regardless of how long ago the scanner beneath it stopped.
+    if (data && cfg.section) {
+        const sec = (data.sources || []).find(x => x && x.source === cfg.section);
+        data = sec ? { ...sec, generated_at: sec.as_of || data.generated_at } : null;
+        if (!data) missing = true;
+    }
+
     // A payload may override the built-in (approximate) season window. A feed with
     // no season window at all (real estate) is never off-season.
     const status = data && data.season_status;
@@ -932,6 +1016,19 @@ async function loadFeed(key, opts) {
     // A warning sits ABOVE the content rather than replacing it. Suppressing a feed and
     // failing to load one look identical to a reader; saying what is wrong with output
     // that is still on screen tells them more than an empty panel with an excuse.
+    // The aggregator already decided this section's status and publishes NO items for
+    // anything past its own budget. Surface its words rather than second-guessing them.
+    if (data.status && data.status !== 'fresh' && data.status !== 'empty') {
+        const why = { stale: 'has gone quiet', missing: 'has not run yet',
+                      error: 'could not be read' }[data.status] || 'is not reporting';
+        stampEl.textContent = data.status === 'missing'
+            ? 'Not published yet' : `Last scan ${relativeAge(age)}`;
+        container.innerHTML = note('prediction-stale',
+            data.note || `This scanner ${why}.`)
+            + (data.caveat ? `<div class="prediction-note">${esc(data.caveat)}</div>` : '');
+        return data;
+    }
+
     const warned = cfg.warn ? cfg.warn(data, now) : null;
     const banner = (archived ? `<p class="prediction-banner prediction-archived">${esc(archived)}</p>` : '')
         + (warned ? `<p class="prediction-banner ${warned.cls}">${esc(warned.text)}</p>` : '');
