@@ -7,9 +7,9 @@ treated every unrecognised value as a failure, both feeds were suppressed outrig
 the options book rendered as "This scanner is not reporting" while holding five live
 positions, and its own slate() already had the words for that exact state.
 
-There is no JS harness in this repo, so the agreement is asserted by reading the two
-source files. That is enough: the bug was a mismatch between two literal vocabularies,
-and a mismatch is exactly what this can see.
+tools/render_check.mjs catches this by rendering; this catches it by reading the two
+source files, and is the cheaper of the two to keep green. The bug was a mismatch
+between two literal vocabularies, which is exactly what a read can see.
 """
 import pathlib
 import re

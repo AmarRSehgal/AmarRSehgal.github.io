@@ -800,6 +800,112 @@ function bookHistory(d) {
     return { rows, note };
 }
 
+// --- Session-by-session record --------------------------------------------------
+//
+// `historyPanel` above is a summary: where a book stands now. This is the series behind
+// it -- one row per session the book has traded, newest first -- because a single
+// aggregate return cannot be checked and a run of them can. It is read straight off the
+// payload, which already carries the series each book keeps for itself, so there is no
+// second source to drift from what the book believes.
+//
+// Detail pages only. The home page asserts "this is what the model says now"; a ledger
+// of past sessions is the opposite claim and does not belong beside it.
+
+const SESSION_NOTE = 'Every row was published on the day it happened and is kept '
+    + 'afterwards. Paper accounts on simulated fills -- the record is of the decisions, '
+    + 'not of money made.';
+
+// Per-session rows for the options book. It keeps its own history list, one entry per
+// trading session, so the day's PnL is `equity` against that session's OWN open rather
+// than a difference between two closes -- the two disagree whenever a session is missed,
+// and a missed session is exactly when the number is worth reading.
+function optionsSessions(data) {
+    const hist = (data.performance || {}).history;
+    if (!Array.isArray(hist) || !hist.length) return null;
+    const rows = hist.slice().reverse().map(h => {
+        const open = Number(h.equity_open) || 0;
+        const chg = open ? (Number(h.equity) - open) / open : null;
+        const facts = [];
+        facts.push(`${h.taken || 0} taken`);
+        if (h.closed) facts.push(`${h.closed} closed`);
+        if (h.open) facts.push(`${h.open} still open at the bell`);
+        if (h.rejected) facts.push(`${h.rejected} rejected`);
+        if (h.unfilled) facts.push(`${h.unfilled} unfilled`);
+        if (h.wins || h.losses) facts.push(`${h.wins || 0}W/${h.losses || 0}L`);
+        if (h.watchlist) facts.push(`${h.watchlist} on the watchlist`);
+        if (h.regime) facts.push(`regime ${h.regime}`);
+        return {
+            when: h.session,
+            facts: facts.join(' | '),
+            label: 'Day',
+            value: chg == null ? '--' : (chg >= 0 ? '+' : '') + (chg * 100).toFixed(2) + '%',
+            cls: chg == null ? '' : (chg >= 0 ? 'confidence-high' : 'confidence-low'),
+            sub: P.formatMoney(h.equity),
+        };
+    });
+    return { rows, note: SESSION_NOTE };
+}
+
+// Per-session rows for the two stock books, off the Alpaca equity curve. The day change
+// is a difference between consecutive published points, so it spans whatever gap sits
+// between them -- a weekend, or a session the job missed. Label it by both dates rather
+// than calling it a day, which would be a quiet lie on exactly those rows.
+function curveSessions(data) {
+    const curve = data.equity_curve;
+    if (!Array.isArray(curve) || curve.length < 1) return null;
+    const base = Number(data.starting_equity) || null;
+    const rows = curve.slice().reverse().map((pt, i, arr) => {
+        const prev = arr[i + 1];
+        const chg = prev && Number(prev.equity)
+            ? (Number(pt.equity) - Number(prev.equity)) / Number(prev.equity) : null;
+        const cum = base ? (Number(pt.equity) - base) / base : null;
+        const facts = [];
+        if (cum != null) {
+            facts.push(`${(cum >= 0 ? '+' : '') + (cum * 100).toFixed(2)}% since inception`);
+        }
+        facts.push(prev ? `from ${prev.date}` : 'first published point');
+        return {
+            when: pt.date,
+            facts: facts.join(' | '),
+            label: prev ? 'Change' : 'Opened',
+            value: chg == null ? '--' : (chg >= 0 ? '+' : '') + (chg * 100).toFixed(2) + '%',
+            cls: chg == null ? '' : (chg >= 0 ? 'confidence-high' : 'confidence-low'),
+            sub: P.formatMoney(pt.equity),
+        };
+    });
+    return { rows, note: SESSION_NOTE + ' Equity points come from the broker\u2019s own '
+        + 'portfolio history, so a closed day is the broker\u2019s close, not a number '
+        + 'this site computed.' };
+}
+
+const SESSIONS = {
+    options_levels: optionsSessions,
+    swing_book: curveSessions,
+    mf_book: curveSessions,
+};
+
+function sessionsPanel(key, data) {
+    const build = SESSIONS[key];
+    const h = build ? build(data) : null;
+    if (!h || !h.rows.length) return '';
+    const rows = h.rows.map(r => `
+            <div class="nba-game">
+                <div class="nba-matchup">
+                    <div class="nba-teams"><span class="pick-team">${P.esc(r.when)}</span></div>
+                    <div class="nba-meta">${P.esc(r.facts)}</div>
+                </div>
+                <div class="nba-pick">
+                    <div class="nba-pick-label">${P.esc(r.label)}</div>
+                    <div class="nba-confidence ${r.cls}">${P.esc(r.value)}</div>
+                    <div class="nba-meta">${P.esc(r.sub)}</div>
+                </div>
+            </div>`).join('');
+    return `<h2 class="feed-sub">Session history</h2>`
+        + `<div class="prediction-content">${rows}`
+        + `<div class="prediction-note">${P.esc(h.note)}</div></div>`;
+}
+
+
 function historyPanel(key, data) {
     const build = HISTORY[key];
     const h = build ? build(data) : null;
@@ -1045,13 +1151,17 @@ async function boot() {
     // an empty table under a heading reads as a rendering bug rather than a down feed.
     const factsEl = document.getElementById('feed-facts');
     const histEl = document.getElementById('feed-history');
+    const sessEl = document.getElementById('feed-sessions');
     if (data && data.generated_at) {
         factsEl.innerHTML = factsPanel(key, data, cfg);
         const hist = historyPanel(key, data);
         if (hist) histEl.innerHTML = hist; else histEl.remove();
+        const sess = sessionsPanel(key, data);
+        if (sess) sessEl.innerHTML = sess; else sessEl.remove();
     } else {
         factsEl.remove();
         histEl.remove();
+        sessEl.remove();
     }
 }
 

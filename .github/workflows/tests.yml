@@ -15,6 +15,14 @@ on:
     paths:
       - '.github/scripts/**'
       - '.github/workflows/tests.yml'
+      # The renderers and the payloads they are rendered against. Without these the
+      # file that shipped the "not reporting" bug -- predictions.js -- was outside
+      # every trigger path, so nothing ran on the commit that broke the site.
+      - 'predictions.js'
+      - 'feed.js'
+      - 'feed.html'
+      - 'tools/render_check.mjs'
+      - 'predictions/*.json'
   pull_request:
   workflow_dispatch:
 
@@ -28,3 +36,8 @@ jobs:
           python-version: '3.13'
       - name: Run the payload-contract tests
         run: python3 -m unittest discover -s .github/scripts -p 'test_*.py' -v
+
+      # What the contract tests cannot see: a payload that validates and then renders
+      # as nothing. Both of this site's visible outages were that shape.
+      - name: Render every feed
+        run: node tools/render_check.mjs
