@@ -658,6 +658,16 @@ const HISTORY = {
             rows.push([`Picks at ${pct(t.high_conf_threshold)}+ stated`,
                        `${pct(t.high_conf_stated)} stated vs ${pct(t.high_conf_realized)} realised`]);
         }
+        // The number that matters more than accuracy: what the picks RETURNED once a
+        // bookmaker charged for them.
+        const b = t.betting;
+        if (b) {
+            rows.push(['Bet flat, ' + b.record,
+                       `${P.formatMoney(b.pnl)} on ${P.formatMoney(b.staked)} `
+                       + `(${b.roi >= 0 ? '+' : ''}${(b.roi * 100).toFixed(1)}% ROI)`]);
+            rows.push(['Hit rate vs break-even',
+                       `${pct(b.hit_rate)} against ${pct(b.break_even_hit_rate)} needed`]);
+        }
         const fragile = t.n_games < FRAGILE_SAMPLE;
         return { rows, note: (t.basis ? `Scored from the ${t.basis}. ` : '')
             + (fragile
@@ -667,7 +677,14 @@ const HISTORY = {
                   + `difference is significant. It is published because what was forecast `
                   + `and what happened are both facts; the accuracy is not yet a claim.`
                 : 'Measured against always-picking-home, the only baseline worth the '
-                  + 'comparison.') };
+                  + 'comparison.')
+            + (t.betting
+                ? ` Priced ${t.betting.basis}. Accuracy and profit are different `
+                  + `questions and they disagree here: the picks were right `
+                  + `${pct(t.betting.hit_rate)} of the time and needed `
+                  + `${pct(t.betting.break_even_hit_rate)} just to break even at the `
+                  + `prices taken. A model beats the market only if it beats the PRICE.`
+                : '') };
     },
     mlb: d => {
         const t = d.track_record;
@@ -918,7 +935,35 @@ function f1Races(data) {
         + 'of places between the forecast finishing position and the real one.' };
 }
 
+// One row per week already played: the record, and what it returned.
+function nflWeeks(data) {
+    const t = data.track_record;
+    if (!t || !Array.isArray(t.by_week) || !t.by_week.length) return null;
+    const rows = t.by_week.map(w => {
+        const facts = [`${w.correct} of ${w.games} correct`];
+        if (w.bets != null) {
+            facts.push(`${w.bets} bet${w.bets === 1 ? '' : 's'} priced`);
+            facts.push(`${P.formatMoney(w.pnl)} flat`);
+        }
+        const roi = w.roi;
+        return {
+            when: `Week ${w.week}`,
+            facts: facts.join(' | '),
+            label: roi == null ? 'Accuracy' : 'Return',
+            value: roi == null ? `${(w.accuracy * 100).toFixed(1)}%`
+                               : `${roi >= 0 ? '+' : ''}${(roi * 100).toFixed(1)}%`,
+            cls: roi == null ? '' : (roi >= 0 ? 'confidence-high' : 'confidence-low'),
+            sub: `${(w.accuracy * 100).toFixed(1)}% straight up`,
+        };
+    });
+    return { title: 'Week by week', rows,
+        note: 'Every pick was published to this page before kickoff. Return is a flat '
+            + '$100 on each pick at the last price quoted before kickoff on DraftKings, '
+            + 'FanDuel or BetMGM -- a week can be won on accuracy and lost on price.' };
+}
+
 const SESSIONS = {
+    nfl: nflWeeks,
     f1: f1Races,
     options_levels: optionsSessions,
     swing_book: curveSessions,
