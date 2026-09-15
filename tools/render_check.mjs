@@ -91,9 +91,9 @@ for (const key of ['options_levels', 'swing_book', 'mf_book', 'funding', 'nfl', 
 
     // The books are the reason the session panel exists; a silent regression there is
     // the panel quietly removing itself, which looks identical to a feed that has none.
-    if (['options_levels', 'swing_book', 'mf_book'].includes(key)) {
+    if (['options_levels', 'swing_book', 'mf_book', 'f1'].includes(key)) {
         const sess = els['feed-sessions'];
-        check(`feed ${key} sessions`, !sess.removed && /Session history/.test(sess.innerHTML),
+        check(`feed ${key} sessions`, !sess.removed && /<h2[^>]*>[^<]*history<\/h2>/i.test(sess.innerHTML),
               sess.removed ? 'panel removed' : text(sess.innerHTML).slice(0, 70));
     }
 }
