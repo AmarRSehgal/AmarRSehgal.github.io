@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T22:00:10.185972+00:00",
+  "generated_at": "2026-09-15T23:00:09.738454+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1097.0,
-      "net_at_hold": 1.00183,
-      "cost_bps": 42.79
+      "net_apr": 1086.6,
+      "net_at_hold": 0.99232,
+      "cost_bps": 40.83
     },
     {
       "base": "LSK",
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1027.22,
-      "net_at_hold": 0.9381,
-      "cost_bps": 46.2
+      "net_apr": 968.07,
+      "net_at_hold": 0.88408,
+      "cost_bps": 44.35
     },
     {
       "base": "NIGHT",
@@ -53,22 +53,9 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 1357.84,
-      "net_at_hold": 1.24003,
-      "cost_bps": 43.35
-    },
-    {
-      "base": "NIGHT",
-      "type": "perp-perp",
-      "long_venue": "Coinbase",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 23,
-      "scans": 24,
-      "net_apr": 543.71,
-      "net_at_hold": 0.49654,
-      "cost_bps": 55.24
+      "net_apr": 1213.42,
+      "net_at_hold": 1.10815,
+      "cost_bps": 42.09
     },
     {
       "base": "CVC",
@@ -77,24 +64,37 @@
       "short_venue": "Bybit",
       "long_instrument": "perp",
       "min_hold_h": 4,
-      "hits": 21,
+      "hits": 22,
       "scans": 24,
-      "net_apr": 1032.48,
-      "net_at_hold": 0.47145,
-      "cost_bps": 36.47
+      "net_apr": 1007.89,
+      "net_at_hold": 0.46022,
+      "cost_bps": 35.17
     },
     {
       "base": "NIGHT",
       "type": "perp-perp",
       "long_venue": "Coinbase",
-      "short_venue": "OKX",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 22,
+      "scans": 24,
+      "net_apr": 569.1,
+      "net_at_hold": 0.51972,
+      "cost_bps": 55.22
+    },
+    {
+      "base": "CVC",
+      "type": "perp-perp",
+      "long_venue": "Binance",
+      "short_venue": "Bybit",
       "long_instrument": "perp",
       "min_hold_h": 4,
       "hits": 21,
       "scans": 24,
-      "net_apr": 379.0,
-      "net_at_hold": 0.17306,
-      "cost_bps": 37.37
+      "net_apr": 1145.29,
+      "net_at_hold": 0.52296,
+      "cost_bps": 32.25
     },
     {
       "base": "ZIL",
@@ -105,9 +105,9 @@
       "min_hold_h": 8,
       "hits": 21,
       "scans": 24,
-      "net_apr": 338.7,
-      "net_at_hold": 0.30931,
-      "cost_bps": 31.2
+      "net_apr": 328.92,
+      "net_at_hold": 0.30038,
+      "cost_bps": 31.21
     }
   ]
 }
