@@ -101,6 +101,13 @@ SPECS = {
             ('away_team', 'home_team', 'pick', 'ml_win_prob', 'confidence')),
     'f1': (('generated_at', 'year', 'race_name', 'predictions'), 'predictions',
            ('driver', 'predicted_pos')),
+    # A snapshot of who is winning on Polymarket's 5-minute BTC markets, not a forecast.
+    # `disclaimer` is REQUIRED: the project looked for manipulation, did not find any, and
+    # deliberately carries no manipulation field. A payload that lost that sentence would
+    # let the page imply the opposite of the finding.
+    'polymarket_whales': (('generated_at', 'window', 'markets', 'headline',
+                           'disclaimer', 'traders'), 'traders',
+                          ('wallet', 'trades', 'win_rate', 'net_roi', 'edge')),
     'business_hunter': (('generated_at', 'sources', 'screened', 'scored', 'refused',
                          'flagged', 'businesses'), 'businesses',
                         ('title', 'source', 'url', 'asking_price', 'cash_flow',
@@ -610,6 +617,51 @@ def check_idea(where, item):
         raise Invalid(f'{where}.rank={rank} must be 1-based')
 
 
+WHALE_EDGE = ('late-window', 'broad', 'insufficient-history', 'none')
+
+
+def check_whales_payload(data: dict) -> None:
+    """The snapshot's own totals, and the sentence the project refuses to publish without."""
+    w = data['window']
+    if not isinstance(w, dict) or 'hours' not in w:
+        raise Invalid('window must be an object with an hours field')
+    m = data['markets']
+    if not isinstance(m, dict):
+        raise Invalid('markets must be an object')
+    for key in ('resolved', 'late_flip'):
+        require_int('markets', key, m[key])
+    if m['late_flip'] > m['resolved']:
+        raise Invalid(f"markets.late_flip={m['late_flip']} exceeds "
+                      f"resolved={m['resolved']}")
+    require_number('markets', 'traded_notional', m['traded_notional'])
+    # The project looked for manipulation, did not find any, and deliberately carries no
+    # manipulation field. If the page ever implies otherwise it will be because this
+    # sentence went missing, so the contract refuses a payload without it.
+    d = require_str('<payload>', 'disclaimer', data['disclaimer'])
+    if 'NOT a manipulation report' not in d:
+        raise Invalid('disclaimer must still state that this is NOT a manipulation '
+                      'report -- that is the project\'s own finding')
+
+
+def check_whale(where: str, t: dict) -> None:
+    """One audited wallet. Every field here is measured, none is inferred."""
+    require_str(where, 'wallet', t['wallet'])
+    for key in ('trades', 'wins', 'losses'):
+        if key in t and not isinstance(t[key], int):
+            raise Invalid(f'{where}: {key} must be an integer')
+    for key in ('win_rate', 'net_roi'):
+        require_number(where, key, t[key])
+    if not 0.0 <= float(t['win_rate']) <= 1.0:
+        raise Invalid(f"{where}: win_rate={t['win_rate']} outside [0, 1]")
+    if t['edge'] not in WHALE_EDGE:
+        raise Invalid(f"{where}: edge={t['edge']!r} must be one of {WHALE_EDGE}")
+    # The wallet address must be truncated. Publishing a full address on a portfolio
+    # page points a crowd at one identifiable trader over behaviour the project itself
+    # concluded was legal and unremarkable.
+    if len(t['wallet']) > 24 or '...' not in t['wallet']:
+        raise Invalid(f"{where}: wallet={t['wallet']!r} must be truncated (0xabc...1234)")
+
+
 def check_funding_route(where, r):
     """A published route claims it was worth doing repeatedly, so check that.
 
@@ -1094,9 +1146,17 @@ def validate(sport, data, now=None):
         check_contracts_payload(data)
     elif sport in ('swing_book', 'mf_book'):
         check_book_payload(data, sport)
-    else:
+    elif sport == 'polymarket_whales':
+        check_whales_payload(data)
+    elif sport == 'f1':
         require_int('<payload>', 'year', data['year'])
         require_str('<payload>', 'race_name', data['race_name'])
+    else:
+        # Was an `else` that assumed F1, so every feed added after it was silently
+        # checked against F1's top-level keys and failed on a missing 'year'. An
+        # unrecognised sport is a contract gap and must say so.
+        raise Invalid(f'no top-level checks defined for sport={sport!r}; add a branch '
+                      f'rather than letting it fall through')
 
     items = data[list_key]
     if not isinstance(items, list):
@@ -1119,6 +1179,8 @@ def validate(sport, data, now=None):
             check_level(where, item)
         elif sport == 'f1':
             check_f1_entry(where, item)
+        elif sport == 'polymarket_whales':
+            check_whale(where, item)
         elif sport == 'funding':
             check_funding_route(where, item)
         elif sport == 'magicformula':
