@@ -62,6 +62,116 @@ const PROJECTS = {
             + 'Magic Formula is a multi-year strategy, so a year of this says very little, '
             + 'and paper fills are simulated.',
     },
+    stock_signals: {
+        title: 'Swing-Trade Signals', tagline: 'Live MultiFactorV3 entries and holds across the S&P 500 top 100.',
+        repo: 'stock_prediction', stack: ['Python', 'pandas', 'backtesting.py'],
+        what: 'The signal side of the swing strategy: which names currently carry an '
+            + 'entry or a hold, with the composite factor score behind each.',
+        how: 'A six-factor composite -- trend, momentum, pullback depth, volume '
+            + 'confirmation, volatility regime and a moving-average filter -- scored '
+            + 'daily across the universe. The book that trades these is published '
+            + 'separately as the Swing Book.',
+        data: 'yfinance daily bars, cached as parquet.',
+        limits: 'The walk-forward on this strategy beat its benchmark in 3 of 17 '
+            + 'windows with an average edge of -3.2%. These are the signals; the Swing '
+            + 'Book page is where they get marked to an actual account.',
+    },
+    funding_drift: {
+        title: 'Perp Funding vs Realized Drift', tagline: 'Perp markets where cumulative funding and cumulative return have diverged.',
+        repo: 'funding-drift', stack: ['Python', 'aiohttp', 'asyncio'],
+        what: 'Compares cumulative funding paid against cumulative realized return over '
+            + 'a rolling window across nine exchanges, looking for markets where the '
+            + 'losing side is under pressure to close.',
+        how: 'Binance supplies the universal return series; every exchange contributes '
+            + 'its own funding rate. Hyperliquid and dYdX fund hourly against 8-hourly '
+            + 'elsewhere, which is normalised before comparison.',
+        data: 'Public REST endpoints from nine venues. No API keys.',
+        limits: 'The repo\u2019s own study found this ranking is ~99% price momentum -- '
+            + 'rank correlation 0.996 with plain return -- and that the convergence '
+            + 'reading of the funding term is backwards. It is published as an '
+            + 'observation, and the caveat travels with the rows for that reason.',
+    },
+    contracts: {
+        title: 'Federal Resale Lanes', tagline: 'Recurring US federal commodity buys, from a daily SAM.gov snapshot store.',
+        repo: 'sam-contracts', stack: ['Python', 'SQLite', 'Click'],
+        what: 'Federal buys that RECUR -- the only kind worth the weeks a SAM '
+            + 'registration takes -- ranked by how strong the evidence for recurrence is.',
+        how: 'The SAM.gov extract carries only currently-active notices, so recurrence '
+            + 'is invisible to a one-shot scrape. A daily job snapshots the extract into '
+            + 'SQLite and recurrence is observed across snapshot days. Every lane '
+            + 'carries its evidence tier, and only OBSERVED means the buy was actually '
+            + 'watched to repeat.',
+        data: 'SAM.gov public daily Contract Opportunities extract, ~230MB, no auth.',
+        limits: 'Line-item quantities and specs live in PDF attachments the extract does '
+            + 'not carry, so this finds and classifies lanes but cannot compute a '
+            + 'retail-versus-bid margin. Set-asides needing formal certification are '
+            + 'excluded -- they are not reachable without one.',
+    },
+    ad_capital: {
+        title: 'AD Capital Universe Scan', tagline: 'The paper book\u2019s own signal, run across a 374-name universe.',
+        repo: 'ad-capital-v0', stack: ['Python', 'yfinance', 'Click'],
+        what: 'A scan of the AD Capital universe using the quant book\u2019s own '
+            + 'MultiFactorV3 signal, with ATR-based exit bands attached.',
+        how: 'Refuses to publish below 80% universe coverage, and runs weekdays only -- '
+            + 'a weekend rerun would republish Friday under a fresher timestamp and make '
+            + 'a stalled job look live.',
+        data: 'yfinance. The portfolio state itself lives in the repo as JSON.',
+        limits: 'The quant book here runs the same MultiFactorV3 as stock_prediction, so '
+            + 'it is not independent evidence about that strategy. The sector fund '
+            + 'alongside it is discretionary and LLM-driven, which means its results are '
+            + 'not attributable to a reproducible process and are deliberately not '
+            + 'published as a track record.',
+    },
+    polymarket_btc: {
+        title: 'Polymarket BTC 5-Min Binaries', tagline: 'Black-Scholes against Polymarket\u2019s own prices -- and the model loses.',
+        repo: 'polymarket-btc-options', stack: ['Python', 'websockets', 'Rich'],
+        what: 'Prices Polymarket\u2019s 5-minute BTC binaries with a cash-or-nothing '
+            + 'Black-Scholes model against real-time EWMA volatility, and compares the '
+            + 'result to the market\u2019s own quote.',
+        how: 'Binance aggTrade feed drives an EWMA vol estimate; N(d2) gives the model '
+            + 'probability. The section is gated on the payload\u2019s own verdict rather '
+            + 'than a hardcoded empty list, so the day the measurement flips it starts '
+            + 'showing rows by itself.',
+        data: 'Binance WebSocket and the Polymarket Gamma/CLOB APIs. No auth.',
+        limits: 'Measured: Polymarket\u2019s price scores a BETTER Brier than the model. '
+            + 'What survives costs is a latency effect that crosses break-even within a '
+            + 'few seconds of feed staleness. Publishing a ranking off that would be '
+            + 'publishing noise, so the honest output is an empty section.',
+    },
+    weather_risk: {
+        title: 'Severe Weather Risk', tagline: 'Gradient-boosted severe-weather probability for ten US cities.',
+        repo: 'weather_prediction', stack: ['Python', 'scikit-learn', 'Open-Meteo', 'NOAA'],
+        what: 'Probability of a severe weather event in the next 24-72 hours per city, '
+            + 'with current conditions scored against 30-year climate normals.',
+        how: 'A gradient-boosting classifier trained on 400k+ NOAA Storm Events rows '
+            + 'joined to historical weather at each event.',
+        data: 'NOAA Storm Events bulk CSVs and the Open-Meteo archive API. No keys.',
+        limits: 'The scheduled job is currently OFF. Open-Meteo archive requests fail for '
+            + 'most cities while small requests to the same endpoint succeed, unresolved, '
+            + 'and a 60% coverage floor now refuses to publish a partial scan rather than '
+            + 'passing one city off as a ten-city run. The frequency model\u2019s R2 is '
+            + '0.385 -- useful for seasonality, weak on year-to-year variance.',
+    },
+    options_levels: {
+        title: 'Options Level Breaks (live paper)',
+        tagline: 'Opening-range breakouts traded as options, on a third $100k paper account.',
+        repo: 'options-levels',
+        stack: ['Python', 'Alpaca', 'pandas'],
+        what: 'Arms a level off each morning\u2019s opening range across a ~570-name '
+            + 'universe, and takes an option position when one breaks.',
+        how: 'A 45-minute opening range sets the level, offset by k=0.15 of the range '
+            + 'with a 15bp floor. Entries target ~0.6 delta around 11 DTE, capped at '
+            + '$2,000 of premium per trade and two concurrent positions, with stop and '
+            + 'target as multiples of the range.',
+        data: 'Alpaca consolidated SIP bars. The free plan cannot serve data less than '
+            + '15 minutes old, which is why the payload reports its own data lag -- the '
+            + 'book is honest about trading on delayed prices.',
+        limits: 'Its own sweep says the edge does not clear costs: 1.29M triggers across '
+            + '77,760 parameter sets, edge 0.019% per trade against a 0.09-0.12% option '
+            + 'cost hurdle -- short by 5-6x -- and longer holds do not help because the '
+            + 'edge stops at the closing bell. It runs forward to gather out-of-sample '
+            + 'evidence against that, not because the backtest was encouraging.',
+    },
     nfl: {
         title: 'NFL Game Picks',
         tagline: 'Win probability and predicted margin for every game on the week’s slate.',
@@ -453,6 +563,21 @@ function renderBookFull(data) {
 const pct = v => `${(Number(v) * 100).toFixed(1)}%`;
 
 const NO_RECORD = {
+    stock_signals: 'The signals themselves carry no separate record -- what happens when '
+       + 'they are traded is measured on the Swing Book page, against a real account.',
+    funding_drift: 'No record, deliberately. The repo measured its own ranking as ~99% '
+       + 'price momentum, so scoring it as a signal would be scoring plain return with '
+       + 'extra steps.',
+    contracts: 'Nothing to score yet: a lane is a claim that a buy recurs, and confirming '
+       + 'one means watching a future solicitation appear. The snapshot store has 15 days '
+       + 'of history; the shortest cadence here is biweekly.',
+    ad_capital: 'The quant signal here is the same MultiFactorV3 measured on the Swing '
+       + 'Book page. The discretionary sector fund is not published as a track record '
+       + 'because its process changes every session and nothing would be attributable.',
+    polymarket_btc: 'Measured, and negative: Polymarket\u2019s own price scores a better '
+       + 'Brier than the model. That IS the result, and it is why the section is empty.',
+    weather_risk: 'Severe-weather outcomes are scored against NOAA Storm Events after the '
+       + 'fact, but the job is currently off and no forecast has been graded.',
     nba: 'The 2025-26 backtest scored 65.5% over 1,075 games, and 77.1% on picks it '
        + 'called at 70%+ confidence -- but that is a backtest held in the repo, not an '
        + 'out-of-sample record of the picks published here, so it is not quoted as one. '
@@ -471,6 +596,32 @@ const NO_RECORD = {
 const FRAGILE_SAMPLE = 100;
 
 const HISTORY = {
+    options_levels: d => {
+        const perf = d.performance;
+        if (!perf) return null;
+        const sign = v => (v >= 0 ? '+' : '') + (Number(v) * 100).toFixed(2) + '%';
+        const rows = [
+            ['Sessions', String(perf.sessions)],
+            ['Trades taken', String(perf.trades)],
+            ['Rejected', String(perf.rejected)],
+            ['Starting equity', P.formatMoney(perf.starting_equity)],
+            ['Equity now', P.formatMoney(perf.equity)],
+            ['Realised PnL', P.formatMoney(perf.realized_pnl)],
+            ['Return', sign(perf.return_pct)],
+        ];
+        let note = 'Live and out-of-sample, on simulated fills and 15-minute delayed data.';
+        const b = d.backtest;
+        if (b) {
+            rows.push(['Backtest verdict', String(b.verdict)]);
+            rows.push(['Measured edge', `${b.edge_pct}% per trade`]);
+            rows.push(['Cost hurdle', `${b.hurdle_pct}%`]);
+            note += ` The sweep behind it tested ${Number(b.triggers_tested).toLocaleString()}`
+                 + ` triggers across ${Number(b.sets_swept).toLocaleString()} parameter sets`
+                 + ` and returned "${b.verdict}" -- short of the hurdle by ${b.shortfall}.`
+                 + ' This book runs forward to test that finding, not to showcase a result.';
+        }
+        return { rows, note };
+    },
     swing_book: d => bookHistory(d),
     mf_book: d => bookHistory(d),
     nfl: d => {
