@@ -241,6 +241,34 @@ const SPORTS = {
         },
         render: renderFunding,
     },
+    // The two live paper books. Both on their own dedicated Alpaca paper account, both
+    // $100k, both publishing hourly-ish from a scheduled job. `staleAfter` is two
+    // sessions: a book that has not reported since the day before last is a broken
+    // job, not a quiet market.
+    swing_book: {
+        file: 'predictions/swing_book.json',
+        container: 'swing-book',
+        stamp: 'swing-book-updated',
+        cadence: 'daily',
+        noun: 'positions',
+        listKey: 'positions',
+        staleAfter: 4 * MS_DAY,
+        emptyLabel: 'The book is in cash -- no signal currently clears the entry bar.',
+        slate: d => bookSlate(d),
+        render: renderBook,
+    },
+    mf_book: {
+        file: 'predictions/mf_book.json',
+        container: 'mf-book',
+        stamp: 'mf-book-updated',
+        cadence: 'daily',
+        noun: 'positions',
+        listKey: 'positions',
+        staleAfter: 4 * MS_DAY,
+        emptyLabel: 'No tranche has been bought yet.',
+        slate: d => bookSlate(d),
+        render: renderBook,
+    },
 };
 
 const SOURCE_LABEL = { empireflippers: 'Empire Flippers', flippa: 'Flippa',
@@ -251,7 +279,7 @@ const SOURCE_LABEL = { empireflippers: 'Empire Flippers', flippa: 'Flippa',
 // quarter's numbers entirely.
 const UNIVERSE_STALE = 105 * MS_DAY;
 
-const SPORT_LABEL = { nba: 'NBA', nfl: 'NFL', mlb: 'MLB', f1: 'F1', real_estate: 'Real estate',
+const SPORT_LABEL = { swing_book: 'Swing book', mf_book: 'Magic Formula book', nba: 'NBA', nfl: 'NFL', mlb: 'MLB', f1: 'F1', real_estate: 'Real estate',
                       business_hunter: 'Business acquisitions',
                       magic_formula: 'Magic Formula', funding: 'Funding carry' };
 
@@ -624,6 +652,50 @@ function renderIdeas(data) {
             </div>
         `;
     }).join('');
+}
+
+// Both books render identically -- they differ in strategy, not in shape, and a second
+// renderer would be a second place for the "this is paper" framing to fall out of.
+function bookSlate(d) {
+    const pct = v => (v >= 0 ? '+' : '') + (Number(v) * 100).toFixed(2) + '%';
+    const bits = [`${formatMoney(d.equity)} from ${formatMoney(d.starting_equity)}`];
+    if (d.return_pct != null) bits.push(pct(d.return_pct));
+    if (d.benchmark_return_pct != null) {
+        bits.push(`SPY ${pct(d.benchmark_return_pct)}`);
+    }
+    if (d.excess_return_pct != null) bits.push(`${pct(d.excess_return_pct)} excess`);
+    return bits.join(' | ');
+}
+
+function renderBook(data) {
+    const pct = v => (v >= 0 ? '+' : '') + (Number(v) * 100).toFixed(2) + '%';
+    const rows = data.positions.map(p => {
+        const cls = p.return_pct >= 0 ? 'confidence-high' : 'confidence-low';
+        const facts = [`${p.qty} sh at ${formatMoney(p.avg_entry)}`,
+                       `now ${formatMoney(p.price)}`,
+                       `${formatMoney(p.market_value)} position`];
+        if (p.dividends) facts.push(`${formatMoney(p.dividends)} dividends`);
+        if (p.days_held != null) facts.push(`${p.days_held}d held`);
+        if (p.sell_due) facts.push('SELL DUE');
+        return `
+            <div class="nba-game">
+                <div class="nba-matchup">
+                    <div class="nba-teams"><span class="pick-team">${esc(p.ticker)}</span></div>
+                    <div class="nba-meta">${esc(facts.join(' | '))}</div>
+                </div>
+                <div class="nba-pick">
+                    <div class="nba-pick-label">Position</div>
+                    <div class="nba-confidence ${cls}">${esc(pct(p.return_pct))}</div>
+                    <div class="nba-meta">${esc((p.pnl >= 0 ? '+' : '-')
+                        + formatMoney(Math.abs(p.pnl)))}</div>
+                </div>
+            </div>
+        `;
+    }).join('');
+    return rows + `<div class="prediction-note">Paper account, simulated fills. Alpaca `
+        + `paper does not model queue position or partial fills, so this is a large `
+        + `improvement on a backtest and it is still not what a real book would have `
+        + `done. Not advice, and nothing here is traded with real money.</div>`;
 }
 
 function renderFunding(data) {

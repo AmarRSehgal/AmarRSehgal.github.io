@@ -1012,3 +1012,60 @@ button:focus-visible {
 .confidence-low { color: #f87171; }
 
 .feed-sub-spaced { margin-top: 2.5rem; }
+
+/* ===== Equity curve ===== */
+.equity-figure { margin: 0 0 1.25rem; }
+
+.equity-chart {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+.equity-figure figcaption {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+    align-items: center;
+    margin-top: 0.5rem;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+/* Legend swatch. Present for both series even though the lines are also directly
+   labelled at their right-hand ends -- identity is never carried by colour alone. */
+.chart-key {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #cbd5e1;
+}
+
+.chart-key i {
+    width: 14px;
+    height: 3px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+/* The dashed swatch matches the dashed SPY line: the benchmark is an endpoint, not a
+   measured path, and the dash is what says so at a glance. */
+.chart-key i.dashed {
+    background-image: linear-gradient(90deg, currentColor 60%, transparent 60%);
+    background-size: 5px 3px;
+}
+
+.chart-note { flex-basis: 100%; line-height: 1.5; }
+
+.chart-table {
+    margin: 0 0 1.25rem;
+    font-size: 0.8rem;
+}
+
+.chart-table summary {
+    cursor: pointer;
+    color: var(--text-muted);
+    padding: 0.3rem 0;
+}
+
+.chart-table summary:hover { color: var(--accent); }

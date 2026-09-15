@@ -20,6 +20,48 @@ const P = window.Predictions;
 const esc = P.esc;
 
 const PROJECTS = {
+    swing_book: {
+        title: 'Swing Book (live paper)',
+        tagline: 'MultiFactorV3 signals executed into a $100k Alpaca paper account -- a falsification test, not a showcase.',
+        repo: 'stock_prediction',
+        stack: ['Python', 'Alpaca', 'pandas', 'backtesting.py'],
+        what: 'The MultiFactorV3 swing signals, actually executed. Signals are generated '
+            + 'after the close and the orders go in at the next open, so no fill can '
+            + 'precede the data that produced it.',
+        how: 'Equal weight across the live signal set with an 8% per-name ceiling and a '
+            + '2% cash buffer. Each session reconciles the account to the target book: '
+            + 'exits first to free buying power, then entries. Order ids are derived from '
+            + '(strategy, symbol, side, session) so a retry or a double-fire is a no-op '
+            + 'rather than a doubled position.',
+        data: 'Alpaca for fills, positions and equity; consolidated SIP daily bars, '
+            + 'split- and dividend-adjusted, for the benchmark.',
+        limits: 'This book exists because the strategy\u2019s own walk-forward says it '
+            + 'LOSES: 3 of 17 windows beat the benchmark, average edge -3.2%, Sharpe '
+            + '0.463 against 0.801 for buy-and-hold. The question it settles is whether '
+            + 'that holds with real fills. It has 180 days to answer before the review '
+            + 'is forced. And paper fills model no queue position and no partial fills, '
+            + 'so this beats a backtest and is still not a real book.',
+    },
+    mf_book: {
+        title: 'Magic Formula Book (live paper)',
+        tagline: 'The value screen bought in monthly tranches into a $100k Alpaca paper account.',
+        repo: 'magic-formula-portfolio',
+        stack: ['Python', 'Alpaca', 'yfinance'],
+        what: 'Greenblatt\u2019s construction, run properly: five names a month toward a '
+            + '25-slot book, each held about a year, sold on a tax-aware date.',
+        how: 'Tranches are sized off a fixed slot count rather than current equity -- '
+            + 'sizing off equity makes every buy a function of how the book has done so '
+            + 'far, which concentrates into a winner and starves a loser. One tranche per '
+            + 'calendar month, enforced by the order id. Sells are surfaced, never placed '
+            + 'automatically: a wrong-side-of-the-line realisation cannot be undone.',
+        data: 'Alpaca for fills, positions, equity and dividend credits; the screen '
+            + 'itself still comes from the hand-pasted magicformulainvesting.com universe.',
+        limits: 'It replaces a hand-kept positions.json whose entry prices were typed in, '
+            + 'which counted no dividends at all on a screen full of payers, and which '
+            + 'had no corporate-action handling. Those are fixed here. What is not fixed: '
+            + 'Magic Formula is a multi-year strategy, so a year of this says very little, '
+            + 'and paper fills are simulated.',
+    },
     nfl: {
         title: 'NFL Game Picks',
         tagline: 'Win probability and predicted margin for every game on the week’s slate.',
@@ -273,6 +315,133 @@ function renderFundingFull(data) {
 }
 
 
+
+// --- Equity curve -------------------------------------------------------------
+//
+// Two series (the book, and SPY over the same window), both INDEXED TO PERCENT RETURN
+// FROM INCEPTION rather than plotted in dollars. That is deliberate and it is the one
+// rule worth stating: a book in dollars and an index level are different scales, and
+// putting them on two y-axes is the single most misleading thing a chart like this can
+// do -- the crossover point becomes an artefact of where you chose to start each axis.
+// Indexed to a common base there is one axis and the comparison is real.
+//
+// Palette is #4a90e2 / #c9679a, checked with the dataviz validator against this page's
+// #0a0a0a surface: lightness band, chroma floor, CVD separation (protan dE 11.5),
+// normal-vision separation (dE 20.7) and contrast all pass. Do not "tidy" these to the
+// site accent without re-running it -- the obvious pairing (#6ea8fe with a grey) fails
+// the normal-vision floor at dE 10.6.
+// Bound once at load, after predictions.js has registered the feeds. Both books share
+// one row renderer, so either feed's is the same function.
+const BOOK_ROWS = d => P.FEEDS.swing_book.render(d);
+
+const BOOK_COLOR = '#4a90e2';
+const BENCH_COLOR = '#c9679a';
+
+function equityChart(data) {
+    const curve = (data.equity_curve || []).filter(p => p && p.equity);
+    if (curve.length < 2) {
+        return `<p class="prediction-none">${esc('The equity curve needs at least two '
+            + 'sessions. It starts the day after the book opens.')}</p>`;
+    }
+    const base = Number(data.starting_equity) || Number(curve[0].equity);
+    const book = curve.map(p => ({ date: p.date, v: Number(p.equity) / base - 1 }));
+
+    // SPY is drawn as a straight line from 0 to its total return over the same window:
+    // the payload carries the endpoint, not the path. Shown dashed and labelled as
+    // such, because pretending to know its daily shape would be inventing data.
+    const benchEnd = data.benchmark_return_pct;
+    const hasBench = benchEnd != null;
+
+    // r is wide enough for the direct labels ("Book +12.3%"), which sit OUTSIDE the
+    // plot area. At r=56 they overflowed the viewBox and were clipped at the right edge.
+    const W = 640, H = 220, PAD = { t: 14, r: 92, b: 26, l: 48 };
+    const xs = (i) => PAD.l + i * (W - PAD.l - PAD.r) / (book.length - 1);
+    const vals = book.map(p => p.v).concat(hasBench ? [0, Number(benchEnd)] : [0]);
+    let lo = Math.min(...vals), hi = Math.max(...vals);
+    const span = (hi - lo) || 0.02;
+    lo -= span * 0.12; hi += span * 0.12;
+    const ys = (v) => PAD.t + (hi - v) * (H - PAD.t - PAD.b) / (hi - lo);
+
+    const path = book.map((p, i) => `${i ? 'L' : 'M'}${xs(i).toFixed(1)},${ys(p.v).toFixed(1)}`).join('');
+    const zeroY = ys(0).toFixed(1);
+    const fmt = v => `${v >= 0 ? '+' : ''}${(v * 100).toFixed(1)}%`;
+
+    // Recessive axis: the zero line (break-even) plus the two extremes. A full grid
+    // would out-weigh two thin lines.
+    const ticks = [hi, 0, lo].map(v => `
+        <line x1="${PAD.l}" x2="${W - PAD.r}" y1="${ys(v).toFixed(1)}" y2="${ys(v).toFixed(1)}"
+              stroke="#222" stroke-width="1" ${v === 0 ? '' : 'stroke-dasharray="2 4"'}/>
+        <text x="${PAD.l - 8}" y="${(ys(v) + 4).toFixed(1)}" text-anchor="end"
+              fill="#888" font-size="10">${esc(fmt(v))}</text>`).join('');
+
+    const benchLine = hasBench ? `
+        <line x1="${xs(0)}" y1="${zeroY}" x2="${xs(book.length - 1)}" y2="${ys(Number(benchEnd)).toFixed(1)}"
+              stroke="${BENCH_COLOR}" stroke-width="2" stroke-dasharray="5 4"
+              stroke-linecap="round"/>
+        <text x="${W - PAD.r + 6}" y="${(ys(Number(benchEnd)) + 4).toFixed(1)}"
+              fill="${BENCH_COLOR}" font-size="10">SPY ${esc(fmt(Number(benchEnd)))}</text>` : '';
+
+    const last = book[book.length - 1];
+    return `
+        <figure class="equity-figure">
+            <svg viewBox="0 0 ${W} ${H}" class="equity-chart" role="img"
+                 aria-label="Cumulative return of the book against SPY, both indexed to
+                 zero at inception. Book ${esc(fmt(last.v))}${hasBench
+                     ? `, SPY ${esc(fmt(Number(benchEnd)))}` : ''}.">
+                ${ticks}
+                ${benchLine}
+                <path d="${path}" fill="none" stroke="${BOOK_COLOR}" stroke-width="2"
+                      stroke-linejoin="round" stroke-linecap="round"/>
+                <circle cx="${xs(book.length - 1).toFixed(1)}" cy="${ys(last.v).toFixed(1)}"
+                        r="3.5" fill="${BOOK_COLOR}" stroke="#0a0a0a" stroke-width="2"/>
+                <text x="${W - PAD.r + 6}" y="${(ys(last.v) + 4).toFixed(1)}"
+                      fill="${BOOK_COLOR}" font-size="10">Book ${esc(fmt(last.v))}</text>
+                <text x="${PAD.l}" y="${H - 8}" fill="#888" font-size="10">${esc(book[0].date)}</text>
+                <text x="${W - PAD.r}" y="${H - 8}" text-anchor="end" fill="#888"
+                      font-size="10">${esc(last.date)}</text>
+            </svg>
+            <figcaption>
+                <span class="chart-key"><i style="background:${BOOK_COLOR}"></i>This book</span>
+                ${hasBench ? `<span class="chart-key"><i class="dashed"
+                    style="background:${BENCH_COLOR}"></i>SPY, endpoint only</span>` : ''}
+                <span class="chart-note">Both indexed to 0% at inception, so there is one
+                    axis and the comparison is real. SPY is drawn straight to its total
+                    return over the window -- the payload carries the endpoint, not the
+                    daily path.</span>
+            </figcaption>
+        </figure>
+        <details class="chart-table">
+            <summary>Equity curve as a table</summary>
+            <dl class="feed-facts">${book.map(p =>
+                `<div class="feed-fact"><dt>${esc(p.date)}</dt><dd>${esc(fmt(p.v))}</dd></div>`
+            ).join('')}</dl>
+        </details>
+    `;
+}
+
+function renderBookFull(data) {
+    const extra = [];
+    if (data.dividends_total) {
+        extra.push(`${P.formatMoney(data.dividends_total)} of dividends credited`);
+    }
+    if (data.target_positions) {
+        extra.push(`${data.open_positions} of ${data.target_positions} slots filled`);
+    }
+    if (data.sells_due && data.sells_due.length) {
+        extra.push(`sell due: ${data.sells_due.join(', ')}`);
+    }
+    if (data.days_live != null) {
+        extra.push(`${data.days_live} days live`
+            + (data.verdict_due ? ' -- past the review window' : ''));
+    }
+    // The compact row renderer is shared with the home page, on purpose: the detail
+    // page adds the curve and the book-level facts above it, it does not restate the
+    // positions differently.
+    return equityChart(data)
+        + (extra.length ? `<div class="prediction-slate">${esc(extra.join(' | '))}</div>` : '')
+        + BOOK_ROWS(data);
+}
+
 // --- Measured history ----------------------------------------------------------
 //
 // Detail pages only: the home page shows what a model says now, this shows how it has
@@ -302,6 +471,8 @@ const NO_RECORD = {
 const FRAGILE_SAMPLE = 100;
 
 const HISTORY = {
+    swing_book: d => bookHistory(d),
+    mf_book: d => bookHistory(d),
     nfl: d => {
         const t = d.track_record;
         if (!t) return null;
@@ -444,6 +615,39 @@ const HISTORY = {
         };
     },
 };
+
+function bookHistory(d) {
+    const sign = v => (v >= 0 ? '+' : '') + (Number(v) * 100).toFixed(2) + '%';
+    const rows = [
+        ['Opened', d.started],
+        ['Starting equity', P.formatMoney(d.starting_equity)],
+        ['Equity now', P.formatMoney(d.equity)],
+        ['Return', sign(d.return_pct)],
+    ];
+    if (d.benchmark_return_pct != null) {
+        rows.push(['SPY, same window', sign(d.benchmark_return_pct)]);
+        rows.push(['Excess', sign(d.excess_return_pct)]);
+    }
+    if (d.dividends_total) rows.push(['Dividends credited', P.formatMoney(d.dividends_total)]);
+    if (d.days_live != null) rows.push(['Days live', String(d.days_live)]);
+
+    let note = 'Live, out-of-sample, on simulated fills. The equity figure is Alpaca\u2019s '
+        + 'own, so the curve above and this table cannot disagree.';
+    if (d.backtest) {
+        const b = d.backtest;
+        rows.push(['Backtest return', sign(b.strategy_return)]);
+        rows.push(['Backtest benchmark', sign(b.benchmark_return)]);
+        note += ' The backtest rows are the claim this book was opened to test: it lost '
+              + 'to buy-and-hold there, and the live number is the check on whether that '
+              + 'was the strategy or the simulation.';
+    }
+    if (d.days_live != null && d.days_live < 30) {
+        note += ' At ' + d.days_live + ' days this is far too short to read as anything; '
+              + 'it is published from day one so the record cannot be started later and '
+              + 'backdated to a good week.';
+    }
+    return { rows, note };
+}
 
 function historyPanel(key, data) {
     const build = HISTORY[key];
@@ -656,6 +860,8 @@ if (P.FEEDS.nba) P.FEEDS.nba.renderFull = renderGamesWithResults;
 if (P.FEEDS.mlb) P.FEEDS.mlb.renderFull = d =>
     P.FEEDS.mlb.render({ ...d, games: [] }) + renderGamesWithResults(d);
 if (P.FEEDS.magic_formula) P.FEEDS.magic_formula.renderFull = renderMagicFormulaFull;
+if (P.FEEDS.swing_book) P.FEEDS.swing_book.renderFull = renderBookFull;
+if (P.FEEDS.mf_book) P.FEEDS.mf_book.renderFull = renderBookFull;
 
 async function boot() {
     const key = new URLSearchParams(window.location.search).get('feed');
