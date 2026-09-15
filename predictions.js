@@ -22,6 +22,17 @@
 const MS_HOUR = 3600 * 1000;
 const MS_DAY = 24 * MS_HOUR;
 
+// The HEALTH vocabulary for a payload's top-level `status`, and the whole of it. Mirrors
+// SOURCE_STATUS in .github/scripts/validate_predictions.py minus the two healthy values;
+// test_status_vocabulary.py asserts the two stay in agreement. A feed is free to publish
+// a DOMAIN state in the same field (options_levels: armed/in_position/closed/no_session,
+// funding: ok/building_history) -- anything not listed here renders as normal content.
+const HEALTH_STATUS = {
+    stale: 'has gone quiet',
+    missing: 'has not run yet',
+    error: 'could not be read',
+};
+
 const SPORTS = {
     nba: {
         file: 'predictions/nba.json',
@@ -1115,13 +1126,19 @@ async function loadFeed(key, opts) {
     // that is still on screen tells them more than an empty panel with an excuse.
     // The aggregator already decided this section's status and publishes NO items for
     // anything past its own budget. Surface its words rather than second-guessing them.
-    if (data.status && data.status !== 'fresh' && data.status !== 'empty') {
-        const why = { stale: 'has gone quiet', missing: 'has not run yet',
-                      error: 'could not be read' }[data.status] || 'is not reporting';
+    //
+    // Match ONLY the health vocabulary (validate_predictions.py SOURCE_STATUS). `status`
+    // is not reserved: options_levels publishes a session state there
+    // (armed/in_position/closed/no_session) and funding publishes ok/building_history.
+    // Treating any unrecognised value as a health failure suppressed both feeds entirely
+    // -- a book holding five live option positions rendered as "This scanner is not
+    // reporting" while its own slate() was already written to describe that exact state.
+    const unhealthy = HEALTH_STATUS[data.status];
+    if (unhealthy) {
         stampEl.textContent = data.status === 'missing'
             ? 'Not published yet' : `Last scan ${relativeAge(age)}`;
         container.innerHTML = note('prediction-stale',
-            data.note || `This scanner ${why}.`)
+            data.note || `This scanner ${unhealthy}.`)
             + (data.caveat ? `<div class="prediction-note">${esc(data.caveat)}</div>` : '');
         return data;
     }

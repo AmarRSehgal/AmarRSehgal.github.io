@@ -1,20 +1,95 @@
 {
-  "generated_at": "2026-09-15T00:38:55.156403+00:00",
+  "generated_at": "2026-09-15T18:39:51.035816+00:00",
   "account": "PA3RTYOZ01QS",
   "paper": true,
   "started": "2026-09-12",
   "starting_equity": 100000.0,
-  "equity": 100000.0,
-  "cash": 100000.0,
-  "return_pct": 0.0,
+  "equity": 99904.69,
+  "cash": 80000.05,
+  "return_pct": -0.001,
   "dividends_total": 0,
-  "positions": [],
-  "open_positions": 0,
+  "positions": [
+    {
+      "ticker": "TDC",
+      "qty": 136.3332,
+      "avg_entry": 29.34,
+      "price": 29.81,
+      "market_value": 4063.82,
+      "pnl": 63.84,
+      "return_pct": 0.016,
+      "dividends": 0.0,
+      "entered": "2026-09-15",
+      "days_held": 0,
+      "sell_on": "2027-09-16",
+      "sell_due": false
+    },
+    {
+      "ticker": "OTEX",
+      "qty": 168.9708,
+      "avg_entry": 23.67,
+      "price": 23.8,
+      "market_value": 4021.5,
+      "pnl": 21.51,
+      "return_pct": 0.0054,
+      "dividends": 0.0,
+      "entered": "2026-09-15",
+      "days_held": 0,
+      "sell_on": "2027-09-16",
+      "sell_due": false
+    },
+    {
+      "ticker": "VSNT",
+      "qty": 105.4016,
+      "avg_entry": 37.95,
+      "price": 37.57,
+      "market_value": 3959.94,
+      "pnl": -40.05,
+      "return_pct": -0.01,
+      "dividends": 0.0,
+      "entered": "2026-09-15",
+      "days_held": 0,
+      "sell_on": "2027-09-14",
+      "sell_due": false
+    },
+    {
+      "ticker": "IRWD",
+      "qty": 963.3261,
+      "avg_entry": 4.15,
+      "price": 4.09,
+      "market_value": 3944.82,
+      "pnl": -55.17,
+      "return_pct": -0.0138,
+      "dividends": 0.0,
+      "entered": "2026-09-15",
+      "days_held": 0,
+      "sell_on": "2027-09-14",
+      "sell_due": false
+    },
+    {
+      "ticker": "ABUS",
+      "qty": 776.6971,
+      "avg_entry": 5.15,
+      "price": 5.04,
+      "market_value": 3914.55,
+      "pnl": -85.44,
+      "return_pct": -0.0214,
+      "dividends": 0.0,
+      "entered": "2026-09-15",
+      "days_held": 0,
+      "sell_on": "2027-09-14",
+      "sell_due": false
+    }
+  ],
+  "open_positions": 5,
   "target_positions": 25,
   "sells_due": [],
   "equity_curve": [
     {
       "date": "2026-09-12",
+      "equity": 100000.0
+    },
+    {
+      "date": "2026-09-15",
       "equity": 100000.0
     }
   ]
