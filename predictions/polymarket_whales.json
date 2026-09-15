@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-15T20:46:42Z",
+  "generated_at": "2026-09-15T20:51:12Z",
   "window": {
     "hours": 24,
-    "start": "2026-09-14T20:35Z",
-    "end": "2026-09-15T20:35Z"
+    "start": "2026-09-14T20:45Z",
+    "end": "2026-09-15T20:45Z"
   },
   "markets": {
     "resolved": 288,
     "late_flip": 12,
     "late_flip_rate": 0.0417,
-    "traded_notional": 7749686.41
+    "traded_notional": 7725463.84
   },
   "headline": "5 wallet(s) audited; 0 with a late-window edge",
   "disclaimer": "This is NOT a manipulation report. Repeated testing found no evidence that anyone moves the underlying; the settlement price is BTC, and a 5-min window flips on ~3bp of ordinary noise. Wallets listed here are profitable traders, most plausibly arbitraging a faster BTC feed against slow makers -- legal and unremarkable. 'leaders' are scored on the markets we sampled; only 'audited' entries are graded on the wallet's own full order flow and should be trusted. See README.",
@@ -20,20 +20,20 @@
   "traders": [
     {
       "wallet": "0x9e3ed7...f882",
-      "trades": 1930,
-      "markets_graded": 352,
+      "trades": 1926,
+      "markets_graded": 353,
       "wins": 179,
-      "losses": 169,
-      "win_rate": 0.5144,
-      "net_roi": 0.0683,
+      "losses": 170,
+      "win_rate": 0.5129,
+      "net_roi": 0.0663,
       "median_secs_before_close": 192,
       "late_window_roi": -0.9186,
       "late_window_share_of_stake": 0.0095,
       "edge": "insufficient-history",
-      "window_pnl": 9590.71,
-      "window_markets": 239,
+      "window_pnl": 9834.64,
+      "window_markets": 238,
       "history_truncated": true,
-      "audit_span_days": 1.45
+      "audit_span_days": 1.46
     },
     {
       "wallet": "0x3048d6...7537",
@@ -42,19 +42,19 @@
       "wins": 139,
       "losses": 116,
       "win_rate": 0.5451,
-      "net_roi": -0.0158,
+      "net_roi": -0.0161,
       "median_secs_before_close": 201,
       "late_window_roi": -0.2039,
       "late_window_share_of_stake": 0.0033,
       "edge": "insufficient-history",
-      "window_pnl": 6791.53,
+      "window_pnl": 6506.78,
       "window_markets": 285,
       "history_truncated": true,
       "audit_span_days": 0.89
     },
     {
       "wallet": "0x3c58ef...776b",
-      "trades": 2999,
+      "trades": 3000,
       "markets_graded": 526,
       "wins": 327,
       "losses": 199,
@@ -64,44 +64,44 @@
       "late_window_roi": 0.0657,
       "late_window_share_of_stake": 0.0187,
       "edge": "broad",
-      "window_pnl": 4724.59,
-      "window_markets": 238,
+      "window_pnl": 4697.92,
+      "window_markets": 240,
       "history_truncated": true,
       "audit_span_days": 2.26
     },
     {
-      "wallet": "0x41e2e1...a354",
-      "trades": 4075,
-      "markets_graded": 186,
-      "wins": 117,
-      "losses": 69,
-      "win_rate": 0.629,
-      "net_roi": -0.0156,
-      "median_secs_before_close": 134,
-      "late_window_roi": 0.0468,
-      "late_window_share_of_stake": 0.0145,
-      "edge": "insufficient-history",
-      "window_pnl": 4620.13,
-      "window_markets": 288,
-      "history_truncated": true,
-      "audit_span_days": 0.64
-    },
-    {
       "wallet": "0x21f4c1...691d",
-      "trades": 6937,
+      "trades": 6939,
       "markets_graded": 137,
       "wins": 90,
       "losses": 47,
       "win_rate": 0.6569,
-      "net_roi": 0.0108,
+      "net_roi": 0.0129,
       "median_secs_before_close": 192,
       "late_window_roi": -0.079,
       "late_window_share_of_stake": 0.009,
       "edge": "insufficient-history",
-      "window_pnl": 4411.73,
+      "window_pnl": 4647.06,
       "window_markets": 269,
       "history_truncated": true,
       "audit_span_days": 0.52
+    },
+    {
+      "wallet": "0x41e2e1...a354",
+      "trades": 4068,
+      "markets_graded": 187,
+      "wins": 117,
+      "losses": 70,
+      "win_rate": 0.6257,
+      "net_roi": -0.0163,
+      "median_secs_before_close": 134,
+      "late_window_roi": 0.0468,
+      "late_window_share_of_stake": 0.0146,
+      "edge": "insufficient-history",
+      "window_pnl": 4540.3,
+      "window_markets": 288,
+      "history_truncated": true,
+      "audit_span_days": 0.65
     }
   ]
 }
