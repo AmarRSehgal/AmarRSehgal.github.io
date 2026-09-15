@@ -638,6 +638,36 @@ const HISTORY = {
                 : 'Every grid was published before its race and is graded against the '
                   + 'official classification.') };
     },
+    // Returns null until a published pick has been graded, so the panel falls through
+    // to the NO_RECORD copy and switches itself over on the season's first result --
+    // rather than needing someone to remember to edit this in October.
+    nba: d => {
+        const pr = d.published_record;
+        if (!pr) return null;
+        const rows = [
+            ['Published picks graded', String(pr.n_games)],
+            ['Correct', `${pct(pr.accuracy)} (${Math.round(pr.accuracy * pr.n_games)} of ${pr.n_games})`],
+            [pr.baseline_label || 'baseline', pct(pr.baseline_accuracy)],
+        ];
+        if (pr.betting) {
+            rows.push(['Bet flat, ' + pr.betting.record,
+                       `${P.formatSigned(pr.betting.pnl)} on ${P.formatMoney(pr.betting.staked)} `
+                       + `(${(pr.betting.roi * 100).toFixed(1)}% ROI)`]);
+            rows.push(['Hit rate vs break-even',
+                       `${pct(pr.betting.hit_rate)} against ${pct(pr.betting.break_even_hit_rate)} needed`]);
+        }
+        const fragile = pr.n_games < FRAGILE_SAMPLE;
+        return { rows, note: `Scored from the ${pr.basis}. `
+            + (fragile
+                ? `At ${pr.n_games} games this is far too small a sample to mean anything. `
+                  + `It is published because what was forecast and what happened are both `
+                  + `facts; the accuracy is not yet a claim.`
+                : 'The repo also holds a backtest scoring 65.5%; this is not that. Only '
+                  + 'picks that were on this page before tip-off are counted here.')
+            + (pr.betting
+                ? ` Priced ${pr.betting.basis}.`
+                : '') };
+    },
     swing_book: d => bookHistory(d),
     mf_book: d => bookHistory(d),
     nfl: d => {
@@ -663,7 +693,7 @@ const HISTORY = {
         const b = t.betting;
         if (b) {
             rows.push(['Bet flat, ' + b.record,
-                       `${P.formatMoney(b.pnl)} on ${P.formatMoney(b.staked)} `
+                       `${P.formatSigned(b.pnl)} on ${P.formatMoney(b.staked)} `
                        + `(${b.roi >= 0 ? '+' : ''}${(b.roi * 100).toFixed(1)}% ROI)`]);
             rows.push(['Hit rate vs break-even',
                        `${pct(b.hit_rate)} against ${pct(b.break_even_hit_rate)} needed`]);
@@ -699,10 +729,27 @@ const HISTORY = {
             rows.push([`Picks at ${pct(t.high_conf_threshold)}+ stated`, String(t.high_conf_n)]);
             rows.push(['Stated vs realised', `${pct(t.high_conf_stated)} vs ${pct(t.high_conf_realized)}`]);
         }
+        const pr = d.published_record;
+        if (pr) {
+            rows.push(['Published picks graded', String(pr.n_games)]);
+            rows.push(['Accuracy on those', pct(pr.accuracy)]);
+            if (pr.betting) {
+                rows.push(['Bet flat, ' + pr.betting.record,
+                           `${P.formatSigned(pr.betting.pnl)} on `
+                           + `${P.formatMoney(pr.betting.staked)} `
+                           + `(${(pr.betting.roi * 100).toFixed(1)}% ROI)`]);
+            }
+        }
         const gap = t.high_conf_realized != null
             ? Number(t.high_conf_realized) - Number(t.high_conf_stated) : null;
         return { rows, note: 'Accuracy against the always-pick-home baseline is the only '
             + 'comparison that means anything in baseball. '
+            + (pr
+                ? `The season figure is the model scored over ${t.n_games} games from our `
+                  + `own database; the published figure is only the ${pr.n_games} picks `
+                  + `that were on this page before first pitch. They are different claims `
+                  + `and the second is the out-of-sample one. `
+                : '')
             + (gap != null && gap < 0
                 ? `The confident picks are overconfident by ${(Math.abs(gap) * 100).toFixed(1)} `
                   + 'points: a high number there is matchup lopsidedness, which a book also '
@@ -943,7 +990,7 @@ function nflWeeks(data) {
         const facts = [`${w.correct} of ${w.games} correct`];
         if (w.bets != null) {
             facts.push(`${w.bets} bet${w.bets === 1 ? '' : 's'} priced`);
-            facts.push(`${P.formatMoney(w.pnl)} flat`);
+            facts.push(`${P.formatSigned(w.pnl)} flat`);
         }
         const roi = w.roi;
         return {
@@ -962,7 +1009,37 @@ function nflWeeks(data) {
             + 'FanDuel or BetMGM -- a week can be won on accuracy and lost on price.' };
 }
 
+// One row per slate already played: the record, and what it returned. Shared by
+// every daily-slate sport -- MLB and NBA publish an identical published_record.
+function dailySlates(data) {
+    const pr = data.published_record;
+    if (!pr || !Array.isArray(pr.by_day) || !pr.by_day.length) return null;
+    const rows = pr.by_day.map(d => {
+        const facts = [`${d.correct} of ${d.games} correct`];
+        if (d.bets != null) {
+            facts.push(`${d.bets} priced`);
+            facts.push(`${P.formatSigned(d.pnl)} flat`);
+        }
+        const roi = d.roi;
+        return {
+            when: P.formatDay(P.parseIsoDay(d.date)),
+            facts: facts.join(' | '),
+            label: roi == null ? 'Accuracy' : 'Return',
+            value: roi == null ? `${(d.accuracy * 100).toFixed(0)}%`
+                               : `${roi >= 0 ? '+' : ''}${(roi * 100).toFixed(1)}%`,
+            cls: roi == null ? '' : (roi >= 0 ? 'confidence-high' : 'confidence-low'),
+            sub: `${(d.accuracy * 100).toFixed(0)}% straight up`,
+        };
+    });
+    return { title: 'Slate by slate', rows,
+        note: 'Every pick was published to this page before first pitch. Return is a flat '
+            + '$100 on each at the last price quoted before the game on DraftKings, '
+            + 'FanDuel or BetMGM.' };
+}
+
 const SESSIONS = {
+    mlb: dailySlates,
+    nba: dailySlates,
     nfl: nflWeeks,
     f1: f1Races,
     options_levels: optionsSessions,
