@@ -269,6 +269,36 @@ const SPORTS = {
         slate: d => bookSlate(d),
         render: renderBook,
     },
+    // Third paper book, and the honest one: the strategy behind it backtested NEGATIVE
+    // before it was ever scheduled. It runs to gather out-of-sample evidence, not because
+    // it is expected to make money -- the renderer says so on every load. Levels are
+    // same-session only, so this expires overnight rather than after two days like the
+    // position books.
+    options_levels: {
+        file: 'predictions/options_levels.json',
+        container: 'options-levels-signals',
+        stamp: 'options-levels-updated',
+        cadence: 'daily',
+        noun: 'levels',
+        listKey: 'levels',
+        staleAfter: 20 * MS_HOUR,
+        emptyLabel: 'No levels armed -- market closed, or no name cleared the screen.',
+        slate: d => {
+            const p = d.performance || {};
+            const bits = [];
+            if (d.status === 'armed') bits.push('Levels armed, waiting on a break');
+            else if (d.status === 'in_position') bits.push('Position open');
+            else if (d.status === 'closed') bits.push('Flat for the day');
+            if (d.universe_size) bits.push(`top ${(d.levels || []).length} of ${d.universe_size} screened`);
+            if (p.equity != null && p.starting_equity) {
+                const r = (p.equity - p.starting_equity) / p.starting_equity;
+                bits.push(`paper book ${formatMoney(p.equity)} (${r >= 0 ? '+' : ''}${(r * 100).toFixed(2)}%)`);
+            }
+            if (p.sessions) bits.push(`${p.sessions} session${p.sessions === 1 ? '' : 's'}`);
+            return bits.join(' | ');
+        },
+        render: renderOptionsLevels,
+    },
 };
 
 const SOURCE_LABEL = { empireflippers: 'Empire Flippers', flippa: 'Flippa',
@@ -281,7 +311,8 @@ const UNIVERSE_STALE = 105 * MS_DAY;
 
 const SPORT_LABEL = { swing_book: 'Swing book', mf_book: 'Magic Formula book', nba: 'NBA', nfl: 'NFL', mlb: 'MLB', f1: 'F1', real_estate: 'Real estate',
                       business_hunter: 'Business acquisitions',
-                      magic_formula: 'Magic Formula', funding: 'Funding carry' };
+                      magic_formula: 'Magic Formula', funding: 'Funding carry',
+                      options_levels: 'Options level breaks' };
 
 function esc(v) {
     return String(v == null ? '' : v).replace(/[&<>"']/g, c => (
@@ -696,6 +727,62 @@ function renderBook(data) {
         + `paper does not model queue position or partial fills, so this is a large `
         + `improvement on a backtest and it is still not what a real book would have `
         + `done. Not advice, and nothing here is traded with real money.</div>`;
+}
+
+// The strategy this tracks was backtested to NEGATIVE expectancy before it was ever
+// scheduled (1.29M triggers, 2021-2026). It runs forward anyway, in observe mode, to
+// gather out-of-sample evidence -- so the page has to lead with that rather than bury it,
+// or it becomes a portfolio site implying an edge that the author's own research denies.
+function renderOptionsLevels(data) {
+    const levels = (data.levels || []).map(l => {
+        const t = (data.trades || []).find(x => x.symbol === l.symbol);
+        const cls = t ? (t.status === 'rejected' ? 'confidence-low' : 'confidence-high')
+                      : 'confidence-med';
+        const state = t ? `${esc(t.status)} ${esc(t.side || '')}`.trim() : 'watching';
+        const facts = [`OR ${Number(l.or_low).toFixed(2)}-${Number(l.or_high).toFixed(2)}`,
+                       `${(Number(l.width_pct) * 100).toFixed(2)}% wide`,
+                       `gap ${l.gap_pct >= 0 ? '+' : ''}${(Number(l.gap_pct) * 100).toFixed(2)}%`];
+        return `
+            <div class="nba-game">
+                <div class="nba-matchup">
+                    <div class="nba-teams"><span class="pick-team">${esc(l.symbol)}</span></div>
+                    <div class="nba-meta">${esc(facts.join(' | '))}</div>
+                </div>
+                <div class="nba-pick">
+                    <div class="nba-pick-label">long above / short below</div>
+                    <div class="nba-confidence ${cls}">${Number(l.long_trigger).toFixed(2)}
+                        / ${Number(l.short_trigger).toFixed(2)}</div>
+                    <div class="nba-pick-label">${esc(state)}</div>
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    const b = data.backtest || {};
+    const g = data.gate_split || {};
+    let gateLine = '';
+    if (g.conclusive) {
+        const f = v => (v >= 0 ? '+' : '') + formatMoney(Math.abs(v));
+        gateLine = ` Rule Zero split so far: ${f(g.passed_avg)}/trade when the gate passed `
+                 + `(n=${g.passed_n}) against ${f(g.failed_avg)} when it failed (n=${g.failed_n}).`;
+    } else if ((g.passed_n || 0) + (g.failed_n || 0) > 0) {
+        gateLine = ` Too few closed trades (${(g.passed_n || 0) + (g.failed_n || 0)}) to say `
+                 + `whether the Rule Zero gate discriminates.`;
+    }
+
+    return levels + `<div class="prediction-note">`
+        + `<strong>This strategy tested negative.</strong> A sweep of ${esc(b.sets_swept)} `
+        + `parameter sets over ${esc(b.triggers_tested)} opening-range breaks (2021-2026) put `
+        + `the signal at about ${esc(b.edge_pct)}% per trade against a ${esc(b.hurdle_pct)}% `
+        + `option cost hurdle -- short by ${esc(b.shortfall)}. Longer holds do not rescue it; `
+        + `the edge stops at the closing bell. The book runs forward in observe mode to `
+        + `collect out-of-sample evidence, which means trades are taken whether or not the `
+        + `Rule Zero gate approves them, and the verdict is recorded either way.${gateLine}`
+        + ` Levels are computed from consolidated data that arrives `
+        + `${esc(data.data_lag_minutes)} minutes late, so this is a deliberately lagged `
+        + `record, not a live signal. Alpaca paper account, simulated fills, free-tier `
+        + `option quotes that are indicative rather than real NBBO. Not advice, and nothing `
+        + `here is traded with real money.</div>`;
 }
 
 function renderFunding(data) {
