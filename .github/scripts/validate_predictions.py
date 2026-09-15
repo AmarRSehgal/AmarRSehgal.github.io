@@ -87,6 +87,8 @@ REACHABLE_ACCESS = ('OPEN', 'small-biz')
 SAM_LINK_PREFIX = 'https://sam.gov/opp/'
 
 # sport -> (required top-level keys, list key, per-item required keys)
+TRADE_STATES = {'open', 'closing', 'closed', 'rejected', 'unfilled'}
+
 SPECS = {
     'nba': (('generated_at', 'date', 'games'), 'games',
             ('away_team', 'home_team', 'pick', 'pred_spread', 'ml_win_prob', 'confidence')),
@@ -149,7 +151,7 @@ SPECS = {
     #                       misread the P&L, so the mode travels with the numbers.
     'options_levels': (('generated_at', 'account', 'paper', 'started', 'starting_equity',
                         'equity', 'status', 'gate_mode', 'universe_size', 'backtest',
-                        'levels'),
+                        'day', 'performance', 'trades', 'levels'),
                        'levels',
                        ('symbol', 'or_high', 'or_low', 'long_trigger', 'short_trigger',
                         'width_pct', 'gap_pct', 'rank')),
@@ -1036,6 +1038,40 @@ def validate(sport, data, now=None):
             raise Invalid(f"gate_mode={data['gate_mode']!r} must be 'observe' or 'strict'")
         if data['status'] not in ('armed', 'in_position', 'closed', 'no_session'):
             raise Invalid(f"status={data['status']!r} is not a known session state")
+        for key in ('day', 'performance'):
+            if not isinstance(data[key], dict):
+                raise Invalid(f'{key} must be an object')
+        require_number('<payload>', 'equity', data['equity'])
+        require_number('<payload>', 'starting_equity', data['starting_equity'])
+        require_number('day', 'realized_pnl', data['day']['realized_pnl'])
+        perf = data['performance']
+        require_number('performance', 'realized_pnl', perf['realized_pnl'])
+        # A hit rate off a handful of trades is noise presented as a statistic, so the
+        # generator publishes null until the sample is worth quoting. Enforce the range
+        # when it is present, and allow the null.
+        hr = perf.get('hit_rate')
+        if hr is not None:
+            hr = require_number('performance', 'hit_rate', hr)
+            if not 0.0 <= hr <= 1.0:
+                raise Invalid(f'performance.hit_rate={hr} is outside [0, 1]')
+        closed = require_int('performance', 'closed', perf['closed'])
+        wins = require_int('performance', 'wins', perf['wins'])
+        if wins > closed:
+            raise Invalid(f'performance.wins={wins} exceeds closed={closed}')
+        if not isinstance(data['trades'], list):
+            raise Invalid('trades must be a list')
+        for i, t in enumerate(data['trades']):
+            where = f'trades[{i}]'
+            if not isinstance(t, dict):
+                raise Invalid(f'{where} must be an object')
+            require_str(where, 'symbol', t.get('symbol'))
+            if t.get('status') not in TRADE_STATES:
+                raise Invalid(f'{where}: status={t.get("status")!r} not in '
+                              f'{sorted(TRADE_STATES)}')
+            # A closed trade with no realised number renders a blank where a P&L belongs,
+            # which reads as break-even rather than as unknown.
+            if t['status'] == 'closed' and t.get('realized_pnl') is None:
+                raise Invalid(f'{where}: closed trade has no realized_pnl')
         bt = data['backtest']
         if not isinstance(bt, dict) or not str(bt.get('note', '')).strip():
             raise Invalid('backtest.note is required: this strategy tested negative and '

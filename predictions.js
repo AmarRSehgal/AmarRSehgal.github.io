@@ -807,8 +807,41 @@ function renderBook(data) {
 // scheduled (1.29M triggers, 2021-2026). It runs forward anyway, in observe mode, to
 // gather out-of-sample evidence -- so the page has to lead with that rather than bury it,
 // or it becomes a portfolio site implying an edge that the author's own research denies.
-function renderOptionsLevels(data) {
-    const levels = (data.levels || []).map(l => {
+function olMoney(v) {
+    const n = Number(v) || 0;
+    return (n >= 0 ? '+' : '-') + formatMoney(Math.abs(n));
+}
+
+function olBrief(data) {
+    const b = data.brief;
+    if (!b) return '';
+    if (!b.ok) {
+        // The brief is advisory and fails soft. Say so rather than showing nothing,
+        // so a silently-missing brief is distinguishable from a quiet one.
+        return note('prediction-note', 'Pre-market brief unavailable today; the session '
+            + 'ran on the mechanical screen alone.');
+    }
+    const ev = (b.events || []).map(e =>
+        `<li>${esc(e.time_et)} ET &mdash; <strong>${esc(e.name)}</strong> ${esc(e.detail)}</li>`
+    ).join('');
+    const ex = (b.exclusions || []).map(e =>
+        `<li><strong>${esc(e.symbol)}</strong> excluded (${esc(e.reason)}) &mdash; ${esc(e.detail)}</li>`
+    ).join('');
+    return `
+        <div class="nba-game">
+            <div class="nba-matchup">
+                <div class="nba-teams"><span class="pick-team">Pre-market read</span>
+                    <span class="idea-name">${esc(b.regime || '')}</span></div>
+                <div class="nba-meta">${esc(b.expectations || '')}</div>
+                ${ev ? `<div class="nba-meta"><ul>${ev}</ul></div>` : ''}
+                ${ex ? `<div class="nba-meta"><ul>${ex}</ul></div>`
+                     : '<div class="nba-meta">No names excluded.</div>'}
+            </div>
+        </div>`;
+}
+
+function olLevels(data) {
+    return (data.levels || []).map(l => {
         const t = (data.trades || []).find(x => x.symbol === l.symbol);
         const cls = t ? (t.status === 'rejected' ? 'confidence-low' : 'confidence-high')
                       : 'confidence-med';
@@ -828,35 +861,99 @@ function renderOptionsLevels(data) {
                         / ${Number(l.short_trigger).toFixed(2)}</div>
                     <div class="nba-pick-label">${esc(state)}</div>
                 </div>
-            </div>
-        `;
+            </div>`;
     }).join('');
+}
 
+function olTrades(data) {
+    const taken = (data.trades || []).filter(t => t.status !== 'rejected');
+    if (!taken.length) return '';
+    const rows = taken.map(t => {
+        const pnl = t.realized_pnl != null ? t.realized_pnl : t.unrealized_pnl;
+        const settled = t.realized_pnl != null;
+        const cls = (pnl || 0) >= 0 ? 'confidence-high' : 'confidence-low';
+        const facts = [`${esc(t.side || '')} ${t.contracts || ''}x`,
+                       esc(t.option_symbol || ''),
+                       t.entry_fill != null ? `in ${Number(t.entry_fill).toFixed(2)}` : 'entry pending',
+                       t.exit_fill != null ? `out ${Number(t.exit_fill).toFixed(2)}` : ''].filter(Boolean);
+        const gate = t.rule_zero_passed ? 'Rule Zero passed' : 'Rule Zero FAILED';
+        return `
+            <div class="nba-game">
+                <div class="nba-matchup">
+                    <div class="nba-teams"><span class="pick-team">${esc(t.symbol)}</span>
+                        <span class="idea-name">${esc(t.exit_reason || t.status)}</span></div>
+                    <div class="nba-meta">${esc(facts.join(' | '))}</div>
+                    <div class="nba-meta">${esc(gate)}</div>
+                </div>
+                <div class="nba-pick">
+                    <div class="nba-pick-label">${settled ? 'realised' : 'open mark'}</div>
+                    <div class="nba-confidence ${cls}">${olMoney(pnl)}</div>
+                </div>
+            </div>`;
+    }).join('');
+    return `<div class="prediction-note"><strong>Trades today</strong></div>` + rows;
+}
+
+function olPerformance(data) {
+    const p = data.performance || {};
+    if (!p.sessions) return '';
+    const rows = (p.history || []).slice().reverse().slice(0, 15).map(h => {
+        const cls = (h.realized_pnl || 0) >= 0 ? 'confidence-high' : 'confidence-low';
+        const bits = [`${h.taken || 0} taken`, `${h.closed || 0} closed`,
+                      `${h.watchlist || 0} levels`];
+        if (h.regime) bits.push(esc(h.regime));
+        return `
+            <div class="nba-game">
+                <div class="nba-matchup">
+                    <div class="nba-teams"><span class="pick-team">${esc(h.session)}</span></div>
+                    <div class="nba-meta">${esc(bits.join(' | '))}</div>
+                </div>
+                <div class="nba-pick">
+                    <div class="nba-pick-label">realised</div>
+                    <div class="nba-confidence ${cls}">${olMoney(h.realized_pnl)}</div>
+                </div>
+            </div>`;
+    }).join('');
+    const hit = p.hit_rate != null
+        ? `${(p.hit_rate * 100).toFixed(0)}% hit rate on ${p.closed} closed`
+        : `${p.closed || 0} closed &mdash; too few to quote a hit rate`;
+    const head = `<div class="prediction-note"><strong>Performance</strong> &mdash; `
+        + `${p.sessions} session${p.sessions === 1 ? '' : 's'} since ${esc(p.since)}, `
+        + `${p.trades || 0} trades taken, ${hit}. Realised ${olMoney(p.realized_pnl)}; `
+        + `equity ${formatMoney(p.equity)} from ${formatMoney(p.starting_equity)}.</div>`;
+    return head + rows;
+}
+
+// The strategy this tracks was backtested to NEGATIVE expectancy before it was ever
+// scheduled (1.29M triggers, 2021-2026). It runs forward anyway, in observe mode, to
+// gather out-of-sample evidence -- so the page leads with that rather than burying it,
+// or it becomes a portfolio implying an edge the author's own research denies.
+function renderOptionsLevels(data) {
     const b = data.backtest || {};
     const g = data.gate_split || {};
     let gateLine = '';
     if (g.conclusive) {
-        const f = v => (v >= 0 ? '+' : '') + formatMoney(Math.abs(v));
-        gateLine = ` Rule Zero split so far: ${f(g.passed_avg)}/trade when the gate passed `
-                 + `(n=${g.passed_n}) against ${f(g.failed_avg)} when it failed (n=${g.failed_n}).`;
+        gateLine = ` Rule Zero split so far: ${olMoney(g.passed_avg)}/trade when the gate `
+                 + `passed (n=${g.passed_n}) against ${olMoney(g.failed_avg)} when it failed `
+                 + `(n=${g.failed_n}).`;
     } else if ((g.passed_n || 0) + (g.failed_n || 0) > 0) {
         gateLine = ` Too few closed trades (${(g.passed_n || 0) + (g.failed_n || 0)}) to say `
                  + `whether the Rule Zero gate discriminates.`;
     }
-
-    return levels + `<div class="prediction-note">`
+    return olBrief(data) + olLevels(data) + olTrades(data) + olPerformance(data)
+        + `<div class="prediction-note">`
         + `<strong>This strategy tested negative.</strong> A sweep of ${esc(b.sets_swept)} `
         + `parameter sets over ${esc(b.triggers_tested)} opening-range breaks (2021-2026) put `
         + `the signal at about ${esc(b.edge_pct)}% per trade against a ${esc(b.hurdle_pct)}% `
-        + `option cost hurdle -- short by ${esc(b.shortfall)}. Longer holds do not rescue it; `
-        + `the edge stops at the closing bell. The book runs forward in observe mode to `
+        + `option cost hurdle &mdash; short by ${esc(b.shortfall)}. Longer holds do not rescue `
+        + `it; the edge stops at the closing bell. The book runs forward in observe mode to `
         + `collect out-of-sample evidence, which means trades are taken whether or not the `
         + `Rule Zero gate approves them, and the verdict is recorded either way.${gateLine}`
-        + ` Levels are computed from consolidated data that arrives `
-        + `${esc(data.data_lag_minutes)} minutes late, so this is a deliberately lagged `
-        + `record, not a live signal. Alpaca paper account, simulated fills, free-tier `
-        + `option quotes that are indicative rather than real NBBO. Not advice, and nothing `
-        + `here is traded with real money.</div>`;
+        + ` Intraday only, flat by 15:50 ET, expiries four weeks or less. Levels are computed `
+        + `from consolidated data that arrives ${esc(data.data_lag_minutes)} minutes late, so `
+        + `this is a deliberately lagged record, not a live signal. Alpaca paper account, `
+        + `simulated fills, free-tier option quotes that are indicative rather than real `
+        + `NBBO. Not advice, and nothing here is traded with real money.</div>`;
 }
 
 function renderFunding(data) {
