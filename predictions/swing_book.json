@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-09-15T00:33:25.245137+00:00",
+  "strategy": "MultiFactorV3",
+  "account": "PA37U0PIU9B9",
+  "paper": true,
+  "started": "2026-09-12",
+  "starting_equity": 100000.0,
+  "equity": 100000.0,
+  "cash": 100000.0,
+  "return_pct": 0.0,
+  "positions": [],
+  "open_positions": 0,
+  "equity_curve": [
+    {
+      "date": "2026-09-12",
+      "equity": 100000.0
+    }
+  ],
+  "days_live": 2,
+  "verdict_due": false,
+  "retire_after_days": 180,
+  "backtest": {
+    "measured_at": "2026-09-13T21:00:06.278452+00:00",
+    "window_start": "2019-01-01",
+    "window_end": "2025-07-01",
+    "universe": "etf",
+    "universe_label": "12 broad and sector ETFs (survivorship-free)",
+    "strategy_return": 0.482865,
+    "benchmark_return": 1.45555,
+    "strategy_sharpe": 0.463,
+    "benchmark_sharpe": 0.801,
+    "strategy_max_drawdown": -0.316375,
+    "benchmark_max_drawdown": -0.357875,
+    "walk_forward": {
+      "windows": 17,
+      "windows_beating_benchmark": 3,
+      "share_beating_benchmark": 0.176471,
+      "avg_edge": -0.032242
+    }
+  }
+}
