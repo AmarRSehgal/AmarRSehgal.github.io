@@ -181,6 +181,12 @@ FUNDING_STATUS = ('ok', 'building_history')
 SOURCE_STATUS = ('fresh', 'empty', 'stale', 'missing', 'error')
 PUBLISHABLE_STATUS = ('fresh', 'empty')
 
+# The session state of the options book. A DOMAIN vocabulary, not a health one: these say
+# what the book is doing, not whether the job ran. Named so test_status_vocabulary.py can
+# prove it never collides with the health words the renderer suppresses on -- it once did
+# not, and predictions.js rendered a book holding five live positions as "not reporting".
+OPTIONS_SESSION_STATUS = ('armed', 'in_position', 'closed', 'no_session')
+
 
 class Invalid(Exception):
     """A contract violation. Carries the operator-facing message."""
@@ -1036,7 +1042,7 @@ def validate(sport, data, now=None):
             raise Invalid('paper must be true: this book may not be published as anything else')
         if data['gate_mode'] not in ('observe', 'strict'):
             raise Invalid(f"gate_mode={data['gate_mode']!r} must be 'observe' or 'strict'")
-        if data['status'] not in ('armed', 'in_position', 'closed', 'no_session'):
+        if data['status'] not in OPTIONS_SESSION_STATUS:
             raise Invalid(f"status={data['status']!r} is not a known session state")
         for key in ('day', 'performance'):
             if not isinstance(data[key], dict):
