@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-09-15T20:24:26.188766+00:00",
+  "window_hours": 24,
+  "articles_in_window": 2033,
+  "collection_days": 16,
+  "min_sources": 4,
+  "min_articles_for_sentiment": 10,
+  "surge_available": true,
+  "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
+  "topics": [
+    {
+      "term": "trump",
+      "articles": 291,
+      "sources": 42,
+      "sentiment_direction": "mixed",
+      "surge": 1.25,
+      "sentiment_mean": -0.025,
+      "headline": "WATCH: Blanche justifies Trump bashing Supreme Court over mail ballots: 'He is very frustrated'",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/politics/watch-blanche-justifies-trump-bashing-supreme-court-over-mail-ballots-he-is-very-frustrated"
+    },
+    {
+      "term": "iran",
+      "articles": 81,
+      "sources": 33,
+      "sentiment_direction": "negative",
+      "surge": 0.73,
+      "sentiment_mean": -0.563,
+      "headline": "Iran war cost hits $38 billion, forecast to rise $3 billion a month, CBO says - Reuters",
+      "headline_source": "Reuters",
+      "headline_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQNEs4SmV2UTYzblAwenVTemk5SWQtMTRPbkpoLTVxaEVrYzBYNDJfX0RrSmVVZVZadlFBVnF0WkJNeGc5czMxVWREeDFtS0dZeGJ2V2tqSVg5VWM5UUFtN1hsMXlPX3g4d1RMbk5BR1oxcVdyYjBIaHg0bFl1SXY1dDMzazVEZlNBOHdCWm8zRno2Vjc1TEJ6ekdnQ25COEVkS3FVNHJmeWEyRVZJd2p3aF80RFlhZmVtREhQbkpIdw?oc=5"
+    },
+    {
+      "term": "president",
+      "articles": 147,
+      "sources": 32,
+      "sentiment_direction": "mixed",
+      "surge": 1.18,
+      "sentiment_mean": -0.034,
+      "headline": "Ukrainian president tells CBS News Russia targeted his plane with drones",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/news/ukraine-russia-war-zelenskyy-cbs-interview-drones-targeted-plane-twice/"
+    },
+    {
+      "term": "space",
+      "articles": 47,
+      "sources": 32,
+      "sentiment_direction": "negative",
+      "surge": 2.42,
+      "sentiment_mean": -0.309,
+      "headline": "Pentagon reveals secret space weapons are already in orbit \u2014 but won't say what they do",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/politics/pentagon-reveals-secret-space-weapons-already-orbit-wont-say-what-they-do"
+    },
+    {
+      "term": "government",
+      "articles": 74,
+      "sources": 28,
+      "sentiment_direction": "mixed",
+      "surge": 1.12,
+      "sentiment_mean": -0.01,
+      "headline": "How Is Hungary\u2019s New Government Doing?",
+      "headline_source": "Reddit r/geopolitics",
+      "headline_url": "https://www.reddit.com/r/geopolitics/comments/1wh99lm/how_is_hungarys_new_government_doing/"
+    },
+    {
+      "term": "data",
+      "articles": 53,
+      "sources": 28,
+      "sentiment_direction": "mixed",
+      "surge": 0.82,
+      "sentiment_mean": -0.038,
+      "headline": "Data center spills 5K gallons of diesel into New Jersey Meadowlands",
+      "headline_source": "Reddit r/environment",
+      "headline_url": "https://www.reddit.com/r/environment/comments/1whbkcq/data_center_spills_5k_gallons_of_diesel_into_new/"
+    },
+    {
+      "term": "decision",
+      "articles": 51,
+      "sources": 28,
+      "sentiment_direction": "mixed",
+      "surge": 2.05,
+      "sentiment_mean": 0.141,
+      "headline": "Fed hike outlook: guidance, not the rate decision, will move markets",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/stock-market-news/fed-hike-outlook-guidance-not-the-rate-decision-will-move-markets-93CH-4902429"
+    },
+    {
+      "term": "security",
+      "articles": 49,
+      "sources": 28,
+      "sentiment_direction": "positive",
+      "surge": 0.96,
+      "sentiment_mean": 0.235,
+      "headline": "Prime Minister Mark Carney says Canada will pursue a \u201cunique security and economic alliance\u201d with Europe as it looks to reduce its reliance on trade with the US",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1wha1i0/prime_minister_mark_carney_says_canada_will/"
+    }
+  ],
+  "hours_since_fetch": 0.0
+}

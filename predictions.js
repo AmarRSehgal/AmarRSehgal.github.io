@@ -123,6 +123,30 @@ const SPORTS = {
         },
         render: renderF1,
     },
+    // What the news is COVERING, ranked by how many independent outlets carry a topic.
+    // Not a sentiment index: VADER mis-scores news language badly, so sentiment appears
+    // as a coarse direction and only where the sample supports it. The payload's own
+    // caveat says so and the contract refuses a payload that drops it.
+    news: {
+        file: 'predictions/news.json',
+        container: 'news-topics',
+        stamp: 'news-updated',
+        cadence: 'hourly',
+        noun: 'topics',
+        listKey: 'topics',
+        staleAfter: 12 * MS_HOUR,
+        emptyLabel: 'No topic cleared the coverage threshold in this window.',
+        slate: d => {
+            const bits = [];
+            if (d.articles_in_window) {
+                bits.push(`${Number(d.articles_in_window).toLocaleString()} articles`);
+            }
+            if (d.window_hours) bits.push(`last ${d.window_hours}h`);
+            if (d.collection_days) bits.push(`${d.collection_days} days collected`);
+            return bits.join(' | ');
+        },
+        render: renderNews,
+    },
     // A SNAPSHOT, not a forecast, and the only feed here that predicts nothing. It was
     // built to look for manipulation in Polymarket's 5-minute BTC markets and did not
     // find any; the repo deliberately carries no manipulation field and the verdict is
@@ -448,7 +472,8 @@ const SPORT_LABEL = { swing_book: 'Swing book', mf_book: 'Magic Formula book',
                       business_hunter: 'Business acquisitions',
                       magic_formula: 'Magic Formula', funding: 'Funding carry',
                       options_levels: 'Options level breaks',
-                      polymarket_whales: 'Polymarket whale watch' };
+                      polymarket_whales: 'Polymarket whale watch',
+                      news: 'News coverage' };
 
 function esc(v) {
     return String(v == null ? '' : v).replace(/[&<>"']/g, c => (
@@ -839,6 +864,47 @@ function bookSlate(d) {
     }
     if (d.excess_return_pct != null) bits.push(`${pct(d.excess_return_pct)} excess`);
     return bits.join(' | ');
+}
+
+// Topics ranked by BREADTH of coverage, not by volume and not by sentiment. A story
+// carried by forty outlets is a story; the same count from one outlet's feed is not.
+const NEWS_TONE = {
+    positive: 'confidence-high',
+    negative: 'confidence-low',
+    mixed: '',
+    unknown: '',
+};
+
+function renderNews(data) {
+    const rows = data.topics.map(t => {
+        const facts = [`${t.sources} outlets`, `${t.articles} articles`];
+        if (t.surge != null) {
+            // 1.0 is this topic's own recent norm, so the interesting part is the gap.
+            const pct = (Number(t.surge) - 1) * 100;
+            facts.push(`${pct >= 0 ? '+' : ''}${pct.toFixed(0)}% vs its own norm`);
+        }
+        const head = t.headline
+            ? `<div class="nba-meta">${t.headline_url
+                ? `<a href="${esc(t.headline_url)}" target="_blank" rel="noopener">${esc(t.headline)}</a>`
+                : esc(t.headline)}${t.headline_source ? ` &mdash; ${esc(t.headline_source)}` : ''}</div>`
+            : '';
+        return `
+            <div class="nba-game">
+                <div class="nba-matchup">
+                    <div class="nba-teams"><span class="pick-team">${esc(t.term)}</span></div>
+                    <div class="nba-meta">${esc(facts.join(' | '))}</div>
+                    ${head}
+                </div>
+                <div class="nba-pick">
+                    <div class="nba-pick-label">Tone</div>
+                    <div class="nba-confidence ${NEWS_TONE[t.sentiment_direction] || ''}">${
+                        esc(t.sentiment_direction)}</div>
+                </div>
+            </div>`;
+    }).join('');
+    // Printed from the payload rather than copied, so the page cannot drift from what
+    // the tracker actually claims about its own sentiment scoring.
+    return rows + `<div class="prediction-note">${esc(data.caveat || '')}</div>`;
 }
 
 // Wallets ranked by what they made in the window. `edge` is the audit verdict on the
