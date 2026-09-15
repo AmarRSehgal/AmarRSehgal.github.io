@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T19:37:04Z",
+  "generated_at": "2026-09-15T20:11:42Z",
   "season": 2026,
   "week": 2,
   "season_type": "regular",
@@ -212,6 +212,213 @@
       1
     ],
     "basis": "picks as published on the site before kickoff, scored against final scores",
+    "betting": {
+      "bets": 16,
+      "unpriced": 0,
+      "record": "10-6",
+      "hit_rate": 0.625,
+      "stake": 100.0,
+      "staked": 1600.0,
+      "pnl": -23.0,
+      "roi": -0.0144,
+      "avg_price": 1.684,
+      "break_even_hit_rate": 0.622,
+      "books": [
+        "draftkings",
+        "fanduel",
+        "betmgm"
+      ],
+      "basis": "flat $100 at the last price quoted before kickoff on DraftKings, FanDuel or BetMGM",
+      "settled": [
+        {
+          "label": "Week 1",
+          "home": "Seattle Seahawks",
+          "away": "New England Patriots",
+          "kickoff": "2026-09-10T00:20:00Z",
+          "selection": "Seattle Seahawks",
+          "price": 1.6,
+          "book": "DraftKings",
+          "won": true,
+          "pnl": 60.0
+        },
+        {
+          "label": "Week 1",
+          "home": "Los Angeles Rams",
+          "away": "San Francisco 49ers",
+          "kickoff": "2026-09-11T00:35:00Z",
+          "selection": "Los Angeles Rams",
+          "price": 1.51,
+          "book": "DraftKings",
+          "won": false,
+          "pnl": -100.0
+        },
+        {
+          "label": "Week 1",
+          "home": "Pittsburgh Steelers",
+          "away": "Atlanta Falcons",
+          "kickoff": "2026-09-13T17:00:00Z",
+          "selection": "Pittsburgh Steelers",
+          "price": 1.37,
+          "book": "DraftKings",
+          "won": true,
+          "pnl": 37.0
+        },
+        {
+          "label": "Week 1",
+          "home": "Indianapolis Colts",
+          "away": "Baltimore Ravens",
+          "kickoff": "2026-09-13T17:00:00Z",
+          "selection": "Baltimore Ravens",
+          "price": 1.57,
+          "book": "DraftKings",
+          "won": true,
+          "pnl": 57.0
+        },
+        {
+          "label": "Week 1",
+          "home": "Houston Texans",
+          "away": "Buffalo Bills",
+          "kickoff": "2026-09-13T17:00:00Z",
+          "selection": "Houston Texans",
+          "price": 2.05,
+          "book": "BetMGM",
+          "won": false,
+          "pnl": -100.0
+        },
+        {
+          "label": "Week 1",
+          "home": "Carolina Panthers",
+          "away": "Chicago Bears",
+          "kickoff": "2026-09-13T17:00:00Z",
+          "selection": "Chicago Bears",
+          "price": 1.61,
+          "book": "BetMGM",
+          "won": true,
+          "pnl": 61.0
+        },
+        {
+          "label": "Week 1",
+          "home": "Jacksonville Jaguars",
+          "away": "Cleveland Browns",
+          "kickoff": "2026-09-13T17:00:00Z",
+          "selection": "Jacksonville Jaguars",
+          "price": 1.22,
+          "book": "DraftKings",
+          "won": true,
+          "pnl": 22.0
+        },
+        {
+          "label": "Week 1",
+          "home": "Detroit Lions",
+          "away": "New Orleans Saints",
+          "kickoff": "2026-09-13T17:00:00Z",
+          "selection": "Detroit Lions",
+          "price": 1.31,
+          "book": "BetMGM",
+          "won": true,
+          "pnl": 31.0
+        },
+        {
+          "label": "Week 1",
+          "home": "Tennessee Titans",
+          "away": "New York Jets",
+          "kickoff": "2026-09-13T17:00:00Z",
+          "selection": "Tennessee Titans",
+          "price": 1.85,
+          "book": "FanDuel",
+          "won": false,
+          "pnl": -100.0
+        },
+        {
+          "label": "Week 1",
+          "home": "Cincinnati Bengals",
+          "away": "Tampa Bay Buccaneers",
+          "kickoff": "2026-09-13T17:00:00Z",
+          "selection": "Cincinnati Bengals",
+          "price": 1.49,
+          "book": "DraftKings",
+          "won": true,
+          "pnl": 49.0
+        },
+        {
+          "label": "Week 1",
+          "home": "Los Angeles Chargers",
+          "away": "Arizona Cardinals",
+          "kickoff": "2026-09-13T20:25:00Z",
+          "selection": "Los Angeles Chargers",
+          "price": 1.2,
+          "book": "DraftKings",
+          "won": false,
+          "pnl": -100.0
+        },
+        {
+          "label": "Week 1",
+          "home": "Minnesota Vikings",
+          "away": "Green Bay Packers",
+          "kickoff": "2026-09-13T20:25:00Z",
+          "selection": "Minnesota Vikings",
+          "price": 1.79,
+          "book": "FanDuel",
+          "won": true,
+          "pnl": 79.0
+        },
+        {
+          "label": "Week 1",
+          "home": "Las Vegas Raiders",
+          "away": "Miami Dolphins",
+          "kickoff": "2026-09-13T20:25:00Z",
+          "selection": "Miami Dolphins",
+          "price": 2.42,
+          "book": "DraftKings",
+          "won": false,
+          "pnl": -100.0
+        },
+        {
+          "label": "Week 1",
+          "home": "Philadelphia Eagles",
+          "away": "Washington Commanders",
+          "kickoff": "2026-09-13T20:25:00Z",
+          "selection": "Philadelphia Eagles",
+          "price": 1.43,
+          "book": "BetMGM",
+          "won": true,
+          "pnl": 43.0
+        },
+        {
+          "label": "Week 1",
+          "home": "New York Giants",
+          "away": "Dallas Cowboys",
+          "kickoff": "2026-09-14T00:20:00Z",
+          "selection": "New York Giants",
+          "price": 2.38,
+          "book": "BetMGM",
+          "won": true,
+          "pnl": 138.0
+        },
+        {
+          "label": "Week 1",
+          "home": "Kansas City Chiefs",
+          "away": "Denver Broncos",
+          "kickoff": "2026-09-15T00:15:00Z",
+          "selection": "Denver Broncos",
+          "price": 2.14,
+          "book": "FanDuel",
+          "won": false,
+          "pnl": -100.0
+        }
+      ]
+    },
+    "by_week": [
+      {
+        "week": 1,
+        "games": 16,
+        "correct": 10,
+        "accuracy": 0.625,
+        "bets": 16,
+        "pnl": -23.0,
+        "roi": -0.0144
+      }
+    ],
     "mean_abs_spread_error": 13.16,
     "high_conf_threshold": 0.6,
     "high_conf_n": 9,
