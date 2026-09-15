@@ -649,13 +649,7 @@ const HISTORY = {
             ['Correct', `${pct(pr.accuracy)} (${Math.round(pr.accuracy * pr.n_games)} of ${pr.n_games})`],
             [pr.baseline_label || 'baseline', pct(pr.baseline_accuracy)],
         ];
-        if (pr.betting) {
-            rows.push(['Bet flat, ' + pr.betting.record,
-                       `${P.formatSigned(pr.betting.pnl)} on ${P.formatMoney(pr.betting.staked)} `
-                       + `(${(pr.betting.roi * 100).toFixed(1)}% ROI)`]);
-            rows.push(['Hit rate vs break-even',
-                       `${pct(pr.betting.hit_rate)} against ${pct(pr.betting.break_even_hit_rate)} needed`]);
-        }
+        rows.push(...bettingRows(pr.betting));
         const fragile = pr.n_games < FRAGILE_SAMPLE;
         return { rows, note: `Scored from the ${pr.basis}. `
             + (fragile
@@ -690,14 +684,7 @@ const HISTORY = {
         }
         // The number that matters more than accuracy: what the picks RETURNED once a
         // bookmaker charged for them.
-        const b = t.betting;
-        if (b) {
-            rows.push(['Bet flat, ' + b.record,
-                       `${P.formatSigned(b.pnl)} on ${P.formatMoney(b.staked)} `
-                       + `(${b.roi >= 0 ? '+' : ''}${(b.roi * 100).toFixed(1)}% ROI)`]);
-            rows.push(['Hit rate vs break-even',
-                       `${pct(b.hit_rate)} against ${pct(b.break_even_hit_rate)} needed`]);
-        }
+        rows.push(...bettingRows(t.betting));
         const fragile = t.n_games < FRAGILE_SAMPLE;
         return { rows, note: (t.basis ? `Scored from the ${t.basis}. ` : '')
             + (fragile
@@ -709,11 +696,15 @@ const HISTORY = {
                 : 'Measured against always-picking-home, the only baseline worth the '
                   + 'comparison.')
             + (t.betting
-                ? ` Priced ${t.betting.basis}. Accuracy and profit are different `
-                  + `questions and they disagree here: the picks were right `
-                  + `${pct(t.betting.hit_rate)} of the time and needed `
-                  + `${pct(t.betting.break_even_hit_rate)} just to break even at the `
-                  + `prices taken. A model beats the market only if it beats the PRICE.`
+                ? ` Bets are placed only where the model's probability beats the price -- `
+                  + `a pick is a view on who wins, a bet is a view on who wins relative `
+                  + `to what it costs. Priced ${t.betting.basis}. `
+                  + (t.betting.every_pick
+                      ? `Backing every pick instead returns `
+                        + `${(t.betting.every_pick.roi * 100).toFixed(1)}%, so the `
+                        + `selection is doing real work here -- in which direction is `
+                        + `not yet established at this sample size.`
+                      : '')
                 : '') };
     },
     mlb: d => {
@@ -733,12 +724,7 @@ const HISTORY = {
         if (pr) {
             rows.push(['Published picks graded', String(pr.n_games)]);
             rows.push(['Accuracy on those', pct(pr.accuracy)]);
-            if (pr.betting) {
-                rows.push(['Bet flat, ' + pr.betting.record,
-                           `${P.formatSigned(pr.betting.pnl)} on `
-                           + `${P.formatMoney(pr.betting.staked)} `
-                           + `(${(pr.betting.roi * 100).toFixed(1)}% ROI)`]);
-            }
+            rows.push(...bettingRows(pr.betting));
         }
         const gap = t.high_conf_realized != null
             ? Number(t.high_conf_realized) - Number(t.high_conf_stated) : null;
@@ -982,6 +968,34 @@ function f1Races(data) {
         + 'of places between the forecast finishing position and the real one.' };
 }
 
+// Betting rows, shared by every sport that prices its picks. A bet is only taken when
+// the model's probability beats the price, so the headline is the SELECTIVE record --
+// and the every-pick arm sits beside it, because that comparison is what shows whether
+// the selection is doing any work.
+function bettingRows(b) {
+    if (!b) return [];
+    if (!b.bets) {
+        return [['Bets placed', `none -- no side beat its price across `
+                 + `${b.skipped_no_edge} game${b.skipped_no_edge === 1 ? '' : 's'}`]];
+    }
+    const rows = [
+        [`Bet on edge, ${b.record}`,
+         `${P.formatSigned(b.pnl)} on ${P.formatMoney(b.staked)} `
+         + `(${(b.roi * 100).toFixed(1)}% ROI)`],
+        ['Hit rate vs break-even',
+         `${(b.hit_rate * 100).toFixed(1)}% against ${(b.break_even_hit_rate * 100).toFixed(1)}% needed`],
+        ['Average edge claimed', `${(b.avg_edge * 100).toFixed(1)}% at ${b.avg_price} avg price`],
+    ];
+    if (b.skipped_no_edge) {
+        rows.push(['Passed on', `${b.skipped_no_edge} game${b.skipped_no_edge === 1 ? '' : 's'} with no edge`]);
+    }
+    if (b.every_pick) {
+        rows.push(['Backing every pick instead',
+                   `${b.every_pick.record}, ${(b.every_pick.roi * 100).toFixed(1)}% ROI`]);
+    }
+    return rows;
+}
+
 // One row per week already played: the record, and what it returned.
 function nflWeeks(data) {
     const t = data.track_record;
@@ -1004,9 +1018,10 @@ function nflWeeks(data) {
         };
     });
     return { title: 'Week by week', rows,
-        note: 'Every pick was published to this page before kickoff. Return is a flat '
-            + '$100 on each pick at the last price quoted before kickoff on DraftKings, '
-            + 'FanDuel or BetMGM -- a week can be won on accuracy and lost on price.' };
+        note: 'Every pick was published to this page before kickoff. Accuracy counts all '
+            + 'of them; return counts only the ones where the model\u2019s probability '
+            + 'beat the price, flat $100 at the last quote before kickoff. A week can be '
+            + 'won on accuracy and lost on price, and often is.' };
 }
 
 // One row per slate already played: the record, and what it returned. Shared by
@@ -1032,9 +1047,9 @@ function dailySlates(data) {
         };
     });
     return { title: 'Slate by slate', rows,
-        note: 'Every pick was published to this page before first pitch. Return is a flat '
-            + '$100 on each at the last price quoted before the game on DraftKings, '
-            + 'FanDuel or BetMGM.' };
+        note: 'Every pick was published to this page before the game. Accuracy counts all '
+            + 'of them; return counts only the ones where the model\u2019s probability '
+            + 'beat the price, flat $100 at the last quote before the game.' };
 }
 
 const SESSIONS = {
