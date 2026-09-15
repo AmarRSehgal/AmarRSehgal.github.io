@@ -128,6 +128,13 @@ OPTIONS_LEVELS = {
     'status': 'armed', 'gate_mode': 'observe', 'universe_size': 574,
     'backtest': {'verdict': 'negative expectancy',
                  'note': 'Signal is ~0.019%/trade against a 0.09% cost hurdle.'},
+    'day': {'taken': 1, 'closed': 1, 'open': 0, 'rejected': 0, 'unfilled': 0,
+            'realized_pnl': -142.0, 'unrealized_pnl': 0.0, 'wins': 0, 'losses': 1},
+    'performance': {'sessions': 3, 'trades': 4, 'closed': 3, 'wins': 1, 'losses': 2,
+                    'hit_rate': None, 'realized_pnl': -318.0, 'equity': 99682.0,
+                    'starting_equity': 100000.0, 'return_pct': -0.00318},
+    'trades': [{'symbol': 'MRVL', 'side': 'long', 'status': 'closed',
+                'realized_pnl': -142.0, 'rule_zero_passed': False}],
     'levels': [{'symbol': 'MRVL', 'or_high': 223.39, 'or_low': 213.63,
                 'long_trigger': 224.85, 'short_trigger': 212.16,
                 'width_pct': 0.0438, 'gap_pct': -0.0853, 'rank': 4}],
@@ -575,6 +582,37 @@ class OptionsLevelsContract(ContractBase):
         d = copy.deepcopy(OPTIONS_LEVELS)
         d['levels'][0]['short_trigger'] = 218.00
         self.rejects('options_levels', d, 'is not below or_low')
+
+    def test_closed_trade_must_carry_a_realised_number(self):
+        """A blank where a P&L belongs reads as break-even, not as unknown."""
+        d = copy.deepcopy(OPTIONS_LEVELS)
+        d['trades'][0]['realized_pnl'] = None
+        self.rejects('options_levels', d, 'closed trade has no realized_pnl')
+
+    def test_unknown_trade_status_rejected(self):
+        d = copy.deepcopy(OPTIONS_LEVELS)
+        d['trades'][0]['status'] = 'maybe'
+        self.rejects('options_levels', d, 'not in')
+
+    def test_open_trade_needs_no_realised_number(self):
+        d = copy.deepcopy(OPTIONS_LEVELS)
+        d['trades'][0] = {'symbol': 'MRVL', 'status': 'open'}
+        self.ok('options_levels', d)
+
+    def test_hit_rate_may_be_null_while_the_sample_is_thin(self):
+        """Three trades do not have a hit rate; they have three outcomes."""
+        assert OPTIONS_LEVELS['performance']['hit_rate'] is None
+        self.ok('options_levels', OPTIONS_LEVELS)
+
+    def test_hit_rate_out_of_range_rejected(self):
+        d = copy.deepcopy(OPTIONS_LEVELS)
+        d['performance']['hit_rate'] = 1.4
+        self.rejects('options_levels', d, 'outside [0, 1]')
+
+    def test_wins_cannot_exceed_closed(self):
+        d = copy.deepcopy(OPTIONS_LEVELS)
+        d['performance']['wins'] = 9
+        self.rejects('options_levels', d, 'exceeds closed')
 
     def test_inverted_range_rejected(self):
         d = copy.deepcopy(OPTIONS_LEVELS)

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T00:27:04.589442+00:00",
+  "generated_at": "2026-09-15T00:56:04.283242+00:00",
   "as_of": "2026-09-14",
   "status": "closed",
   "account": "PA35ZGJSY8J9",
@@ -22,7 +22,6 @@
     "max_concurrent": 2
   },
   "equity": 100000.0,
-  "day_pnl": 0.0,
   "polls": 1,
   "last_poll_at": "2026-09-15T00:16:06.166095+00:00",
   "levels": [
@@ -188,20 +187,88 @@
     }
   ],
   "trades": [],
+  "brief": {
+    "session": "2026-09-14",
+    "generated_at": "2026-09-15T00:50:35.546806+00:00",
+    "ok": true,
+    "expectations": "This is a single-factor de-grossing of the AI/semi complex, not index-level risk-off: QQQ -1.65% against SPY -0.71% and IWM -0.51%, with TLT flat and GLD -1.42% \u2014 no duration bid, no flight-to-quality, just liquidation of the crowded theme after the Amodei-led AI-capability-slowdown headlines, while USO +3.37% marks a separate, unrelated energy shock. The mechanical consequence for an opening-range breakout book is that all 15 candidates are one position: intra-basket correlation today is near 1, so a watchlist of ten names sizes like a single 10x bet on SOX, and a factor reversal hits every leg at once. The second mechanism is opening-range quality \u2014 a range printed by forced unwind flow rather than price discovery has a higher false-break rate, with the first push through the range often being the tail of the liquidation rather than continuation, so give-back on the 15:50 flat is the risk, not gap direction. Third, FOMC convenes tomorrow, so short-dated IV carries event premium that will not decay today; the P&L driver is intraday realized-vs-implied on the option leg, and a mid-session grind that stops trending after the 10:15 selection bleeds theta on already-rich contracts.",
+    "regime": "rotation",
+    "exclusions": [],
+    "events": [
+      {
+        "time_et": "11:30",
+        "name": "Treasury bill auctions",
+        "detail": "13-week and 26-week bills; routine Monday, no equity-level impact"
+      },
+      {
+        "time_et": "00:00",
+        "name": "No tier-1 US macro data",
+        "detail": "Empty calendar Monday; Empire State Manufacturing is tomorrow 08:30 ET"
+      },
+      {
+        "time_et": "00:00",
+        "name": "FOMC blackout / meeting eve",
+        "detail": "Two-day FOMC begins 09/15, decision 09/16; Fed speakers silent, event premium in short-dated IV"
+      }
+    ],
+    "cost_usd": 0.7820079999999998,
+    "error": ""
+  },
+  "excluded": [],
+  "day": {
+    "taken": 0,
+    "closed": 0,
+    "open": 0,
+    "rejected": 0,
+    "unfilled": 0,
+    "realized_pnl": 0,
+    "unrealized_pnl": 0,
+    "wins": 0,
+    "losses": 0,
+    "gate_passed": 0
+  },
   "performance": {
     "since": "2026-09-14",
     "sessions": 1,
     "trades": 0,
+    "closed": 0,
+    "wins": 0,
+    "losses": 0,
+    "hit_rate": null,
     "rejected": 0,
+    "unfilled": 0,
     "starting_equity": 100000.0,
     "equity": 100000.0,
-    "realized_pnl": 0.0,
+    "realized_pnl": 0,
+    "equity_pnl": 0.0,
     "return_pct": 0.0,
+    "brief_cost_usd": 0.78,
     "equity_curve": [
       [
         "2026-09-14",
         100000.0
       ]
+    ],
+    "history": [
+      {
+        "session": "2026-09-14",
+        "equity": 100000.0,
+        "equity_open": 100000.0,
+        "watchlist": 10,
+        "polls": 1,
+        "regime": "rotation",
+        "brief_cost_usd": 0.782,
+        "taken": 0,
+        "closed": 0,
+        "open": 0,
+        "rejected": 0,
+        "unfilled": 0,
+        "realized_pnl": 0,
+        "unrealized_pnl": 0,
+        "wins": 0,
+        "losses": 0,
+        "gate_passed": 0
+      }
     ]
   },
   "gate_split": {
