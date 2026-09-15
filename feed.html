@@ -55,6 +55,10 @@
                     <div id="feed-content" class="prediction-content">
                         <p class="prediction-loading">Fetching the latest run...</p>
                     </div>
+
+                    <!-- Session-by-session record. Removed outright when a feed has no
+                         per-run series to show, so an empty heading never implies one. -->
+                    <div id="feed-sessions" class="feed-sessions"></div>
                 </div>
 
                 <aside class="feed-aside">

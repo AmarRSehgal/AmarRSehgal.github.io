@@ -38,6 +38,11 @@ FEEDS = {
     "nfl": "games", "nba": "games", "mlb": "games", "f1": "predictions",
     "real_estate": "deals", "magicformula": "ideas", "businesses": "businesses",
     "funding": "opportunities", "contracts": "lanes", "opportunities": "sources",
+    # The three live paper books. The list key is each one's FORECAST -- the positions it
+    # chose to hold, the levels it armed. Everything else in the payload (trades, day,
+    # performance, equity_curve) is kept at the top level of the record regardless, so
+    # the outcome is archived beside the call rather than in place of it.
+    "swing_book": "positions", "mf_book": "positions", "options_levels": "levels",
 }
 
 

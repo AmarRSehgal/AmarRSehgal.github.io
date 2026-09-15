@@ -32,6 +32,18 @@ current; nothing breaks if it doesn't.
 Runs are keyed on `generated_at`, so a commit that reformatted a payload without
 re-running the model does not produce a second line.
 
+## The three live books
+
+`swing_book`, `mf_book` and `options_levels` are archived here too. Their list key is the
+**forecast** -- the positions held, the levels armed -- and everything else the payload
+carries (`trades`, `day`, `performance`, `equity_curve`) is kept at the top level of each
+record, so the outcome is archived beside the call rather than in place of it.
+
+The detail page reads the *current* payload's own per-session series for its "Session
+history" panel, not these files. They serve different jobs: the panel shows what the book
+believes about itself now, and the ledger is the tamper-evident record of what it said on
+each day, sha by sha. When the two disagree, the ledger is the one that was published.
+
 ## Who reads it
 
 `nfl-prediction/track_record.py` scores the picks in `nfl.jsonl` against final scores
