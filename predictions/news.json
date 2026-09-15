@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-15T22:24:26.778117+00:00",
+  "generated_at": "2026-09-15T23:24:30.332528+00:00",
   "window_hours": 24,
-  "articles_in_window": 1994,
+  "articles_in_window": 1990,
   "collection_days": 16,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,47 +10,47 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 275,
+      "articles": 270,
       "sources": 42,
       "sentiment_direction": "mixed",
-      "surge": 1.16,
-      "sentiment_mean": -0.051,
-      "headline": "Mail-in disaster averted as Trump in angry froth after court defeat",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/us-news/2026/sep/15/trump-mail-ballot-court-defeat"
+      "surge": 1.13,
+      "sentiment_mean": -0.053,
+      "headline": "South Korean workers challenging Trump administration over Georgia raid, CNN reports",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/stock-market-news/south-korean-workers-challenging-trump-administration-over-georgia-raid-cnn-reports-4902236"
     },
     {
       "term": "president",
-      "articles": 134,
+      "articles": 130,
       "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 1.06,
-      "sentiment_mean": -0.058,
+      "surge": 1.02,
+      "sentiment_mean": -0.046,
       "headline": "Ukrainian president tells CBS News Russia targeted his plane with drones",
       "headline_source": "CBS News",
       "headline_url": "https://www.cbsnews.com/news/ukraine-russia-war-zelenskyy-cbs-interview-drones-targeted-plane-twice/"
     },
     {
       "term": "iran",
-      "articles": 80,
+      "articles": 81,
       "sources": 31,
       "sentiment_direction": "negative",
-      "surge": 0.72,
-      "sentiment_mean": -0.577,
+      "surge": 0.73,
+      "sentiment_mean": -0.579,
       "headline": "Iran war has cost the US more than $38B, budget office says",
       "headline_source": "Reddit r/news",
       "headline_url": "https://www.reddit.com/r/news/comments/1whehny/iran_war_has_cost_the_us_more_than_38b_budget/"
     },
     {
       "term": "space",
-      "articles": 43,
+      "articles": 45,
       "sources": 30,
       "sentiment_direction": "negative",
-      "surge": 2.11,
-      "sentiment_mean": -0.404,
-      "headline": "US confirms it deployed space weapons",
+      "surge": 2.17,
+      "sentiment_mean": -0.405,
+      "headline": "Pentagon confirms US has deployed weapons in space",
       "headline_source": "Sydney Morning Herald",
-      "headline_url": "https://www.smh.com.au/world/us-confirms-it-deployed-space-weapons-20260916-p60xpo.html?ref=rss&utm_medium=rss&utm_source=rss_world"
+      "headline_url": "https://www.smh.com.au/world/pentagon-confirms-us-has-deployed-weapons-in-space-20260916-p60xqp.html?ref=rss&utm_medium=rss&utm_source=rss_world"
     },
     {
       "term": "government",
@@ -58,7 +58,7 @@
       "sources": 29,
       "sentiment_direction": "mixed",
       "surge": 1.12,
-      "sentiment_mean": 0.006,
+      "sentiment_mean": 0.016,
       "headline": "How Is Hungary\u2019s New Government Doing?",
       "headline_source": "Reddit r/geopolitics",
       "headline_url": "https://www.reddit.com/r/geopolitics/comments/1wh99lm/how_is_hungarys_new_government_doing/"
@@ -68,33 +68,33 @@
       "articles": 64,
       "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 0.75,
-      "sentiment_mean": 0.065,
-      "headline": "Market Attractive But Issues Lurk, Oaktree's Poli Says",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/videos/2026-09-15/market-attractive-but-issues-lurk-oaktree-s-poli-says-video"
+      "surge": 0.76,
+      "sentiment_mean": 0.078,
+      "headline": "Wednesday's big stock stories: What\u2019s likely to move the market in the next trading session",
+      "headline_source": "CNBC World",
+      "headline_url": "https://www.cnbc.com/2026/09/15/wednesdays-big-stock-stories-whats-likely-to-move-the-market.html"
     },
     {
-      "term": "data",
-      "articles": 55,
-      "sources": 29,
-      "sentiment_direction": "mixed",
-      "surge": 0.86,
-      "sentiment_mean": -0.012,
-      "headline": "The AI data center boom is colliding with cities scarred by big industry",
-      "headline_source": "TechCrunch",
-      "headline_url": "https://techcrunch.com/2026/09/15/the-ai-data-center-boom-is-colliding-with-cities-scarred-by-big-industry/"
-    },
-    {
-      "term": "safety",
-      "articles": 56,
+      "term": "security",
+      "articles": 46,
       "sources": 28,
+      "sentiment_direction": "positive",
+      "surge": 0.9,
+      "sentiment_mean": 0.249,
+      "headline": "\u2018There might be a silver lining\u2019: My friend\u2019s wife died at 60 after a high-earning career. Can he claim her Social Security?",
+      "headline_source": "MarketWatch Top Stories",
+      "headline_url": "https://www.marketwatch.com/story/there-might-be-a-silver-lining-my-friends-wife-died-at-60-after-a-high-earning-career-can-he-claim-her-social-security-eb95210a?mod=mw_rss_topstories"
+    },
+    {
+      "term": "decision",
+      "articles": 60,
+      "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 1.44,
-      "sentiment_mean": 0.128,
-      "headline": "Nvidia boss says AI 'doesn't need new laws' as safety concerns grow",
-      "headline_source": "BBC Business",
-      "headline_url": "https://www.bbc.co.uk/news/articles/cqx2zpj4y525o?at_medium=RSS&at_campaign=rss"
+      "surge": 2.39,
+      "sentiment_mean": 0.143,
+      "headline": "Stock futures are little changed ahead of pivotal Fed rate decision: Live updates",
+      "headline_source": "CNBC World",
+      "headline_url": "https://www.cnbc.com/2026/09/15/stock-market-today-live-updates.html"
     }
   ],
   "hours_since_fetch": 0.0
