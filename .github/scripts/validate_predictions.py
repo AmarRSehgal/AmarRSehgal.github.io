@@ -121,6 +121,22 @@ SPECS = {
     'funding': (('generated_at', 'status', 'scans_seen', 'opportunities'), 'opportunities',
                 ('base', 'type', 'long_venue', 'short_venue', 'min_hold_h',
                  'hits', 'scans', 'net_apr', 'net_at_hold')),
+    # The two live paper books, on their own dedicated Alpaca paper accounts. Same
+    # shape, same checks, two feeds -- they are separate books and merging them into
+    # one payload would make the strategies inseparable, which is the entire point of
+    # running them in different accounts.
+    #
+    # `starting_equity` is required because a return with no base is unfalsifiable, and
+    # `account` because a book published under the wrong account number is worse than
+    # no book at all.
+    'swing_book': (('generated_at', 'account', 'started', 'starting_equity', 'equity',
+                    'positions'), 'positions',
+                   ('ticker', 'qty', 'avg_entry', 'price', 'market_value', 'pnl',
+                    'return_pct')),
+    'mf_book': (('generated_at', 'account', 'started', 'starting_equity', 'equity',
+                 'positions'), 'positions',
+                ('ticker', 'qty', 'avg_entry', 'price', 'market_value', 'pnl',
+                 'return_pct')),
     # Federal resale lanes from SAM.gov. The only feed here that CANNOT be regenerated
     # in CI: the daily extract carries just the currently-active notices, so recurrence
     # is visible only to a job that has been recording snapshots on one machine. That
@@ -701,6 +717,76 @@ def check_f1_entry(where, p):
     require_number(where, 'predicted_pos', p['predicted_pos'])
 
 
+# A paper book must never be published as though it were traded. Every number in
+# these feeds comes from simulated fills with no queue position, and the page has to
+# say so -- so the flag is required and required to be true, not merely allowed.
+def check_book_payload(data, sport):
+    """Payload-level checks for a live paper book."""
+    if data.get('paper') is not True:
+        raise Invalid(f'{sport}: paper must be true. These feeds are simulated fills '
+                      f'on a paper account and may not be published as anything else')
+    require_str('<payload>', 'account', data['account'])
+    check_date_string('<payload>', 'started', data['started'])
+
+    base = require_number('<payload>', 'starting_equity', data['starting_equity'])
+    equity = require_number('<payload>', 'equity', data['equity'])
+    if base <= 0:
+        raise Invalid('starting_equity must be positive -- a return with no base '
+                      'cannot be checked')
+    ret = data.get('return_pct')
+    if ret is not None:
+        derived = (equity - base) / base
+        if abs(require_number('<payload>', 'return_pct', ret) - derived) > 0.0005:
+            raise Invalid(f'return_pct={ret} disagrees with equity {equity} against '
+                          f'starting_equity {base} (={derived:.4f})')
+    excess = data.get('excess_return_pct')
+    if excess is not None and ret is not None:
+        bench = require_number('<payload>', 'benchmark_return_pct',
+                               data.get('benchmark_return_pct'))
+        if abs(excess - (ret - bench)) > 0.0005:
+            raise Invalid('excess_return_pct is not return_pct minus '
+                          'benchmark_return_pct')
+
+    curve = data.get('equity_curve')
+    if curve is not None:
+        if not isinstance(curve, list):
+            raise Invalid('equity_curve must be a list')
+        last = None
+        for i, pt in enumerate(curve):
+            if not isinstance(pt, dict) or 'date' not in pt or 'equity' not in pt:
+                raise Invalid(f'equity_curve[{i}] needs date and equity')
+            check_date_string(f'equity_curve[{i}]', 'date', pt['date'])
+            require_number(f'equity_curve[{i}]', 'equity', pt['equity'])
+            # Out-of-order points render as a line that doubles back on itself, which
+            # reads as a crash rather than as bad data.
+            if last is not None and pt['date'] < last:
+                raise Invalid(f'equity_curve[{i}].date={pt["date"]} is before the '
+                              f'previous point {last} -- the curve must be ascending')
+            last = pt['date']
+
+    # The whole reason the swing book exists is the gap between a backtest that says
+    # the strategy loses and a live result. Publishing the live number without the
+    # backtest beside it is how that framing quietly disappears.
+    if sport == 'swing_book' and data.get('backtest') is not None:
+        bt = data['backtest']
+        if not isinstance(bt, dict):
+            raise Invalid('backtest must be an object or null')
+        for key in ('strategy_return', 'benchmark_return'):
+            if key not in bt:
+                raise Invalid(f'backtest is present but missing {key!r}')
+
+
+def check_book_position(where, pos):
+    require_str(where, 'ticker', pos['ticker'])
+    for key in ('qty', 'avg_entry', 'price', 'market_value', 'pnl', 'return_pct'):
+        require_number(where, key, pos[key])
+    if pos['qty'] <= 0:
+        raise Invalid(f'{where}.qty={pos["qty"]} -- these books are long only, and a '
+                      f'zero or short quantity means the reconcile went wrong')
+    if pos['avg_entry'] <= 0 or pos['price'] <= 0:
+        raise Invalid(f'{where} has a non-positive price')
+
+
 def check_contracts_payload(data):
     """Payload-level checks for the federal-lanes feed: the counters and the `open` list.
 
@@ -914,6 +1000,8 @@ def validate(sport, data, now=None):
         check_portfolio(data.get('portfolio'))
     elif sport == 'contracts':
         check_contracts_payload(data)
+    elif sport in ('swing_book', 'mf_book'):
+        check_book_payload(data, sport)
     else:
         require_int('<payload>', 'year', data['year'])
         require_str('<payload>', 'race_name', data['race_name'])
@@ -933,6 +1021,8 @@ def validate(sport, data, now=None):
             check_source_section(where, item)
         elif sport == 'contracts':
             check_lane(where, item)
+        elif sport in ('swing_book', 'mf_book'):
+            check_book_position(where, item)
         elif sport == 'f1':
             check_f1_entry(where, item)
         elif sport == 'funding':

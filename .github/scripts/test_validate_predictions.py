@@ -108,6 +108,20 @@ CONTRACTS = {
 }
 
 
+SWING_BOOK = {
+    'generated_at': STAMP, 'account': 'PA1234ABCD', 'paper': True,
+    'strategy': 'MultiFactorV3', 'started': '2026-09-15',
+    'starting_equity': 100000.0, 'equity': 101250.0, 'cash': 12000.0,
+    'return_pct': 0.0125, 'benchmark': 'SPY', 'benchmark_return_pct': 0.0080,
+    'excess_return_pct': 0.0045, 'open_positions': 1,
+    'equity_curve': [{'date': '2026-09-15', 'equity': 100000.0},
+                     {'date': '2026-09-16', 'equity': 101250.0}],
+    'backtest': {'strategy_return': 0.482865, 'benchmark_return': 1.45555},
+    'positions': [{'ticker': 'PFE', 'qty': 300.0, 'avg_entry': 27.0, 'price': 27.72,
+                   'market_value': 8316.0, 'pnl': 216.0, 'return_pct': 0.0267}],
+}
+
+
 def game(base, **fields):
     d = copy.deepcopy(base)
     d['games'][0].update(fields)
@@ -450,6 +464,55 @@ class Portfolio(ContractBase):
         d = self.book(positions=[{'ticker': 'XYZ', 'buy_date': '2026-04-15',
                                   'open': True, 'price_unavailable': True}])
         self.ok('magicformula', d)
+
+
+
+class PaperBooks(ContractBase):
+    """Two live paper books. Every number is a simulated fill with no queue position,
+    so the rules here are mostly about not letting that get lost."""
+
+    def test_readme_example_is_valid(self):
+        self.assertEqual(len(self.ok('swing_book', payload(SWING_BOOK))), 1)
+
+    def test_same_contract_serves_both_books(self):
+        self.ok('mf_book', payload(SWING_BOOK))
+
+    def test_empty_book_is_valid(self):
+        """All cash is a real state -- MultiFactorV3 goes flat in a downtrend."""
+        self.assertEqual(self.ok('swing_book', payload(SWING_BOOK, positions=[])), [])
+
+    def test_paper_flag_must_be_present_and_true(self):
+        self.rejects('swing_book', payload(SWING_BOOK, paper=False),
+                     'may not be published as anything else')
+
+    def test_return_must_follow_from_equity_and_base(self):
+        self.rejects('swing_book', payload(SWING_BOOK, return_pct=0.5),
+                     'disagrees with equity')
+
+    def test_excess_must_be_return_minus_benchmark(self):
+        self.rejects('swing_book', payload(SWING_BOOK, excess_return_pct=0.4),
+                     'not return_pct minus')
+
+    def test_zero_starting_equity_rejected(self):
+        self.rejects('swing_book', payload(SWING_BOOK, starting_equity=0.0),
+                     'cannot be checked')
+
+    def test_descending_equity_curve_rejected(self):
+        """A curve that doubles back renders as a crash rather than as bad data."""
+        d = payload(SWING_BOOK, equity_curve=[{'date': '2026-09-16', 'equity': 1.0},
+                                              {'date': '2026-09-15', 'equity': 2.0}])
+        self.rejects('swing_book', d, 'must be ascending')
+
+    def test_short_position_rejected(self):
+        d = copy.deepcopy(payload(SWING_BOOK))
+        d['positions'][0]['qty'] = -10
+        self.rejects('swing_book', d, 'long only')
+
+    def test_backtest_must_carry_the_comparison(self):
+        """The swing book exists BECAUSE the backtest says the strategy loses.
+        Publishing the live number alone loses that framing."""
+        self.rejects('swing_book', payload(SWING_BOOK, backtest={'sharpe': 0.4}),
+                     'missing')
 
 
 if __name__ == '__main__':
