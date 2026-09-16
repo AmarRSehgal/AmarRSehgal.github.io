@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T03:00:08.501843+00:00",
+  "generated_at": "2026-09-16T04:00:08.496408+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -12,11 +12,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 24,
+      "hits": 23,
       "scans": 24,
-      "net_apr": 1097.0,
-      "net_at_hold": 1.00183,
-      "cost_bps": 42.79
+      "net_apr": 1101.24,
+      "net_at_hold": 1.0057,
+      "cost_bps": 40.97
     },
     {
       "base": "LSK",
@@ -25,11 +25,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 24,
+      "hits": 23,
       "scans": 24,
-      "net_apr": 988.54,
-      "net_at_hold": 0.90277,
-      "cost_bps": 44.35
+      "net_apr": 994.4,
+      "net_at_hold": 0.90812,
+      "cost_bps": 44.11
     },
     {
       "base": "LSK",
@@ -38,11 +38,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 23,
+      "hits": 22,
       "scans": 24,
-      "net_apr": 1213.42,
-      "net_at_hold": 1.10815,
-      "cost_bps": 43.35
+      "net_apr": 1285.63,
+      "net_at_hold": 1.17409,
+      "cost_bps": 42.72
     },
     {
       "base": "CVC",
@@ -55,20 +55,7 @@
       "scans": 24,
       "net_apr": 1005.23,
       "net_at_hold": 0.45901,
-      "cost_bps": 36.92
-    },
-    {
-      "base": "NIGHT",
-      "type": "perp-perp",
-      "long_venue": "Coinbase",
-      "short_venue": "Gate",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 22,
-      "scans": 24,
-      "net_apr": 669.59,
-      "net_at_hold": 0.6115,
-      "cost_bps": 35.97
+      "cost_bps": 37.1
     },
     {
       "base": "CVC",
@@ -81,7 +68,20 @@
       "scans": 24,
       "net_apr": 1138.4,
       "net_at_hold": 0.51982,
-      "cost_bps": 32.25
+      "cost_bps": 32.31
+    },
+    {
+      "base": "NIGHT",
+      "type": "perp-perp",
+      "long_venue": "Coinbase",
+      "short_venue": "Gate",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 21,
+      "scans": 24,
+      "net_apr": 615.1,
+      "net_at_hold": 0.56173,
+      "cost_bps": 35.97
     },
     {
       "base": "CVC",
@@ -94,7 +94,7 @@
       "scans": 24,
       "net_apr": 1006.36,
       "net_at_hold": 0.45952,
-      "cost_bps": 34.24
+      "cost_bps": 34.28
     },
     {
       "base": "ZIL",
@@ -105,9 +105,9 @@
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 303.86,
-      "net_at_hold": 0.2775,
-      "cost_bps": 31.2
+      "net_apr": 302.21,
+      "net_at_hold": 0.27599,
+      "cost_bps": 31.45
     }
   ]
 }
