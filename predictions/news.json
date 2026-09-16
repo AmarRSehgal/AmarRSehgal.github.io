@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-16T11:24:39.034405+00:00",
+  "generated_at": "2026-09-16T12:24:35.070345+00:00",
   "window_hours": 24,
-  "articles_in_window": 2392,
+  "articles_in_window": 2463,
   "collection_days": 17,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,65 +10,76 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 275,
+      "articles": 282,
       "sources": 41,
       "sentiment_direction": "mixed",
-      "surge": 1.15,
-      "sentiment_mean": -0.112,
-      "headline": "Trump's AI race with China could become the biggest mistake of our time",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/opinion/trumps-ai-race-china-could-become-biggest-mistake-our-time"
+      "surge": 1.19,
+      "sentiment_mean": -0.106,
+      "headline": "Trump EPA\u2019s arguments for letting power plants spew unlimited pollution \u2018dead wrong\u2019",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/environment/2026/sep/16/trump-epa-pollution-rollback"
     },
     {
       "term": "iran",
-      "articles": 116,
+      "articles": 120,
       "sources": 34,
       "sentiment_direction": "negative",
-      "surge": 1.1,
-      "sentiment_mean": -0.584,
-      "headline": "House votes for a third time to end Iran war in symbolic move as conflict drags on \u2013 US politics live",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/us-news/live/2026/sep/16/donald-trump-iran-russia-midterms-north-carolina-latest-news-updates"
+      "surge": 1.14,
+      "sentiment_mean": -0.568,
+      "headline": "Iran strikes damaged, destroyed hundreds of US bases across Middle East, cost $33.4b, Pentagon says",
+      "headline_source": "Reddit r/geopolitics",
+      "headline_url": "https://www.reddit.com/r/geopolitics/comments/1whvall/iran_strikes_damaged_destroyed_hundreds_of_us/"
     },
     {
       "term": "president",
-      "articles": 143,
-      "sources": 31,
+      "articles": 150,
+      "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 1.12,
-      "sentiment_mean": -0.098,
-      "headline": "Former Kosovo president Thaci gets 25 years in prison for war crimes",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/world/europe/article/3367725/former-kosovo-president-thaci-gets-25-years-prison-war-crimes?utm_source=rss_feed"
+      "surge": 1.18,
+      "sentiment_mean": -0.097,
+      "headline": "Former Kosovo president Hashim Tha\u00e7i sentenced to 25 years for 1990s war crimes",
+      "headline_source": "CBC World",
+      "headline_url": "https://www.cbc.ca/news/world/hague-sentence-former-kosovo-president-thaci-9.7345862?cmp=rss"
     },
     {
       "term": "market",
-      "articles": 81,
+      "articles": 84,
       "sources": 29,
       "sentiment_direction": "positive",
-      "surge": 1.0,
-      "sentiment_mean": 0.204,
-      "headline": "Dow Jones Futures Rise As ServiceNow, Twilio Lead 8 New Buys; Will Market Bid Bond Voyage After Fed Rate Hike?",
-      "headline_source": "Yahoo Finance",
-      "headline_url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-nasdaq-how-will-bonds-react-to-fed-rate-hike/?src=A00220&yptr=yahoo"
+      "surge": 1.05,
+      "sentiment_mean": 0.203,
+      "headline": "Illycaffe CEO on Coffee Prices, US Market, IPO Prospects",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-09-16/illycaffe-ceo-on-coffee-prices-us-market-ipo-prospects-video"
     },
     {
       "term": "decision",
-      "articles": 74,
+      "articles": 81,
       "sources": 29,
       "sentiment_direction": "positive",
-      "surge": 2.69,
-      "sentiment_mean": 0.223,
-      "headline": "Gold price today, Wednesday, September 16, 2026: Gold holds in the $4,300 range, awaiting the Fed's decision",
-      "headline_source": "Yahoo Finance",
-      "headline_url": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-wednesday-september-16-2026-gold-holds-in-the-4300-range-awaiting-the-feds-decision-104038147.html"
+      "surge": 3.0,
+      "sentiment_mean": 0.187,
+      "headline": "Bizarre volatility bet in the options pits is a head scratcher ahead of Fed rate decision",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/09/16/bizarre-volatility-bet-in-the-options-pits-is-a-head-scratcher-ahead-of-fed-rate-decision.html"
+    },
+    {
+      "term": "security",
+      "articles": 58,
+      "sources": 29,
+      "sentiment_direction": "positive",
+      "surge": 1.15,
+      "sentiment_mean": 0.188,
+      "headline": "Arlo launches AI-powered security service with threat assessment",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/company-news/arlo-launches-aipowered-security-service-with-threat-assessment-93CH-4903614"
     },
     {
       "term": "house",
       "articles": 74,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 1.42,
+      "surge": 1.45,
       "sentiment_mean": -0.137,
       "headline": "House votes for a third time to end Iran war in symbolic move as conflict drags on \u2013 US politics live",
       "headline_source": "Guardian World",
@@ -76,25 +87,14 @@
     },
     {
       "term": "canada",
-      "articles": 60,
+      "articles": 64,
       "sources": 28,
       "sentiment_direction": "positive",
-      "surge": 1.96,
-      "sentiment_mean": 0.232,
-      "headline": "Dollarama raises annual sales forecast in Canada as inflation-hit shoppers trade down",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/dollarama-raises-annual-canadian-sales-forecast-4903378"
-    },
-    {
-      "term": "government",
-      "articles": 71,
-      "sources": 27,
-      "sentiment_direction": "mixed",
-      "surge": 1.08,
-      "sentiment_mean": -0.014,
-      "headline": "Japan Gas Association welcomes government\u2019s LNG deal with Petronas",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/commodities-news/japan-gas-association-welcomes-governments-lng-deal-with-petronas-93CH-4903438"
+      "surge": 2.11,
+      "sentiment_mean": 0.208,
+      "headline": "EU offers Canada associate membership amid trade war with Trump",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/world/europe/eu-opens-door-for-canada-amid-trade-war-with-trump-proposes-first-ever-associate-membership/articleshow/134286827.cms"
     }
   ],
   "hours_since_fetch": 0.0
