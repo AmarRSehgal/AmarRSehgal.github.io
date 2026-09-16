@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T07:00:07.174852+00:00",
+  "generated_at": "2026-09-16T08:00:10.503197+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 1101.24,
-      "net_at_hold": 1.0057,
-      "cost_bps": 40.67
+      "net_apr": 1080.42,
+      "net_at_hold": 0.98669,
+      "cost_bps": 40.97
     },
     {
       "base": "LSK",
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 994.4,
-      "net_at_hold": 0.90812,
-      "cost_bps": 44.11
+      "net_apr": 982.68,
+      "net_at_hold": 0.89742,
+      "cost_bps": 44.59
     },
     {
       "base": "LSK",
@@ -40,9 +40,9 @@
       "min_hold_h": 8,
       "hits": 22,
       "scans": 24,
-      "net_apr": 1285.63,
-      "net_at_hold": 1.17409,
-      "cost_bps": 42.72
+      "net_apr": 1181.11,
+      "net_at_hold": 1.07864,
+      "cost_bps": 43.5
     },
     {
       "base": "CVC",
@@ -56,19 +56,6 @@
       "net_apr": 1138.4,
       "net_at_hold": 0.51982,
       "cost_bps": 32.32
-    },
-    {
-      "base": "ZIL",
-      "type": "perp-perp",
-      "long_venue": "OKX",
-      "short_venue": "Bybit",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 20,
-      "scans": 24,
-      "net_apr": 241.01,
-      "net_at_hold": 0.2201,
-      "cost_bps": 32.85
     },
     {
       "base": "CVC",
@@ -97,17 +84,17 @@
       "cost_bps": 39.26
     },
     {
-      "base": "NIGHT",
+      "base": "ZIL",
       "type": "perp-perp",
-      "long_venue": "Coinbase",
-      "short_venue": "Gate",
+      "long_venue": "OKX",
+      "short_venue": "Bybit",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 18,
+      "hits": 19,
       "scans": 24,
-      "net_apr": 498.25,
-      "net_at_hold": 0.45502,
-      "cost_bps": 35.97
+      "net_apr": 228.73,
+      "net_at_hold": 0.20889,
+      "cost_bps": 34.01
     }
   ]
 }
