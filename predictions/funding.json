@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T04:00:08.496408+00:00",
+  "generated_at": "2026-09-16T05:00:10.955537+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -16,7 +16,7 @@
       "scans": 24,
       "net_apr": 1101.24,
       "net_at_hold": 1.0057,
-      "cost_bps": 40.97
+      "cost_bps": 40.69
     },
     {
       "base": "LSK",
@@ -29,7 +29,7 @@
       "scans": 24,
       "net_apr": 994.4,
       "net_at_hold": 0.90812,
-      "cost_bps": 44.11
+      "cost_bps": 42.72
     },
     {
       "base": "LSK",
@@ -42,20 +42,7 @@
       "scans": 24,
       "net_apr": 1285.63,
       "net_at_hold": 1.17409,
-      "cost_bps": 42.72
-    },
-    {
-      "base": "CVC",
-      "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Bybit",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 22,
-      "scans": 24,
-      "net_apr": 1005.23,
-      "net_at_hold": 0.45901,
-      "cost_bps": 37.1
+      "cost_bps": 41.36
     },
     {
       "base": "CVC",
@@ -68,7 +55,20 @@
       "scans": 24,
       "net_apr": 1138.4,
       "net_at_hold": 0.51982,
-      "cost_bps": 32.31
+      "cost_bps": 32.32
+    },
+    {
+      "base": "CVC",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "Bybit",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 21,
+      "scans": 24,
+      "net_apr": 1027.18,
+      "net_at_hold": 0.46903,
+      "cost_bps": 37.17
     },
     {
       "base": "NIGHT",
@@ -77,24 +77,11 @@
       "short_venue": "Gate",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 21,
-      "scans": 24,
-      "net_apr": 615.1,
-      "net_at_hold": 0.56173,
-      "cost_bps": 35.97
-    },
-    {
-      "base": "CVC",
-      "type": "perp-perp",
-      "long_venue": "KuCoin",
-      "short_venue": "Bybit",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
       "hits": 20,
       "scans": 24,
-      "net_apr": 1006.36,
-      "net_at_hold": 0.45952,
-      "cost_bps": 34.28
+      "net_apr": 562.33,
+      "net_at_hold": 0.51355,
+      "cost_bps": 35.97
     },
     {
       "base": "ZIL",
@@ -105,9 +92,22 @@
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 302.21,
-      "net_at_hold": 0.27599,
-      "cost_bps": 31.45
+      "net_apr": 277.52,
+      "net_at_hold": 0.25344,
+      "cost_bps": 32.85
+    },
+    {
+      "base": "CVC",
+      "type": "perp-perp",
+      "long_venue": "KuCoin",
+      "short_venue": "Bybit",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 19,
+      "scans": 24,
+      "net_apr": 1069.06,
+      "net_at_hold": 0.48815,
+      "cost_bps": 34.31
     }
   ]
 }
