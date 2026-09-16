@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T23:00:09.738454+00:00",
+  "generated_at": "2026-09-16T00:00:10.662138+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -29,7 +29,7 @@
       "scans": 24,
       "net_apr": 968.07,
       "net_at_hold": 0.88408,
-      "cost_bps": 44.35
+      "cost_bps": 43.68
     },
     {
       "base": "NIGHT",
@@ -42,7 +42,7 @@
       "scans": 24,
       "net_apr": 684.17,
       "net_at_hold": 0.62482,
-      "cost_bps": 35.96
+      "cost_bps": 35.97
     },
     {
       "base": "LSK",
@@ -66,22 +66,9 @@
       "min_hold_h": 4,
       "hits": 22,
       "scans": 24,
-      "net_apr": 1007.89,
-      "net_at_hold": 0.46022,
-      "cost_bps": 35.17
-    },
-    {
-      "base": "NIGHT",
-      "type": "perp-perp",
-      "long_venue": "Coinbase",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 22,
-      "scans": 24,
-      "net_apr": 569.1,
-      "net_at_hold": 0.51972,
-      "cost_bps": 55.22
+      "net_apr": 1005.23,
+      "net_at_hold": 0.45901,
+      "cost_bps": 35.08
     },
     {
       "base": "CVC",
@@ -94,7 +81,20 @@
       "scans": 24,
       "net_apr": 1145.29,
       "net_at_hold": 0.52296,
-      "cost_bps": 32.25
+      "cost_bps": 32.24
+    },
+    {
+      "base": "NIGHT",
+      "type": "perp-perp",
+      "long_venue": "Coinbase",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 21,
+      "scans": 24,
+      "net_apr": 594.49,
+      "net_at_hold": 0.54291,
+      "cost_bps": 55.24
     },
     {
       "base": "ZIL",
@@ -105,9 +105,9 @@
       "min_hold_h": 8,
       "hits": 21,
       "scans": 24,
-      "net_apr": 328.92,
-      "net_at_hold": 0.30038,
-      "cost_bps": 31.21
+      "net_apr": 322.96,
+      "net_at_hold": 0.29494,
+      "cost_bps": 31.69
     }
   ]
 }
