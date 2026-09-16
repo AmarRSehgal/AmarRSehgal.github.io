@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-16T22:24:35.550686+00:00",
+  "generated_at": "2026-09-16T23:24:39.775773+00:00",
   "window_hours": 24,
-  "articles_in_window": 2717,
+  "articles_in_window": 2720,
   "collection_days": 17,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,91 +10,91 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 256,
+      "articles": 258,
       "sources": 39,
       "sentiment_direction": "mixed",
-      "surge": 1.07,
-      "sentiment_mean": -0.111,
-      "headline": "Trump administration can proceed with homelessness program overhaul, US court rules",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/economy-news/trump-administration-can-proceed-with-homelessness-program-overhaul-us-court-rules-4904643"
-    },
-    {
-      "term": "interest",
-      "articles": 112,
-      "sources": 34,
-      "sentiment_direction": "positive",
-      "surge": 2.66,
-      "sentiment_mean": 0.441,
-      "headline": "US Federal Reserve defies Trump with interest rate hike",
-      "headline_source": "France24",
-      "headline_url": "http://www.france24.com/en/us-federal-reserve-defies-trump-with-interest-rate-hike"
+      "surge": 1.08,
+      "sentiment_mean": -0.098,
+      "headline": "Park Service Steamrolls Through Review of Trump\u2019s Arch",
+      "headline_source": "NYT Politics",
+      "headline_url": "https://www.nytimes.com/2026/09/16/upshot/trump-arch-washington.html"
     },
     {
       "term": "house",
-      "articles": 109,
+      "articles": 129,
+      "sources": 34,
+      "sentiment_direction": "negative",
+      "surge": 2.7,
+      "sentiment_mean": -0.164,
+      "headline": "House passes bill to shield Americans from data center energy costs",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/news/house-bill-data-center-energy-costs/"
+    },
+    {
+      "term": "interest",
+      "articles": 120,
+      "sources": 34,
+      "sentiment_direction": "positive",
+      "surge": 2.84,
+      "sentiment_mean": 0.451,
+      "headline": "Interest rates hold expected but Bank of England facing tough choices",
+      "headline_source": "BBC Business",
+      "headline_url": "https://www.bbc.co.uk/news/articles/cm4gjrxez1q0o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "term": "iran",
+      "articles": 114,
       "sources": 33,
       "sentiment_direction": "negative",
-      "surge": 2.28,
-      "sentiment_mean": -0.219,
-      "headline": "House holds billionaire Leon Black in contempt of Congress",
-      "headline_source": "NPR News",
-      "headline_url": "https://www.npr.org/2026/09/16/nx-s1-5954258/house-holds-billionaire-leon-black-in-contempt-of-congress"
+      "surge": 1.09,
+      "sentiment_mean": -0.554,
+      "headline": "House passes Russia and Iran sanctions bill championed by Sen. Lindsey Graham",
+      "headline_source": "ABC News",
+      "headline_url": "https://abcnews.com/Politics/house-passes-russia-iran-sanctions-bill-championed-sen/story?id=136510615"
     },
     {
       "term": "president",
-      "articles": 154,
+      "articles": 158,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 1.2,
-      "sentiment_mean": -0.125,
+      "surge": 1.25,
+      "sentiment_mean": -0.136,
       "headline": "America Counting On Ignorant, Inattentive President To Save Us From Rogue AI",
       "headline_source": "Reddit r/technology",
       "headline_url": "https://www.reddit.com/r/technology/comments/1wi8l4t/america_counting_on_ignorant_inattentive/"
     },
     {
-      "term": "iran",
-      "articles": 111,
-      "sources": 32,
-      "sentiment_direction": "negative",
-      "surge": 1.06,
-      "sentiment_mean": -0.566,
-      "headline": "Expert: Images of damaged U.S. bases in Middle East show Iran \"getting help from Russia and China\"",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/expert-images-damaged-us-bases-mideast-iran-getting-help-russia-china/"
-    },
-    {
       "term": "inflation",
-      "articles": 73,
+      "articles": 78,
       "sources": 31,
-      "sentiment_direction": "mixed",
-      "surge": 1.66,
-      "sentiment_mean": 0.137,
-      "headline": "AI Buildout Hits Inflation as Fed Hikes Rates",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/videos/2026-09-16/ai-buildout-hits-inflation-as-fed-hikes-rates-video"
+      "sentiment_direction": "positive",
+      "surge": 1.76,
+      "sentiment_mean": 0.154,
+      "headline": "Fed raises rates in search of \u2018timelier\u2019 drop in inflation, sees more tightening ahead",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/business/2026/09/17/economy/fed-raises-rates-inflation/"
     },
     {
-      "term": "federal",
-      "articles": 103,
+      "term": "data",
+      "articles": 70,
+      "sources": 31,
+      "sentiment_direction": "positive",
+      "surge": 1.13,
+      "sentiment_mean": 0.18,
+      "headline": "House passes bill to shield Americans from data center energy costs",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/news/house-bill-data-center-energy-costs/"
+    },
+    {
+      "term": "rates",
+      "articles": 111,
       "sources": 30,
       "sentiment_direction": "positive",
-      "surge": 2.52,
-      "sentiment_mean": 0.18,
-      "headline": "US Federal Reserve defies Trump with interest rate hike",
-      "headline_source": "France24",
-      "headline_url": "http://www.france24.com/en/us-federal-reserve-defies-trump-with-interest-rate-hike"
-    },
-    {
-      "term": "prices",
-      "articles": 67,
-      "sources": 30,
-      "sentiment_direction": "mixed",
-      "surge": 0.88,
-      "sentiment_mean": -0.079,
-      "headline": "'How are we gonna get through this?' Many Americans are struggling as prices rise",
-      "headline_source": "ABC News",
-      "headline_url": "https://abcnews.com/US/gonna-americans-face-tough-decisions-diesel-gas-prices/story?id=136503928"
+      "surge": 2.84,
+      "sentiment_mean": 0.329,
+      "headline": "Interest rates hold expected but Bank of England facing tough choices",
+      "headline_source": "BBC Business",
+      "headline_url": "https://www.bbc.co.uk/news/articles/cm4gjrxez1q0o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "hours_since_fetch": 0.0
