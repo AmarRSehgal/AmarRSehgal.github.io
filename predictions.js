@@ -1061,6 +1061,18 @@ function olLevels(data) {
     }).join('');
 }
 
+// What the bell decided for this position, and why. A close is as much a decision as a
+// hold, so both are shown -- a page that only reports holds makes the gate look like it
+// never fires.
+function olHoldNote(t) {
+    const h = t.hold_decision;
+    if (!h) return '';
+    const ev = h.event && h.event.kind && h.event.kind !== 'none'
+        ? ` [${esc(h.event.kind)}: ${esc(h.event.detail || '')}]` : '';
+    const label = h.hold ? 'held overnight' : 'closed at the bell';
+    return `<div class="nba-meta">${esc(label)} &mdash; ${esc(h.reason || '')}${ev}</div>`;
+}
+
 function olTrades(data) {
     const taken = (data.trades || []).filter(t => t.status !== 'rejected');
     if (!taken.length) return '';
@@ -1090,6 +1102,7 @@ function olTrades(data) {
                     <div class="nba-meta">${esc(facts.join(' | '))}</div>
                     ${plan ? `<div class="nba-meta">${plan}</div>` : ''}
                     ${t.thesis ? `<div class="nba-meta"><em>${esc(t.thesis)}</em></div>` : ''}
+                    ${olHoldNote(t)}
                     <div class="nba-meta">${esc(gate)}</div>
                 </div>
                 <div class="nba-pick">
