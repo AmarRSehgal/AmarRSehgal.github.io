@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T14:00:10.608916+00:00",
+  "generated_at": "2026-09-16T15:00:09.628349+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -12,11 +12,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 22,
+      "hits": 21,
       "scans": 24,
-      "net_apr": 673.49,
-      "net_at_hold": 0.61506,
-      "cost_bps": 40.82
+      "net_apr": 664.49,
+      "net_at_hold": 0.60684,
+      "cost_bps": 40.67
     },
     {
       "base": "CVC",
@@ -25,11 +25,11 @@
       "short_venue": "Bybit",
       "long_instrument": "perp",
       "min_hold_h": 4,
-      "hits": 21,
+      "hits": 20,
       "scans": 24,
-      "net_apr": 432.24,
-      "net_at_hold": 0.19737,
-      "cost_bps": 33.0
+      "net_apr": 353.47,
+      "net_at_hold": 0.1614,
+      "cost_bps": 33.07
     },
     {
       "base": "LSK",
@@ -38,24 +38,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 20,
-      "scans": 24,
-      "net_apr": 626.7,
-      "net_at_hold": 0.57233,
-      "cost_bps": 43.42
-    },
-    {
-      "base": "LSK",
-      "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 772.34,
-      "net_at_hold": 0.70533,
-      "cost_bps": 42.09
+      "net_apr": 621.84,
+      "net_at_hold": 0.56789,
+      "cost_bps": 42.72
     },
     {
       "base": "MTL",
@@ -66,8 +53,8 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 311.82,
-      "net_at_hold": 0.28477,
+      "net_apr": 297.83,
+      "net_at_hold": 0.27199,
       "cost_bps": 30.0
     },
     {
@@ -81,7 +68,20 @@
       "scans": 24,
       "net_apr": 197.1,
       "net_at_hold": 0.18,
-      "cost_bps": 32.42
+      "cost_bps": 32.37
+    },
+    {
+      "base": "LSK",
+      "type": "perp-perp",
+      "long_venue": "Binance",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 771.35,
+      "net_at_hold": 0.70443,
+      "cost_bps": 41.21
     }
   ]
 }
