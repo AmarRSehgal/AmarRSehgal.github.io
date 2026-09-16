@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T17:25:27.929416+00:00",
+  "generated_at": "2026-09-16T17:30:34.503499+00:00",
   "as_of": "2026-09-16",
   "status": "in_position",
   "account": "PA35ZGJSY8J9",
@@ -22,9 +22,9 @@
     "max_concurrent": 2,
     "max_deployed": 4000.0
   },
-  "equity": 98744.2,
-  "polls": 36,
-  "last_poll_at": "2026-09-16T17:25:25.637289+00:00",
+  "equity": 98774.2,
+  "polls": 37,
+  "last_poll_at": "2026-09-16T17:30:31.849121+00:00",
   "levels": [
     {
       "symbol": "JBHT",
@@ -844,7 +844,7 @@
       "exit_order_id": null,
       "exit_fill": null,
       "realized_pnl": null,
-      "unrealized_pnl": -140.0,
+      "unrealized_pnl": -110.0,
       "option_symbol": "COHR261002C00285000",
       "strike": 285.0,
       "expiry": "2026-10-02",
@@ -873,7 +873,7 @@
       "detected_at": "2026-09-16T16:54:34.361025+00:00",
       "filled_contracts": 1,
       "entry_filled_at": "2026-09-16T16:54:36.56409194Z",
-      "market_value": 1810.0,
+      "market_value": 1840.0,
       "avg_entry_price": 19.5
     }
   ],
@@ -898,7 +898,7 @@
     "rejected": 0,
     "unfilled": 0,
     "realized_pnl": 0,
-    "unrealized_pnl": -140.0,
+    "unrealized_pnl": -110.0,
     "wins": 0,
     "losses": 0,
     "gate_passed": 1
@@ -914,10 +914,10 @@
     "rejected": 0,
     "unfilled": 0,
     "starting_equity": 100000.0,
-    "equity": 98744.2,
+    "equity": 98774.2,
     "realized_pnl": -1124.8,
-    "equity_pnl": -1255.8,
-    "return_pct": -0.01255800000000003,
+    "equity_pnl": -1225.8,
+    "return_pct": -0.01225800000000003,
     "brief_cost_usd": 0.78,
     "equity_curve": [
       [
@@ -930,7 +930,7 @@
       ],
       [
         "2026-09-16",
-        98744.2
+        98774.2
       ]
     ],
     "history": [
@@ -975,10 +975,10 @@
       },
       {
         "session": "2026-09-16",
-        "equity": 98744.2,
+        "equity": 98774.2,
         "equity_open": 98884.23,
         "watchlist": 8,
-        "polls": 36,
+        "polls": 37,
         "regime": "",
         "brief_cost_usd": 0.0,
         "taken": 1,
@@ -988,7 +988,7 @@
         "rejected": 0,
         "unfilled": 0,
         "realized_pnl": 0,
-        "unrealized_pnl": -140.0,
+        "unrealized_pnl": -110.0,
         "wins": 0,
         "losses": 0,
         "gate_passed": 1
