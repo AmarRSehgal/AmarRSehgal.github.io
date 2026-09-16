@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T17:00:10.711144+00:00",
+  "generated_at": "2026-09-16T18:00:12.286874+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -12,11 +12,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 19,
+      "hits": 18,
       "scans": 24,
-      "net_apr": 461.37,
-      "net_at_hold": 0.42134,
-      "cost_bps": 40.97
+      "net_apr": 562.93,
+      "net_at_hold": 0.51409,
+      "cost_bps": 40.82
     },
     {
       "base": "CVC",
@@ -43,19 +43,6 @@
       "net_apr": 252.67,
       "net_at_hold": 0.23075,
       "cost_bps": 30.0
-    },
-    {
-      "base": "MTL",
-      "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 187.41,
-      "net_at_hold": 0.17115,
-      "cost_bps": 32.13
     },
     {
       "base": "FOLKS",
