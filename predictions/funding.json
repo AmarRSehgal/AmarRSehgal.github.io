@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T02:00:10.240177+00:00",
+  "generated_at": "2026-09-16T03:00:08.501843+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -27,8 +27,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 968.07,
-      "net_at_hold": 0.88408,
+      "net_apr": 988.54,
+      "net_at_hold": 0.90277,
       "cost_bps": 44.35
     },
     {
@@ -45,19 +45,6 @@
       "cost_bps": 43.35
     },
     {
-      "base": "NIGHT",
-      "type": "perp-perp",
-      "long_venue": "Coinbase",
-      "short_venue": "Gate",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 23,
-      "scans": 24,
-      "net_apr": 724.09,
-      "net_at_hold": 0.66127,
-      "cost_bps": 35.97
-    },
-    {
       "base": "CVC",
       "type": "perp-perp",
       "long_venue": "Bitget",
@@ -71,6 +58,19 @@
       "cost_bps": 36.92
     },
     {
+      "base": "NIGHT",
+      "type": "perp-perp",
+      "long_venue": "Coinbase",
+      "short_venue": "Gate",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 22,
+      "scans": 24,
+      "net_apr": 669.59,
+      "net_at_hold": 0.6115,
+      "cost_bps": 35.97
+    },
+    {
       "base": "CVC",
       "type": "perp-perp",
       "long_venue": "Binance",
@@ -79,8 +79,8 @@
       "min_hold_h": 4,
       "hits": 21,
       "scans": 24,
-      "net_apr": 1145.29,
-      "net_at_hold": 0.52296,
+      "net_apr": 1138.4,
+      "net_at_hold": 0.51982,
       "cost_bps": 32.25
     },
     {
@@ -92,8 +92,8 @@
       "min_hold_h": 4,
       "hits": 20,
       "scans": 24,
-      "net_apr": 1088.16,
-      "net_at_hold": 0.49688,
+      "net_apr": 1006.36,
+      "net_at_hold": 0.45952,
       "cost_bps": 34.24
     },
     {
@@ -105,9 +105,9 @@
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 305.32,
-      "net_at_hold": 0.27883,
-      "cost_bps": 31.45
+      "net_apr": 303.86,
+      "net_at_hold": 0.2775,
+      "cost_bps": 31.2
     }
   ]
 }
