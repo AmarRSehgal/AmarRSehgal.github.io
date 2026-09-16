@@ -1,49 +1,10 @@
 {
-  "generated_at": "2026-09-16T18:00:12.286874+00:00",
+  "generated_at": "2026-09-16T19:00:10.200863+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
-    {
-      "base": "LSK",
-      "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 562.93,
-      "net_at_hold": 0.51409,
-      "cost_bps": 40.82
-    },
-    {
-      "base": "CVC",
-      "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "Bybit",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 270.82,
-      "net_at_hold": 0.12366,
-      "cost_bps": 33.2
-    },
-    {
-      "base": "MTL",
-      "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 252.67,
-      "net_at_hold": 0.23075,
-      "cost_bps": 30.0
-    },
     {
       "base": "FOLKS",
       "type": "perp-perp",
@@ -53,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 26.09,
-      "net_at_hold": 0.02382,
+      "net_apr": 28.67,
+      "net_at_hold": 0.02618,
       "cost_bps": 20.0
     }
   ]
