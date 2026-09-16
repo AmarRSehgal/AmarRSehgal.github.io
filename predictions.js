@@ -1033,11 +1033,23 @@ function olLevels(data) {
         const facts = [`OR ${Number(l.or_low).toFixed(2)}-${Number(l.or_high).toFixed(2)}`,
                        `${(Number(l.width_pct) * 100).toFixed(2)}% wide`,
                        `gap ${l.gap_pct >= 0 ? '+' : ''}${(Number(l.gap_pct) * 100).toFixed(2)}%`];
+        // Where a break in each direction would be heading. Published before any trade
+        // exists, so the page shows the idea rather than only reporting it afterwards.
+        const aim = [];
+        if (l.target_long != null) {
+            aim.push(`up &rarr; ${Number(l.target_long).toFixed(2)} `
+                   + `(${esc(l.target_long_name)}, ${(Number(l.target_long_pct) * 100).toFixed(2)}%)`);
+        }
+        if (l.target_short != null) {
+            aim.push(`down &rarr; ${Number(l.target_short).toFixed(2)} `
+                   + `(${esc(l.target_short_name)}, ${(Number(l.target_short_pct) * 100).toFixed(2)}%)`);
+        }
         return `
             <div class="nba-game">
                 <div class="nba-matchup">
                     <div class="nba-teams"><span class="pick-team">${esc(l.symbol)}</span></div>
                     <div class="nba-meta">${esc(facts.join(' | '))}</div>
+                    ${aim.length ? `<div class="nba-meta">${aim.join(' &nbsp;|&nbsp; ')}</div>` : ''}
                 </div>
                 <div class="nba-pick">
                     <div class="nba-pick-label">long above / short below</div>
@@ -1061,12 +1073,23 @@ function olTrades(data) {
                        t.entry_fill != null ? `in ${Number(t.entry_fill).toFixed(2)}` : 'entry pending',
                        t.exit_fill != null ? `out ${Number(t.exit_fill).toFixed(2)}` : ''].filter(Boolean);
         const gate = t.rule_zero_passed ? 'Rule Zero passed' : 'Rule Zero FAILED';
+        // The exit plan was fixed before the order went in and is never revised, so the
+        // thesis shown here is the one the trade was actually taken on -- not a
+        // reconstruction after the outcome was known.
+        const plan = (t.plan_target != null && t.plan_stop != null)
+            ? `target ${Number(t.plan_target).toFixed(2)}`
+              + `${t.target_level ? ` (${esc(t.target_level)})` : ''}`
+              + ` &middot; stop ${Number(t.plan_stop).toFixed(2)}`
+              + `${t.reward_risk != null ? ` &middot; R:R ${Number(t.reward_risk).toFixed(2)}` : ''}`
+            : '';
         return `
             <div class="nba-game">
                 <div class="nba-matchup">
                     <div class="nba-teams"><span class="pick-team">${esc(t.symbol)}</span>
                         <span class="idea-name">${esc(t.exit_reason || t.status)}</span></div>
                     <div class="nba-meta">${esc(facts.join(' | '))}</div>
+                    ${plan ? `<div class="nba-meta">${plan}</div>` : ''}
+                    ${t.thesis ? `<div class="nba-meta"><em>${esc(t.thesis)}</em></div>` : ''}
                     <div class="nba-meta">${esc(gate)}</div>
                 </div>
                 <div class="nba-pick">
@@ -1124,7 +1147,14 @@ function renderOptionsLevels(data) {
         gateLine = ` Too few closed trades (${(g.passed_n || 0) + (g.failed_n || 0)}) to say `
                  + `whether the Rule Zero gate discriminates.`;
     }
+    const findings = (b.findings || []).map(f =>
+        `<li><strong>${esc(f.constraint)}</strong> &mdash; ${esc(f.fix)}: ${esc(f.result)}</li>`
+    ).join('');
     return olBrief(data) + olLevels(data) + olTrades(data) + olPerformance(data)
+        + (findings ? `<div class="prediction-note"><strong>What the backtest found</strong>`
+            + `<ul>${findings}</ul>Each fix is real and uncovers the next binding `
+            + `constraint; the total never crosses zero. That is what a strategy with no `
+            + `edge looks like from the inside.</div>` : '')
         + `<div class="prediction-note">`
         + `<strong>This strategy tested negative.</strong> A sweep of ${esc(b.sets_swept)} `
         + `parameter sets over ${esc(b.triggers_tested)} opening-range breaks (2021-2026) put `
