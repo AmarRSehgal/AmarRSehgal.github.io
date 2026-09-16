@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-16T09:24:38.671885+00:00",
+  "generated_at": "2026-09-16T10:24:37.408186+00:00",
   "window_hours": 24,
-  "articles_in_window": 2241,
+  "articles_in_window": 2314,
   "collection_days": 17,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,58 +10,69 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 263,
+      "articles": 268,
       "sources": 42,
       "sentiment_direction": "mixed",
-      "surge": 1.09,
-      "sentiment_mean": -0.109,
-      "headline": "Is Donald 'drill, baby, drill' Trump helping the world transition away from oil?",
-      "headline_source": "CBC World",
-      "headline_url": "https://www.cbc.ca/news/business/renewable-energy-global-transition-volatility-9.7342800?cmp=rss"
+      "surge": 1.11,
+      "sentiment_mean": -0.112,
+      "headline": "Trump Bars Some South Africans Over Claims of Anti-White Discrimination",
+      "headline_source": "NYT World",
+      "headline_url": "https://www.nytimes.com/2026/09/16/world/africa/trump-visas-south-africa.html"
     },
     {
       "term": "iran",
-      "articles": 109,
-      "sources": 33,
+      "articles": 112,
+      "sources": 34,
       "sentiment_direction": "negative",
-      "surge": 1.01,
-      "sentiment_mean": -0.616,
-      "headline": "How 9/11 Helped Create Regional Clout for Iran",
-      "headline_source": "NYT World",
-      "headline_url": "https://www.nytimes.com/2026/09/16/world/middleeast/sept-11-iran-islamic-state-iraq.html"
+      "surge": 1.04,
+      "sentiment_mean": -0.593,
+      "headline": "\u2018Exercise restraint\u2019: China urges Iran, US to reopen Strait of Hormuz",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/world/middle-east/exercise-restraint-china-urges-iran-us-to-reopen-strait-of-hormuz/articleshow/134283849.cms"
     },
     {
       "term": "president",
-      "articles": 126,
-      "sources": 32,
+      "articles": 137,
+      "sources": 31,
       "sentiment_direction": "mixed",
+      "surge": 1.07,
+      "sentiment_mean": -0.099,
+      "headline": "Former Kosovo president Thaci gets 25 years in prison for war crimes",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/world/europe/article/3367725/former-kosovo-president-thaci-gets-25-years-prison-war-crimes?utm_source=rss_feed"
+    },
+    {
+      "term": "market",
+      "articles": 79,
+      "sources": 29,
+      "sentiment_direction": "positive",
       "surge": 0.97,
-      "sentiment_mean": -0.067,
-      "headline": "EU opens door for Canada to become first associate member, EU Commission president says",
-      "headline_source": "Reddit r/worldnews",
-      "headline_url": "https://www.reddit.com/r/worldnews/comments/1whrj6w/eu_opens_door_for_canada_to_become_first/"
+      "sentiment_mean": 0.186,
+      "headline": "German drama 'Blindspot Berlin' revisits 2016 Christmas market attack",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/german-drama-blindspot-berlin-revisits-2016-christmas-market-attack/a-79281162?maca=en-rss-en-all-1573-rdf"
+    },
+    {
+      "term": "decision",
+      "articles": 74,
+      "sources": 29,
+      "sentiment_direction": "positive",
+      "surge": 2.71,
+      "sentiment_mean": 0.205,
+      "headline": "Mortgage and refinance rates today, Wednesday, September 16, 2026: Rates ease somewhat ahead of the Fed's rate decision",
+      "headline_source": "Yahoo Finance",
+      "headline_url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-and-refinance-rates-today-wednesday-september-16-2026-rates-ease-somewhat-ahead-of-the-feds-rate-decision-100000213.html"
     },
     {
       "term": "security",
       "articles": 54,
-      "sources": 31,
-      "sentiment_direction": "positive",
-      "surge": 1.04,
-      "sentiment_mean": 0.291,
-      "headline": "Security Guards Offer Protection, But Get Paid Little in Return",
-      "headline_source": "NYT Business",
-      "headline_url": "https://www.nytimes.com/2026/09/16/business/security-guard-danger-pay.html"
-    },
-    {
-      "term": "decision",
-      "articles": 68,
       "sources": 29,
       "sentiment_direction": "positive",
-      "surge": 2.49,
-      "sentiment_mean": 0.194,
-      "headline": "Wall St futures edge higher in countdown to Fed decision",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/economy-news/wall-st-futures-edge-higher-in-countdown-to-fed-decision-4903179"
+      "surge": 1.05,
+      "sentiment_mean": 0.225,
+      "headline": "Charlie Kirk's family alleges UVU knew of rooftop security risk before his assassination: legal filing",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/us/charlie-kirk-family-alleges-uvu-knew-rooftop-security-risk-before-assassination-legal-filing"
     },
     {
       "term": "space",
@@ -75,26 +86,15 @@
       "headline_url": "https://www.npr.org/2026/09/16/nx-s1-5970937/us-weapons-space"
     },
     {
-      "term": "market",
-      "articles": 77,
+      "term": "house",
+      "articles": 73,
       "sources": 27,
-      "sentiment_direction": "positive",
-      "surge": 0.94,
-      "sentiment_mean": 0.201,
-      "headline": "Piper Sandler warns on equity exposure as market breadth weakens",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/piper-sandler-warns-on-equity-exposure-as-market-breadth-weakens-93CH-4903176"
-    },
-    {
-      "term": "government",
-      "articles": 70,
-      "sources": 26,
       "sentiment_direction": "mixed",
-      "surge": 1.05,
-      "sentiment_mean": -0.052,
-      "headline": "UK Long Bonds Are Struggling Even as the Government Sells Less",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/articles/2026-09-16/uk-long-bonds-are-struggling-even-as-the-government-sells-less"
+      "surge": 1.39,
+      "sentiment_mean": -0.134,
+      "headline": "US military prepares ceremonial welcome for Xi Jinping at the White House",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/china/diplomacy/article/3367721/us-military-prepares-ceremonial-welcome-xi-jinping-white-house?utm_source=rss_feed"
     }
   ],
   "hours_since_fetch": 0.0
