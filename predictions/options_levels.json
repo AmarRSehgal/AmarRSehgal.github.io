@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T20:08:05.387708+00:00",
+  "generated_at": "2026-09-16T00:48:07.166751+00:00",
   "as_of": "2026-09-15",
   "status": "closed",
   "account": "PA35ZGJSY8J9",
@@ -40,7 +40,85 @@
       "invalidation_short": 471.41,
       "gap_pct": -0.045901505569382675,
       "dollar_volume": 59831860.980000004,
-      "rank": 1
+      "rank": 1,
+      "ladder": [
+        {
+          "price": 470.0,
+          "name": "round 470",
+          "kind": "round"
+        },
+        {
+          "price": 473.25,
+          "name": "5-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 473.25,
+          "name": "10-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 473.25,
+          "name": "20-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 473.495,
+          "name": "prior day low",
+          "kind": "prior_day"
+        },
+        {
+          "price": 480.0,
+          "name": "round 480",
+          "kind": "round"
+        },
+        {
+          "price": 490.0,
+          "name": "round 490",
+          "kind": "round"
+        },
+        {
+          "price": 490.18,
+          "name": "prior day close",
+          "kind": "prior_day"
+        },
+        {
+          "price": 499.89,
+          "name": "prior day high",
+          "kind": "prior_day"
+        },
+        {
+          "price": 500.0,
+          "name": "round 500",
+          "kind": "round"
+        },
+        {
+          "price": 510.0,
+          "name": "round 510",
+          "kind": "round"
+        },
+        {
+          "price": 514.615,
+          "name": "5-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 597.49,
+          "name": "10-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 651.6102,
+          "name": "20-day high",
+          "kind": "swing"
+        }
+      ],
+      "target_long": 480.0,
+      "target_long_name": "round 480",
+      "target_long_pct": 0.006782145977118762,
+      "target_short": null,
+      "target_short_name": null,
+      "target_short_pct": null
     },
     {
       "symbol": "COIN",
@@ -56,7 +134,85 @@
       "invalidation_short": 184.135,
       "gap_pct": -0.0409005432511491,
       "dollar_volume": 240318269.35999998,
-      "rank": 2
+      "rank": 2,
+      "ladder": [
+        {
+          "price": 146.02,
+          "name": "20-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 170.39,
+          "name": "5-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 170.39,
+          "name": "10-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 180.0,
+          "name": "round 180",
+          "kind": "round"
+        },
+        {
+          "price": 180.29,
+          "name": "prior day low",
+          "kind": "prior_day"
+        },
+        {
+          "price": 185.0,
+          "name": "round 185",
+          "kind": "round"
+        },
+        {
+          "price": 190.0,
+          "name": "round 190",
+          "kind": "round"
+        },
+        {
+          "price": 191.45,
+          "name": "prior day close",
+          "kind": "prior_day"
+        },
+        {
+          "price": 193.2168,
+          "name": "prior day high",
+          "kind": "prior_day"
+        },
+        {
+          "price": 193.2168,
+          "name": "5-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 195.0,
+          "name": "round 195",
+          "kind": "round"
+        },
+        {
+          "price": 195.85,
+          "name": "10-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 195.85,
+          "name": "20-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 200.0,
+          "name": "round 200",
+          "kind": "round"
+        }
+      ],
+      "target_long": 190.0,
+      "target_long_name": "round 190",
+      "target_long_pct": 0.02678698088149662,
+      "target_short": 170.39,
+      "target_short_name": "10-day low",
+      "target_short_pct": 0.03827782928147414
     },
     {
       "symbol": "MSTR",
@@ -72,7 +228,80 @@
       "invalidation_short": 133.9999,
       "gap_pct": -0.03702890596414198,
       "dollar_volume": 361192870.05,
-      "rank": 3
+      "rank": 3,
+      "ladder": [
+        {
+          "price": 92.45,
+          "name": "20-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 121.38,
+          "name": "10-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 126.91,
+          "name": "5-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 130.0,
+          "name": "round 130",
+          "kind": "round"
+        },
+        {
+          "price": 130.73,
+          "name": "prior day low",
+          "kind": "prior_day"
+        },
+        {
+          "price": 135.0,
+          "name": "round 135",
+          "kind": "round"
+        },
+        {
+          "price": 136.94,
+          "name": "prior day close",
+          "kind": "prior_day"
+        },
+        {
+          "price": 137.51,
+          "name": "prior day high",
+          "kind": "prior_day"
+        },
+        {
+          "price": 140.0,
+          "name": "round 140",
+          "kind": "round"
+        },
+        {
+          "price": 141.978,
+          "name": "5-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 144.92,
+          "name": "10-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 144.92,
+          "name": "20-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 145.0,
+          "name": "round 145",
+          "kind": "round"
+        }
+      ],
+      "target_long": 135.0,
+      "target_long_name": "round 135",
+      "target_long_pct": 0.0026039108904953767,
+      "target_short": 126.91,
+      "target_short_name": "5-day low",
+      "target_short_pct": 0.016357979969309475
     },
     {
       "symbol": "IONQ",
@@ -88,7 +317,80 @@
       "invalidation_short": 38.17,
       "gap_pct": -0.0325333333333333,
       "dollar_volume": 56873175.0,
-      "rank": 4
+      "rank": 4,
+      "ladder": [
+        {
+          "price": 35.0,
+          "name": "prior day low",
+          "kind": "prior_day"
+        },
+        {
+          "price": 35.0,
+          "name": "5-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 35.0,
+          "name": "10-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 35.0,
+          "name": "20-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 36.0,
+          "name": "round 36",
+          "kind": "round"
+        },
+        {
+          "price": 37.0,
+          "name": "round 37",
+          "kind": "round"
+        },
+        {
+          "price": 37.5,
+          "name": "prior day close",
+          "kind": "prior_day"
+        },
+        {
+          "price": 38.0,
+          "name": "round 38",
+          "kind": "round"
+        },
+        {
+          "price": 38.56,
+          "name": "prior day high",
+          "kind": "prior_day"
+        },
+        {
+          "price": 39.0,
+          "name": "round 39",
+          "kind": "round"
+        },
+        {
+          "price": 44.43,
+          "name": "5-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 44.43,
+          "name": "10-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 47.21,
+          "name": "20-day high",
+          "kind": "swing"
+        }
+      ],
+      "target_long": 38.56,
+      "target_long_name": "prior day high",
+      "target_long_pct": 0.0026913525671862183,
+      "target_short": 35.0,
+      "target_short_name": "20-day low",
+      "target_short_pct": 0.027061587001542646
     },
     {
       "symbol": "CCI",
@@ -104,7 +406,105 @@
       "invalidation_short": 72.76,
       "gap_pct": -0.03168396925980866,
       "dollar_volume": 45734334.550000004,
-      "rank": 5
+      "rank": 5,
+      "ladder": [
+        {
+          "price": 69.0,
+          "name": "round 69",
+          "kind": "round"
+        },
+        {
+          "price": 70.0,
+          "name": "round 70",
+          "kind": "round"
+        },
+        {
+          "price": 71.0,
+          "name": "round 71",
+          "kind": "round"
+        },
+        {
+          "price": 72.0,
+          "name": "round 72",
+          "kind": "round"
+        },
+        {
+          "price": 72.06,
+          "name": "prior day low",
+          "kind": "prior_day"
+        },
+        {
+          "price": 72.06,
+          "name": "5-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 72.06,
+          "name": "10-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 72.06,
+          "name": "20-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 73.0,
+          "name": "round 73",
+          "kind": "round"
+        },
+        {
+          "price": 73.11,
+          "name": "prior day close",
+          "kind": "prior_day"
+        },
+        {
+          "price": 74.0,
+          "name": "round 74",
+          "kind": "round"
+        },
+        {
+          "price": 74.33,
+          "name": "prior day high",
+          "kind": "prior_day"
+        },
+        {
+          "price": 75.0,
+          "name": "round 75",
+          "kind": "round"
+        },
+        {
+          "price": 76.0,
+          "name": "round 76",
+          "kind": "round"
+        },
+        {
+          "price": 76.49,
+          "name": "5-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 76.63,
+          "name": "10-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 76.63,
+          "name": "20-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 77.0,
+          "name": "round 77",
+          "kind": "round"
+        }
+      ],
+      "target_long": 73.0,
+      "target_long_name": "round 73",
+      "target_long_pct": 0.0004111278607647134,
+      "target_short": 71.0,
+      "target_short_name": "round 71",
+      "target_short_pct": 0.0021082220660577043
     },
     {
       "symbol": "FLEX",
@@ -120,7 +520,70 @@
       "invalidation_short": 111.47,
       "gap_pct": 0.029080502215657365,
       "dollar_volume": 53005958.72,
-      "rank": 6
+      "rank": 6,
+      "ladder": [
+        {
+          "price": 102.25,
+          "name": "10-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 102.25,
+          "name": "20-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 105.0,
+          "name": "round 105",
+          "kind": "round"
+        },
+        {
+          "price": 106.6201,
+          "name": "prior day low",
+          "kind": "prior_day"
+        },
+        {
+          "price": 106.6201,
+          "name": "5-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 108.32,
+          "name": "prior day close",
+          "kind": "prior_day"
+        },
+        {
+          "price": 110.0,
+          "name": "round 110",
+          "kind": "round"
+        },
+        {
+          "price": 111.76,
+          "name": "prior day high",
+          "kind": "prior_day"
+        },
+        {
+          "price": 117.68,
+          "name": "5-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 117.68,
+          "name": "10-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 131.63,
+          "name": "20-day high",
+          "kind": "swing"
+        }
+      ],
+      "target_long": 117.68,
+      "target_long_name": "5-day high",
+      "target_long_pct": 0.05183185706241459,
+      "target_short": 106.6201,
+      "target_short_name": "5-day low",
+      "target_short_pct": 0.01568422899029726
     },
     {
       "symbol": "FIX",
@@ -136,7 +599,100 @@
       "invalidation_short": 1630.19,
       "gap_pct": 0.02685746777862016,
       "dollar_volume": 146480226.0,
-      "rank": 7
+      "rank": 7,
+      "ladder": [
+        {
+          "price": 1500.0,
+          "name": "round 1500",
+          "kind": "round"
+        },
+        {
+          "price": 1505.7301,
+          "name": "10-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 1505.7301,
+          "name": "20-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 1525.0,
+          "name": "round 1525",
+          "kind": "round"
+        },
+        {
+          "price": 1545.21,
+          "name": "prior day low",
+          "kind": "prior_day"
+        },
+        {
+          "price": 1545.21,
+          "name": "5-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 1550.0,
+          "name": "round 1550",
+          "kind": "round"
+        },
+        {
+          "price": 1575.0,
+          "name": "round 1575",
+          "kind": "round"
+        },
+        {
+          "price": 1582.8,
+          "name": "prior day close",
+          "kind": "prior_day"
+        },
+        {
+          "price": 1600.0,
+          "name": "round 1600",
+          "kind": "round"
+        },
+        {
+          "price": 1612.9411,
+          "name": "prior day high",
+          "kind": "prior_day"
+        },
+        {
+          "price": 1625.0,
+          "name": "round 1625",
+          "kind": "round"
+        },
+        {
+          "price": 1650.0,
+          "name": "round 1650",
+          "kind": "round"
+        },
+        {
+          "price": 1675.0,
+          "name": "round 1675",
+          "kind": "round"
+        },
+        {
+          "price": 1695.57,
+          "name": "5-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 1695.57,
+          "name": "10-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 1883.7,
+          "name": "20-day high",
+          "kind": "swing"
+        }
+      ],
+      "target_long": 1650.0,
+      "target_long_name": "round 1650",
+      "target_long_pct": 0.008063284380150968,
+      "target_short": 1575.0,
+      "target_short_name": "round 1575",
+      "target_short_pct": 0.0028477402313898596
     },
     {
       "symbol": "TEAM",
@@ -152,7 +708,80 @@
       "invalidation_short": 192.16,
       "gap_pct": -0.0275457799450122,
       "dollar_volume": 68089255.55,
-      "rank": 8
+      "rank": 8,
+      "ladder": [
+        {
+          "price": 156.5501,
+          "name": "20-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 174.21,
+          "name": "5-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 174.21,
+          "name": "10-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 181.76,
+          "name": "prior day low",
+          "kind": "prior_day"
+        },
+        {
+          "price": 185.0,
+          "name": "round 185",
+          "kind": "round"
+        },
+        {
+          "price": 190.0,
+          "name": "round 190",
+          "kind": "round"
+        },
+        {
+          "price": 192.77,
+          "name": "prior day close",
+          "kind": "prior_day"
+        },
+        {
+          "price": 193.17,
+          "name": "prior day high",
+          "kind": "prior_day"
+        },
+        {
+          "price": 193.17,
+          "name": "5-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 195.0,
+          "name": "round 195",
+          "kind": "round"
+        },
+        {
+          "price": 198.5999,
+          "name": "10-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 198.5999,
+          "name": "20-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 200.0,
+          "name": "round 200",
+          "kind": "round"
+        }
+      ],
+      "target_long": 193.17,
+      "target_long_name": "prior day high",
+      "target_long_pct": 0.0012310004794422035,
+      "target_short": 185.0,
+      "target_short_name": "round 185",
+      "target_short_pct": 0.006644741257802446
     },
     {
       "symbol": "ON",
@@ -168,7 +797,100 @@
       "invalidation_short": 73.36,
       "gap_pct": 0.023866015352407448,
       "dollar_volume": 261205162.15,
-      "rank": 9
+      "rank": 9,
+      "ladder": [
+        {
+          "price": 68.0,
+          "name": "round 68",
+          "kind": "round"
+        },
+        {
+          "price": 68.79,
+          "name": "5-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 68.79,
+          "name": "10-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 68.79,
+          "name": "20-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 69.0,
+          "name": "round 69",
+          "kind": "round"
+        },
+        {
+          "price": 70.0,
+          "name": "round 70",
+          "kind": "round"
+        },
+        {
+          "price": 71.0,
+          "name": "round 71",
+          "kind": "round"
+        },
+        {
+          "price": 71.46,
+          "name": "prior day low",
+          "kind": "prior_day"
+        },
+        {
+          "price": 71.65,
+          "name": "prior day close",
+          "kind": "prior_day"
+        },
+        {
+          "price": 72.0,
+          "name": "round 72",
+          "kind": "round"
+        },
+        {
+          "price": 73.0,
+          "name": "round 73",
+          "kind": "round"
+        },
+        {
+          "price": 73.14,
+          "name": "prior day high",
+          "kind": "prior_day"
+        },
+        {
+          "price": 74.0,
+          "name": "round 74",
+          "kind": "round"
+        },
+        {
+          "price": 75.0,
+          "name": "round 75",
+          "kind": "round"
+        },
+        {
+          "price": 76.19,
+          "name": "5-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 76.19,
+          "name": "10-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 85.5499,
+          "name": "20-day high",
+          "kind": "swing"
+        }
+      ],
+      "target_long": 74.0,
+      "target_long_name": "round 74",
+      "target_long_pct": 0.0045953449223813825,
+      "target_short": 71.0,
+      "target_short_name": "round 71",
+      "target_short_pct": 0.000682632286395772
     },
     {
       "symbol": "MDB",
@@ -184,7 +906,85 @@
       "invalidation_short": 380.64,
       "gap_pct": -0.024981035339663636,
       "dollar_volume": 90882183.99000001,
-      "rank": 10
+      "rank": 10,
+      "ladder": [
+        {
+          "price": 354.11,
+          "name": "5-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 354.11,
+          "name": "10-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 354.11,
+          "name": "20-day low",
+          "kind": "swing"
+        },
+        {
+          "price": 360.0,
+          "name": "prior day low",
+          "kind": "prior_day"
+        },
+        {
+          "price": 360.0,
+          "name": "round 360",
+          "kind": "round"
+        },
+        {
+          "price": 370.0,
+          "name": "round 370",
+          "kind": "round"
+        },
+        {
+          "price": 380.0,
+          "name": "round 380",
+          "kind": "round"
+        },
+        {
+          "price": 382.29,
+          "name": "prior day close",
+          "kind": "prior_day"
+        },
+        {
+          "price": 385.97,
+          "name": "prior day high",
+          "kind": "prior_day"
+        },
+        {
+          "price": 385.97,
+          "name": "5-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 390.0,
+          "name": "round 390",
+          "kind": "round"
+        },
+        {
+          "price": 400.0,
+          "name": "round 400",
+          "kind": "round"
+        },
+        {
+          "price": 455.97,
+          "name": "10-day high",
+          "kind": "swing"
+        },
+        {
+          "price": 457.98,
+          "name": "20-day high",
+          "kind": "swing"
+        }
+      ],
+      "target_long": 382.29,
+      "target_long_name": "prior day close",
+      "target_long_pct": 0.0008168009675951723,
+      "target_short": 370.0,
+      "target_short_name": "round 370",
+      "target_short_pct": 0.001031367615057054
     }
   ],
   "trades": [
@@ -246,7 +1046,8 @@
       "exit_underlying": 172.9025,
       "exit_at": "2026-09-15T19:53:11.432555+00:00",
       "exit_filled_at": "2026-09-15T19:53:13.498780963Z",
-      "closed_session": "2026-09-15"
+      "closed_session": "2026-09-15",
+      "exit_mode": "fixed"
     },
     {
       "symbol": "MSTR",
@@ -306,7 +1107,8 @@
       "exit_underlying": 130.03,
       "exit_at": "2026-09-15T19:53:11.432555+00:00",
       "exit_filled_at": "2026-09-15T19:53:13.866861667Z",
-      "closed_session": "2026-09-15"
+      "closed_session": "2026-09-15",
+      "exit_mode": "fixed"
     },
     {
       "symbol": "TEAM",
@@ -366,7 +1168,8 @@
       "exit_underlying": 189.855,
       "exit_at": "2026-09-15T19:53:11.432555+00:00",
       "exit_filled_at": "2026-09-15T19:53:14.261368259Z",
-      "closed_session": "2026-09-15"
+      "closed_session": "2026-09-15",
+      "exit_mode": "fixed"
     },
     {
       "symbol": "ON",
@@ -426,7 +1229,8 @@
       "exit_underlying": 73.24,
       "exit_at": "2026-09-15T19:53:11.432555+00:00",
       "exit_filled_at": "2026-09-15T19:53:14.425628397Z",
-      "closed_session": "2026-09-15"
+      "closed_session": "2026-09-15",
+      "exit_mode": "fixed"
     },
     {
       "symbol": "MDB",
@@ -486,7 +1290,8 @@
       "exit_underlying": 377.88,
       "exit_at": "2026-09-15T19:53:11.432555+00:00",
       "exit_filled_at": "2026-09-15T19:53:14.783374082Z",
-      "closed_session": "2026-09-15"
+      "closed_session": "2026-09-15",
+      "exit_mode": "fixed"
     }
   ],
   "brief": null,
@@ -582,11 +1387,29 @@
   "backtest": {
     "verdict": "negative expectancy",
     "triggers_tested": 1286282,
-    "sets_swept": 77760,
-    "positive_sets": 277,
+    "sets_swept": 78912,
+    "positive_sets": 0,
     "edge_pct": 0.0188,
     "hurdle_pct": 0.09,
     "shortfall": "5-6x",
-    "note": "Swept 2021-2026. The opening-range signal is real but roughly 0.019% per trade, against a 0.09-0.12% option cost hurdle. Longer holds do not help: the edge stops at the closing bell, and 3-5 day holds measured NEGATIVE. The book nonetheless holds overnight when src/live/hold.py prices the carry as worth it -- a deliberate choice against this finding, not a conclusion drawn from it. That gate uses the finding rather than ignoring it: overnight drift is taken as zero, so a hold has to be justified by geometry and paid for at a measured gap sigma. This book runs forward to gather out-of-sample evidence, not because it is expected to make money."
+    "best_expectancy": -1.58,
+    "note": "Swept 2021-2026 over 1.29M opening-range breaks. Three constraints were found, each was addressed, and the strategy failed all three times -- see the chain above. Longer holds do not rescue it either: the edge stops at the closing bell and 3-5 day holds measured NEGATIVE. The book nonetheless holds overnight when src/live/hold.py prices the carry as worth it, a deliberate choice against that finding rather than a conclusion drawn from it -- and the gate uses the finding, taking overnight drift as zero so a hold must be justified by geometry alone and paid for at a measured gap sigma. This book runs forward to gather out-of-sample evidence, not because it is expected to make money.",
+    "findings": [
+      {
+        "constraint": "option cost",
+        "fix": "target the next structural level instead of a fixed multiple",
+        "result": "solved -- the average trade now aims at 8.5x its own break-even"
+      },
+      {
+        "constraint": "geometry (reward:risk 0.43, needs a 69.8% hit rate)",
+        "fix": "stop at the level that was broken, not the far side of the range",
+        "result": "solved -- reward:risk 2.60, within 3.3 points of its required hit rate"
+      },
+      {
+        "constraint": "fixed per-trade cost (one spread plus commissions, every trade)",
+        "fix": "none found",
+        "result": "binding -- the best of 1,152 structural sets is -$1.58 per contract"
+      }
+    ]
   }
 }
