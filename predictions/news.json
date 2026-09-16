@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-16T00:24:27.292731+00:00",
+  "generated_at": "2026-09-16T01:24:29.614425+00:00",
   "window_hours": 24,
-  "articles_in_window": 1994,
+  "articles_in_window": 2009,
   "collection_days": 17,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,36 +10,36 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 260,
+      "articles": 251,
       "sources": 40,
       "sentiment_direction": "mixed",
-      "surge": 1.09,
-      "sentiment_mean": -0.066,
-      "headline": "Trump Plans Blitz of $138 Million and Counting to Save Midterm Republicans",
-      "headline_source": "NYT Politics",
-      "headline_url": "https://www.nytimes.com/2026/09/15/us/politics/trump-maga-inc-midterm-spending.html"
+      "surge": 1.04,
+      "sentiment_mean": -0.091,
+      "headline": "Nvidia CEO Huang set to attend Trump state dinner for Xi: CNBC, Reuters",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/stock-market-news/nvidia-ceo-huang-set-to-attend-trump-state-dinner-for-xi-cnbc-reuters-4902814"
     },
     {
       "term": "president",
-      "articles": 124,
-      "sources": 31,
+      "articles": 113,
+      "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 0.96,
-      "sentiment_mean": -0.06,
+      "surge": 0.86,
+      "sentiment_mean": -0.09,
       "headline": "Newsom tells CNN he won't run for president if Kamala Harris does in 2028",
       "headline_source": "CBS News",
       "headline_url": "https://www.cbsnews.com/video/newsom-tells-cnn-he-wont-run-for-president-if-kamala-harris-does-in-2028/"
     },
     {
       "term": "iran",
-      "articles": 83,
+      "articles": 87,
       "sources": 30,
       "sentiment_direction": "negative",
-      "surge": 0.75,
-      "sentiment_mean": -0.588,
-      "headline": "New images show widespread damage at U.S. bases in Middle East after Iran attacks",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/new-images-show-widespread-damages-at-us-bases-in-middle-east-after-iran-attacks/"
+      "surge": 0.79,
+      "sentiment_mean": -0.589,
+      "headline": "Iran\u2019s drone hunt escalates as Tehran targets US spy tech to expose battlefield secrets",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/world/irans-drone-hunt-escalates-tehran-targets-us-spy-tech-expose-battlefield-secrets"
     },
     {
       "term": "space",
@@ -53,48 +53,48 @@
       "headline_url": "https://www.smh.com.au/world/pentagon-confirms-us-has-deployed-weapons-in-space-20260916-p60xqp.html?ref=rss&utm_medium=rss&utm_source=rss_world"
     },
     {
-      "term": "government",
-      "articles": 75,
-      "sources": 29,
-      "sentiment_direction": "mixed",
-      "surge": 1.13,
-      "sentiment_mean": 0.017,
-      "headline": "How Is Hungary\u2019s New Government Doing?",
-      "headline_source": "Reddit r/geopolitics",
-      "headline_url": "https://www.reddit.com/r/geopolitics/comments/1wh99lm/how_is_hungarys_new_government_doing/"
-    },
-    {
       "term": "market",
-      "articles": 61,
-      "sources": 29,
+      "articles": 59,
+      "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 0.73,
-      "sentiment_mean": 0.101,
+      "surge": 0.7,
+      "sentiment_mean": 0.104,
       "headline": "Wednesday's big stock stories: What\u2019s likely to move the market in the next trading session",
       "headline_source": "CNBC World",
       "headline_url": "https://www.cnbc.com/2026/09/15/wednesdays-big-stock-stories-whats-likely-to-move-the-market.html"
-    },
-    {
-      "term": "data",
-      "articles": 56,
-      "sources": 28,
-      "sentiment_direction": "mixed",
-      "surge": 0.87,
-      "sentiment_mean": 0.084,
-      "headline": "House to vote on bill to rein in AI data center utility costs",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/09/15/congress-ai-data-center-utility-costs.html"
     },
     {
       "term": "safety",
       "articles": 56,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 1.44,
+      "surge": 1.43,
       "sentiment_mean": 0.13,
-      "headline": "Sen. Bernie Sanders, Steve Bannon appear at same AI safety rally",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/sen-bernie-sanders-steve-bannon-appear-at-same-ai-safety-rally/"
+      "headline": "We don\u2019t need AI regulation \u2014 leave safety to us, Nvidia\u2019s Jensen Huang says",
+      "headline_source": "TechCrunch",
+      "headline_url": "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/"
+    },
+    {
+      "term": "data",
+      "articles": 53,
+      "sources": 28,
+      "sentiment_direction": "mixed",
+      "surge": 0.82,
+      "sentiment_mean": 0.083,
+      "headline": "House to vote on bill to rein in AI data center utility costs",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/09/15/congress-ai-data-center-utility-costs.html"
+    },
+    {
+      "term": "industry",
+      "articles": 49,
+      "sources": 28,
+      "sentiment_direction": "mixed",
+      "surge": 1.25,
+      "sentiment_mean": 0.098,
+      "headline": "While Hollywood Fears an AI Future, China's Film Industry is Embracing It",
+      "headline_source": "Slashdot",
+      "headline_url": "https://entertainment.slashdot.org/story/26/09/14/0115231/while-hollywood-fears-an-ai-future-chinas-film-industry-is-embracing-it?utm_source=rss1.0mainlinkanon&utm_medium=feed"
     }
   ],
   "hours_since_fetch": 0.0
