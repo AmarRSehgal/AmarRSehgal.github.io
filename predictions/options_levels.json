@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-17T19:45:50.024054+00:00",
+  "generated_at": "2026-09-17T19:50:57.927751+00:00",
   "as_of": "2026-09-17",
-  "status": "in_position",
+  "status": "closed",
   "account": "PA35ZGJSY8J9",
   "paper": true,
   "started": "2026-09-14",
@@ -22,9 +22,9 @@
     "max_concurrent": 2,
     "max_deployed": 4000.0
   },
-  "equity": 98238.89,
-  "polls": 63,
-  "last_poll_at": "2026-09-17T19:45:47.499437+00:00",
+  "equity": 98118.87,
+  "polls": 64,
+  "last_poll_at": "2026-09-17T19:50:54.419287+00:00",
   "levels": [
     {
       "symbol": "GNRC",
@@ -814,12 +814,12 @@
     {
       "symbol": "GNRC",
       "side": "short",
-      "status": "open",
+      "status": "closed",
       "entry_order_id": "fe3a2d09-d46e-4f50-baf6-b1095057a091",
       "entry_fill": 16.0,
-      "exit_order_id": null,
-      "exit_fill": null,
-      "realized_pnl": null,
+      "exit_order_id": "f5d92051-3e37-4f3e-bf5b-86bd1cb789a4",
+      "exit_fill": 10.9,
+      "realized_pnl": -511.3999999999999,
       "unrealized_pnl": -390.0,
       "option_symbol": "GNRC261002P00215000",
       "strike": 215.0,
@@ -850,10 +850,57 @@
       "filled_contracts": 1,
       "entry_filled_at": "2026-09-17T15:14:39.979117681Z",
       "market_value": 1210.0,
-      "avg_entry_price": 16.0
+      "avg_entry_price": 16.0,
+      "hold_decision": {
+        "session": "2026-09-17",
+        "hold": false,
+        "reason": "CLOSE: holding is $-181.50/contract at P(target)=49% with a 4.3% gap sigma.",
+        "dte": 15,
+        "held_days": 0,
+        "gap_sigma": 0.043150330447623966,
+        "event": {
+          "symbol": "GNRC",
+          "veto": false,
+          "kind": "none",
+          "detail": "no known event",
+          "sigma_multiplier": 1.0
+        },
+        "p_stop_distance": 14.624964926021116,
+        "gap_slip": 8.987135073978882,
+        "target_move": 14.969999999999999,
+        "stop_move": 23.612099999999998,
+        "effective_stop": 32.59923507397888,
+        "p_target": 0.4941707132473147,
+        "hold_hours": 126.11197621660503,
+        "resolve_days": 5.254665675691876,
+        "hold_days": 5.254665675691876,
+        "win": 897.4685369256093,
+        "loss": -1235.6,
+        "carry": 204.44879337593133,
+        "be_multiple": 4.389698379267928,
+        "expectancy": -181.4999997020655
+      },
+      "bell_reason": "CLOSE: holding is $-181.50/contract at P(target)=49% with a 4.3% gap sigma.",
+      "exit_reason": "bell_close",
+      "exit_underlying": 208.275,
+      "exit_at": "2026-09-17T19:50:54.419287+00:00",
+      "exit_filled_at": "2026-09-17T19:50:57.120542692Z",
+      "closed_session": "2026-09-17"
     }
   ],
-  "event_check": null,
+  "event_check": {
+    "cost_usd": 0.0,
+    "error": "claude CLI unavailable: FileNotFoundError: [Errno 2] No such file or directory: 'claude'",
+    "risks": {
+      "GNRC": {
+        "symbol": "GNRC",
+        "veto": false,
+        "kind": "none",
+        "detail": "no known event",
+        "sigma_multiplier": 1.0
+      }
+    }
+  },
   "brief": {
     "session": "2026-09-17",
     "generated_at": "2026-09-17T13:06:29.712052+00:00",
@@ -868,32 +915,32 @@
   "excluded": [],
   "day": {
     "taken": 2,
-    "closed": 1,
-    "open": 1,
+    "closed": 2,
+    "open": 0,
     "held_over": 0,
     "rejected": 0,
     "unfilled": 0,
-    "realized_pnl": -91.4,
-    "unrealized_pnl": -390.0,
+    "realized_pnl": -602.8,
+    "unrealized_pnl": 0,
     "wins": 0,
-    "losses": 1,
+    "losses": 2,
     "gate_passed": 0
   },
   "performance": {
     "since": "2026-09-14",
     "sessions": 4,
     "trades": 9,
-    "closed": 8,
+    "closed": 9,
     "wins": 2,
-    "losses": 6,
+    "losses": 7,
     "hit_rate": null,
     "rejected": 0,
     "unfilled": 0,
     "starting_equity": 100000.0,
-    "equity": 98238.89,
-    "realized_pnl": -1384.0,
-    "equity_pnl": -1761.11,
-    "return_pct": -0.017611100000000005,
+    "equity": 98118.87,
+    "realized_pnl": -1895.4,
+    "equity_pnl": -1881.13,
+    "return_pct": -0.018811300000000048,
     "brief_cost_usd": 0.78,
     "equity_curve": [
       [
@@ -910,7 +957,7 @@
       ],
       [
         "2026-09-17",
-        98238.89
+        98118.87
       ]
     ],
     "history": [
@@ -975,31 +1022,31 @@
       },
       {
         "session": "2026-09-17",
-        "equity": 98238.89,
+        "equity": 98118.87,
         "equity_open": 98718.97,
         "watchlist": 8,
-        "polls": 63,
+        "polls": 64,
         "regime": "",
         "brief_cost_usd": 0.0,
         "taken": 2,
-        "closed": 1,
-        "open": 1,
+        "closed": 2,
+        "open": 0,
         "held_over": 0,
         "rejected": 0,
         "unfilled": 0,
-        "realized_pnl": -91.4,
-        "unrealized_pnl": -390.0,
+        "realized_pnl": -602.8,
+        "unrealized_pnl": 0,
         "wins": 0,
-        "losses": 1,
+        "losses": 2,
         "gate_passed": 0
       }
     ]
   },
   "gate_split": {
     "passed_n": 0,
-    "failed_n": 1,
+    "failed_n": 2,
     "passed_avg": null,
-    "failed_avg": -91.39999999999986,
+    "failed_avg": -301.39999999999986,
     "conclusive": false
   },
   "backtest": {
