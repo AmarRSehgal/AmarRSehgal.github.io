@@ -1,23 +1,10 @@
 {
-  "generated_at": "2026-09-17T04:00:09.119720+00:00",
+  "generated_at": "2026-09-17T05:12:38.542395+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
-    {
-      "base": "MTL",
-      "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 19,
-      "scans": 24,
-      "net_apr": 200.16,
-      "net_at_hold": 0.18279,
-      "cost_bps": 30.0
-    },
     {
       "base": "FOLKS",
       "type": "perp-perp",
@@ -34,14 +21,27 @@
     {
       "base": "MTL",
       "type": "perp-perp",
+      "long_venue": "Binance",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 202.61,
+      "net_at_hold": 0.18503,
+      "cost_bps": 30.0
+    },
+    {
+      "base": "MTL",
+      "type": "perp-perp",
       "long_venue": "Bitget",
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 149.93,
-      "net_at_hold": 0.13692,
+      "net_apr": 179.9,
+      "net_at_hold": 0.16429,
       "cost_bps": 32.05
     }
   ]
