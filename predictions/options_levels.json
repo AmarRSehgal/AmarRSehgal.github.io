@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-17T14:43:57.405319+00:00",
+  "generated_at": "2026-09-17T14:49:04.541935+00:00",
   "as_of": "2026-09-17",
-  "status": "in_position",
+  "status": "armed",
   "account": "PA35ZGJSY8J9",
   "paper": true,
   "started": "2026-09-14",
@@ -22,9 +22,9 @@
     "max_concurrent": 2,
     "max_deployed": 4000.0
   },
-  "equity": 98558.94,
-  "polls": 5,
-  "last_poll_at": "2026-09-17T14:43:54.573314+00:00",
+  "equity": 98628.92,
+  "polls": 6,
+  "last_poll_at": "2026-09-17T14:49:01.778054+00:00",
   "levels": [
     {
       "symbol": "GNRC",
@@ -768,12 +768,12 @@
     {
       "symbol": "COHR",
       "side": "short",
-      "status": "open",
+      "status": "closed",
       "entry_order_id": "623d34d0-2240-4a22-ab63-6d2059bbb99b",
       "entry_fill": 19.2,
-      "exit_order_id": null,
-      "exit_fill": null,
-      "realized_pnl": null,
+      "exit_order_id": "c46aa1e1-8e83-42aa-bf4e-866067859480",
+      "exit_fill": 18.3,
+      "realized_pnl": -91.39999999999986,
       "unrealized_pnl": -160.0,
       "option_symbol": "COHR261002P00300000",
       "strike": 300.0,
@@ -804,7 +804,12 @@
       "filled_contracts": 1,
       "entry_filled_at": "2026-09-17T14:43:56.750869625Z",
       "market_value": 1760.0,
-      "avg_entry_price": 19.2
+      "avg_entry_price": 19.2,
+      "exit_reason": "target",
+      "exit_underlying": 293.778,
+      "exit_at": "2026-09-17T14:49:01.778054+00:00",
+      "exit_filled_at": "2026-09-17T14:49:03.816749865Z",
+      "closed_session": "2026-09-17"
     }
   ],
   "event_check": null,
@@ -822,32 +827,32 @@
   "excluded": [],
   "day": {
     "taken": 1,
-    "closed": 0,
-    "open": 1,
+    "closed": 1,
+    "open": 0,
     "held_over": 0,
     "rejected": 0,
     "unfilled": 0,
-    "realized_pnl": 0,
-    "unrealized_pnl": -160.0,
+    "realized_pnl": -91.4,
+    "unrealized_pnl": 0,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "gate_passed": 0
   },
   "performance": {
     "since": "2026-09-14",
     "sessions": 4,
     "trades": 8,
-    "closed": 7,
+    "closed": 8,
     "wins": 2,
-    "losses": 5,
+    "losses": 6,
     "hit_rate": null,
     "rejected": 0,
     "unfilled": 0,
     "starting_equity": 100000.0,
-    "equity": 98558.94,
-    "realized_pnl": -1292.6,
-    "equity_pnl": -1441.06,
-    "return_pct": -0.014410599999999977,
+    "equity": 98628.92,
+    "realized_pnl": -1384.0,
+    "equity_pnl": -1371.08,
+    "return_pct": -0.013710800000000018,
     "brief_cost_usd": 0.78,
     "equity_curve": [
       [
@@ -864,7 +869,7 @@
       ],
       [
         "2026-09-17",
-        98558.94
+        98628.92
       ]
     ],
     "history": [
@@ -929,31 +934,31 @@
       },
       {
         "session": "2026-09-17",
-        "equity": 98558.94,
+        "equity": 98628.92,
         "equity_open": 98718.97,
         "watchlist": 8,
-        "polls": 5,
+        "polls": 6,
         "regime": "",
         "brief_cost_usd": 0.0,
         "taken": 1,
-        "closed": 0,
-        "open": 1,
+        "closed": 1,
+        "open": 0,
         "held_over": 0,
         "rejected": 0,
         "unfilled": 0,
-        "realized_pnl": 0,
-        "unrealized_pnl": -160.0,
+        "realized_pnl": -91.4,
+        "unrealized_pnl": 0,
         "wins": 0,
-        "losses": 0,
+        "losses": 1,
         "gate_passed": 0
       }
     ]
   },
   "gate_split": {
     "passed_n": 0,
-    "failed_n": 0,
+    "failed_n": 1,
     "passed_avg": null,
-    "failed_avg": null,
+    "failed_avg": -91.39999999999986,
     "conclusive": false
   },
   "backtest": {
