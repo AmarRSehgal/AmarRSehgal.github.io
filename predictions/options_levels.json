@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T18:34:16.466561+00:00",
+  "generated_at": "2026-09-17T18:39:23.829500+00:00",
   "as_of": "2026-09-17",
   "status": "in_position",
   "account": "PA35ZGJSY8J9",
@@ -22,9 +22,9 @@
     "max_concurrent": 2,
     "max_deployed": 4000.0
   },
-  "equity": 98318.89,
-  "polls": 50,
-  "last_poll_at": "2026-09-17T18:34:14.099256+00:00",
+  "equity": 98328.89,
+  "polls": 51,
+  "last_poll_at": "2026-09-17T18:39:21.427306+00:00",
   "levels": [
     {
       "symbol": "GNRC",
@@ -820,7 +820,7 @@
       "exit_order_id": null,
       "exit_fill": null,
       "realized_pnl": null,
-      "unrealized_pnl": -310.0,
+      "unrealized_pnl": -300.0,
       "option_symbol": "GNRC261002P00215000",
       "strike": 215.0,
       "expiry": "2026-10-02",
@@ -849,7 +849,7 @@
       "detected_at": "2026-09-17T15:14:37.482837+00:00",
       "filled_contracts": 1,
       "entry_filled_at": "2026-09-17T15:14:39.979117681Z",
-      "market_value": 1290.0,
+      "market_value": 1300.0,
       "avg_entry_price": 16.0
     }
   ],
@@ -874,7 +874,7 @@
     "rejected": 0,
     "unfilled": 0,
     "realized_pnl": -91.4,
-    "unrealized_pnl": -310.0,
+    "unrealized_pnl": -300.0,
     "wins": 0,
     "losses": 1,
     "gate_passed": 0
@@ -890,10 +890,10 @@
     "rejected": 0,
     "unfilled": 0,
     "starting_equity": 100000.0,
-    "equity": 98318.89,
+    "equity": 98328.89,
     "realized_pnl": -1384.0,
-    "equity_pnl": -1681.11,
-    "return_pct": -0.016811100000000006,
+    "equity_pnl": -1671.11,
+    "return_pct": -0.016711100000000007,
     "brief_cost_usd": 0.78,
     "equity_curve": [
       [
@@ -910,7 +910,7 @@
       ],
       [
         "2026-09-17",
-        98318.89
+        98328.89
       ]
     ],
     "history": [
@@ -975,10 +975,10 @@
       },
       {
         "session": "2026-09-17",
-        "equity": 98318.89,
+        "equity": 98328.89,
         "equity_open": 98718.97,
         "watchlist": 8,
-        "polls": 50,
+        "polls": 51,
         "regime": "",
         "brief_cost_usd": 0.0,
         "taken": 2,
@@ -988,7 +988,7 @@
         "rejected": 0,
         "unfilled": 0,
         "realized_pnl": -91.4,
-        "unrealized_pnl": -310.0,
+        "unrealized_pnl": -300.0,
         "wins": 0,
         "losses": 1,
         "gate_passed": 0
