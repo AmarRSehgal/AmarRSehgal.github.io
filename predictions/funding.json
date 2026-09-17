@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T08:00:14.453914+00:00",
+  "generated_at": "2026-09-17T09:00:14.299686+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 55.89,
-      "net_at_hold": 0.05104,
+      "net_apr": 57.82,
+      "net_at_hold": 0.0528,
       "cost_bps": 20.0
     },
     {
@@ -42,7 +42,20 @@
       "scans": 24,
       "net_apr": 170.29,
       "net_at_hold": 0.15551,
-      "cost_bps": 32.06
+      "cost_bps": 32.08
+    },
+    {
+      "base": "FOLKS",
+      "type": "perp-perp",
+      "long_venue": "KuCoin",
+      "short_venue": "Lighter",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 36.35,
+      "net_at_hold": 0.0332,
+      "cost_bps": 22.0
     }
   ]
 }
