@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-18T14:21:03.283804+00:00",
+  "generated_at": "2026-09-18T14:26:10.894988+00:00",
   "as_of": "2026-09-18",
-  "status": "armed",
+  "status": "in_position",
   "account": "PA35ZGJSY8J9",
   "paper": true,
   "started": "2026-09-14",
@@ -22,9 +22,9 @@
     "max_concurrent": 2,
     "max_deployed": 4000.0
   },
-  "equity": null,
-  "polls": 0,
-  "last_poll_at": null,
+  "equity": 97950.51,
+  "polls": 1,
+  "last_poll_at": "2026-09-18T14:26:07.502686+00:00",
   "levels": [
     {
       "symbol": "NFLX",
@@ -764,7 +764,49 @@
       "target_short_pct": 0.004631662441041886
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "RIOT",
+      "side": "short",
+      "status": "open",
+      "entry_order_id": "d53cc7ec-25c1-4e52-af5a-8b0903ff8a62",
+      "entry_fill": 2.45,
+      "exit_order_id": null,
+      "exit_fill": null,
+      "realized_pnl": null,
+      "unrealized_pnl": -168.0,
+      "option_symbol": "RIOT261002P00024000",
+      "strike": 24.0,
+      "expiry": "2026-10-02",
+      "right": "put",
+      "contracts": 8,
+      "entry_underlying": 22.346999999999998,
+      "spot_at_order": 22.47,
+      "opened_session": "2026-09-18",
+      "or_width": 0.41000000000000014,
+      "limit": 2.47,
+      "indicative_bid": 2.26,
+      "indicative_ask": 2.42,
+      "indicative_spread_pct": 0.06837606837606844,
+      "delta": -0.6134,
+      "iv": 0.8414,
+      "rule_zero_passed": false,
+      "rule_zero": "REJECT: target is 1.70x break-even, under the 3.0x floor.",
+      "expectancy": -24.751117888077037,
+      "gate_mode": "observe",
+      "thesis": "short below 22.35, target 5-day high 22.07 (+1.26%, 1.7x break-even), invalid at 22.88 (back inside the opening range); reward:risk 0.53",
+      "plan_target": 22.065,
+      "plan_stop": 22.88,
+      "target_level": "5-day high",
+      "exit_mode": "structural",
+      "reward_risk": 0.529080675422131,
+      "detected_at": "2026-09-18T14:26:07.502686+00:00",
+      "filled_contracts": 8,
+      "entry_filled_at": "2026-09-18T14:26:09.903238944Z",
+      "market_value": 1792.0,
+      "avg_entry_price": 2.45
+    }
+  ],
   "event_check": null,
   "brief": {
     "session": "2026-09-18",
@@ -779,14 +821,14 @@
   },
   "excluded": [],
   "day": {
-    "taken": 0,
+    "taken": 1,
     "closed": 0,
-    "open": 0,
+    "open": 1,
     "held_over": 0,
     "rejected": 0,
     "unfilled": 0,
     "realized_pnl": 0,
-    "unrealized_pnl": 0,
+    "unrealized_pnl": -168.0,
     "wins": 0,
     "losses": 0,
     "gate_passed": 0
@@ -794,7 +836,7 @@
   "performance": {
     "since": "2026-09-14",
     "sessions": 5,
-    "trades": 9,
+    "trades": 10,
     "closed": 9,
     "wins": 2,
     "losses": 7,
@@ -802,10 +844,10 @@
     "rejected": 0,
     "unfilled": 0,
     "starting_equity": 100000.0,
-    "equity": 98118.71,
+    "equity": 97950.51,
     "realized_pnl": -1895.4,
-    "equity_pnl": -1881.29,
-    "return_pct": -0.018812899999999935,
+    "equity_pnl": -2049.49,
+    "return_pct": -0.020494900000000052,
     "brief_cost_usd": 0.78,
     "equity_curve": [
       [
@@ -826,7 +868,7 @@
       ],
       [
         "2026-09-18",
-        98118.71
+        97950.51
       ]
     ],
     "history": [
@@ -911,20 +953,20 @@
       },
       {
         "session": "2026-09-18",
-        "equity": 98118.71,
+        "equity": 97950.51,
         "equity_open": 98118.71,
         "watchlist": 8,
-        "polls": 0,
+        "polls": 1,
         "regime": "",
         "brief_cost_usd": 0.0,
-        "taken": 0,
+        "taken": 1,
         "closed": 0,
-        "open": 0,
+        "open": 1,
         "held_over": 0,
         "rejected": 0,
         "unfilled": 0,
         "realized_pnl": 0,
-        "unrealized_pnl": 0,
+        "unrealized_pnl": -168.0,
         "wins": 0,
         "losses": 0,
         "gate_passed": 0
