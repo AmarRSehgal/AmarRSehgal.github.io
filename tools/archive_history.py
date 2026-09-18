@@ -42,7 +42,7 @@ FEEDS = {
     # chose to hold, the levels it armed. Everything else in the payload (trades, day,
     # performance, equity_curve) is kept at the top level of the record regardless, so
     # the outcome is archived beside the call rather than in place of it.
-    "swing_book": "positions", "mf_book": "positions", "options_levels": "levels",
+    "swing_book": "positions", "mf_book": "positions", "stock_levels": "positions",
 }
 
 

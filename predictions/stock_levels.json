@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-09-18T20:51:33.512804+00:00",
+  "account": "PA3YADOSVDCA",
+  "paper": true,
+  "started": "2026-09-18",
+  "starting_equity": 100000.0,
+  "equity": 100000.0,
+  "cash": 100000.0,
+  "return_pct": 0.0,
+  "long_value": 0,
+  "short_value": 0,
+  "universe_size": 400,
+  "vol_target": 0.15,
+  "strategies": [
+    {
+      "name": "momentum",
+      "alloc_pct": 0.6,
+      "names": 0,
+      "asof": null,
+      "funded": true
+    },
+    {
+      "name": "pead",
+      "alloc_pct": 0.4,
+      "names": 0,
+      "asof": null,
+      "funded": true
+    },
+    {
+      "name": "vrp",
+      "alloc_pct": 0.15,
+      "names": 0,
+      "asof": null,
+      "funded": true
+    },
+    {
+      "name": "gapfade",
+      "alloc_pct": 0.0,
+      "names": 0,
+      "asof": null,
+      "funded": false
+    },
+    {
+      "name": "lateday",
+      "alloc_pct": 0.0,
+      "names": 0,
+      "asof": null,
+      "funded": false
+    }
+  ],
+  "equity_curve": [
+    {
+      "date": "2026-09-18",
+      "equity": 100000.0
+    }
+  ],
+  "research": {
+    "predecessor": "opening-range breakout through 4-11 DTE options",
+    "predecessor_verdict": "negative expectancy, ~1.5M events, no parameter set survived",
+    "why_shares": "the option wrapper needed ~90bp before it made a cent; shares need ~5bp",
+    "note": "Five strategies drawn from published research, each tested on 2021-2026 data before it was scheduled. Every Sharpe behind them carries roughly +/-0.5 standard error on five years, so none of the differences between variants is statistically significant. gapfade and lateday are computed and recorded but funded at zero: the free data plan cannot serve a bar until it is 15 minutes old, which forces entries 20 minutes later than the ones that were measured, and neither edge survives that."
+  },
+  "positions": []
+}

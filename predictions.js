@@ -25,7 +25,7 @@ const MS_DAY = 24 * MS_HOUR;
 // The HEALTH vocabulary for a payload's top-level `status`, and the whole of it. Mirrors
 // SOURCE_STATUS in .github/scripts/validate_predictions.py minus the two healthy values;
 // test_status_vocabulary.py asserts the two stay in agreement. A feed is free to publish
-// a DOMAIN state in the same field (options_levels: armed/in_position/closed/no_session,
+// a DOMAIN state in the same field (some feeds publish a session state there,
 // funding: ok/building_history) -- anything not listed here renders as normal content.
 const HEALTH_STATUS = {
     stale: 'has gone quiet',
@@ -387,31 +387,23 @@ const SPORTS = {
     // it is expected to make money -- the renderer says so on every load. Levels are
     // same-session only, so this expires overnight rather than after two days like the
     // position books.
-    options_levels: {
-        file: 'predictions/options_levels.json',
-        container: 'options-levels-signals',
-        stamp: 'options-levels-updated',
+    // Fourth paper book, successor to the options level feed. Five strategies in one
+    // account, two of them funded at zero on purpose -- the roster is published so the
+    // blended P&L cannot be read as though everything were live. Positions carry a cost
+    // basis, so this expires after two sessions like the other books rather than
+    // overnight like the levels feed it replaces.
+    stock_levels: {
+        file: 'predictions/stock_levels.json',
+        container: 'stock-levels',
+        stamp: 'stock-levels-updated',
         cadence: 'daily',
-        noun: 'levels',
-        listKey: 'levels',
-        staleAfter: 20 * MS_HOUR,
-        emptyLabel: 'No levels armed -- market closed, or no name cleared the screen.',
-        slate: d => {
-            const p = d.performance || {};
-            const bits = [];
-            if (d.status === 'armed') bits.push('Levels armed, waiting on a break');
-            else if (d.status === 'in_position') bits.push('Position open');
-            else if (d.status === 'closed') bits.push('Flat for the day');
-            if (d.universe_size) bits.push(`top ${(d.levels || []).length} of ${d.universe_size} screened`);
-            if (p.equity != null && p.starting_equity) {
-                const r = (p.equity - p.starting_equity) / p.starting_equity;
-                bits.push(`paper book ${formatMoney(p.equity)} (${r >= 0 ? '+' : ''}${(r * 100).toFixed(2)}%)`);
-            }
-            if (p.sessions) bits.push(`${p.sessions} session${p.sessions === 1 ? '' : 's'}`);
-            return bits.join(' | ');
-        },
-        render: renderOptionsLevels,
-    },
+        noun: 'positions',
+        listKey: 'positions',
+        staleAfter: 4 * MS_DAY,
+        emptyLabel: 'The book is flat -- no sleeve is holding.',
+        slate: d => bookSlate(d),
+        render: renderBook,
+    }
 };
 
 // One section of the cross-source board, rendered as its own panel. `staleAfter` is
@@ -471,7 +463,7 @@ const SPORT_LABEL = { swing_book: 'Swing book', mf_book: 'Magic Formula book',
                       nba: 'NBA', nfl: 'NFL', mlb: 'MLB', f1: 'F1', real_estate: 'Real estate',
                       business_hunter: 'Business acquisitions',
                       magic_formula: 'Magic Formula', funding: 'Funding carry',
-                      options_levels: 'Options level breaks',
+                      stock_levels: 'Stock levels book',
                       polymarket_whales: 'Polymarket whale watch',
                       news: 'News coverage' };
 
@@ -1344,7 +1336,7 @@ async function loadFeed(key, opts) {
     // anything past its own budget. Surface its words rather than second-guessing them.
     //
     // Match ONLY the health vocabulary (validate_predictions.py SOURCE_STATUS). `status`
-    // is not reserved: options_levels publishes a session state there
+    // is not reserved: some feeds publish a session state there
     // (armed/in_position/closed/no_session) and funding publishes ok/building_history.
     // Treating any unrecognised value as a health failure suppressed both feeds entirely
     // -- a book holding five live option positions rendered as "This scanner is not

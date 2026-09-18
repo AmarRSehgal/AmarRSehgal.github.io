@@ -34,7 +34,7 @@ re-running the model does not produce a second line.
 
 ## The three live books
 
-`swing_book`, `mf_book` and `options_levels` are archived here too. Their list key is the
+`swing_book`, `mf_book` and `stock_levels` are archived here too. Their list key is the
 **forecast** -- the positions held, the levels armed -- and everything else the payload
 carries (`trades`, `day`, `performance`, `equity_curve`) is kept at the top level of each
 record, so the outcome is archived beside the call rather than in place of it.

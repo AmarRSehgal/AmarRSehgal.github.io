@@ -152,25 +152,31 @@ const PROJECTS = {
             + 'passing one city off as a ten-city run. The frequency model\u2019s R2 is '
             + '0.385 -- useful for seasonality, weak on year-to-year variance.',
     },
-    options_levels: {
-        title: 'Options Level Breaks (live paper)',
-        tagline: 'Opening-range breakouts traded as options, on a third $100k paper account.',
-        repo: 'options-levels',
-        stack: ['Python', 'Alpaca', 'pandas'],
-        what: 'Arms a level off each morning\u2019s opening range across a ~570-name '
-            + 'universe, and takes an option position when one breaks.',
-        how: 'A 45-minute opening range sets the level, offset by k=0.15 of the range '
-            + 'with a 15bp floor. Entries target ~0.6 delta around 11 DTE, capped at '
-            + '$2,000 of premium per trade and two concurrent positions, with stop and '
-            + 'target as multiples of the range.',
-        data: 'Alpaca consolidated SIP bars. The free plan cannot serve data less than '
-            + '15 minutes old, which is why the payload reports its own data lag -- the '
-            + 'book is honest about trading on delayed prices.',
-        limits: 'Its own sweep says the edge does not clear costs: 1.29M triggers across '
-            + '77,760 parameter sets, edge 0.019% per trade against a 0.09-0.12% option '
-            + 'cost hurdle -- short by 5-6x -- and longer holds do not help because the '
-            + 'edge stops at the closing bell. It runs forward to gather out-of-sample '
-            + 'evidence against that, not because the backtest was encouraging.',
+    stock_levels: {
+        title: 'Stock Levels Book (live paper)',
+        tagline: 'Five researched equity strategies in one $100k paper account.',
+        repo: 'stock-levels',
+        stack: ['Python', 'Alpaca', 'pandas', 'yfinance'],
+        what: 'Runs five strategies drawn from published research against the 400 most '
+            + 'liquid US names, long and short, dollar-neutral, rebalancing on a '
+            + 'five-minute tick that no-ops outside the session.',
+        how: '12-1 cross-sectional momentum ranked within sector and sized toward a 15% '
+            + 'volatility target, switched off when the market is below its 200-day '
+            + 'average; post-earnings drift ranked on each firm\u2019s own surprise '
+            + 'history; a short SPY condor that only trades when the premium beats the '
+            + 'expected loss computed from SPY\u2019s own return distribution; plus two '
+            + 'intraday signals that are computed and recorded but funded at zero.',
+        data: 'Alpaca consolidated SIP bars and option chains; yfinance for earnings '
+            + 'surprises. The free plan cannot serve a bar until it is 15 minutes old, '
+            + 'which is exactly why the two intraday sleeves are unfunded -- the delay '
+            + 'forces entries 20 minutes later than the ones that were measured, and '
+            + 'neither edge survives it.',
+        limits: 'This replaced an opening-range options strategy that its own research '
+            + 'killed: 1.5M events, no parameter set clearing its costs, the edge 5-6x '
+            + 'short of the option hurdle. Shares were the fix -- the wrapper needed '
+            + 'about 90bp before it made a cent, shares need about 5. Every Sharpe '
+            + 'behind the current sleeves carries roughly +/-0.5 standard error on five '
+            + 'years, so none of them is established. It runs forward as a record.',
     },
     nfl: {
         title: 'NFL Game Picks',
@@ -635,32 +641,6 @@ const NO_RECORD = {
 const FRAGILE_SAMPLE = 100;
 
 const HISTORY = {
-    options_levels: d => {
-        const perf = d.performance;
-        if (!perf) return null;
-        const sign = v => (v >= 0 ? '+' : '') + (Number(v) * 100).toFixed(2) + '%';
-        const rows = [
-            ['Sessions', String(perf.sessions)],
-            ['Trades taken', String(perf.trades)],
-            ['Rejected', String(perf.rejected)],
-            ['Starting equity', P.formatMoney(perf.starting_equity)],
-            ['Equity now', P.formatMoney(perf.equity)],
-            ['Realised PnL', P.formatMoney(perf.realized_pnl)],
-            ['Return', sign(perf.return_pct)],
-        ];
-        let note = 'Live and out-of-sample, on simulated fills and 15-minute delayed data.';
-        const b = d.backtest;
-        if (b) {
-            rows.push(['Backtest verdict', String(b.verdict)]);
-            rows.push(['Measured edge', `${b.edge_pct}% per trade`]);
-            rows.push(['Cost hurdle', `${b.hurdle_pct}%`]);
-            note += ` The sweep behind it tested ${Number(b.triggers_tested).toLocaleString()}`
-                 + ` triggers across ${Number(b.sets_swept).toLocaleString()} parameter sets`
-                 + ` and returned "${b.verdict}" -- short of the hurdle by ${b.shortfall}.`
-                 + ' This book runs forward to test that finding, not to showcase a result.';
-        }
-        return { rows, note };
-    },
     f1: d => {
         const t = d.track_record;
         if (!t) return null;
@@ -1100,7 +1080,7 @@ const SESSIONS = {
     nba: dailySlates,
     nfl: nflWeeks,
     f1: f1Races,
-    options_levels: optionsSessions,
+    stock_levels: curveSessions,
     swing_book: curveSessions,
     mf_book: curveSessions,
 };
@@ -1343,6 +1323,7 @@ if (P.FEEDS.mlb) P.FEEDS.mlb.renderFull = d =>
 if (P.FEEDS.magic_formula) P.FEEDS.magic_formula.renderFull = renderMagicFormulaFull;
 if (P.FEEDS.swing_book) P.FEEDS.swing_book.renderFull = renderBookFull;
 if (P.FEEDS.mf_book) P.FEEDS.mf_book.renderFull = renderBookFull;
+if (P.FEEDS.stock_levels) P.FEEDS.stock_levels.renderFull = renderBookFull;
 
 async function boot() {
     const key = new URLSearchParams(window.location.search).get('feed');
