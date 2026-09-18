@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T16:59:38.590489+00:00",
+  "generated_at": "2026-09-18T17:04:45.209389+00:00",
   "as_of": "2026-09-18",
   "status": "in_position",
   "account": "PA35ZGJSY8J9",
@@ -22,9 +22,9 @@
     "max_concurrent": 2,
     "max_deployed": 4000.0
   },
-  "equity": 97739.17,
-  "polls": 31,
-  "last_poll_at": "2026-09-18T16:59:36.473192+00:00",
+  "equity": 97729.17,
+  "polls": 32,
+  "last_poll_at": "2026-09-18T17:04:42.655740+00:00",
   "levels": [
     {
       "symbol": "NFLX",
@@ -866,7 +866,7 @@
       "exit_order_id": null,
       "exit_fill": null,
       "realized_pnl": null,
-      "unrealized_pnl": 200.0,
+      "unrealized_pnl": 190.0,
       "option_symbol": "HOOD261002C00115000",
       "strike": 115.0,
       "expiry": "2026-10-02",
@@ -895,7 +895,7 @@
       "detected_at": "2026-09-18T14:41:29.270973+00:00",
       "filled_contracts": 2,
       "entry_filled_at": "2026-09-18T14:41:31.320420775Z",
-      "market_value": 1660.0,
+      "market_value": 1650.0,
       "avg_entry_price": 7.3
     },
     {
@@ -961,7 +961,7 @@
     "rejected": 0,
     "unfilled": 0,
     "realized_pnl": -421.6,
-    "unrealized_pnl": 30.0,
+    "unrealized_pnl": 20.0,
     "wins": 0,
     "losses": 2,
     "gate_passed": 0
@@ -977,10 +977,10 @@
     "rejected": 0,
     "unfilled": 0,
     "starting_equity": 100000.0,
-    "equity": 97739.17,
+    "equity": 97729.17,
     "realized_pnl": -2317.0,
-    "equity_pnl": -2260.83,
-    "return_pct": -0.02260830000000002,
+    "equity_pnl": -2270.83,
+    "return_pct": -0.022708300000000018,
     "brief_cost_usd": 0.78,
     "equity_curve": [
       [
@@ -1001,7 +1001,7 @@
       ],
       [
         "2026-09-18",
-        97739.17
+        97729.17
       ]
     ],
     "history": [
@@ -1086,10 +1086,10 @@
       },
       {
         "session": "2026-09-18",
-        "equity": 97739.17,
+        "equity": 97729.17,
         "equity_open": 98118.71,
         "watchlist": 8,
-        "polls": 31,
+        "polls": 32,
         "regime": "",
         "brief_cost_usd": 0.0,
         "taken": 4,
@@ -1099,7 +1099,7 @@
         "rejected": 0,
         "unfilled": 0,
         "realized_pnl": -421.6,
-        "unrealized_pnl": 30.0,
+        "unrealized_pnl": 20.0,
         "wins": 0,
         "losses": 2,
         "gate_passed": 0
