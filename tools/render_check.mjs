@@ -79,7 +79,7 @@ const feedSrc = read('feed.js');
 }
 
 // --- Detail page: every feed, in full, through feed.js's own boot ----------------
-for (const key of ['options_levels', 'swing_book', 'mf_book', 'funding', 'nfl', 'nba',
+for (const key of ['stock_levels', 'swing_book', 'mf_book', 'funding', 'nfl', 'nba',
                    'mlb', 'f1', 'real_estate', 'magic_formula', 'polymarket_whales', 'news']) {
     const els = freshDom(`?feed=${key}`);
     (0, eval)(predictionsSrc);
@@ -91,7 +91,7 @@ for (const key of ['options_levels', 'swing_book', 'mf_book', 'funding', 'nfl', 
 
     // The books are the reason the session panel exists; a silent regression there is
     // the panel quietly removing itself, which looks identical to a feed that has none.
-    if (['options_levels', 'swing_book', 'mf_book', 'f1', 'nfl', 'mlb'].includes(key)) {
+    if (['stock_levels', 'swing_book', 'mf_book', 'f1', 'nfl', 'mlb'].includes(key)) {
         const sess = els['feed-sessions'];
         const html = sess.innerHTML;
         check(`feed ${key} sessions`,

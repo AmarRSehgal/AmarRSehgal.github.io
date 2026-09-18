@@ -152,6 +152,20 @@ SPECS = {
                  'positions'), 'positions',
                 ('ticker', 'qty', 'avg_entry', 'price', 'market_value', 'pnl',
                  'return_pct')),
+    # Fourth paper book, and the successor to options_levels. Same book shape, plus two
+    # keys no other book needs:
+    #
+    #   `strategies` -- five sleeves run in one account, two of them deliberately funded
+    #                   at zero. A reader seeing only the blended P&L would have no way
+    #                   to know which sleeves were actually live, so the roster travels
+    #                   with the numbers.
+    #   `research`   -- inherited from the feed this replaces. The book exists because a
+    #                   prior strategy was researched and failed; without the note the
+    #                   page becomes a claim rather than a record.
+    'stock_levels': (('generated_at', 'account', 'paper', 'started', 'starting_equity',
+                      'equity', 'strategies', 'research', 'positions'), 'positions',
+                     ('ticker', 'qty', 'avg_entry', 'price', 'market_value', 'pnl',
+                      'return_pct')),
     # Opening-range level breaks, third paper book. Two requirements no other feed has,
     # because this strategy BACKTESTED NEGATIVE and is published anyway:
     #
@@ -868,6 +882,13 @@ def check_book_payload(data, sport):
     # The whole reason the swing book exists is the gap between a backtest that says
     # the strategy loses and a live result. Publishing the live number without the
     # backtest beside it is how that framing quietly disappears.
+    if sport == 'stock_levels':
+        if not data['research'].get('note'):
+            raise Invalid('research.note is required: the book publishes a record, not a claim')
+        funded = [x for x in data['strategies'] if x.get('funded')]
+        if not funded:
+            raise Invalid('no strategy is funded -- publishing a book nothing trades')
+
     if sport == 'swing_book' and data.get('backtest') is not None:
         bt = data['backtest']
         if not isinstance(bt, dict):
@@ -1169,6 +1190,16 @@ def validate(sport, data, now=None):
         check_portfolio(data.get('portfolio'))
     elif sport == 'contracts':
         check_contracts_payload(data)
+    elif sport == 'stock_levels':
+        check_book_payload(data, sport)
+        if not isinstance(data['strategies'], list) or not data['strategies']:
+            raise Invalid('strategies must be a non-empty list')
+        for st in data['strategies']:
+            for k in ('name', 'alloc_pct', 'funded'):
+                if k not in st:
+                    raise Invalid(f'strategy entry missing {k!r}')
+        if not isinstance(data['research'], dict):
+            raise Invalid('research must be an object')
     elif sport in ('swing_book', 'mf_book'):
         check_book_payload(data, sport)
     elif sport == 'polymarket_whales':
@@ -1205,7 +1236,7 @@ def validate(sport, data, now=None):
             check_source_section(where, item)
         elif sport == 'contracts':
             check_lane(where, item)
-        elif sport in ('swing_book', 'mf_book'):
+        elif sport in ('swing_book', 'mf_book', 'stock_levels'):
             check_book_position(where, item)
         elif sport == 'options_levels':
             check_level(where, item)
