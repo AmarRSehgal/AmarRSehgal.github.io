@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T14:36:25.029813+00:00",
+  "generated_at": "2026-09-18T14:41:32.357516+00:00",
   "as_of": "2026-09-18",
   "status": "in_position",
   "account": "PA35ZGJSY8J9",
@@ -22,9 +22,9 @@
     "max_concurrent": 2,
     "max_deployed": 4000.0
   },
-  "equity": 97789.46,
-  "polls": 3,
-  "last_poll_at": "2026-09-18T14:36:22.604481+00:00",
+  "equity": 97731.4,
+  "polls": 4,
+  "last_poll_at": "2026-09-18T14:41:29.270973+00:00",
   "levels": [
     {
       "symbol": "NFLX",
@@ -774,7 +774,7 @@
       "exit_order_id": null,
       "exit_fill": null,
       "realized_pnl": null,
-      "unrealized_pnl": -224.0,
+      "unrealized_pnl": -232.0,
       "option_symbol": "RIOT261002P00024000",
       "strike": 24.0,
       "expiry": "2026-10-02",
@@ -803,7 +803,7 @@
       "detected_at": "2026-09-18T14:26:07.502686+00:00",
       "filled_contracts": 8,
       "entry_filled_at": "2026-09-18T14:26:09.903238944Z",
-      "market_value": 1736.0,
+      "market_value": 1728.0,
       "avg_entry_price": 2.45
     },
     {
@@ -851,6 +851,47 @@
       "exit_at": "2026-09-18T14:36:22.604481+00:00",
       "exit_filled_at": "2026-09-18T14:36:24.14982471Z",
       "closed_session": "2026-09-18"
+    },
+    {
+      "symbol": "HOOD",
+      "side": "long",
+      "status": "open",
+      "entry_order_id": "87808c57-25ef-4902-bbaf-8430bffd8ae8",
+      "entry_fill": 7.3,
+      "exit_order_id": null,
+      "exit_fill": null,
+      "realized_pnl": null,
+      "unrealized_pnl": -50.0,
+      "option_symbol": "HOOD261002C00115000",
+      "strike": 115.0,
+      "expiry": "2026-10-02",
+      "right": "call",
+      "contracts": 2,
+      "entry_underlying": 117.28699999999999,
+      "spot_at_order": 117.47,
+      "opened_session": "2026-09-18",
+      "or_width": 4.789999999999992,
+      "limit": 7.5,
+      "indicative_bid": 7.1,
+      "indicative_ask": 7.35,
+      "indicative_spread_pct": 0.03460207612456748,
+      "delta": 0.6024,
+      "iv": 0.6277,
+      "rule_zero_passed": false,
+      "rule_zero": "REJECT: expectancy $-53.71/contract at P(target)=34%.",
+      "expectancy": -53.70548327053794,
+      "gate_mode": "observe",
+      "thesis": "long above 117.29, target 10-day high 125.25 (+6.79%, 14.9x break-even), invalid at 111.06 (back inside the opening range); reward:risk 1.28",
+      "plan_target": 125.25,
+      "plan_stop": 111.06,
+      "target_level": "10-day high",
+      "exit_mode": "structural",
+      "reward_risk": 1.278785932230612,
+      "detected_at": "2026-09-18T14:41:29.270973+00:00",
+      "filled_contracts": 2,
+      "entry_filled_at": "2026-09-18T14:41:31.320420775Z",
+      "market_value": 1410.0,
+      "avg_entry_price": 7.3
     }
   ],
   "event_check": null,
@@ -867,14 +908,14 @@
   },
   "excluded": [],
   "day": {
-    "taken": 2,
+    "taken": 3,
     "closed": 1,
-    "open": 1,
+    "open": 2,
     "held_over": 0,
     "rejected": 0,
     "unfilled": 0,
     "realized_pnl": -106.4,
-    "unrealized_pnl": -224.0,
+    "unrealized_pnl": -282.0,
     "wins": 0,
     "losses": 1,
     "gate_passed": 0
@@ -882,7 +923,7 @@
   "performance": {
     "since": "2026-09-14",
     "sessions": 5,
-    "trades": 11,
+    "trades": 12,
     "closed": 10,
     "wins": 2,
     "losses": 8,
@@ -890,10 +931,10 @@
     "rejected": 0,
     "unfilled": 0,
     "starting_equity": 100000.0,
-    "equity": 97789.46,
+    "equity": 97731.4,
     "realized_pnl": -2001.8,
-    "equity_pnl": -2210.54,
-    "return_pct": -0.022105399999999935,
+    "equity_pnl": -2268.6,
+    "return_pct": -0.022686000000000057,
     "brief_cost_usd": 0.78,
     "equity_curve": [
       [
@@ -914,7 +955,7 @@
       ],
       [
         "2026-09-18",
-        97789.46
+        97731.4
       ]
     ],
     "history": [
@@ -999,20 +1040,20 @@
       },
       {
         "session": "2026-09-18",
-        "equity": 97789.46,
+        "equity": 97731.4,
         "equity_open": 98118.71,
         "watchlist": 8,
-        "polls": 3,
+        "polls": 4,
         "regime": "",
         "brief_cost_usd": 0.0,
-        "taken": 2,
+        "taken": 3,
         "closed": 1,
-        "open": 1,
+        "open": 2,
         "held_over": 0,
         "rejected": 0,
         "unfilled": 0,
         "realized_pnl": -106.4,
-        "unrealized_pnl": -224.0,
+        "unrealized_pnl": -282.0,
         "wins": 0,
         "losses": 1,
         "gate_passed": 0
