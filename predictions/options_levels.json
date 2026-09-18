@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T15:07:04.061559+00:00",
+  "generated_at": "2026-09-18T15:12:10.312679+00:00",
   "as_of": "2026-09-18",
   "status": "in_position",
   "account": "PA35ZGJSY8J9",
@@ -22,9 +22,9 @@
     "max_concurrent": 2,
     "max_deployed": 4000.0
   },
-  "equity": 97751.4,
-  "polls": 9,
-  "last_poll_at": "2026-09-18T15:07:02.013055+00:00",
+  "equity": 97755.4,
+  "polls": 10,
+  "last_poll_at": "2026-09-18T15:12:08.452383+00:00",
   "levels": [
     {
       "symbol": "NFLX",
@@ -774,7 +774,7 @@
       "exit_order_id": null,
       "exit_fill": null,
       "realized_pnl": null,
-      "unrealized_pnl": -272.0,
+      "unrealized_pnl": -240.0,
       "option_symbol": "RIOT261002P00024000",
       "strike": 24.0,
       "expiry": "2026-10-02",
@@ -803,7 +803,7 @@
       "detected_at": "2026-09-18T14:26:07.502686+00:00",
       "filled_contracts": 8,
       "entry_filled_at": "2026-09-18T14:26:09.903238944Z",
-      "market_value": 1688.0,
+      "market_value": 1720.0,
       "avg_entry_price": 2.45
     },
     {
@@ -861,7 +861,7 @@
       "exit_order_id": null,
       "exit_fill": null,
       "realized_pnl": null,
-      "unrealized_pnl": 10.0,
+      "unrealized_pnl": -10.0,
       "option_symbol": "HOOD261002C00115000",
       "strike": 115.0,
       "expiry": "2026-10-02",
@@ -890,7 +890,7 @@
       "detected_at": "2026-09-18T14:41:29.270973+00:00",
       "filled_contracts": 2,
       "entry_filled_at": "2026-09-18T14:41:31.320420775Z",
-      "market_value": 1470.0,
+      "market_value": 1450.0,
       "avg_entry_price": 7.3
     }
   ],
@@ -915,7 +915,7 @@
     "rejected": 0,
     "unfilled": 0,
     "realized_pnl": -106.4,
-    "unrealized_pnl": -262.0,
+    "unrealized_pnl": -250.0,
     "wins": 0,
     "losses": 1,
     "gate_passed": 0
@@ -931,10 +931,10 @@
     "rejected": 0,
     "unfilled": 0,
     "starting_equity": 100000.0,
-    "equity": 97751.4,
+    "equity": 97755.4,
     "realized_pnl": -2001.8,
-    "equity_pnl": -2248.6,
-    "return_pct": -0.022486000000000058,
+    "equity_pnl": -2244.6,
+    "return_pct": -0.02244600000000006,
     "brief_cost_usd": 0.78,
     "equity_curve": [
       [
@@ -955,7 +955,7 @@
       ],
       [
         "2026-09-18",
-        97751.4
+        97755.4
       ]
     ],
     "history": [
@@ -1040,10 +1040,10 @@
       },
       {
         "session": "2026-09-18",
-        "equity": 97751.4,
+        "equity": 97755.4,
         "equity_open": 98118.71,
         "watchlist": 8,
-        "polls": 9,
+        "polls": 10,
         "regime": "",
         "brief_cost_usd": 0.0,
         "taken": 3,
@@ -1053,7 +1053,7 @@
         "rejected": 0,
         "unfilled": 0,
         "realized_pnl": -106.4,
-        "unrealized_pnl": -262.0,
+        "unrealized_pnl": -250.0,
         "wins": 0,
         "losses": 1,
         "gate_passed": 0
