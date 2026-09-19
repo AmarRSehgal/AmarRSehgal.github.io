@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-19T03:25:16.367855+00:00",
+  "generated_at": "2026-09-19T04:24:35.855042+00:00",
   "window_hours": 24,
-  "articles_in_window": 2322,
+  "articles_in_window": 2302,
   "collection_days": 20,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,47 +10,47 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 277,
+      "articles": 278,
       "sources": 39,
       "sentiment_direction": "mixed",
       "surge": 1.1,
-      "sentiment_mean": -0.065,
-      "headline": "Trump to meet Venezuela acting president, first meeting since Maduro\u2019s removal",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/us/trump-to-meet-venezuela-acting-president-delcy-rodriguez-first-since-maduros-removal/articleshow/134346769.cms"
+      "sentiment_mean": -0.063,
+      "headline": "Thousands protest closure of the Kennedy Center amid fears Trump is set to demolish the institution",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/us-news/2026/sep/19/thousands-protest-closure-of-the-kennedy-center-amid-fears-trump-is-set-to-demolish-the-institution"
     },
     {
       "term": "president",
-      "articles": 151,
-      "sources": 32,
+      "articles": 152,
+      "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 1.2,
-      "sentiment_mean": 0.01,
+      "surge": 1.21,
+      "sentiment_mean": 0.022,
       "headline": "Trump to meet Venezuela acting president, first meeting since Maduro\u2019s removal",
       "headline_source": "Times of India",
       "headline_url": "https://timesofindia.indiatimes.com/world/us/trump-to-meet-venezuela-acting-president-delcy-rodriguez-first-since-maduros-removal/articleshow/134346769.cms"
     },
     {
-      "term": "government",
-      "articles": 77,
-      "sources": 32,
-      "sentiment_direction": "mixed",
-      "surge": 1.11,
-      "sentiment_mean": -0.138,
-      "headline": "Philippines says Chinese ship \u2018rammed\u2019 government vessel in South China Sea",
-      "headline_source": "Japan Times",
-      "headline_url": "https://www.japantimes.co.jp/news/2026/09/19/asia-pacific/philippines-chinese-ship-rammed-vessel/"
-    },
-    {
       "term": "house",
-      "articles": 89,
+      "articles": 86,
       "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 1.25,
-      "sentiment_mean": -0.135,
+      "surge": 1.2,
+      "sentiment_mean": -0.13,
       "headline": "'US doing very well with China': Trump ahead of Xi Jinping's first White House visit",
       "headline_source": "Times of India",
       "headline_url": "https://timesofindia.indiatimes.com/weather/us/us-doing-very-well-with-china-trump-ahead-of-xi-jinpings-first-white-house-visit-in-a-decade/articleshow/134346700.cms"
+    },
+    {
+      "term": "government",
+      "articles": 71,
+      "sources": 31,
+      "sentiment_direction": "negative",
+      "surge": 1.02,
+      "sentiment_mean": -0.178,
+      "headline": "Philippines says Chinese ship \u2018rammed\u2019 government vessel in South China Sea",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/news/2026/09/19/asia-pacific/philippines-chinese-ship-rammed-vessel/"
     },
     {
       "term": "white",
@@ -69,33 +69,33 @@
       "sources": 29,
       "sentiment_direction": "negative",
       "surge": 1.45,
-      "sentiment_mean": -0.167,
-      "headline": "Trump signs broad Russia sanctions bill",
-      "headline_source": "DW News",
-      "headline_url": "https://www.dw.com/en/trump-signs-broad-russia-sanctions-bill/a-79335115?maca=en-rss-en-all-1573-rdf"
-    },
-    {
-      "term": "data",
-      "articles": 49,
-      "sources": 28,
-      "sentiment_direction": "mixed",
-      "surge": 0.87,
-      "sentiment_mean": -0.034,
-      "headline": "Oracle's $18 billion data center debt under pressure, FT reports",
-      "headline_source": "Reddit r/wallstreetbets",
-      "headline_url": "https://www.reddit.com/r/wallstreetbets/comments/1wkafci/oracles_18_billion_data_center_debt_under/"
+      "sentiment_mean": -0.172,
+      "headline": "Trump\u2019s Greenland deal: How Arctic pact bolsters Golden Dome against Russia, China",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/defence/international/trumps-greenland-deal-how-arctic-pact-bolsters-golden-dome-against-russia-china/articleshow/134346911.cms"
     },
     {
       "term": "security",
-      "articles": 69,
-      "sources": 27,
+      "articles": 71,
+      "sources": 28,
       "sentiment_direction": "positive",
-      "surge": 1.37,
-      "sentiment_mean": 0.385,
-      "headline": "Google\u2019s Gemini AI hacks 3 companies in security test, then stops - Al Jazeera",
-      "headline_source": "Google News Top",
-      "headline_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSWZPMlZuOVJIUXh6RWxndUJmdmVUVEhpa0E4NGZ1WWlQWHZ5alkxbmhwWmRRU1VLQjRSZEYzanA3M2Z1MXFoVDJiSFNCWGw4dWNuVXB0UEJFWDBBQ1FWMDhsVUVYWDZfTlRuUE1pYUVlOHpQTFdaX19vV3NpMTZDd2hwQWJubXc2WW83RWZTNDhYLTZDNGgwZGZyVjRIbGwxdnBQZE5Eb9IBrAFBVV95cUxPaUxhcXdfcWc1RUFfQWhiX2JNS0hhbGlMQ0s5VzRYV0NHdjNVRXJOSkVjQ0xYTlpfMndoeVZDdHVWWDNQMTg2YkhmUkNIY3VYV1dDTUFYaU1UU0E4SzU5eVR3UHMzR3Zla0NtUmxLaFo0QWcxeXhLMU1yeTJsbmlsSjBZNGJ5RWZJUVdYQWtMVVpDcDlPVGNwWFdXd0dhVmVWSVhNREcyTEhVR2FN?oc=5"
+      "surge": 1.4,
+      "sentiment_mean": 0.369,
+      "headline": "Google says Gemini AI model breached real systems in security test",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/world/united-states-canada/article/3368090/google-says-gemini-ai-model-breached-real-systems-security-test?utm_source=rss_feed"
+    },
+    {
+      "term": "prices",
+      "articles": 64,
+      "sources": 28,
+      "sentiment_direction": "mixed",
+      "surge": 0.92,
+      "sentiment_mean": -0.045,
+      "headline": "North Carolina residents react to Trump's comments on higher gas prices being worth the war in Iran - AP News",
+      "headline_source": "AP News",
+      "headline_url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPX3M0ck54UHZCNGdwQUdkR2l4aG1NR3A5aGZoYW0tUVNSNWduWDRYdW9FS19LUVRrLWNWS3phNmRvTnI5VC1NbWsyMDBacXY4WTV5cG4yRHVIeTNuNXV5MkxwVnh2SEFhcjF4QTA5alZBb0pMTk9GT1ZZWWhOb2VXNXdSbldhOWRYYUlpVWcyRWhrbUI2V045dURvMlhTZEtOYVRIQkk3YzJ2VlBTY0V4UWpobGJNSC0tTUhPYWNlQ2tpSElxR1lubDBVX3p3QTlza21tQ2VKbkdXRnJvbUdiQVE2N1AzTk93Zjhhcw?oc=5"
     }
   ],
-  "hours_since_fetch": 0.01
+  "hours_since_fetch": 0.0
 }
