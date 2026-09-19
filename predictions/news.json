@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-19T14:24:39.988081+00:00",
+  "generated_at": "2026-09-19T15:25:00.160803+00:00",
   "window_hours": 24,
-  "articles_in_window": 2038,
+  "articles_in_window": 1946,
   "collection_days": 20,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,25 +10,25 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 309,
-      "sources": 40,
+      "articles": 305,
+      "sources": 39,
       "sentiment_direction": "mixed",
-      "surge": 1.24,
-      "sentiment_mean": -0.038,
-      "headline": "CNN and MS NOW staffers turned away from White House after Trump ban",
+      "surge": 1.22,
+      "sentiment_mean": -0.05,
+      "headline": "Trump announces U.S. will control Greenland's security after deal with Denmark",
       "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/news/white-house-media-ban-ms-now-politico-cnn-trump/"
+      "headline_url": "https://www.cbsnews.com/video/trump-announces-us-will-control-greenlands-security-after-deal-with-denmark/"
     },
     {
       "term": "house",
-      "articles": 94,
+      "articles": 95,
       "sources": 33,
-      "sentiment_direction": "mixed",
-      "surge": 1.27,
-      "sentiment_mean": -0.125,
-      "headline": "CNN and MS NOW staffers turned away from White House after Trump ban",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/news/white-house-media-ban-ms-now-politico-cnn-trump/"
+      "sentiment_direction": "negative",
+      "surge": 1.28,
+      "sentiment_mean": -0.165,
+      "headline": "CNN, MS NOW say journalists denied access to White House grounds after Trump's ban",
+      "headline_source": "CBC World",
+      "headline_url": "https://www.cbc.ca/news/world/cnn-journalists-banned-white-house-trump-9.7350912?cmp=rss"
     },
     {
       "term": "security",
@@ -36,66 +36,66 @@
       "sources": 33,
       "sentiment_direction": "positive",
       "surge": 1.66,
-      "sentiment_mean": 0.351,
-      "headline": "Most workers would take a pay cut for job security right now: \u2018I can\u2019t deal with this stress anymore\u2019",
-      "headline_source": "MarketWatch Top Stories",
-      "headline_url": "https://www.marketwatch.com/story/most-workers-would-take-a-pay-cut-for-job-security-right-now-i-cant-deal-with-this-stress-anymore-284aa87a?mod=mw_rss_topstories"
-    },
-    {
-      "term": "deal",
-      "articles": 81,
-      "sources": 32,
-      "sentiment_direction": "positive",
-      "surge": 2.02,
-      "sentiment_mean": 0.4,
-      "headline": "Most workers would take a pay cut for job security right now: \u2018I can\u2019t deal with this stress anymore\u2019",
-      "headline_source": "MarketWatch Top Stories",
-      "headline_url": "https://www.marketwatch.com/story/most-workers-would-take-a-pay-cut-for-job-security-right-now-i-cant-deal-with-this-stress-anymore-284aa87a?mod=mw_rss_topstories"
+      "sentiment_mean": 0.352,
+      "headline": "Trump announces U.S. will control Greenland's security after deal with Denmark",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/trump-announces-us-will-control-greenlands-security-after-deal-with-denmark/"
     },
     {
       "term": "president",
-      "articles": 145,
+      "articles": 142,
       "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 1.17,
-      "sentiment_mean": 0.049,
+      "surge": 1.14,
+      "sentiment_mean": 0.052,
       "headline": "Yashasvi Solanki becomes first woman officer to serve as President\u2019s ADC",
       "headline_source": "Times of India",
       "headline_url": "https://timesofindia.indiatimes.com/women/voices-of-power/meet-yashasvi-solanki-the-haryana-girl-who-made-history-as-the-first-woman-officer-from-indias-army-navy-or-air-force-to-become-presidents-adc/articleshow/134352830.cms"
     },
     {
-      "term": "white",
-      "articles": 81,
+      "term": "deal",
+      "articles": 80,
       "sources": 31,
-      "sentiment_direction": "negative",
-      "surge": 3.09,
-      "sentiment_mean": -0.16,
-      "headline": "CNN and MS NOW staffers turned away from White House after Trump ban",
+      "sentiment_direction": "positive",
+      "surge": 1.98,
+      "sentiment_mean": 0.394,
+      "headline": "Trump announces U.S. will control Greenland's security after deal with Denmark",
       "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/news/white-house-media-ban-ms-now-politico-cnn-trump/"
+      "headline_url": "https://www.cbsnews.com/video/trump-announces-us-will-control-greenlands-security-after-deal-with-denmark/"
+    },
+    {
+      "term": "white",
+      "articles": 80,
+      "sources": 30,
+      "sentiment_direction": "negative",
+      "surge": 2.98,
+      "sentiment_mean": -0.225,
+      "headline": "CNN, MS NOW say journalists denied access to White House grounds after Trump's ban",
+      "headline_source": "CBC World",
+      "headline_url": "https://www.cbc.ca/news/world/cnn-journalists-banned-white-house-trump-9.7350912?cmp=rss"
     },
     {
       "term": "greenland",
-      "articles": 54,
+      "articles": 55,
       "sources": 29,
       "sentiment_direction": "positive",
-      "surge": 17.37,
-      "sentiment_mean": 0.581,
-      "headline": "US Greenland Deal Shifts Focus to Investment",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/videos/2026-09-19/us-greenland-deal-shifts-focus-to-investment-video"
+      "surge": 17.68,
+      "sentiment_mean": 0.585,
+      "headline": "Trump announces U.S. will control Greenland's security after deal with Denmark",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/trump-announces-us-will-control-greenlands-security-after-deal-with-denmark/"
     },
     {
       "term": "companies",
-      "articles": 55,
+      "articles": 53,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 1.49,
-      "sentiment_mean": 0.073,
-      "headline": "Companies Avoid Selling The Bonds Investors Crave: Credit Weekly",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/articles/2026-09-19/companies-avoid-selling-the-bonds-investors-crave-credit-weekly"
+      "surge": 1.42,
+      "sentiment_mean": 0.067,
+      "headline": "The Stock Market's Biggest Companies Are Losing Their Grip. Here's the ETF I'd Buy If History Repeats.",
+      "headline_source": "Yahoo Finance",
+      "headline_url": "https://finance.yahoo.com/markets/stocks/articles/stock-markets-biggest-companies-losing-150500940.html"
     }
   ],
-  "hours_since_fetch": 0.0
+  "hours_since_fetch": 0.01
 }
