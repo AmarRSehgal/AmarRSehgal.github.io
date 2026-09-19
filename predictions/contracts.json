@@ -1,11 +1,28 @@
 {
-  "generated_at": "2026-09-18T15:01:43.190831+00:00",
-  "snapshot_date": "2026-09-18",
-  "snapshots": 19,
-  "observing_snapshots": 17,
+  "generated_at": "2026-09-19T15:00:55.602022+00:00",
+  "snapshot_date": "2026-09-19",
+  "snapshots": 20,
+  "observing_snapshots": 18,
   "days_since_new_data": 0,
-  "notices_tracked": 76363,
+  "notices_tracked": 77084,
   "lanes": [
+    {
+      "office": "W6QM MICC-FT DRUM",
+      "agency": "DEPT OF DEFENSE",
+      "group": "Office supplies",
+      "lane": "office supplies",
+      "evidence": "OBSERVED",
+      "solicitations": 2,
+      "cadence": "monthly",
+      "cadence_days": 26,
+      "cadence_source": "dates",
+      "regularity": null,
+      "span_days": 26,
+      "next_expected": "2026-10-13",
+      "open_deadline": "2026-09-21",
+      "states": [],
+      "link": "https://sam.gov/opp/284261f9048a4272ac7c3547d9129043/view"
+    },
     {
       "office": "DLA TROOP SUPPORT",
       "agency": "DEPT OF DEFENSE",
@@ -100,42 +117,6 @@
       "link": "https://sam.gov/opp/c33de8c49a16410b9536726e8baecf16/view"
     },
     {
-      "office": "W6QM MICC-FT DRUM",
-      "agency": "DEPT OF DEFENSE",
-      "group": "Clothing/textiles",
-      "lane": "riot gear",
-      "evidence": "POSTED-HISTORY",
-      "solicitations": 3,
-      "cadence": "bimonthly",
-      "cadence_days": 70,
-      "cadence_source": "dates",
-      "regularity": 0.22,
-      "span_days": 141,
-      "next_expected": "2026-11-06",
-      "open_deadline": "",
-      "states": [],
-      "link": "https://sam.gov/opp/4ce15fa728c6435cae4e8c0c14473907/view"
-    },
-    {
-      "office": "FCC COLEMAN",
-      "agency": "JUSTICE, DEPARTMENT OF",
-      "group": "Subsistence/FOOD",
-      "lane": "fcc coleman produce",
-      "evidence": "PERIOD-MARKER",
-      "solicitations": 2,
-      "cadence": "monthly",
-      "cadence_days": 30,
-      "cadence_source": "dates",
-      "regularity": null,
-      "span_days": 30,
-      "next_expected": "2026-10-09",
-      "open_deadline": "2026-09-18",
-      "states": [
-        "FL"
-      ],
-      "link": "https://sam.gov/opp/89f5d01ea7cd4ee3ad8146c8755040c3/view"
-    },
-    {
       "office": "FCI DANBURY",
       "agency": "JUSTICE, DEPARTMENT OF",
       "group": "Subsistence/FOOD",
@@ -153,62 +134,81 @@
         "CT"
       ],
       "link": "https://sam.gov/opp/e8215bb2434444329c39d046d4775073/view"
+    },
+    {
+      "office": "FCI DANBURY",
+      "agency": "JUSTICE, DEPARTMENT OF",
+      "group": "Subsistence/FOOD",
+      "lane": "fci danbury dairy",
+      "evidence": "PERIOD-MARKER",
+      "solicitations": 2,
+      "cadence": "biweekly",
+      "cadence_days": 12,
+      "cadence_source": "dates",
+      "regularity": null,
+      "span_days": 12,
+      "next_expected": "2026-09-13",
+      "open_deadline": "2027-08-28",
+      "states": [
+        "CT"
+      ],
+      "link": "https://sam.gov/opp/441c8202a888471db62594d20359eb8c/view"
     }
   ],
   "open": [
     {
-      "title": "15B40626Q00000021 FY27 QTR 1 KOSHER AND HALAL",
-      "office": "FCC FLORENCE",
-      "group": "Subsistence/FOOD",
-      "state": "CO",
-      "deadline": "2026-09-18",
-      "access": "small-biz",
-      "link": "https://sam.gov/opp/93a30b9341ea4946a5f0cbeb775db328/view"
-    },
-    {
-      "title": "320lb Shock Test Change Containers",
-      "office": "NSWC INDIAN HEAD DIVISION",
-      "group": "Containers/packaging",
-      "state": "MD",
-      "deadline": "2026-09-18",
-      "access": "small-biz",
-      "link": "https://sam.gov/opp/a711f475da854c7f86b6069415609be5/view"
-    },
-    {
-      "title": "48 CMS Fuels Shop Rolling Cabinets",
-      "office": "FA5587  48 CONS (ADMIN ONLY NO REQ)",
+      "title": "G6 - Mailroom Digital Lockers",
+      "office": "W7N9 USPFO ACTIVITY WY ARNG",
       "group": "Furniture",
-      "state": "",
-      "deadline": "2026-09-18",
-      "access": "OPEN",
-      "link": "https://sam.gov/opp/2068ed4857a14af9843549eb557bc728/view"
-    },
-    {
-      "title": "7110",
-      "office": "NAVAL MEDICAL RESEARCH CENTER",
-      "group": "Furniture",
-      "state": "",
-      "deadline": "2026-09-18",
+      "state": "WY",
+      "deadline": "2026-09-19",
       "access": "small-biz",
-      "link": "https://sam.gov/opp/780c34ba4cde4e71a12699d26756c653/view"
+      "link": "https://sam.gov/opp/ff03b94e384848438c25af043fd7f7e2/view"
     },
     {
-      "title": "AFGSC CAT Team Equipment",
-      "office": "FA4608  2 CONS LGC",
+      "title": "Nametags",
+      "office": "DEFENSE HEALTH AGENCY",
       "group": "Clothing/textiles",
-      "state": "LA",
-      "deadline": "2026-09-18",
+      "state": "VA",
+      "deadline": "2026-09-19",
       "access": "small-biz",
-      "link": "https://sam.gov/opp/3dcdab30081841eb89c5829247136e46/view"
+      "link": "https://sam.gov/opp/0d94985f3f7d451593c928ae671edf98/view"
     },
     {
-      "title": "Ag-Bag T700 Pull-Type Forage Bagger",
-      "office": "USDA-FS, CSA INTERMOUNTAIN 2",
-      "group": "Subsistence/FOOD",
-      "state": "MS",
-      "deadline": "2026-09-18",
+      "title": "Habitability and maintenance items for Naval Support Facility (NSF) Redzikowo, Poland",
+      "office": "NAVSUP FLC SIGONELLA NAPLES OFFICE",
+      "group": "Furniture",
+      "state": "",
+      "deadline": "2026-09-20",
+      "access": "OPEN",
+      "link": "https://sam.gov/opp/a845df8fe46f4a54a49bbab00dd11682/view"
+    },
+    {
+      "title": "Serving Line Upgrade. See attached SOW",
+      "office": "NAVSUP FLC SIGONELLA NAPLES OFFICE",
+      "group": "Furniture",
+      "state": "",
+      "deadline": "2026-09-20",
+      "access": "OPEN",
+      "link": "https://sam.gov/opp/6392db8b8d204ecc846cc96c15507703/view"
+    },
+    {
+      "title": "3 TES Furniture",
+      "office": "FA2550  50 CONS PKP",
+      "group": "Furniture",
+      "state": "CO",
+      "deadline": "2026-09-21",
       "access": "small-biz",
-      "link": "https://sam.gov/opp/eee696c41a0e42c8b2114e24f8f7868c/view"
+      "link": "https://sam.gov/opp/1b15b55d8a4f43ce97ca5f75c7fa6774/view"
+    },
+    {
+      "title": "8x8 office cubicles",
+      "office": "W6QM MICC-FT DRUM",
+      "group": "Furniture",
+      "state": "",
+      "deadline": "2026-09-21",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/53d251d4f9904ebc8adb865a072d1aa7/view"
     }
   ]
 }
