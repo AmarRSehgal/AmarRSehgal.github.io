@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-19T15:25:00.160803+00:00",
+  "generated_at": "2026-09-19T16:24:38.535576+00:00",
   "window_hours": 24,
-  "articles_in_window": 1946,
+  "articles_in_window": 1902,
   "collection_days": 20,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,11 +10,22 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 305,
-      "sources": 39,
+      "articles": 302,
+      "sources": 40,
       "sentiment_direction": "mixed",
-      "surge": 1.22,
-      "sentiment_mean": -0.05,
+      "surge": 1.21,
+      "sentiment_mean": -0.049,
+      "headline": "Farm-state Republicans are having a cow over Trump's beef imports as Election Day approaches",
+      "headline_source": "Politico",
+      "headline_url": "https://www.politico.com/news/2026/09/19/trumps-beef-plan-problem-nebraska-iowa-kansas-texas-01084910"
+    },
+    {
+      "term": "security",
+      "articles": 80,
+      "sources": 33,
+      "sentiment_direction": "positive",
+      "surge": 1.56,
+      "sentiment_mean": 0.347,
       "headline": "Trump announces U.S. will control Greenland's security after deal with Denmark",
       "headline_source": "CBS News",
       "headline_url": "https://www.cbsnews.com/video/trump-announces-us-will-control-greenlands-security-after-deal-with-denmark/"
@@ -22,80 +33,69 @@
     {
       "term": "house",
       "articles": 95,
-      "sources": 33,
+      "sources": 32,
       "sentiment_direction": "negative",
       "surge": 1.28,
-      "sentiment_mean": -0.165,
-      "headline": "CNN, MS NOW say journalists denied access to White House grounds after Trump's ban",
-      "headline_source": "CBC World",
-      "headline_url": "https://www.cbc.ca/news/world/cnn-journalists-banned-white-house-trump-9.7350912?cmp=rss"
-    },
-    {
-      "term": "security",
-      "articles": 84,
-      "sources": 33,
-      "sentiment_direction": "positive",
-      "surge": 1.66,
-      "sentiment_mean": 0.352,
-      "headline": "Trump announces U.S. will control Greenland's security after deal with Denmark",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/trump-announces-us-will-control-greenlands-security-after-deal-with-denmark/"
+      "sentiment_mean": -0.194,
+      "headline": "CNN, MS NOW and Politico denied access to White House",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/cnn-ms-now-and-politico-denied-access-to-white-house/a-79339055?maca=en-rss-en-all-1573-rdf"
     },
     {
       "term": "president",
       "articles": 142,
       "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 1.14,
-      "sentiment_mean": 0.052,
-      "headline": "Yashasvi Solanki becomes first woman officer to serve as President\u2019s ADC",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/women/voices-of-power/meet-yashasvi-solanki-the-haryana-girl-who-made-history-as-the-first-woman-officer-from-indias-army-navy-or-air-force-to-become-presidents-adc/articleshow/134352830.cms"
+      "surge": 1.13,
+      "sentiment_mean": 0.048,
+      "headline": "Olympic Council of Asia President wants to keep politics out of Asian Games",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/sports/2026/09/20/more-sports/asian-games-politics-out/"
     },
     {
       "term": "deal",
-      "articles": 80,
-      "sources": 31,
+      "articles": 81,
+      "sources": 30,
       "sentiment_direction": "positive",
-      "surge": 1.98,
-      "sentiment_mean": 0.394,
-      "headline": "Trump announces U.S. will control Greenland's security after deal with Denmark",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/trump-announces-us-will-control-greenlands-security-after-deal-with-denmark/"
+      "surge": 2.0,
+      "sentiment_mean": 0.376,
+      "headline": "Marvell (MRVL) and GlobalFoundries (GFS) Rise on Expanded Deal: What Investors Should Know",
+      "headline_source": "Yahoo Finance",
+      "headline_url": "https://finance.yahoo.com/technology/articles/marvell-mrvl-globalfoundries-gfs-rise-155724895.html"
     },
     {
       "term": "white",
       "articles": 80,
-      "sources": 30,
+      "sources": 29,
       "sentiment_direction": "negative",
-      "surge": 2.98,
-      "sentiment_mean": -0.225,
-      "headline": "CNN, MS NOW say journalists denied access to White House grounds after Trump's ban",
-      "headline_source": "CBC World",
-      "headline_url": "https://www.cbc.ca/news/world/cnn-journalists-banned-white-house-trump-9.7350912?cmp=rss"
+      "surge": 2.95,
+      "sentiment_mean": -0.262,
+      "headline": "CNN, MS NOW and Politico denied access to White House",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/cnn-ms-now-and-politico-denied-access-to-white-house/a-79339055?maca=en-rss-en-all-1573-rdf"
     },
     {
       "term": "greenland",
-      "articles": 55,
+      "articles": 57,
       "sources": 29,
       "sentiment_direction": "positive",
-      "surge": 17.68,
-      "sentiment_mean": 0.585,
-      "headline": "Trump announces U.S. will control Greenland's security after deal with Denmark",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/trump-announces-us-will-control-greenlands-security-after-deal-with-denmark/"
+      "surge": 18.32,
+      "sentiment_mean": 0.564,
+      "headline": "What I saw at the wargames preparing Greenland for Russian invasion",
+      "headline_source": "Reddit r/geopolitics",
+      "headline_url": "https://www.reddit.com/r/geopolitics/comments/1wkpue2/what_i_saw_at_the_wargames_preparing_greenland/"
     },
     {
       "term": "companies",
       "articles": 53,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 1.42,
-      "sentiment_mean": 0.067,
-      "headline": "The Stock Market's Biggest Companies Are Losing Their Grip. Here's the ETF I'd Buy If History Repeats.",
-      "headline_source": "Yahoo Finance",
-      "headline_url": "https://finance.yahoo.com/markets/stocks/articles/stock-markets-biggest-companies-losing-150500940.html"
+      "surge": 1.43,
+      "sentiment_mean": 0.063,
+      "headline": "Gemini went rogue, hacked three companies, and Google hid it",
+      "headline_source": "The Verge",
+      "headline_url": "https://www.theverge.com/ai-artificial-intelligence/997795/google-gemini-rogue-ai-hack"
     }
   ],
-  "hours_since_fetch": 0.01
+  "hours_since_fetch": 0.0
 }
