@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-19T04:24:35.855042+00:00",
+  "generated_at": "2026-09-19T05:24:39.211433+00:00",
   "window_hours": 24,
-  "articles_in_window": 2302,
+  "articles_in_window": 2287,
   "collection_days": 20,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,22 +10,22 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 278,
+      "articles": 286,
       "sources": 39,
       "sentiment_direction": "mixed",
-      "surge": 1.1,
+      "surge": 1.14,
       "sentiment_mean": -0.063,
-      "headline": "Thousands protest closure of the Kennedy Center amid fears Trump is set to demolish the institution",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/us-news/2026/sep/19/thousands-protest-closure-of-the-kennedy-center-amid-fears-trump-is-set-to-demolish-the-institution"
+      "headline": "Air Force Officer Charged After Protesting Trump Says He Spoke to Defend Constitution",
+      "headline_source": "NYT Politics",
+      "headline_url": "https://www.nytimes.com/2026/09/19/us/politics/trump-air-force-officer-protest-trial.html"
     },
     {
       "term": "president",
-      "articles": 152,
-      "sources": 33,
+      "articles": 151,
+      "sources": 34,
       "sentiment_direction": "mixed",
-      "surge": 1.21,
-      "sentiment_mean": 0.022,
+      "surge": 1.2,
+      "sentiment_mean": 0.035,
       "headline": "Trump to meet Venezuela acting president, first meeting since Maduro\u2019s removal",
       "headline_source": "Times of India",
       "headline_url": "https://timesofindia.indiatimes.com/world/us/trump-to-meet-venezuela-acting-president-delcy-rodriguez-first-since-maduros-removal/articleshow/134346769.cms"
@@ -33,68 +33,68 @@
     {
       "term": "house",
       "articles": 86,
-      "sources": 31,
+      "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 1.2,
-      "sentiment_mean": -0.13,
-      "headline": "'US doing very well with China': Trump ahead of Xi Jinping's first White House visit",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/weather/us/us-doing-very-well-with-china-trump-ahead-of-xi-jinpings-first-white-house-visit-in-a-decade/articleshow/134346700.cms"
+      "surge": 1.19,
+      "sentiment_mean": -0.117,
+      "headline": "Trump bans CNN, MS NOW, Politico from the White House",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/9/19/trump-bans-cnn-ms-now-politico-from-the-white-house?traffic_source=rss"
     },
     {
       "term": "government",
-      "articles": 71,
-      "sources": 31,
-      "sentiment_direction": "negative",
-      "surge": 1.02,
-      "sentiment_mean": -0.178,
-      "headline": "Philippines says Chinese ship \u2018rammed\u2019 government vessel in South China Sea",
-      "headline_source": "Japan Times",
-      "headline_url": "https://www.japantimes.co.jp/news/2026/09/19/asia-pacific/philippines-chinese-ship-rammed-vessel/"
-    },
-    {
-      "term": "white",
-      "articles": 68,
+      "articles": 69,
       "sources": 30,
-      "sentiment_direction": "mixed",
-      "surge": 2.67,
-      "sentiment_mean": -0.063,
-      "headline": "'US doing very well with China': Trump ahead of Xi Jinping's first White House visit",
+      "sentiment_direction": "negative",
+      "surge": 0.99,
+      "sentiment_mean": -0.165,
+      "headline": "Karnataka government bans selfies, reels on college tours",
       "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/weather/us/us-doing-very-well-with-china-trump-ahead-of-xi-jinpings-first-white-house-visit-in-a-decade/articleshow/134346700.cms"
+      "headline_url": "https://timesofindia.indiatimes.com/city/bengaluru/karnataka-govt-bans-selfies-reels-on-college-tours-caps-travel-at-five-days/articleshow/134346676.cms"
     },
     {
       "term": "russia",
-      "articles": 85,
+      "articles": 86,
       "sources": 29,
       "sentiment_direction": "negative",
-      "surge": 1.45,
-      "sentiment_mean": -0.172,
+      "surge": 1.47,
+      "sentiment_mean": -0.191,
       "headline": "Trump\u2019s Greenland deal: How Arctic pact bolsters Golden Dome against Russia, China",
       "headline_source": "Times of India",
       "headline_url": "https://timesofindia.indiatimes.com/defence/international/trumps-greenland-deal-how-arctic-pact-bolsters-golden-dome-against-russia-china/articleshow/134346911.cms"
     },
     {
+      "term": "white",
+      "articles": 69,
+      "sources": 29,
+      "sentiment_direction": "mixed",
+      "surge": 2.69,
+      "sentiment_mean": -0.077,
+      "headline": "Trump bans CNN, MS NOW, Politico from the White House",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/9/19/trump-bans-cnn-ms-now-politico-from-the-white-house?traffic_source=rss"
+    },
+    {
       "term": "security",
-      "articles": 71,
+      "articles": 73,
       "sources": 28,
       "sentiment_direction": "positive",
-      "surge": 1.4,
-      "sentiment_mean": 0.369,
-      "headline": "Google says Gemini AI model breached real systems in security test",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/world/united-states-canada/article/3368090/google-says-gemini-ai-model-breached-real-systems-security-test?utm_source=rss_feed"
+      "surge": 1.44,
+      "sentiment_mean": 0.382,
+      "headline": "Koizumi and U.S. defense chief Hegseth agree to boost security cooperation",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/news/2026/09/19/japan/politics/koizumi-hegseth-japan-us-talks/"
     },
     {
       "term": "prices",
-      "articles": 64,
+      "articles": 65,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 0.92,
-      "sentiment_mean": -0.045,
-      "headline": "North Carolina residents react to Trump's comments on higher gas prices being worth the war in Iran - AP News",
+      "surge": 0.94,
+      "sentiment_mean": -0.051,
+      "headline": "Oil prices are high but could be much worse. Trump has China\u2019s Xi to thank for that - AP News",
       "headline_source": "AP News",
-      "headline_url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPX3M0ck54UHZCNGdwQUdkR2l4aG1NR3A5aGZoYW0tUVNSNWduWDRYdW9FS19LUVRrLWNWS3phNmRvTnI5VC1NbWsyMDBacXY4WTV5cG4yRHVIeTNuNXV5MkxwVnh2SEFhcjF4QTA5alZBb0pMTk9GT1ZZWWhOb2VXNXdSbldhOWRYYUlpVWcyRWhrbUI2V045dURvMlhTZEtOYVRIQkk3YzJ2VlBTY0V4UWpobGJNSC0tTUhPYWNlQ2tpSElxR1lubDBVX3p3QTlza21tQ2VKbkdXRnJvbUdiQVE2N1AzTk93Zjhhcw?oc=5"
+      "headline_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZS1uVExKbkFEcHpfQ19mc3hFQVZVaEtDdWdZS2RzSWltbFNoMXVUTzhweDBURFBsQXJGYmE5a1MwWkctWG03SG5ZYTd0dDhKLWUxdElNRGgwTmVyTmhoMl9YOW1XVnU5TlJtV3lwU2lqUWcyeFlSNWFjUVhOY3VLVVZ0dk53MDJ6ejFF?oc=5"
     }
   ],
   "hours_since_fetch": 0.0
