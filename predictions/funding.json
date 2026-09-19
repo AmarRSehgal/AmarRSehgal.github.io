@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T07:00:09.955191+00:00",
+  "generated_at": "2026-09-19T08:00:11.303554+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 2178.91,
-      "net_at_hold": 1.98987,
-      "cost_bps": 35.29
+      "net_apr": 2179.31,
+      "net_at_hold": 1.99024,
+      "cost_bps": 35.26
     },
     {
       "base": "NIGHT",
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1970.05,
-      "net_at_hold": 1.79913,
-      "cost_bps": 53.85
+      "net_apr": 1955.79,
+      "net_at_hold": 1.78611,
+      "cost_bps": 55.17
     },
     {
       "base": "NIGHT",
@@ -66,9 +66,9 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1676.34,
-      "net_at_hold": 0.76545,
-      "cost_bps": 40.59
+      "net_apr": 1677.18,
+      "net_at_hold": 0.76584,
+      "cost_bps": 40.56
     },
     {
       "base": "NIGHT",
@@ -79,9 +79,22 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1655.66,
-      "net_at_hold": 0.75601,
-      "cost_bps": 41.54
+      "net_apr": 1666.36,
+      "net_at_hold": 0.7609,
+      "cost_bps": 41.0
+    },
+    {
+      "base": "NIGHT",
+      "type": "perp-perp",
+      "long_venue": "Coinbase",
+      "short_venue": "Bitget",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1520.47,
+      "net_at_hold": 0.69428,
+      "cost_bps": 47.59
     },
     {
       "base": "LSK",
@@ -95,19 +108,6 @@
       "net_apr": 1519.31,
       "net_at_hold": 1.3875,
       "cost_bps": 48.95
-    },
-    {
-      "base": "NIGHT",
-      "type": "perp-perp",
-      "long_venue": "Coinbase",
-      "short_venue": "Bitget",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1518.62,
-      "net_at_hold": 0.69343,
-      "cost_bps": 47.71
     }
   ]
 }
