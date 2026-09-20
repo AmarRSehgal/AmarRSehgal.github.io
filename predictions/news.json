@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-20T07:24:45.386973+00:00",
+  "generated_at": "2026-09-20T08:24:32.922869+00:00",
   "window_hours": 24,
-  "articles_in_window": 1627,
+  "articles_in_window": 1637,
   "collection_days": 21,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,33 +10,33 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 178,
+      "articles": 177,
       "sources": 40,
       "sentiment_direction": "negative",
-      "surge": 0.64,
-      "sentiment_mean": -0.164,
+      "surge": 0.63,
+      "sentiment_mean": -0.18,
       "headline": "Tech Industry Scratches Its Head Over Trump's 'AI Force' Proposal",
       "headline_source": "Slashdot",
       "headline_url": "https://politics.slashdot.org/story/26/09/19/2250231/tech-industry-scratches-its-head-over-trumps-ai-force-proposal?utm_source=rss1.0mainlinkanon&utm_medium=feed"
     },
     {
       "term": "house",
-      "articles": 64,
+      "articles": 63,
       "sources": 31,
       "sentiment_direction": "negative",
-      "surge": 0.76,
-      "sentiment_mean": -0.348,
+      "surge": 0.75,
+      "sentiment_mean": -0.369,
       "headline": "Journalists locked out of the White House after Trump ban",
       "headline_source": "Al Jazeera",
       "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/9/20/journalists-locked-out-of-the-white-house-after-trump-ban?traffic_source=rss"
     },
     {
       "term": "president",
-      "articles": 85,
+      "articles": 86,
       "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 0.62,
-      "sentiment_mean": -0.115,
+      "surge": 0.63,
+      "sentiment_mean": -0.098,
       "headline": "IOC President Kirsty Coventry impressed by accommodations at Asian Games",
       "headline_source": "Japan Times",
       "headline_url": "https://www.japantimes.co.jp/sports/2026/09/20/more-sports/kirsty-coventry-asian-games-huts/"
@@ -57,19 +57,30 @@
       "articles": 51,
       "sources": 26,
       "sentiment_direction": "negative",
-      "surge": 0.91,
+      "surge": 0.92,
       "sentiment_mean": -0.51,
       "headline": "Iran sets terms for US talks as Houthis step up attacks on Saudi Arabia",
       "headline_source": "Investing.com News",
       "headline_url": "https://www.investing.com/news/economy-news/iran-sets-terms-for-us-talks-as-houthis-step-up-attacks-on-saudi-arabia-4908144"
     },
     {
+      "term": "attack",
+      "articles": 50,
+      "sources": 25,
+      "sentiment_direction": "negative",
+      "surge": 1.47,
+      "sentiment_mean": -0.742,
+      "headline": "Woman dies after suspected dog attack in Hong Kong\u2019s Yuen Long",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/hong-kong/society/article/3368151/woman-dies-after-suspected-dog-attack-hong-kongs-yuen-long?utm_source=rss_feed"
+    },
+    {
       "term": "capital",
       "articles": 42,
-      "sources": 26,
+      "sources": 25,
       "sentiment_direction": "negative",
       "surge": 1.43,
-      "sentiment_mean": -0.408,
+      "sentiment_mean": -0.402,
       "headline": "Two dead in Moscow region, drones hit oil refinery in Russian capital - Reuters",
       "headline_source": "Reuters",
       "headline_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVVNJbGZEQXkzaEQ0UGs4U192Sks0X1UtRWtrYXhIbG0tdDhKLU4xYU1kZTFTY2g3VG4xSUE1b3MxVUNzLXlNUjZrSnRiQy1jeWo2bmJhNElYME1DUWxKdHBtbktxSUpNUkNJcjRkc1NMUmtkT2hKOWpZRGdfdDRiV0JaZVNnTWd5Sk1qbnA3N0oyWEFULTVBcllkZGsyOHZLenl4ZHNLbHRIX1B0RDRJdA?oc=5"
@@ -84,17 +95,6 @@
       "headline": "The US State Department Just Issued a New Middle East Security Alert: What Travelers Need to Know | TravelPirates",
       "headline_source": "Reddit r/worldnews",
       "headline_url": "https://www.reddit.com/r/worldnews/comments/1wl7436/the_us_state_department_just_issued_a_new_middle/"
-    },
-    {
-      "term": "force",
-      "articles": 35,
-      "sources": 24,
-      "sentiment_direction": "negative",
-      "surge": 1.33,
-      "sentiment_mean": -0.217,
-      "headline": "Tech Industry Scratches Its Head Over Trump's 'AI Force' Proposal",
-      "headline_source": "Slashdot",
-      "headline_url": "https://politics.slashdot.org/story/26/09/19/2250231/tech-industry-scratches-its-head-over-trumps-ai-force-proposal?utm_source=rss1.0mainlinkanon&utm_medium=feed"
     }
   ],
   "hours_since_fetch": 0.0
