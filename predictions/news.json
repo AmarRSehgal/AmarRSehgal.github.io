@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-20T12:24:34.742146+00:00",
+  "generated_at": "2026-09-20T13:24:38.194697+00:00",
   "window_hours": 24,
-  "articles_in_window": 1560,
+  "articles_in_window": 1555,
   "collection_days": 21,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,58 +10,80 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 159,
-      "sources": 41,
-      "sentiment_direction": "negative",
-      "surge": 0.56,
-      "sentiment_mean": -0.179,
-      "headline": "Does Trump\u2019s new AI Force signal tech race escalation ahead of Xi Jinping summit?",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/china/diplomacy/article/3368158/does-trumps-new-ai-force-signal-tech-race-escalation-ahead-xi-jinping-summit?utm_source=rss_feed"
+      "articles": 154,
+      "sources": 40,
+      "sentiment_direction": "mixed",
+      "surge": 0.54,
+      "sentiment_mean": -0.149,
+      "headline": "Kornacki: 43% of voters want midterm vote to \u2018signal opposition to Trump\u2019",
+      "headline_source": "NBC News",
+      "headline_url": "https://www.nbcnews.com/meet-the-press/video/kornacki-43-of-voters-want-midterm-vote-to-signal-opposition-to-trump-270177349733"
     },
     {
       "term": "president",
-      "articles": 87,
+      "articles": 85,
       "sources": 31,
       "sentiment_direction": "negative",
-      "surge": 0.63,
-      "sentiment_mean": -0.174,
-      "headline": "The Pinball President",
-      "headline_source": "The Atlantic",
-      "headline_url": "https://www.theatlantic.com/ideas/2026/09/trump-attention-presidents/688712/?utm_source=feed"
-    },
-    {
-      "term": "house",
-      "articles": 58,
-      "sources": 31,
-      "sentiment_direction": "negative",
-      "surge": 0.68,
-      "sentiment_mean": -0.391,
-      "headline": "Dem House candidate settles years-long $55K debt fight with former mother-in-law weeks before election",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/politics/dem-house-candidate-settles-years-long-55k-debt-fight-former-mother-in-law-weeks-before-election"
+      "surge": 0.61,
+      "sentiment_mean": -0.15,
+      "headline": "Former president of Chile abandons UN secretary general candidacy",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/world/2026/sep/20/former-president-of-chile-withdraws-from-race-to-become-un-secretary-general"
     },
     {
       "term": "attack",
-      "articles": 62,
-      "sources": 27,
+      "articles": 63,
+      "sources": 28,
       "sentiment_direction": "negative",
-      "surge": 1.81,
-      "sentiment_mean": -0.722,
+      "surge": 1.83,
+      "sentiment_mean": -0.725,
       "headline": "Ukraine launches biggest Moscow drone attack as Russia votes",
       "headline_source": "Reddit r/worldnews",
       "headline_url": "https://www.reddit.com/r/worldnews/comments/1wlexio/ukraine_launches_biggest_moscow_drone_attack_as/"
     },
     {
-      "term": "white",
-      "articles": 47,
+      "term": "house",
+      "articles": 53,
       "sources": 27,
       "sentiment_direction": "negative",
-      "surge": 1.25,
-      "sentiment_mean": -0.564,
-      "headline": "As White House shields the AI gold rush, Trump family and other allies strike it rich \u2013 with few guardrails",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/us-news/2026/sep/20/trump-ai-policy-financial-interest"
+      "surge": 0.63,
+      "sentiment_mean": -0.333,
+      "headline": "Dem House candidate settles years-long $55K debt fight with former mother-in-law weeks before election",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/politics/dem-house-candidate-settles-years-long-55k-debt-fight-former-mother-in-law-weeks-before-election"
+    },
+    {
+      "term": "capital",
+      "articles": 52,
+      "sources": 27,
+      "sentiment_direction": "negative",
+      "surge": 1.72,
+      "sentiment_mean": -0.473,
+      "headline": "Yemen's Houthis strike Saudi capital Riyadh for the first time",
+      "headline_source": "France24",
+      "headline_url": "https://www.france24.com/en/yemen-s-houthis-strike-saudi-capital-riyadh-for-the-first-time"
+    },
+    {
+      "term": "russia",
+      "articles": 48,
+      "sources": 26,
+      "sentiment_direction": "negative",
+      "surge": 0.69,
+      "sentiment_mean": -0.41,
+      "headline": "Is Trump's Greenland deal crucial for the US and Nato to counter Russia and China?",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/world/us/down-the-rabbit-hole-trump-greenland-nato-america-arctic-yes-minister/articleshow/134365169.cms"
+    },
+    {
+      "term": "ukraine",
+      "articles": 43,
+      "sources": 26,
+      "sentiment_direction": "negative",
+      "surge": 0.82,
+      "sentiment_mean": -0.483,
+      "headline": "Ukraine targets Russia with over 1,000 drones, killing 2 as Moscow holds last day of elections",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/world/ukraine-targets-russia-1000-drones-killing-2-moscow-holds-last-day-elections"
     },
     {
       "term": "saudi",
@@ -69,32 +91,10 @@
       "sources": 25,
       "sentiment_direction": "negative",
       "surge": 0.91,
-      "sentiment_mean": -0.537,
-      "headline": "Turkish FM says ready to meet Saudi defence needs \u2013 what does that mean?",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/news/2026/9/20/turkish-fm-says-ready-to-meet-saudi-defence-needs-what-does-that-mean?traffic_source=rss"
-    },
-    {
-      "term": "capital",
-      "articles": 50,
-      "sources": 25,
-      "sentiment_direction": "negative",
-      "surge": 1.66,
-      "sentiment_mean": -0.494,
-      "headline": "Yemen's Houthis strike Saudi capital Riyadh for the first time",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/yemen-s-houthis-strike-saudi-capital-riyadh-for-the-first-time"
-    },
-    {
-      "term": "russia",
-      "articles": 47,
-      "sources": 25,
-      "sentiment_direction": "negative",
-      "surge": 0.68,
-      "sentiment_mean": -0.424,
-      "headline": "Ukraine targets Russia with over 1,000 drones, killing 2 as Moscow holds last day of elections",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/world/ukraine-targets-russia-1000-drones-killing-2-moscow-holds-last-day-elections"
+      "sentiment_mean": -0.51,
+      "headline": "Saudi Arabia stocks lower at close of trade; Tadawul All Share down 0.26%",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/stock-market-news/saudi-arabia-stocks-lower-at-close-of-trade-tadawul-all-share-down-026-4908173"
     }
   ],
   "hours_since_fetch": 0.0
