@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-20T22:24:33.159900+00:00",
+  "generated_at": "2026-09-20T23:24:33.423207+00:00",
   "window_hours": 24,
-  "articles_in_window": 1560,
+  "articles_in_window": 1578,
   "collection_days": 21,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,22 +10,22 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 157,
+      "articles": 154,
       "sources": 36,
       "sentiment_direction": "mixed",
-      "surge": 0.54,
-      "sentiment_mean": -0.044,
-      "headline": "Can Trump and Xi cooperate to guide humanity through the AI revolution? Humanity might depend on it | Alan Finkel",
-      "headline_source": "Guardian Business",
-      "headline_url": "https://www.theguardian.com/commentisfree/2026/sep/21/can-trump-and-xi-cooperate-to-guide-humanity-through-the-ai-revolution-humanity-might-depend-on-it"
+      "surge": 0.53,
+      "sentiment_mean": -0.052,
+      "headline": "Trump administration prepares sanctions against International Criminal Court, sources say",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1wlv1kx/trump_administration_prepares_sanctions_against/"
     },
     {
       "term": "president",
-      "articles": 105,
+      "articles": 107,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 0.73,
-      "sentiment_mean": -0.028,
+      "surge": 0.75,
+      "sentiment_mean": -0.05,
       "headline": "Eighteen suspects extradited to US over Haitian president\u2019s 2021 killing",
       "headline_source": "Al Jazeera",
       "headline_url": "https://www.aljazeera.com/news/2026/9/20/eighteen-suspects-extradited-to-us-over-haitian-presidents-2021-killing?traffic_source=rss"
@@ -35,22 +35,11 @@
       "articles": 62,
       "sources": 27,
       "sentiment_direction": "negative",
-      "surge": 1.73,
-      "sentiment_mean": -0.673,
-      "headline": "Ukraine launches 1,000 drones at Russia, including hundreds fired at Moscow in what mayor describes as \"largest ever\" attack - CBS News",
-      "headline_source": "Google News Top",
-      "headline_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5ldWhqMzBmbkwweC1YSzNhcnB4RGpYdk83WjZTQU1vaGRhbnVPZ3hZTU1aWFltZnMyYmRFQmFIS25UOTI2anZQbHE0dTdDalc4QllTSjEtTzVEdHBDSy1RTGUwejRtQVF5SlJrWGhlU21mZw?oc=5"
-    },
-    {
-      "term": "military",
-      "articles": 57,
-      "sources": 27,
-      "sentiment_direction": "mixed",
-      "surge": 1.13,
-      "sentiment_mean": -0.059,
-      "headline": "Trump says his planned arch would become a 'military complex' able to host drones and snipers",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/09/20/trump-says-his-planned-arch-would-become-a-military-complex.html"
+      "surge": 1.72,
+      "sentiment_mean": -0.685,
+      "headline": "Oil rises after Houthi attack on Saudi capital",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/commodities-news/oil-rises-after-houthi-attack-on-saudi-capital-4908199"
     },
     {
       "term": "russia",
@@ -58,43 +47,54 @@
       "sources": 27,
       "sentiment_direction": "negative",
       "surge": 0.83,
-      "sentiment_mean": -0.363,
+      "sentiment_mean": -0.351,
       "headline": "Russia stocks lower at close of trade; MOEX Russia Index unchanged",
       "headline_source": "Investing.com News",
       "headline_url": "https://www.investing.com/news/stock-market-news/russia-stocks-lower-at-close-of-trade-moex-russia-index-unchanged-4908195"
     },
     {
       "term": "ukraine",
-      "articles": 51,
+      "articles": 54,
       "sources": 27,
       "sentiment_direction": "negative",
-      "surge": 1.01,
-      "sentiment_mean": -0.481,
+      "surge": 1.07,
+      "sentiment_mean": -0.471,
       "headline": "Russia's ruling party on track to win election after Ukraine's drone attacks on Moscow",
       "headline_source": "France24",
       "headline_url": "https://www.france24.com/en/europe/20260920-russia-s-ruling-party-on-track-to-win-election-after-ukraine-s-drone-attacks-on-moscow"
     },
     {
+      "term": "military",
+      "articles": 54,
+      "sources": 26,
+      "sentiment_direction": "mixed",
+      "surge": 1.06,
+      "sentiment_mean": -0.068,
+      "headline": "Trump says his planned arch would become a 'military complex' able to host drones and snipers",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/09/20/trump-says-his-planned-arch-would-become-a-military-complex.html"
+    },
+    {
       "term": "party",
-      "articles": 55,
+      "articles": 58,
       "sources": 25,
       "sentiment_direction": "positive",
-      "surge": 1.57,
-      "sentiment_mean": 0.23,
-      "headline": "Putin's ruling party on track to comfortably win wartime Russian election",
-      "headline_source": "CBC World",
-      "headline_url": "https://www.cbc.ca/news/world/russia-election-putin-9.7351526?cmp=rss"
+      "surge": 1.65,
+      "sentiment_mean": 0.245,
+      "headline": "Far-left party wins Berlin election, pledging to nationalise housing",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1wlvrfp/farleft_party_wins_berlin_election_pledging_to/"
     },
     {
       "term": "election",
-      "articles": 50,
+      "articles": 53,
       "sources": 25,
       "sentiment_direction": "mixed",
-      "surge": 1.06,
-      "sentiment_mean": -0.149,
-      "headline": "Putin's ruling party on track to comfortably win wartime Russian election",
-      "headline_source": "CBC World",
-      "headline_url": "https://www.cbc.ca/news/world/russia-election-putin-9.7351526?cmp=rss"
+      "surge": 1.13,
+      "sentiment_mean": -0.111,
+      "headline": "Far-left party wins Berlin election, pledging to nationalise housing",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1wlvrfp/farleft_party_wins_berlin_election_pledging_to/"
     }
   ],
   "hours_since_fetch": 0.0
