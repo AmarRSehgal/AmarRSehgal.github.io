@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T22:00:10.067425+00:00",
+  "generated_at": "2026-09-20T23:00:11.000819+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -16,7 +16,7 @@
       "scans": 24,
       "net_apr": 2135.19,
       "net_at_hold": 1.94995,
-      "cost_bps": 37.1
+      "cost_bps": 35.25
     },
     {
       "base": "NIGHT",
@@ -30,6 +30,19 @@
       "net_apr": 1992.17,
       "net_at_hold": 1.81933,
       "cost_bps": 51.66
+    },
+    {
+      "base": "NIGHT",
+      "type": "perp-perp",
+      "long_venue": "Coinbase",
+      "short_venue": "Binance",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1776.53,
+      "net_at_hold": 0.8112,
+      "cost_bps": 36.0
     },
     {
       "base": "NIGHT",
@@ -55,7 +68,20 @@
       "scans": 24,
       "net_apr": 1697.79,
       "net_at_hold": 0.77525,
-      "cost_bps": 38.89
+      "cost_bps": 38.72
+    },
+    {
+      "base": "NIGHT",
+      "type": "perp-perp",
+      "long_venue": "Coinbase",
+      "short_venue": "Bybit",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1583.9,
+      "net_at_hold": 0.72324,
+      "cost_bps": 44.36
     },
     {
       "base": "NIGHT",
@@ -68,46 +94,20 @@
       "scans": 24,
       "net_apr": 1530.16,
       "net_at_hold": 0.6987,
-      "cost_bps": 43.68
-    },
-    {
-      "base": "NIGHT",
-      "type": "perp-perp",
-      "long_venue": "Coinbase",
-      "short_venue": "Binance",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 23,
-      "scans": 24,
-      "net_apr": 1776.09,
-      "net_at_hold": 0.811,
-      "cost_bps": 36.0
-    },
-    {
-      "base": "NIGHT",
-      "type": "perp-perp",
-      "long_venue": "Coinbase",
-      "short_venue": "Bybit",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 23,
-      "scans": 24,
-      "net_apr": 1580.78,
-      "net_at_hold": 0.72182,
-      "cost_bps": 44.45
+      "cost_bps": 43.67
     },
     {
       "base": "ONE",
       "type": "perp-perp",
-      "long_venue": "OKX",
+      "long_venue": "Crypto.com",
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 21,
+      "hits": 22,
       "scans": 24,
-      "net_apr": 4713.75,
-      "net_at_hold": 4.30479,
-      "cost_bps": 48.09
+      "net_apr": 5503.12,
+      "net_at_hold": 5.02568,
+      "cost_bps": 52.06
     }
   ]
 }
