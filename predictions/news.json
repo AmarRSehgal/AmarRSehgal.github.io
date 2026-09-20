@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-20T11:24:38.322722+00:00",
+  "generated_at": "2026-09-20T12:24:34.742146+00:00",
   "window_hours": 24,
-  "articles_in_window": 1589,
+  "articles_in_window": 1560,
   "collection_days": 21,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,14 +10,14 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 162,
+      "articles": 159,
       "sources": 41,
       "sentiment_direction": "negative",
-      "surge": 0.57,
-      "sentiment_mean": -0.185,
-      "headline": "\u2018Not a slam dunk\u2019: Trump\u2019s 2028 mail-vote push hinges on one big legal question",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/politics/not-slam-dunk-trumps-2028-mail-vote-push-hinges-one-big-legal-question"
+      "surge": 0.56,
+      "sentiment_mean": -0.179,
+      "headline": "Does Trump\u2019s new AI Force signal tech race escalation ahead of Xi Jinping summit?",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/china/diplomacy/article/3368158/does-trumps-new-ai-force-signal-tech-race-escalation-ahead-xi-jinping-summit?utm_source=rss_feed"
     },
     {
       "term": "president",
@@ -25,76 +25,76 @@
       "sources": 31,
       "sentiment_direction": "negative",
       "surge": 0.63,
-      "sentiment_mean": -0.158,
+      "sentiment_mean": -0.174,
       "headline": "The Pinball President",
       "headline_source": "The Atlantic",
       "headline_url": "https://www.theatlantic.com/ideas/2026/09/trump-attention-presidents/688712/?utm_source=feed"
     },
     {
       "term": "house",
-      "articles": 57,
+      "articles": 58,
       "sources": 31,
       "sentiment_direction": "negative",
-      "surge": 0.67,
-      "sentiment_mean": -0.384,
+      "surge": 0.68,
+      "sentiment_mean": -0.391,
       "headline": "Dem House candidate settles years-long $55K debt fight with former mother-in-law weeks before election",
       "headline_source": "Fox News",
       "headline_url": "https://www.foxnews.com/politics/dem-house-candidate-settles-years-long-55k-debt-fight-former-mother-in-law-weeks-before-election"
     },
     {
       "term": "attack",
-      "articles": 61,
+      "articles": 62,
       "sources": 27,
       "sentiment_direction": "negative",
-      "surge": 1.8,
-      "sentiment_mean": -0.735,
-      "headline": "Ukraine launches heavy Moscow drone attack as Russia votes",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/09/20/ukraine-launches-heavy-moscow-drone-attack-as-russia-votes.html"
+      "surge": 1.81,
+      "sentiment_mean": -0.722,
+      "headline": "Ukraine launches biggest Moscow drone attack as Russia votes",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1wlexio/ukraine_launches_biggest_moscow_drone_attack_as/"
     },
     {
       "term": "white",
-      "articles": 48,
+      "articles": 47,
       "sources": 27,
       "sentiment_direction": "negative",
-      "surge": 1.29,
-      "sentiment_mean": -0.517,
+      "surge": 1.25,
+      "sentiment_mean": -0.564,
       "headline": "As White House shields the AI gold rush, Trump family and other allies strike it rich \u2013 with few guardrails",
       "headline_source": "Guardian World",
       "headline_url": "https://www.theguardian.com/us-news/2026/sep/20/trump-ai-policy-financial-interest"
     },
     {
       "term": "saudi",
-      "articles": 55,
-      "sources": 26,
+      "articles": 51,
+      "sources": 25,
       "sentiment_direction": "negative",
-      "surge": 0.99,
-      "sentiment_mean": -0.513,
+      "surge": 0.91,
+      "sentiment_mean": -0.537,
       "headline": "Turkish FM says ready to meet Saudi defence needs \u2013 what does that mean?",
       "headline_source": "Al Jazeera",
       "headline_url": "https://www.aljazeera.com/news/2026/9/20/turkish-fm-says-ready-to-meet-saudi-defence-needs-what-does-that-mean?traffic_source=rss"
     },
     {
-      "term": "iran",
-      "articles": 43,
-      "sources": 25,
-      "sentiment_direction": "negative",
-      "surge": 0.44,
-      "sentiment_mean": -0.528,
-      "headline": "EXCLUSIVE: Russian document reveals sweeping Iran plan spanning nuclear, finance and aviation",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/world/exclusive-russian-document-reveals-sweeping-iran-plan-spanning-nuclear-finance-aviation"
-    },
-    {
       "term": "capital",
       "articles": 50,
-      "sources": 24,
+      "sources": 25,
       "sentiment_direction": "negative",
-      "surge": 1.67,
-      "sentiment_mean": -0.47,
+      "surge": 1.66,
+      "sentiment_mean": -0.494,
       "headline": "Yemen's Houthis strike Saudi capital Riyadh for the first time",
       "headline_source": "France24",
       "headline_url": "https://www.france24.com/en/yemen-s-houthis-strike-saudi-capital-riyadh-for-the-first-time"
+    },
+    {
+      "term": "russia",
+      "articles": 47,
+      "sources": 25,
+      "sentiment_direction": "negative",
+      "surge": 0.68,
+      "sentiment_mean": -0.424,
+      "headline": "Ukraine targets Russia with over 1,000 drones, killing 2 as Moscow holds last day of elections",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/world/ukraine-targets-russia-1000-drones-killing-2-moscow-holds-last-day-elections"
     }
   ],
   "hours_since_fetch": 0.0
