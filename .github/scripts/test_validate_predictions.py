@@ -1018,6 +1018,62 @@ class FundingBoard(ContractBase):
         old = (NOW - timedelta(hours=9)).isoformat()
         self.rejects('funding', payload(FUNDING, generated_at=old), 'stale payload')
 
+WHALES = {
+    'generated_at': STAMP,
+    'window': {'hours': 24},
+    'markets': {'resolved': 288, 'late_flip': 41, 'traded_notional': 4_120_000.0},
+    'headline': '5 wallet(s) audited; 0 with a late-window edge',
+    'disclaimer': ('This is NOT a manipulation report. The audit found no evidence '
+                   'of manipulation; these are the day\'s largest traders, graded.'),
+    'traders': [{
+        'wallet': '0x6d0194...7137', 'trades': 1840, 'wins': 322, 'losses': 227,
+        'win_rate': 0.587, 'net_roi': -0.089, 'edge': 'unprofitable-overall',
+        'markets_graded': 549, 'median_secs_before_close': 14}],
+}
+
+
+class PolymarketWhales(ContractBase):
+    """The feed shipped without a test and the enum drifted from the tracker on day
+    one: tracker.py emits `unprofitable-overall`, the contract listed a `none`
+    nothing produces. Every payload with an unprofitable wallet was rejected, so the
+    panel sat six days stale while the job exited 0 every morning."""
+
+    def test_readme_example_is_valid(self):
+        self.ok('polymarket_whales', payload(WHALES))
+
+    def test_every_edge_the_tracker_emits_is_accepted(self):
+        """Pinned as a list, not as `in WHALE_EDGE` -- reading the enum back from the
+        module under test would pass no matter what the enum said."""
+        for edge in ('late-window', 'broad', 'unprofitable-overall',
+                     'insufficient-history'):
+            with self.subTest(edge=edge):
+                d = copy.deepcopy(payload(WHALES))
+                d['traders'][0]['edge'] = edge
+                self.ok('polymarket_whales', d)
+
+    def test_unknown_edge_rejected(self):
+        d = copy.deepcopy(payload(WHALES))
+        d['traders'][0]['edge'] = 'none'
+        self.rejects('polymarket_whales', d, 'must be one of')
+
+    def test_empty_slate_is_valid(self):
+        """Nobody clearing the notional threshold is a real day, not a failure."""
+        self.ok('polymarket_whales', payload(WHALES, traders=[]))
+
+    def test_untruncated_wallet_rejected(self):
+        """The mirror points at public.json for this reason; if it were ever aimed at
+        daily.json instead, this is the only thing standing between a full address
+        and the public site."""
+        d = copy.deepcopy(payload(WHALES))
+        d['traders'][0]['wallet'] = '0x6d019472c0f1a4e35b7d9f0c2a8e6b4d13457137'
+        self.rejects('polymarket_whales', d, 'must be truncated')
+
+    def test_disclaimer_must_keep_the_projects_own_finding(self):
+        d = copy.deepcopy(payload(WHALES))
+        d['disclaimer'] = 'Wallets ranked by profit over the window.'
+        self.rejects('polymarket_whales', d, 'NOT a manipulation')
+
+
 class FederalContractLanes(ContractBase):
     """The lanes feed asserts that a federal buy RECURS -- which is the only reason
     to spend weeks on a SAM registration for it. Every rule here guards a claim the

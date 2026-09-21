@@ -656,7 +656,10 @@ def check_news_topic(where: str, t: dict) -> None:
         require_number(where, 'sentiment_mean', t['sentiment_mean'])
 
 
-WHALE_EDGE = ('late-window', 'broad', 'insufficient-history', 'none')
+# Must match tracker.py's classifier exactly. It emits four labels and the contract
+# listed three of them plus a 'none' nothing produces, so every payload carrying an
+# unprofitable wallet was rejected and the feed sat six days stale behind a passing job.
+WHALE_EDGE = ('late-window', 'broad', 'unprofitable-overall', 'insufficient-history')
 
 
 def check_whales_payload(data: dict) -> None:

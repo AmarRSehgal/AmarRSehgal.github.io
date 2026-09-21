@@ -905,8 +905,8 @@ function renderNews(data) {
 const WHALE_EDGE_LABEL = {
     'late-window': 'edge in the final seconds',
     broad: 'profitable across the whole window',
+    'unprofitable-overall': 'loses money across its full record',
     'insufficient-history': 'too little history to grade',
-    none: 'no measurable edge',
 };
 
 function renderWhales(data) {
