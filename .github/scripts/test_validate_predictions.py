@@ -1044,8 +1044,8 @@ class PolymarketWhales(ContractBase):
     def test_every_edge_the_tracker_emits_is_accepted(self):
         """Pinned as a list, not as `in WHALE_EDGE` -- reading the enum back from the
         module under test would pass no matter what the enum said."""
-        for edge in ('late-window', 'broad', 'unprofitable-overall',
-                     'insufficient-history'):
+        for edge in ('late-window', 'late-window-small', 'broad',
+                     'unprofitable-overall', 'insufficient-history'):
             with self.subTest(edge=edge):
                 d = copy.deepcopy(payload(WHALES))
                 d['traders'][0]['edge'] = edge

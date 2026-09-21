@@ -904,6 +904,7 @@ function renderNews(data) {
 // answer -- a wallet seen for a day cannot be graded, and saying so beats a number.
 const WHALE_EDGE_LABEL = {
     'late-window': 'edge in the final seconds',
+    'late-window-small': 'edge in the final seconds, on a trivial share of its stake',
     broad: 'profitable across the whole window',
     'unprofitable-overall': 'loses money across its full record',
     'insufficient-history': 'too little history to grade',
