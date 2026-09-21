@@ -1027,7 +1027,8 @@ WHALES = {
                    'of manipulation; these are the day\'s largest traders, graded.'),
     'traders': [{
         'wallet': '0x6d0194...7137', 'trades': 1840, 'wins': 322, 'losses': 227,
-        'win_rate': 0.587, 'net_roi': -0.089, 'edge': 'unprofitable-overall',
+        'win_rate': 0.5865, 'net_roi': -0.089, 'edge': 'unprofitable-overall',
+        'window_wins': 9, 'window_losses': 4, 'window_win_rate': 0.6923,
         'markets_graded': 549, 'median_secs_before_close': 14}],
 }
 
@@ -1050,6 +1051,31 @@ class PolymarketWhales(ContractBase):
                 d = copy.deepcopy(payload(WHALES))
                 d['traders'][0]['edge'] = edge
                 self.ok('polymarket_whales', d)
+
+    def test_both_win_rates_may_be_null(self):
+        """A wallet whose positions are all still open has no rate. Rejecting the
+        payload for it would take the whole panel down over one trader."""
+        d = copy.deepcopy(payload(WHALES))
+        d['traders'][0].update(win_rate=None, window_win_rate=None)
+        self.ok('polymarket_whales', d)
+
+    def test_career_rate_must_match_career_counts(self):
+        d = copy.deepcopy(payload(WHALES))
+        d['traders'][0]['win_rate'] = 0.95
+        self.rejects('polymarket_whales', d, 'different denominators')
+
+    def test_window_rate_must_match_window_counts(self):
+        """The window rate is over decided positions, not markets traded. Computing it
+        against a different denominator makes it silently incomparable to the career
+        rate sitting next to it on the same row."""
+        d = copy.deepcopy(payload(WHALES))
+        d['traders'][0]['window_win_rate'] = 0.45
+        self.rejects('polymarket_whales', d, 'different denominators')
+
+    def test_window_rate_outside_zero_one_rejected(self):
+        d = copy.deepcopy(payload(WHALES))
+        d['traders'][0].update(window_win_rate=1.4, window_wins=9, window_losses=4)
+        self.rejects('polymarket_whales', d, 'outside [0, 1]')
 
     def test_unknown_edge_rejected(self):
         d = copy.deepcopy(payload(WHALES))

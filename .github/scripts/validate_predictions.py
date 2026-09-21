@@ -689,13 +689,30 @@ def check_whales_payload(data: dict) -> None:
 def check_whale(where: str, t: dict) -> None:
     """One audited wallet. Every field here is measured, none is inferred."""
     require_str(where, 'wallet', t['wallet'])
-    for key in ('trades', 'wins', 'losses'):
+    for key in ('trades', 'wins', 'losses', 'window_wins', 'window_losses'):
         if key in t and not isinstance(t[key], int):
             raise Invalid(f'{where}: {key} must be an integer')
-    for key in ('win_rate', 'net_roi'):
-        require_number(where, key, t[key])
-    if not 0.0 <= float(t['win_rate']) <= 1.0:
-        raise Invalid(f"{where}: win_rate={t['win_rate']} outside [0, 1]")
+    require_number(where, 'net_roi', t['net_roi'])
+    # Two rates on the same denominator (decided positions): `win_rate` over the
+    # wallet's whole career, `window_win_rate` over the 24h that shortlisted it.
+    # Both are null when nothing resolved, which is a real state -- a wallet whose
+    # positions are all still open has no rate, and rejecting the payload for it
+    # would take the whole panel down for one unresolved trader.
+    for key in ('win_rate', 'window_win_rate'):
+        if t.get(key) is None:
+            continue
+        if not 0.0 <= require_number(where, key, t[key]) <= 1.0:
+            raise Invalid(f"{where}: {key}={t[key]} outside [0, 1]")
+    # A rate must agree with the counts it claims to summarise; a mismatch means the
+    # two were computed on different denominators and are not comparable.
+    for rate, w, l in (('win_rate', 'wins', 'losses'),
+                       ('window_win_rate', 'window_wins', 'window_losses')):
+        if t.get(rate) is None or w not in t or l not in t:
+            continue
+        decided = t[w] + t[l]
+        if decided and abs(float(t[rate]) - t[w] / decided) > 0.001:
+            raise Invalid(f"{where}: {rate}={t[rate]} disagrees with "
+                          f"{t[w]}W/{t[l]}L -- different denominators")
     if t['edge'] not in WHALE_EDGE:
         raise Invalid(f"{where}: edge={t['edge']!r} must be one of {WHALE_EDGE}")
     # The wallet address must be truncated. Publishing a full address on a portfolio
