@@ -902,6 +902,11 @@ function renderNews(data) {
 // Wallets ranked by what they made in the window. `edge` is the audit verdict on the
 // wallet's OWN full order flow, and "insufficient-history" is the common and honest
 // answer -- a wallet seen for a day cannot be graded, and saying so beats a number.
+// Null is a real state -- nothing decided yet -- and must not render as "0%".
+function pctOf(rate) {
+    return rate == null ? '' : ` (${Math.round(Number(rate) * 100)}%)`;
+}
+
 const WHALE_EDGE_LABEL = {
     'late-window': 'edge in the final seconds',
     'late-window-small': 'edge in the final seconds, on a trivial share of its stake',
@@ -915,7 +920,11 @@ function renderWhales(data) {
         const roi = Number(t.net_roi);
         const facts = [`${Number(t.trades).toLocaleString()} trades`];
         if (t.markets_graded) facts.push(`${t.markets_graded} markets graded`);
-        if (t.wins != null) facts.push(`${t.wins}W/${t.losses}L`);
+        // Both rates, always labelled. The window is what put the wallet on the list;
+        // the career is what the edge verdict is drawn from. An unlabelled "58W/47L"
+        // next to a day's P&L reads as the day's record, which it is not.
+        if (t.window_wins != null) facts.push(`window ${t.window_wins}W/${t.window_losses}L${pctOf(t.window_win_rate)}`);
+        if (t.wins != null) facts.push(`career ${t.wins}W/${t.losses}L${pctOf(t.win_rate)}`);
         if (t.median_secs_before_close != null) {
             facts.push(`trades ${t.median_secs_before_close}s before close (median)`);
         }
