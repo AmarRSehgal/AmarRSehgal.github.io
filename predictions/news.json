@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-21T21:24:35.869609+00:00",
+  "generated_at": "2026-09-21T22:24:36.686057+00:00",
   "window_hours": 24,
-  "articles_in_window": 2531,
+  "articles_in_window": 2545,
   "collection_days": 22,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,25 +10,25 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 282,
+      "articles": 292,
       "sources": 44,
       "sentiment_direction": "mixed",
-      "surge": 1.02,
-      "sentiment_mean": -0.14,
-      "headline": "Trump administration proposes $5 billion to kickstart investment fund to rebuild gulf energy sites, WSJ reports",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/trump-administration-proposes-5-billion-to-kickstart-investment-fund-to-rebuild-gulf-energy-sites-wsj-reports-4909556"
+      "surge": 1.07,
+      "sentiment_mean": -0.123,
+      "headline": "Some lawmakers say Trump should confront Xi over Chinese support for Iran",
+      "headline_source": "ABC News",
+      "headline_url": "https://abcnews.com/Politics/lawmakers-trump-confront-xi-chinese-support-iran/story?id=136621188"
     },
     {
       "term": "data",
-      "articles": 72,
+      "articles": 76,
       "sources": 35,
       "sentiment_direction": "mixed",
-      "surge": 1.17,
-      "sentiment_mean": -0.051,
-      "headline": "Texas Gov. Abbott halts all state-issued permits for data centers until grid audit is complete",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/commodities-news/texas-gov-abbott-halts-all-stateissued-permits-for-data-centers-until-grid-audit-is-complete-4909646"
+      "surge": 1.24,
+      "sentiment_mean": -0.043,
+      "headline": "CoreWeave-Tied Data Center Project Kicks Off Junk-Bond Offering",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/articles/2026-09-21/coreweave-tied-data-center-project-kicks-off-junk-bond-offering"
     },
     {
       "term": "president",
@@ -36,54 +36,54 @@
       "sources": 34,
       "sentiment_direction": "mixed",
       "surge": 1.06,
-      "sentiment_mean": -0.123,
-      "headline": "FIFA president Gianni Infantino says he is open to talks over organizational reform",
-      "headline_source": "CBC World",
-      "headline_url": "https://www.cbc.ca/sports/soccer/gianni-infantino-open-to-speaking-fifa-reform-9.7352676?cmp=rss"
+      "sentiment_mean": -0.109,
+      "headline": "Schrodinger president Karen Akinsanya sells $927,970 in company stock",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/insider-trading-news/schrodinger-president-karen-akinsanya-sells-927970-in-company-stock-93CH-4909705"
     },
     {
       "term": "house",
-      "articles": 95,
+      "articles": 98,
       "sources": 34,
       "sentiment_direction": "negative",
-      "surge": 1.05,
-      "sentiment_mean": -0.213,
-      "headline": "Trump speech inaudible as US networks boycott White House event",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/9/21/trump-speech-inaudible-as-us-networks-boycott-white-house-event?traffic_source=rss"
+      "surge": 1.08,
+      "sentiment_mean": -0.248,
+      "headline": "Trump White House justifies press ban by invoking Obama",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/trump-white-house-justifies-press-ban-invoking-obama/"
     },
     {
       "term": "iran",
-      "articles": 74,
-      "sources": 29,
+      "articles": 77,
+      "sources": 30,
       "sentiment_direction": "negative",
-      "surge": 0.85,
-      "sentiment_mean": -0.446,
-      "headline": "Trump to address UN General Assembly as Iran war looms large",
+      "surge": 0.88,
+      "sentiment_mean": -0.378,
+      "headline": "Some lawmakers say Trump should confront Xi over Chinese support for Iran",
       "headline_source": "ABC News",
-      "headline_url": "https://abcnews.com/Politics/trump-address-general-assembly-iran-war-looms-large/story?id=136621201"
+      "headline_url": "https://abcnews.com/Politics/lawmakers-trump-confront-xi-chinese-support-iran/story?id=136621188"
     },
     {
       "term": "white",
-      "articles": 68,
-      "sources": 28,
+      "articles": 72,
+      "sources": 29,
       "sentiment_direction": "negative",
-      "surge": 1.49,
-      "sentiment_mean": -0.38,
-      "headline": "Trump speech inaudible as US networks boycott White House event",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/9/21/trump-speech-inaudible-as-us-networks-boycott-white-house-event?traffic_source=rss"
+      "surge": 1.58,
+      "sentiment_mean": -0.399,
+      "headline": "Trump White House justifies press ban by invoking Obama",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/trump-white-house-justifies-press-ban-invoking-obama/"
     },
     {
-      "term": "party",
-      "articles": 77,
-      "sources": 26,
+      "term": "security",
+      "articles": 49,
+      "sources": 27,
       "sentiment_direction": "positive",
-      "surge": 1.95,
-      "sentiment_mean": 0.222,
-      "headline": "Putin\u2019s party wins supermajority in Russia\u2019s parliamentary election",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/news/2026/9/21/pro-putin-party-wins-supermajority-amid-ramped-up-ukrainian-attacks?traffic_source=rss"
+      "surge": 0.82,
+      "sentiment_mean": 0.281,
+      "headline": "US, Japan and South Korea launch economic-security talks before Xi summit",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/us/diplomacy/article/3368306/us-japan-and-south-korea-launch-economic-security-talks-xi-summit?utm_source=rss_feed"
     },
     {
       "term": "election",
@@ -91,7 +91,7 @@
       "sources": 26,
       "sentiment_direction": "positive",
       "surge": 1.15,
-      "sentiment_mean": 0.191,
+      "sentiment_mean": 0.189,
       "headline": "Putin\u2019s party wins supermajority in Russia\u2019s parliamentary election",
       "headline_source": "Al Jazeera",
       "headline_url": "https://www.aljazeera.com/news/2026/9/21/pro-putin-party-wins-supermajority-amid-ramped-up-ukrainian-attacks?traffic_source=rss"
