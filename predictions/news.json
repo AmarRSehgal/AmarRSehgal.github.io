@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-21T01:24:17.567561+00:00",
+  "generated_at": "2026-09-21T02:24:16.281385+00:00",
   "window_hours": 24,
-  "articles_in_window": 1638,
+  "articles_in_window": 1657,
   "collection_days": 22,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,69 +10,80 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 160,
-      "sources": 36,
+      "articles": 166,
+      "sources": 37,
       "sentiment_direction": "mixed",
-      "surge": 0.56,
-      "sentiment_mean": -0.057,
-      "headline": "Macron and Carney announce closer France-Canada ties amid Trump tensions",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/world/2026/sep/21/france-canada-relations-eu-europe-macron-carney"
+      "surge": 0.58,
+      "sentiment_mean": -0.058,
+      "headline": "In Washington, temples to Trump\u2019s ego lie ruined. And another is on the way",
+      "headline_source": "Sydney Morning Herald",
+      "headline_url": "https://www.smh.com.au/world/north-america/in-washington-temples-to-trump-s-ego-lie-ruined-and-another-is-on-the-way-20260921-p60yzq.html?ref=rss&utm_medium=rss&utm_source=rss_world"
     },
     {
       "term": "president",
-      "articles": 115,
-      "sources": 29,
+      "articles": 116,
+      "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 0.81,
-      "sentiment_mean": -0.052,
+      "surge": 0.82,
+      "sentiment_mean": -0.06,
       "headline": "U.S. President releases new poll to find replacement term for Artificial Intelligence",
       "headline_source": "Reddit r/technology",
       "headline_url": "https://www.reddit.com/r/technology/comments/1wly6kv/us_president_releases_new_poll_to_find/"
     },
     {
-      "term": "attack",
-      "articles": 61,
+      "term": "russia",
+      "articles": 62,
       "sources": 27,
       "sentiment_direction": "negative",
-      "surge": 1.68,
-      "sentiment_mean": -0.684,
+      "surge": 0.92,
+      "sentiment_mean": -0.301,
+      "headline": "Ukraine fires over 1,000 drones at Russia, including hundreds launched at Moscow",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1wlzax7/ukraine_fires_over_1000_drones_at_russia/"
+    },
+    {
+      "term": "attack",
+      "articles": 60,
+      "sources": 27,
+      "sentiment_direction": "negative",
+      "surge": 1.66,
+      "sentiment_mean": -0.682,
       "headline": "Police allege mother behind Blue Mountains stabbing attack on three children that left one dead",
       "headline_source": "Guardian World",
       "headline_url": "https://www.theguardian.com/australia-news/2026/sep/21/police-mother-children-stabbing-attack-ntwnfb"
     },
     {
-      "term": "russia",
-      "articles": 58,
-      "sources": 27,
-      "sentiment_direction": "negative",
-      "surge": 0.85,
-      "sentiment_mean": -0.328,
-      "headline": "Ruling pro-Putin party set to win Russia\u2019s tightly controlled wartime parliamentary election",
-      "headline_source": "Reddit r/worldnews",
-      "headline_url": "https://www.reddit.com/r/worldnews/comments/1wlxwsf/ruling_proputin_party_set_to_win_russias_tightly/"
-    },
-    {
       "term": "military",
-      "articles": 54,
+      "articles": 56,
       "sources": 26,
       "sentiment_direction": "mixed",
-      "surge": 1.06,
-      "sentiment_mean": -0.044,
+      "surge": 1.11,
+      "sentiment_mean": -0.046,
       "headline": "Trump Gets Caught in a Dilemma Over a Saudi Plea for Military Help",
       "headline_source": "NYT Politics",
       "headline_url": "https://www.nytimes.com/2026/09/20/us/politics/trump-yemen-houthis-red-sea-iran.html"
     },
     {
       "term": "ukraine",
-      "articles": 53,
+      "articles": 56,
       "sources": 26,
       "sentiment_direction": "negative",
-      "surge": 1.06,
-      "sentiment_mean": -0.476,
-      "headline": "Russia's ruling party on track to win election after Ukraine's drone attacks on Moscow",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/europe/20260920-russia-s-ruling-party-on-track-to-win-election-after-ukraine-s-drone-attacks-on-moscow"
+      "surge": 1.14,
+      "sentiment_mean": -0.449,
+      "headline": "Ukraine fires over 1,000 drones at Russia, including hundreds launched at Moscow",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1wlzax7/ukraine_fires_over_1000_drones_at_russia/"
+    },
+    {
+      "term": "party",
+      "articles": 64,
+      "sources": 25,
+      "sentiment_direction": "positive",
+      "surge": 1.81,
+      "sentiment_mean": 0.278,
+      "headline": "Far-left party wins Berlin election, pledging to nationalise housing",
+      "headline_source": "Reddit r/news",
+      "headline_url": "https://www.reddit.com/r/news/comments/1wlzg4a/farleft_party_wins_berlin_election_pledging_to/"
     },
     {
       "term": "election",
@@ -80,21 +91,10 @@
       "sources": 25,
       "sentiment_direction": "mixed",
       "surge": 1.2,
-      "sentiment_mean": -0.078,
-      "headline": "Ruling pro-Putin party set to win Russia\u2019s tightly controlled wartime parliamentary election",
-      "headline_source": "Reddit r/worldnews",
-      "headline_url": "https://www.reddit.com/r/worldnews/comments/1wlxwsf/ruling_proputin_party_set_to_win_russias_tightly/"
-    },
-    {
-      "term": "moscow",
-      "articles": 45,
-      "sources": 25,
-      "sentiment_direction": "negative",
-      "surge": 5.52,
-      "sentiment_mean": -0.569,
-      "headline": "Russia's ruling pro-Putin party on track to win wartime election after drones strike Moscow",
-      "headline_source": "CNBC World",
-      "headline_url": "https://www.cnbc.com/2026/09/20/russias-ruling-pro-putin-party-on-track-to-win-wartime-election.html"
+      "sentiment_mean": -0.065,
+      "headline": "Far-left party wins Berlin election, pledging to nationalise housing",
+      "headline_source": "Reddit r/news",
+      "headline_url": "https://www.reddit.com/r/news/comments/1wlzg4a/farleft_party_wins_berlin_election_pledging_to/"
     }
   ],
   "hours_since_fetch": 0.0
