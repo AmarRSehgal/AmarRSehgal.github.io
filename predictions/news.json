@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-20T23:24:33.423207+00:00",
+  "generated_at": "2026-09-21T00:24:17.140482+00:00",
   "window_hours": 24,
-  "articles_in_window": 1578,
-  "collection_days": 21,
+  "articles_in_window": 1611,
+  "collection_days": 22,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
   "surge_available": true,
@@ -10,36 +10,36 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 154,
+      "articles": 155,
       "sources": 36,
       "sentiment_direction": "mixed",
-      "surge": 0.53,
-      "sentiment_mean": -0.052,
-      "headline": "Trump administration prepares sanctions against International Criminal Court, sources say",
-      "headline_source": "Reddit r/worldnews",
-      "headline_url": "https://www.reddit.com/r/worldnews/comments/1wlv1kx/trump_administration_prepares_sanctions_against/"
+      "surge": 0.54,
+      "sentiment_mean": -0.044,
+      "headline": "Chinese province urges firms to seize the day as Xi-Trump meeting provides trade stability",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/economy/china-economy/article/3367301/chinese-province-urges-firms-seize-day-xi-trump-meeting-provides-trade-stability?utm_source=rss_feed"
     },
     {
       "term": "president",
-      "articles": 107,
+      "articles": 110,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 0.75,
+      "surge": 0.77,
       "sentiment_mean": -0.05,
-      "headline": "Eighteen suspects extradited to US over Haitian president\u2019s 2021 killing",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/news/2026/9/20/eighteen-suspects-extradited-to-us-over-haitian-presidents-2021-killing?traffic_source=rss"
+      "headline": "US extradites 18 suspects in 2021 killing of Haitian president",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/world/united-states-canada/article/3368182/us-extradites-18-suspects-2021-killing-haitian-president?utm_source=rss_feed"
     },
     {
       "term": "attack",
       "articles": 62,
       "sources": 27,
       "sentiment_direction": "negative",
-      "surge": 1.72,
-      "sentiment_mean": -0.685,
-      "headline": "Oil rises after Houthi attack on Saudi capital",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/commodities-news/oil-rises-after-houthi-attack-on-saudi-capital-4908199"
+      "surge": 1.71,
+      "sentiment_mean": -0.689,
+      "headline": "Police allege mother behind Blue Mountains stabbing attack on three children that left one dead",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/australia-news/2026/sep/21/police-mother-children-stabbing-attack-ntwnfb"
     },
     {
       "term": "russia",
@@ -53,48 +53,48 @@
       "headline_url": "https://www.investing.com/news/stock-market-news/russia-stocks-lower-at-close-of-trade-moex-russia-index-unchanged-4908195"
     },
     {
-      "term": "ukraine",
-      "articles": 54,
-      "sources": 27,
-      "sentiment_direction": "negative",
-      "surge": 1.07,
-      "sentiment_mean": -0.471,
-      "headline": "Russia's ruling party on track to win election after Ukraine's drone attacks on Moscow",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/europe/20260920-russia-s-ruling-party-on-track-to-win-election-after-ukraine-s-drone-attacks-on-moscow"
-    },
-    {
       "term": "military",
-      "articles": 54,
+      "articles": 55,
       "sources": 26,
       "sentiment_direction": "mixed",
-      "surge": 1.06,
-      "sentiment_mean": -0.068,
+      "surge": 1.09,
+      "sentiment_mean": -0.085,
       "headline": "Trump says his planned arch would become a 'military complex' able to host drones and snipers",
       "headline_source": "CNBC Top News",
       "headline_url": "https://www.cnbc.com/2026/09/20/trump-says-his-planned-arch-would-become-a-military-complex.html"
     },
     {
-      "term": "party",
-      "articles": 58,
+      "term": "ukraine",
+      "articles": 54,
+      "sources": 26,
+      "sentiment_direction": "negative",
+      "surge": 1.07,
+      "sentiment_mean": -0.467,
+      "headline": "Russia's ruling party on track to win election after Ukraine's drone attacks on Moscow",
+      "headline_source": "France24",
+      "headline_url": "https://www.france24.com/en/europe/20260920-russia-s-ruling-party-on-track-to-win-election-after-ukraine-s-drone-attacks-on-moscow"
+    },
+    {
+      "term": "election",
+      "articles": 55,
       "sources": 25,
-      "sentiment_direction": "positive",
-      "surge": 1.65,
-      "sentiment_mean": 0.245,
+      "sentiment_direction": "mixed",
+      "surge": 1.18,
+      "sentiment_mean": -0.091,
       "headline": "Far-left party wins Berlin election, pledging to nationalise housing",
       "headline_source": "Reddit r/worldnews",
       "headline_url": "https://www.reddit.com/r/worldnews/comments/1wlvrfp/farleft_party_wins_berlin_election_pledging_to/"
     },
     {
-      "term": "election",
-      "articles": 53,
+      "term": "moscow",
+      "articles": 45,
       "sources": 25,
-      "sentiment_direction": "mixed",
-      "surge": 1.13,
-      "sentiment_mean": -0.111,
-      "headline": "Far-left party wins Berlin election, pledging to nationalise housing",
-      "headline_source": "Reddit r/worldnews",
-      "headline_url": "https://www.reddit.com/r/worldnews/comments/1wlvrfp/farleft_party_wins_berlin_election_pledging_to/"
+      "sentiment_direction": "negative",
+      "surge": 5.52,
+      "sentiment_mean": -0.569,
+      "headline": "Russia's ruling pro-Putin party on track to win wartime election after drones strike Moscow",
+      "headline_source": "CNBC World",
+      "headline_url": "https://www.cnbc.com/2026/09/20/russias-ruling-pro-putin-party-on-track-to-win-wartime-election.html"
     }
   ],
   "hours_since_fetch": 0.0
