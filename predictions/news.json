@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-21T05:24:13.080445+00:00",
+  "generated_at": "2026-09-21T06:24:15.275816+00:00",
   "window_hours": 24,
-  "articles_in_window": 1713,
+  "articles_in_window": 1737,
   "collection_days": 22,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,14 +10,14 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 185,
+      "articles": 191,
       "sources": 37,
       "sentiment_direction": "mixed",
-      "surge": 0.65,
-      "sentiment_mean": -0.038,
-      "headline": "Third-country removals: Trump\u2019s deportation policy by the numbers",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/americas/20260921-third-country-removals-trump-deportation-policy-numbers"
+      "surge": 0.67,
+      "sentiment_mean": -0.025,
+      "headline": "US and China discuss AI safety plan ahead of Trump-Xi summit",
+      "headline_source": "BBC Business",
+      "headline_url": "https://www.bbc.co.uk/news/articles/c8vgyzn2d31yo?at_medium=RSS&at_campaign=rss"
     },
     {
       "term": "president",
@@ -31,70 +31,70 @@
       "headline_url": "https://www.reddit.com/r/technology/comments/1wly6kv/us_president_releases_new_poll_to_find/"
     },
     {
-      "term": "military",
-      "articles": 56,
-      "sources": 26,
-      "sentiment_direction": "mixed",
-      "surge": 1.1,
-      "sentiment_mean": -0.008,
-      "headline": "Three South Korean soldiers injured in blast at DMZ, military says - Reuters",
-      "headline_source": "Reuters",
-      "headline_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSi1xRjVYVlJCeTZWZUUzNldFc2xjYlpNTVVnSjVudVZXRi04VVloaUYtdXVEay01eTM5Q0J3VF9USXAyUGp0UU5QVXZBUGNsZUNJNDhwZG5ONDBLZ1RMclJJeXBOTDNUbkxkaVZEanU0SVVUWENWa2wtNWFFNDgzbkxGV213VmdtTEp6M191NEpGeDJNM1VTbllBLUZiWHNhN2ViVHBSMW0xNjlMLTRiek1LWjY?oc=5"
-    },
-    {
-      "term": "attack",
-      "articles": 54,
+      "term": "russia",
+      "articles": 62,
       "sources": 26,
       "sentiment_direction": "negative",
-      "surge": 1.47,
-      "sentiment_mean": -0.666,
-      "headline": "Live: Putin's party dominates in elections, Moscow vows revenge after massive drone attack",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/europe/20260921-live-united-russia-dominates-in-elections-moscow-vows-revenge-after-massive-drone-attack"
+      "surge": 0.92,
+      "sentiment_mean": -0.236,
+      "headline": "Russia\u2019s ruling party set for big win in parliamentary elections",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/news/2026/09/21/world/politics/ruling-russian-parliament-elections/"
+    },
+    {
+      "term": "military",
+      "articles": 57,
+      "sources": 26,
+      "sentiment_direction": "mixed",
+      "surge": 1.13,
+      "sentiment_mean": -0.014,
+      "headline": "Iran\u2019s military says US preparing to resume strikes",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/news/2026/9/21/irans-military-says-us-preparing-to-resume-strikes?traffic_source=rss"
+    },
+    {
+      "term": "election",
+      "articles": 54,
+      "sources": 26,
+      "sentiment_direction": "mixed",
+      "surge": 1.17,
+      "sentiment_mean": 0.024,
+      "headline": "Far-left party wins Berlin election, pledging to nationalise housing",
+      "headline_source": "Hacker News",
+      "headline_url": "https://www.reuters.com/world/far-left-party-wins-berlin-election-pledging-nationalise-housing-2026-09-20/"
+    },
+    {
+      "term": "party",
+      "articles": 62,
+      "sources": 25,
+      "sentiment_direction": "positive",
+      "surge": 1.71,
+      "sentiment_mean": 0.249,
+      "headline": "Communist Party sets date for key political gathering in October",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/china/politics/article/3368215/communist-party-sets-date-key-political-gathering-october?utm_source=rss_feed"
     },
     {
       "term": "ukraine",
-      "articles": 53,
-      "sources": 26,
+      "articles": 54,
+      "sources": 25,
       "sentiment_direction": "negative",
-      "surge": 1.07,
-      "sentiment_mean": -0.41,
+      "surge": 1.11,
+      "sentiment_mean": -0.387,
       "headline": "/r/WorldNews Live Thread: Russian Invasion of Ukraine Day 1671, Part 1 (Thread #1818)",
       "headline_source": "Reddit r/worldnews",
       "headline_url": "https://www.reddit.com/r/worldnews/comments/1wm25kw/rworldnews_live_thread_russian_invasion_of/"
     },
     {
-      "term": "party",
-      "articles": 64,
-      "sources": 25,
-      "sentiment_direction": "positive",
-      "surge": 1.81,
-      "sentiment_mean": 0.27,
-      "headline": "Russia\u2019s ruling party set for big win in parliamentary elections",
-      "headline_source": "Japan Times",
-      "headline_url": "https://www.japantimes.co.jp/news/2026/09/21/world/politics/ruling-russian-parliament-elections/"
-    },
-    {
-      "term": "russia",
-      "articles": 60,
+      "term": "attack",
+      "articles": 52,
       "sources": 25,
       "sentiment_direction": "negative",
-      "surge": 0.89,
-      "sentiment_mean": -0.269,
-      "headline": "Russia\u2019s ruling party set for big win in parliamentary elections",
-      "headline_source": "Japan Times",
-      "headline_url": "https://www.japantimes.co.jp/news/2026/09/21/world/politics/ruling-russian-parliament-elections/"
-    },
-    {
-      "term": "election",
-      "articles": 54,
-      "sources": 25,
-      "sentiment_direction": "mixed",
-      "surge": 1.18,
-      "sentiment_mean": -0.025,
-      "headline": "Far-left party wins Berlin election, pledging to nationalise housing",
-      "headline_source": "Reddit r/news",
-      "headline_url": "https://www.reddit.com/r/news/comments/1wlzg4a/farleft_party_wins_berlin_election_pledging_to/"
+      "surge": 1.42,
+      "sentiment_mean": -0.672,
+      "headline": "Live: Putin's party dominates in elections, Moscow vows revenge after massive drone attack",
+      "headline_source": "France24",
+      "headline_url": "https://www.france24.com/en/europe/20260921-live-united-russia-dominates-in-elections-moscow-vows-revenge-after-massive-drone-attack"
     }
   ],
   "hours_since_fetch": 0.0
