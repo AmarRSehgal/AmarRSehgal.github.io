@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-21T06:24:15.275816+00:00",
+  "generated_at": "2026-09-21T07:24:34.537665+00:00",
   "window_hours": 24,
-  "articles_in_window": 1737,
+  "articles_in_window": 1772,
   "collection_days": 22,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,47 +10,36 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 191,
-      "sources": 37,
+      "articles": 202,
+      "sources": 36,
       "sentiment_direction": "mixed",
-      "surge": 0.67,
-      "sentiment_mean": -0.025,
-      "headline": "US and China discuss AI safety plan ahead of Trump-Xi summit",
-      "headline_source": "BBC Business",
-      "headline_url": "https://www.bbc.co.uk/news/articles/c8vgyzn2d31yo?at_medium=RSS&at_campaign=rss"
+      "surge": 0.71,
+      "sentiment_mean": -0.009,
+      "headline": "Targets approved, bombs loaded &amp; then Trump blinked: Why US pulled back from Houthi strikes",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/world/middle-east/targets-approved-bombs-loaded-then-trump-blinked-why-us-pulled-back-from-houthi-strikes/articleshow/134382217.cms"
     },
     {
       "term": "president",
-      "articles": 125,
-      "sources": 32,
+      "articles": 127,
+      "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 0.89,
-      "sentiment_mean": -0.054,
-      "headline": "U.S. President releases new poll to find replacement term for Artificial Intelligence",
-      "headline_source": "Reddit r/technology",
-      "headline_url": "https://www.reddit.com/r/technology/comments/1wly6kv/us_president_releases_new_poll_to_find/"
-    },
-    {
-      "term": "russia",
-      "articles": 62,
-      "sources": 26,
-      "sentiment_direction": "negative",
-      "surge": 0.92,
-      "sentiment_mean": -0.236,
-      "headline": "Russia\u2019s ruling party set for big win in parliamentary elections",
-      "headline_source": "Japan Times",
-      "headline_url": "https://www.japantimes.co.jp/news/2026/09/21/world/politics/ruling-russian-parliament-elections/"
+      "surge": 0.91,
+      "sentiment_mean": -0.058,
+      "headline": "Chinese President Xi Jinping will pay state visit to US this week, Beijing confirms",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/china/diplomacy/article/3368223/chinese-president-xi-jinping-will-pay-state-visit-us-week-beijing-confirms?utm_source=rss_feed"
     },
     {
       "term": "military",
-      "articles": 57,
+      "articles": 60,
       "sources": 26,
       "sentiment_direction": "mixed",
-      "surge": 1.13,
-      "sentiment_mean": -0.014,
-      "headline": "Iran\u2019s military says US preparing to resume strikes",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/news/2026/9/21/irans-military-says-us-preparing-to-resume-strikes?traffic_source=rss"
+      "surge": 1.18,
+      "sentiment_mean": -0.046,
+      "headline": "Trump gets caught in a dilemma over a Saudi plea for military help",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/news/2026/09/21/world/politics/trump-saudi-military-help-houthis/"
     },
     {
       "term": "election",
@@ -58,43 +47,54 @@
       "sources": 26,
       "sentiment_direction": "mixed",
       "surge": 1.17,
-      "sentiment_mean": 0.024,
-      "headline": "Far-left party wins Berlin election, pledging to nationalise housing",
-      "headline_source": "Hacker News",
-      "headline_url": "https://www.reuters.com/world/far-left-party-wins-berlin-election-pledging-nationalise-housing-2026-09-20/"
+      "sentiment_mean": 0.052,
+      "headline": "'No surprises' as results emerge in Russian parliamentary election",
+      "headline_source": "BBC World",
+      "headline_url": "https://www.bbc.co.uk/news/videos/cjp30pq0rx6ro?at_medium=RSS&at_campaign=rss"
     },
     {
       "term": "party",
-      "articles": 62,
+      "articles": 63,
       "sources": 25,
       "sentiment_direction": "positive",
-      "surge": 1.71,
-      "sentiment_mean": 0.249,
+      "surge": 1.73,
+      "sentiment_mean": 0.231,
       "headline": "Communist Party sets date for key political gathering in October",
       "headline_source": "South China Morning Post",
       "headline_url": "https://www.scmp.com/news/china/politics/article/3368215/communist-party-sets-date-key-political-gathering-october?utm_source=rss_feed"
     },
     {
-      "term": "ukraine",
-      "articles": 54,
+      "term": "russia",
+      "articles": 60,
       "sources": 25,
       "sentiment_direction": "negative",
-      "surge": 1.11,
-      "sentiment_mean": -0.387,
-      "headline": "/r/WorldNews Live Thread: Russian Invasion of Ukraine Day 1671, Part 1 (Thread #1818)",
+      "surge": 0.89,
+      "sentiment_mean": -0.199,
+      "headline": "Russia-Ukraine War Latest Live News: Zelensky And Trump To Meet In New York? Ukrainian Leader Signals 'Diplomatic Momentum' As Peace Talks Accelerate",
       "headline_source": "Reddit r/worldnews",
-      "headline_url": "https://www.reddit.com/r/worldnews/comments/1wm25kw/rworldnews_live_thread_russian_invasion_of/"
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1wm2wfj/russiaukraine_war_latest_live_news_zelensky_and/"
     },
     {
-      "term": "attack",
-      "articles": 52,
+      "term": "security",
+      "articles": 45,
       "sources": 25,
-      "sentiment_direction": "negative",
-      "surge": 1.42,
-      "sentiment_mean": -0.672,
-      "headline": "Live: Putin's party dominates in elections, Moscow vows revenge after massive drone attack",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/europe/20260921-live-united-russia-dominates-in-elections-moscow-vows-revenge-after-massive-drone-attack"
+      "sentiment_direction": "positive",
+      "surge": 0.75,
+      "sentiment_mean": 0.264,
+      "headline": "U.S. and China Discuss System to Warn of A.I. National Security Issues",
+      "headline_source": "NYT Business",
+      "headline_url": "https://www.nytimes.com/2026/09/20/business/us-china-ai-warning-system-national-security.html"
+    },
+    {
+      "term": "elections",
+      "articles": 52,
+      "sources": 23,
+      "sentiment_direction": "mixed",
+      "surge": 1.77,
+      "sentiment_mean": -0.081,
+      "headline": "Five takeaways from Germany\u2019s regional elections",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/news/2026/09/21/world/politics/germany-elections-analysis/"
     }
   ],
   "hours_since_fetch": 0.0
