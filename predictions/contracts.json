@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-21T15:01:45.742506+00:00",
-  "snapshot_date": "2026-09-21",
-  "snapshots": 22,
-  "observing_snapshots": 20,
+  "generated_at": "2026-09-22T15:00:23.009693+00:00",
+  "snapshot_date": "2026-09-22",
+  "snapshots": 23,
+  "observing_snapshots": 21,
   "days_since_new_data": 0,
-  "notices_tracked": 77168,
+  "notices_tracked": 79057,
   "lanes": [
     {
       "office": "W6QM MICC-FT DRUM",
@@ -19,7 +19,7 @@
       "regularity": null,
       "span_days": 26,
       "next_expected": "2026-10-13",
-      "open_deadline": "2026-09-21",
+      "open_deadline": "",
       "states": [],
       "link": "https://sam.gov/opp/284261f9048a4272ac7c3547d9129043/view"
     },
@@ -41,6 +41,44 @@
         "TX"
       ],
       "link": "https://sam.gov/opp/41d78351541d486da71e43bc4a7b337b/view"
+    },
+    {
+      "office": "W6QM MICC-FT DRUM",
+      "agency": "DEPT OF DEFENSE",
+      "group": "Furniture",
+      "lane": "office furniture",
+      "evidence": "OBSERVED",
+      "solicitations": 15,
+      "cadence": "biweekly",
+      "cadence_days": 12,
+      "cadence_source": "dates",
+      "regularity": 0.75,
+      "span_days": 378,
+      "next_expected": "2026-09-30",
+      "open_deadline": "2026-09-24",
+      "states": [
+        "CA"
+      ],
+      "link": "https://sam.gov/opp/5f645d37c1014a41a588adb6312ccc9e/view"
+    },
+    {
+      "office": "U.S. EMBASSY MADRID",
+      "agency": "STATE, DEPARTMENT OF",
+      "group": "Furniture",
+      "lane": "office furniture us embassy madrid",
+      "evidence": "OBSERVED",
+      "solicitations": 3,
+      "cadence": "weekly",
+      "cadence_days": 10,
+      "cadence_source": "dates",
+      "regularity": 0.5,
+      "span_days": 20,
+      "next_expected": "2026-10-01",
+      "open_deadline": "2026-09-23",
+      "states": [
+        "ES-MD"
+      ],
+      "link": "https://sam.gov/opp/6d5e2b58f49644a48c82171d45690558/view"
     },
     {
       "office": "FCI EDGEFIELD",
@@ -81,23 +119,6 @@
       "link": "https://sam.gov/opp/f75f94c19e3745a9815c536897e793df/view"
     },
     {
-      "office": "W6QM MICC-FT DRUM",
-      "agency": "DEPT OF DEFENSE",
-      "group": "Fuels/lubricants",
-      "lane": "microcrystalline wax",
-      "evidence": "POSTED-HISTORY",
-      "solicitations": 3,
-      "cadence": "quarterly",
-      "cadence_days": 119,
-      "cadence_source": "dates",
-      "regularity": 0.1,
-      "span_days": 239,
-      "next_expected": "2026-09-17",
-      "open_deadline": "",
-      "states": [],
-      "link": "https://sam.gov/opp/c7a414ad5e744c61ade1b77ab0d2b72f/view"
-    },
-    {
       "office": "FTC OKLAHOMA CITY",
       "agency": "JUSTICE, DEPARTMENT OF",
       "group": "Subsistence/FOOD",
@@ -134,81 +155,62 @@
         "CT"
       ],
       "link": "https://sam.gov/opp/e8215bb2434444329c39d046d4775073/view"
-    },
-    {
-      "office": "FCI DANBURY",
-      "agency": "JUSTICE, DEPARTMENT OF",
-      "group": "Subsistence/FOOD",
-      "lane": "fci danbury dairy",
-      "evidence": "PERIOD-MARKER",
-      "solicitations": 2,
-      "cadence": "biweekly",
-      "cadence_days": 12,
-      "cadence_source": "dates",
-      "regularity": null,
-      "span_days": 12,
-      "next_expected": "2026-09-13",
-      "open_deadline": "2027-08-28",
-      "states": [
-        "CT"
-      ],
-      "link": "https://sam.gov/opp/441c8202a888471db62594d20359eb8c/view"
     }
   ],
   "open": [
     {
-      "title": "3 TES Furniture",
-      "office": "FA2550  50 CONS PKP",
-      "group": "Furniture",
-      "state": "CO",
-      "deadline": "2026-09-21",
-      "access": "small-biz",
-      "link": "https://sam.gov/opp/1b15b55d8a4f43ce97ca5f75c7fa6774/view"
-    },
-    {
-      "title": "8x8 office cubicles",
-      "office": "W6QM MICC-FT DRUM",
-      "group": "Furniture",
+      "title": "16x16 Tent Liner",
+      "office": "DLA TROOP SUPPORT",
+      "group": "Textiles/leather",
       "state": "",
-      "deadline": "2026-09-21",
-      "access": "small-biz",
-      "link": "https://sam.gov/opp/53d251d4f9904ebc8adb865a072d1aa7/view"
-    },
-    {
-      "title": "BINDER,2IN EASY LK",
-      "office": "NAVSUP WEAPON SYSTEMS SUPPORT MECH",
-      "group": "Office supplies",
-      "state": "",
-      "deadline": "2026-09-21",
+      "deadline": "2026-09-22",
       "access": "OPEN",
-      "link": "https://sam.gov/opp/68cde37e1a66447e931fc97ce4296515/view"
+      "link": "https://sam.gov/opp/52b7ea4a091e4364b8477bfa0ed7740c/view"
     },
     {
-      "title": "Brand New Kewaunee Steel Laboratory Furniture for USDA-ARS PSWMRU - Pasture Research Lab",
-      "office": "USDA-FS, CSA EAST 6",
+      "title": "36C25526Q0675 Pharmacy Shelving - Robert J. Dole VAMC, Wichita",
+      "office": "255-NETWORK CONTRACT OFFICE 15 (36C255)",
       "group": "Furniture",
-      "state": "PA",
-      "deadline": "2026-09-21",
+      "state": "KS",
+      "deadline": "2026-09-22",
       "access": "small-biz",
-      "link": "https://sam.gov/opp/7b818276b8f54cfcba1599df980ba910/view"
+      "link": "https://sam.gov/opp/8e69eb111efc49d09ba1c65960d6c6d7/view"
     },
     {
-      "title": "Cafeteria Furnishing modernization, U.S. Embassy Santiago",
-      "office": "U.S. EMBASSY SANTIAGO",
+      "title": "Bleacher Seating Systems",
+      "office": "FA3016  502 CONS CL",
+      "group": "Furniture",
+      "state": "TX",
+      "deadline": "2026-09-22",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/c5427d9dee8e47348a15efb017065541/view"
+    },
+    {
+      "title": "DDCN Sheet Metal Storage and installation",
+      "office": "DLA DISTRIBUTION",
+      "group": "Furniture",
+      "state": "NC",
+      "deadline": "2026-09-22",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/ad04c40fcb2c4c999b656db76cb498cb/view"
+    },
+    {
+      "title": "Office furniture for KSC",
+      "office": "0411 AQ HQ     CONTRACT AUG",
       "group": "Furniture",
       "state": "",
-      "deadline": "2026-09-21",
+      "deadline": "2026-09-22",
       "access": "OPEN",
-      "link": "https://sam.gov/opp/567a83a20e6f46b7beaf8868edec805a/view"
+      "link": "https://sam.gov/opp/65d8d7aab5ba48cfae60728d5112593d/view"
     },
     {
-      "title": "FLASK, COMPRESSED",
-      "office": "NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "title": "Purchase of Boxes for NLSC Logistics",
+      "office": "DEPT OF COMMERCE NOAA",
       "group": "Containers/packaging",
       "state": "",
-      "deadline": "2026-09-21",
-      "access": "OPEN",
-      "link": "https://sam.gov/opp/722aad1b7faa42d3a18fb61b25088ad5/view"
+      "deadline": "2026-09-22",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/e3459d1df6b8476f9a30930ca3400ba1/view"
     }
   ]
 }
