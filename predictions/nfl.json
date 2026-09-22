@@ -1,314 +1,209 @@
 {
-  "generated_at": "2026-09-21T16:30:16Z",
+  "generated_at": "2026-09-22T16:30:06Z",
   "season": 2026,
-  "week": 2,
+  "week": 3,
   "season_type": "regular",
   "season_status": "in_season",
   "next_season_start": "2026-09-10",
   "games": [
     {
-      "kickoff": "2026-09-18T00:15:00Z",
-      "away_team": "DET",
+      "kickoff": "2026-09-25T00:15:00Z",
+      "away_team": "ATL",
+      "home_team": "GB",
+      "away_team_full": "Atlanta Falcons",
+      "home_team_full": "Green Bay Packers",
+      "pick": "GB",
+      "pred_spread": -7.9,
+      "pred_total": 42.8,
+      "ml_win_prob": 0.7291,
+      "confidence": 0.7291
+    },
+    {
+      "kickoff": "2026-09-27T17:00:00Z",
+      "away_team": "CAR",
+      "home_team": "CLE",
+      "away_team_full": "Carolina Panthers",
+      "home_team_full": "Cleveland Browns",
+      "pick": "CAR",
+      "pred_spread": -0.7,
+      "pred_total": 42.9,
+      "ml_win_prob": 0.4897,
+      "confidence": 0.5103
+    },
+    {
+      "kickoff": "2026-09-27T17:00:00Z",
+      "away_team": "CIN",
+      "home_team": "PIT",
+      "away_team_full": "Cincinnati Bengals",
+      "home_team_full": "Pittsburgh Steelers",
+      "pick": "CIN",
+      "pred_spread": 1.1,
+      "pred_total": 43.1,
+      "ml_win_prob": 0.4565,
+      "confidence": 0.5435
+    },
+    {
+      "kickoff": "2026-09-27T17:00:00Z",
+      "away_team": "HOU",
+      "home_team": "IND",
+      "away_team_full": "Houston Texans",
+      "home_team_full": "Indianapolis Colts",
+      "pick": "HOU",
+      "pred_spread": 2.7,
+      "pred_total": 46.7,
+      "ml_win_prob": 0.3462,
+      "confidence": 0.6538
+    },
+    {
+      "kickoff": "2026-09-27T17:00:00Z",
+      "away_team": "KC",
+      "home_team": "MIA",
+      "away_team_full": "Kansas City Chiefs",
+      "home_team_full": "Miami Dolphins",
+      "pick": "KC",
+      "pred_spread": 2.1,
+      "pred_total": 42.7,
+      "ml_win_prob": 0.4264,
+      "confidence": 0.5736
+    },
+    {
+      "kickoff": "2026-09-27T17:00:00Z",
+      "away_team": "LAC",
       "home_team": "BUF",
-      "away_team_full": "Detroit Lions",
+      "away_team_full": "Los Angeles Chargers",
       "home_team_full": "Buffalo Bills",
       "pick": "BUF",
-      "pred_spread": -4.8,
-      "pred_total": 49.5,
-      "ml_win_prob": 0.6778,
-      "confidence": 0.6778,
-      "result": {
-        "away_pts": 31,
-        "home_pts": 41,
-        "winner": "BUF",
-        "correct": true,
-        "actual_spread": -10.0
-      }
+      "pred_spread": -11.7,
+      "pred_total": 44.8,
+      "ml_win_prob": 0.8259,
+      "confidence": 0.8259
     },
     {
-      "kickoff": "2026-09-20T17:00:00Z",
-      "away_team": "CAR",
-      "home_team": "ATL",
-      "away_team_full": "Carolina Panthers",
-      "home_team_full": "Atlanta Falcons",
-      "pick": "CAR",
-      "pred_spread": -1.7,
-      "pred_total": 47.3,
-      "ml_win_prob": 0.4917,
-      "confidence": 0.5083,
-      "result": {
-        "away_pts": 34,
-        "home_pts": 3,
-        "winner": "CAR",
-        "correct": true,
-        "actual_spread": 31.0
-      }
+      "kickoff": "2026-09-27T17:00:00Z",
+      "away_team": "NYJ",
+      "home_team": "DET",
+      "away_team_full": "New York Jets",
+      "home_team_full": "Detroit Lions",
+      "pick": "DET",
+      "pred_spread": -10.1,
+      "pred_total": 45.2,
+      "ml_win_prob": 0.7872,
+      "confidence": 0.7872
     },
     {
-      "kickoff": "2026-09-20T17:00:00Z",
-      "away_team": "CIN",
-      "home_team": "HOU",
-      "away_team_full": "Cincinnati Bengals",
-      "home_team_full": "Houston Texans",
-      "pick": "HOU",
-      "pred_spread": -4.0,
-      "pred_total": 48.5,
-      "ml_win_prob": 0.626,
-      "confidence": 0.626,
-      "result": {
-        "away_pts": 20,
-        "home_pts": 6,
-        "winner": "CIN",
-        "correct": false,
-        "actual_spread": 14.0
-      }
+      "kickoff": "2026-09-27T17:00:00Z",
+      "away_team": "SEA",
+      "home_team": "WSH",
+      "away_team_full": "Seattle Seahawks",
+      "home_team_full": "Washington Commanders",
+      "pick": "SEA",
+      "pred_spread": 9.3,
+      "pred_total": 44.3,
+      "ml_win_prob": 0.2413,
+      "confidence": 0.7587
     },
     {
-      "kickoff": "2026-09-20T17:00:00Z",
-      "away_team": "CLE",
-      "home_team": "TB",
-      "away_team_full": "Cleveland Browns",
-      "home_team_full": "Tampa Bay Buccaneers",
-      "pick": "TB",
-      "pred_spread": -6.1,
-      "pred_total": 41.7,
-      "ml_win_prob": 0.6933,
-      "confidence": 0.6933,
-      "result": {
-        "away_pts": 23,
-        "home_pts": 19,
-        "winner": "CLE",
-        "correct": false,
-        "actual_spread": 4.0
-      }
-    },
-    {
-      "kickoff": "2026-09-20T17:00:00Z",
-      "away_team": "GB",
-      "home_team": "NYJ",
-      "away_team_full": "Green Bay Packers",
-      "home_team_full": "New York Jets",
-      "pick": "GB",
-      "pred_spread": 2.6,
-      "pred_total": 42.6,
-      "ml_win_prob": 0.3835,
-      "confidence": 0.6165,
-      "result": {
-        "away_pts": 20,
-        "home_pts": 17,
-        "winner": "GB",
-        "correct": true,
-        "actual_spread": 3.0
-      }
-    },
-    {
-      "kickoff": "2026-09-20T17:00:00Z",
-      "away_team": "MIN",
-      "home_team": "CHI",
-      "away_team_full": "Minnesota Vikings",
-      "home_team_full": "Chicago Bears",
-      "pick": "CHI",
-      "pred_spread": -2.4,
-      "pred_total": 46.6,
-      "ml_win_prob": 0.588,
-      "confidence": 0.588,
-      "result": {
-        "away_pts": 9,
-        "home_pts": 3,
-        "winner": "MIN",
-        "correct": false,
-        "actual_spread": 6.0
-      }
-    },
-    {
-      "kickoff": "2026-09-20T17:00:00Z",
-      "away_team": "NO",
-      "home_team": "BAL",
-      "away_team_full": "New Orleans Saints",
-      "home_team_full": "Baltimore Ravens",
-      "pick": "BAL",
+      "kickoff": "2026-09-27T17:00:00Z",
+      "away_team": "TEN",
+      "home_team": "NYG",
+      "away_team_full": "Tennessee Titans",
+      "home_team_full": "New York Giants",
+      "pick": "NYG",
       "pred_spread": -6.3,
-      "pred_total": 50.0,
-      "ml_win_prob": 0.7111,
-      "confidence": 0.7111,
-      "result": {
-        "away_pts": 24,
-        "home_pts": 17,
-        "winner": "NO",
-        "correct": false,
-        "actual_spread": 7.0
-      }
+      "pred_total": 42.7,
+      "ml_win_prob": 0.6964,
+      "confidence": 0.6964
     },
     {
-      "kickoff": "2026-09-20T17:00:00Z",
-      "away_team": "PHI",
-      "home_team": "TEN",
-      "away_team_full": "Philadelphia Eagles",
-      "home_team_full": "Tennessee Titans",
-      "pick": "PHI",
-      "pred_spread": 7.8,
-      "pred_total": 42.6,
-      "ml_win_prob": 0.2669,
-      "confidence": 0.7331,
-      "result": {
-        "away_pts": 24,
-        "home_pts": 20,
-        "winner": "PHI",
-        "correct": true,
-        "actual_spread": 4.0
-      }
-    },
-    {
-      "kickoff": "2026-09-20T17:00:00Z",
-      "away_team": "PIT",
-      "home_team": "NE",
-      "away_team_full": "Pittsburgh Steelers",
-      "home_team_full": "New England Patriots",
-      "pick": "NE",
-      "pred_spread": -5.4,
-      "pred_total": 39.1,
-      "ml_win_prob": 0.6728,
-      "confidence": 0.6728,
-      "result": {
-        "away_pts": 3,
-        "home_pts": 20,
-        "winner": "NE",
-        "correct": true,
-        "actual_spread": -17.0
-      }
-    },
-    {
-      "kickoff": "2026-09-20T20:05:00Z",
-      "away_team": "JAX",
-      "home_team": "DEN",
-      "away_team_full": "Jacksonville Jaguars",
-      "home_team_full": "Denver Broncos",
+      "kickoff": "2026-09-27T17:00:00Z",
+      "away_team": "NE",
+      "home_team": "JAX",
+      "away_team_full": "New England Patriots",
+      "home_team_full": "Jacksonville Jaguars",
       "pick": "JAX",
-      "pred_spread": 0.5,
-      "pred_total": 41.5,
-      "ml_win_prob": 0.4902,
-      "confidence": 0.5098,
-      "result": {
-        "away_pts": 13,
-        "home_pts": 20,
-        "winner": "DEN",
-        "correct": false,
-        "actual_spread": -7.0
-      }
+      "pred_spread": -1.8,
+      "pred_total": 39.6,
+      "ml_win_prob": 0.5649,
+      "confidence": 0.5649
     },
     {
-      "kickoff": "2026-09-20T20:05:00Z",
-      "away_team": "LV",
-      "home_team": "LAC",
-      "away_team_full": "Las Vegas Raiders",
-      "home_team_full": "Los Angeles Chargers",
-      "pick": "LAC",
-      "pred_spread": -6.8,
-      "pred_total": 40.2,
-      "ml_win_prob": 0.7213,
-      "confidence": 0.7213,
-      "result": {
-        "away_pts": 26,
-        "home_pts": 14,
-        "winner": "LV",
-        "correct": false,
-        "actual_spread": 12.0
-      }
-    },
-    {
-      "kickoff": "2026-09-20T20:25:00Z",
-      "away_team": "MIA",
+      "kickoff": "2026-09-27T20:05:00Z",
+      "away_team": "ARI",
       "home_team": "SF",
-      "away_team_full": "Miami Dolphins",
+      "away_team_full": "Arizona Cardinals",
       "home_team_full": "San Francisco 49ers",
       "pick": "SF",
-      "pred_spread": -9.8,
-      "pred_total": 44.6,
-      "ml_win_prob": 0.7915,
-      "confidence": 0.7915,
-      "result": {
-        "away_pts": 13,
-        "home_pts": 35,
-        "winner": "SF",
-        "correct": true,
-        "actual_spread": -22.0
-      }
+      "pred_spread": -10.3,
+      "pred_total": 45.2,
+      "ml_win_prob": 0.7848,
+      "confidence": 0.7848
     },
     {
-      "kickoff": "2026-09-20T20:25:00Z",
-      "away_team": "SEA",
-      "home_team": "ARI",
-      "away_team_full": "Seattle Seahawks",
-      "home_team_full": "Arizona Cardinals",
-      "pick": "SEA",
-      "pred_spread": 4.6,
-      "pred_total": 47.2,
-      "ml_win_prob": 0.3189,
-      "confidence": 0.6811,
-      "result": {
-        "away_pts": 31,
-        "home_pts": 7,
-        "winner": "SEA",
-        "correct": true,
-        "actual_spread": 24.0
-      }
+      "kickoff": "2026-09-27T20:05:00Z",
+      "away_team": "MIN",
+      "home_team": "TB",
+      "away_team_full": "Minnesota Vikings",
+      "home_team_full": "Tampa Bay Buccaneers",
+      "pick": "MIN",
+      "pred_spread": 1.8,
+      "pred_total": 39.7,
+      "ml_win_prob": 0.4207,
+      "confidence": 0.5793
     },
     {
-      "kickoff": "2026-09-20T20:25:00Z",
-      "away_team": "WSH",
+      "kickoff": "2026-09-27T20:25:00Z",
+      "away_team": "BAL",
       "home_team": "DAL",
-      "away_team_full": "Washington Commanders",
+      "away_team_full": "Baltimore Ravens",
       "home_team_full": "Dallas Cowboys",
-      "pick": "DAL",
-      "pred_spread": -3.3,
-      "pred_total": 47.7,
-      "ml_win_prob": 0.6106,
-      "confidence": 0.6106,
-      "result": {
-        "away_pts": 20,
-        "home_pts": 37,
-        "winner": "DAL",
-        "correct": true,
-        "actual_spread": -17.0
-      }
+      "pick": "BAL",
+      "pred_spread": 3.3,
+      "pred_total": 47.3,
+      "ml_win_prob": 0.4083,
+      "confidence": 0.5917
     },
     {
-      "kickoff": "2026-09-21T00:20:00Z",
-      "away_team": "IND",
-      "home_team": "KC",
-      "away_team_full": "Indianapolis Colts",
-      "home_team_full": "Kansas City Chiefs",
-      "pick": "KC",
-      "pred_spread": -6.3,
+      "kickoff": "2026-09-27T20:25:00Z",
+      "away_team": "LV",
+      "home_team": "NO",
+      "away_team_full": "Las Vegas Raiders",
+      "home_team_full": "New Orleans Saints",
+      "pick": "NO",
+      "pred_spread": -6.1,
       "pred_total": 42.3,
-      "ml_win_prob": 0.7058,
-      "confidence": 0.7058,
-      "result": {
-        "away_pts": 30,
-        "home_pts": 33,
-        "winner": "KC",
-        "correct": true,
-        "actual_spread": -3.0
-      }
+      "ml_win_prob": 0.6984,
+      "confidence": 0.6984
     },
     {
-      "kickoff": "2026-09-22T00:15:00Z",
-      "away_team": "NYG",
-      "home_team": "LAR",
-      "away_team_full": "New York Giants",
-      "home_team_full": "Los Angeles Rams",
-      "pick": "LAR",
-      "pred_spread": -7.1,
-      "pred_total": 45.9,
-      "ml_win_prob": 0.7208,
-      "confidence": 0.7208
+      "kickoff": "2026-09-28T00:20:00Z",
+      "away_team": "LAR",
+      "home_team": "DEN",
+      "away_team_full": "Los Angeles Rams",
+      "home_team_full": "Denver Broncos",
+      "pick": "DEN",
+      "pred_spread": -0.5,
+      "pred_total": 43.5,
+      "ml_win_prob": 0.507,
+      "confidence": 0.507
+    },
+    {
+      "kickoff": "2026-09-29T00:15:00Z",
+      "away_team": "PHI",
+      "home_team": "CHI",
+      "away_team_full": "Philadelphia Eagles",
+      "home_team_full": "Chicago Bears",
+      "pick": "CHI",
+      "pred_spread": -1.2,
+      "pred_total": 44.0,
+      "ml_win_prob": 0.5426,
+      "confidence": 0.5426
     }
   ],
   "track_record": {
     "season": 2026,
-    "n_games": 31,
-    "accuracy": 0.6129,
-    "baseline_accuracy": 0.5161,
+    "n_games": 32,
+    "accuracy": 0.625,
+    "baseline_accuracy": 0.5312,
     "baseline_label": "always pick the home team",
     "beats_baseline": false,
     "mcnemar_p_vs_baseline": 0.5078,
@@ -321,7 +216,7 @@
     "betting": {
       "strategy": "value",
       "min_edge": 0.0,
-      "skipped_no_edge": 3,
+      "skipped_no_edge": 4,
       "unpriced": 0,
       "stake": 100.0,
       "books": [
@@ -340,15 +235,15 @@
       "break_even_hit_rate": 0.391,
       "avg_edge": 0.0572,
       "every_pick": {
-        "bets": 31,
-        "record": "19-12",
-        "hit_rate": 0.613,
-        "staked": 3100.0,
-        "pnl": -240.0,
-        "roi": -0.0774,
-        "avg_price": 1.582,
-        "break_even_hit_rate": 0.658,
-        "avg_edge": -0.0155
+        "bets": 32,
+        "record": "20-12",
+        "hit_rate": 0.625,
+        "staked": 3200.0,
+        "pnl": -205.0,
+        "roi": -0.0641,
+        "avg_price": 1.574,
+        "break_even_hit_rate": 0.661,
+        "avg_edge": -0.0156
       },
       "settled": [
         {
@@ -776,9 +671,9 @@
     "by_week": [
       {
         "week": 2,
-        "games": 15,
-        "correct": 9,
-        "accuracy": 0.6,
+        "games": 16,
+        "correct": 10,
+        "accuracy": 0.625,
         "bets": 14,
         "pnl": 282.0,
         "roi": 0.2014
@@ -793,10 +688,10 @@
         "roi": -0.0664
       }
     ],
-    "mean_abs_spread_error": 13.41,
+    "mean_abs_spread_error": 13.9,
     "high_conf_threshold": 0.6,
-    "high_conf_n": 22,
-    "high_conf_stated": 0.6822,
-    "high_conf_realized": 0.5909
+    "high_conf_n": 23,
+    "high_conf_stated": 0.684,
+    "high_conf_realized": 0.6087
   }
 }
