@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-22T12:24:18.351422+00:00",
+  "generated_at": "2026-09-22T13:24:25.320087+00:00",
   "window_hours": 24,
-  "articles_in_window": 2603,
+  "articles_in_window": 2570,
   "collection_days": 23,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,25 +10,36 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 339,
+      "articles": 346,
       "sources": 42,
       "sentiment_direction": "mixed",
-      "surge": 1.24,
-      "sentiment_mean": -0.148,
-      "headline": "Media ban 'an escalation even for Trump'",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/video/20260922-media-ban-an-escalation-even-for-trump"
+      "surge": 1.26,
+      "sentiment_mean": -0.129,
+      "headline": "America\u2019s Allies Are No Longer Waiting for Trump to Leave",
+      "headline_source": "Reddit r/geopolitics",
+      "headline_url": "https://www.reddit.com/r/geopolitics/comments/1wn913o/americas_allies_are_no_longer_waiting_for_trump/"
+    },
+    {
+      "term": "president",
+      "articles": 182,
+      "sources": 33,
+      "sentiment_direction": "mixed",
+      "surge": 1.3,
+      "sentiment_mean": -0.075,
+      "headline": "Iran\u2019s President Arrives in U.S. for U.N. Meeting Against the Backdrop of War",
+      "headline_source": "NYT World",
+      "headline_url": "https://www.nytimes.com/2026/09/22/world/middleeast/iran-war-un-general-assembly-pezeshkian.html"
     },
     {
       "term": "house",
-      "articles": 114,
+      "articles": 116,
       "sources": 33,
       "sentiment_direction": "negative",
-      "surge": 1.2,
-      "sentiment_mean": -0.195,
-      "headline": "What is the White House press pool and why is it in a row with Trump?",
-      "headline_source": "BBC World",
-      "headline_url": "https://www.bbc.co.uk/news/articles/c8dx5dy5rzz2o?at_medium=RSS&at_campaign=rss"
+      "surge": 1.21,
+      "sentiment_mean": -0.183,
+      "headline": "White House launches \u2018Trump TV\u2019 after press bans",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/white-house-launches-trump-tv-after-press-bans?traffic_source=rss"
     },
     {
       "term": "deal",
@@ -36,65 +47,54 @@
       "sources": 32,
       "sentiment_direction": "mixed",
       "surge": 1.71,
-      "sentiment_mean": 0.059,
-      "headline": "Enlivex terminates securities deal with Rain Foundation",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/company-news/enlivex-terminates-securities-deal-with-rain-foundation-93CH-4910667"
-    },
-    {
-      "term": "president",
-      "articles": 170,
-      "sources": 31,
-      "sentiment_direction": "mixed",
-      "surge": 1.22,
-      "sentiment_mean": -0.08,
-      "headline": "Trump warns he'll be 'last Republican president' if Senate GOP doesn't make major change",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/politics/trump-warns-hell-last-republican-president-senate-gop-doesnt-make-major-change"
-    },
-    {
-      "term": "data",
-      "articles": 73,
-      "sources": 30,
-      "sentiment_direction": "mixed",
-      "surge": 1.19,
-      "sentiment_mean": -0.015,
-      "headline": "Data center firm Accelevation targets up to $5.4 billion valuation in US IPO",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/accelevation-targets-up-to-54-billion-valuation-in-us-ipo-4910506"
+      "sentiment_mean": 0.054,
+      "headline": "Bounty Oil & Gas agrees deal for Liberia deepwater block",
+      "headline_source": "Yahoo Finance",
+      "headline_url": "https://finance.yahoo.com/energy/articles/bounty-oil-gas-agrees-deal-130809413.html"
     },
     {
       "term": "iran",
-      "articles": 104,
-      "sources": 29,
+      "articles": 110,
+      "sources": 31,
       "sentiment_direction": "negative",
-      "surge": 1.17,
-      "sentiment_mean": -0.334,
-      "headline": "Iran ready reopen Hormuz within 7 days, negotiate if the US lifts blockade",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/middle-east/iran-ready-reopen-hormuz-within-7-days-negotiate-if-the-us-lifts-blockade/articleshow/134411572.cms"
-    },
-    {
-      "term": "white",
-      "articles": 87,
-      "sources": 28,
-      "sentiment_direction": "negative",
-      "surge": 1.77,
-      "sentiment_mean": -0.416,
-      "headline": "What is the White House press pool and why is it in a row with Trump?",
-      "headline_source": "BBC World",
-      "headline_url": "https://www.bbc.co.uk/news/articles/c8dx5dy5rzz2o?at_medium=RSS&at_campaign=rss"
+      "surge": 1.23,
+      "sentiment_mean": -0.327,
+      "headline": "Iran\u2019s President Arrives in U.S. for U.N. Meeting Against the Backdrop of War",
+      "headline_source": "NYT World",
+      "headline_url": "https://www.nytimes.com/2026/09/22/world/middleeast/iran-war-un-general-assembly-pezeshkian.html"
     },
     {
       "term": "power",
-      "articles": 54,
-      "sources": 28,
+      "articles": 50,
+      "sources": 29,
       "sentiment_direction": "positive",
-      "surge": 1.24,
-      "sentiment_mean": 0.236,
-      "headline": "Who actually has power at the United Nations?",
+      "surge": 1.13,
+      "sentiment_mean": 0.195,
+      "headline": "Fox News Power Rankings: For the Democrats, where could it possibly go wrong?",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/politics/fox-news-power-rankings-democrats-where-could-go-wrong"
+    },
+    {
+      "term": "white",
+      "articles": 88,
+      "sources": 28,
+      "sentiment_direction": "negative",
+      "surge": 1.77,
+      "sentiment_mean": -0.398,
+      "headline": "White House launches \u2018Trump TV\u2019 after press bans",
       "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/who-actually-has-power-at-the-united-nations-2?traffic_source=rss"
+      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/white-house-launches-trump-tv-after-press-bans?traffic_source=rss"
+    },
+    {
+      "term": "meet",
+      "articles": 60,
+      "sources": 28,
+      "sentiment_direction": "mixed",
+      "surge": 2.33,
+      "sentiment_mean": 0.041,
+      "headline": "Wars, AI and climate on agenda as world leaders meet at UN",
+      "headline_source": "France24",
+      "headline_url": "https://www.france24.com/en/video/20260922-wars-ai-and-climate-on-agenda-as-world-leaders-meet-at-un"
     }
   ],
   "hours_since_fetch": 0.0
