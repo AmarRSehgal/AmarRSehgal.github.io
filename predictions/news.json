@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-22T05:45:34.499316+00:00",
+  "generated_at": "2026-09-22T06:24:43.834578+00:00",
   "window_hours": 24,
-  "articles_in_window": 2606,
+  "articles_in_window": 2641,
   "collection_days": 23,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -11,13 +11,13 @@
     {
       "term": "trump",
       "articles": 322,
-      "sources": 43,
+      "sources": 42,
       "sentiment_direction": "mixed",
       "surge": 1.21,
-      "sentiment_mean": -0.14,
-      "headline": "Trump and Xi see tensions flare over AI, trade and Iran but still seek stability",
-      "headline_source": "ABC News",
-      "headline_url": "https://abcnews.com/Business/wireStory/trump-xi-tensions-flare-ai-trade-iran-seek-136640292"
+      "sentiment_mean": -0.147,
+      "headline": "Trump\u2019s bizarre social media blitz leaves world guessing ahead of UN address",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/world/2026/sep/22/trump-united-nations-address"
     },
     {
       "term": "house",
@@ -32,11 +32,11 @@
     },
     {
       "term": "president",
-      "articles": 168,
-      "sources": 33,
+      "articles": 171,
+      "sources": 34,
       "sentiment_direction": "mixed",
-      "surge": 1.25,
-      "sentiment_mean": -0.09,
+      "surge": 1.28,
+      "sentiment_mean": -0.081,
       "headline": "Why Network TV Stopped Filming the President",
       "headline_source": "NYT Politics",
       "headline_url": "https://www.nytimes.com/video/us/politics/100000011164965/why-network-tv-stopped-filming-the-president.html"
@@ -44,46 +44,46 @@
     {
       "term": "data",
       "articles": 73,
-      "sources": 32,
+      "sources": 31,
       "sentiment_direction": "mixed",
       "surge": 1.22,
-      "sentiment_mean": -0.043,
-      "headline": "Silicon Data CEO Li on AI Race and Tokenomics",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/videos/2026-09-22/silicon-data-ceo-li-on-ai-race-and-tokenomics-video"
+      "sentiment_mean": -0.019,
+      "headline": "Morphotonics raises \u20ac40M to expand its display tech into data centers",
+      "headline_source": "TechCrunch",
+      "headline_url": "https://techcrunch.com/2026/09/21/morphotonics-raises-e40m-as-it-tk-tk-tk-t/"
+    },
+    {
+      "term": "iran",
+      "articles": 94,
+      "sources": 30,
+      "sentiment_direction": "negative",
+      "surge": 1.07,
+      "sentiment_mean": -0.372,
+      "headline": "Oil rises as markets eye U.S.-Iran talks, Saudi flows",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/commodities-news/oil-edges-higher-as-markets-eye-usiran-talks-saudi-flows-4909809"
     },
     {
       "term": "white",
-      "articles": 89,
+      "articles": 90,
       "sources": 30,
       "sentiment_direction": "negative",
-      "surge": 1.95,
-      "sentiment_mean": -0.403,
+      "surge": 1.98,
+      "sentiment_mean": -0.404,
       "headline": "Watch: Press pool boycott leaves Trump barely audible at White House event",
       "headline_source": "Times of India",
       "headline_url": "https://timesofindia.indiatimes.com/world/us/watch-press-pool-boycott-leaves-trump-barely-audible-at-white-house-event/articleshow/134401459.cms"
     },
     {
       "term": "across",
-      "articles": 62,
+      "articles": 64,
       "sources": 30,
       "sentiment_direction": "negative",
-      "surge": 1.38,
-      "sentiment_mean": -0.219,
+      "surge": 1.43,
+      "sentiment_mean": -0.21,
       "headline": "Plano teen built AI air-quality model now used across 60 schools",
       "headline_source": "Times of India",
       "headline_url": "https://timesofindia.indiatimes.com/world/us/west-dallas-had-too-few-air-quality-monitors-to-track-pollution-across-large-areas-a-plano-teen-built-an-ai-model-to-estimate-neighborhood-air-quality-later-reaching-60-schools-and-training-300-youth-ambassadors/articleshow/134360275.cms"
-    },
-    {
-      "term": "iran",
-      "articles": 88,
-      "sources": 29,
-      "sentiment_direction": "negative",
-      "surge": 1.0,
-      "sentiment_mean": -0.37,
-      "headline": "Trump and Xi see tensions flare over AI, trade and Iran but still seek stability",
-      "headline_source": "ABC News",
-      "headline_url": "https://abcnews.com/Business/wireStory/trump-xi-tensions-flare-ai-trade-iran-seek-136640292"
     },
     {
       "term": "deal",
@@ -91,11 +91,11 @@
       "sources": 28,
       "sentiment_direction": "mixed",
       "surge": 1.5,
-      "sentiment_mean": 0.09,
+      "sentiment_mean": 0.093,
       "headline": "U.S. strikes Greenland deal for 'permanent control over security,' will send forces to Danish dog-sled outpost and reopen Cold War base: report",
       "headline_source": "CNBC Top News",
       "headline_url": "https://www.cnbc.com/2026/09/22/trump-greenland-security-deal-military-bases-.html"
     }
   ],
-  "hours_since_fetch": 0.01
+  "hours_since_fetch": 0.0
 }
