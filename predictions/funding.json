@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T08:00:11.234617+00:00",
+  "generated_at": "2026-09-22T09:00:10.261234+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 3974.8,
-      "net_at_hold": 3.62995,
+      "net_apr": 4123.01,
+      "net_at_hold": 3.7653,
       "cost_bps": 27.25
     },
     {
@@ -48,19 +48,6 @@
       "base": "NIGHT",
       "type": "perp-perp",
       "long_venue": "Coinbase",
-      "short_venue": "Binance",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1776.97,
-      "net_at_hold": 0.8114,
-      "cost_bps": 36.0
-    },
-    {
-      "base": "NIGHT",
-      "type": "perp-perp",
-      "long_venue": "Coinbase",
       "short_venue": "KuCoin",
       "long_instrument": "perp",
       "min_hold_h": 4,
@@ -87,27 +74,40 @@
       "base": "NIGHT",
       "type": "perp-perp",
       "long_venue": "Coinbase",
-      "short_venue": "Bybit",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1647.27,
-      "net_at_hold": 0.75218,
-      "cost_bps": 40.3
-    },
-    {
-      "base": "NIGHT",
-      "type": "perp-perp",
-      "long_venue": "Coinbase",
       "short_venue": "Bitget",
       "long_instrument": "perp",
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1629.99,
-      "net_at_hold": 0.74429,
-      "cost_bps": 39.35
+      "net_apr": 1617.69,
+      "net_at_hold": 0.73867,
+      "cost_bps": 39.4
+    },
+    {
+      "base": "ONE",
+      "type": "perp-perp",
+      "long_venue": "OKX",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 23,
+      "scans": 24,
+      "net_apr": 4840.2,
+      "net_at_hold": 4.42027,
+      "cost_bps": 47.69
+    },
+    {
+      "base": "NIGHT",
+      "type": "perp-perp",
+      "long_venue": "Coinbase",
+      "short_venue": "Binance",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 23,
+      "scans": 24,
+      "net_apr": 1776.97,
+      "net_at_hold": 0.8114,
+      "cost_bps": 36.0
     }
   ]
 }
