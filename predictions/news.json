@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-22T11:24:17.063176+00:00",
+  "generated_at": "2026-09-22T12:24:18.351422+00:00",
   "window_hours": 24,
-  "articles_in_window": 2588,
+  "articles_in_window": 2603,
   "collection_days": 23,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,91 +10,91 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 337,
+      "articles": 339,
       "sources": 42,
       "sentiment_direction": "mixed",
       "surge": 1.24,
-      "sentiment_mean": -0.147,
-      "headline": "Trump Set to Meet With Persian Gulf Allies as Middle East Wars Widen",
-      "headline_source": "NYT World",
-      "headline_url": "https://www.nytimes.com/2026/09/22/world/middleeast/trump-persian-gulf-leaders-meeting.html"
+      "sentiment_mean": -0.148,
+      "headline": "Media ban 'an escalation even for Trump'",
+      "headline_source": "France24",
+      "headline_url": "https://www.france24.com/en/video/20260922-media-ban-an-escalation-even-for-trump"
+    },
+    {
+      "term": "house",
+      "articles": 114,
+      "sources": 33,
+      "sentiment_direction": "negative",
+      "surge": 1.2,
+      "sentiment_mean": -0.195,
+      "headline": "What is the White House press pool and why is it in a row with Trump?",
+      "headline_source": "BBC World",
+      "headline_url": "https://www.bbc.co.uk/news/articles/c8dx5dy5rzz2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "term": "deal",
+      "articles": 91,
+      "sources": 32,
+      "sentiment_direction": "mixed",
+      "surge": 1.71,
+      "sentiment_mean": 0.059,
+      "headline": "Enlivex terminates securities deal with Rain Foundation",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/company-news/enlivex-terminates-securities-deal-with-rain-foundation-93CH-4910667"
     },
     {
       "term": "president",
-      "articles": 176,
-      "sources": 34,
+      "articles": 170,
+      "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 1.28,
-      "sentiment_mean": -0.088,
+      "surge": 1.22,
+      "sentiment_mean": -0.08,
       "headline": "Trump warns he'll be 'last Republican president' if Senate GOP doesn't make major change",
       "headline_source": "Fox News",
       "headline_url": "https://www.foxnews.com/politics/trump-warns-hell-last-republican-president-senate-gop-doesnt-make-major-change"
     },
     {
-      "term": "house",
-      "articles": 114,
-      "sources": 34,
-      "sentiment_direction": "negative",
-      "surge": 1.21,
-      "sentiment_mean": -0.202,
-      "headline": "Outgoing House Democrat backs incumbent Republican lawmaker for re-election",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/politics/outgoing-house-democrat-backs-incumbent-republican-lawmaker-re-election"
-    },
-    {
-      "term": "deal",
-      "articles": 92,
-      "sources": 31,
-      "sentiment_direction": "mixed",
-      "surge": 1.75,
-      "sentiment_mean": 0.046,
-      "headline": "Meta deal will help plastics recycling startup MacroCycle build its first factory",
-      "headline_source": "TechCrunch",
-      "headline_url": "https://techcrunch.com/2026/09/22/meta-deal-will-help-plastics-recycling-startup-macrocycle-build-its-first-factory/"
-    },
-    {
       "term": "data",
-      "articles": 68,
+      "articles": 73,
       "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 1.12,
-      "sentiment_mean": 0.037,
-      "headline": "Yields Can Fall on Good Oil News, Bad Eco Data, JPM\u2019s Berro Says",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/videos/2026-09-22/yields-can-fall-on-good-oil-news-bad-eco-data-jpmorgan-video"
-    },
-    {
-      "term": "across",
-      "articles": 55,
-      "sources": 29,
-      "sentiment_direction": "negative",
-      "surge": 1.22,
-      "sentiment_mean": -0.26,
-      "headline": "Plano teen built AI air-quality model now used across 60 schools",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/us/west-dallas-had-too-few-air-quality-monitors-to-track-pollution-across-large-areas-a-plano-teen-built-an-ai-model-to-estimate-neighborhood-air-quality-later-reaching-60-schools-and-training-300-youth-ambassadors/articleshow/134360275.cms"
+      "surge": 1.19,
+      "sentiment_mean": -0.015,
+      "headline": "Data center firm Accelevation targets up to $5.4 billion valuation in US IPO",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/stock-market-news/accelevation-targets-up-to-54-billion-valuation-in-us-ipo-4910506"
     },
     {
       "term": "iran",
-      "articles": 98,
-      "sources": 28,
+      "articles": 104,
+      "sources": 29,
       "sentiment_direction": "negative",
-      "surge": 1.11,
-      "sentiment_mean": -0.335,
-      "headline": "Middle East takes center stage at UN as regional leaders confront Iran war, Gaza and Houthi threat",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/world/middle-east-center-stage-un-regional-leaders-confront-iran-war-gaza-houthi-threat"
+      "surge": 1.17,
+      "sentiment_mean": -0.334,
+      "headline": "Iran ready reopen Hormuz within 7 days, negotiate if the US lifts blockade",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/world/middle-east/iran-ready-reopen-hormuz-within-7-days-negotiate-if-the-us-lifts-blockade/articleshow/134411572.cms"
     },
     {
       "term": "white",
-      "articles": 88,
+      "articles": 87,
       "sources": 28,
       "sentiment_direction": "negative",
-      "surge": 1.83,
-      "sentiment_mean": -0.419,
-      "headline": "Melania\u2019s office approves CNN reporter for NYC event despite Trump\u2019s White House ban on outlet",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/us/melanias-office-approves-cnn-reporter-for-nyc-event-despite-trumps-white-house-ban-on-outlet/articleshow/134408786.cms"
+      "surge": 1.77,
+      "sentiment_mean": -0.416,
+      "headline": "What is the White House press pool and why is it in a row with Trump?",
+      "headline_source": "BBC World",
+      "headline_url": "https://www.bbc.co.uk/news/articles/c8dx5dy5rzz2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "term": "power",
+      "articles": 54,
+      "sources": 28,
+      "sentiment_direction": "positive",
+      "surge": 1.24,
+      "sentiment_mean": 0.236,
+      "headline": "Who actually has power at the United Nations?",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/who-actually-has-power-at-the-united-nations-2?traffic_source=rss"
     }
   ],
   "hours_since_fetch": 0.0
