@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T22:25:35.503381+00:00",
+  "generated_at": "2026-09-22T23:24:35.374218+00:00",
   "window_hours": 24,
   "articles_in_window": 2620,
   "collection_days": 23,
@@ -10,14 +10,25 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 415,
-      "sources": 42,
+      "articles": 410,
+      "sources": 40,
       "sentiment_direction": "mixed",
-      "surge": 1.52,
-      "sentiment_mean": -0.041,
-      "headline": "Republican Senator Urges Congress to Investigate Donald Trump Jr.",
-      "headline_source": "NYT Politics",
-      "headline_url": "https://www.nytimes.com/2026/09/22/us/politics/curtis-urges-investigation-donald-trump-jr.html"
+      "surge": 1.5,
+      "sentiment_mean": -0.044,
+      "headline": "Trump signs 'tremendous' Greenland security deal",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/trump-signs-tremendous-greenland-security-deal/a-79381148?maca=en-rss-en-all-1573-rdf"
+    },
+    {
+      "term": "president",
+      "articles": 222,
+      "sources": 34,
+      "sentiment_direction": "mixed",
+      "surge": 1.56,
+      "sentiment_mean": -0.002,
+      "headline": "United Parks & Resorts appoints Kyle Miller as president, amends bylaws",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/sec-filings/united-parks--resorts-appoints-kyle-miller-as-president-amends-bylaws-93CH-4911839"
     },
     {
       "term": "iran",
@@ -25,76 +36,65 @@
       "sources": 34,
       "sentiment_direction": "negative",
       "surge": 1.55,
-      "sentiment_mean": -0.311,
-      "headline": "Trump says he has \u2018big decision\u2019 to make about Iran",
-      "headline_source": "Sydney Morning Herald",
-      "headline_url": "https://www.smh.com.au/world/trump-says-he-has-big-decision-to-make-about-iran-20260923-p60zod.html?ref=rss&utm_medium=rss&utm_source=rss_world"
-    },
-    {
-      "term": "president",
-      "articles": 222,
-      "sources": 33,
-      "sentiment_direction": "mixed",
-      "surge": 1.57,
-      "sentiment_mean": -0.016,
-      "headline": "Fort Trump Will Come to Poland, Says President Nawrocki",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/videos/2026-09-22/fort-trump-will-come-to-poland-says-nawrocki-video"
+      "sentiment_mean": -0.288,
+      "headline": "Trump Threatens Annihilation in Iran in UN Speech and Lays Out Winner-Takes-All Vision",
+      "headline_source": "NYT World",
+      "headline_url": "https://www.nytimes.com/2026/09/22/us/politics/un-trump-speech-iran-venezuela-greenland.html"
     },
     {
       "term": "deal",
-      "articles": 96,
-      "sources": 32,
+      "articles": 98,
+      "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 1.65,
-      "sentiment_mean": 0.062,
-      "headline": "Modi to visit Canada as Carney looks to finalize trade deal with India by end of year",
-      "headline_source": "CBC World",
-      "headline_url": "https://www.cbc.ca/news/politics/modi-canada-trade-deal-visit-9.7354352?cmp=rss"
+      "surge": 1.66,
+      "sentiment_mean": 0.06,
+      "headline": "Trump signs 'tremendous' Greenland security deal",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/trump-signs-tremendous-greenland-security-deal/a-79381148?maca=en-rss-en-all-1573-rdf"
     },
     {
       "term": "donald",
       "articles": 126,
       "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 1.99,
-      "sentiment_mean": 0.071,
+      "surge": 1.96,
+      "sentiment_mean": 0.057,
       "headline": "Republican Senator Urges Congress to Investigate Donald Trump Jr.",
       "headline_source": "NYT Politics",
       "headline_url": "https://www.nytimes.com/2026/09/22/us/politics/curtis-urges-investigation-donald-trump-jr.html"
     },
     {
+      "term": "security",
+      "articles": 72,
+      "sources": 29,
+      "sentiment_direction": "positive",
+      "surge": 1.21,
+      "sentiment_mean": 0.276,
+      "headline": "Trump signs 'tremendous' Greenland security deal",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/trump-signs-tremendous-greenland-security-deal/a-79381148?maca=en-rss-en-all-1573-rdf"
+    },
+    {
       "term": "military",
-      "articles": 69,
-      "sources": 30,
+      "articles": 68,
+      "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 1.24,
-      "sentiment_mean": -0.001,
+      "surge": 1.23,
+      "sentiment_mean": 0.015,
       "headline": "13 Very Normal Places to Store Military-Grade Weapons",
       "headline_source": "The Atlantic",
       "headline_url": "https://www.theatlantic.com/newsletters/2026/09/normal-places-store-military-grade-weapons-trump-arch/688745/?utm_source=feed"
     },
     {
-      "term": "house",
-      "articles": 94,
-      "sources": 29,
-      "sentiment_direction": "negative",
-      "surge": 0.94,
-      "sentiment_mean": -0.19,
-      "headline": "White House launches 'Trump TV' after ban on major news outlets",
-      "headline_source": "NPR News",
-      "headline_url": "https://www.npr.org/2026/09/22/nx-s1-5977768/trump-tv-media-ban-white-house"
-    },
-    {
-      "term": "security",
-      "articles": 74,
+      "term": "york",
+      "articles": 151,
       "sources": 28,
-      "sentiment_direction": "positive",
-      "surge": 1.25,
-      "sentiment_mean": 0.252,
-      "headline": "Worsening El Nino threatens Asia with severe drought, potentially threatening global food security",
-      "headline_source": "PBS NewsHour",
-      "headline_url": "https://www.pbs.org/newshour/science/worsening-el-nino-threatens-asia-with-severe-drought-potentially-threatening-global-food-security"
+      "sentiment_direction": "mixed",
+      "surge": 1.58,
+      "sentiment_mean": -0.091,
+      "headline": "Qantas\u2019s New York-to-Sydney \u2018Project Sunrise\u2019 Flights to Take Off in 2028",
+      "headline_source": "NYT Business",
+      "headline_url": "https://www.nytimes.com/2026/09/22/travel/qantas-project-sunrise-flights.html"
     }
   ],
   "hours_since_fetch": 0.0
