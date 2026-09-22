@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-22T21:24:38.546601+00:00",
+  "generated_at": "2026-09-22T22:25:35.503381+00:00",
   "window_hours": 24,
-  "articles_in_window": 2591,
+  "articles_in_window": 2620,
   "collection_days": 23,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,25 +10,14 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 397,
+      "articles": 415,
       "sources": 42,
       "sentiment_direction": "mixed",
-      "surge": 1.45,
-      "sentiment_mean": -0.033,
-      "headline": "Trump Says He Supports Banning Diesel Exports to Bring Down Prices",
-      "headline_source": "NYT Business",
-      "headline_url": "https://www.nytimes.com/2026/09/22/business/energy-environment/trump-diesel-exports-iran-war.html"
-    },
-    {
-      "term": "president",
-      "articles": 213,
-      "sources": 34,
-      "sentiment_direction": "mixed",
-      "surge": 1.51,
-      "sentiment_mean": -0.014,
-      "headline": "Macron Criticizes Israel and Russia in Final U.N. Speech as France\u2019s President",
-      "headline_source": "NYT World",
-      "headline_url": "https://www.nytimes.com/2026/09/22/world/europe/macron-farewell-united-nations-speech.html"
+      "surge": 1.52,
+      "sentiment_mean": -0.041,
+      "headline": "Republican Senator Urges Congress to Investigate Donald Trump Jr.",
+      "headline_source": "NYT Politics",
+      "headline_url": "https://www.nytimes.com/2026/09/22/us/politics/curtis-urges-investigation-donald-trump-jr.html"
     },
     {
       "term": "iran",
@@ -36,65 +25,76 @@
       "sources": 34,
       "sentiment_direction": "negative",
       "surge": 1.55,
-      "sentiment_mean": -0.296,
-      "headline": "2 Republican Senate candidates call for swift end to Iran war with midterms approaching",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/republicans-attitudes-toward-trump-shift-over-iran-war/"
+      "sentiment_mean": -0.311,
+      "headline": "Trump says he has \u2018big decision\u2019 to make about Iran",
+      "headline_source": "Sydney Morning Herald",
+      "headline_url": "https://www.smh.com.au/world/trump-says-he-has-big-decision-to-make-about-iran-20260923-p60zod.html?ref=rss&utm_medium=rss&utm_source=rss_world"
+    },
+    {
+      "term": "president",
+      "articles": 222,
+      "sources": 33,
+      "sentiment_direction": "mixed",
+      "surge": 1.57,
+      "sentiment_mean": -0.016,
+      "headline": "Fort Trump Will Come to Poland, Says President Nawrocki",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-09-22/fort-trump-will-come-to-poland-says-nawrocki-video"
     },
     {
       "term": "deal",
-      "articles": 94,
+      "articles": 96,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 1.63,
-      "sentiment_mean": 0.045,
-      "headline": "Talos Energy stock rises on $420M Gulf of America asset deal",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/talos-energy-stock-rises-on-420m-gulf-of-america-asset-deal-93CH-4911722"
+      "surge": 1.65,
+      "sentiment_mean": 0.062,
+      "headline": "Modi to visit Canada as Carney looks to finalize trade deal with India by end of year",
+      "headline_source": "CBC World",
+      "headline_url": "https://www.cbc.ca/news/politics/modi-canada-trade-deal-visit-9.7354352?cmp=rss"
+    },
+    {
+      "term": "donald",
+      "articles": 126,
+      "sources": 30,
+      "sentiment_direction": "mixed",
+      "surge": 1.99,
+      "sentiment_mean": 0.071,
+      "headline": "Republican Senator Urges Congress to Investigate Donald Trump Jr.",
+      "headline_source": "NYT Politics",
+      "headline_url": "https://www.nytimes.com/2026/09/22/us/politics/curtis-urges-investigation-donald-trump-jr.html"
+    },
+    {
+      "term": "military",
+      "articles": 69,
+      "sources": 30,
+      "sentiment_direction": "mixed",
+      "surge": 1.24,
+      "sentiment_mean": -0.001,
+      "headline": "13 Very Normal Places to Store Military-Grade Weapons",
+      "headline_source": "The Atlantic",
+      "headline_url": "https://www.theatlantic.com/newsletters/2026/09/normal-places-store-military-grade-weapons-trump-arch/688745/?utm_source=feed"
     },
     {
       "term": "house",
       "articles": 94,
-      "sources": 30,
-      "sentiment_direction": "negative",
-      "surge": 0.93,
-      "sentiment_mean": -0.202,
-      "headline": "House Republicans drop Jack Smith transcripts in explosive Arctic Frost records fight",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/politics/house-republicans-drop-jack-smith-transcripts-explosive-arctic-frost-records-fight"
-    },
-    {
-      "term": "donald",
-      "articles": 123,
       "sources": 29,
-      "sentiment_direction": "mixed",
-      "surge": 1.97,
-      "sentiment_mean": 0.1,
-      "headline": "Donald Trump says he would back US diesel export ban - Financial Times",
-      "headline_source": "Google News Top",
-      "headline_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVGE5YTFBUGFCa3Mwc242VWFsb3JMWTgwRmlsanNSUjltTWVpeE1hU2ZNZHUwZTRSRFByb0tFMkpBSTl5NkZyblRESERuSWJQUC1IQWF5ek55MUFmMzU1Rzh5OVlWUTF2cExiVThwNHFvRzEweXJkU1djdXJfWF9ndTZpMno?oc=5"
+      "sentiment_direction": "negative",
+      "surge": 0.94,
+      "sentiment_mean": -0.19,
+      "headline": "White House launches 'Trump TV' after ban on major news outlets",
+      "headline_source": "NPR News",
+      "headline_url": "https://www.npr.org/2026/09/22/nx-s1-5977768/trump-tv-media-ban-white-house"
     },
     {
       "term": "security",
-      "articles": 72,
-      "sources": 27,
+      "articles": 74,
+      "sources": 28,
       "sentiment_direction": "positive",
-      "surge": 1.22,
-      "sentiment_mean": 0.265,
-      "headline": "AI execs to brief UN Security Council  on Wednesday",
-      "headline_source": "ABC News",
-      "headline_url": "https://abcnews.com/Politics/ai-ceos-brief-security-council-wednesday/story?id=136661028"
-    },
-    {
-      "term": "military",
-      "articles": 65,
-      "sources": 27,
-      "sentiment_direction": "mixed",
-      "surge": 1.18,
-      "sentiment_mean": -0.048,
-      "headline": "Trump's D.C. arch is now a military complex. Here's how that complicates things",
-      "headline_source": "NPR News",
-      "headline_url": "https://www.npr.org/2026/09/22/nx-s1-5977646/trump-dc-arch-military-complex-questions"
+      "surge": 1.25,
+      "sentiment_mean": 0.252,
+      "headline": "Worsening El Nino threatens Asia with severe drought, potentially threatening global food security",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/science/worsening-el-nino-threatens-asia-with-severe-drought-potentially-threatening-global-food-security"
     }
   ],
   "hours_since_fetch": 0.0
