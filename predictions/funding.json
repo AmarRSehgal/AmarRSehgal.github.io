@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T14:00:10.483054+00:00",
+  "generated_at": "2026-09-23T15:00:10.138336+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 2806.35,
-      "net_at_hold": 2.56288,
-      "cost_bps": 40.26
+      "net_apr": 2569.87,
+      "net_at_hold": 2.34691,
+      "cost_bps": 38.46
     },
     {
       "base": "ONE",
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1888.37,
-      "net_at_hold": 1.72454,
-      "cost_bps": 27.75
+      "net_apr": 1652.34,
+      "net_at_hold": 1.50899,
+      "cost_bps": 27.9
     },
     {
       "base": "CRV",
@@ -40,8 +40,8 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 67.13,
-      "net_at_hold": 0.06131,
+      "net_apr": 67.32,
+      "net_at_hold": 0.06148,
       "cost_bps": 25.55
     },
     {
@@ -51,11 +51,11 @@
       "short_venue": "Bitget",
       "long_instrument": "perp",
       "min_hold_h": 4,
-      "hits": 21,
+      "hits": 20,
       "scans": 24,
-      "net_apr": 2519.52,
-      "net_at_hold": 1.15047,
-      "cost_bps": 35.2
+      "net_apr": 2214.46,
+      "net_at_hold": 1.01117,
+      "cost_bps": 35.29
     },
     {
       "base": "ONE",
@@ -73,6 +73,19 @@
     {
       "base": "ONE",
       "type": "perp-perp",
+      "long_venue": "OKX",
+      "short_venue": "Binance",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 1724.9,
+      "net_at_hold": 0.78763,
+      "cost_bps": 28.14
+    },
+    {
+      "base": "ONE",
+      "type": "perp-perp",
       "long_venue": "Crypto.com",
       "short_venue": "Gate",
       "long_instrument": "perp",
@@ -81,20 +94,7 @@
       "scans": 24,
       "net_apr": 1353.77,
       "net_at_hold": 1.23632,
-      "cost_bps": 31.62
-    },
-    {
-      "base": "AI",
-      "type": "perp-perp",
-      "long_venue": "Hyperliquid",
-      "short_venue": "Lighter",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 646.05,
-      "net_at_hold": 0.59,
-      "cost_bps": 17.0
+      "cost_bps": 31.69
     },
     {
       "base": "COTI",
