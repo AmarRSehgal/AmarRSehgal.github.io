@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-23T04:41:09.173632+00:00",
+  "generated_at": "2026-09-23T05:24:52.452665+00:00",
   "window_hours": 24,
-  "articles_in_window": 2705,
+  "articles_in_window": 2700,
   "collection_days": 24,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,91 +10,91 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 428,
+      "articles": 429,
       "sources": 44,
       "sentiment_direction": "mixed",
       "surge": 1.55,
-      "sentiment_mean": -0.033,
-      "headline": "Trump-backed Missouri congressional map returns to the Supreme Court again",
-      "headline_source": "ABC News",
-      "headline_url": "https://abcnews.com/Politics/wireStory/trump-backed-missouri-congressional-map-returns-supreme-court-136673303"
+      "sentiment_mean": -0.023,
+      "headline": "White House Defends Trump\u2019s Ban on CNN, MS NOW and Politico in Court Filing",
+      "headline_source": "NYT Business",
+      "headline_url": "https://www.nytimes.com/2026/09/23/business/trump-cnn-politico-ms-now-ban.html"
     },
     {
       "term": "president",
-      "articles": 230,
+      "articles": 232,
       "sources": 37,
       "sentiment_direction": "mixed",
-      "surge": 1.62,
-      "sentiment_mean": -0.013,
-      "headline": "Iranian President Masoud Pezeshkian arrives in New York for UNGA",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/9/23/iranian-president-masoud-pezeshkian-arrives-in-new-york-for-unga?traffic_source=rss"
+      "surge": 1.64,
+      "sentiment_mean": -0.012,
+      "headline": "President Xi encourages China-US youth ties after exchange",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/presented/news/hong-kong/topics/future-makers-2026/article/3367988/president-xi-encourages-china-us-youth-ties-after-exchange?utm_source=rss_feed"
     },
     {
       "term": "iran",
-      "articles": 148,
+      "articles": 149,
       "sources": 36,
       "sentiment_direction": "negative",
-      "surge": 1.72,
-      "sentiment_mean": -0.245,
-      "headline": "Oil tanker costs hit record $1.2mn a day as Iran war disrupts shipping",
-      "headline_source": "Financial Times",
-      "headline_url": "https://www.ft.com/content/f95db340-8c8f-435f-957d-4623255ac29e?syn-25a6b1a6=1"
+      "surge": 1.73,
+      "sentiment_mean": -0.226,
+      "headline": "US, Iran hold mediated UNGA talks on ending war, opening Strait of Hormuz",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/news/2026/9/23/us-iran-hold-mediated-unga-talks-on-ending-war-opening-strait-of-hormuz?traffic_source=rss"
     },
     {
       "term": "deal",
-      "articles": 106,
+      "articles": 103,
       "sources": 35,
       "sentiment_direction": "mixed",
-      "surge": 1.74,
-      "sentiment_mean": 0.055,
-      "headline": "CanSemi Tech Joins China Chip IPO Wave With $919 Million Deal",
+      "surge": 1.67,
+      "sentiment_mean": 0.072,
+      "headline": "Modi Plans Canada Trip for Trade Deal, Speeds Up Mexico Talks",
       "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/articles/2026-09-23/cansemi-tech-joins-china-chip-ipo-wave-with-919-million-deal"
-    },
-    {
-      "term": "donald",
-      "articles": 120,
-      "sources": 31,
-      "sentiment_direction": "mixed",
-      "surge": 1.85,
-      "sentiment_mean": 0.069,
-      "headline": "Mark Carney and the limits of defying Donald Trump",
-      "headline_source": "Financial Times",
-      "headline_url": "https://www.ft.com/content/4a808a51-c6e9-4ade-b1f7-95c27fd1aa1e?syn-25a6b1a6=1"
+      "headline_url": "https://www.bloomberg.com/news/articles/2026-09-23/modi-plans-canada-trip-for-trade-deal-speeds-up-mexico-talks"
     },
     {
       "term": "york",
-      "articles": 151,
+      "articles": 153,
       "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 1.53,
-      "sentiment_mean": -0.115,
+      "surge": 1.55,
+      "sentiment_mean": -0.11,
       "headline": "Novo Nordisk open to New York listing upgrade, CEO Doustdar tells FT",
       "headline_source": "Investing.com News",
       "headline_url": "https://www.investing.com/news/stock-market-news/novo-nordisk-open-to-new-york-listing-upgrade-ceo-doustdar-tells-ft-4912060"
     },
     {
+      "term": "donald",
+      "articles": 118,
+      "sources": 30,
+      "sentiment_direction": "mixed",
+      "surge": 1.8,
+      "sentiment_mean": 0.06,
+      "headline": "Mark Carney and the limits of defying Donald Trump",
+      "headline_source": "Financial Times",
+      "headline_url": "https://www.ft.com/content/4a808a51-c6e9-4ade-b1f7-95c27fd1aa1e?syn-25a6b1a6=1"
+    },
+    {
       "term": "security",
-      "articles": 70,
+      "articles": 68,
       "sources": 30,
       "sentiment_direction": "positive",
-      "surge": 1.18,
-      "sentiment_mean": 0.322,
-      "headline": "Blocking Windmills? Banning Press? Building an Arch? Trump Cites National Security.",
-      "headline_source": "NYT Politics",
-      "headline_url": "https://www.nytimes.com/2026/09/22/us/politics/trump-arch-national-security.html"
+      "surge": 1.13,
+      "sentiment_mean": 0.346,
+      "headline": "China is building a $167 billion mega-dam in Tibet that could generate three times the power of the Three Gorges Dam, raising water-security concerns in India.",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1wnvk6p/china_is_building_a_167_billion_megadam_in_tibet/"
     },
     {
       "term": "house",
-      "articles": 82,
-      "sources": 28,
-      "sentiment_direction": "mixed",
-      "surge": 0.82,
-      "sentiment_mean": -0.134,
-      "headline": "Trump\u2019s White House media ban faces long odds in court, legal experts say",
-      "headline_source": "Japan Times",
-      "headline_url": "https://www.japantimes.co.jp/news/2026/09/23/world/politics/white-house-media-ban-court/"
+      "articles": 86,
+      "sources": 29,
+      "sentiment_direction": "negative",
+      "surge": 0.87,
+      "sentiment_mean": -0.152,
+      "headline": "White House Defends Trump\u2019s Ban on CNN, MS NOW and Politico in Court Filing",
+      "headline_source": "NYT Business",
+      "headline_url": "https://www.nytimes.com/2026/09/23/business/trump-cnn-politico-ms-now-ban.html"
     }
   ],
   "hours_since_fetch": 0.0
