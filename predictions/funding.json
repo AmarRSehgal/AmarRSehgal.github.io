@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T22:01:04.668909+00:00",
+  "generated_at": "2026-09-24T23:00:11.067928+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1606.68,
-      "net_at_hold": 1.46729,
-      "cost_bps": 35.3
+      "net_apr": 1723.67,
+      "net_at_hold": 1.57413,
+      "cost_bps": 35.28
     },
     {
       "base": "NIGHT",
@@ -27,8 +27,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1485.38,
-      "net_at_hold": 1.35651,
+      "net_apr": 1556.31,
+      "net_at_hold": 1.42129,
       "cost_bps": 52.05
     },
     {
@@ -48,27 +48,40 @@
       "base": "NIGHT",
       "type": "perp-perp",
       "long_venue": "Coinbase",
+      "short_venue": "KuCoin",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1265.6,
+      "net_at_hold": 0.5779,
+      "cost_bps": 38.0
+    },
+    {
+      "base": "NIGHT",
+      "type": "perp-perp",
+      "long_venue": "Coinbase",
       "short_venue": "OKX",
       "long_instrument": "perp",
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1153.35,
-      "net_at_hold": 0.52665,
+      "net_apr": 1199.03,
+      "net_at_hold": 0.5475,
       "cost_bps": 39.03
     },
     {
       "base": "NIGHT",
       "type": "perp-perp",
       "long_venue": "Coinbase",
-      "short_venue": "KuCoin",
+      "short_venue": "Bitget",
       "long_instrument": "perp",
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1148.65,
-      "net_at_hold": 0.5245,
-      "cost_bps": 38.0
+      "net_apr": 1135.91,
+      "net_at_hold": 0.51868,
+      "cost_bps": 45.66
     },
     {
       "base": "ONE",
@@ -84,19 +97,6 @@
       "cost_bps": 33.65
     },
     {
-      "base": "NIGHT",
-      "type": "perp-perp",
-      "long_venue": "Coinbase",
-      "short_venue": "Bitget",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1081.97,
-      "net_at_hold": 0.49405,
-      "cost_bps": 45.72
-    },
-    {
       "base": "ONE",
       "type": "perp-perp",
       "long_venue": "Aster",
@@ -107,7 +107,7 @@
       "scans": 24,
       "net_apr": 785.85,
       "net_at_hold": 0.71768,
-      "cost_bps": 34.88
+      "cost_bps": 35.93
     }
   ]
 }
