@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-24T18:24:39.925884+00:00",
+  "generated_at": "2026-09-24T19:24:25.290635+00:00",
   "window_hours": 24,
-  "articles_in_window": 2574,
+  "articles_in_window": 2572,
   "collection_days": 25,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,80 +10,80 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 404,
+      "articles": 401,
       "sources": 40,
       "sentiment_direction": "mixed",
-      "surge": 1.28,
-      "sentiment_mean": -0.058,
-      "headline": "Former U.S. ambassador to China says he fears Trump may be taking soft approach with Xi Jinping",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/former-us-ambassador-to-china-says-he-fears-trump-may-be-taking-soft-approach-with-chinas-xi-jinping/"
-    },
-    {
-      "term": "house",
-      "articles": 151,
-      "sources": 33,
-      "sentiment_direction": "negative",
-      "surge": 1.65,
-      "sentiment_mean": -0.198,
-      "headline": "White House asks OpenAI, Anthropic to hold models from British testers, Politico reports",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/economy-news/white-house-asks-openai-anthropic-to-hold-models-from-british-testers-politico-reports-4915985"
-    },
-    {
-      "term": "white",
-      "articles": 135,
-      "sources": 32,
-      "sentiment_direction": "negative",
-      "surge": 2.05,
-      "sentiment_mean": -0.212,
-      "headline": "White House asks OpenAI, Anthropic to hold models from British testers, Politico reports",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/economy-news/white-house-asks-openai-anthropic-to-hold-models-from-british-testers-politico-reports-4915985"
+      "surge": 1.27,
+      "sentiment_mean": -0.073,
+      "headline": "Conservative Outlets Offer Trump Feed While White House TV Pool Is Suspended",
+      "headline_source": "NYT Business",
+      "headline_url": "https://www.nytimes.com/2026/09/24/business/media/trump-white-house-press-ban-tv-pool-conservative-news.html"
     },
     {
       "term": "government",
-      "articles": 95,
-      "sources": 32,
+      "articles": 100,
+      "sources": 35,
       "sentiment_direction": "negative",
-      "surge": 1.66,
-      "sentiment_mean": -0.25,
+      "surge": 1.75,
+      "sentiment_mean": -0.265,
       "headline": "First known hack by rogue AI agent of government website",
       "headline_source": "CBS News",
       "headline_url": "https://www.cbsnews.com/video/first-known-hack-by-rogue-ai-agent-of-government-website/"
     },
     {
+      "term": "house",
+      "articles": 155,
+      "sources": 33,
+      "sentiment_direction": "negative",
+      "surge": 1.7,
+      "sentiment_mean": -0.171,
+      "headline": "Conservative Outlets Offer Trump Feed While White House TV Pool Is Suspended",
+      "headline_source": "NYT Business",
+      "headline_url": "https://www.nytimes.com/2026/09/24/business/media/trump-white-house-press-ban-tv-pool-conservative-news.html"
+    },
+    {
       "term": "data",
-      "articles": 80,
-      "sources": 32,
+      "articles": 82,
+      "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 1.3,
-      "sentiment_mean": -0.073,
-      "headline": "Oracle sends force majeure notice on its New Mexico Stargate data center",
-      "headline_source": "TechCrunch",
-      "headline_url": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/"
+      "surge": 1.35,
+      "sentiment_mean": -0.088,
+      "headline": "A Spirited Battle Over Data Centers",
+      "headline_source": "NYT World",
+      "headline_url": "https://www.nytimes.com/2026/09/24/climate/a-spirited-battle-over-data-centers.html"
+    },
+    {
+      "term": "white",
+      "articles": 136,
+      "sources": 32,
+      "sentiment_direction": "negative",
+      "surge": 2.04,
+      "sentiment_mean": -0.188,
+      "headline": "Conservative Outlets Offer Trump Feed While White House TV Pool Is Suspended",
+      "headline_source": "NYT Business",
+      "headline_url": "https://www.nytimes.com/2026/09/24/business/media/trump-white-house-press-ban-tv-pool-conservative-news.html"
     },
     {
       "term": "access",
-      "articles": 74,
+      "articles": 75,
       "sources": 31,
       "sentiment_direction": "negative",
-      "surge": 2.87,
-      "sentiment_mean": -0.259,
+      "surge": 2.9,
+      "sentiment_mean": -0.268,
       "headline": "MS NOW and CNN reporters regain access to White House after judge's order",
       "headline_source": "CBS News",
       "headline_url": "https://www.cbsnews.com/video/ms-now-and-cnn-reporters-regain-access-to-white-house-after-judges-order/"
     },
     {
-      "term": "chinese",
-      "articles": 112,
-      "sources": 30,
-      "sentiment_direction": "positive",
-      "surge": 2.22,
-      "sentiment_mean": 0.263,
-      "headline": "Lawmakers to seek Senate approval of permanent US ban on Chinese cars - Reuters",
+      "term": "openai",
+      "articles": 70,
+      "sources": 31,
+      "sentiment_direction": "mixed",
+      "surge": 2.66,
+      "sentiment_mean": -0.086,
+      "headline": "White House asks OpenAI, Anthropic to hold models from British testers, Politico reports - Reuters",
       "headline_source": "Reuters",
-      "headline_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaENSMVJIRkFMV2ZDN01WR3R6SjZwY1BnQzhndHp6NlhLMEtORUliZUVBYmI0SWJiMlY5ckg3Z1c4a1lmYlhLUm13dy05Q2RfaDZPeHFhUElUeUNIYkZpTGExLWhaMHRlTWtIZFBOSnI4bXNESmZmN3cxR1ZqUHpPUFFRZ1diNkJyR1YtYWFGaUdvRWtWZ28tQ2dYNnpwTVY2NUNHRQ?oc=5"
+      "headline_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTGtLMFdBNFUtNmZrdmFoakY5SE1CNUFBRWt3TXVhTlZ1c0lLTGRQU3N1SzYzQ090dU9sNXBxVTZ5MUp0X21rY2tjd01xOGpRLWRDbmxSQ08weElDcG5ERU9yQ0ZJZXVWd2MzNGVHMi1xLThIWkhnWkdSc09XNEk5ZG05aG84U1ZuTTVsMnY3N2NLSTlYX3V0cm05UFAxZ2JUazV5c0tobk1kZnExSVRBMnZTdHhVMmd5WDRkTw?oc=5"
     },
     {
       "term": "trade",
@@ -91,10 +91,10 @@
       "sources": 30,
       "sentiment_direction": "positive",
       "surge": 1.85,
-      "sentiment_mean": 0.286,
-      "headline": "How Is BlackRock\u2019s AI Trade Evolving Beyond Pioneers of the Tech?",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/newsletters/2026-09-24/how-is-blackrock-s-ai-trade-evolving-beyond-pioneers-of-the-tech"
+      "sentiment_mean": 0.283,
+      "headline": "US and China presidents discuss cooperation, trade and AI risks",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/9/24/us-and-china-presidents-discuss-cooperation-trade-and-ai-risks?traffic_source=rss"
     }
   ],
   "hours_since_fetch": 0.0
