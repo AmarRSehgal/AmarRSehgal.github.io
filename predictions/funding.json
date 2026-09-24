@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T08:00:11.531046+00:00",
+  "generated_at": "2026-09-24T09:00:10.652227+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -68,7 +68,7 @@
       "scans": 24,
       "net_apr": 944.05,
       "net_at_hold": 0.43107,
-      "cost_bps": 41.66
+      "cost_bps": 43.66
     },
     {
       "base": "NIGHT",
@@ -94,20 +94,20 @@
       "scans": 24,
       "net_apr": 995.77,
       "net_at_hold": 0.45469,
-      "cost_bps": 40.42
+      "cost_bps": 40.43
     },
     {
-      "base": "ONE",
+      "base": "TOWNS",
       "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "Aster",
+      "long_venue": "Aster",
+      "short_venue": "Coinbase",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 21,
       "scans": 24,
-      "net_apr": 643.3,
-      "net_at_hold": 0.58749,
-      "cost_bps": 38.08
+      "net_apr": 868.51,
+      "net_at_hold": 0.79316,
+      "cost_bps": 54.95
     }
   ]
 }
