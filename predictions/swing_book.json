@@ -1,133 +1,133 @@
 {
-  "generated_at": "2026-09-23T13:35:17.551586+00:00",
+  "generated_at": "2026-09-24T13:35:18.462788+00:00",
   "strategy": "MultiFactorV3",
   "account": "PA37U0PIU9B9",
   "paper": true,
   "started": "2026-09-12",
   "starting_equity": 100000.0,
-  "equity": 97491.44,
-  "cash": 2771.34,
-  "return_pct": -0.0251,
+  "equity": 98087.9,
+  "cash": 2336.71,
+  "return_pct": -0.0191,
   "positions": [
     {
       "ticker": "PFE",
       "qty": 290.9087,
       "avg_entry": 27.5,
-      "price": 28.13,
-      "market_value": 8183.26,
-      "pnl": 183.27,
-      "return_pct": 0.0229,
-      "weight_pct": 0.0839
+      "price": 28.5,
+      "market_value": 8289.44,
+      "pnl": 289.45,
+      "return_pct": 0.0362,
+      "weight_pct": 0.0845
     },
     {
-      "ticker": "AAPL",
-      "qty": 23.7282,
-      "avg_entry": 336.26,
-      "price": 340.68,
-      "market_value": 8083.72,
-      "pnl": 104.9,
-      "return_pct": 0.0132,
-      "weight_pct": 0.0829
+      "ticker": "META",
+      "qty": 10.4789,
+      "avg_entry": 744.43,
+      "price": 762.16,
+      "market_value": 7986.61,
+      "pnl": 185.79,
+      "return_pct": 0.0238,
+      "weight_pct": 0.0814
     },
     {
       "ticker": "SPGI",
       "qty": 19.7043,
       "avg_entry": 405.05,
-      "price": 403.27,
-      "market_value": 7946.23,
-      "pnl": -34.98,
-      "return_pct": -0.0044,
-      "weight_pct": 0.0815
+      "price": 408.1,
+      "market_value": 8041.31,
+      "pnl": 60.1,
+      "return_pct": 0.0075,
+      "weight_pct": 0.082
     },
     {
-      "ticker": "RTX",
-      "qty": 40.9594,
-      "avg_entry": 194.32,
-      "price": 191.72,
-      "market_value": 7852.54,
-      "pnl": -106.9,
-      "return_pct": -0.0134,
-      "weight_pct": 0.0805
-    },
-    {
-      "ticker": "ACN",
-      "qty": 42.1491,
-      "avg_entry": 190.2,
-      "price": 185.87,
-      "market_value": 7834.25,
-      "pnl": -182.7,
-      "return_pct": -0.0228,
-      "weight_pct": 0.0804
-    },
-    {
-      "ticker": "MDT",
-      "qty": 86.0759,
-      "avg_entry": 93.33,
-      "price": 90.91,
-      "market_value": 7824.73,
-      "pnl": -209.14,
-      "return_pct": -0.026,
-      "weight_pct": 0.0803
+      "ticker": "AAPL",
+      "qty": 23.7282,
+      "avg_entry": 336.26,
+      "price": 336.44,
+      "market_value": 7983.0,
+      "pnl": 4.18,
+      "return_pct": 0.0005,
+      "weight_pct": 0.0814
     },
     {
       "ticker": "T",
       "qty": 312.5561,
       "avg_entry": 25.87,
-      "price": 25.11,
-      "market_value": 7846.72,
-      "pnl": -239.36,
-      "return_pct": -0.0296,
-      "weight_pct": 0.0805
+      "price": 25.73,
+      "market_value": 8042.07,
+      "pnl": -44.01,
+      "return_pct": -0.0054,
+      "weight_pct": 0.082
     },
     {
-      "ticker": "SYK",
-      "qty": 29.0455,
-      "avg_entry": 285.48,
-      "price": 275.04,
-      "market_value": 7988.67,
-      "pnl": -303.19,
-      "return_pct": -0.0366,
-      "weight_pct": 0.0819
-    },
-    {
-      "ticker": "ADBE",
-      "qty": 32.6407,
-      "avg_entry": 249.36,
-      "price": 238.6,
-      "market_value": 7788.07,
-      "pnl": -351.19,
-      "return_pct": -0.0432,
+      "ticker": "QCOM",
+      "qty": 40.1982,
+      "avg_entry": 197.37,
+      "price": 195.03,
+      "market_value": 7839.85,
+      "pnl": -94.11,
+      "return_pct": -0.0119,
       "weight_pct": 0.0799
     },
     {
       "ticker": "COP",
       "qty": 63.0805,
       "avg_entry": 131.8,
-      "price": 126.08,
-      "market_value": 7953.38,
-      "pnl": -360.95,
-      "return_pct": -0.0434,
-      "weight_pct": 0.0816
+      "price": 129.29,
+      "market_value": 8155.68,
+      "pnl": -158.65,
+      "return_pct": -0.0191,
+      "weight_pct": 0.0831
+    },
+    {
+      "ticker": "ADBE",
+      "qty": 32.6407,
+      "avg_entry": 249.36,
+      "price": 243.2,
+      "market_value": 7938.22,
+      "pnl": -201.04,
+      "return_pct": -0.0247,
+      "weight_pct": 0.0809
+    },
+    {
+      "ticker": "ACN",
+      "qty": 42.4895,
+      "avg_entry": 190.16,
+      "price": 184.81,
+      "market_value": 7852.48,
+      "pnl": -227.42,
+      "return_pct": -0.0282,
+      "weight_pct": 0.0801
+    },
+    {
+      "ticker": "MDT",
+      "qty": 87.2523,
+      "avg_entry": 93.29,
+      "price": 89.92,
+      "market_value": 7845.29,
+      "pnl": -294.42,
+      "return_pct": -0.0362,
+      "weight_pct": 0.08
     },
     {
       "ticker": "SCHW",
-      "qty": 75.8751,
-      "avg_entry": 105.19,
-      "price": 100.11,
-      "market_value": 7595.85,
-      "pnl": -385.36,
-      "return_pct": -0.0483,
-      "weight_pct": 0.0779
+      "qty": 79.1414,
+      "avg_entry": 104.97,
+      "price": 99.12,
+      "market_value": 7844.9,
+      "pnl": -462.52,
+      "return_pct": -0.0557,
+      "weight_pct": 0.08
     },
     {
       "ticker": "CMCSA",
       "qty": 349.8292,
       "avg_entry": 24.54,
-      "price": 22.31,
-      "market_value": 7804.69,
-      "pnl": -779.03,
-      "return_pct": -0.0908,
-      "weight_pct": 0.0801
+      "price": 22.66,
+      "market_value": 7927.13,
+      "pnl": -656.59,
+      "return_pct": -0.0765,
+      "weight_pct": 0.0808
     }
   ],
   "open_positions": 12,
@@ -163,12 +163,16 @@
     {
       "date": "2026-09-23",
       "equity": 97239.2
+    },
+    {
+      "date": "2026-09-24",
+      "equity": 97463.05
     }
   ],
   "benchmark": "SPY",
-  "benchmark_return_pct": 0.0215,
-  "excess_return_pct": -0.0466,
-  "days_live": 11,
+  "benchmark_return_pct": 0.0141,
+  "excess_return_pct": -0.0332,
+  "days_live": 12,
   "verdict_due": false,
   "retire_after_days": 180,
   "backtest": {
