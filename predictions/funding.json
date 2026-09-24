@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T15:00:11.719121+00:00",
+  "generated_at": "2026-09-24T16:00:09.589860+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -29,7 +29,7 @@
       "scans": 24,
       "net_apr": 1239.2,
       "net_at_hold": 1.13169,
-      "cost_bps": 52.11
+      "cost_bps": 52.24
     },
     {
       "base": "NIGHT",
@@ -42,7 +42,7 @@
       "scans": 24,
       "net_apr": 941.61,
       "net_at_hold": 0.42996,
-      "cost_bps": 38.46
+      "cost_bps": 38.64
     },
     {
       "base": "NIGHT",
@@ -68,7 +68,20 @@
       "scans": 24,
       "net_apr": 839.72,
       "net_at_hold": 0.38343,
-      "cost_bps": 43.98
+      "cost_bps": 43.99
+    },
+    {
+      "base": "ONE",
+      "type": "perp-perp",
+      "long_venue": "Binance",
+      "short_venue": "Gate",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 23,
+      "scans": 24,
+      "net_apr": 1575.72,
+      "net_at_hold": 1.43902,
+      "cost_bps": 29.68
     },
     {
       "base": "NIGHT",
@@ -94,20 +107,7 @@
       "scans": 24,
       "net_apr": 825.51,
       "net_at_hold": 0.37695,
-      "cost_bps": 40.57
-    },
-    {
-      "base": "ONE",
-      "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "Gate",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 22,
-      "scans": 24,
-      "net_apr": 1589.63,
-      "net_at_hold": 1.45171,
-      "cost_bps": 29.68
+      "cost_bps": 40.65
     }
   ]
 }
