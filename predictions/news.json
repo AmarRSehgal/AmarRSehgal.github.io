@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-24T06:46:44.535472+00:00",
+  "generated_at": "2026-09-24T07:24:41.726965+00:00",
   "window_hours": 24,
-  "articles_in_window": 2644,
+  "articles_in_window": 2730,
   "collection_days": 25,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,91 +10,91 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 405,
+      "articles": 430,
       "sources": 42,
       "sentiment_direction": "mixed",
-      "surge": 1.33,
-      "sentiment_mean": -0.105,
-      "headline": "Judge lifts Trump's White House ban on CNN, MS NOW and Politico",
-      "headline_source": "Reddit r/politics",
-      "headline_url": "https://www.reddit.com/r/politics/comments/1wosv8u/judge_lifts_trumps_white_house_ban_on_cnn_ms_now/"
+      "surge": 1.41,
+      "sentiment_mean": -0.106,
+      "headline": "Expectations for Trump-Xi Summit",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-09-24/expectations-for-trump-xi-summit-video"
     },
     {
       "term": "president",
-      "articles": 249,
+      "articles": 263,
       "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 1.61,
-      "sentiment_mean": -0.068,
-      "headline": "At UN, Venezuela\u2019s acting president promises elections without setting date",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/world/americas/article/3368582/un-venezuelas-interim-president-promises-elections-without-setting-date?utm_source=rss_feed"
+      "surge": 1.7,
+      "sentiment_mean": -0.073,
+      "headline": "Pakistan-administered Kashmir votes for president amid unrest",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/news/2026/9/24/pakistan-administered-kashmir-votes-for-president-amid-unrest?traffic_source=rss"
     },
     {
       "term": "data",
-      "articles": 67,
+      "articles": 71,
       "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 1.09,
-      "sentiment_mean": 0.015,
-      "headline": "Rogue OpenAI Agent Tried to Breach Government Site in May When Prompted for Simple Data-Retrieving Tasks",
-      "headline_source": "Slashdot",
-      "headline_url": "https://slashdot.org/story/26/09/24/0528251/rogue-openai-agent-tried-to-breach-government-site-in-may-when-prompted-for-simple-data-retrieving-tasks?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+      "surge": 1.15,
+      "sentiment_mean": 0.001,
+      "headline": "New Jersey fines AI data center $1.07m over 62 unpermitted gas generators",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/world/us/new-jersey-inspectors-found-62-large-natural-gas-generators-running-without-required-permits-at-a-massive-ai-data-center-the-state-has-now-imposed-a-record-1-07-million-penalty/articleshow/134451711.cms"
     },
     {
       "term": "trade",
-      "articles": 69,
-      "sources": 31,
+      "articles": 77,
+      "sources": 32,
       "sentiment_direction": "positive",
-      "surge": 1.35,
-      "sentiment_mean": 0.285,
-      "headline": "Trump welcomes Xi to Washington looking for a trade win",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/trump-welcomes-xi-to-washington-looking-for-a-trade-win-4914436"
+      "surge": 1.51,
+      "sentiment_mean": 0.296,
+      "headline": "China-US Trade Truce Extended As Xi Arrives",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-09-24/china-us-trade-truce-extended-as-xi-arrives-video"
+    },
+    {
+      "term": "house",
+      "articles": 119,
+      "sources": 31,
+      "sentiment_direction": "negative",
+      "surge": 1.3,
+      "sentiment_mean": -0.236,
+      "headline": "Judge orders White House to restore banned media\u2019s access",
+      "headline_source": "Financial Times",
+      "headline_url": "https://www.ft.com/content/72d1df1f-cc71-4e17-a442-0a4201ba41aa?syn-25a6b1a6=1"
     },
     {
       "term": "iran",
-      "articles": 143,
+      "articles": 148,
       "sources": 30,
       "sentiment_direction": "negative",
-      "surge": 1.48,
-      "sentiment_mean": -0.395,
-      "headline": "Emerging markets shrug off Iran war in record foreign borrowing spree",
-      "headline_source": "Financial Times",
-      "headline_url": "https://www.ft.com/content/e3c74df4-9131-44cd-bd31-49691112bc85?syn-25a6b1a6=1"
+      "surge": 1.53,
+      "sentiment_mean": -0.397,
+      "headline": "Oil extends gains on little sign of progress in US-Iran talks",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/commodities-news/oil-prices-edge-lower-as-iran-says-it-is-open-to-diplomacy-to-end-the-war-4914308"
     },
     {
       "term": "security",
       "articles": 76,
-      "sources": 30,
+      "sources": 29,
       "sentiment_direction": "negative",
-      "surge": 1.18,
-      "sentiment_mean": -0.154,
+      "surge": 1.19,
+      "sentiment_mean": -0.163,
       "headline": "JD Vance Outed as Source of \u2018Threat\u2019 to National Security",
       "headline_source": "Reddit r/politics",
       "headline_url": "https://www.reddit.com/r/politics/comments/1woobhi/jd_vance_outed_as_source_of_threat_to_national/"
     },
     {
-      "term": "house",
-      "articles": 104,
-      "sources": 29,
-      "sentiment_direction": "negative",
-      "surge": 1.14,
-      "sentiment_mean": -0.211,
-      "headline": "Judge lifts Trump's White House ban on CNN, MS NOW and Politico",
-      "headline_source": "Reddit r/politics",
-      "headline_url": "https://www.reddit.com/r/politics/comments/1wosv8u/judge_lifts_trumps_white_house_ban_on_cnn_ms_now/"
-    },
-    {
-      "term": "deal",
-      "articles": 66,
+      "term": "government",
+      "articles": 73,
       "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 0.94,
-      "sentiment_mean": -0.038,
-      "headline": "\u2018Rs 6L deal\u2019: Killer bahu\u2019s husband arrested in Kanpur trader murder case",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/city/kanpur/rs-6-lakh-deal-to-kill-father-son-subrat-manocha-arrested-in-kanpur-trader-murder-case/articleshow/134451573.cms"
+      "surge": 1.25,
+      "sentiment_mean": -0.104,
+      "headline": "France's fresh budget battle threatens to topple another government",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/09/24/france-budget-debt-deficit-government.html"
     }
   ],
   "hours_since_fetch": 0.0
