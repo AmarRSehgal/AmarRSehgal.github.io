@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T18:02:20.034324+00:00",
+  "generated_at": "2026-09-25T20:26:06.288508+00:00",
   "experiment": "Kalshi market making: v1 against the v2 engine",
   "venue": "Kalshi",
   "paper": true,
@@ -7,32 +7,32 @@
   "unit": "day",
   "min_units_for_verdict": 14,
   "status": "collecting",
-  "headline": "Collecting: day 0 of 14 before the arms are scored against each other. Running totals, not results: baseline +0.00 over 0 fills; v2_niche +0.00 over 0 fills; v2_crypto -0.18 over 4 fills.",
+  "headline": "Collecting: day 0 of 14 before the arms are scored against each other. Running totals, not results: baseline -0.37 over 15 fills; v2_niche +1.88 over 52 fills; v2_crypto +0.42 over 169 fills.",
   "arms": [
     {
       "name": "baseline",
       "role": "control",
       "description": "v1 unchanged: Avellaneda-Stoikov quotes around the touch mid on niche markets, crossing the spread to flatten before game windows and closes.",
-      "fills": 0,
-      "size": 0,
-      "markets": 0,
-      "pnl": 0,
-      "realized": 0,
-      "mtm": 0.0,
+      "fills": 15,
+      "size": 19,
+      "markets": 1223,
+      "pnl": -0.37,
+      "realized": 0.0,
+      "mtm": -0.37,
       "fees": 0.0,
-      "pnl_per_size_c": null,
+      "pnl_per_size_c": -1.947,
       "resolved_contracts": 0,
       "realized_per_resolved_c": null,
       "passive_exit_share": null,
-      "exits": {
-        "passive": {
-          "contracts": 0,
-          "pnl": 0.0,
-          "per_contract_c": null
-        }
+      "exits": {},
+      "per_market_pnl_ci": [
+        -0.0012,
+        0.0005
+      ],
+      "markouts_c": {
+        "300": -4.278,
+        "3600": -6.5
       },
-      "per_market_pnl_ci": null,
-      "markouts_c": null,
       "units": 0,
       "pnl_per_unit": null,
       "pnl_per_unit_ci": null
@@ -41,26 +41,32 @@
       "name": "v2_niche",
       "role": "treatment",
       "description": "v2 engine on the same universe: edge curve around a depth-weighted mid, never crosses, reduce-only instead of flatten, holds to resolution.",
-      "fills": 0,
-      "size": 0,
-      "markets": 0,
-      "pnl": 0,
-      "realized": 0,
-      "mtm": 0.0,
+      "fills": 52,
+      "size": 66,
+      "markets": 1230,
+      "pnl": 1.88,
+      "realized": 0.44,
+      "mtm": 1.44,
       "fees": 0.0,
-      "pnl_per_size_c": null,
-      "resolved_contracts": 0,
-      "realized_per_resolved_c": null,
-      "passive_exit_share": null,
+      "pnl_per_size_c": 2.845,
+      "resolved_contracts": 13,
+      "realized_per_resolved_c": 3.408,
+      "passive_exit_share": 1.0,
       "exits": {
         "passive": {
-          "contracts": 0,
-          "pnl": 0.0,
-          "per_contract_c": null
+          "contracts": 13,
+          "pnl": 0.44,
+          "per_contract_c": 3.41
         }
       },
-      "per_market_pnl_ci": null,
-      "markouts_c": null,
+      "per_market_pnl_ci": [
+        0.0003,
+        0.0031
+      ],
+      "markouts_c": {
+        "300": 2.062,
+        "3600": 2.708
+      },
       "units": 0,
       "pnl_per_unit": null,
       "pnl_per_unit_ci": null
@@ -69,29 +75,37 @@
       "name": "v2_crypto",
       "role": "treatment",
       "description": "v2 engine on hourly BTC/ETH strike ladders, fair value from Binance anchored to the Kalshi book, exposure netted across strikes.",
-      "fills": 4,
-      "size": 12,
-      "markets": 15,
-      "pnl": -0.18,
-      "realized": 0.0,
-      "mtm": -0.18,
+      "fills": 169,
+      "size": 435,
+      "markets": 76,
+      "pnl": 0.42,
+      "realized": 1.16,
+      "mtm": -0.73,
       "fees": 0.0,
-      "pnl_per_size_c": -1.5,
-      "resolved_contracts": 0,
-      "realized_per_resolved_c": null,
-      "passive_exit_share": null,
+      "pnl_per_size_c": 0.097,
+      "resolved_contracts": 232,
+      "realized_per_resolved_c": 0.499,
+      "passive_exit_share": 0.81,
       "exits": {
         "passive": {
-          "contracts": 0,
-          "pnl": 0.0,
-          "per_contract_c": null
+          "contracts": 188,
+          "pnl": 5.47,
+          "per_contract_c": 2.91
+        },
+        "settled": {
+          "contracts": 44,
+          "pnl": -4.31,
+          "per_contract_c": -9.8
         }
       },
       "per_market_pnl_ci": [
-        -0.039,
-        0.003
+        -0.0858,
+        0.0833
       ],
-      "markouts_c": null,
+      "markouts_c": {
+        "300": 2.171,
+        "3600": -1.033
+      },
       "units": 0,
       "pnl_per_unit": null,
       "pnl_per_unit_ci": null
