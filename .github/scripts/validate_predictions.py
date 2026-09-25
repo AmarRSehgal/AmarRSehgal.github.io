@@ -89,6 +89,14 @@ SAM_LINK_PREFIX = 'https://sam.gov/opp/'
 # sport -> (required top-level keys, list key, per-item required keys)
 TRADE_STATES = {'open', 'closing', 'closed', 'rejected', 'unfilled'}
 
+PAPER_AB_KEYS = ('generated_at', 'experiment', 'paper', 'started', 'unit', 'status',
+                 'min_units_for_verdict', 'headline', 'arms', 'comparisons', 'kill_criteria',
+                 'caveats')
+PAPER_ARM_KEYS = ('name', 'role', 'description', 'units', 'fills', 'size', 'pnl')
+PAPER_STATUS = ('collecting', 'verdict')
+PAPER_VERDICTS = ('collecting', 'better', 'worse', 'indistinguishable')
+
+
 SPECS = {
     'nba': (('generated_at', 'date', 'games'), 'games',
             ('away_team', 'home_team', 'pick', 'pred_spread', 'ml_win_prob', 'confidence')),
@@ -191,6 +199,12 @@ SPECS = {
     # It also carries TWO lists. `lanes` is the ranked recurrence finding and is the
     # list_key; `open` is what a self-cert bidder could quote on today and shares no
     # field with it, so it is checked in the per-feed block below.
+    # Paper A/B experiments: an old strategy against its rewrite on the same markets.
+    # `headline`, `caveats` and `kill_criteria` are required because the page must never
+    # show a running total without saying it is one, and the stopping rules were fixed
+    # before the first fill -- publishing without them turns a record into a claim.
+    'pm_btc_paper': (PAPER_AB_KEYS, 'arms', PAPER_ARM_KEYS),
+    'kalshi_mm_paper': (PAPER_AB_KEYS, 'arms', PAPER_ARM_KEYS),
     'contracts': (('generated_at', 'snapshot_date', 'snapshots', 'observing_snapshots',
                    'notices_tracked', 'lanes', 'open'), 'lanes',
                   ('office', 'agency', 'group', 'lane', 'evidence', 'solicitations',
@@ -1097,6 +1111,40 @@ def check_source_section(where, sec):
         require_number(iw, 'metric_value', item['metric_value'])
 
 
+
+def check_paper_ab(data):
+    if data['paper'] is not True:
+        raise Invalid('paper A/B payloads must be paper=true; nothing here trades real money')
+    if data['status'] not in PAPER_STATUS:
+        raise Invalid(f'status={data["status"]!r} must be one of {list(PAPER_STATUS)}')
+    for k in ('headline',):
+        if not isinstance(data[k], str) or not data[k].strip():
+            raise Invalid(f'{k} must be a non-empty string')
+    for k in ('caveats', 'kill_criteria'):
+        if not isinstance(data[k], list) or not data[k]:
+            raise Invalid(f'{k} must be a non-empty list')
+    need = require_int('<payload>', 'min_units_for_verdict', data['min_units_for_verdict'])
+    roles = [a.get('role') for a in data['arms'] if isinstance(a, dict)]
+    if data['arms'] and roles.count('control') != 1:
+        raise Invalid(f'exactly one arm must be the control, got roles {roles}')
+    for c in data['comparisons']:
+        if c.get('verdict') not in PAPER_VERDICTS:
+            raise Invalid(f'comparison verdict {c.get("verdict")!r} not in {list(PAPER_VERDICTS)}')
+        # A verdict published on a sample below the size fixed in advance is the exact
+        # failure this feed exists to avoid.
+        units = max((a.get('units') or 0) for a in data['arms']) if data['arms'] else 0
+        if c['verdict'] != 'collecting' and units < need:
+            raise Invalid(f'verdict {c["verdict"]!r} published on {units} {data["unit"]}s, '
+                          f'below the pre-registered {need}')
+        if data['status'] == 'collecting' and c['verdict'] != 'collecting':
+            raise Invalid('status=collecting but a comparison carries a verdict')
+    for a in data['arms']:
+        for k in ('fills', 'units'):
+            require_int(a.get('name', '<arm>'), k, a[k])
+        for k in ('pnl', 'size'):
+            if isinstance(a[k], bool) or not isinstance(a[k], (int, float)):
+                raise Invalid(f'{a.get("name")}.{k} must be a number')
+
 def validate(sport, data, now=None):
     """Raise Invalid on the first contract violation. Returns the item list on success."""
     now = now or datetime.now(timezone.utc)
@@ -1223,6 +1271,8 @@ def validate(sport, data, now=None):
             raise Invalid('research must be an object')
     elif sport in ('swing_book', 'mf_book'):
         check_book_payload(data, sport)
+    elif sport in ('pm_btc_paper', 'kalshi_mm_paper'):
+        check_paper_ab(data)
     elif sport == 'polymarket_whales':
         check_whales_payload(data)
     elif sport == 'news':
@@ -1263,6 +1313,8 @@ def validate(sport, data, now=None):
             check_level(where, item)
         elif sport == 'f1':
             check_f1_entry(where, item)
+        elif sport in ('pm_btc_paper', 'kalshi_mm_paper'):
+            pass    # checked as a set in check_paper_ab: one control, typed numbers
         elif sport == 'polymarket_whales':
             check_whale(where, item)
         elif sport == 'news':

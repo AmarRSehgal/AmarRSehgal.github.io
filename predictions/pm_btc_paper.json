@@ -1,0 +1,122 @@
+{
+  "generated_at": "2026-09-25T18:02:20.083922+00:00",
+  "experiment": "Polymarket BTC 5-minute binaries: taker v1 vs passive makers",
+  "venue": "Polymarket",
+  "paper": true,
+  "started": "2026-09-25",
+  "unit": "window",
+  "min_units_for_verdict": 200,
+  "status": "collecting",
+  "headline": "Collecting: 0 of 200 settled windows before any arm is scored. Numbers below are running totals, not results.",
+  "arms": [
+    {
+      "name": "taker_v1",
+      "role": "control",
+      "description": "The original tool, unchanged: buys the ask when N(d2) beats ask + taker fee, polling REST every 3s.",
+      "units": 0,
+      "active_units": 0,
+      "fills": 0,
+      "size": 0.0,
+      "pnl": 0,
+      "pnl_per_unit": null,
+      "pnl_per_unit_ci": null,
+      "pnl_per_size_c": null,
+      "roi": null,
+      "max_drawdown": 0.0,
+      "edge_at_fill_c": null,
+      "markouts_c": null,
+      "fees": 0.0
+    },
+    {
+      "name": "maker_mid",
+      "role": "treatment",
+      "description": "Rests quotes around the Polymarket mid. No outside information -- measures what passive quoting alone is worth.",
+      "units": 0,
+      "active_units": 0,
+      "fills": 0,
+      "size": 0.0,
+      "pnl": 0,
+      "pnl_per_unit": null,
+      "pnl_per_unit_ci": null,
+      "pnl_per_size_c": null,
+      "roi": null,
+      "max_drawdown": 0.0,
+      "edge_at_fill_c": null,
+      "markouts_c": null,
+      "fees": 0.0
+    },
+    {
+      "name": "maker_model",
+      "role": "treatment",
+      "description": "Rests quotes around the N(d2) model price.",
+      "units": 0,
+      "active_units": 0,
+      "fills": 0,
+      "size": 0.0,
+      "pnl": 0,
+      "pnl_per_unit": null,
+      "pnl_per_unit_ci": null,
+      "pnl_per_size_c": null,
+      "roi": null,
+      "max_drawdown": 0.0,
+      "edge_at_fill_c": null,
+      "markouts_c": null,
+      "fees": 0.0
+    },
+    {
+      "name": "maker_anchored",
+      "role": "treatment",
+      "description": "Rests quotes around the Polymarket mid moved by the Binance-implied change since its recent average.",
+      "units": 0,
+      "active_units": 0,
+      "fills": 0,
+      "size": 0.0,
+      "pnl": 0,
+      "pnl_per_unit": null,
+      "pnl_per_unit_ci": null,
+      "pnl_per_size_c": null,
+      "roi": null,
+      "max_drawdown": 0.0,
+      "edge_at_fill_c": null,
+      "markouts_c": null,
+      "fees": 0.0
+    }
+  ],
+  "comparisons": [
+    {
+      "treatment": "maker_mid",
+      "control": "taker_v1",
+      "metric": "pnl_per_window",
+      "diff": null,
+      "ci": null,
+      "verdict": "collecting"
+    },
+    {
+      "treatment": "maker_model",
+      "control": "taker_v1",
+      "metric": "pnl_per_window",
+      "diff": null,
+      "ci": null,
+      "verdict": "collecting"
+    },
+    {
+      "treatment": "maker_anchored",
+      "control": "taker_v1",
+      "metric": "pnl_per_window",
+      "diff": null,
+      "ci": null,
+      "verdict": "collecting"
+    }
+  ],
+  "kill_criteria": [
+    "A maker arm whose mean PnL per window is below zero at 95% confidence after 200 settled windows is stopped.",
+    "A maker arm with a negative mean 5s markout after 500 fills is being picked off; stopped.",
+    "These were written before the first paper fill (2026-09-25) and are not moved after seeing results."
+  ],
+  "caveats": [
+    "Paper fills. A resting order joins the back of its price level, goes live 0.4s after it is sent, and fills only when a real print reaches it; a cancel takes 0.4s and can still be filled meanwhile.",
+    "Maker rebates are ignored and the taker pays the published fee, so the maker side is understated.",
+    "Only prints on the websocket move the paper queue; hidden or cross-matched liquidity is not modelled.",
+    "One process, one laptop: windows lost to sleep or a network drop are lost for every arm at once."
+  ]
+}
