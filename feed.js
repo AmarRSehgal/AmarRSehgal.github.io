@@ -138,6 +138,39 @@ const PROJECTS = {
             + 'few seconds of feed staleness. Publishing a ranking off that would be '
             + 'publishing noise, so the honest output is an empty section.',
     },
+    pm_btc_paper: {
+        title: 'Polymarket BTC: Taker vs Maker (paper A/B)',
+        tagline: 'The original taker, against three passive quoters on the same windows.',
+        repo: 'polymarket-btc-options', stack: ['Python', 'asyncio', 'websockets'],
+        what: 'Runs the original model-versus-ask taker unchanged next to three passive '
+            + 'makers that differ only in fair value: the Polymarket mid, the N(d2) model, '
+            + 'and the mid moved by the Binance-implied change since its recent average.',
+        how: 'One process, one set of feeds: the Polymarket market websocket for the book '
+            + 'and tape, Binance best bid/offer for BTC. Makers quote an edge curve that '
+            + 'skews against inventory, stop 60 seconds before the close, and hold to '
+            + 'Polymarket\u2019s own settlement. Scored per window, paired on the same '
+            + 'windows, with bootstrap intervals over windows rather than fills.',
+        data: 'Polymarket Gamma, CLOB and market websocket; Binance spot. No auth.',
+        limits: 'Paper fills: back of the queue, 0.4s to go live or cancel, and only a real '
+            + 'print can fill. Maker rebates are ignored. No verdict is published before 200 '
+            + 'settled windows -- a number fixed before the first fill.',
+    },
+    kalshi_mm_paper: {
+        title: 'Kalshi Market Maker: v1 vs v2 (paper A/B)',
+        tagline: 'The bot that lost $130 in April, against its rewrite, over the same days.',
+        repo: 'prediction-mm', stack: ['Python', 'asyncio', 'Kalshi API'],
+        what: 'v1 runs frozen at a git tag, unchanged. v2 runs twice: on v1\u2019s own '
+            + 'niche universe, and on the hourly BTC/ETH strike ladders.',
+        how: 'v2 never crosses the spread: its edge curve skews quotes against inventory '
+            + 'until the reducing side quotes through fair value, and positions it cannot '
+            + 'quote out of are held to resolution. Crypto fair value is a TWAP-aware binary '
+            + 'model on Binance spot, anchored to the Kalshi book, with exposure netted '
+            + 'across strikes. Books and trades come off Kalshi\u2019s websocket.',
+        data: 'Kalshi REST and websocket; Binance spot for the crypto arm.',
+        limits: 'Paper fills, and v2\u2019s simulator is stricter than v1\u2019s (it queues '
+            + 'behind the size at its own price and waits for acks), which biases the '
+            + 'comparison against v2. No verdict before 14 paired days.',
+    },
     weather_risk: {
         title: 'Severe Weather Risk', tagline: 'Gradient-boosted severe-weather probability for ten US cities.',
         repo: 'weather_prediction', stack: ['Python', 'scikit-learn', 'Open-Meteo', 'NOAA'],
@@ -614,6 +647,10 @@ const NO_RECORD = {
        + 'because its process changes every session and nothing would be attributable.',
     polymarket_btc: 'Measured, and negative: Polymarket\u2019s own price scores a better '
        + 'Brier than the model. That IS the result, and it is why the section is empty.',
+    pm_btc_paper: 'The arms are scored against each other on the page above; the record is the '
+       + 'running comparison itself, and it says collecting until the sample is big enough.',
+    kalshi_mm_paper: 'Scored on the page above, paired by day. v1\u2019s April record, for '
+       + 'reference: -$130 over ~4,400 paper fills, all of it in exits that crossed the spread.',
     weather_risk: 'Severe-weather outcomes are scored against NOAA Storm Events after the '
        + 'fact, but the job is currently off and no forecast has been graded.',
     nba: 'The 2025-26 backtest scored 65.5% over 1,075 games, and 77.1% on picks it '
@@ -1249,6 +1286,10 @@ function projectPanel(proj) {
 // Counters worth showing differ per feed, so each one names its own. Anything absent
 // from the payload is skipped rather than rendered as "undefined".
 const FACTS = {
+    pm_btc_paper: d => [['Status', d.status], ['Settled windows', d.arms.length ? d.arms[0].units : 0],
+                        ['Needed for a verdict', d.min_units_for_verdict], ['Started', d.started]],
+    kalshi_mm_paper: d => [['Status', d.status], ['Paired days', d.arms.length ? d.arms[0].units : 0],
+                           ['Needed for a verdict', d.min_units_for_verdict], ['Started', d.started]],
     nfl: d => [['Season', d.season], ['Week', d.week], ['Games', len(d.games)]],
     nba: d => [['Slate', d.date], ['Games', len(d.games)]],
     mlb: d => [['Slate', d.date], ['Games', len(d.games)],

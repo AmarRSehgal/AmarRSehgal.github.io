@@ -403,8 +403,56 @@ const SPORTS = {
         emptyLabel: 'The book is flat -- no sleeve is holding.',
         slate: d => bookSlate(d),
         render: renderBook,
-    }
+    },
+    // Two paper A/B experiments: the old market-making code against its rewrite, run
+    // side by side on the same markets and hours. Status is 'collecting' until the
+    // sample reaches the size fixed before the first fill; until then the renderer says
+    // the numbers are running totals, because they are.
+    pm_btc_paper: paperFeed('predictions/pm_btc_paper.json', 'pm-btc-paper'),
+    kalshi_mm_paper: paperFeed('predictions/kalshi_mm_paper.json', 'kalshi-mm-paper'),
 };
+
+function paperFeed(file, slug) {
+    return {
+        file, container: `${slug}-rows`, stamp: `${slug}-updated`,
+        cadence: 'daily', noun: 'arms', listKey: 'arms',
+        staleAfter: 3 * MS_DAY,
+        emptyLabel: 'No arm has reported yet.',
+        render: renderPaperAB,
+    };
+}
+
+function renderPaperAB(data) {
+    const money = v => (v >= 0 ? '+' : '-') + formatMoney(Math.abs(Number(v) || 0));
+    const verdicts = {};
+    (data.comparisons || []).forEach(c => { verdicts[c.treatment] = c; });
+    const rows = data.arms.map(a => {
+        const facts = [`${a.fills} fills`, `${a.size} ${data.unit === 'window' ? 'shares' : 'contracts'}`];
+        if (a.pnl_per_size_c != null) facts.push(`${Number(a.pnl_per_size_c).toFixed(2)}c per unit traded`);
+        if (a.passive_exit_share != null) facts.push(`${(a.passive_exit_share * 100).toFixed(0)}% passive exits`);
+        const mk = a.markouts_c || {};
+        const h = Object.keys(mk).sort((x, y) => x - y)[0];
+        if (h != null) facts.push(`${Number(mk[h]).toFixed(2)}c markout at ${h}s`);
+        const v = verdicts[a.name];
+        const label = a.role === 'control' ? 'Control'
+            : (v && v.verdict !== 'collecting' ? `${v.verdict} than control` : 'Collecting');
+        return `
+            <div class="nba-game">
+                <div class="nba-matchup">
+                    <div class="nba-teams"><span class="pick-team">${esc(a.name)}</span></div>
+                    <div class="nba-meta">${esc(a.description)}</div>
+                    <div class="nba-meta">${esc(facts.join(' | '))}</div>
+                </div>
+                <div class="nba-pick">
+                    <div class="nba-pick-label">${esc(label)}</div>
+                    <div class="nba-confidence ${a.pnl >= 0 ? 'confidence-high' : 'confidence-low'}">${esc(money(a.pnl))}</div>
+                    <div class="nba-meta">${esc(`${a.units} ${data.unit}s`)}</div>
+                </div>
+            </div>`;
+    }).join('');
+    return `<div class="prediction-note">${esc(data.headline)}</div>` + rows
+        + `<div class="prediction-note">${esc((data.caveats || []).join(' '))}</div>`;
+}
 
 // One section of the cross-source board, rendered as its own panel. `staleAfter` is
 // generous because these scanners run on very different clocks -- the per-section
@@ -465,6 +513,7 @@ const SPORT_LABEL = { swing_book: 'Swing book', mf_book: 'Magic Formula book',
                       magic_formula: 'Magic Formula', funding: 'Funding carry',
                       stock_levels: 'Stock levels book',
                       polymarket_whales: 'Polymarket whale watch',
+                      pm_btc_paper: 'Polymarket maker A/B', kalshi_mm_paper: 'Kalshi market-maker A/B',
                       news: 'News coverage' };
 
 function esc(v) {

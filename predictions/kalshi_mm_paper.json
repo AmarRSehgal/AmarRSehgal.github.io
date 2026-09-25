@@ -1,0 +1,128 @@
+{
+  "generated_at": "2026-09-25T18:02:20.034324+00:00",
+  "experiment": "Kalshi market making: v1 against the v2 engine",
+  "venue": "Kalshi",
+  "paper": true,
+  "started": "2026-09-25",
+  "unit": "day",
+  "min_units_for_verdict": 14,
+  "status": "collecting",
+  "headline": "Collecting: day 0 of 14 before the arms are scored against each other. Running totals, not results: baseline +0.00 over 0 fills; v2_niche +0.00 over 0 fills; v2_crypto -0.18 over 4 fills.",
+  "arms": [
+    {
+      "name": "baseline",
+      "role": "control",
+      "description": "v1 unchanged: Avellaneda-Stoikov quotes around the touch mid on niche markets, crossing the spread to flatten before game windows and closes.",
+      "fills": 0,
+      "size": 0,
+      "markets": 0,
+      "pnl": 0,
+      "realized": 0,
+      "mtm": 0.0,
+      "fees": 0.0,
+      "pnl_per_size_c": null,
+      "resolved_contracts": 0,
+      "realized_per_resolved_c": null,
+      "passive_exit_share": null,
+      "exits": {
+        "passive": {
+          "contracts": 0,
+          "pnl": 0.0,
+          "per_contract_c": null
+        }
+      },
+      "per_market_pnl_ci": null,
+      "markouts_c": null,
+      "units": 0,
+      "pnl_per_unit": null,
+      "pnl_per_unit_ci": null
+    },
+    {
+      "name": "v2_niche",
+      "role": "treatment",
+      "description": "v2 engine on the same universe: edge curve around a depth-weighted mid, never crosses, reduce-only instead of flatten, holds to resolution.",
+      "fills": 0,
+      "size": 0,
+      "markets": 0,
+      "pnl": 0,
+      "realized": 0,
+      "mtm": 0.0,
+      "fees": 0.0,
+      "pnl_per_size_c": null,
+      "resolved_contracts": 0,
+      "realized_per_resolved_c": null,
+      "passive_exit_share": null,
+      "exits": {
+        "passive": {
+          "contracts": 0,
+          "pnl": 0.0,
+          "per_contract_c": null
+        }
+      },
+      "per_market_pnl_ci": null,
+      "markouts_c": null,
+      "units": 0,
+      "pnl_per_unit": null,
+      "pnl_per_unit_ci": null
+    },
+    {
+      "name": "v2_crypto",
+      "role": "treatment",
+      "description": "v2 engine on hourly BTC/ETH strike ladders, fair value from Binance anchored to the Kalshi book, exposure netted across strikes.",
+      "fills": 4,
+      "size": 12,
+      "markets": 15,
+      "pnl": -0.18,
+      "realized": 0.0,
+      "mtm": -0.18,
+      "fees": 0.0,
+      "pnl_per_size_c": -1.5,
+      "resolved_contracts": 0,
+      "realized_per_resolved_c": null,
+      "passive_exit_share": null,
+      "exits": {
+        "passive": {
+          "contracts": 0,
+          "pnl": 0.0,
+          "per_contract_c": null
+        }
+      },
+      "per_market_pnl_ci": [
+        -0.039,
+        0.003
+      ],
+      "markouts_c": null,
+      "units": 0,
+      "pnl_per_unit": null,
+      "pnl_per_unit_ci": null
+    }
+  ],
+  "comparisons": [
+    {
+      "treatment": "v2_niche",
+      "control": "baseline",
+      "metric": "pnl_per_day",
+      "diff": null,
+      "ci": null,
+      "verdict": "collecting"
+    },
+    {
+      "treatment": "v2_crypto",
+      "control": "baseline",
+      "metric": "pnl_per_day",
+      "diff": null,
+      "ci": null,
+      "verdict": "collecting"
+    }
+  ],
+  "kill_criteria": [
+    "A treatment whose realized expectancy per resolved contract is negative after 200 contracts is stopped.",
+    "Any aggregate exposure breach, or a position held into a resolution rule nobody read, stops that arm until fixed.",
+    "Written before the first v2 paper fill (2026-09-25); not moved after seeing results."
+  ],
+  "caveats": [
+    "Paper fills. v2's venue is stricter than v1's: v2 queues behind the size at its own price and waits 0.5s for acks and cancels; v1 queues behind the top of book and fills instantly. That bias works against v2.",
+    "v1 marks open inventory at the last mid it saw; v2 holds to resolution and settles at 0 or 100.",
+    "Days lost to the laptop sleeping are lost for every arm at once."
+  ]
+}

@@ -1183,3 +1183,50 @@ class FederalContractLanes(ContractBase):
         d = copy.deepcopy(payload(CONTRACTS))
         del d['open']
         self.rejects('contracts', d, "missing required keys ['open']")
+
+
+PAPER_AB = {
+    'generated_at': STAMP, 'experiment': 'x', 'paper': True, 'started': '2026-09-25',
+    'unit': 'window', 'status': 'collecting', 'min_units_for_verdict': 200,
+    'headline': 'Collecting: 3 of 200 settled windows.',
+    'arms': [{'name': 'taker_v1', 'role': 'control', 'description': 'd', 'units': 3,
+              'fills': 2, 'size': 2.0, 'pnl': -0.1},
+             {'name': 'maker_mid', 'role': 'treatment', 'description': 'd', 'units': 3,
+              'fills': 9, 'size': 45.0, 'pnl': 0.4}],
+    'comparisons': [{'treatment': 'maker_mid', 'control': 'taker_v1', 'verdict': 'collecting'}],
+    'kill_criteria': ['k'], 'caveats': ['c'],
+}
+
+
+class PaperAB(ContractBase):
+    def test_valid(self):
+        self.assertEqual(len(self.ok('pm_btc_paper', PAPER_AB)), 2)
+        self.assertEqual(len(self.ok('kalshi_mm_paper', PAPER_AB)), 2)
+
+    def test_no_verdict_below_the_preregistered_sample(self):
+        d = copy.deepcopy(PAPER_AB)
+        d['status'] = 'verdict'
+        d['comparisons'][0]['verdict'] = 'better'
+        self.rejects('pm_btc_paper', d, 'below the pre-registered')
+
+    def test_collecting_cannot_carry_a_verdict(self):
+        d = copy.deepcopy(PAPER_AB)
+        d['min_units_for_verdict'] = 2
+        d['comparisons'][0]['verdict'] = 'worse'
+        self.rejects('pm_btc_paper', d, 'status=collecting')
+
+    def test_needs_exactly_one_control(self):
+        d = copy.deepcopy(PAPER_AB)
+        d['arms'][1]['role'] = 'control'
+        self.rejects('kalshi_mm_paper', d, 'exactly one arm')
+
+    def test_caveats_and_kill_criteria_are_required(self):
+        for k in ('caveats', 'kill_criteria'):
+            d = copy.deepcopy(PAPER_AB)
+            d[k] = []
+            self.rejects('pm_btc_paper', d, k)
+
+    def test_must_be_paper(self):
+        d = copy.deepcopy(PAPER_AB)
+        d['paper'] = False
+        self.rejects('pm_btc_paper', d, 'paper=true')
