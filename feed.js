@@ -144,9 +144,9 @@ const PROJECTS = {
         repo: 'polymarket-btc-options', stack: ['Python', 'asyncio', 'websockets'],
         what: 'Runs the original model-versus-ask taker unchanged next to three passive '
             + 'makers that differ only in fair value: the Polymarket mid, the N(d2) model, '
-            + 'and the mid moved by the Binance-implied change since its recent average.',
+            + 'and the mid moved by the spot-implied change since its recent average.',
         how: 'One process, one set of feeds: the Polymarket market websocket for the book '
-            + 'and tape, Binance best bid/offer for BTC. Makers quote an edge curve that '
+            + 'and tape; BTC for the makers is a spread-weighted Binance + OKX mid (the taker keeps its original Binance feed). Makers quote an edge curve that '
             + 'skews against inventory, stop 60 seconds before the close, and hold to '
             + 'Polymarket\u2019s own settlement. Scored per window, paired on the same '
             + 'windows, with bootstrap intervals over windows rather than fills.',
