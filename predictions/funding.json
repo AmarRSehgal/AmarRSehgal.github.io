@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T01:00:10.076671+00:00",
+  "generated_at": "2026-09-25T02:00:10.813149+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1816.66,
-      "net_at_hold": 1.65905,
+      "net_apr": 1823.44,
+      "net_at_hold": 1.66525,
       "cost_bps": 35.25
     },
     {
@@ -27,9 +27,22 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1633.77,
-      "net_at_hold": 1.49202,
-      "cost_bps": 51.87
+      "net_apr": 1695.63,
+      "net_at_hold": 1.54852,
+      "cost_bps": 51.7
+    },
+    {
+      "base": "ONE",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "Gate",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1490.05,
+      "net_at_hold": 1.36078,
+      "cost_bps": 38.38
     },
     {
       "base": "NIGHT",
@@ -40,22 +53,9 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1397.66,
-      "net_at_hold": 0.6382,
+      "net_apr": 1416.49,
+      "net_at_hold": 0.6468,
       "cost_bps": 38.0
-    },
-    {
-      "base": "ONE",
-      "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Gate",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1384.37,
-      "net_at_hold": 1.26426,
-      "cost_bps": 37.64
     },
     {
       "base": "NIGHT",
@@ -66,9 +66,9 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1375.52,
-      "net_at_hold": 0.62809,
-      "cost_bps": 38.72
+      "net_apr": 1400.03,
+      "net_at_hold": 0.63928,
+      "cost_bps": 38.64
     },
     {
       "base": "NIGHT",
@@ -79,9 +79,9 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1202.72,
-      "net_at_hold": 0.54919,
-      "cost_bps": 43.83
+      "net_apr": 1249.62,
+      "net_at_hold": 0.5706,
+      "cost_bps": 43.72
     },
     {
       "base": "ONE",
@@ -92,9 +92,9 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1123.71,
-      "net_at_hold": 0.51311,
-      "cost_bps": 33.65
+      "net_apr": 1178.6,
+      "net_at_hold": 0.53817,
+      "cost_bps": 34.0
     },
     {
       "base": "ONE",
@@ -105,9 +105,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 845.01,
-      "net_at_hold": 0.7717,
-      "cost_bps": 40.38
+      "net_apr": 931.7,
+      "net_at_hold": 0.85087,
+      "cost_bps": 40.71
     }
   ]
 }
