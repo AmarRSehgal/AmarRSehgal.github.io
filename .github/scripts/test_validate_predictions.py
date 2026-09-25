@@ -1230,3 +1230,15 @@ class PaperAB(ContractBase):
         d = copy.deepcopy(PAPER_AB)
         d['paper'] = False
         self.rejects('pm_btc_paper', d, 'paper=true')
+
+
+class PaperABDaily(ContractBase):
+    def test_daily_series(self):
+        d = copy.deepcopy(PAPER_AB)
+        d['daily'] = [{'date': '2026-09-25', 'pnl': {'taker_v1': -1.0, 'maker_mid': 2.0}},
+                      {'date': '2026-09-26', 'pnl': {'taker_v1': 0.5, 'maker_mid': 0.1}}]
+        self.ok('pm_btc_paper', d)
+        d['daily'].reverse()
+        self.rejects('pm_btc_paper', d, 'ascending')
+        d['daily'] = [{'date': '2026-09-25', 'pnl': {'taker_v1': '1'}}]
+        self.rejects('pm_btc_paper', d, 'must be a number')

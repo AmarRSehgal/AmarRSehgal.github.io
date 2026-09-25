@@ -976,6 +976,32 @@ function optionsSessions(data) {
 // is a difference between consecutive published points, so it spans whatever gap sits
 // between them -- a weekend, or a session the job missed. Label it by both dates rather
 // than calling it a day, which would be a quiet lie on exactly those rows.
+// One row per session day, newest first: each arm's PnL that day, and how the best
+// treatment did against the control over the same windows/day.
+function paperDaily(data) {
+    const days = data.daily;
+    if (!Array.isArray(days) || !days.length) return null;
+    const control = (data.arms.find(a => a.role === 'control') || {}).name;
+    // Cents matter at paper size: whole-dollar rounding showed +$0.33 as +$0.
+    const money = v => (Number(v) >= 0 ? '+' : '-') + '$' + Math.abs(Number(v) || 0).toFixed(2);
+    const rows = days.slice().reverse().map(d => {
+        const names = Object.keys(d.pnl);
+        const facts = names.map(n => `${n} ${money(d.pnl[n])}`).join(' | ');
+        const treat = names.filter(n => n !== control);
+        const best = treat.length ? treat.reduce((x, y) => (d.pnl[y] > d.pnl[x] ? y : x)) : null;
+        const diff = best != null && control in d.pnl ? d.pnl[best] - d.pnl[control] : null;
+        return {
+            when: d.date, facts,
+            label: best ? `${best} vs ${control}` : 'Day',
+            value: diff == null ? '--' : money(diff),
+            cls: diff == null ? '' : (diff >= 0 ? 'confidence-high' : 'confidence-low'),
+            sub: `${d.units[control] || 0} ${data.unit}s`,
+        };
+    });
+    return { title: 'Daily PnL', rows, note: 'Paper PnL per session day, net of fees. A day is a '
+        + 'running session, not a result; verdicts need the full pre-registered sample.' };
+}
+
 function curveSessions(data) {
     const curve = data.equity_curve;
     if (!Array.isArray(curve) || curve.length < 1) return null;
@@ -1118,6 +1144,8 @@ const SESSIONS = {
     nfl: nflWeeks,
     f1: f1Races,
     stock_levels: curveSessions,
+    pm_btc_paper: paperDaily,
+    kalshi_mm_paper: paperDaily,
     swing_book: curveSessions,
     mf_book: curveSessions,
 };

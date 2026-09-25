@@ -92,7 +92,7 @@ for (const key of ['stock_levels', 'swing_book', 'mf_book', 'funding', 'nfl', 'n
 
     // The books are the reason the session panel exists; a silent regression there is
     // the panel quietly removing itself, which looks identical to a feed that has none.
-    if (['stock_levels', 'swing_book', 'mf_book', 'f1', 'nfl', 'mlb'].includes(key)) {
+    if (['stock_levels', 'swing_book', 'mf_book', 'f1', 'nfl', 'mlb', 'pm_btc_paper', 'kalshi_mm_paper'].includes(key)) {
         const sess = els['feed-sessions'];
         const html = sess.innerHTML;
         check(`feed ${key} sessions`,
