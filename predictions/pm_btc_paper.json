@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T20:24:51.111814+00:00",
+  "generated_at": "2026-09-25T20:42:32.493371+00:00",
   "experiment": "Polymarket BTC 5-minute binaries: taker v1 vs passive makers",
   "venue": "Polymarket",
   "paper": true,
@@ -7,51 +7,51 @@
   "unit": "window",
   "min_units_for_verdict": 200,
   "status": "collecting",
-  "headline": "Collecting: 25 of 200 settled windows before any arm is scored. Numbers below are running totals, not results.",
+  "headline": "Collecting: 28 of 200 settled windows before any arm is scored. Numbers below are running totals, not results.",
   "arms": [
     {
       "name": "taker_v1",
       "role": "control",
       "description": "The original tool, unchanged: buys the ask when N(d2) beats ask + taker fee, polling REST every 3s.",
-      "units": 25,
-      "active_units": 17,
-      "fills": 134,
-      "size": 134.0,
-      "pnl": -3.78,
-      "pnl_per_unit": -0.1512,
+      "units": 28,
+      "active_units": 19,
+      "fills": 153,
+      "size": 153.0,
+      "pnl": -13.74,
+      "pnl_per_unit": -0.4906,
       "pnl_per_unit_ci": [
-        -0.9508,
-        0.5775
+        -1.3112,
+        0.3105
       ],
-      "pnl_per_size_c": -2.82,
-      "roi": -0.0492,
-      "max_drawdown": 15.02,
+      "pnl_per_size_c": -8.979,
+      "roi": -0.1584,
+      "max_drawdown": 15.2,
       "edge_at_fill_c": null,
       "markouts_c": null,
-      "fees": 2.05
+      "fees": 2.38
     },
     {
       "name": "maker_mid",
       "role": "treatment",
       "description": "Rests quotes around the Polymarket mid. No outside information -- measures what passive quoting alone is worth.",
-      "units": 25,
-      "active_units": 21,
-      "fills": 128,
-      "size": 532.9,
-      "pnl": -24.92,
-      "pnl_per_unit": -0.9967,
+      "units": 28,
+      "active_units": 23,
+      "fills": 136,
+      "size": 567.9,
+      "pnl": -24.42,
+      "pnl_per_unit": -0.872,
       "pnl_per_unit_ci": [
-        -1.9139,
-        -0.1615
+        -1.7414,
+        -0.0836
       ],
-      "pnl_per_size_c": -4.676,
-      "roi": -0.0923,
-      "max_drawdown": 25.47,
-      "edge_at_fill_c": 7.697,
+      "pnl_per_size_c": -4.3,
+      "roi": -0.0858,
+      "max_drawdown": 25.57,
+      "edge_at_fill_c": 7.724,
       "markouts_c": {
-        "5": -2.73,
-        "30": -3.374,
-        "60": -3.944
+        "5": -2.783,
+        "30": -3.802,
+        "60": -4.794
       },
       "fees": 0.0
     },
@@ -59,24 +59,24 @@
       "name": "maker_model",
       "role": "treatment",
       "description": "Rests quotes around the N(d2) model price.",
-      "units": 25,
-      "active_units": 23,
-      "fills": 140,
-      "size": 653.4,
-      "pnl": 4.28,
-      "pnl_per_unit": 0.1714,
+      "units": 28,
+      "active_units": 25,
+      "fills": 150,
+      "size": 689.1,
+      "pnl": 0.33,
+      "pnl_per_unit": 0.0118,
       "pnl_per_unit_ci": [
-        -0.8441,
-        1.2027
+        -0.9684,
+        0.9846
       ],
-      "pnl_per_size_c": 0.656,
-      "roi": 0.0137,
+      "pnl_per_size_c": 0.048,
+      "roi": 0.001,
       "max_drawdown": 11.7,
-      "edge_at_fill_c": 7.484,
+      "edge_at_fill_c": 7.506,
       "markouts_c": {
-        "5": -1.386,
-        "30": -0.77,
-        "60": 1.508
+        "5": -1.467,
+        "30": -1.146,
+        "60": 0.357
       },
       "fees": 0.0
     },
@@ -84,25 +84,43 @@
       "name": "maker_anchored",
       "role": "treatment",
       "description": "Rests quotes around the Polymarket mid moved by the Binance-implied change since its recent average.",
-      "units": 25,
-      "active_units": 21,
-      "fills": 154,
-      "size": 686.3,
-      "pnl": 5.65,
-      "pnl_per_unit": 0.2262,
+      "units": 28,
+      "active_units": 23,
+      "fills": 163,
+      "size": 716.3,
+      "pnl": 4.3,
+      "pnl_per_unit": 0.1537,
       "pnl_per_unit_ci": [
-        -0.7305,
-        1.1633
+        -0.738,
+        1.0311
       ],
-      "pnl_per_size_c": 0.824,
-      "roi": 0.0165,
+      "pnl_per_size_c": 0.601,
+      "roi": 0.0121,
       "max_drawdown": 7.3,
-      "edge_at_fill_c": 7.506,
+      "edge_at_fill_c": 7.537,
       "markouts_c": {
-        "5": -1.321,
-        "30": 0.51,
-        "60": 2.457
+        "5": -1.521,
+        "30": -0.327,
+        "60": 0.84
       },
+      "fees": 0.0
+    },
+    {
+      "name": "maker_composite",
+      "role": "treatment",
+      "description": "As maker_anchored, with BTC a spread-weighted Binance + OKX mid (added 2026-09-25, after the other arms; compared on the windows it ran).",
+      "units": 1,
+      "active_units": 0,
+      "fills": 0,
+      "size": 0.0,
+      "pnl": 0.0,
+      "pnl_per_unit": 0.0,
+      "pnl_per_unit_ci": null,
+      "pnl_per_size_c": null,
+      "roi": null,
+      "max_drawdown": 0.0,
+      "edge_at_fill_c": null,
+      "markouts_c": null,
       "fees": 0.0
     }
   ],
@@ -111,10 +129,10 @@
       "treatment": "maker_mid",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.8455,
+      "diff": -0.3814,
       "ci": [
-        -1.8377,
-        0.1766
+        -1.4156,
+        0.6556
       ],
       "verdict": "collecting"
     },
@@ -122,10 +140,10 @@
       "treatment": "maker_model",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.3225,
+      "diff": 0.5025,
       "ci": [
-        -0.7883,
-        1.5136
+        -0.5668,
+        1.5782
       ],
       "verdict": "collecting"
     },
@@ -133,12 +151,39 @@
       "treatment": "maker_anchored",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.3773,
+      "diff": 0.6444,
       "ci": [
-        -0.8008,
-        1.6183
+        -0.4609,
+        1.7431
       ],
       "verdict": "collecting"
+    },
+    {
+      "treatment": "maker_composite",
+      "control": "taker_v1",
+      "metric": "pnl_per_window",
+      "diff": 0.0,
+      "ci": null,
+      "verdict": "collecting"
+    }
+  ],
+  "daily": [
+    {
+      "date": "2026-09-25",
+      "pnl": {
+        "taker_v1": -13.73,
+        "maker_mid": -24.42,
+        "maker_model": 0.33,
+        "maker_anchored": 4.3,
+        "maker_composite": 0.0
+      },
+      "units": {
+        "taker_v1": 28,
+        "maker_mid": 28,
+        "maker_model": 28,
+        "maker_anchored": 28,
+        "maker_composite": 1
+      }
     }
   ],
   "kill_criteria": [

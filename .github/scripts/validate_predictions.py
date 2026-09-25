@@ -1138,6 +1138,19 @@ def check_paper_ab(data):
                           f'below the pre-registered {need}')
         if data['status'] == 'collecting' and c['verdict'] != 'collecting':
             raise Invalid('status=collecting but a comparison carries a verdict')
+    daily = data.get('daily', [])
+    if not isinstance(daily, list):
+        raise Invalid('daily must be a list')
+    dates = []
+    for i, d in enumerate(daily):
+        if not isinstance(d, dict) or not isinstance(d.get('pnl'), dict) or 'date' not in d:
+            raise Invalid(f'daily[{i}] needs a date and a pnl object')
+        for n, v in d['pnl'].items():
+            if isinstance(v, bool) or not isinstance(v, (int, float)):
+                raise Invalid(f'daily[{i}].pnl.{n} must be a number')
+        dates.append(d['date'])
+    if dates != sorted(set(dates)):
+        raise Invalid('daily must be strictly ascending by date')
     for a in data['arms']:
         for k in ('fills', 'units'):
             require_int(a.get('name', '<arm>'), k, a[k])

@@ -423,9 +423,11 @@ function paperFeed(file, slug) {
 }
 
 function renderPaperAB(data) {
-    const money = v => (v >= 0 ? '+' : '-') + formatMoney(Math.abs(Number(v) || 0));
+    // Cents matter at paper size: whole-dollar rounding showed +$0.33 as +$0.
+    const money = v => (Number(v) >= 0 ? '+' : '-') + '$' + Math.abs(Number(v) || 0).toFixed(2);
     const verdicts = {};
     (data.comparisons || []).forEach(c => { verdicts[c.treatment] = c; });
+    const last = (data.daily || []).slice(-1)[0];
     const rows = data.arms.map(a => {
         const facts = [`${a.fills} fills`, `${a.size} ${data.unit === 'window' ? 'shares' : 'contracts'}`];
         if (a.pnl_per_size_c != null) facts.push(`${Number(a.pnl_per_size_c).toFixed(2)}c per unit traded`);
@@ -433,6 +435,11 @@ function renderPaperAB(data) {
         const mk = a.markouts_c || {};
         const h = Object.keys(mk).sort((x, y) => x - y)[0];
         if (h != null) facts.push(`${Number(mk[h]).toFixed(2)}c markout at ${h}s`);
+        if (a.pnl_per_unit != null) {
+            const ci = a.pnl_per_unit_ci;
+            facts.push(`${money(a.pnl_per_unit)}/${data.unit}`
+                + (ci ? ` (95% CI ${money(ci[0])} to ${money(ci[1])})` : ''));
+        }
         const v = verdicts[a.name];
         const label = a.role === 'control' ? 'Control'
             : (v && v.verdict !== 'collecting' ? `${v.verdict} than control` : 'Collecting');
@@ -446,7 +453,8 @@ function renderPaperAB(data) {
                 <div class="nba-pick">
                     <div class="nba-pick-label">${esc(label)}</div>
                     <div class="nba-confidence ${a.pnl >= 0 ? 'confidence-high' : 'confidence-low'}">${esc(money(a.pnl))}</div>
-                    <div class="nba-meta">${esc(`${a.units} ${data.unit}s`)}</div>
+                    <div class="nba-meta">${esc(`${a.units} ${data.unit}s`
+                        + (last && last.pnl[a.name] != null ? ` | ${last.date}: ${money(last.pnl[a.name])}` : ''))}</div>
                 </div>
             </div>`;
     }).join('');
