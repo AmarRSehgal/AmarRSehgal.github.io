@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-25T07:12:11.379820+00:00",
+  "generated_at": "2026-09-25T07:24:42.417343+00:00",
   "window_hours": 24,
-  "articles_in_window": 2481,
+  "articles_in_window": 2517,
   "collection_days": 26,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,11 +10,11 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 376,
+      "articles": 380,
       "sources": 40,
       "sentiment_direction": "mixed",
-      "surge": 1.13,
-      "sentiment_mean": -0.085,
+      "surge": 1.14,
+      "sentiment_mean": -0.082,
       "headline": "Xi-Trump dinner puts US tech titans in spotlight \u2013 what does it mean for China ties?",
       "headline_source": "South China Morning Post",
       "headline_url": "https://www.scmp.com/tech/tech-war/article/3368774/xi-trump-dinner-puts-us-tech-titans-spotlight-what-does-it-mean-china-ties?utm_source=rss_feed"
@@ -32,36 +32,36 @@
     },
     {
       "term": "president",
-      "articles": 216,
+      "articles": 218,
       "sources": 35,
       "sentiment_direction": "mixed",
-      "surge": 1.23,
-      "sentiment_mean": -0.073,
+      "surge": 1.24,
+      "sentiment_mean": -0.067,
       "headline": "Athens to Washington: What is the \u2018Thucydides Trap\u2019 Chinese President Xi keeps invoking",
       "headline_source": "Times of India",
       "headline_url": "https://timesofindia.indiatimes.com/world/us/from-athens-to-washington-what-is-the-thucydides-trap-chinese-president-xi-keeps-invoking/articleshow/134474967.cms"
     },
     {
-      "term": "million",
-      "articles": 66,
-      "sources": 33,
-      "sentiment_direction": "mixed",
-      "surge": 0.92,
-      "sentiment_mean": 0.132,
-      "headline": "Selena\u2019s brother sues sister for over $1 million in legacy profits dispute",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/us/in-1995-selenas-family-made-an-agreement-over-profits-from-her-entertainment-legacy-31-years-later-brother-a-b-quintanilla-is-suing-sister-suzette-for-more-than-1-million-he-says-he-is-owed/articleshow/134435591.cms"
-    },
-    {
       "term": "government",
       "articles": 100,
-      "sources": 32,
+      "sources": 33,
       "sentiment_direction": "negative",
       "surge": 1.75,
-      "sentiment_mean": -0.234,
+      "sentiment_mean": -0.229,
       "headline": "Virginia tech firm's CEO, Russian national charged with hiding firm's Russian ties from U.S. government",
       "headline_source": "CNBC World",
       "headline_url": "https://www.cnbc.com/2026/09/25/tech-ceo-russian-national-charged-with-hiding-firms-russian-ties.html"
+    },
+    {
+      "term": "million",
+      "articles": 65,
+      "sources": 33,
+      "sentiment_direction": "mixed",
+      "surge": 0.9,
+      "sentiment_mean": 0.128,
+      "headline": "Selena\u2019s brother sues sister for over $1 million in legacy profits dispute",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/world/us/in-1995-selenas-family-made-an-agreement-over-profits-from-her-entertainment-legacy-31-years-later-brother-a-b-quintanilla-is-suing-sister-suzette-for-more-than-1-million-he-says-he-is-owed/articleshow/134435591.cms"
     },
     {
       "term": "white",
@@ -76,25 +76,25 @@
     },
     {
       "term": "iran",
-      "articles": 116,
+      "articles": 117,
       "sources": 31,
       "sentiment_direction": "negative",
-      "surge": 1.13,
-      "sentiment_mean": -0.437,
+      "surge": 1.14,
+      "sentiment_mean": -0.443,
       "headline": "Iran says it's up to U.S. to end war as China presses for de-escalation",
       "headline_source": "CNBC World",
       "headline_url": "https://www.cnbc.com/2026/09/25/us-iran-trump-hormuz-.html"
     },
     {
-      "term": "across",
-      "articles": 60,
+      "term": "data",
+      "articles": 77,
       "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 1.31,
-      "sentiment_mean": 0.007,
-      "headline": "Meet Terry Fox: He lost his leg to cancer, then ran 5,373 km across Canada",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/life-style/people/meet-terry-fox-he-lost-his-leg-to-bone-cancer-at-18-then-ran-5373-km-across-canada-with-an-artificial-leg-to-raise-millions-for-cancer-research-before-the-disease-returned/articleshow/134473233.cms"
+      "surge": 1.24,
+      "sentiment_mean": -0.071,
+      "headline": "Uber is recruiting ex-military to gather tactical data for unknown reasons. Anyone know why?",
+      "headline_source": "Reddit r/wallstreetbets",
+      "headline_url": "https://www.reddit.com/r/wallstreetbets/comments/1wpmsq0/uber_is_recruiting_exmilitary_to_gather_tactical/"
     }
   ],
   "hours_since_fetch": 0.0
