@@ -1,23 +1,10 @@
 {
-  "generated_at": "2026-09-25T09:00:11.859559+00:00",
+  "generated_at": "2026-09-25T10:00:08.644353+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
-    {
-      "base": "NIGHT",
-      "type": "perp-perp",
-      "long_venue": "Coinbase",
-      "short_venue": "Gate",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 2133.98,
-      "net_at_hold": 1.94884,
-      "cost_bps": 35.19
-    },
     {
       "base": "ONE",
       "type": "perp-perp",
@@ -27,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 2057.11,
-      "net_at_hold": 1.87864,
-      "cost_bps": 38.73
+      "net_apr": 2237.9,
+      "net_at_hold": 2.04375,
+      "cost_bps": 38.38
     },
     {
       "base": "ONE",
@@ -40,9 +27,22 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 2039.2,
-      "net_at_hold": 0.93114,
-      "cost_bps": 34.8
+      "net_apr": 2156.7,
+      "net_at_hold": 0.98479,
+      "cost_bps": 35.31
+    },
+    {
+      "base": "NIGHT",
+      "type": "perp-perp",
+      "long_venue": "Coinbase",
+      "short_venue": "Gate",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 2134.83,
+      "net_at_hold": 1.94962,
+      "cost_bps": 35.15
     },
     {
       "base": "NIGHT",
@@ -53,9 +53,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1979.43,
-      "net_at_hold": 1.8077,
-      "cost_bps": 51.61
+      "net_apr": 1991.79,
+      "net_at_hold": 1.81899,
+      "cost_bps": 51.63
     },
     {
       "base": "NIGHT",
@@ -66,9 +66,9 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1708.47,
-      "net_at_hold": 0.78012,
-      "cost_bps": 38.09
+      "net_apr": 1728.55,
+      "net_at_hold": 0.78929,
+      "cost_bps": 38.0
     },
     {
       "base": "NIGHT",
@@ -79,8 +79,8 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1679.07,
-      "net_at_hold": 0.7667,
+      "net_apr": 1699.0,
+      "net_at_hold": 0.7758,
       "cost_bps": 38.0
     },
     {
@@ -92,9 +92,9 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1599.87,
-      "net_at_hold": 0.73053,
-      "cost_bps": 43.34
+      "net_apr": 1612.74,
+      "net_at_hold": 0.73641,
+      "cost_bps": 43.32
     },
     {
       "base": "ONE",
@@ -105,9 +105,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 916.92,
-      "net_at_hold": 0.83737,
-      "cost_bps": 43.9
+      "net_apr": 1267.2,
+      "net_at_hold": 1.15726,
+      "cost_bps": 44.28
     }
   ]
 }
