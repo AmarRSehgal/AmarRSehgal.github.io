@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-26T11:25:29.367822+00:00",
+  "generated_at": "2026-09-26T12:24:39.217000+00:00",
   "window_hours": 24,
-  "articles_in_window": 2040,
+  "articles_in_window": 2003,
   "collection_days": 27,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,66 +10,66 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 303,
+      "articles": 291,
       "sources": 42,
       "sentiment_direction": "mixed",
-      "surge": 0.87,
-      "sentiment_mean": 0.028,
-      "headline": "Thomas Jefferson letter goes on the market \u2013 containing a prescient warning for Trump today",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/us-news/2026/sep/26/thomas-jefferson-letter-trump-warning"
+      "surge": 0.83,
+      "sentiment_mean": -0.001,
+      "headline": "Why Xi\u2019s flight from China to the US was hours faster than Trump\u2019s in May",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/china/diplomacy/article/3368906/why-xis-flight-path-china-us-was-hours-faster-trumps-may?utm_source=rss_feed"
     },
     {
       "term": "president",
-      "articles": 163,
+      "articles": 158,
       "sources": 34,
       "sentiment_direction": "mixed",
-      "surge": 0.86,
-      "sentiment_mean": 0.024,
-      "headline": "Analysis-Venezuela president returns from US visit with no deals, no firm election date",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/commodities-news/analysisvenezuela-president-returns-from-us-visit-with-no-deals-no-firm-election-date-4918550"
-    },
-    {
-      "term": "million",
-      "articles": 85,
-      "sources": 30,
-      "sentiment_direction": "mixed",
-      "surge": 1.16,
-      "sentiment_mean": 0.149,
-      "headline": "Stephen Curry and Warriors agree to 2-year contract extension worth $116 million, AP source says",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/09/26/stephen-curry-2-year-contract-extension.html"
-    },
-    {
-      "term": "government",
-      "articles": 84,
-      "sources": 30,
-      "sentiment_direction": "mixed",
-      "surge": 1.26,
-      "sentiment_mean": 0.052,
-      "headline": "The U.S. has more thalidomide survivors than the government admits",
-      "headline_source": "NPR News",
-      "headline_url": "https://www.npr.org/2026/09/26/nx-s1-5979047/us-thalidomide-survivors-want-recognition-government"
+      "surge": 0.83,
+      "sentiment_mean": 0.006,
+      "headline": "PRESIDENT PAZ: Bolivia has rejected socialism and is open for business",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/opinion/president-paz-bolivia-rejected-socialism-open-business"
     },
     {
       "term": "house",
-      "articles": 84,
+      "articles": 80,
       "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 0.79,
-      "sentiment_mean": -0.001,
+      "surge": 0.74,
+      "sentiment_mean": -0.051,
       "headline": "China, US to open AI \u2018communication channel\u2019 after summit, White House says",
       "headline_source": "Al Jazeera",
       "headline_url": "https://www.aljazeera.com/news/2026/9/26/china-us-to-open-ai-communication-channel-after-summit-white-house-says?traffic_source=rss"
     },
     {
+      "term": "government",
+      "articles": 81,
+      "sources": 29,
+      "sentiment_direction": "mixed",
+      "surge": 1.21,
+      "sentiment_mean": 0.044,
+      "headline": "The U.S. has more thalidomide survivors than the government admits",
+      "headline_source": "NPR News",
+      "headline_url": "https://www.npr.org/2026/09/26/nx-s1-5979047/us-thalidomide-survivors-want-recognition-government"
+    },
+    {
+      "term": "million",
+      "articles": 75,
+      "sources": 29,
+      "sentiment_direction": "mixed",
+      "surge": 1.02,
+      "sentiment_mean": 0.125,
+      "headline": "Stephen Curry and Warriors agree to 2-year contract extension worth $116 million, AP source says",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/09/26/stephen-curry-2-year-contract-extension.html"
+    },
+    {
       "term": "court",
-      "articles": 101,
+      "articles": 98,
       "sources": 28,
       "sentiment_direction": "positive",
-      "surge": 1.95,
-      "sentiment_mean": 0.168,
+      "surge": 1.86,
+      "sentiment_mean": 0.155,
       "headline": "\u2018Tried to strangle me\u2019: Woman attacked by husband, 2 others inside UP court",
       "headline_source": "Times of India",
       "headline_url": "https://timesofindia.indiatimes.com/city/lucknow/tried-to-strangle-me-woman-attacked-by-husband-2-others-inside-up-court/articleshow/134499972.cms"
@@ -77,24 +77,24 @@
     {
       "term": "iran",
       "articles": 92,
-      "sources": 26,
+      "sources": 27,
       "sentiment_direction": "negative",
       "surge": 0.84,
-      "sentiment_mean": -0.214,
-      "headline": "Iran denies link to Houthi attacks; warns US as Trump rejects peace offer",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/middle-east/iran-denies-link-to-houthi-attacks-in-yemen-saudi-arabia-warns-us-as-trump-rejects-peace-offer/articleshow/134502862.cms"
+      "sentiment_mean": -0.21,
+      "headline": "Iran War Endgame Remains Elusive",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-09-26/iran-war-endgame-remains-elusive-video"
     },
     {
       "term": "white",
-      "articles": 69,
-      "sources": 26,
+      "articles": 67,
+      "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 0.82,
-      "sentiment_mean": -0.096,
-      "headline": "Pope Leo XIV declines to credit himself for White Sox playoff return - AP News",
-      "headline_source": "AP News",
-      "headline_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPa1p0Y1IyN2ZyVmc0NTlEMEtpRHQzYVpteVlTTU92cUxubGZaMTA5N1lFTWktaDZaTmM2dGs3dVdZbGd5dnlvRDBzZHBnR1NrZVdVM2Y2Rk9kQW80MWhLajhnOFMxNk9fZ19DakVUR0NlYXdlSGNkZUJTM0d6Y0t1UE0wSzBOUXJxV3NObUNnZDBoVjd3alFacm9vSV8ySEtwejUtVA?oc=5"
+      "surge": 0.8,
+      "sentiment_mean": -0.125,
+      "headline": "12 Best White Elephant Gifts, Plus a Prank Box to Put Them In (2026)",
+      "headline_source": "Wired",
+      "headline_url": "https://www.wired.com/gallery/best-white-elephant-gifts-2026/"
     }
   ],
   "hours_since_fetch": 0.0
