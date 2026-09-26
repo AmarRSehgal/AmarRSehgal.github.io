@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T08:00:12.000190+00:00",
+  "generated_at": "2026-09-26T09:00:10.810513+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -19,69 +19,17 @@
       "cost_bps": 26.0
     },
     {
-      "base": "NIGHT",
+      "base": "ONE",
       "type": "perp-perp",
-      "long_venue": "Coinbase",
-      "short_venue": "Gate",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 23,
-      "scans": 24,
-      "net_apr": 2179.89,
-      "net_at_hold": 1.99077,
-      "cost_bps": 35.09
-    },
-    {
-      "base": "NIGHT",
-      "type": "perp-perp",
-      "long_venue": "Coinbase",
+      "long_venue": "Binance",
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 1998.74,
-      "net_at_hold": 1.82533,
-      "cost_bps": 50.97
-    },
-    {
-      "base": "NIGHT",
-      "type": "perp-perp",
-      "long_venue": "Coinbase",
-      "short_venue": "OKX",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 23,
-      "scans": 24,
-      "net_apr": 1771.08,
-      "net_at_hold": 0.80871,
-      "cost_bps": 35.55
-    },
-    {
-      "base": "NIGHT",
-      "type": "perp-perp",
-      "long_venue": "Coinbase",
-      "short_venue": "KuCoin",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 23,
-      "scans": 24,
-      "net_apr": 1733.17,
-      "net_at_hold": 0.7914,
-      "cost_bps": 38.0
-    },
-    {
-      "base": "NIGHT",
-      "type": "perp-perp",
-      "long_venue": "Coinbase",
-      "short_venue": "Bitget",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 23,
-      "scans": 24,
-      "net_apr": 1707.25,
-      "net_at_hold": 0.77957,
-      "cost_bps": 39.18
+      "net_apr": 740.41,
+      "net_at_hold": 0.67617,
+      "cost_bps": 38.11
     },
     {
       "base": "PENGU",
@@ -97,17 +45,69 @@
       "cost_bps": 33.96
     },
     {
-      "base": "ONE",
+      "base": "NIGHT",
       "type": "perp-perp",
-      "long_venue": "Binance",
+      "long_venue": "Coinbase",
+      "short_venue": "Gate",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 22,
+      "scans": 24,
+      "net_apr": 2164.81,
+      "net_at_hold": 1.977,
+      "cost_bps": 35.08
+    },
+    {
+      "base": "NIGHT",
+      "type": "perp-perp",
+      "long_venue": "Coinbase",
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 22,
       "scans": 24,
-      "net_apr": 793.33,
-      "net_at_hold": 0.72451,
-      "cost_bps": 38.96
+      "net_apr": 1998.15,
+      "net_at_hold": 1.82479,
+      "cost_bps": 51.02
+    },
+    {
+      "base": "NIGHT",
+      "type": "perp-perp",
+      "long_venue": "Coinbase",
+      "short_venue": "OKX",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 22,
+      "scans": 24,
+      "net_apr": 1770.8,
+      "net_at_hold": 0.80859,
+      "cost_bps": 35.91
+    },
+    {
+      "base": "NIGHT",
+      "type": "perp-perp",
+      "long_venue": "Coinbase",
+      "short_venue": "KuCoin",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 22,
+      "scans": 24,
+      "net_apr": 1733.17,
+      "net_at_hold": 0.7914,
+      "cost_bps": 38.0
+    },
+    {
+      "base": "NIGHT",
+      "type": "perp-perp",
+      "long_venue": "Coinbase",
+      "short_venue": "Bitget",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 22,
+      "scans": 24,
+      "net_apr": 1707.8,
+      "net_at_hold": 0.77982,
+      "cost_bps": 39.16
     }
   ]
 }
