@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-26T01:24:41.481291+00:00",
+  "generated_at": "2026-09-26T02:24:37.930908+00:00",
   "window_hours": 24,
-  "articles_in_window": 2221,
+  "articles_in_window": 2199,
   "collection_days": 27,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,14 +10,25 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 310,
+      "articles": 306,
       "sources": 40,
       "sentiment_direction": "mixed",
-      "surge": 0.9,
-      "sentiment_mean": 0.038,
-      "headline": "Trump Proposes $810 Million in Education and Health Cuts, Defying Congress",
-      "headline_source": "NYT Politics",
-      "headline_url": "https://www.nytimes.com/2026/09/25/us/politics/white-house-rescissions-education-and-health-funds.html"
+      "surge": 0.89,
+      "sentiment_mean": 0.035,
+      "headline": "Trump cancels nearly $1 billion in spending, a move some lawmakers called illegal",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/news/trump-cancels-billion-spending-pocket-rescission/"
+    },
+    {
+      "term": "president",
+      "articles": 171,
+      "sources": 31,
+      "sentiment_direction": "mixed",
+      "surge": 0.92,
+      "sentiment_mean": 0.116,
+      "headline": "Lumentum president Wupen Yuen sells $928k in company stock",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/insider-trading-news/lumentum-president-wupen-yuen-sells-928k-in-company-stock-93CH-4918378"
     },
     {
       "term": "house",
@@ -25,21 +36,21 @@
       "sources": 31,
       "sentiment_direction": "mixed",
       "surge": 0.79,
-      "sentiment_mean": 0.087,
-      "headline": "White House blocks CNN from Air Force One trip, Washington Post reports",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/white-house-blocks-cnn-from-air-force-one-trip-washington-post-reports-4918336"
+      "sentiment_mean": 0.075,
+      "headline": "White House blocks CNN from Air Force One in latest escalation with news media",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/us-news/2026/sep/25/white-house-cnn-air-force-one"
     },
     {
-      "term": "president",
-      "articles": 171,
+      "term": "government",
+      "articles": 94,
       "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 0.92,
-      "sentiment_mean": 0.126,
-      "headline": "Transcript: Iranian President Masoud Pezeshkian on \"Face the Nation with Margaret Brennan\"",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/news/transcript-iranian-president-masoud-pezeshkian-face-the-nation-transcript-09-27-2026/"
+      "surge": 1.5,
+      "sentiment_mean": -0.049,
+      "headline": "OpenAI bots meddled with US government agencies, including SEC and Census",
+      "headline_source": "Reddit r/wallstreetbets",
+      "headline_url": "https://www.reddit.com/r/wallstreetbets/comments/1wqeos2/openai_bots_meddled_with_us_government_agencies/"
     },
     {
       "term": "million",
@@ -47,51 +58,40 @@
       "sources": 29,
       "sentiment_direction": "mixed",
       "surge": 1.04,
-      "sentiment_mean": 0.052,
-      "headline": "Trump Proposes $810 Million in Education and Health Cuts, Defying Congress",
-      "headline_source": "NYT Politics",
-      "headline_url": "https://www.nytimes.com/2026/09/25/us/politics/white-house-rescissions-education-and-health-funds.html"
+      "sentiment_mean": 0.048,
+      "headline": "TikTok settles lawsuit over youth safety concerns for at least $100 million",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/news/tiktok-alabama-youth-safety-lawsuit-settlement/"
     },
     {
       "term": "companies",
       "articles": 37,
       "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 1.12,
-      "sentiment_mean": -0.125,
-      "headline": "President Lula bans betting companies from operating in Brazil from 6 October",
-      "headline_source": "Reddit r/worldnews",
-      "headline_url": "https://www.reddit.com/r/worldnews/comments/1wqc22c/president_lula_bans_betting_companies_from/"
+      "surge": 1.15,
+      "sentiment_mean": -0.136,
+      "headline": "BofA explains how telecom companies can evolve to be AI winners",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/stock-market-news/bofa-explains-how-telecom-companies-can-evolve-to-be-ai-winners-4918374"
     },
     {
-      "term": "government",
-      "articles": 95,
+      "term": "court",
+      "articles": 105,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 1.53,
-      "sentiment_mean": -0.037,
-      "headline": "Pro-Imran Khan rally delayed amid government closures",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/9/26/pro-imran-khan-rally-delayed-amid-government-closures?traffic_source=rss"
-    },
-    {
-      "term": "data",
-      "articles": 65,
-      "sources": 28,
-      "sentiment_direction": "mixed",
-      "surge": 1.0,
-      "sentiment_mean": 0.009,
-      "headline": "'Extremely sensitive medical data' for FBI agents among hacked records: Report",
-      "headline_source": "ABC News",
-      "headline_url": "https://abcnews.com/Politics/extremely-sensitive-medical-data-fbi-agents-hacked-records/story?id=136765245"
+      "surge": 2.07,
+      "sentiment_mean": 0.09,
+      "headline": "Supreme Court allows use of database to review voter rolls",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/supreme-court-allows-use-of-database-to-review-voter-rolls/"
     },
     {
       "term": "home",
-      "articles": 59,
+      "articles": 58,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 1.07,
-      "sentiment_mean": -0.119,
+      "surge": 1.04,
+      "sentiment_mean": -0.094,
       "headline": "Photos offer a glimpse inside Argentina disability care home Pope Leo XIV will visit in November - AP News",
       "headline_source": "AP News",
       "headline_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOcTB3VUxGYkpjMDRTR1hMMHBNYzR1M1c0VmtWQi14UjA3U1VxaF93UlJFcHZuNC1mLVBUY0ZOVlNBVjJZSDl1ajZ6czN5bzhmaXNmSTBrWHpCWWVsam5RVW51TE5QZWtTOTZaYk43b0NXV0M5a0hxaXdTX1YybF81RVJNbDN3NTYyU2ltamRtNHE0SUdBb3F2cUpQMmRPVGRGTVZZT0ppWV9abTZTSjRtTEZMR09TVFp4R3VxcnBtTG44T251Nkg4U013dw?oc=5"
