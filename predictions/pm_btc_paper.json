@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T00:34:49.997716+00:00",
+  "generated_at": "2026-09-26T13:20:43.251433+00:00",
   "experiment": "Polymarket BTC 5-minute binaries: taker v1 vs passive makers",
   "venue": "Polymarket",
   "paper": true,
@@ -7,51 +7,51 @@
   "unit": "window",
   "min_units_for_verdict": 200,
   "status": "collecting",
-  "headline": "Collecting: 40 of 200 settled windows before any arm is scored. Numbers below are running totals, not results.",
+  "headline": "Collecting: 113 of 200 settled windows before any arm is scored. Numbers below are running totals, not results.",
   "arms": [
     {
       "name": "taker_v1",
       "role": "control",
       "description": "The original tool, unchanged: buys the ask when N(d2) beats ask + taker fee, polling REST every 3s.",
-      "units": 74,
-      "active_units": 65,
-      "fills": 716,
-      "size": 716.0,
-      "pnl": -44.34,
-      "pnl_per_unit": -0.5992,
+      "units": 147,
+      "active_units": 138,
+      "fills": 1593,
+      "size": 1593.0,
+      "pnl": -55.17,
+      "pnl_per_unit": -0.3753,
       "pnl_per_unit_ci": [
-        -1.4041,
-        0.2433
+        -1.0736,
+        0.38
       ],
-      "pnl_per_size_c": -6.193,
-      "roi": -0.1402,
-      "max_drawdown": 50.02,
+      "pnl_per_size_c": -3.463,
+      "roi": -0.0818,
+      "max_drawdown": 59.52,
       "edge_at_fill_c": null,
       "markouts_c": null,
-      "fees": 10.9
+      "fees": 23.78
     },
     {
       "name": "maker_mid",
       "role": "treatment",
       "description": "Rests quotes around the Polymarket mid. No outside information -- measures what passive quoting alone is worth.",
-      "units": 40,
-      "active_units": 37,
-      "fills": 173,
-      "size": 777.7,
-      "pnl": -44.56,
-      "pnl_per_unit": -1.1139,
+      "units": 113,
+      "active_units": 102,
+      "fills": 552,
+      "size": 2459.1,
+      "pnl": -147.24,
+      "pnl_per_unit": -1.303,
       "pnl_per_unit_ci": [
-        -1.9251,
-        -0.3119
+        -1.7733,
+        -0.848
       ],
-      "pnl_per_size_c": -5.729,
-      "roi": -0.1184,
-      "max_drawdown": 45.21,
-      "edge_at_fill_c": 8.514,
+      "pnl_per_size_c": -5.987,
+      "roi": -0.116,
+      "max_drawdown": 147.24,
+      "edge_at_fill_c": 6.817,
       "markouts_c": {
-        "5": -5.418,
-        "30": -2.763,
-        "60": -2.671
+        "5": -4.719,
+        "30": -4.563,
+        "60": -4.714
       },
       "fees": 0.0
     },
@@ -59,24 +59,24 @@
       "name": "maker_model",
       "role": "treatment",
       "description": "Rests quotes around the N(d2) model price.",
-      "units": 40,
-      "active_units": 36,
-      "fills": 147,
-      "size": 644.3,
-      "pnl": 31.45,
-      "pnl_per_unit": 0.7863,
+      "units": 113,
+      "active_units": 103,
+      "fills": 418,
+      "size": 1875.0,
+      "pnl": -10.28,
+      "pnl_per_unit": -0.091,
       "pnl_per_unit_ci": [
-        -0.2118,
-        1.8567
+        -0.7082,
+        0.5714
       ],
-      "pnl_per_size_c": 4.882,
-      "roi": 0.1215,
-      "max_drawdown": 7.47,
-      "edge_at_fill_c": 7.924,
+      "pnl_per_size_c": -0.548,
+      "roi": -0.0116,
+      "max_drawdown": 64.35,
+      "edge_at_fill_c": 7.516,
       "markouts_c": {
-        "5": -0.622,
-        "30": 1.01,
-        "60": -0.658
+        "5": -2.127,
+        "30": -3.007,
+        "60": -2.959
       },
       "fees": 0.0
     },
@@ -84,24 +84,24 @@
       "name": "maker_anchored",
       "role": "treatment",
       "description": "Rests quotes around the Polymarket mid moved by the spot-implied change since its recent average.",
-      "units": 40,
-      "active_units": 31,
-      "fills": 151,
-      "size": 679.5,
-      "pnl": -1.71,
-      "pnl_per_unit": -0.0429,
+      "units": 113,
+      "active_units": 99,
+      "fills": 477,
+      "size": 2134.0,
+      "pnl": -74.36,
+      "pnl_per_unit": -0.6581,
       "pnl_per_unit_ci": [
-        -0.9056,
-        0.8422
+        -1.1684,
+        -0.1539
       ],
-      "pnl_per_size_c": -0.252,
-      "roi": -0.0055,
-      "max_drawdown": 20.58,
-      "edge_at_fill_c": 8.214,
+      "pnl_per_size_c": -3.485,
+      "roi": -0.0673,
+      "max_drawdown": 83.5,
+      "edge_at_fill_c": 7.565,
       "markouts_c": {
-        "5": -1.712,
-        "30": 0.757,
-        "60": 0.653
+        "5": -2.744,
+        "30": -3.328,
+        "60": -3.062
       },
       "fees": 0.0
     }
@@ -111,10 +111,10 @@
       "treatment": "maker_mid",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.2012,
+      "diff": -0.884,
       "ci": [
-        -2.0688,
-        1.4787
+        -2.0215,
+        0.1836
       ],
       "verdict": "collecting"
     },
@@ -122,10 +122,10 @@
       "treatment": "maker_model",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 1.699,
+      "diff": 0.328,
       "ci": [
-        0.4806,
-        2.8901
+        -0.7059,
+        1.3067
       ],
       "verdict": "collecting"
     },
@@ -133,10 +133,10 @@
       "treatment": "maker_anchored",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.8699,
+      "diff": -0.2391,
       "ci": [
-        -0.983,
-        2.6231
+        -1.3798,
+        0.8423
       ],
       "verdict": "collecting"
     }
@@ -145,16 +145,31 @@
     {
       "date": "2026-09-25",
       "pnl": {
-        "taker_v1": -44.33,
-        "maker_mid": -44.56,
-        "maker_model": 31.45,
-        "maker_anchored": -1.71
+        "taker_v1": -35.02,
+        "maker_mid": -52.06,
+        "maker_model": 32.85,
+        "maker_anchored": -5.56
       },
       "units": {
-        "taker_v1": 74,
-        "maker_mid": 40,
-        "maker_model": 40,
-        "maker_anchored": 40
+        "taker_v1": 76,
+        "maker_mid": 42,
+        "maker_model": 42,
+        "maker_anchored": 42
+      }
+    },
+    {
+      "date": "2026-09-26",
+      "pnl": {
+        "taker_v1": -20.14,
+        "maker_mid": -95.17,
+        "maker_model": -43.12,
+        "maker_anchored": -68.79
+      },
+      "units": {
+        "taker_v1": 71,
+        "maker_mid": 71,
+        "maker_model": 71,
+        "maker_anchored": 71
       }
     }
   ],
