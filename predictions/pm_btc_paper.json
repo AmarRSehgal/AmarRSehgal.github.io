@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T20:42:32.493371+00:00",
+  "generated_at": "2026-09-26T00:34:49.997716+00:00",
   "experiment": "Polymarket BTC 5-minute binaries: taker v1 vs passive makers",
   "venue": "Polymarket",
   "paper": true,
@@ -7,51 +7,51 @@
   "unit": "window",
   "min_units_for_verdict": 200,
   "status": "collecting",
-  "headline": "Collecting: 28 of 200 settled windows before any arm is scored. Numbers below are running totals, not results.",
+  "headline": "Collecting: 40 of 200 settled windows before any arm is scored. Numbers below are running totals, not results.",
   "arms": [
     {
       "name": "taker_v1",
       "role": "control",
       "description": "The original tool, unchanged: buys the ask when N(d2) beats ask + taker fee, polling REST every 3s.",
-      "units": 28,
-      "active_units": 19,
-      "fills": 153,
-      "size": 153.0,
-      "pnl": -13.74,
-      "pnl_per_unit": -0.4906,
+      "units": 74,
+      "active_units": 65,
+      "fills": 716,
+      "size": 716.0,
+      "pnl": -44.34,
+      "pnl_per_unit": -0.5992,
       "pnl_per_unit_ci": [
-        -1.3112,
-        0.3105
+        -1.4041,
+        0.2433
       ],
-      "pnl_per_size_c": -8.979,
-      "roi": -0.1584,
-      "max_drawdown": 15.2,
+      "pnl_per_size_c": -6.193,
+      "roi": -0.1402,
+      "max_drawdown": 50.02,
       "edge_at_fill_c": null,
       "markouts_c": null,
-      "fees": 2.38
+      "fees": 10.9
     },
     {
       "name": "maker_mid",
       "role": "treatment",
       "description": "Rests quotes around the Polymarket mid. No outside information -- measures what passive quoting alone is worth.",
-      "units": 28,
-      "active_units": 23,
-      "fills": 136,
-      "size": 567.9,
-      "pnl": -24.42,
-      "pnl_per_unit": -0.872,
+      "units": 40,
+      "active_units": 37,
+      "fills": 173,
+      "size": 777.7,
+      "pnl": -44.56,
+      "pnl_per_unit": -1.1139,
       "pnl_per_unit_ci": [
-        -1.7414,
-        -0.0836
+        -1.9251,
+        -0.3119
       ],
-      "pnl_per_size_c": -4.3,
-      "roi": -0.0858,
-      "max_drawdown": 25.57,
-      "edge_at_fill_c": 7.724,
+      "pnl_per_size_c": -5.729,
+      "roi": -0.1184,
+      "max_drawdown": 45.21,
+      "edge_at_fill_c": 8.514,
       "markouts_c": {
-        "5": -2.783,
-        "30": -3.802,
-        "60": -4.794
+        "5": -5.418,
+        "30": -2.763,
+        "60": -2.671
       },
       "fees": 0.0
     },
@@ -59,68 +59,50 @@
       "name": "maker_model",
       "role": "treatment",
       "description": "Rests quotes around the N(d2) model price.",
-      "units": 28,
-      "active_units": 25,
-      "fills": 150,
-      "size": 689.1,
-      "pnl": 0.33,
-      "pnl_per_unit": 0.0118,
+      "units": 40,
+      "active_units": 36,
+      "fills": 147,
+      "size": 644.3,
+      "pnl": 31.45,
+      "pnl_per_unit": 0.7863,
       "pnl_per_unit_ci": [
-        -0.9684,
-        0.9846
+        -0.2118,
+        1.8567
       ],
-      "pnl_per_size_c": 0.048,
-      "roi": 0.001,
-      "max_drawdown": 11.7,
-      "edge_at_fill_c": 7.506,
+      "pnl_per_size_c": 4.882,
+      "roi": 0.1215,
+      "max_drawdown": 7.47,
+      "edge_at_fill_c": 7.924,
       "markouts_c": {
-        "5": -1.467,
-        "30": -1.146,
-        "60": 0.357
+        "5": -0.622,
+        "30": 1.01,
+        "60": -0.658
       },
       "fees": 0.0
     },
     {
       "name": "maker_anchored",
       "role": "treatment",
-      "description": "Rests quotes around the Polymarket mid moved by the Binance-implied change since its recent average.",
-      "units": 28,
-      "active_units": 23,
-      "fills": 163,
-      "size": 716.3,
-      "pnl": 4.3,
-      "pnl_per_unit": 0.1537,
+      "description": "Rests quotes around the Polymarket mid moved by the spot-implied change since its recent average.",
+      "units": 40,
+      "active_units": 31,
+      "fills": 151,
+      "size": 679.5,
+      "pnl": -1.71,
+      "pnl_per_unit": -0.0429,
       "pnl_per_unit_ci": [
-        -0.738,
-        1.0311
+        -0.9056,
+        0.8422
       ],
-      "pnl_per_size_c": 0.601,
-      "roi": 0.0121,
-      "max_drawdown": 7.3,
-      "edge_at_fill_c": 7.537,
+      "pnl_per_size_c": -0.252,
+      "roi": -0.0055,
+      "max_drawdown": 20.58,
+      "edge_at_fill_c": 8.214,
       "markouts_c": {
-        "5": -1.521,
-        "30": -0.327,
-        "60": 0.84
+        "5": -1.712,
+        "30": 0.757,
+        "60": 0.653
       },
-      "fees": 0.0
-    },
-    {
-      "name": "maker_composite",
-      "role": "treatment",
-      "description": "As maker_anchored, with BTC a spread-weighted Binance + OKX mid (added 2026-09-25, after the other arms; compared on the windows it ran).",
-      "units": 1,
-      "active_units": 0,
-      "fills": 0,
-      "size": 0.0,
-      "pnl": 0.0,
-      "pnl_per_unit": 0.0,
-      "pnl_per_unit_ci": null,
-      "pnl_per_size_c": null,
-      "roi": null,
-      "max_drawdown": 0.0,
-      "edge_at_fill_c": null,
-      "markouts_c": null,
       "fees": 0.0
     }
   ],
@@ -129,10 +111,10 @@
       "treatment": "maker_mid",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.3814,
+      "diff": -0.2012,
       "ci": [
-        -1.4156,
-        0.6556
+        -2.0688,
+        1.4787
       ],
       "verdict": "collecting"
     },
@@ -140,10 +122,10 @@
       "treatment": "maker_model",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.5025,
+      "diff": 1.699,
       "ci": [
-        -0.5668,
-        1.5782
+        0.4806,
+        2.8901
       ],
       "verdict": "collecting"
     },
@@ -151,19 +133,11 @@
       "treatment": "maker_anchored",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.6444,
+      "diff": 0.8699,
       "ci": [
-        -0.4609,
-        1.7431
+        -0.983,
+        2.6231
       ],
-      "verdict": "collecting"
-    },
-    {
-      "treatment": "maker_composite",
-      "control": "taker_v1",
-      "metric": "pnl_per_window",
-      "diff": 0.0,
-      "ci": null,
       "verdict": "collecting"
     }
   ],
@@ -171,18 +145,16 @@
     {
       "date": "2026-09-25",
       "pnl": {
-        "taker_v1": -13.73,
-        "maker_mid": -24.42,
-        "maker_model": 0.33,
-        "maker_anchored": 4.3,
-        "maker_composite": 0.0
+        "taker_v1": -44.33,
+        "maker_mid": -44.56,
+        "maker_model": 31.45,
+        "maker_anchored": -1.71
       },
       "units": {
-        "taker_v1": 28,
-        "maker_mid": 28,
-        "maker_model": 28,
-        "maker_anchored": 28,
-        "maker_composite": 1
+        "taker_v1": 74,
+        "maker_mid": 40,
+        "maker_model": 40,
+        "maker_anchored": 40
       }
     }
   ],
@@ -192,6 +164,7 @@
     "These were written before the first paper fill (2026-09-25) and are not moved after seeing results."
   ],
   "caveats": [
+    "Every maker reads BTC as a spread-weighted Binance + OKX mid; the taker keeps its original Binance feed. Maker windows are counted from 2026-09-25, when they moved to the composite.",
     "Paper fills. A resting order joins the back of its price level, goes live 0.4s after it is sent, and fills only when a real print reaches it; a cancel takes 0.4s and can still be filled meanwhile.",
     "Maker rebates are ignored and the taker pays the published fee, so the maker side is understated.",
     "Only prints on the websocket move the paper queue; hidden or cross-matched liquidity is not modelled.",
