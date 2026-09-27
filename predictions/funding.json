@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T07:00:09.712460+00:00",
+  "generated_at": "2026-09-27T08:00:10.853522+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -29,7 +29,7 @@
       "scans": 24,
       "net_apr": 1600.75,
       "net_at_hold": 1.46187,
-      "cost_bps": 40.45
+      "cost_bps": 40.6
     },
     {
       "base": "ONE",
@@ -40,9 +40,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 764.28,
-      "net_at_hold": 0.69797,
-      "cost_bps": 35.8
+      "net_apr": 757.03,
+      "net_at_hold": 0.69135,
+      "cost_bps": 36.0
     },
     {
       "base": "ONE",
@@ -53,9 +53,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 675.12,
-      "net_at_hold": 0.61655,
-      "cost_bps": 37.77
+      "net_apr": 588.87,
+      "net_at_hold": 0.53778,
+      "cost_bps": 37.78
     },
     {
       "base": "ONE",
@@ -68,7 +68,20 @@
       "scans": 24,
       "net_apr": 453.9,
       "net_at_hold": 0.41452,
-      "cost_bps": 33.73
+      "cost_bps": 34.12
+    },
+    {
+      "base": "2Z",
+      "type": "perp-perp",
+      "long_venue": "Binance",
+      "short_venue": "Lighter",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 245.79,
+      "net_at_hold": 0.22446,
+      "cost_bps": 20.0
     },
     {
       "base": "STG",
@@ -79,35 +92,22 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 194.83,
-      "net_at_hold": 0.17793,
+      "net_apr": 194.91,
+      "net_at_hold": 0.178,
       "cost_bps": 30.73
     },
     {
-      "base": "PENGU",
+      "base": "2Z",
       "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Coinbase",
+      "long_venue": "OKX",
+      "short_venue": "Lighter",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 137.97,
-      "net_at_hold": 0.126,
-      "cost_bps": 26.0
-    },
-    {
-      "base": "ONE",
-      "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 23,
-      "scans": 24,
-      "net_apr": 519.4,
-      "net_at_hold": 0.47434,
-      "cost_bps": 35.76
+      "net_apr": 180.21,
+      "net_at_hold": 0.16457,
+      "cost_bps": 17.91
     }
   ]
 }
