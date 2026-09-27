@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T11:00:08.726253+00:00",
+  "generated_at": "2026-09-27T12:00:11.123688+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1478.91,
-      "net_at_hold": 1.3506,
+      "net_apr": 1207.35,
+      "net_at_hold": 1.1026,
       "cost_bps": 36.0
     },
     {
@@ -27,8 +27,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1415.42,
-      "net_at_hold": 1.29262,
+      "net_apr": 1165.95,
+      "net_at_hold": 1.0648,
       "cost_bps": 40.67
     },
     {
@@ -40,22 +40,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 726.85,
-      "net_at_hold": 0.66379,
-      "cost_bps": 37.18
-    },
-    {
-      "base": "ONE",
-      "type": "perp-perp",
-      "long_venue": "KuCoin",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 475.51,
-      "net_at_hold": 0.43426,
-      "cost_bps": 37.78
+      "net_apr": 723.13,
+      "net_at_hold": 0.66039,
+      "cost_bps": 38.3
     },
     {
       "base": "ONE",
@@ -68,7 +55,20 @@
       "scans": 24,
       "net_apr": 453.9,
       "net_at_hold": 0.41452,
-      "cost_bps": 34.12
+      "cost_bps": 34.29
+    },
+    {
+      "base": "ONE",
+      "type": "perp-perp",
+      "long_venue": "KuCoin",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 452.46,
+      "net_at_hold": 0.4132,
+      "cost_bps": 37.78
     },
     {
       "base": "STG",
@@ -84,19 +84,6 @@
       "cost_bps": 30.73
     },
     {
-      "base": "2Z",
-      "type": "perp-perp",
-      "long_venue": "OKX",
-      "short_venue": "Lighter",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 174.28,
-      "net_at_hold": 0.15916,
-      "cost_bps": 17.9
-    },
-    {
       "base": "PENGU",
       "type": "perp-perp",
       "long_venue": "Lighter",
@@ -105,9 +92,22 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 127.46,
-      "net_at_hold": 0.1164,
+      "net_apr": 122.2,
+      "net_at_hold": 0.1116,
       "cost_bps": 26.0
+    },
+    {
+      "base": "2Z",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "Lighter",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 23,
+      "scans": 24,
+      "net_apr": 234.75,
+      "net_at_hold": 0.21439,
+      "cost_bps": 17.93
     }
   ]
 }
