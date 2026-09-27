@@ -1,23 +1,10 @@
 {
-  "generated_at": "2026-09-26T23:00:10.833312+00:00",
+  "generated_at": "2026-09-27T00:00:11.076296+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
-    {
-      "base": "ONE",
-      "type": "perp-perp",
-      "long_venue": "KuCoin",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 734.76,
-      "net_at_hold": 0.67101,
-      "cost_bps": 37.15
-    },
     {
       "base": "ONE",
       "type": "perp-perp",
@@ -27,9 +14,22 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 734.5,
-      "net_at_hold": 0.67077,
+      "net_apr": 726.85,
+      "net_at_hold": 0.66379,
       "cost_bps": 35.73
+    },
+    {
+      "base": "ONE",
+      "type": "perp-perp",
+      "long_venue": "KuCoin",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 694.47,
+      "net_at_hold": 0.63422,
+      "cost_bps": 37.15
     },
     {
       "base": "ONE",
@@ -40,8 +40,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 457.34,
-      "net_at_hold": 0.41766,
+      "net_apr": 433.72,
+      "net_at_hold": 0.39609,
       "cost_bps": 32.84
     },
     {
@@ -53,22 +53,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 145.42,
-      "net_at_hold": 0.1328,
+      "net_apr": 144.1,
+      "net_at_hold": 0.1316,
       "cost_bps": 26.0
-    },
-    {
-      "base": "ONE",
-      "type": "perp-perp",
-      "long_venue": "Crypto.com",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 23,
-      "scans": 24,
-      "net_apr": 1495.56,
-      "net_at_hold": 1.36581,
-      "cost_bps": 40.51
     },
     {
       "base": "ONE",
@@ -84,6 +71,19 @@
       "cost_bps": 35.76
     },
     {
+      "base": "ONE",
+      "type": "perp-perp",
+      "long_venue": "Crypto.com",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 22,
+      "scans": 24,
+      "net_apr": 1559.32,
+      "net_at_hold": 1.42404,
+      "cost_bps": 40.35
+    },
+    {
       "base": "TOWNS",
       "type": "perp-perp",
       "long_venue": "Aster",
@@ -92,22 +92,22 @@
       "min_hold_h": 8,
       "hits": 22,
       "scans": 24,
-      "net_apr": 958.45,
-      "net_at_hold": 0.8753,
-      "cost_bps": 51.79
+      "net_apr": 973.15,
+      "net_at_hold": 0.88872,
+      "cost_bps": 53.65
     },
     {
-      "base": "AERO",
+      "base": "ONE",
       "type": "perp-perp",
-      "long_venue": "Aster",
-      "short_venue": "Coinbase",
+      "long_venue": "Bitget",
+      "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 22,
       "scans": 24,
-      "net_apr": 377.08,
-      "net_at_hold": 0.34436,
-      "cost_bps": 38.92
+      "net_apr": 257.28,
+      "net_at_hold": 0.23496,
+      "cost_bps": 35.43
     }
   ]
 }
