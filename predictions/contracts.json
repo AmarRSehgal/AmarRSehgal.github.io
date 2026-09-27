@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-26T15:00:49.873254+00:00",
-  "snapshot_date": "2026-09-26",
-  "snapshots": 27,
-  "observing_snapshots": 25,
+  "generated_at": "2026-09-27T15:00:28.403693+00:00",
+  "snapshot_date": "2026-09-27",
+  "snapshots": 28,
+  "observing_snapshots": 26,
   "days_since_new_data": 0,
-  "notices_tracked": 82531,
+  "notices_tracked": 82551,
   "lanes": [
     {
       "office": "W6QM MICC-FT DRUM",
@@ -53,9 +53,9 @@
       "cadence_days": 12,
       "cadence_source": "dates",
       "regularity": 0.75,
-      "span_days": 378,
-      "next_expected": "2026-09-30",
-      "open_deadline": "",
+      "span_days": 379,
+      "next_expected": "2026-10-01",
+      "open_deadline": "2026-09-28",
       "states": [
         "CA"
       ],
@@ -159,15 +159,6 @@
   ],
   "open": [
     {
-      "title": "NSAP Building 45 Office of Counsel Furniture & Relocation",
-      "office": "DCSO PHILADELPHIA",
-      "group": "Furniture",
-      "state": "PA",
-      "deadline": "2026-09-26",
-      "access": "OPEN",
-      "link": "https://sam.gov/opp/785f01ab56e84d78a508956c483a3584/view"
-    },
-    {
       "title": "5 CONS Desk Refresh - Minot AFB, ND",
       "office": "FA4528  5 CONS",
       "group": "Furniture",
@@ -211,6 +202,15 @@
       "deadline": "2026-09-28",
       "access": "small-biz",
       "link": "https://sam.gov/opp/a8e88381420c41a78a40b496a962952e/view"
+    },
+    {
+      "title": "Inyo NF Hay Purchase",
+      "office": "USDA FOREST SERVICE",
+      "group": "Agriculture supplies",
+      "state": "CA",
+      "deadline": "2026-09-28",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/ab12534dbe724c1ebf894c13d0d9829d/view"
     }
   ]
 }
