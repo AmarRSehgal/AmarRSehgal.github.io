@@ -1,10 +1,23 @@
 {
-  "generated_at": "2026-09-27T03:00:11.640038+00:00",
+  "generated_at": "2026-09-27T04:00:10.910933+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
+    {
+      "base": "TOWNS",
+      "type": "perp-perp",
+      "long_venue": "Aster",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 973.15,
+      "net_at_hold": 0.88872,
+      "cost_bps": 53.65
+    },
     {
       "base": "ONE",
       "type": "perp-perp",
@@ -14,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 769.46,
-      "net_at_hold": 0.7027,
-      "cost_bps": 35.8
+      "net_apr": 752.39,
+      "net_at_hold": 0.68712,
+      "cost_bps": 36.0
     },
     {
       "base": "ONE",
@@ -27,9 +40,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 694.47,
-      "net_at_hold": 0.63422,
-      "cost_bps": 37.77
+      "net_apr": 708.86,
+      "net_at_hold": 0.64736,
+      "cost_bps": 37.97
     },
     {
       "base": "ONE",
@@ -40,9 +53,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 433.72,
-      "net_at_hold": 0.39609,
-      "cost_bps": 33.42
+      "net_apr": 381.24,
+      "net_at_hold": 0.34816,
+      "cost_bps": 33.73
     },
     {
       "base": "PENGU",
@@ -58,19 +71,6 @@
       "cost_bps": 26.0
     },
     {
-      "base": "TOWNS",
-      "type": "perp-perp",
-      "long_venue": "Aster",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 23,
-      "scans": 24,
-      "net_apr": 987.63,
-      "net_at_hold": 0.90194,
-      "cost_bps": 53.67
-    },
-    {
       "base": "ONE",
       "type": "perp-perp",
       "long_venue": "Binance",
@@ -81,7 +81,7 @@
       "scans": 24,
       "net_apr": 519.4,
       "net_at_hold": 0.47434,
-      "cost_bps": 35.77
+      "cost_bps": 36.17
     },
     {
       "base": "ONE",
@@ -103,10 +103,10 @@
       "short_venue": "Coinbase",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 20,
+      "hits": 21,
       "scans": 24,
-      "net_apr": 1869.16,
-      "net_at_hold": 1.707,
+      "net_apr": 1805.22,
+      "net_at_hold": 1.6486,
       "cost_bps": 36.0
     }
   ]
