@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-27T22:24:42.070105+00:00",
+  "generated_at": "2026-09-27T23:24:41.427249+00:00",
   "window_hours": 24,
-  "articles_in_window": 1600,
+  "articles_in_window": 1599,
   "collection_days": 28,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,25 +10,14 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 164,
+      "articles": 160,
       "sources": 36,
       "sentiment_direction": "negative",
-      "surge": 0.45,
-      "sentiment_mean": -0.173,
-      "headline": "Dario Amodei of Anthropic to Dine With Trump at White House",
-      "headline_source": "NYT Politics",
-      "headline_url": "https://www.nytimes.com/2026/09/27/us/politics/trump-amodei-anthropic-artificial-intelligence.html"
-    },
-    {
-      "term": "iran",
-      "articles": 83,
-      "sources": 31,
-      "sentiment_direction": "negative",
-      "surge": 0.71,
-      "sentiment_mean": -0.462,
-      "headline": "Trump expects Iran talks next week after rejecting seven-day truce proposal",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/middle-east/20260927-trump-expects-iran-talks-next-week-after-rejecting-seven-day-truce-proposal"
+      "surge": 0.44,
+      "sentiment_mean": -0.206,
+      "headline": "Trump Offered to Sell Arms to China, U.S. Ambassador Says",
+      "headline_source": "NYT World",
+      "headline_url": "https://www.nytimes.com/2026/09/27/us/politics/trump-weapons-sale-china.html"
     },
     {
       "term": "president",
@@ -36,32 +25,32 @@
       "sources": 30,
       "sentiment_direction": "negative",
       "surge": 0.48,
-      "sentiment_mean": -0.27,
+      "sentiment_mean": -0.275,
       "headline": "Serbia\u2019s Longtime President Aleksandar Vucic Resigns Post",
       "headline_source": "NYT World",
       "headline_url": "https://www.nytimes.com/2026/09/27/world/europe/serbia-president-aleksandar-vucicto-resigns.html"
     },
     {
-      "term": "used",
-      "articles": 60,
+      "term": "iran",
+      "articles": 84,
       "sources": 30,
       "sentiment_direction": "negative",
-      "surge": 2.08,
-      "sentiment_mean": -0.286,
+      "surge": 0.71,
+      "sentiment_mean": -0.485,
+      "headline": "Oil rebounds after Trump rejects Iran peace deal - Reuters",
+      "headline_source": "Reuters",
+      "headline_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOU3FBcU1hWkxSdzlSbHdGdkJEbDR0REJsckozLWtuZGRwbXJvNU1kVnFMendhelM2Q3plNUFlUm1yZTljZDFiMEQwZjVDcWt2X011c193RWUtWTVlcEE4bjBKSWtYZ1A5MnhXS2hUSlVCN0lPcjhTRmNBc2V4ZERrclRaVW45NUl0cmtsb1g2d0s3SFB5NDRPc0lnRzVSZHZ2S0E?oc=5"
+    },
+    {
+      "term": "used",
+      "articles": 61,
+      "sources": 30,
+      "sentiment_direction": "negative",
+      "surge": 2.14,
+      "sentiment_mean": -0.298,
       "headline": "5 held in UK for suspected plot to attack air base used by US",
       "headline_source": "Times of India",
       "headline_url": "https://timesofindia.indiatimes.com/world/uk/5-held-in-uk-for-suspected-plot-to-attack-air-base-used-by-us/articleshow/134525372.cms"
-    },
-    {
-      "term": "base",
-      "articles": 45,
-      "sources": 25,
-      "sentiment_direction": "negative",
-      "surge": 3.03,
-      "sentiment_mean": -0.762,
-      "headline": "Five arrested near UK RAF base over suspected explosives \u2018terror\u2019 plot",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/9/27/five-arrested-near-uk-raf-base-over-suspected-explosives-terror-plot?traffic_source=rss"
     },
     {
       "term": "government",
@@ -69,32 +58,43 @@
       "sources": 25,
       "sentiment_direction": "mixed",
       "surge": 0.59,
-      "sentiment_mean": -0.082,
+      "sentiment_mean": -0.069,
       "headline": "A Trump 2024 Campaign Ad Returns, Now Brought to You by The Government - The New York Times",
       "headline_source": "Google News Top",
       "headline_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQOXlqZWszQVhSYThHc0xrc1FNTGh4dmh6ZkllWmNWdUVkdk9xZjdRTDg3cnFyckQyYnpLMEh4NjVKMGlhN3pxZUpKQWNuRF9Cd1A3ZzRPUlJtQ3ptREZGWjNWblczSE8xVHQyU09Edm0tYUptYW9JSTVjWnVWOTdicDlCUEZrV2M?oc=5"
     },
     {
+      "term": "base",
+      "articles": 46,
+      "sources": 24,
+      "sentiment_direction": "negative",
+      "surge": 3.07,
+      "sentiment_mean": -0.779,
+      "headline": "Trump says men arrested in U.K. aimed to attack shared base",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/news/2026/09/28/world/trump-uk-attack-shared-base/"
+    },
+    {
       "term": "police",
-      "articles": 78,
+      "articles": 81,
       "sources": 23,
       "sentiment_direction": "negative",
-      "surge": 1.45,
-      "sentiment_mean": -0.841,
-      "headline": "3 people killed and 4 injured in shooting at Michigan strip club, police say",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/world/united-states-canada/article/3368979/3-people-killed-and-4-injured-shooting-michigan-strip-club-police-say?utm_source=rss_feed"
+      "surge": 1.51,
+      "sentiment_mean": -0.837,
+      "headline": "LPU protests: Over 2,000 police deployed after stone-pelting, vehicles set ablaze",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/india/lpu-unrest-over-2000-police-deployed-after-stone-pelting-vehicles-set-ablaze/articleshow/134528785.cms"
     },
     {
       "term": "minister",
-      "articles": 56,
+      "articles": 55,
       "sources": 22,
       "sentiment_direction": "negative",
-      "surge": 0.94,
-      "sentiment_mean": -0.21,
-      "headline": "A Transcript From The Times Interview with Prime Minister Mark Carney of Canada",
-      "headline_source": "NYT World",
-      "headline_url": "https://www.nytimes.com/2026/09/27/world/canada/mark-carney-interview-transcript.html"
+      "surge": 0.93,
+      "sentiment_mean": -0.229,
+      "headline": "German foreign minister sees no readiness for peace during first meeting with Russian counterpart since 2022",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1wrvf1f/german_foreign_minister_sees_no_readiness_for/"
     }
   ],
   "hours_since_fetch": 0.0
