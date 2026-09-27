@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-27T11:24:16.935324+00:00",
+  "generated_at": "2026-09-27T12:24:16.790939+00:00",
   "window_hours": 24,
-  "articles_in_window": 1446,
+  "articles_in_window": 1453,
   "collection_days": 28,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,92 +10,92 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 146,
+      "articles": 144,
       "sources": 34,
       "sentiment_direction": "mixed",
-      "surge": 0.4,
-      "sentiment_mean": -0.075,
-      "headline": "Iran \u2018miscalculating\u2019 by betting on midterms after 3-hour talks, Trump officials warn",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/politics/iran-miscalculating-betting-midterms-after-3-hour-talks-trump-officials-warn"
+      "surge": 0.39,
+      "sentiment_mean": -0.069,
+      "headline": "Bad language: profane Trump brings presidential swearing out into open",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/us-news/2026/sep/27/trump-swearing-president-bad-language"
     },
     {
       "term": "iran",
-      "articles": 67,
-      "sources": 30,
+      "articles": 65,
+      "sources": 29,
       "sentiment_direction": "negative",
-      "surge": 0.57,
-      "sentiment_mean": -0.352,
-      "headline": "Iran \u2018miscalculating\u2019 by betting on midterms after 3-hour talks, Trump officials warn",
+      "surge": 0.55,
+      "sentiment_mean": -0.366,
+      "headline": "UK police arrest 'explosive' suspects near US airbase, key to Iran war",
       "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/politics/iran-miscalculating-betting-midterms-after-3-hour-talks-trump-officials-warn"
+      "headline_url": "https://www.foxnews.com/world/uk-police-arrest-explosive-suspects-near-us-airbase-key-iran-war"
     },
     {
       "term": "president",
-      "articles": 59,
+      "articles": 57,
       "sources": 24,
       "sentiment_direction": "mixed",
-      "surge": 0.29,
-      "sentiment_mean": -0.086,
+      "surge": 0.28,
+      "sentiment_mean": -0.089,
       "headline": "TriplePoint president & CIO Sajal Srivastava sells $1.48m stock",
       "headline_source": "Investing.com News",
       "headline_url": "https://www.investing.com/news/insider-trading-news/triplepoint-president--cio-sajal-srivastava-sells-148m-stock-93CH-4918919"
     },
     {
-      "term": "country",
-      "articles": 37,
-      "sources": 22,
-      "sentiment_direction": "mixed",
-      "surge": 0.64,
-      "sentiment_mean": -0.085,
-      "headline": "Switzerland votes on country's neutrality",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/switzerland-votes-on-country-s-neutrality"
-    },
-    {
       "term": "police",
-      "articles": 69,
-      "sources": 21,
+      "articles": 72,
+      "sources": 22,
       "sentiment_direction": "negative",
-      "surge": 1.35,
-      "sentiment_mean": -0.855,
-      "headline": "7 teens swept up in police crackdown on bicycle-related offences in Tseung Kwan O",
+      "surge": 1.39,
+      "sentiment_mean": -0.856,
+      "headline": "South African police probe mining feud shooting, 27 dead as elections near",
       "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/hong-kong/transport/article/3368949/7-teens-swept-police-crackdown-bicycle-related-offences-tseung-kwan-o?utm_source=rss_feed"
-    },
-    {
-      "term": "house",
-      "articles": 41,
-      "sources": 20,
-      "sentiment_direction": "mixed",
-      "surge": 0.38,
-      "sentiment_mean": -0.091,
-      "headline": "Republicans pour money into dozens of US House races previously considered \u2019safe\u2019",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/republicans-pour-money-into-dozens-of-us-house-races-previously-considered-safe-4918910"
-    },
-    {
-      "term": "power",
-      "articles": 39,
-      "sources": 20,
-      "sentiment_direction": "mixed",
-      "surge": 0.81,
-      "sentiment_mean": 0.086,
-      "headline": "Plug Power CSO Benjamin Haycraft sells $428,300 in shares",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/insider-trading-news/plug-power-cso-benjamin-haycraft-sells-428300-in-shares-93CH-4918939"
+      "headline_url": "https://www.scmp.com/news/world/africa/article/3368959/south-african-police-probe-mining-feud-shooting-27-dead-elections-near?utm_source=rss_feed"
     },
     {
       "term": "city",
       "articles": 38,
       "sources": 20,
       "sentiment_direction": "negative",
-      "surge": 0.81,
+      "surge": 0.82,
       "sentiment_mean": -0.201,
       "headline": "Michigan man doxxed after exposing his city's booming Islamic surge takes defiant stand: 'Not gonna stop'",
       "headline_source": "Fox News",
       "headline_url": "https://www.foxnews.com/politics/michigan-man-doxxed-exposing-city-booming-islamic-surge-takes-defiant-stand-not-gonna-stop"
+    },
+    {
+      "term": "used",
+      "articles": 37,
+      "sources": 20,
+      "sentiment_direction": "negative",
+      "surge": 1.25,
+      "sentiment_mean": -0.24,
+      "headline": "Multiple arrests on suspicion of explosives offenses near U.K. base used by U.S. forces",
+      "headline_source": "NPR News",
+      "headline_url": "https://www.npr.org/2026/09/27/nx-s1-5982480/multiple-arrests-suspicion-explosives-offenses-uk-base-us-forces"
+    },
+    {
+      "term": "mass",
+      "articles": 50,
+      "sources": 19,
+      "sentiment_direction": "mixed",
+      "surge": 3.12,
+      "sentiment_mean": -0.039,
+      "headline": "27 killed in mass shootings in South Africa overnight",
+      "headline_source": "NYT World",
+      "headline_url": "https://www.nytimes.com/2026/09/27/world/africa/south-africa-mass-shootings-tavern.html"
+    },
+    {
+      "term": "rejects",
+      "articles": 41,
+      "sources": 19,
+      "sentiment_direction": "negative",
+      "surge": 3.11,
+      "sentiment_mean": -0.547,
+      "headline": "'Marriage doesn't advance age': HC rejects Muslim personal law defence in POCSO case",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/india/marriage-does-not-advance-a-childs-age-delhi-hc-rejects-muslim-personal-law-defence-in-pocso-case/articleshow/134518468.cms"
     }
   ],
-  "hours_since_fetch": 0.0
+  "hours_since_fetch": 0.02
 }
