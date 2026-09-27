@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-27T06:24:34.181824+00:00",
+  "generated_at": "2026-09-27T07:24:37.232208+00:00",
   "window_hours": 24,
-  "articles_in_window": 1398,
+  "articles_in_window": 1418,
   "collection_days": 28,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,36 +10,47 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 144,
-      "sources": 36,
+      "articles": 146,
+      "sources": 35,
       "sentiment_direction": "mixed",
-      "surge": 0.39,
-      "sentiment_mean": -0.063,
-      "headline": "Trump approves Ukraine production of Patriot missiles, Zelensky says",
-      "headline_source": "Reddit r/worldnews",
-      "headline_url": "https://www.reddit.com/r/worldnews/comments/1wrbot0/trump_approves_ukraine_production_of_patriot/"
+      "surge": 0.4,
+      "sentiment_mean": -0.047,
+      "headline": "Nicki Minaj urges young Americans to 'vote red' in 2026 midterms while doubling down on Trump support",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/politics/nicki-minaj-urges-young-americans-vote-red-2026-midterms-doubling-down-trump-support"
     },
     {
       "term": "iran",
-      "articles": 65,
-      "sources": 31,
+      "articles": 64,
+      "sources": 32,
       "sentiment_direction": "negative",
-      "surge": 0.56,
-      "sentiment_mean": -0.307,
+      "surge": 0.55,
+      "sentiment_mean": -0.315,
       "headline": "Iran says it will wait for official US response after Trump rejects Strait of Hormuz proposal",
       "headline_source": "Reddit r/worldnews",
       "headline_url": "https://www.reddit.com/r/worldnews/comments/1wr9yfi/iran_says_it_will_wait_for_official_us_response/"
     },
     {
       "term": "president",
-      "articles": 65,
+      "articles": 67,
       "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 0.32,
-      "sentiment_mean": -0.118,
-      "headline": "TechnipFMC president Conti sells $431,099 in shares",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/insider-trading-news/technipfmc-president-conti-sells-431099-in-shares-93CH-4918775"
+      "surge": 0.33,
+      "sentiment_mean": -0.086,
+      "headline": "Kazakh President Dismisses Defense Minister After Drill Deaths",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/articles/2026-09-27/kazakh-president-dismisses-defense-minister-after-drill-deaths"
+    },
+    {
+      "term": "power",
+      "articles": 38,
+      "sources": 22,
+      "sentiment_direction": "mixed",
+      "surge": 0.8,
+      "sentiment_mean": 0.13,
+      "headline": "Powerful storm batters US Northeast disrupting power and travel",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/9/27/powerful-storm-batters-us-northeast-disrupting-power-and-travel?traffic_source=rss"
     },
     {
       "term": "country",
@@ -53,37 +64,26 @@
       "headline_url": "https://www.dw.com/en/propaganda-in-russian-schools-prepares-students-to-die-for-their-country/a-79417294?maca=en-rss-en-all-1573-rdf"
     },
     {
-      "term": "power",
-      "articles": 38,
-      "sources": 21,
-      "sentiment_direction": "mixed",
-      "surge": 0.8,
-      "sentiment_mean": 0.111,
-      "headline": "Powerful storm batters US Northeast disrupting power and travel",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/9/27/powerful-storm-batters-us-northeast-disrupting-power-and-travel?traffic_source=rss"
-    },
-    {
-      "term": "city",
-      "articles": 36,
+      "term": "russia",
+      "articles": 37,
       "sources": 20,
       "sentiment_direction": "negative",
-      "surge": 0.77,
-      "sentiment_mean": -0.203,
-      "headline": "Man City chairman strikes defiant tone after club reportedly found guilty of breaking rules",
-      "headline_source": "Japan Times",
-      "headline_url": "https://www.japantimes.co.jp/sports/2026/09/27/soccer/manchester-city-epl-reports-chairman-reacts/"
+      "surge": 0.66,
+      "sentiment_mean": -0.467,
+      "headline": "The \u2018monster\u2019 behind Russia\u2019s global effort to evade Western sanctions",
+      "headline_source": "Sydney Morning Herald",
+      "headline_url": "https://www.smh.com.au/world/europe/the-monster-behind-russia-s-global-effort-to-evade-western-sanctions-20260927-p610dr.html?ref=rss&utm_medium=rss&utm_source=rss_world"
     },
     {
-      "term": "across",
-      "articles": 41,
-      "sources": 19,
-      "sentiment_direction": "mixed",
-      "surge": 0.82,
-      "sentiment_mean": 0.063,
-      "headline": "\u2018Leo, Leo\u2019 chants echo across Paris as 800,000 attend Pope Leo\u2019s mass",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/europe/pope-holds-outdoor-mass-with-8-lakh-in-attendance/articleshow/134512882.cms"
+      "term": "powerful",
+      "articles": 33,
+      "sources": 20,
+      "sentiment_direction": "positive",
+      "surge": 1.65,
+      "sentiment_mean": 0.302,
+      "headline": "Powerful storm batters northeast US, hundreds of flights canceled",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/powerful-storm-batters-northeast-us-hundreds-of-flights-canceled/a-79446676?maca=en-rss-en-all-1573-rdf"
     },
     {
       "term": "visit",
@@ -91,7 +91,7 @@
       "sources": 19,
       "sentiment_direction": "positive",
       "surge": 0.82,
-      "sentiment_mean": 0.305,
+      "sentiment_mean": 0.277,
       "headline": "After meeting, EC says officials will visit homes of those sent notices",
       "headline_source": "Times of India",
       "headline_url": "https://timesofindia.indiatimes.com/india/after-meeting-ec-says-officials-will-visit-homes-of-those-sent-notices/articleshow/134513237.cms"
