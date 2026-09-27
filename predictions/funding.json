@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T00:00:11.076296+00:00",
+  "generated_at": "2026-09-27T01:00:11.639574+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 726.85,
-      "net_at_hold": 0.66379,
-      "cost_bps": 35.73
+      "net_apr": 734.5,
+      "net_at_hold": 0.67077,
+      "cost_bps": 35.76
     },
     {
       "base": "ONE",
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 694.47,
-      "net_at_hold": 0.63422,
-      "cost_bps": 37.15
+      "net_apr": 675.12,
+      "net_at_hold": 0.61655,
+      "cost_bps": 37.77
     },
     {
       "base": "ONE",
@@ -42,7 +42,7 @@
       "scans": 24,
       "net_apr": 433.72,
       "net_at_hold": 0.39609,
-      "cost_bps": 32.84
+      "cost_bps": 33.42
     },
     {
       "base": "PENGU",
@@ -53,8 +53,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 144.1,
-      "net_at_hold": 0.1316,
+      "net_apr": 143.66,
+      "net_at_hold": 0.1312,
       "cost_bps": 26.0
     },
     {
@@ -66,22 +66,9 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 554.17,
-      "net_at_hold": 0.50609,
-      "cost_bps": 35.76
-    },
-    {
-      "base": "ONE",
-      "type": "perp-perp",
-      "long_venue": "Crypto.com",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 22,
-      "scans": 24,
-      "net_apr": 1559.32,
-      "net_at_hold": 1.42404,
-      "cost_bps": 40.35
+      "net_apr": 519.4,
+      "net_at_hold": 0.47434,
+      "cost_bps": 35.77
     },
     {
       "base": "TOWNS",
@@ -92,8 +79,8 @@
       "min_hold_h": 8,
       "hits": 22,
       "scans": 24,
-      "net_apr": 973.15,
-      "net_at_hold": 0.88872,
+      "net_apr": 990.58,
+      "net_at_hold": 0.90464,
       "cost_bps": 53.65
     },
     {
@@ -105,9 +92,22 @@
       "min_hold_h": 8,
       "hits": 22,
       "scans": 24,
-      "net_apr": 257.28,
-      "net_at_hold": 0.23496,
-      "cost_bps": 35.43
+      "net_apr": 224.03,
+      "net_at_hold": 0.20459,
+      "cost_bps": 35.67
+    },
+    {
+      "base": "ONE",
+      "type": "perp-perp",
+      "long_venue": "Crypto.com",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 21,
+      "scans": 24,
+      "net_apr": 1623.08,
+      "net_at_hold": 1.48227,
+      "cost_bps": 40.51
     }
   ]
 }
