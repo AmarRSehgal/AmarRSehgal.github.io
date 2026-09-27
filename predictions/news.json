@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-27T03:24:37.731066+00:00",
+  "generated_at": "2026-09-27T04:24:36.430279+00:00",
   "window_hours": 24,
-  "articles_in_window": 1371,
+  "articles_in_window": 1378,
   "collection_days": 28,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,80 +10,69 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 165,
+      "articles": 157,
       "sources": 35,
       "sentiment_direction": "mixed",
-      "surge": 0.45,
-      "sentiment_mean": -0.059,
+      "surge": 0.43,
+      "sentiment_mean": -0.053,
       "headline": "Trump Promotes Criticism of Republican Who Broke With Him on Immigration",
       "headline_source": "NYT Politics",
       "headline_url": "https://www.nytimes.com/2026/09/26/us/politics/trump-salazar-immigration-criticism.html"
     },
     {
       "term": "iran",
-      "articles": 76,
+      "articles": 74,
       "sources": 31,
       "sentiment_direction": "negative",
-      "surge": 0.66,
-      "sentiment_mean": -0.267,
+      "surge": 0.64,
+      "sentiment_mean": -0.261,
       "headline": "Iran behind attacks of Jewish sites in Li\u00e8ge and Antwerp, says Belgian intelligence agency",
       "headline_source": "Reddit r/news",
       "headline_url": "https://www.reddit.com/r/news/comments/1wr80yy/iran_behind_attacks_of_jewish_sites_in_li\u00e8ge_and/"
     },
     {
       "term": "president",
-      "articles": 81,
+      "articles": 75,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 0.41,
-      "sentiment_mean": -0.125,
-      "headline": "Alpha Compute Corp president Villani buys $44,047 in shares",
+      "surge": 0.37,
+      "sentiment_mean": -0.11,
+      "headline": "TechnipFMC president Conti sells $431,099 in shares",
       "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/insider-trading-news/alpha-compute-corp-president-villani-buys-44047-in-shares-93CH-4918723"
+      "headline_url": "https://www.investing.com/news/insider-trading-news/technipfmc-president-conti-sells-431099-in-shares-93CH-4918775"
+    },
+    {
+      "term": "power",
+      "articles": 42,
+      "sources": 22,
+      "sentiment_direction": "mixed",
+      "surge": 0.88,
+      "sentiment_mean": 0.077,
+      "headline": "Powerful storm batters US Northeast disrupting power and travel",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/9/27/powerful-storm-batters-us-northeast-disrupting-power-and-travel?traffic_source=rss"
     },
     {
       "term": "house",
-      "articles": 49,
-      "sources": 23,
+      "articles": 45,
+      "sources": 21,
       "sentiment_direction": "mixed",
-      "surge": 0.45,
-      "sentiment_mean": -0.094,
+      "surge": 0.41,
+      "sentiment_mean": -0.06,
       "headline": "David Ellison, Tech Titans and Fox News Hosts Attend White House State Dinner Honoring China\u2019s President",
       "headline_source": "Reddit r/technology",
       "headline_url": "https://www.reddit.com/r/technology/comments/1wr7282/david_ellison_tech_titans_and_fox_news_hosts/"
     },
     {
       "term": "across",
-      "articles": 41,
+      "articles": 42,
       "sources": 21,
       "sentiment_direction": "mixed",
-      "surge": 0.82,
-      "sentiment_mean": 0.072,
+      "surge": 0.84,
+      "sentiment_mean": 0.08,
       "headline": "\u2018Leo, Leo\u2019 chants echo across Paris as 800,000 attend Pope Leo\u2019s mass",
       "headline_source": "Times of India",
       "headline_url": "https://timesofindia.indiatimes.com/world/europe/pope-holds-outdoor-mass-with-8-lakh-in-attendance/articleshow/134512882.cms"
-    },
-    {
-      "term": "power",
-      "articles": 40,
-      "sources": 20,
-      "sentiment_direction": "mixed",
-      "surge": 0.84,
-      "sentiment_mean": 0.085,
-      "headline": "Powerful storm batters US Northeast disrupting power and travel",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/9/27/powerful-storm-batters-us-northeast-disrupting-power-and-travel?traffic_source=rss"
-    },
-    {
-      "term": "white",
-      "articles": 40,
-      "sources": 20,
-      "sentiment_direction": "mixed",
-      "surge": 0.47,
-      "sentiment_mean": -0.119,
-      "headline": "David Ellison, Tech Titans and Fox News Hosts Attend White House State Dinner Honoring China\u2019s President",
-      "headline_source": "Reddit r/technology",
-      "headline_url": "https://www.reddit.com/r/technology/comments/1wr7282/david_ellison_tech_titans_and_fox_news_hosts/"
     },
     {
       "term": "city",
@@ -95,6 +84,17 @@
       "headline": "Man City chairman strikes defiant tone after club reportedly found guilty of breaking rules",
       "headline_source": "Japan Times",
       "headline_url": "https://www.japantimes.co.jp/sports/2026/09/27/soccer/manchester-city-epl-reports-chairman-reacts/"
+    },
+    {
+      "term": "country",
+      "articles": 35,
+      "sources": 20,
+      "sentiment_direction": "mixed",
+      "surge": 0.6,
+      "sentiment_mean": 0.044,
+      "headline": "Propaganda in Russian schools prepares students to die for their country",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/propaganda-in-russian-schools-prepares-students-to-die-for-their-country/a-79417294?maca=en-rss-en-all-1573-rdf"
     }
   ],
   "hours_since_fetch": 0.0
