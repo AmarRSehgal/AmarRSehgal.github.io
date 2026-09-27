@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T01:00:11.639574+00:00",
+  "generated_at": "2026-09-27T02:00:10.365555+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 734.5,
-      "net_at_hold": 0.67077,
-      "cost_bps": 35.76
+      "net_apr": 752.39,
+      "net_at_hold": 0.68712,
+      "cost_bps": 35.8
     },
     {
       "base": "ONE",
@@ -53,8 +53,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 143.66,
-      "net_at_hold": 0.1312,
+      "net_apr": 143.23,
+      "net_at_hold": 0.1308,
       "cost_bps": 26.0
     },
     {
@@ -69,6 +69,19 @@
       "net_apr": 519.4,
       "net_at_hold": 0.47434,
       "cost_bps": 35.77
+    },
+    {
+      "base": "ONE",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 23,
+      "scans": 24,
+      "net_apr": 217.85,
+      "net_at_hold": 0.19895,
+      "cost_bps": 35.7
     },
     {
       "base": "TOWNS",
@@ -86,28 +99,15 @@
     {
       "base": "ONE",
       "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 22,
-      "scans": 24,
-      "net_apr": 224.03,
-      "net_at_hold": 0.20459,
-      "cost_bps": 35.67
-    },
-    {
-      "base": "ONE",
-      "type": "perp-perp",
       "long_venue": "Crypto.com",
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 21,
+      "hits": 20,
       "scans": 24,
-      "net_apr": 1623.08,
-      "net_at_hold": 1.48227,
-      "cost_bps": 40.51
+      "net_apr": 1628.13,
+      "net_at_hold": 1.48688,
+      "cost_bps": 40.35
     }
   ]
 }
