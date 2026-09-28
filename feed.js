@@ -585,10 +585,12 @@ function equityChart(data) {
                 <span class="chart-key"><i style="background:${BOOK_COLOR}"></i>This book</span>
                 ${hasBench ? `<span class="chart-key"><i class="dashed"
                     style="background:${BENCH_COLOR}"></i>SPY, endpoint only</span>` : ''}
-                <span class="chart-note">Both indexed to 0% at inception, so there is one
+                ${hasBench ? `<span class="chart-note">Both indexed to 0% at inception, so there is one
                     axis and the comparison is real. SPY is drawn straight to its total
                     return over the window -- the payload carries the endpoint, not the
-                    daily path.</span>
+                    daily path.${Number(data.short_value) < 0 ? ` This book is dollar-neutral
+                    (long and short about equal), so SPY is a reference for what the market
+                    did, not the target it is trying to beat.` : ''}</span>` : ''}
             </figcaption>
         </figure>
         <details class="chart-table">
