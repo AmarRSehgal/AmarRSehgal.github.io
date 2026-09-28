@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-28T17:24:38.775325+00:00",
+  "generated_at": "2026-09-28T18:28:37.349195+00:00",
   "window_hours": 24,
-  "articles_in_window": 2204,
+  "articles_in_window": 2187,
   "collection_days": 29,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,32 +10,32 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 233,
-      "sources": 38,
+      "articles": 240,
+      "sources": 37,
       "sentiment_direction": "negative",
-      "surge": 0.67,
-      "sentiment_mean": -0.156,
-      "headline": "Trump administration rolls back fuel economy standards for automakers",
-      "headline_source": "ABC News",
-      "headline_url": "https://abcnews.com/Business/trump-administration-rolls-back-fuel-economy-standards-automakers/story?id=136818690"
+      "surge": 0.69,
+      "sentiment_mean": -0.158,
+      "headline": "Saudis 'furious': Trump \u2018flips & flops\u2019 between deal with Iran and \u2018attacks in devastating fashion\u2019",
+      "headline_source": "France24",
+      "headline_url": "https://www.france24.com/en/tv-shows/spotlight/20260928-saudis-furious-trump-flips-flops-between-deal-with-iran-and-attacks-in-devastating-fashion"
     },
     {
       "term": "iran",
-      "articles": 130,
-      "sources": 34,
+      "articles": 128,
+      "sources": 35,
       "sentiment_direction": "negative",
-      "surge": 1.11,
-      "sentiment_mean": -0.541,
-      "headline": "Iran Refuses to Soften Demands as Trump Rejects Hormuz Offer",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/videos/2026-09-28/iran-refuses-to-soften-demands-as-trump-rejects-offer-video"
+      "surge": 1.09,
+      "sentiment_mean": -0.514,
+      "headline": "Saudis 'furious': Trump \u2018flips & flops\u2019 between deal with Iran and \u2018attacks in devastating fashion\u2019",
+      "headline_source": "France24",
+      "headline_url": "https://www.france24.com/en/tv-shows/spotlight/20260928-saudis-furious-trump-flips-flops-between-deal-with-iran-and-attacks-in-devastating-fashion"
     },
     {
       "term": "president",
-      "articles": 121,
+      "articles": 119,
       "sources": 33,
       "sentiment_direction": "negative",
-      "surge": 0.66,
+      "surge": 0.65,
       "sentiment_mean": -0.187,
       "headline": "President Trump confirms dinner with Anthropic's Dario Amodei",
       "headline_source": "CBS News",
@@ -44,10 +44,10 @@
     {
       "term": "government",
       "articles": 77,
-      "sources": 31,
+      "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 1.02,
-      "sentiment_mean": -0.053,
+      "surge": 1.01,
+      "sentiment_mean": -0.035,
       "headline": "Swedish Social Democratic Party leader Magdalena Andersson has abandoned efforts to form a four-party government. Deep divisions within the election-winning bloc have left Sweden in political deadlock",
       "headline_source": "Reddit r/worldnews",
       "headline_url": "https://www.reddit.com/r/worldnews/comments/1wsfvb4/swedish_social_democratic_party_leader_magdalena/"
@@ -55,20 +55,31 @@
     {
       "term": "security",
       "articles": 50,
-      "sources": 26,
+      "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 0.9,
-      "sentiment_mean": -0.03,
+      "surge": 0.91,
+      "sentiment_mean": -0.026,
       "headline": "Nvidia unveils security platform to rein in AI agents and $150bn stock buyback",
       "headline_source": "Guardian Business",
       "headline_url": "https://www.theguardian.com/technology/2026/sep/28/nvidia-ai-agent-security-platform-stock-buyback"
+    },
+    {
+      "term": "house",
+      "articles": 64,
+      "sources": 26,
+      "sentiment_direction": "mixed",
+      "surge": 0.64,
+      "sentiment_mean": 0.084,
+      "headline": "Trump announcing new Iowa steel plant the White House says will be biggest in US",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/world/united-states-canada/article/3369110/trump-announcing-new-iowa-steel-plant-white-house-says-will-be-biggest-us?utm_source=rss_feed"
     },
     {
       "term": "power",
       "articles": 45,
       "sources": 26,
       "sentiment_direction": "mixed",
-      "surge": 0.97,
+      "surge": 0.98,
       "sentiment_mean": 0.12,
       "headline": "Ex-Disney CEO Bob Chapek says he raised concerns with the board 'weekly' during Iger power battle",
       "headline_source": "CNBC Top News",
@@ -76,25 +87,14 @@
     },
     {
       "term": "billion",
-      "articles": 73,
+      "articles": 71,
       "sources": 25,
-      "sentiment_direction": "mixed",
-      "surge": 1.36,
-      "sentiment_mean": 0.147,
+      "sentiment_direction": "positive",
+      "surge": 1.33,
+      "sentiment_mean": 0.16,
       "headline": "Chile\u2019s Kast unveils $1.3 billion plan to create 100,000 jobs",
       "headline_source": "Investing.com News",
       "headline_url": "https://www.investing.com/news/economic-indicators/chiles-kast-unveils-13-billion-plan-to-create-100000-jobs-4920933"
-    },
-    {
-      "term": "base",
-      "articles": 66,
-      "sources": 25,
-      "sentiment_direction": "negative",
-      "surge": 3.22,
-      "sentiment_mean": -0.739,
-      "headline": "Terror suspects released on bail after UK air base arrests, as Iran denies role",
-      "headline_source": "Sydney Morning Herald",
-      "headline_url": "https://www.smh.com.au/world/europe/terror-suspects-released-after-uk-air-base-arrests-as-iran-denies-role-20260929-p61185.html?ref=rss&utm_medium=rss&utm_source=rss_world"
     }
   ],
   "hours_since_fetch": 0.0
