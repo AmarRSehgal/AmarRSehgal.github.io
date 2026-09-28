@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-28T06:24:45.719471+00:00",
+  "generated_at": "2026-09-28T07:24:47.107581+00:00",
   "window_hours": 24,
-  "articles_in_window": 1805,
+  "articles_in_window": 1827,
   "collection_days": 29,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,58 +10,47 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 193,
-      "sources": 34,
+      "articles": 195,
+      "sources": 35,
       "sentiment_direction": "negative",
-      "surge": 0.53,
-      "sentiment_mean": -0.202,
-      "headline": "Taiwan pushes back after Xi seeks to win over Trump on WWII narrative",
-      "headline_source": "Japan Times",
-      "headline_url": "https://www.japantimes.co.jp/news/2026/09/28/asia-pacific/politics/taiwan-xi-trump-wwii-narrative/"
+      "surge": 0.54,
+      "sentiment_mean": -0.224,
+      "headline": "European bourses slip after Trump rejects Iran proposal; tech stocks slip",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/stock-market-news/european-bourses-slip-after-trump-rejects-iran-proposal-tech-stocks-slip-4919474"
     },
     {
       "term": "used",
-      "articles": 61,
+      "articles": 62,
       "sources": 31,
       "sentiment_direction": "negative",
-      "surge": 2.1,
-      "sentiment_mean": -0.38,
+      "surge": 2.14,
+      "sentiment_mean": -0.367,
       "headline": "Meta's Muse AI Used Human Contractors for Calls. Some Of Them Were Racist.",
       "headline_source": "Reddit r/technology",
       "headline_url": "https://www.reddit.com/r/technology/comments/1ws24jc/metas_muse_ai_used_human_contractors_for_calls/"
     },
     {
       "term": "president",
-      "articles": 109,
+      "articles": 107,
       "sources": 30,
       "sentiment_direction": "negative",
-      "surge": 0.57,
-      "sentiment_mean": -0.261,
+      "surge": 0.56,
+      "sentiment_mean": -0.271,
       "headline": "Echoing Putin, Serbia\u2019s president resigns in bid to become prime minister",
       "headline_source": "South China Morning Post",
       "headline_url": "https://www.scmp.com/news/world/europe/article/3369018/echoing-putin-serbias-president-resigns-bid-become-prime-minister?utm_source=rss_feed"
     },
     {
       "term": "iran",
-      "articles": 96,
+      "articles": 100,
       "sources": 29,
       "sentiment_direction": "negative",
-      "surge": 0.82,
+      "surge": 0.86,
       "sentiment_mean": -0.486,
-      "headline": "Bond selloff resumes as oil rises after Trump spurns Iran offer",
-      "headline_source": "Reddit r/economics",
-      "headline_url": "https://www.reddit.com/r/Economics/comments/1ws5xcb/bond_selloff_resumes_as_oil_rises_after_trump/"
-    },
-    {
-      "term": "base",
-      "articles": 56,
-      "sources": 27,
-      "sentiment_direction": "negative",
-      "surge": 3.72,
-      "sentiment_mean": -0.76,
-      "headline": "Powerful U.S. missile system to be stored at Okinawa\u2019s Kadena Air Base",
-      "headline_source": "Japan Times",
-      "headline_url": "https://www.japantimes.co.jp/news/2026/09/28/japan/us-typhon-missile-japan-storage-okinawa/"
+      "headline": "European bourses slip after Trump rejects Iran proposal; tech stocks slip",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/stock-market-news/european-bourses-slip-after-trump-rejects-iran-proposal-tech-stocks-slip-4919474"
     },
     {
       "term": "government",
@@ -69,32 +58,43 @@
       "sources": 27,
       "sentiment_direction": "mixed",
       "surge": 0.73,
-      "sentiment_mean": -0.094,
+      "sentiment_mean": -0.124,
       "headline": "Oil price rise puts more pressure on government bonds",
       "headline_source": "Financial Times",
       "headline_url": "https://www.ft.com/content/d751ad99-531d-4990-9a4c-ee89a9fc1b2d?syn-25a6b1a6=1"
     },
     {
-      "term": "police",
-      "articles": 82,
-      "sources": 23,
+      "term": "base",
+      "articles": 55,
+      "sources": 27,
       "sentiment_direction": "negative",
-      "surge": 1.54,
-      "sentiment_mean": -0.85,
-      "headline": "Malaysian police consider sedition charges for ex-Negeri Sembilan officials",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/week-asia/politics/article/3369011/malaysian-police-consider-sedition-charges-ex-negeri-sembilan-officials?utm_source=rss_feed"
+      "surge": 3.61,
+      "sentiment_mean": -0.786,
+      "headline": "Powerful U.S. missile system to be stored at Okinawa\u2019s Kadena Air Base",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/news/2026/09/28/japan/us-typhon-missile-japan-storage-okinawa/"
     },
     {
       "term": "house",
       "articles": 51,
-      "sources": 23,
+      "sources": 24,
       "sentiment_direction": "mixed",
-      "surge": 0.47,
-      "sentiment_mean": 0.036,
+      "surge": 0.48,
+      "sentiment_mean": 0.028,
       "headline": "Republicans pour cash into dozens of US House races previously seen as \u2018safe\u2019",
       "headline_source": "South China Morning Post",
       "headline_url": "https://www.scmp.com/news/world/united-states-canada/article/3369024/republicans-pour-cash-dozens-us-house-races-previously-seen-safe?utm_source=rss_feed"
+    },
+    {
+      "term": "police",
+      "articles": 86,
+      "sources": 23,
+      "sentiment_direction": "negative",
+      "surge": 1.61,
+      "sentiment_mean": -0.838,
+      "headline": "Victoria police apologise over death of injured man taken to cells instead of hospital",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/australia-news/2026/sep/28/victoria-police-apologise-over-makai-death-in-custody-ntwnfb"
     }
   ],
   "hours_since_fetch": 0.0
