@@ -1,45 +1,91 @@
 {
-  "generated_at": "2026-09-28T04:30:05Z",
+  "generated_at": "2026-09-28T16:30:04Z",
   "sources": [
     {
       "source": "ad_capital",
       "label": "AD Capital universe scan",
       "status": "stale",
       "as_of": "2026-09-23T00:30:32Z",
-      "age_hours": 124.0,
+      "age_hours": 136.0,
       "count": 0,
       "caveat": "A mechanical factor scan of a 374-name universe, not a recommendation. The stop and target are volatility-sized bands, not predictions, and nothing here has had a fundamental read. The paper book behind this signal could not be priced on this run, so no track record is attached to these names.",
-      "note": "Last scan was 124h ago, past this source's 96h budget. Showing nothing rather than passing it off as current.",
+      "note": "Last scan was 136h ago, past this source's 96h budget. Showing nothing rather than passing it off as current.",
       "opportunities": []
     },
     {
       "source": "funding_drift",
       "label": "Perp funding vs realized drift",
-      "status": "stale",
-      "as_of": "2026-09-26T15:15:06Z",
-      "age_hours": 37.2,
-      "count": 0,
+      "status": "fresh",
+      "as_of": "2026-09-28T15:15:09Z",
+      "age_hours": 1.2,
+      "count": 15,
       "caveat": "An observation, NOT a trade recommendation. This repo's own study found the ranking is ~99% price momentum (rank correlation 0.996 with plain return) and that the convergence reading of the funding term is backwards.",
-      "note": "Last scan was 37h ago, past this source's 36h budget. Showing nothing rather than passing it off as current.",
-      "opportunities": []
+      "note": null,
+      "opportunities": [
+        {
+          "title": "\u9f99\u867e on HTX",
+          "detail": "24h return -33.1%, funding 0.6%",
+          "metric_value": 0.336818695032822,
+          "metric_display": "drift -33.7%",
+          "link": null,
+          "rank": 1,
+          "source": "funding_drift"
+        },
+        {
+          "title": "QNT on OKX",
+          "detail": "24h return 31.0%, funding -0.2%",
+          "metric_value": 0.3120498672181914,
+          "metric_display": "drift 31.2%",
+          "link": null,
+          "rank": 2,
+          "source": "funding_drift"
+        },
+        {
+          "title": "HBAR on OKX",
+          "detail": "24h return 25.0%, funding -0.1%",
+          "metric_value": 0.2502647571589398,
+          "metric_display": "drift 25.0%",
+          "link": null,
+          "rank": 3,
+          "source": "funding_drift"
+        }
+      ]
     },
     {
       "source": "crypto_arb",
       "label": "Cross-exchange crypto arbs",
       "status": "fresh",
-      "as_of": "2026-09-28T04:14:35Z",
+      "as_of": "2026-09-28T16:14:34Z",
       "age_hours": 0.3,
-      "count": 1,
+      "count": 4,
       "caveat": "Observed, not executed. Each row is a spread that EXISTED between two venues for a few seconds of a 4-minute scan -- it is not a fill. Capturing it needs inventory already sitting on both venues, and the transfer time between them is far longer than the spread lasted.",
       "note": null,
       "opportunities": [
         {
-          "title": "ETH  Bitrue -> Bitfinex",
-          "detail": "spot | 15.2bp gross less 9.8bp fees | $306,840 at the touch | lived 17.5s | 7.6% of the scan",
-          "metric_value": 5.39,
-          "metric_display": "+5.4bp net",
+          "title": "SEI  Bitfinex -> Binance",
+          "detail": "spot | 28.1bp gross less 10.0bp fees | $286 at the touch | lived 2.0s | 0.9% of the scan",
+          "metric_value": 18.15,
+          "metric_display": "+18.1bp net",
           "link": null,
           "rank": 1,
+          "source": "crypto_arb"
+        },
+        {
+          "title": "BTC  Upbit -> Bitfinex",
+          "detail": "spot | 13.3bp gross less 5.0bp fees | $38,374 at the touch | lived 14.8s | 6.4% of the scan",
+          "metric_value": 8.31,
+          "metric_display": "+8.3bp net",
+          "link": null,
+          "rank": 2,
+          "source": "crypto_arb"
+        },
+        {
+          "title": "LINK  CoinW -> Binance",
+          "detail": "spot | 35.5bp gross less 30.0bp fees | $650 at the touch | lived 2.8s | 1.2% of the scan",
+          "metric_value": 5.45,
+          "metric_display": "+5.5bp net",
+          "link": null,
+          "rank": 3,
           "source": "crypto_arb"
         }
       ]
@@ -48,7 +94,7 @@
       "source": "funding_rate_arb",
       "label": "Funding-rate carry",
       "status": "fresh",
-      "as_of": "2026-09-28T04:00:11Z",
+      "as_of": "2026-09-28T16:00:10Z",
       "age_hours": 0.5,
       "count": 8,
       "caveat": "Quoted APRs annualize the CURRENT funding rate, which reprices every few hours. They are not a return you can lock in, and they ignore execution, borrow limits and the capital tied up on both legs.",
@@ -56,27 +102,27 @@
       "opportunities": [
         {
           "title": "AERO  Lighter / Coinbase",
-          "detail": "long Lighter perp, short Coinbase perp | annualises to ~1,933% | round trip 26bp | positive in 24/24 scans",
-          "metric_value": 1.7656,
-          "metric_display": "+1.766% per 8h hold",
+          "detail": "long Lighter perp, short Coinbase perp | annualises to ~1,980% | round trip 26bp | positive in 24/24 scans",
+          "metric_value": 1.808,
+          "metric_display": "+1.808% per 8h hold",
           "link": null,
           "rank": 1,
           "source": "funding_rate_arb"
         },
         {
           "title": "AERO  Aster / Coinbase",
-          "detail": "long Aster perp, short Coinbase perp | annualises to ~1,803% | round trip 40bp | positive in 24/24 scans",
-          "metric_value": 1.64688,
-          "metric_display": "+1.647% per 8h hold",
+          "detail": "long Aster perp, short Coinbase perp | annualises to ~1,835% | round trip 41bp | positive in 24/24 scans",
+          "metric_value": 1.67558,
+          "metric_display": "+1.676% per 8h hold",
           "link": null,
           "rank": 2,
           "source": "funding_rate_arb"
         },
         {
-          "title": "AERO  OKX / Coinbase",
-          "detail": "long OKX perp, short Coinbase perp | annualises to ~1,533% | round trip 33bp | positive in 23/24 scans",
-          "metric_value": 0.69998,
-          "metric_display": "+0.700% per 4h hold",
+          "title": "TOWNS  Aster / Coinbase",
+          "detail": "long Aster perp, short Coinbase perp | annualises to ~1,562% | round trip 54bp | positive in 24/24 scans",
+          "metric_value": 1.4261,
+          "metric_display": "+1.426% per 8h hold",
           "link": null,
           "rank": 3,
           "source": "funding_rate_arb"
@@ -87,26 +133,26 @@
       "source": "magic_formula",
       "label": "Magic Formula screen",
       "status": "fresh",
-      "as_of": "2026-09-21T15:01:50Z",
-      "age_hours": 157.5,
+      "as_of": "2026-09-28T15:01:35Z",
+      "age_hours": 1.5,
       "count": 10,
       "caveat": "A mechanical rank of a hand-pasted universe. It says nothing about whether the business is sound, and nothing here is advice.",
       "note": null,
       "opportunities": [
         {
-          "title": "TDC - Teradata Corporation",
-          "detail": "ROC 481.2% | $2.7B | Technology",
+          "title": "IRWD - Ironwood Pharmaceuticals, Inc.",
+          "detail": "ROC 536.5% | $678.3M | Healthcare",
           "metric_value": -1.0,
-          "metric_display": "EY 26.0%",
+          "metric_display": "EY 24.0%",
           "link": null,
           "rank": 1,
           "source": "magic_formula"
         },
         {
-          "title": "IRWD - Ironwood Pharmaceuticals, Inc.",
-          "detail": "ROC 536.5% | $741.9M | Healthcare",
+          "title": "TDC - Teradata Corporation",
+          "detail": "ROC 481.2% | $2.6B | Technology",
           "metric_value": -2.0,
-          "metric_display": "EY 23.1%",
+          "metric_display": "EY 25.9%",
           "link": null,
           "rank": 2,
           "source": "magic_formula"
@@ -115,7 +161,7 @@
           "title": "AFMJF - Alphamin Resources Corp.",
           "detail": "ROC 95.3% | $1.3B | Basic Materials",
           "metric_value": -3.0,
-          "metric_display": "EY 34.6%",
+          "metric_display": "EY 34.8%",
           "link": null,
           "rank": 3,
           "source": "magic_formula"
@@ -127,7 +173,7 @@
       "label": "Real estate deal screen",
       "status": "fresh",
       "as_of": "2026-09-27T15:03:41Z",
-      "age_hours": 13.4,
+      "age_hours": 25.4,
       "count": 12,
       "caveat": "Discounts are against comparable-sale estimates, not appraisals, and the screen has never seen the inside of any of these. Screening output only.",
       "note": null,
@@ -165,8 +211,8 @@
       "source": "contracts",
       "label": "Federal resale lanes",
       "status": "fresh",
-      "as_of": "2026-09-27T15:00:28Z",
-      "age_hours": 13.5,
+      "as_of": "2026-09-28T15:03:44Z",
+      "age_hours": 1.4,
       "count": 8,
       "caveat": "Finding a lane is not winning one. SAM entity registration takes weeks and gates every bid, set-asides are hard gates, and the extract carries no line-item quantities -- so none of these carry a computed margin.",
       "note": null,
@@ -205,7 +251,7 @@
       "label": "Swing-trade signals",
       "status": "fresh",
       "as_of": "2026-09-27T21:00:35Z",
-      "age_hours": 7.5,
+      "age_hours": 19.5,
       "count": 12,
       "caveat": "Rule output on daily bars, not a recommendation. It carries no position sizing or risk limits, and most rows are positions already open rather than fresh buys. Measured on 12 broad and sector ETFs (survivorship-free) 2019-01-01..2025-07-01, this strategy returned 48.3% against 145.6% for simply holding the same universe, at Sharpe 0.46 against 0.80. It beat same-window buy-and-hold in 3 of 17 walk-forward windows. What does hold up is drawdown: -31.6% against -35.8% for the benchmark.",
       "note": null,
@@ -244,25 +290,35 @@
       "label": "Severe weather risk",
       "status": "stale",
       "as_of": "2026-09-14T14:01:40Z",
-      "age_hours": 326.5,
+      "age_hours": 338.5,
       "count": 0,
       "caveat": "Not a weather warning -- use the National Weather Service for those. The score is how much current conditions resemble the run-up to a severe event, not a probability that one occurs.",
-      "note": "Last scan was 326h ago, past this source's 30h budget. Showing nothing rather than passing it off as current.",
+      "note": "Last scan was 338h ago, past this source's 30h budget. Showing nothing rather than passing it off as current.",
       "opportunities": []
     },
     {
       "source": "polymarket_btc",
       "label": "Polymarket BTC 5-min binaries",
-      "status": "stale",
-      "as_of": "2026-09-26T14:47:12Z",
-      "age_hours": 37.7,
-      "count": 0,
-      "caveat": "Publishes an observation, not picks. The repo's own backtest on real fills found the market's own price forecasts the settlement BETTER than the model, and that what survives costs is feed latency rather than the pricing model. Simulation only -- the repo has no order-placement path. Latest scan: model Brier 0.1578 vs market 0.1487, so the market is ahead (lower is better).",
-      "note": "Last scan was 38h ago, past this source's 30h budget. Showing nothing rather than passing it off as current.",
-      "opportunities": []
+      "status": "fresh",
+      "as_of": "2026-09-28T14:47:14Z",
+      "age_hours": 1.7,
+      "count": 1,
+      "caveat": "Publishes an observation, not picks. The repo's own backtest on real fills found the market's own price forecasts the settlement BETTER than the model, and that what survives costs is feed latency rather than the pricing model. Simulation only -- the repo has no order-placement path. Latest scan: model Brier 0.1409 vs market 0.1306, so the market is ahead (lower is better).",
+      "note": null,
+      "opportunities": [
+        {
+          "title": "BTC 5-min binaries: market ahead of the model",
+          "detail": "model Brier 0.1409 vs market 0.1306 (lower is better), post-cost returns never cross zero",
+          "metric_value": -0.0651,
+          "metric_display": "-6.5%",
+          "link": null,
+          "rank": 1,
+          "source": "polymarket_btc"
+        }
+      ]
     }
   ],
-  "total_opportunities": 16,
-  "fresh_sources": 6,
+  "total_opportunities": 22,
+  "fresh_sources": 8,
   "methodology": "A digest: the top 3 from each scanner, so one glance shows what is live right now. Each scanner runs on its own schedule and publishes its own full panel; this merges them and runs nothing itself, so a slow source can only make its own row go quiet. Items are ranked WITHIN a source and there is deliberately no cross-source score -- basis points, an earnings yield and a contract cadence are not commensurable, and one leaderboard over them would be invented. Every section carries its own caveat; read it before the numbers. Nothing here is advice, none of it is an executed trade, and a section that has gone stale shows nothing rather than yesterday's numbers."
 }
