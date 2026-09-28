@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T13:07:49.641951+00:00",
+  "generated_at": "2026-09-28T13:06:57.810666+00:00",
   "experiment": "Kalshi market making: v1 against the v2 engine",
   "venue": "Kalshi",
   "paper": true,
@@ -7,45 +7,45 @@
   "unit": "day",
   "min_units_for_verdict": 14,
   "status": "collecting",
-  "headline": "Collecting: day 2 of 14 before the arms are scored against each other. Running totals, not results: baseline -7.31 over 264 fills; v2_niche +2.29 over 1662 fills; v2_crypto -28.17 over 1344 fills.",
+  "headline": "Collecting: day 3 of 14 before the arms are scored against each other. Running totals, not results: baseline -10.16 over 350 fills; v2_niche -7.06 over 2039 fills; v2_crypto -28.76 over 1769 fills.",
   "arms": [
     {
       "name": "baseline",
       "role": "control",
       "description": "v1 unchanged: Avellaneda-Stoikov quotes around the touch mid on niche markets, crossing the spread to flatten before game windows and closes.",
-      "fills": 264,
-      "size": 348,
-      "markets": 2068,
-      "pnl": -7.31,
-      "realized": -3.37,
-      "mtm": -3.94,
-      "fees": 0.82,
-      "pnl_per_size_c": -2.099,
-      "resolved_contracts": 81,
-      "realized_per_resolved_c": -4.154,
-      "passive_exit_share": 0.457,
+      "fills": 350,
+      "size": 467,
+      "markets": 2302,
+      "pnl": -10.16,
+      "realized": -4.23,
+      "mtm": -5.94,
+      "fees": 1.15,
+      "pnl_per_size_c": -2.176,
+      "resolved_contracts": 115,
+      "realized_per_resolved_c": -3.665,
+      "passive_exit_share": 0.435,
       "exits": {
         "crossed": {
-          "contracts": 44,
-          "pnl": -3.37,
-          "per_contract_c": -7.66
+          "contracts": 65,
+          "pnl": -4.76,
+          "per_contract_c": -7.32
         },
         "passive": {
-          "contracts": 37,
-          "pnl": 0.0,
-          "per_contract_c": 0.01
+          "contracts": 50,
+          "pnl": 0.54,
+          "per_contract_c": 1.09
         }
       },
       "per_market_pnl_ci": [
-        -0.0061,
-        -0.001
+        -0.0073,
+        -0.0014
       ],
       "markouts_c": {
-        "300": -2.359,
-        "3600": -4.361
+        "300": -2.881,
+        "3600": -4.376
       },
-      "units": 2,
-      "pnl_per_unit": -3.0,
+      "units": 3,
+      "pnl_per_unit": -2.95,
       "pnl_per_unit_ci": [
         -5.91,
         -0.09
@@ -55,39 +55,39 @@
       "name": "v2_niche",
       "role": "treatment",
       "description": "v2 engine on the same universe: edge curve around a depth-weighted mid, never crosses, reduce-only instead of flatten, holds to resolution.",
-      "fills": 1662,
-      "size": 1992,
-      "markets": 2077,
-      "pnl": 2.29,
-      "realized": 13.58,
-      "mtm": -11.29,
-      "fees": 0.14,
-      "pnl_per_size_c": 0.115,
-      "resolved_contracts": 898,
-      "realized_per_resolved_c": 1.524,
-      "passive_exit_share": 0.83,
+      "fills": 2039,
+      "size": 2441,
+      "markets": 2313,
+      "pnl": -7.06,
+      "realized": -6.25,
+      "mtm": -0.81,
+      "fees": 0.19,
+      "pnl_per_size_c": -0.289,
+      "resolved_contracts": 1225,
+      "realized_per_resolved_c": -0.498,
+      "passive_exit_share": 0.751,
       "exits": {
         "passive": {
-          "contracts": 745,
-          "pnl": 40.6,
-          "per_contract_c": 5.45
+          "contracts": 920,
+          "pnl": 54.85,
+          "per_contract_c": 5.96
         },
         "settled": {
-          "contracts": 153,
-          "pnl": -26.92,
-          "per_contract_c": -17.59
+          "contracts": 305,
+          "pnl": -60.96,
+          "per_contract_c": -19.99
         }
       },
       "per_market_pnl_ci": [
-        -0.0088,
-        0.0114
+        -0.0139,
+        0.0079
       ],
       "markouts_c": {
-        "3600": 1.748,
-        "300": 2.563
+        "3600": 2.2,
+        "300": 2.865
       },
-      "units": 2,
-      "pnl_per_unit": -1.135,
+      "units": 3,
+      "pnl_per_unit": -3.873,
       "pnl_per_unit_ci": [
         -9.83,
         7.56
@@ -97,42 +97,42 @@
       "name": "v2_crypto",
       "role": "treatment",
       "description": "v2 engine on hourly BTC/ETH strike ladders, fair value from Binance anchored to the Kalshi book, exposure netted across strikes.",
-      "fills": 1344,
-      "size": 3355,
-      "markets": 403,
-      "pnl": -28.17,
-      "realized": -28.29,
-      "mtm": 0.12,
+      "fills": 1769,
+      "size": 4443,
+      "markets": 565,
+      "pnl": -28.76,
+      "realized": -26.98,
+      "mtm": -1.78,
       "fees": 0.0,
-      "pnl_per_size_c": -0.84,
-      "resolved_contracts": 1903,
-      "realized_per_resolved_c": -1.487,
-      "passive_exit_share": 0.754,
+      "pnl_per_size_c": -0.647,
+      "resolved_contracts": 2559,
+      "realized_per_resolved_c": -1.054,
+      "passive_exit_share": 0.72,
       "exits": {
         "passive": {
-          "contracts": 1434,
-          "pnl": 15.32,
-          "per_contract_c": 1.07
+          "contracts": 1842,
+          "pnl": 33.68,
+          "per_contract_c": 1.83
         },
         "settled": {
-          "contracts": 469,
-          "pnl": -43.61,
-          "per_contract_c": -9.3
+          "contracts": 717,
+          "pnl": -60.66,
+          "per_contract_c": -8.46
         }
       },
       "per_market_pnl_ci": [
-        -0.1489,
-        0.0199
+        -0.1264,
+        0.0239
       ],
       "markouts_c": {
-        "300": -0.138,
-        "3600": 0.507
+        "300": -0.18,
+        "3600": 0.57
       },
-      "units": 2,
-      "pnl_per_unit": -11.24,
+      "units": 3,
+      "pnl_per_unit": -7.69,
       "pnl_per_unit_ci": [
         -14.11,
-        -8.37
+        -0.59
       ]
     }
   ],
@@ -141,7 +141,7 @@
       "treatment": "v2_niche",
       "control": "baseline",
       "metric": "pnl_per_day",
-      "diff": 1.865,
+      "diff": -0.923,
       "ci": [
         -9.74,
         13.47
@@ -152,10 +152,10 @@
       "treatment": "v2_crypto",
       "control": "baseline",
       "metric": "pnl_per_day",
-      "diff": -8.24,
+      "diff": -4.74,
       "ci": [
         -8.28,
-        -8.2
+        2.26
       ],
       "verdict": "collecting"
     }
@@ -193,6 +193,19 @@
         "baseline": -0.09,
         "v2_niche": -9.83,
         "v2_crypto": -8.37
+      },
+      "units": {
+        "baseline": 1,
+        "v2_niche": 1,
+        "v2_crypto": 1
+      }
+    },
+    {
+      "date": "2026-09-28",
+      "pnl": {
+        "baseline": -2.85,
+        "v2_niche": -9.35,
+        "v2_crypto": -0.59
       },
       "units": {
         "baseline": 1,
