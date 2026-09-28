@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T19:00:11.322608+00:00",
+  "generated_at": "2026-09-28T20:00:11.509422+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -16,7 +16,7 @@
       "scans": 24,
       "net_apr": 1808.27,
       "net_at_hold": 1.65138,
-      "cost_bps": 54.01
+      "cost_bps": 54.22
     },
     {
       "base": "AERO",
@@ -27,22 +27,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1799.74,
-      "net_at_hold": 1.6436,
+      "net_apr": 1629.36,
+      "net_at_hold": 1.488,
       "cost_bps": 26.0
-    },
-    {
-      "base": "AERO",
-      "type": "perp-perp",
-      "long_venue": "Aster",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1594.86,
-      "net_at_hold": 1.4565,
-      "cost_bps": 41.8
     },
     {
       "base": "TOWNS",
@@ -53,9 +40,22 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1565.41,
-      "net_at_hold": 0.7148,
+      "net_apr": 1599.36,
+      "net_at_hold": 0.7303,
       "cost_bps": 38.0
+    },
+    {
+      "base": "AERO",
+      "type": "perp-perp",
+      "long_venue": "Aster",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1467.23,
+      "net_at_hold": 1.33994,
+      "cost_bps": 41.53
     },
     {
       "base": "TOWNS",
@@ -66,9 +66,22 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1396.91,
-      "net_at_hold": 0.63786,
+      "net_apr": 1397.59,
+      "net_at_hold": 0.63817,
       "cost_bps": 44.92
+    },
+    {
+      "base": "TOWNS",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1277.66,
+      "net_at_hold": 0.5834,
+      "cost_bps": 49.43
     },
     {
       "base": "AERO",
@@ -79,9 +92,9 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1335.38,
-      "net_at_hold": 0.60976,
-      "cost_bps": 32.27
+      "net_apr": 1190.12,
+      "net_at_hold": 0.54343,
+      "cost_bps": 32.26
     },
     {
       "base": "AERO",
@@ -92,22 +105,9 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1301.91,
-      "net_at_hold": 0.59448,
+      "net_apr": 1148.87,
+      "net_at_hold": 0.5246,
       "cost_bps": 35.95
-    },
-    {
-      "base": "AERO",
-      "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1296.32,
-      "net_at_hold": 0.59193,
-      "cost_bps": 37.1
     }
   ]
 }
