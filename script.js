@@ -30,3 +30,11 @@ if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 // The feed registry and every renderer live in predictions.js, shared with feed.html.
 // This page renders each feed compactly; feed.html renders one in full.
 Object.keys(Predictions.FEEDS).forEach(key => Predictions.load(key));
+
+// A whole card opens its feed page; links inside it (listings, related feeds) keep their own targets.
+document.querySelectorAll('.prediction-block[data-href]').forEach(card => {
+    card.addEventListener('click', e => {
+        if (e.target.closest('a') || window.getSelection().toString()) return;
+        window.location.href = card.dataset.href;
+    });
+});

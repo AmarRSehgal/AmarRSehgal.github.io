@@ -21,6 +21,7 @@
 
 const MS_HOUR = 3600 * 1000;
 const MS_DAY = 24 * MS_HOUR;
+const PREVIEW_ROWS = 3;
 
 // The HEALTH vocabulary for a payload's top-level `status`, and the whole of it. Mirrors
 // SOURCE_STATUS in .github/scripts/validate_predictions.py minus the two healthy values;
@@ -1435,9 +1436,15 @@ async function loadFeed(key, opts) {
 
     const slate = cfg.slate ? cfg.slate(data) : '';
     const render = (opts.full && cfg.renderFull) ? cfg.renderFull : cfg.render;
+    // The home page is an index: a preview of the top rows, the rest on the feed's page.
+    // The slate above is computed from the full list, so its counts stay true.
+    const hidden = opts.full ? 0 : items.length - PREVIEW_ROWS;
+    const shown = hidden > 0 ? { ...data, [cfg.listKey]: items.slice(0, PREVIEW_ROWS) } : data;
     container.innerHTML = banner
         + (slate ? `<div class="prediction-slate">${esc(slate)}</div>` : '')
-        + render(data);
+        + render(shown)
+        + (hidden > 0 ? `<a class="prediction-more" href="feed.html?feed=${esc(key)}">`
+            + `+${hidden} more -- full output &rarr;</a>` : '');
     return data;
 }
 
