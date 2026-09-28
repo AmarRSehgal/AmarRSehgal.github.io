@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T07:00:10.763356+00:00",
+  "generated_at": "2026-09-28T08:00:11.820286+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1933.33,
-      "net_at_hold": 1.7656,
+      "net_apr": 1947.79,
+      "net_at_hold": 1.7788,
       "cost_bps": 26.0
     },
     {
@@ -27,8 +27,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1803.34,
-      "net_at_hold": 1.64688,
+      "net_apr": 1822.5,
+      "net_at_hold": 1.66438,
       "cost_bps": 40.36
     },
     {
@@ -40,9 +40,22 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1512.72,
-      "net_at_hold": 0.69074,
-      "cost_bps": 32.78
+      "net_apr": 1542.17,
+      "net_at_hold": 0.70419,
+      "cost_bps": 33.32
+    },
+    {
+      "base": "AERO",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1459.92,
+      "net_at_hold": 0.66663,
+      "cost_bps": 36.94
     },
     {
       "base": "AERO",
@@ -60,27 +73,14 @@
     {
       "base": "AERO",
       "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1437.99,
-      "net_at_hold": 0.65662,
-      "cost_bps": 37.5
-    },
-    {
-      "base": "AERO",
-      "type": "perp-perp",
       "long_venue": "KuCoin",
       "short_venue": "Coinbase",
       "long_instrument": "perp",
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1368.53,
-      "net_at_hold": 0.6249,
+      "net_apr": 1405.98,
+      "net_at_hold": 0.642,
       "cost_bps": 38.0
     },
     {
@@ -92,9 +92,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 764.63,
-      "net_at_hold": 0.69829,
-      "cost_bps": 37.37
+      "net_apr": 850.61,
+      "net_at_hold": 0.77681,
+      "cost_bps": 37.03
     },
     {
       "base": "ONE",
@@ -105,9 +105,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 544.08,
-      "net_at_hold": 0.49688,
-      "cost_bps": 32.95
+      "net_apr": 591.01,
+      "net_at_hold": 0.53973,
+      "cost_bps": 32.32
     }
   ]
 }
