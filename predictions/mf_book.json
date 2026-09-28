@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-09-25T14:05:22.697568+00:00",
+  "generated_at": "2026-09-28T14:05:23.933652+00:00",
   "account": "PA3RTYOZ01QS",
   "paper": true,
   "started": "2026-09-12",
   "starting_equity": 100000.0,
-  "equity": 99073.27,
+  "equity": 98637.5,
   "cash": 80000.05,
-  "return_pct": -0.0093,
+  "return_pct": -0.0136,
   "dividends_total": 0,
   "positions": [
     {
       "ticker": "IRWD",
       "qty": 963.3261,
       "avg_entry": 4.15,
-      "price": 4.14,
-      "market_value": 3992.99,
-      "pnl": -7.0,
-      "return_pct": -0.0018,
+      "price": 4.05,
+      "market_value": 3906.29,
+      "pnl": -93.7,
+      "return_pct": -0.0234,
       "dividends": 0.0,
       "entered": "2026-09-15",
-      "days_held": 10,
+      "days_held": 13,
       "sell_on": "2027-09-14",
       "sell_due": false
     },
@@ -27,27 +27,13 @@
       "ticker": "TDC",
       "qty": 136.3332,
       "avg_entry": 29.34,
-      "price": 29.27,
-      "market_value": 3990.47,
-      "pnl": -9.51,
-      "return_pct": -0.0024,
+      "price": 28.32,
+      "market_value": 3860.28,
+      "pnl": -139.71,
+      "return_pct": -0.0349,
       "dividends": 0.0,
       "entered": "2026-09-15",
-      "days_held": 10,
-      "sell_on": "2027-09-14",
-      "sell_due": false
-    },
-    {
-      "ticker": "OTEX",
-      "qty": 168.9708,
-      "avg_entry": 23.67,
-      "price": 22.54,
-      "market_value": 3807.76,
-      "pnl": -192.23,
-      "return_pct": -0.0481,
-      "dividends": 0.0,
-      "entered": "2026-09-15",
-      "days_held": 10,
+      "days_held": 13,
       "sell_on": "2027-09-14",
       "sell_due": false
     },
@@ -61,7 +47,21 @@
       "return_pct": -0.0573,
       "dividends": 0.0,
       "entered": "2026-09-15",
-      "days_held": 10,
+      "days_held": 13,
+      "sell_on": "2027-09-14",
+      "sell_due": false
+    },
+    {
+      "ticker": "OTEX",
+      "qty": 168.9708,
+      "avg_entry": 23.67,
+      "price": 21.71,
+      "market_value": 3669.2,
+      "pnl": -330.79,
+      "return_pct": -0.0827,
+      "dividends": 0.0,
+      "entered": "2026-09-15",
+      "days_held": 13,
       "sell_on": "2027-09-14",
       "sell_due": false
     },
@@ -69,13 +69,13 @@
       "ticker": "VSNT",
       "qty": 105.4016,
       "avg_entry": 37.95,
-      "price": 33.32,
-      "market_value": 3511.98,
-      "pnl": -488.01,
-      "return_pct": -0.122,
+      "price": 32.55,
+      "market_value": 3430.82,
+      "pnl": -569.17,
+      "return_pct": -0.1423,
       "dividends": 0.0,
       "entered": "2026-09-15",
-      "days_held": 10,
+      "days_held": 13,
       "sell_on": "2027-09-14",
       "sell_due": false
     }
@@ -123,9 +123,13 @@
     {
       "date": "2026-09-25",
       "equity": 99202.88
+    },
+    {
+      "date": "2026-09-26",
+      "equity": 98951.76
     }
   ],
   "benchmark": "SPY",
-  "benchmark_return_pct": 0.0133,
-  "excess_return_pct": -0.0226
+  "benchmark_return_pct": 0.0188,
+  "excess_return_pct": -0.0324
 }
