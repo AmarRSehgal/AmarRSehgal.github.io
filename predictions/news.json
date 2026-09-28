@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-28T10:24:46.346407+00:00",
+  "generated_at": "2026-09-28T11:24:45.293683+00:00",
   "window_hours": 24,
-  "articles_in_window": 1908,
+  "articles_in_window": 1941,
   "collection_days": 29,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,91 +10,91 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 196,
+      "articles": 205,
       "sources": 36,
       "sentiment_direction": "negative",
-      "surge": 0.55,
-      "sentiment_mean": -0.225,
-      "headline": "Wall St futures drop as oil spikes after Trump rejects Iran peace proposal",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/economy-news/wall-st-futures-drop-as-oil-spikes-after-trump-rejects-iran-peace-proposal-4919715"
-    },
-    {
-      "term": "president",
-      "articles": 111,
-      "sources": 32,
-      "sentiment_direction": "negative",
-      "surge": 0.59,
-      "sentiment_mean": -0.23,
-      "headline": "White House reporters float some surprise choices on which Republicans could run for president after Trump",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/media/white-house-reporters-float-wild-names-republicans-could-run-president-after-trump"
+      "surge": 0.58,
+      "sentiment_mean": -0.216,
+      "headline": "Trump Should Be Held Accountable For Defunding Renewable Energy Projects. Ninety-five clean energy projects have been delayed, threatened, or cancelled since Trump\u2019s re-election, putting more than 60,000 jobs and $71 billion in investment at risk. Trump repeatedly undermines US progress.",
+      "headline_source": "Reddit r/energy",
+      "headline_url": "https://www.reddit.com/r/energy/comments/1wsbsvm/trump_should_be_held_accountable_for_defunding/"
     },
     {
       "term": "iran",
-      "articles": 109,
+      "articles": 116,
+      "sources": 33,
+      "sentiment_direction": "negative",
+      "surge": 0.99,
+      "sentiment_mean": -0.479,
+      "headline": "U.S. Marines injured in Iran attack and Taylor Swift sets VMAs record: Morning Rundown",
+      "headline_source": "NBC News",
+      "headline_url": "https://www.nbcnews.com/news/us-news/us-marines-injured-iran-attack-taylor-swift-sets-vmas-record-morning-r-rcna600050"
+    },
+    {
+      "term": "president",
+      "articles": 116,
       "sources": 32,
       "sentiment_direction": "negative",
-      "surge": 0.93,
-      "sentiment_mean": -0.48,
-      "headline": "Wall St futures drop as oil spikes after Trump rejects Iran peace proposal",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/economy-news/wall-st-futures-drop-as-oil-spikes-after-trump-rejects-iran-peace-proposal-4919715"
+      "surge": 0.62,
+      "sentiment_mean": -0.244,
+      "headline": "Serbia's populist President Vucic resigns to run for PM",
+      "headline_source": "France24",
+      "headline_url": "https://www.france24.com/en/video/20260928-serbia-s-populist-president-vucic-resigns-to-run-for-pm"
     },
     {
       "term": "government",
-      "articles": 59,
-      "sources": 29,
+      "articles": 65,
+      "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 0.77,
-      "sentiment_mean": -0.084,
-      "headline": "Sweden faces political deadlock after election-winning center-left bloc fails to form government",
-      "headline_source": "DW News",
-      "headline_url": "https://www.dw.com/en/sweden-faces-political-deadlock-after-election-winning-center-left-bloc-fails-to-form-government/a-79455295?maca=en-rss-en-all-1573-rdf"
+      "surge": 0.86,
+      "sentiment_mean": -0.07,
+      "headline": "Sweden\u2019s Magdalena Andersson ends government-formation talks with no result",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/world/europe/article/3369077/swedens-magdalena-andersson-ends-government-formation-talks-no-result?utm_source=rss_feed"
     },
     {
       "term": "used",
-      "articles": 55,
-      "sources": 29,
+      "articles": 53,
+      "sources": 28,
       "sentiment_direction": "negative",
-      "surge": 1.79,
-      "sentiment_mean": -0.387,
-      "headline": "\u2018Terror\u2019 incident near RAF base used for Iran war: What we know",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/news/2026/9/28/terror-incident-near-raf-base-used-for-iran-war-what-we-know?traffic_source=rss"
+      "surge": 1.7,
+      "sentiment_mean": -0.4,
+      "headline": "British police question 5 suspects after arrests near airbase used by U.S.",
+      "headline_source": "CBC World",
+      "headline_url": "https://www.cbc.ca/news/world/uk-raf-fairford-incident-9.7360562?cmp=rss"
+    },
+    {
+      "term": "police",
+      "articles": 76,
+      "sources": 24,
+      "sentiment_direction": "negative",
+      "surge": 1.35,
+      "sentiment_mean": -0.817,
+      "headline": "British police investigate if arrests near U.S. air base foiled an Iran-linked attack",
+      "headline_source": "NPR News",
+      "headline_url": "https://www.npr.org/2026/09/28/g-s1-145245/britain-us-base-suspected-foiled-attack"
     },
     {
       "term": "house",
-      "articles": 55,
+      "articles": 58,
       "sources": 24,
       "sentiment_direction": "mixed",
-      "surge": 0.52,
-      "sentiment_mean": 0.062,
+      "surge": 0.55,
+      "sentiment_mean": 0.078,
       "headline": "White House reporters float some surprise choices on which Republicans could run for president after Trump",
       "headline_source": "Fox News",
       "headline_url": "https://www.foxnews.com/media/white-house-reporters-float-wild-names-republicans-could-run-president-after-trump"
     },
     {
       "term": "base",
-      "articles": 51,
-      "sources": 23,
+      "articles": 53,
+      "sources": 24,
       "sentiment_direction": "negative",
       "surge": 2.97,
-      "sentiment_mean": -0.786,
-      "headline": "\u2018Terror\u2019 incident near RAF base used for Iran war: What we know",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/news/2026/9/28/terror-incident-near-raf-base-used-for-iran-war-what-we-know?traffic_source=rss"
-    },
-    {
-      "term": "police",
-      "articles": 74,
-      "sources": 22,
-      "sentiment_direction": "negative",
-      "surge": 1.32,
-      "sentiment_mean": -0.82,
-      "headline": "Terror police probe UK plot",
-      "headline_source": "Sydney Morning Herald",
-      "headline_url": "https://www.smh.com.au/world/terror-police-probe-uk-plot-20260928-p610x7.html?ref=rss&utm_medium=rss&utm_source=rss_world"
+      "sentiment_mean": -0.777,
+      "headline": "British police investigate if arrests near U.S. air base foiled an Iran-linked attack",
+      "headline_source": "NPR News",
+      "headline_url": "https://www.npr.org/2026/09/28/g-s1-145245/britain-us-base-suspected-foiled-attack"
     }
   ],
   "hours_since_fetch": 0.0
