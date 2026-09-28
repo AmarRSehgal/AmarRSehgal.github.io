@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T20:00:11.509422+00:00",
+  "generated_at": "2026-09-28T21:00:10.415424+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -19,19 +19,6 @@
       "cost_bps": 54.22
     },
     {
-      "base": "AERO",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1629.36,
-      "net_at_hold": 1.488,
-      "cost_bps": 26.0
-    },
-    {
       "base": "TOWNS",
       "type": "perp-perp",
       "long_venue": "KuCoin",
@@ -47,15 +34,15 @@
     {
       "base": "AERO",
       "type": "perp-perp",
-      "long_venue": "Aster",
+      "long_venue": "Lighter",
       "short_venue": "Coinbase",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1467.23,
-      "net_at_hold": 1.33994,
-      "cost_bps": 41.53
+      "net_apr": 1501.46,
+      "net_at_hold": 1.3712,
+      "cost_bps": 26.0
     },
     {
       "base": "TOWNS",
@@ -69,6 +56,19 @@
       "net_apr": 1397.59,
       "net_at_hold": 0.63817,
       "cost_bps": 44.92
+    },
+    {
+      "base": "AERO",
+      "type": "perp-perp",
+      "long_venue": "Aster",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1395.76,
+      "net_at_hold": 1.27467,
+      "cost_bps": 41.53
     },
     {
       "base": "TOWNS",
@@ -92,8 +92,8 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1190.12,
-      "net_at_hold": 0.54343,
+      "net_apr": 1153.14,
+      "net_at_hold": 0.52655,
       "cost_bps": 32.26
     },
     {
@@ -105,9 +105,9 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1148.87,
-      "net_at_hold": 0.5246,
-      "cost_bps": 35.95
+      "net_apr": 1098.15,
+      "net_at_hold": 0.50144,
+      "cost_bps": 35.9
     }
   ]
 }
