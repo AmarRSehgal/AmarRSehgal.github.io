@@ -429,7 +429,7 @@ function renderPaperAB(data) {
     const verdicts = {};
     (data.comparisons || []).forEach(c => { verdicts[c.treatment] = c; });
     const last = (data.daily || []).slice(-1)[0];
-    const rows = data.arms.map(a => {
+    const rows = data.arms.filter(a => !a.ladder).map(a => {
         const facts = [`${a.fills} fills`, `${a.size} ${data.unit === 'window' ? 'shares' : 'contracts'}`];
         if (a.pnl_per_size_c != null) facts.push(`${Number(a.pnl_per_size_c).toFixed(2)}c per unit traded`);
         if (a.passive_exit_share != null) facts.push(`${(a.passive_exit_share * 100).toFixed(0)}% passive exits`);
@@ -459,8 +459,39 @@ function renderPaperAB(data) {
                 </div>
             </div>`;
     }).join('');
-    return `<div class="prediction-note">${esc(data.headline)}</div>` + rows
+    return `<div class="prediction-note">${esc(data.headline)}</div>` + rows + renderLatencyCurve(data, money)
         + `<div class="prediction-note">${esc((data.caveats || []).join(' '))}</div>`;
+}
+
+// One row per strategy: the same strategy at each paper order latency, so how much
+// speed is worth reads straight across. The right-hand number is the fastest rung's
+// PnL minus the slowest's -- the value of being instant rather than where we are.
+function renderLatencyCurve(data, money) {
+    const curves = data.latency_curve || [];
+    if (!curves.length) return '';
+    const unit = data.unit === 'window' ? 'window' : 'day';
+    const rows = curves.map(c => {
+        const r = c.rungs;
+        const facts = r.map(x => `${x.latency_ms}ms ${money(x.pnl)}`
+            + (x.markout_c != null ? ` (${Number(x.markout_c).toFixed(2)}c)` : '')).join(' | ');
+        const fast = r[0], slow = r[r.length - 1];
+        const gain = fast.fills || slow.fills ? fast.pnl - slow.pnl : null;
+        return `
+            <div class="nba-game">
+                <div class="nba-matchup">
+                    <div class="nba-teams"><span class="pick-team">${esc(c.strategy)} by latency</span></div>
+                    <div class="nba-meta">${esc(facts)}</div>
+                </div>
+                <div class="nba-pick">
+                    <div class="nba-pick-label">${esc(`${fast.latency_ms}ms vs ${slow.latency_ms}ms`)}</div>
+                    <div class="nba-confidence ${gain == null ? '' : (gain >= 0 ? 'confidence-high' : 'confidence-low')}">${
+                        esc(gain == null ? '--' : money(gain))}</div>
+                    <div class="nba-meta">${esc(`${fast.units != null ? fast.units + ' ' + unit + 's' : ''}`)}</div>
+                </div>
+            </div>`;
+    }).join('');
+    return `<div class="prediction-note">Latency ladder: each strategy re-run at several paper order `
+        + `latencies on the same feed; markout in brackets at ${esc(curves[0].markout_horizon_s)}s.</div>` + rows;
 }
 
 // One section of the cross-source board, rendered as its own panel. `staleAfter` is

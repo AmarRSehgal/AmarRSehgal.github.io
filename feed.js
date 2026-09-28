@@ -987,7 +987,7 @@ function paperDaily(data) {
     // Cents matter at paper size: whole-dollar rounding showed +$0.33 as +$0.
     const money = v => (Number(v) >= 0 ? '+' : '-') + '$' + Math.abs(Number(v) || 0).toFixed(2);
     const rows = days.slice().reverse().map(d => {
-        const names = Object.keys(d.pnl);
+        const names = Object.keys(d.pnl).filter(n => !/_\d+ms$/.test(n));
         const facts = names.map(n => `${n} ${money(d.pnl[n])}`).join(' | ');
         const treat = names.filter(n => n !== control);
         const best = treat.length ? treat.reduce((x, y) => (d.pnl[y] > d.pnl[x] ? y : x)) : null;
