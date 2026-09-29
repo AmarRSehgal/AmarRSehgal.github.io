@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-29T13:24:39.391510+00:00",
+  "generated_at": "2026-09-29T14:24:42.042192+00:00",
   "window_hours": 24,
-  "articles_in_window": 2445,
+  "articles_in_window": 2435,
   "collection_days": 30,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -11,24 +11,46 @@
     {
       "term": "trump",
       "articles": 243,
-      "sources": 37,
+      "sources": 38,
       "sentiment_direction": "mixed",
       "surge": 0.74,
-      "sentiment_mean": -0.097,
-      "headline": "Trump sets high-stakes meeting on AI with tech giants as safety fears spread",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/trump-sets-high-stakes-meeting-on-ai-with-tech-giants-as-safety-fears-spread/"
+      "sentiment_mean": -0.109,
+      "headline": "Trump Administration Prepares to Ask Tax Filers if They Are U.S. Citizens",
+      "headline_source": "NYT Business",
+      "headline_url": "https://www.nytimes.com/2026/09/29/business/irs-tax-returns-citizenship.html"
     },
     {
       "term": "president",
-      "articles": 133,
-      "sources": 35,
+      "articles": 135,
+      "sources": 34,
       "sentiment_direction": "mixed",
-      "surge": 0.76,
-      "sentiment_mean": -0.077,
-      "headline": "Turkiye arrests president, six members of football refereeing body in probe",
+      "surge": 0.78,
+      "sentiment_mean": -0.103,
+      "headline": "'No locus standi': India rejects Turkey president's remarks on Kashmir at UNGA",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/india/no-locus-standi-india-rejects-turkey-president-erdogans-remarks-on-kashmir-at-unga/articleshow/134568765.cms"
+    },
+    {
+      "term": "company",
+      "articles": 99,
+      "sources": 30,
+      "sentiment_direction": "mixed",
+      "surge": 1.82,
+      "sentiment_mean": 0.142,
+      "headline": "Estonia says Russia ordered August arson attack on defence company",
       "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/sports/2026/9/29/turkiye-arrests-president-six-members-of-football-refereeing-body-in-probe?traffic_source=rss"
+      "headline_url": "https://www.aljazeera.com/news/2026/9/29/estonia-says-russia-ordered-august-arson-attack-on-defence?traffic_source=rss"
+    },
+    {
+      "term": "government",
+      "articles": 87,
+      "sources": 30,
+      "sentiment_direction": "mixed",
+      "surge": 1.09,
+      "sentiment_mean": -0.095,
+      "headline": "Spanish government approves measures to ease housing crisis after outcry over eviction",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/world/2026/sep/29/spanish-government-approves-measures-ease-housing-crisis-outcry-eviction"
     },
     {
       "term": "house",
@@ -36,65 +58,43 @@
       "sources": 30,
       "sentiment_direction": "negative",
       "surge": 0.76,
-      "sentiment_mean": -0.207,
-      "headline": "House Speaker Johnson says he hopes AI guardrails are 'voluntary' amid Congress inaction",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/09/29/ai-safety-regulation-mike-johnson-congress.html"
+      "sentiment_mean": -0.231,
+      "headline": "Why Trump, Johnson and AI leaders are meeting at the White House",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/why-trump-johnson-and-ai-leaders-are-meeting-at-the-white-house/"
     },
     {
-      "term": "openai",
-      "articles": 63,
-      "sources": 30,
-      "sentiment_direction": "positive",
-      "surge": 1.58,
-      "sentiment_mean": 0.234,
-      "headline": "Why OpenAI didn't roll out its latest model",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/why-openai-didnt-roll-out-its-latest-model/"
+      "term": "security",
+      "articles": 69,
+      "sources": 29,
+      "sentiment_direction": "mixed",
+      "surge": 1.34,
+      "sentiment_mean": -0.008,
+      "headline": "Still running iOS 26? Update your iPhones, iPads and Macs for this urgent security fix",
+      "headline_source": "TechCrunch",
+      "headline_url": "https://techcrunch.com/2026/09/29/still-running-ios-26-update-your-iphones-ipads-and-macs-for-this-urgent-security-fix/"
     },
     {
       "term": "model",
-      "articles": 57,
-      "sources": 30,
+      "articles": 58,
+      "sources": 29,
       "sentiment_direction": "positive",
       "surge": 3.0,
-      "sentiment_mean": 0.418,
-      "headline": "Why OpenAI didn't roll out its latest model",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/why-openai-didnt-roll-out-its-latest-model/"
+      "sentiment_mean": 0.423,
+      "headline": "Did Anthropic borrow its business model from Pak's foreign policy?",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/technology/tech-news/random-musing-pakistan-ai-anthropic-trump-frontier-ai-companies/articleshow/134568220.cms"
     },
     {
       "term": "iran",
       "articles": 108,
-      "sources": 29,
+      "sources": 28,
       "sentiment_direction": "negative",
       "surge": 0.91,
-      "sentiment_mean": -0.316,
-      "headline": "Hormuz and Yemen: Iran offers de-escalation at a price others will pay",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/opinions/2026/9/29/hormuz-and-yemen-iran-offers-de-escalation-at-a-price-others-will-pay?traffic_source=rss"
-    },
-    {
-      "term": "government",
-      "articles": 85,
-      "sources": 29,
-      "sentiment_direction": "mixed",
-      "surge": 1.07,
-      "sentiment_mean": -0.128,
-      "headline": "OpenAI apologizes to Australia after its AI agents breached government sites",
-      "headline_source": "TechCrunch",
-      "headline_url": "https://techcrunch.com/2026/09/29/openai-apologizes-to-australia-after-its-ai-agents-breached-government-sites/"
-    },
-    {
-      "term": "security",
-      "articles": 70,
-      "sources": 29,
-      "sentiment_direction": "mixed",
-      "surge": 1.37,
-      "sentiment_mean": 0.039,
-      "headline": "Iraq prepares for new chapter after US troop withdrawal as security concerns remain",
+      "sentiment_mean": -0.306,
+      "headline": "Is Mojtaba Khamenei Really Alive? The Bizarre Mystery Behind Iran's 'Invisible' Supreme Leader",
       "headline_source": "Reddit r/geopolitics",
-      "headline_url": "https://www.reddit.com/r/geopolitics/comments/1wt9ahs/iraq_prepares_for_new_chapter_after_us_troop/"
+      "headline_url": "https://www.reddit.com/r/geopolitics/comments/1wtbdtl/is_mojtaba_khamenei_really_alive_the_bizarre/"
     }
   ],
   "hours_since_fetch": 0.0
