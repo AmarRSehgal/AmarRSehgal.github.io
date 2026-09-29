@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-29T11:24:44.488355+00:00",
+  "generated_at": "2026-09-29T12:24:39.832433+00:00",
   "window_hours": 24,
-  "articles_in_window": 2429,
+  "articles_in_window": 2445,
   "collection_days": 30,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,91 +10,91 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 250,
+      "articles": 247,
       "sources": 38,
       "sentiment_direction": "mixed",
-      "surge": 0.75,
-      "sentiment_mean": -0.103,
-      "headline": "\u2018Love Me\u2019 Artist Demands Trump Stop Using Song",
-      "headline_source": "NYT Politics",
-      "headline_url": "https://www.nytimes.com/2026/09/29/us/politics/jmsn-love-me-trump-ad.html"
+      "surge": 0.74,
+      "sentiment_mean": -0.096,
+      "headline": "Trade irony amid Trump threat: Why Russia is buying its own oil as fuel from India",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/business/india-business/trade-irony-amid-trump-threat-why-russia-is-buying-its-own-oil-as-fuel-from-india/articleshow/134563758.cms"
     },
     {
       "term": "president",
-      "articles": 124,
-      "sources": 34,
+      "articles": 128,
+      "sources": 35,
       "sentiment_direction": "mixed",
-      "surge": 0.7,
-      "sentiment_mean": -0.088,
+      "surge": 0.73,
+      "sentiment_mean": -0.076,
       "headline": "Altimmune appoints Richard Menziuso as vice president and principal accounting officer",
       "headline_source": "Investing.com News",
       "headline_url": "https://www.investing.com/news/sec-filings/altimmune-appoints-richard-menziuso-as-vice-president-and-principal-accounting-officer-93CH-4922294"
     },
     {
-      "term": "iran",
-      "articles": 115,
-      "sources": 30,
-      "sentiment_direction": "negative",
-      "surge": 0.97,
-      "sentiment_mean": -0.356,
-      "headline": "Trump denies offering Iran sanctions relief for nuclear concessions \u2013 US politics live",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/us-news/live/2026/sep/29/donald-trump-iran-ai-jack-smith-media-white-house-latest-news-updates"
-    },
-    {
       "term": "openai",
-      "articles": 58,
+      "articles": 61,
       "sources": 30,
       "sentiment_direction": "positive",
-      "surge": 1.47,
-      "sentiment_mean": 0.222,
-      "headline": "OpenAI Delays Release of Latest Model Over Safety Concerns",
-      "headline_source": "Wired",
-      "headline_url": "https://www.wired.com/story/openai-delays-release-of-latest-model-over-safety-concerns/"
+      "surge": 1.53,
+      "sentiment_mean": 0.224,
+      "headline": "OpenAI DevDay live updates: Altman faces safety questions as company unveils new features",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/09/29/openai-devday-2026-live-updates.html"
     },
     {
-      "term": "public",
-      "articles": 73,
+      "term": "model",
+      "articles": 55,
+      "sources": 30,
+      "sentiment_direction": "positive",
+      "surge": 2.85,
+      "sentiment_mean": 0.415,
+      "headline": "Trump Spurns Iran\u2019s Latest Offer, OpenAI Scraps Debut of AI Model",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-09-29/the-opening-trade-9-29-2026-video"
+    },
+    {
+      "term": "iran",
+      "articles": 113,
       "sources": 29,
-      "sentiment_direction": "mixed",
-      "surge": 1.71,
-      "sentiment_mean": -0.026,
-      "headline": "AI, robotic arms power Hong Kong public hospital laundry and meal centre",
+      "sentiment_direction": "negative",
+      "surge": 0.95,
+      "sentiment_mean": -0.312,
+      "headline": "Hormuz and Yemen: Iran offers de-escalation at a price others will pay",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/opinions/2026/9/29/hormuz-and-yemen-iran-offers-de-escalation-at-a-price-others-will-pay?traffic_source=rss"
+    },
+    {
+      "term": "company",
+      "articles": 92,
+      "sources": 28,
+      "sentiment_direction": "positive",
+      "surge": 1.69,
+      "sentiment_mean": 0.204,
+      "headline": "Estonia blames Russia for arson attack on company supplying vehicles to Ukraine",
       "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/hong-kong/article/3369221/ai-robotic-arms-power-hong-kong-public-hospital-laundry-and-meal-centre?utm_source=rss_feed"
-    },
-    {
-      "term": "security",
-      "articles": 67,
-      "sources": 29,
-      "sentiment_direction": "mixed",
-      "surge": 1.28,
-      "sentiment_mean": 0.083,
-      "headline": "OpenAI delays latest model over security concerns, as industry faces pressure",
-      "headline_source": "NPR News",
-      "headline_url": "https://www.npr.org/2026/09/29/nx-s1-5984342/openai-delays-latest-model"
+      "headline_url": "https://www.scmp.com/news/world/europe/article/3369227/estonia-blames-russia-arson-attack-company-supplying-vehicles-ukraine?utm_source=rss_feed"
     },
     {
       "term": "government",
-      "articles": 84,
+      "articles": 87,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 1.06,
-      "sentiment_mean": -0.083,
-      "headline": "Spain's housing crisis: Protests continue, keep heat on government",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/video/20260929-spain-s-housing-crisis-protests-continue-keep-heat-on-government"
+      "surge": 1.09,
+      "sentiment_mean": -0.124,
+      "headline": "Thailand\u2019s government approves emergency funding after deadly floods that impacted millions",
+      "headline_source": "Reddit r/news",
+      "headline_url": "https://www.reddit.com/r/news/comments/1wt7gxy/thailands_government_approves_emergency_funding/"
     },
     {
-      "term": "data",
-      "articles": 60,
+      "term": "security",
+      "articles": 68,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 1.01,
-      "sentiment_mean": 0.098,
-      "headline": "Russia strikes two Kyiv data centres, cargo vessels in the Black Sea",
+      "surge": 1.32,
+      "sentiment_mean": 0.039,
+      "headline": "Brazil's countdown to election day: Crime and security high on voters' agenda",
       "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/europe/20260929-russia-strikes-two-kyiv-data-centres-cargo-vessels-in-the-black-sea"
+      "headline_url": "https://www.france24.com/en/video/20260929-brazil-s-countdown-to-election-day-crime-and-security-high-on-voters-agenda"
     }
   ],
   "hours_since_fetch": 0.0
