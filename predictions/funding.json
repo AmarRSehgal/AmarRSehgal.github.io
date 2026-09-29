@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T20:00:09.580097+00:00",
+  "generated_at": "2026-09-29T21:00:10.381472+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1862.1,
-      "net_at_hold": 1.70055,
-      "cost_bps": 47.08
+      "net_apr": 1884.44,
+      "net_at_hold": 1.72095,
+      "cost_bps": 47.53
     },
     {
       "base": "TOWNS",
@@ -27,8 +27,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1842.26,
-      "net_at_hold": 1.68243,
+      "net_apr": 1874.72,
+      "net_at_hold": 1.71207,
       "cost_bps": 55.4
     },
     {
@@ -40,8 +40,8 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1654.76,
-      "net_at_hold": 0.7556,
+      "net_apr": 1703.82,
+      "net_at_hold": 0.778,
       "cost_bps": 36.0
     },
     {
@@ -53,22 +53,9 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1613.37,
-      "net_at_hold": 0.7367,
+      "net_apr": 1660.02,
+      "net_at_hold": 0.758,
       "cost_bps": 38.0
-    },
-    {
-      "base": "PNUT",
-      "type": "perp-perp",
-      "long_venue": "OKX",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1580.29,
-      "net_at_hold": 0.72159,
-      "cost_bps": 36.62
     },
     {
       "base": "PNUT",
@@ -79,22 +66,22 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1553.29,
-      "net_at_hold": 0.70927,
+      "net_apr": 1605.85,
+      "net_at_hold": 0.73327,
       "cost_bps": 36.0
     },
     {
-      "base": "TOWNS",
+      "base": "PNUT",
       "type": "perp-perp",
-      "long_venue": "Gate",
+      "long_venue": "OKX",
       "short_venue": "Coinbase",
       "long_instrument": "perp",
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1529.92,
-      "net_at_hold": 0.69859,
-      "cost_bps": 40.93
+      "net_apr": 1603.06,
+      "net_at_hold": 0.73199,
+      "cost_bps": 36.62
     },
     {
       "base": "PNUT",
@@ -105,9 +92,22 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1506.28,
-      "net_at_hold": 0.6878,
+      "net_apr": 1558.84,
+      "net_at_hold": 0.7118,
       "cost_bps": 38.0
+    },
+    {
+      "base": "PNUT",
+      "type": "perp-perp",
+      "long_venue": "Bybit",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1538.21,
+      "net_at_hold": 0.70238,
+      "cost_bps": 39.6
     }
   ]
 }
