@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T09:00:11.237885+00:00",
+  "generated_at": "2026-09-29T10:00:10.163549+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1842.47,
-      "net_at_hold": 1.68262,
-      "cost_bps": 55.06
+      "net_apr": 1844.89,
+      "net_at_hold": 1.68483,
+      "cost_bps": 55.09
     },
     {
       "base": "INX",
@@ -53,8 +53,8 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1607.24,
-      "net_at_hold": 0.7339,
+      "net_apr": 1613.37,
+      "net_at_hold": 0.7367,
       "cost_bps": 38.0
     },
     {
@@ -71,19 +71,6 @@
       "cost_bps": 47.74
     },
     {
-      "base": "RESOLV",
-      "type": "perp-perp",
-      "long_venue": "GRVT",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1452.63,
-      "net_at_hold": 1.3266,
-      "cost_bps": 36.0
-    },
-    {
       "base": "TOWNS",
       "type": "perp-perp",
       "long_venue": "Gate",
@@ -92,9 +79,22 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1437.57,
-      "net_at_hold": 0.65642,
-      "cost_bps": 42.96
+      "net_apr": 1452.03,
+      "net_at_hold": 0.66303,
+      "cost_bps": 40.67
+    },
+    {
+      "base": "RESOLV",
+      "type": "perp-perp",
+      "long_venue": "GRVT",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1394.81,
+      "net_at_hold": 1.2738,
+      "cost_bps": 36.0
     },
     {
       "base": "RESOLV",
@@ -105,8 +105,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1401.37,
-      "net_at_hold": 1.27979,
+      "net_apr": 1351.2,
+      "net_at_hold": 1.23397,
       "cost_bps": 36.37
     }
   ]
