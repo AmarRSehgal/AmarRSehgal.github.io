@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T13:05:11.890997+00:00",
+  "generated_at": "2026-09-29T13:00:33.093418+00:00",
   "experiment": "Polymarket BTC 5-minute binaries: taker v1 vs passive makers",
   "venue": "Polymarket",
   "paper": true,
@@ -7,103 +7,542 @@
   "unit": "window",
   "min_units_for_verdict": 200,
   "status": "verdict",
-  "headline": "After 256 settled windows the best maker (maker_model) cannot yet be told apart from the original taker by $+0.132 per window (95% CI $-0.454 to $+0.657).",
+  "headline": "The best scored maker (maker_model) cannot yet be told apart from the original taker by $+0.141 per window (95% CI $-0.347 to $+0.605). Latency-ladder arms are still collecting.",
   "arms": [
     {
       "name": "taker_v1",
       "role": "control",
       "description": "The original tool, unchanged: buys the ask when N(d2) beats ask + taker fee, polling REST every 3s.",
-      "units": 290,
-      "active_units": 225,
-      "fills": 2585,
-      "size": 2585.0,
-      "pnl": -91.42,
-      "pnl_per_unit": -0.3152,
+      "units": 362,
+      "active_units": 297,
+      "fills": 3434,
+      "size": 3434.0,
+      "pnl": -109.81,
+      "pnl_per_unit": -0.3033,
       "pnl_per_unit_ci": [
-        -0.7398,
-        0.1482
+        -0.6933,
+        0.1303
       ],
-      "pnl_per_size_c": -3.536,
-      "roi": -0.0834,
-      "max_drawdown": 101.3,
+      "pnl_per_size_c": -3.198,
+      "roi": -0.076,
+      "max_drawdown": 119.31,
       "edge_at_fill_c": null,
       "markouts_c": null,
-      "fees": 38.51
+      "fees": 50.88,
+      "ladder": null
     },
     {
       "name": "maker_mid",
       "role": "treatment",
       "description": "Rests quotes around the Polymarket mid. No outside information -- measures what passive quoting alone is worth.",
-      "units": 256,
-      "active_units": 178,
-      "fills": 1030,
-      "size": 4580.7,
-      "pnl": -188.74,
-      "pnl_per_unit": -0.7373,
+      "units": 328,
+      "active_units": 245,
+      "fills": 1428,
+      "size": 6149.0,
+      "pnl": -208.22,
+      "pnl_per_unit": -0.6348,
       "pnl_per_unit_ci": [
-        -1.0124,
-        -0.4568
+        -0.8944,
+        -0.3757
       ],
-      "pnl_per_size_c": -4.12,
-      "roi": -0.0794,
-      "max_drawdown": 202.8,
-      "edge_at_fill_c": 7.117,
+      "pnl_per_size_c": -3.386,
+      "roi": -0.0655,
+      "max_drawdown": 217.84,
+      "edge_at_fill_c": 7.298,
       "markouts_c": {
-        "5": -3.904,
-        "30": -3.758,
-        "60": -2.909
+        "5": -3.435,
+        "30": -2.88,
+        "60": -2.029
       },
-      "fees": 0.0
+      "fees": 0.0,
+      "ladder": null
     },
     {
       "name": "maker_model",
       "role": "treatment",
       "description": "Rests quotes around the N(d2) model price.",
-      "units": 256,
-      "active_units": 188,
-      "fills": 751,
-      "size": 3341.6,
-      "pnl": -49.78,
-      "pnl_per_unit": -0.1945,
+      "units": 328,
+      "active_units": 258,
+      "fills": 1082,
+      "size": 4713.4,
+      "pnl": -55.63,
+      "pnl_per_unit": -0.1696,
       "pnl_per_unit_ci": [
-        -0.5421,
-        0.1579
+        -0.4711,
+        0.1597
       ],
-      "pnl_per_size_c": -1.49,
-      "roi": -0.0313,
-      "max_drawdown": 106.85,
-      "edge_at_fill_c": 7.485,
+      "pnl_per_size_c": -1.18,
+      "roi": -0.0254,
+      "max_drawdown": 111.8,
+      "edge_at_fill_c": 7.547,
       "markouts_c": {
-        "5": -1.66,
-        "30": -2.277,
-        "60": -1.481
+        "5": -1.674,
+        "30": -1.793,
+        "60": -1.136
       },
-      "fees": 0.0
+      "fees": 0.0,
+      "ladder": null
     },
     {
       "name": "maker_anchored",
       "role": "treatment",
       "description": "Rests quotes around the Polymarket mid moved by the spot-implied change since its recent average.",
-      "units": 256,
-      "active_units": 177,
-      "fills": 919,
-      "size": 4081.5,
-      "pnl": -81.11,
-      "pnl_per_unit": -0.3169,
+      "units": 328,
+      "active_units": 241,
+      "fills": 1327,
+      "size": 5814.4,
+      "pnl": -59.77,
+      "pnl_per_unit": -0.1822,
       "pnl_per_unit_ci": [
-        -0.6237,
-        -0.0218
+        -0.4502,
+        0.0959
       ],
-      "pnl_per_size_c": -1.987,
-      "roi": -0.0395,
+      "pnl_per_size_c": -1.028,
+      "roi": -0.0206,
       "max_drawdown": 114.54,
-      "edge_at_fill_c": 7.545,
+      "edge_at_fill_c": 7.601,
       "markouts_c": {
-        "5": -2.2,
-        "30": -1.871,
-        "60": -1.878
+        "5": -1.789,
+        "30": -1.149,
+        "60": -1.37
       },
-      "fees": 0.0
+      "fees": 0.0,
+      "ladder": null
+    },
+    {
+      "name": "maker_mid_0ms",
+      "role": "treatment",
+      "description": "maker_mid at 0ms order latency, re-quoting every 50ms (latency ladder).",
+      "units": 71,
+      "active_units": 58,
+      "fills": 206,
+      "size": 825.0,
+      "pnl": -11.93,
+      "pnl_per_unit": -0.1681,
+      "pnl_per_unit_ci": [
+        -0.6973,
+        0.3625
+      ],
+      "pnl_per_size_c": -1.446,
+      "roi": -0.0282,
+      "max_drawdown": 25.68,
+      "edge_at_fill_c": 8.196,
+      "markouts_c": {
+        "5": -1.049,
+        "30": -0.841,
+        "60": 0.964
+      },
+      "fees": 0.0,
+      "ladder": {
+        "strategy": "maker_mid",
+        "latency_ms": 0
+      }
+    },
+    {
+      "name": "maker_mid_100ms",
+      "role": "treatment",
+      "description": "maker_mid at 100ms order latency, re-quoting every 50ms (latency ladder).",
+      "units": 71,
+      "active_units": 64,
+      "fills": 248,
+      "size": 1007.1,
+      "pnl": -13.44,
+      "pnl_per_unit": -0.1893,
+      "pnl_per_unit_ci": [
+        -0.7784,
+        0.3756
+      ],
+      "pnl_per_size_c": -1.334,
+      "roi": -0.0258,
+      "max_drawdown": 26.43,
+      "edge_at_fill_c": 7.907,
+      "markouts_c": {
+        "5": -1.871,
+        "30": -0.626,
+        "60": 1.212
+      },
+      "fees": 0.0,
+      "ladder": {
+        "strategy": "maker_mid",
+        "latency_ms": 100
+      }
+    },
+    {
+      "name": "maker_mid_200ms",
+      "role": "treatment",
+      "description": "maker_mid at 200ms order latency, re-quoting every 50ms (latency ladder).",
+      "units": 71,
+      "active_units": 66,
+      "fills": 349,
+      "size": 1387.8,
+      "pnl": -3.9,
+      "pnl_per_unit": -0.0549,
+      "pnl_per_unit_ci": [
+        -0.6093,
+        0.4979
+      ],
+      "pnl_per_size_c": -0.281,
+      "roi": -0.0055,
+      "max_drawdown": 23.31,
+      "edge_at_fill_c": 7.816,
+      "markouts_c": {
+        "5": -1.975,
+        "30": 0.402,
+        "60": 0.326
+      },
+      "fees": 0.0,
+      "ladder": {
+        "strategy": "maker_mid",
+        "latency_ms": 200
+      }
+    },
+    {
+      "name": "maker_mid_300ms",
+      "role": "treatment",
+      "description": "maker_mid at 300ms order latency, re-quoting every 50ms (latency ladder).",
+      "units": 71,
+      "active_units": 66,
+      "fills": 400,
+      "size": 1580.4,
+      "pnl": -25.14,
+      "pnl_per_unit": -0.354,
+      "pnl_per_unit_ci": [
+        -0.901,
+        0.1606
+      ],
+      "pnl_per_size_c": -1.59,
+      "roi": -0.0309,
+      "max_drawdown": 40.85,
+      "edge_at_fill_c": 7.893,
+      "markouts_c": {
+        "5": -2.826,
+        "30": -0.55,
+        "60": 0.552
+      },
+      "fees": 0.0,
+      "ladder": {
+        "strategy": "maker_mid",
+        "latency_ms": 300
+      }
+    },
+    {
+      "name": "maker_mid_400ms",
+      "role": "treatment",
+      "description": "maker_mid at 400ms order latency, re-quoting every 50ms (latency ladder).",
+      "units": 71,
+      "active_units": 66,
+      "fills": 437,
+      "size": 1769.7,
+      "pnl": -34.61,
+      "pnl_per_unit": -0.4874,
+      "pnl_per_unit_ci": [
+        -0.9836,
+        0.0206
+      ],
+      "pnl_per_size_c": -1.955,
+      "roi": -0.0377,
+      "max_drawdown": 43.37,
+      "edge_at_fill_c": 7.74,
+      "markouts_c": {
+        "5": -2.689,
+        "30": -2.085,
+        "60": -0.399
+      },
+      "fees": 0.0,
+      "ladder": {
+        "strategy": "maker_mid",
+        "latency_ms": 400
+      }
+    },
+    {
+      "name": "maker_model_0ms",
+      "role": "treatment",
+      "description": "maker_model at 0ms order latency, re-quoting every 50ms (latency ladder).",
+      "units": 71,
+      "active_units": 65,
+      "fills": 194,
+      "size": 801.0,
+      "pnl": 5.4,
+      "pnl_per_unit": 0.0761,
+      "pnl_per_unit_ci": [
+        -0.6098,
+        0.8239
+      ],
+      "pnl_per_size_c": 0.675,
+      "roi": 0.0175,
+      "max_drawdown": 29.97,
+      "edge_at_fill_c": 7.729,
+      "markouts_c": {
+        "5": 0.07,
+        "30": 0.524,
+        "60": 0.258
+      },
+      "fees": 0.0,
+      "ladder": {
+        "strategy": "maker_model",
+        "latency_ms": 0
+      }
+    },
+    {
+      "name": "maker_model_100ms",
+      "role": "treatment",
+      "description": "maker_model at 100ms order latency, re-quoting every 50ms (latency ladder).",
+      "units": 71,
+      "active_units": 66,
+      "fills": 206,
+      "size": 849.4,
+      "pnl": 5.35,
+      "pnl_per_unit": 0.0754,
+      "pnl_per_unit_ci": [
+        -0.6068,
+        0.8197
+      ],
+      "pnl_per_size_c": 0.63,
+      "roi": 0.0163,
+      "max_drawdown": 33.65,
+      "edge_at_fill_c": 7.869,
+      "markouts_c": {
+        "5": 0.34,
+        "30": 1.022,
+        "60": 0.378
+      },
+      "fees": 0.0,
+      "ladder": {
+        "strategy": "maker_model",
+        "latency_ms": 100
+      }
+    },
+    {
+      "name": "maker_model_200ms",
+      "role": "treatment",
+      "description": "maker_model at 200ms order latency, re-quoting every 50ms (latency ladder).",
+      "units": 71,
+      "active_units": 67,
+      "fills": 241,
+      "size": 1034.9,
+      "pnl": 0.83,
+      "pnl_per_unit": 0.0117,
+      "pnl_per_unit_ci": [
+        -0.7619,
+        0.8219
+      ],
+      "pnl_per_size_c": 0.08,
+      "roi": 0.002,
+      "max_drawdown": 36.36,
+      "edge_at_fill_c": 7.986,
+      "markouts_c": {
+        "5": -0.048,
+        "30": -0.155,
+        "60": 0.129
+      },
+      "fees": 0.0,
+      "ladder": {
+        "strategy": "maker_model",
+        "latency_ms": 200
+      }
+    },
+    {
+      "name": "maker_model_300ms",
+      "role": "treatment",
+      "description": "maker_model at 300ms order latency, re-quoting every 50ms (latency ladder).",
+      "units": 71,
+      "active_units": 68,
+      "fills": 279,
+      "size": 1173.8,
+      "pnl": -9.36,
+      "pnl_per_unit": -0.1318,
+      "pnl_per_unit_ci": [
+        -0.8705,
+        0.6678
+      ],
+      "pnl_per_size_c": -0.797,
+      "roi": -0.0189,
+      "max_drawdown": 39.71,
+      "edge_at_fill_c": 7.9,
+      "markouts_c": {
+        "5": 0.217,
+        "30": -0.685,
+        "60": -0.96
+      },
+      "fees": 0.0,
+      "ladder": {
+        "strategy": "maker_model",
+        "latency_ms": 300
+      }
+    },
+    {
+      "name": "maker_model_400ms",
+      "role": "treatment",
+      "description": "maker_model at 400ms order latency, re-quoting every 50ms (latency ladder).",
+      "units": 71,
+      "active_units": 68,
+      "fills": 299,
+      "size": 1276.8,
+      "pnl": -12.68,
+      "pnl_per_unit": -0.1786,
+      "pnl_per_unit_ci": [
+        -0.8837,
+        0.5987
+      ],
+      "pnl_per_size_c": -0.993,
+      "roi": -0.0233,
+      "max_drawdown": 42.71,
+      "edge_at_fill_c": 7.725,
+      "markouts_c": {
+        "5": -0.381,
+        "30": -1.17,
+        "60": -1.1
+      },
+      "fees": 0.0,
+      "ladder": {
+        "strategy": "maker_model",
+        "latency_ms": 400
+      }
+    },
+    {
+      "name": "maker_anchored_0ms",
+      "role": "treatment",
+      "description": "maker_anchored at 0ms order latency, re-quoting every 50ms (latency ladder).",
+      "units": 71,
+      "active_units": 57,
+      "fills": 218,
+      "size": 937.4,
+      "pnl": 23.57,
+      "pnl_per_unit": 0.3319,
+      "pnl_per_unit_ci": [
+        -0.1762,
+        0.815
+      ],
+      "pnl_per_size_c": 2.514,
+      "roi": 0.0519,
+      "max_drawdown": 10.61,
+      "edge_at_fill_c": 7.785,
+      "markouts_c": {
+        "5": 1.143,
+        "30": 1.993,
+        "60": 1.015
+      },
+      "fees": 0.0,
+      "ladder": {
+        "strategy": "maker_anchored",
+        "latency_ms": 0
+      }
+    },
+    {
+      "name": "maker_anchored_100ms",
+      "role": "treatment",
+      "description": "maker_anchored at 100ms order latency, re-quoting every 50ms (latency ladder).",
+      "units": 71,
+      "active_units": 56,
+      "fills": 245,
+      "size": 1060.0,
+      "pnl": 28.2,
+      "pnl_per_unit": 0.3971,
+      "pnl_per_unit_ci": [
+        -0.0835,
+        0.9012
+      ],
+      "pnl_per_size_c": 2.66,
+      "roi": 0.0563,
+      "max_drawdown": 10.41,
+      "edge_at_fill_c": 8.028,
+      "markouts_c": {
+        "5": 0.83,
+        "30": 1.101,
+        "60": 1.884
+      },
+      "fees": 0.0,
+      "ladder": {
+        "strategy": "maker_anchored",
+        "latency_ms": 100
+      }
+    },
+    {
+      "name": "maker_anchored_200ms",
+      "role": "treatment",
+      "description": "maker_anchored at 200ms order latency, re-quoting every 50ms (latency ladder).",
+      "units": 71,
+      "active_units": 62,
+      "fills": 288,
+      "size": 1266.6,
+      "pnl": 24.52,
+      "pnl_per_unit": 0.3453,
+      "pnl_per_unit_ci": [
+        -0.1619,
+        0.833
+      ],
+      "pnl_per_size_c": 1.936,
+      "roi": 0.0403,
+      "max_drawdown": 14.51,
+      "edge_at_fill_c": 7.943,
+      "markouts_c": {
+        "5": 0.584,
+        "30": 0.449,
+        "60": 0.405
+      },
+      "fees": 0.0,
+      "ladder": {
+        "strategy": "maker_anchored",
+        "latency_ms": 200
+      }
+    },
+    {
+      "name": "maker_anchored_300ms",
+      "role": "treatment",
+      "description": "maker_anchored at 300ms order latency, re-quoting every 50ms (latency ladder).",
+      "units": 71,
+      "active_units": 63,
+      "fills": 347,
+      "size": 1465.4,
+      "pnl": 14.19,
+      "pnl_per_unit": 0.1998,
+      "pnl_per_unit_ci": [
+        -0.3165,
+        0.6939
+      ],
+      "pnl_per_size_c": 0.968,
+      "roi": 0.0197,
+      "max_drawdown": 11.96,
+      "edge_at_fill_c": 7.846,
+      "markouts_c": {
+        "5": -0.441,
+        "30": -1.247,
+        "60": -2.121
+      },
+      "fees": 0.0,
+      "ladder": {
+        "strategy": "maker_anchored",
+        "latency_ms": 300
+      }
+    },
+    {
+      "name": "maker_anchored_400ms",
+      "role": "treatment",
+      "description": "maker_anchored at 400ms order latency, re-quoting every 50ms (latency ladder).",
+      "units": 71,
+      "active_units": 64,
+      "fills": 401,
+      "size": 1668.8,
+      "pnl": 22.17,
+      "pnl_per_unit": 0.3123,
+      "pnl_per_unit_ci": [
+        -0.2625,
+        0.8468
+      ],
+      "pnl_per_size_c": 1.328,
+      "roi": 0.0271,
+      "max_drawdown": 16.96,
+      "edge_at_fill_c": 7.746,
+      "markouts_c": {
+        "5": -0.762,
+        "30": -0.028,
+        "60": -0.729
+      },
+      "fees": 0.0,
+      "ladder": {
+        "strategy": "maker_anchored",
+        "latency_ms": 400
+      }
     }
   ],
   "comparisons": [
@@ -111,10 +550,10 @@
       "treatment": "maker_mid",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.4108,
+      "diff": -0.3239,
       "ci": [
-        -1.075,
-        0.2273
+        -0.8944,
+        0.2377
       ],
       "verdict": "indistinguishable"
     },
@@ -122,10 +561,10 @@
       "treatment": "maker_model",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.132,
+      "diff": 0.1413,
       "ci": [
-        -0.4543,
-        0.6567
+        -0.3466,
+        0.6052
       ],
       "verdict": "indistinguishable"
     },
@@ -133,12 +572,177 @@
       "treatment": "maker_anchored",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.0097,
+      "diff": 0.1287,
       "ci": [
-        -0.667,
-        0.6561
+        -0.4387,
+        0.7079
       ],
       "verdict": "indistinguishable"
+    },
+    {
+      "treatment": "maker_mid_0ms",
+      "control": "taker_v1",
+      "metric": "pnl_per_window",
+      "diff": 0.0843,
+      "ci": [
+        -1.3129,
+        1.2884
+      ],
+      "verdict": "collecting"
+    },
+    {
+      "treatment": "maker_mid_100ms",
+      "control": "taker_v1",
+      "metric": "pnl_per_window",
+      "diff": 0.0631,
+      "ci": [
+        -1.3434,
+        1.2759
+      ],
+      "verdict": "collecting"
+    },
+    {
+      "treatment": "maker_mid_200ms",
+      "control": "taker_v1",
+      "metric": "pnl_per_window",
+      "diff": 0.1974,
+      "ci": [
+        -1.1029,
+        1.3594
+      ],
+      "verdict": "collecting"
+    },
+    {
+      "treatment": "maker_mid_300ms",
+      "control": "taker_v1",
+      "metric": "pnl_per_window",
+      "diff": -0.1016,
+      "ci": [
+        -1.4921,
+        1.0657
+      ],
+      "verdict": "collecting"
+    },
+    {
+      "treatment": "maker_mid_400ms",
+      "control": "taker_v1",
+      "metric": "pnl_per_window",
+      "diff": -0.235,
+      "ci": [
+        -1.5107,
+        0.9292
+      ],
+      "verdict": "collecting"
+    },
+    {
+      "treatment": "maker_model_0ms",
+      "control": "taker_v1",
+      "metric": "pnl_per_window",
+      "diff": 0.3285,
+      "ci": [
+        -0.4743,
+        1.0943
+      ],
+      "verdict": "collecting"
+    },
+    {
+      "treatment": "maker_model_100ms",
+      "control": "taker_v1",
+      "metric": "pnl_per_window",
+      "diff": 0.3278,
+      "ci": [
+        -0.4854,
+        1.1232
+      ],
+      "verdict": "collecting"
+    },
+    {
+      "treatment": "maker_model_200ms",
+      "control": "taker_v1",
+      "metric": "pnl_per_window",
+      "diff": 0.264,
+      "ci": [
+        -0.5968,
+        1.0918
+      ],
+      "verdict": "collecting"
+    },
+    {
+      "treatment": "maker_model_300ms",
+      "control": "taker_v1",
+      "metric": "pnl_per_window",
+      "diff": 0.1206,
+      "ci": [
+        -0.7741,
+        0.9887
+      ],
+      "verdict": "collecting"
+    },
+    {
+      "treatment": "maker_model_400ms",
+      "control": "taker_v1",
+      "metric": "pnl_per_window",
+      "diff": 0.0738,
+      "ci": [
+        -0.8091,
+        0.916
+      ],
+      "verdict": "collecting"
+    },
+    {
+      "treatment": "maker_anchored_0ms",
+      "control": "taker_v1",
+      "metric": "pnl_per_window",
+      "diff": 0.5843,
+      "ci": [
+        -0.6955,
+        1.6829
+      ],
+      "verdict": "collecting"
+    },
+    {
+      "treatment": "maker_anchored_100ms",
+      "control": "taker_v1",
+      "metric": "pnl_per_window",
+      "diff": 0.6495,
+      "ci": [
+        -0.5751,
+        1.7294
+      ],
+      "verdict": "collecting"
+    },
+    {
+      "treatment": "maker_anchored_200ms",
+      "control": "taker_v1",
+      "metric": "pnl_per_window",
+      "diff": 0.5977,
+      "ci": [
+        -0.6253,
+        1.6814
+      ],
+      "verdict": "collecting"
+    },
+    {
+      "treatment": "maker_anchored_300ms",
+      "control": "taker_v1",
+      "metric": "pnl_per_window",
+      "diff": 0.4522,
+      "ci": [
+        -0.8207,
+        1.5964
+      ],
+      "verdict": "collecting"
+    },
+    {
+      "treatment": "maker_anchored_400ms",
+      "control": "taker_v1",
+      "metric": "pnl_per_window",
+      "diff": 0.5646,
+      "ci": [
+        -0.7394,
+        1.7255
+      ],
+      "verdict": "collecting"
     }
   ],
   "daily": [
@@ -162,7 +766,7 @@
       "pnl": {
         "taker_v1": -13.04,
         "maker_mid": -98.02,
-        "maker_model": -45.66,
+        "maker_model": -45.67,
         "maker_anchored": -81.94
       },
       "units": {
@@ -190,17 +794,277 @@
     {
       "date": "2026-09-28",
       "pnl": {
-        "taker_v1": -37.77,
+        "taker_v1": -38.24,
         "maker_mid": -11.99,
         "maker_model": -30.08,
-        "maker_anchored": 21.42
+        "maker_anchored": 22.97
+      },
+      "units": {
+        "taker_v1": 72,
+        "maker_mid": 72,
+        "maker_model": 72,
+        "maker_anchored": 72
+      }
+    },
+    {
+      "date": "2026-09-29",
+      "pnl": {
+        "taker_v1": -17.92,
+        "maker_mid": -19.48,
+        "maker_model": -5.83,
+        "maker_anchored": 19.79,
+        "maker_mid_0ms": -11.93,
+        "maker_mid_100ms": -13.44,
+        "maker_mid_200ms": -3.9,
+        "maker_mid_300ms": -25.11,
+        "maker_mid_400ms": -34.6,
+        "maker_model_0ms": 5.42,
+        "maker_model_100ms": 5.34,
+        "maker_model_200ms": 0.81,
+        "maker_model_300ms": -9.36,
+        "maker_model_400ms": -12.68,
+        "maker_anchored_0ms": 23.57,
+        "maker_anchored_100ms": 28.2,
+        "maker_anchored_200ms": 24.51,
+        "maker_anchored_300ms": 14.2,
+        "maker_anchored_400ms": 22.16
       },
       "units": {
         "taker_v1": 71,
         "maker_mid": 71,
         "maker_model": 71,
-        "maker_anchored": 71
+        "maker_anchored": 71,
+        "maker_mid_0ms": 71,
+        "maker_mid_100ms": 71,
+        "maker_mid_200ms": 71,
+        "maker_mid_300ms": 71,
+        "maker_mid_400ms": 71,
+        "maker_model_0ms": 71,
+        "maker_model_100ms": 71,
+        "maker_model_200ms": 71,
+        "maker_model_300ms": 71,
+        "maker_model_400ms": 71,
+        "maker_anchored_0ms": 71,
+        "maker_anchored_100ms": 71,
+        "maker_anchored_200ms": 71,
+        "maker_anchored_300ms": 71,
+        "maker_anchored_400ms": 71
       }
+    }
+  ],
+  "latency_curve": [
+    {
+      "strategy": "maker_mid",
+      "markout_horizon_s": 5,
+      "rungs": [
+        {
+          "latency_ms": 0,
+          "arm": "maker_mid_0ms",
+          "units": 71,
+          "fills": 206,
+          "pnl": -11.93,
+          "pnl_per_unit": -0.1681,
+          "pnl_per_unit_ci": [
+            -0.6973,
+            0.3625
+          ],
+          "markout_c": -1.049
+        },
+        {
+          "latency_ms": 100,
+          "arm": "maker_mid_100ms",
+          "units": 71,
+          "fills": 248,
+          "pnl": -13.44,
+          "pnl_per_unit": -0.1893,
+          "pnl_per_unit_ci": [
+            -0.7784,
+            0.3756
+          ],
+          "markout_c": -1.871
+        },
+        {
+          "latency_ms": 200,
+          "arm": "maker_mid_200ms",
+          "units": 71,
+          "fills": 349,
+          "pnl": -3.9,
+          "pnl_per_unit": -0.0549,
+          "pnl_per_unit_ci": [
+            -0.6093,
+            0.4979
+          ],
+          "markout_c": -1.975
+        },
+        {
+          "latency_ms": 300,
+          "arm": "maker_mid_300ms",
+          "units": 71,
+          "fills": 400,
+          "pnl": -25.14,
+          "pnl_per_unit": -0.354,
+          "pnl_per_unit_ci": [
+            -0.901,
+            0.1606
+          ],
+          "markout_c": -2.826
+        },
+        {
+          "latency_ms": 400,
+          "arm": "maker_mid_400ms",
+          "units": 71,
+          "fills": 437,
+          "pnl": -34.61,
+          "pnl_per_unit": -0.4874,
+          "pnl_per_unit_ci": [
+            -0.9836,
+            0.0206
+          ],
+          "markout_c": -2.689
+        }
+      ]
+    },
+    {
+      "strategy": "maker_model",
+      "markout_horizon_s": 5,
+      "rungs": [
+        {
+          "latency_ms": 0,
+          "arm": "maker_model_0ms",
+          "units": 71,
+          "fills": 194,
+          "pnl": 5.4,
+          "pnl_per_unit": 0.0761,
+          "pnl_per_unit_ci": [
+            -0.6098,
+            0.8239
+          ],
+          "markout_c": 0.07
+        },
+        {
+          "latency_ms": 100,
+          "arm": "maker_model_100ms",
+          "units": 71,
+          "fills": 206,
+          "pnl": 5.35,
+          "pnl_per_unit": 0.0754,
+          "pnl_per_unit_ci": [
+            -0.6068,
+            0.8197
+          ],
+          "markout_c": 0.34
+        },
+        {
+          "latency_ms": 200,
+          "arm": "maker_model_200ms",
+          "units": 71,
+          "fills": 241,
+          "pnl": 0.83,
+          "pnl_per_unit": 0.0117,
+          "pnl_per_unit_ci": [
+            -0.7619,
+            0.8219
+          ],
+          "markout_c": -0.048
+        },
+        {
+          "latency_ms": 300,
+          "arm": "maker_model_300ms",
+          "units": 71,
+          "fills": 279,
+          "pnl": -9.36,
+          "pnl_per_unit": -0.1318,
+          "pnl_per_unit_ci": [
+            -0.8705,
+            0.6678
+          ],
+          "markout_c": 0.217
+        },
+        {
+          "latency_ms": 400,
+          "arm": "maker_model_400ms",
+          "units": 71,
+          "fills": 299,
+          "pnl": -12.68,
+          "pnl_per_unit": -0.1786,
+          "pnl_per_unit_ci": [
+            -0.8837,
+            0.5987
+          ],
+          "markout_c": -0.381
+        }
+      ]
+    },
+    {
+      "strategy": "maker_anchored",
+      "markout_horizon_s": 5,
+      "rungs": [
+        {
+          "latency_ms": 0,
+          "arm": "maker_anchored_0ms",
+          "units": 71,
+          "fills": 218,
+          "pnl": 23.57,
+          "pnl_per_unit": 0.3319,
+          "pnl_per_unit_ci": [
+            -0.1762,
+            0.815
+          ],
+          "markout_c": 1.143
+        },
+        {
+          "latency_ms": 100,
+          "arm": "maker_anchored_100ms",
+          "units": 71,
+          "fills": 245,
+          "pnl": 28.2,
+          "pnl_per_unit": 0.3971,
+          "pnl_per_unit_ci": [
+            -0.0835,
+            0.9012
+          ],
+          "markout_c": 0.83
+        },
+        {
+          "latency_ms": 200,
+          "arm": "maker_anchored_200ms",
+          "units": 71,
+          "fills": 288,
+          "pnl": 24.52,
+          "pnl_per_unit": 0.3453,
+          "pnl_per_unit_ci": [
+            -0.1619,
+            0.833
+          ],
+          "markout_c": 0.584
+        },
+        {
+          "latency_ms": 300,
+          "arm": "maker_anchored_300ms",
+          "units": 71,
+          "fills": 347,
+          "pnl": 14.19,
+          "pnl_per_unit": 0.1998,
+          "pnl_per_unit_ci": [
+            -0.3165,
+            0.6939
+          ],
+          "markout_c": -0.441
+        },
+        {
+          "latency_ms": 400,
+          "arm": "maker_anchored_400ms",
+          "units": 71,
+          "fills": 401,
+          "pnl": 22.17,
+          "pnl_per_unit": 0.3123,
+          "pnl_per_unit_ci": [
+            -0.2625,
+            0.8468
+          ],
+          "markout_c": -0.762
+        }
+      ]
     }
   ],
   "kill_criteria": [
