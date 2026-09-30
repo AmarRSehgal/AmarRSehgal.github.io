@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-30T02:24:38.650870+00:00",
+  "generated_at": "2026-09-30T03:25:16.139601+00:00",
   "window_hours": 24,
-  "articles_in_window": 2492,
+  "articles_in_window": 2490,
   "collection_days": 31,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,92 +10,92 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 247,
+      "articles": 250,
       "sources": 37,
       "sentiment_direction": "mixed",
-      "surge": 0.79,
-      "sentiment_mean": 0.004,
-      "headline": "Oil stays above $103 after Trump denies easing sanctions on Iran",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/business/international-business/oil-stays-above-103-after-trump-denies-easing-sanctions-on-iran/articleshow/134577192.cms"
+      "surge": 0.81,
+      "sentiment_mean": 0.013,
+      "headline": "Three takeaways from Trump's 'Super Intelligence' summit",
+      "headline_source": "BBC World",
+      "headline_url": "https://www.bbc.co.uk/news/articles/cme30dz5vkzko?at_medium=RSS&at_campaign=rss"
     },
     {
       "term": "government",
-      "articles": 103,
-      "sources": 36,
+      "articles": 105,
+      "sources": 35,
       "sentiment_direction": "mixed",
-      "surge": 1.25,
-      "sentiment_mean": -0.075,
-      "headline": "FCRA bill improvement on existing law, says government",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/india/fcra-bill-improvement-on-existing-law-says-government/articleshow/134577282.cms"
+      "surge": 1.28,
+      "sentiment_mean": -0.056,
+      "headline": "Energy prices to hit record highs with end of government subsidy next month",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/business/2026/09/30/japan-energy-prices-record-highs/"
+    },
+    {
+      "term": "house",
+      "articles": 71,
+      "sources": 31,
+      "sentiment_direction": "mixed",
+      "surge": 0.76,
+      "sentiment_mean": -0.113,
+      "headline": "Knicks undecided on White House visit",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/sports/2026/09/30/basketball/nba/knicks-white-house-visit/"
     },
     {
       "term": "president",
-      "articles": 131,
+      "articles": 132,
       "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 0.8,
-      "sentiment_mean": 0.115,
+      "surge": 0.81,
+      "sentiment_mean": 0.125,
       "headline": "White House\u2019s New AI-powered America.gov Website Confirms U.S President Lost the 2020 Presidential Election",
       "headline_source": "Reddit r/technology",
       "headline_url": "https://www.reddit.com/r/technology/comments/1wtpzj9/white_houses_new_aipowered_americagov_website/"
     },
     {
       "term": "company",
-      "articles": 103,
+      "articles": 101,
       "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 1.85,
-      "sentiment_mean": 0.019,
-      "headline": "Kura Oncology COO Kathleen Ford sells $111,930 in company stock",
+      "surge": 1.81,
+      "sentiment_mean": 0.018,
+      "headline": "Abeona Therapeutics CFO Joseph Vazzano sells $47,385 in company stock",
       "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/insider-trading-news/kura-oncology-coo-kathleen-ford-sells-111930-in-company-stock-93CH-4923956"
-    },
-    {
-      "term": "house",
-      "articles": 70,
-      "sources": 30,
-      "sentiment_direction": "mixed",
-      "surge": 0.75,
-      "sentiment_mean": -0.119,
-      "headline": "White House\u2019s New AI-powered America.gov Website Confirms U.S President Lost the 2020 Presidential Election",
-      "headline_source": "Reddit r/technology",
-      "headline_url": "https://www.reddit.com/r/technology/comments/1wtpzj9/white_houses_new_aipowered_americagov_website/"
-    },
-    {
-      "term": "security",
-      "articles": 66,
-      "sources": 30,
-      "sentiment_direction": "mixed",
-      "surge": 1.23,
-      "sentiment_mean": -0.098,
-      "headline": "Iraq begins high-stakes security balancing act as US troops withdraw",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/news/2026/9/29/iraq-begins-high-stakes-security-balancing-act-as-us-troops-withdraw?traffic_source=rss"
+      "headline_url": "https://www.investing.com/news/insider-trading-news/abeona-therapeutics-cfo-joseph-vazzano-sells-47385-in-company-stock-93CH-4924043"
     },
     {
       "term": "court",
-      "articles": 92,
+      "articles": 96,
       "sources": 29,
       "sentiment_direction": "negative",
-      "surge": 1.46,
-      "sentiment_mean": -0.162,
+      "surge": 1.54,
+      "sentiment_mean": -0.167,
       "headline": "Supreme Court allows forensic audit in Fortis case",
       "headline_source": "Times of India",
       "headline_url": "https://timesofindia.indiatimes.com/india/supreme-court-allows-forensic-audit-in-fortis-case/articleshow/134577260.cms"
     },
     {
+      "term": "security",
+      "articles": 67,
+      "sources": 29,
+      "sentiment_direction": "mixed",
+      "surge": 1.25,
+      "sentiment_mean": -0.108,
+      "headline": "Boom News founder Tang Ho-wing arrested by Hong Kong national security police",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3369271/boom-news-founder-tang-ho-wing-arrested-hong-kong-national-security-police?utm_source=rss_feed"
+    },
+    {
       "term": "former",
-      "articles": 79,
+      "articles": 77,
       "sources": 28,
       "sentiment_direction": "negative",
-      "surge": 1.99,
-      "sentiment_mean": -0.179,
+      "surge": 1.93,
+      "sentiment_mean": -0.201,
       "headline": "Backpack voted Fat Bear Week 2026 winner, beating former champ's offspring",
       "headline_source": "CBS News",
       "headline_url": "https://www.cbsnews.com/news/fat-bear-week-2026-winner-backpack/"
     }
   ],
-  "hours_since_fetch": 0.0
+  "hours_since_fetch": 0.06
 }
