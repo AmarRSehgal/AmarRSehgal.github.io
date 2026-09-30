@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T03:00:10.668568+00:00",
+  "generated_at": "2026-09-30T04:00:10.677141+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -29,7 +29,7 @@
       "scans": 24,
       "net_apr": 1968.01,
       "net_at_hold": 1.79727,
-      "cost_bps": 48.95
+      "cost_bps": 48.84
     },
     {
       "base": "OPN",
@@ -40,22 +40,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1940.58,
-      "net_at_hold": 1.77222,
+      "net_apr": 1922.72,
+      "net_at_hold": 1.75591,
       "cost_bps": 53.34
-    },
-    {
-      "base": "PNUT",
-      "type": "perp-perp",
-      "long_venue": "Aster",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1917.75,
-      "net_at_hold": 1.75137,
-      "cost_bps": 47.08
     },
     {
       "base": "TOWNS",
@@ -68,7 +55,20 @@
       "scans": 24,
       "net_apr": 1894.45,
       "net_at_hold": 1.73009,
-      "cost_bps": 55.56
+      "cost_bps": 55.53
+    },
+    {
+      "base": "PNUT",
+      "type": "perp-perp",
+      "long_venue": "Aster",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1859.71,
+      "net_at_hold": 1.69837,
+      "cost_bps": 47.53
     },
     {
       "base": "OPN",
