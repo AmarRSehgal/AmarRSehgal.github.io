@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-30T18:24:45.944626+00:00",
+  "generated_at": "2026-09-30T19:34:19.042149+00:00",
   "window_hours": 24,
-  "articles_in_window": 2588,
+  "articles_in_window": 2575,
   "collection_days": 31,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,92 +10,92 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 270,
+      "articles": 263,
       "sources": 44,
       "sentiment_direction": "mixed",
-      "surge": 0.93,
-      "sentiment_mean": 0.061,
-      "headline": "Legal Immigrants Lose Medicaid Coverage Under Trump\u2019s Bill",
-      "headline_source": "NYT Politics",
-      "headline_url": "https://www.nytimes.com/2026/09/30/us/politics/immigrants-medicaid-trump-bill.html"
+      "surge": 0.91,
+      "sentiment_mean": 0.041,
+      "headline": "Aaron Sorkin reveals why Trump is unmentioned in 'Social Reckoning' movie",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/media/aaron-sorkin-reveals-why-trump-unmentioned-social-reckoning-movie"
     },
     {
       "term": "president",
-      "articles": 121,
-      "sources": 34,
+      "articles": 119,
+      "sources": 36,
       "sentiment_direction": "positive",
-      "surge": 0.81,
-      "sentiment_mean": 0.236,
+      "surge": 0.8,
+      "sentiment_mean": 0.213,
       "headline": "Watch CNBC's full interview with Citadel's Ken Griffin and Carnegie Mellon University President Farnam Jahanian",
       "headline_source": "CNBC Top News",
       "headline_url": "https://www.cnbc.com/video/2026/09/30/cnbcs-full-interview-with-citdaels-ken-griffin-and-carnegie-mellon-president.html"
     },
     {
       "term": "data",
-      "articles": 85,
-      "sources": 32,
+      "articles": 90,
+      "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 1.48,
-      "sentiment_mean": 0.108,
-      "headline": "Data don't support Flock's claim of solving 1 million crimes",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/news/flocks-ceo-claims-its-tech-solved-1-million-crimes-data-shows-otherwise/"
-    },
-    {
-      "term": "court",
-      "articles": 109,
-      "sources": 30,
-      "sentiment_direction": "mixed",
-      "surge": 1.7,
-      "sentiment_mean": -0.09,
-      "headline": "Court halts execution of Christa Gail Pike for a Tennessee murder she committed at age 18",
-      "headline_source": "PBS NewsHour",
-      "headline_url": "https://www.pbs.org/newshour/nation/court-halts-execution-of-christa-gail-pike-for-a-tennessee-murder-she-committed-at-age-18"
+      "surge": 1.56,
+      "sentiment_mean": 0.115,
+      "headline": "US Department of Education data reveals 1,100 sexual assault allegations against public school staff",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/outkick-culture/us-department-education-data-reveals-1100-sexual-assault-allegations-public-school-staff"
     },
     {
       "term": "government",
-      "articles": 95,
+      "articles": 96,
       "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 1.09,
-      "sentiment_mean": 0.065,
-      "headline": "Singapore Pilots a Government-Built Dating Service",
-      "headline_source": "Slashdot",
-      "headline_url": "https://yro.slashdot.org/story/26/09/30/1620208/singapore-pilots-a-government-built-dating-service?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+      "surge": 1.1,
+      "sentiment_mean": 0.068,
+      "headline": "Helicopter crashes in northeastern Zimbabwe with no survivors, government spokesperson says - reuters.com",
+      "headline_source": "Reuters",
+      "headline_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOMTI2V1QzNFlWWlcxQUcyeDlrS096UFZoOVN0WUVSajlUZWFpSWpKTUZBcEE3S1JtSFpSRjVtYmdfSmw5VE5FSHVyVnU5Q2NQWGhMdVhfZ2dyNERJZEFnbkRPZWRrNVZCNDVXdUV0cFM3Nmk3aE5ubUtnaHBKY3A4YWZ1Qmw0NzZTanYyTE01c05zZ0c4RzhYTUF0YlZrNEpQSHVnbm1GYXZhZWtMZlFMYmVVNXpqcFdPdVE?oc=5"
+    },
+    {
+      "term": "court",
+      "articles": 106,
+      "sources": 29,
+      "sentiment_direction": "negative",
+      "surge": 1.63,
+      "sentiment_mean": -0.164,
+      "headline": "Execution of lone woman on Tennessee's death row paused by federal appeals court",
+      "headline_source": "ABC News",
+      "headline_url": "https://abcnews.com/US/execution-lone-woman-tennessees-death-row-paused-federal/story?id=136893331"
     },
     {
       "term": "country",
-      "articles": 93,
-      "sources": 30,
+      "articles": 87,
+      "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 1.7,
-      "sentiment_mean": 0.06,
+      "surge": 1.59,
+      "sentiment_mean": 0.045,
       "headline": "Riley Green drops acoustic performance of 'That's Just Me' and country music fans can't get enough",
       "headline_source": "Fox News",
       "headline_url": "https://www.foxnews.com/outkick-culture/riley-green-drops-acoustic-performance-thats-just-me-country-music-fans-cant-get-enough"
     },
     {
-      "term": "tech",
-      "articles": 76,
-      "sources": 29,
-      "sentiment_direction": "positive",
-      "surge": 1.93,
-      "sentiment_mean": 0.394,
-      "headline": "UK accuses China of using academics to spy on AI and other tech research",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/world/europe/article/3369391/uk-accuses-china-using-academics-spy-ai-and-other-tech-research?utm_source=rss_feed"
-    },
-    {
-      "term": "security",
-      "articles": 68,
+      "term": "public",
+      "articles": 72,
       "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 1.29,
-      "sentiment_mean": 0.013,
-      "headline": "U.S. ends ISIS-fighting mission in Iraq as regional security fears mount",
-      "headline_source": "NBC News",
-      "headline_url": "https://www.nbcnews.com/world/middle-east/us-pulls-last-troops-iraq-kurdish-concerns-fears-iran-influence-rcna600639"
+      "surge": 1.35,
+      "sentiment_mean": 0.041,
+      "headline": "US Department of Education data reveals 1,100 sexual assault allegations against public school staff",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/outkick-culture/us-department-education-data-reveals-1100-sexual-assault-allegations-public-school-staff"
+    },
+    {
+      "term": "military",
+      "articles": 62,
+      "sources": 29,
+      "sentiment_direction": "mixed",
+      "surge": 1.38,
+      "sentiment_mean": -0.137,
+      "headline": "U.S. military clears out of Iraq after 12 years of anti-ISIS operation",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/us-military-clears-out-of-iraq-after-12-years-of-anti-isis-operation/"
     }
   ],
-  "hours_since_fetch": 0.0
+  "hours_since_fetch": 0.02
 }
