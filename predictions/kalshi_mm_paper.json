@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T13:08:28.365831+00:00",
+  "generated_at": "2026-09-30T13:16:58.911264+00:00",
   "experiment": "Kalshi market making: v1 against the v2 engine",
   "venue": "Kalshi",
   "paper": true,
@@ -7,583 +7,608 @@
   "unit": "day",
   "min_units_for_verdict": 14,
   "status": "collecting",
-  "headline": "Collecting: day 4 of 14 before the arms are scored against each other. Running totals, not results: baseline -15.01 over 416 fills; v2_niche -13.52 over 2742 fills; v2_crypto -15.85 over 2092 fills; v2_crypto_0ms +14.61 over 320 fills; v2_crypto_125ms +12.28 over 349 fills; v2_crypto_250ms +9.30 over 349 fills; v2_crypto_375ms +3.30 over 343 fills; v2_crypto_500ms +11.43 over 352 fills; v2_niche_0ms +5.17 over 678 fills; v2_niche_125ms +5.17 over 678 fills; v2_niche_250ms +5.17 over 678 fills; v2_niche_375ms +5.17 over 678 fills; v2_niche_500ms +5.17 over 678 fills.",
+  "headline": "Collecting: day 5 of 14 before the arms are scored against each other. Running totals, not results: baseline -15.89 over 435 fills; v2_niche -28.79 over 3513 fills; v2_crypto -14.68 over 2839 fills; v2_crypto_0ms +20.06 over 1136 fills; v2_crypto_125ms +6.23 over 1135 fills; v2_crypto_250ms +8.14 over 1159 fills; v2_crypto_375ms -0.35 over 1168 fills; v2_crypto_500ms +11.35 over 1177 fills; v2_niche_0ms -13.05 over 1458 fills; v2_niche_125ms -13.05 over 1458 fills; v2_niche_250ms -13.05 over 1458 fills; v2_niche_375ms -13.05 over 1458 fills; v2_niche_500ms -13.05 over 1458 fills.",
   "arms": [
     {
       "name": "baseline",
       "role": "control",
       "description": "v1 unchanged: Avellaneda-Stoikov quotes around the touch mid on niche markets, crossing the spread to flatten before game windows and closes.",
-      "fills": 416,
-      "size": 568,
-      "markets": 2524,
-      "pnl": -15.01,
-      "realized": -6.3,
-      "mtm": -8.72,
-      "fees": 2.03,
-      "pnl_per_size_c": -2.643,
-      "resolved_contracts": 173,
-      "realized_per_resolved_c": -3.633,
-      "passive_exit_share": 0.318,
+      "fills": 435,
+      "size": 597,
+      "markets": 2927,
+      "pnl": -15.89,
+      "realized": -7.05,
+      "mtm": -8.85,
+      "fees": 2.18,
+      "pnl_per_size_c": -2.662,
+      "resolved_contracts": 183,
+      "realized_per_resolved_c": -3.844,
+      "passive_exit_share": 0.311,
       "exits": {
         "crossed": {
-          "contracts": 118,
-          "pnl": -6.63,
-          "per_contract_c": -5.62
+          "contracts": 126,
+          "pnl": -7.5,
+          "per_contract_c": -5.95
         },
         "passive": {
-          "contracts": 55,
-          "pnl": 0.34,
-          "per_contract_c": 0.63
+          "contracts": 57,
+          "pnl": 0.46,
+          "per_contract_c": 0.82
         }
       },
       "per_market_pnl_ci": [
-        -0.0094,
-        -0.0027
+        -0.0085,
+        -0.0026
       ],
       "markouts_c": {
-        "300": -3.25,
-        "3600": -4.275
+        "300": -3.171,
+        "3600": -3.92
       },
       "live_markouts_c": null,
       "ladder": null,
-      "units": 4,
-      "pnl_per_unit": -3.425,
+      "units": 5,
+      "pnl_per_unit": -2.916,
       "pnl_per_unit_ci": [
-        -5.38,
-        -1.28
+        -4.874,
+        -1.042
       ]
     },
     {
       "name": "v2_niche",
       "role": "treatment",
       "description": "v2 engine on the same universe: edge curve around a depth-weighted mid, never crosses, reduce-only instead of flatten, holds to resolution.",
-      "fills": 2742,
-      "size": 3201,
-      "markets": 2537,
-      "pnl": -13.52,
-      "realized": -7.31,
-      "mtm": -6.21,
+      "fills": 3513,
+      "size": 4068,
+      "markets": 2948,
+      "pnl": -28.79,
+      "realized": -18.19,
+      "mtm": -10.61,
       "fees": 0.19,
-      "pnl_per_size_c": -0.423,
-      "resolved_contracts": 1599,
-      "realized_per_resolved_c": -0.449,
-      "passive_exit_share": 0.771,
+      "pnl_per_size_c": -0.708,
+      "resolved_contracts": 2118,
+      "realized_per_resolved_c": -0.852,
+      "passive_exit_share": 0.748,
       "exits": {
         "passive": {
-          "contracts": 1233,
-          "pnl": 71.68,
-          "per_contract_c": 5.81
+          "contracts": 1585,
+          "pnl": 94.42,
+          "per_contract_c": 5.96
         },
         "settled": {
-          "contracts": 366,
-          "pnl": -78.85,
-          "per_contract_c": -21.54
+          "contracts": 533,
+          "pnl": -112.47,
+          "per_contract_c": -21.1
         }
       },
       "per_market_pnl_ci": [
-        -0.0161,
-        0.0053
+        -0.0213,
+        0.0015
       ],
       "markouts_c": {
-        "3600": 1.853,
-        "300": 2.81
+        "3600": 2.059,
+        "300": 2.83
       },
       "live_markouts_c": {
-        "10": 5.005,
-        "60": 3.901,
-        "300": 2.967,
-        "3600": 2.053
+        "10": 4.889,
+        "60": 3.808,
+        "300": 2.858,
+        "3600": 2.141
       },
       "ladder": null,
-      "units": 4,
-      "pnl_per_unit": -4.52,
+      "units": 5,
+      "pnl_per_unit": -6.67,
       "pnl_per_unit_ci": [
-        -9.59,
-        3.3325
+        -12.324,
+        1.278
       ]
     },
     {
       "name": "v2_crypto",
       "role": "treatment",
       "description": "v2 engine on hourly BTC/ETH strike ladders, fair value from Binance anchored to the Kalshi book, exposure netted across strikes.",
-      "fills": 2092,
-      "size": 5294,
-      "markets": 728,
-      "pnl": -15.85,
-      "realized": -16.56,
-      "mtm": 0.72,
+      "fills": 2839,
+      "size": 7134,
+      "markets": 929,
+      "pnl": -14.68,
+      "realized": -11.04,
+      "mtm": -3.64,
       "fees": 0.0,
-      "pnl_per_size_c": -0.299,
-      "resolved_contracts": 3121,
-      "realized_per_resolved_c": -0.531,
-      "passive_exit_share": 0.689,
+      "pnl_per_size_c": -0.206,
+      "resolved_contracts": 4154,
+      "realized_per_resolved_c": -0.266,
+      "passive_exit_share": 0.7,
       "exits": {
         "passive": {
-          "contracts": 2151,
-          "pnl": 38.56,
-          "per_contract_c": 1.79
+          "contracts": 2908,
+          "pnl": 52.72,
+          "per_contract_c": 1.81
         },
         "settled": {
-          "contracts": 970,
-          "pnl": -55.12,
-          "per_contract_c": -5.68
+          "contracts": 1246,
+          "pnl": -63.76,
+          "per_contract_c": -5.12
         }
       },
       "per_market_pnl_ci": [
-        -0.09,
-        0.0479
+        -0.0787,
+        0.0506
       ],
       "markouts_c": {
-        "300": -0.392,
-        "3600": 0.614
+        "300": -0.021,
+        "3600": 1.082
       },
       "live_markouts_c": {
-        "10": -0.489,
-        "60": -0.39,
-        "300": -0.46,
-        "3600": 1.39
+        "10": -0.544,
+        "60": -0.225,
+        "300": -0.002,
+        "3600": 2.0
       },
       "ladder": null,
-      "units": 4,
-      "pnl_per_unit": -2.54,
+      "units": 5,
+      "pnl_per_unit": -1.798,
       "pnl_per_unit_ci": [
-        -11.24,
-        7.59
+        -9.518,
+        5.514
       ]
     },
     {
       "name": "v2_crypto_0ms",
       "role": "treatment",
       "description": "v2_crypto at 0ms order latency on a faster re-quote step (latency ladder).",
-      "fills": 320,
-      "size": 835,
-      "markets": 163,
-      "pnl": 14.61,
-      "realized": 14.79,
-      "mtm": -0.19,
+      "fills": 1136,
+      "size": 2863,
+      "markets": 364,
+      "pnl": 20.06,
+      "realized": 23.48,
+      "mtm": -3.42,
       "fees": 0.0,
-      "pnl_per_size_c": 1.75,
-      "resolved_contracts": 498,
-      "realized_per_resolved_c": 2.971,
-      "passive_exit_share": 0.633,
+      "pnl_per_size_c": 0.701,
+      "resolved_contracts": 1643,
+      "realized_per_resolved_c": 1.429,
+      "passive_exit_share": 0.702,
       "exits": {
         "passive": {
-          "contracts": 315,
-          "pnl": 10.97,
-          "per_contract_c": 3.48
+          "contracts": 1153,
+          "pnl": 27.43,
+          "per_contract_c": 2.38
         },
         "settled": {
-          "contracts": 183,
-          "pnl": 3.82,
-          "per_contract_c": 2.09
+          "contracts": 490,
+          "pnl": -3.95,
+          "per_contract_c": -0.81
         }
       },
       "per_market_pnl_ci": [
-        -0.0355,
-        0.2216
+        -0.0506,
+        0.1621
       ],
       "markouts_c": null,
       "live_markouts_c": {
-        "10": -0.442,
-        "60": 0.047,
-        "300": -0.693,
-        "3600": 2.833
+        "10": -0.373,
+        "60": 0.51,
+        "300": 1.192,
+        "3600": 3.519
       },
       "ladder": {
         "strategy": "v2_crypto",
         "latency_ms": 0
       },
-      "units": 0,
-      "pnl_per_unit": null,
+      "units": 1,
+      "pnl_per_unit": 5.45,
       "pnl_per_unit_ci": null
     },
     {
       "name": "v2_crypto_125ms",
       "role": "treatment",
       "description": "v2_crypto at 125ms order latency on a faster re-quote step (latency ladder).",
-      "fills": 349,
-      "size": 906,
-      "markets": 163,
-      "pnl": 12.28,
-      "realized": 12.71,
-      "mtm": -0.42,
+      "fills": 1135,
+      "size": 2854,
+      "markets": 364,
+      "pnl": 6.23,
+      "realized": 10.29,
+      "mtm": -4.06,
       "fees": 0.0,
-      "pnl_per_size_c": 1.356,
-      "resolved_contracts": 557,
-      "realized_per_resolved_c": 2.282,
-      "passive_exit_share": 0.587,
+      "pnl_per_size_c": 0.218,
+      "resolved_contracts": 1667,
+      "realized_per_resolved_c": 0.617,
+      "passive_exit_share": 0.669,
       "exits": {
         "passive": {
-          "contracts": 327,
-          "pnl": 6.05,
-          "per_contract_c": 1.85
+          "contracts": 1115,
+          "pnl": 11.2,
+          "per_contract_c": 1.0
         },
         "settled": {
-          "contracts": 230,
-          "pnl": 6.66,
-          "per_contract_c": 2.9
+          "contracts": 552,
+          "pnl": -0.91,
+          "per_contract_c": -0.16
         }
       },
       "per_market_pnl_ci": [
-        -0.0849,
-        0.2297
+        -0.0965,
+        0.1293
       ],
       "markouts_c": null,
       "live_markouts_c": {
-        "10": -0.599,
-        "60": 0.237,
-        "300": -1.606,
-        "3600": 0.478
+        "10": -0.59,
+        "60": 0.423,
+        "300": 0.421,
+        "3600": 2.529
       },
       "ladder": {
         "strategy": "v2_crypto",
         "latency_ms": 125
       },
-      "units": 0,
-      "pnl_per_unit": null,
+      "units": 1,
+      "pnl_per_unit": -6.05,
       "pnl_per_unit_ci": null
     },
     {
       "name": "v2_crypto_250ms",
       "role": "treatment",
       "description": "v2_crypto at 250ms order latency on a faster re-quote step (latency ladder).",
-      "fills": 349,
-      "size": 887,
-      "markets": 163,
-      "pnl": 9.3,
-      "realized": 9.71,
-      "mtm": -0.41,
+      "fills": 1159,
+      "size": 2931,
+      "markets": 364,
+      "pnl": 8.14,
+      "realized": 13.23,
+      "mtm": -5.09,
       "fees": 0.0,
-      "pnl_per_size_c": 1.049,
-      "resolved_contracts": 542,
-      "realized_per_resolved_c": 1.792,
-      "passive_exit_share": 0.601,
+      "pnl_per_size_c": 0.278,
+      "resolved_contracts": 1695,
+      "realized_per_resolved_c": 0.78,
+      "passive_exit_share": 0.692,
       "exits": {
         "passive": {
-          "contracts": 326,
-          "pnl": 8.0,
-          "per_contract_c": 2.46
+          "contracts": 1173,
+          "pnl": 24.81,
+          "per_contract_c": 2.11
         },
         "settled": {
-          "contracts": 216,
-          "pnl": 1.71,
-          "per_contract_c": 0.79
+          "contracts": 522,
+          "pnl": -11.58,
+          "per_contract_c": -2.22
         }
       },
       "per_market_pnl_ci": [
-        -0.0816,
-        0.2032
+        -0.08,
+        0.1327
       ],
       "markouts_c": null,
       "live_markouts_c": {
-        "10": -0.827,
-        "60": -0.059,
-        "300": -0.999,
-        "3600": 1.042
+        "10": -0.529,
+        "60": 0.616,
+        "300": 1.029,
+        "3600": 3.324
       },
       "ladder": {
         "strategy": "v2_crypto",
         "latency_ms": 250
       },
-      "units": 0,
-      "pnl_per_unit": null,
+      "units": 1,
+      "pnl_per_unit": -1.16,
       "pnl_per_unit_ci": null
     },
     {
       "name": "v2_crypto_375ms",
       "role": "treatment",
       "description": "v2_crypto at 375ms order latency on a faster re-quote step (latency ladder).",
-      "fills": 343,
-      "size": 876,
-      "markets": 163,
-      "pnl": 3.3,
-      "realized": 3.56,
-      "mtm": -0.26,
+      "fills": 1168,
+      "size": 2906,
+      "markets": 364,
+      "pnl": -0.35,
+      "realized": 6.79,
+      "mtm": -7.14,
       "fees": 0.0,
-      "pnl_per_size_c": 0.376,
-      "resolved_contracts": 539,
-      "realized_per_resolved_c": 0.66,
-      "passive_exit_share": 0.601,
+      "pnl_per_size_c": -0.012,
+      "resolved_contracts": 1660,
+      "realized_per_resolved_c": 0.409,
+      "passive_exit_share": 0.71,
       "exits": {
         "passive": {
-          "contracts": 324,
-          "pnl": 7.46,
+          "contracts": 1178,
+          "pnl": 27.08,
           "per_contract_c": 2.3
         },
         "settled": {
-          "contracts": 215,
-          "pnl": -3.9,
-          "per_contract_c": -1.81
+          "contracts": 482,
+          "pnl": -20.29,
+          "per_contract_c": -4.21
         }
       },
       "per_market_pnl_ci": [
-        -0.1145,
-        0.1588
+        -0.107,
+        0.1027
       ],
       "markouts_c": null,
       "live_markouts_c": {
-        "10": -0.746,
-        "60": 0.172,
-        "300": -1.132,
-        "3600": 1.062
+        "10": -0.652,
+        "60": 0.268,
+        "300": 0.507,
+        "3600": 3.009
       },
       "ladder": {
         "strategy": "v2_crypto",
         "latency_ms": 375
       },
-      "units": 0,
-      "pnl_per_unit": null,
+      "units": 1,
+      "pnl_per_unit": -3.65,
       "pnl_per_unit_ci": null
     },
     {
       "name": "v2_crypto_500ms",
       "role": "treatment",
       "description": "v2_crypto at 500ms order latency on a faster re-quote step (latency ladder).",
-      "fills": 352,
-      "size": 915,
-      "markets": 163,
-      "pnl": 11.43,
-      "realized": 11.84,
-      "mtm": -0.41,
+      "fills": 1177,
+      "size": 2948,
+      "markets": 364,
+      "pnl": 11.35,
+      "realized": 18.62,
+      "mtm": -7.27,
       "fees": 0.0,
-      "pnl_per_size_c": 1.249,
-      "resolved_contracts": 565,
-      "realized_per_resolved_c": 2.096,
-      "passive_exit_share": 0.584,
+      "pnl_per_size_c": 0.385,
+      "resolved_contracts": 1682,
+      "realized_per_resolved_c": 1.107,
+      "passive_exit_share": 0.717,
       "exits": {
         "passive": {
-          "contracts": 330,
-          "pnl": 4.68,
-          "per_contract_c": 1.42
+          "contracts": 1206,
+          "pnl": 22.78,
+          "per_contract_c": 1.89
         },
         "settled": {
-          "contracts": 235,
-          "pnl": 7.16,
-          "per_contract_c": 3.05
+          "contracts": 476,
+          "pnl": -4.16,
+          "per_contract_c": -0.87
         }
       },
       "per_market_pnl_ci": [
-        -0.0689,
-        0.2282
+        -0.0751,
+        0.1391
       ],
       "markouts_c": null,
       "live_markouts_c": {
-        "10": -0.896,
-        "60": -0.232,
-        "300": -0.993,
-        "3600": 1.019
+        "10": -0.824,
+        "60": -0.274,
+        "300": 0.203,
+        "3600": 2.425
       },
       "ladder": {
         "strategy": "v2_crypto",
         "latency_ms": 500
       },
-      "units": 0,
-      "pnl_per_unit": null,
+      "units": 1,
+      "pnl_per_unit": -0.08,
       "pnl_per_unit_ci": null
     },
     {
       "name": "v2_niche_0ms",
       "role": "treatment",
       "description": "v2_niche at 0ms order latency on a faster re-quote step (latency ladder).",
-      "fills": 678,
-      "size": 712,
-      "markets": 1070,
-      "pnl": 5.17,
-      "realized": 14.43,
-      "mtm": -9.26,
-      "fees": 0.0,
-      "pnl_per_size_c": 0.726,
-      "resolved_contracts": 265,
-      "realized_per_resolved_c": 5.445,
-      "passive_exit_share": 1.0,
+      "fills": 1458,
+      "size": 1598,
+      "markets": 1487,
+      "pnl": -13.05,
+      "realized": 2.18,
+      "mtm": -15.22,
+      "fees": 0.05,
+      "pnl_per_size_c": -0.816,
+      "resolved_contracts": 759,
+      "realized_per_resolved_c": 0.291,
+      "passive_exit_share": 0.819,
       "exits": {
         "passive": {
-          "contracts": 265,
-          "pnl": 14.43,
-          "per_contract_c": 5.44
+          "contracts": 622,
+          "pnl": 36.0,
+          "per_contract_c": 5.79
+        },
+        "settled": {
+          "contracts": 137,
+          "pnl": -33.79,
+          "per_contract_c": -24.66
         }
       },
       "per_market_pnl_ci": [
-        -0.0032,
-        0.0126
+        -0.022,
+        0.0033
       ],
       "markouts_c": null,
       "live_markouts_c": {
-        "10": 5.031,
-        "60": 3.838,
-        "300": 2.7,
-        "3600": 0.908
+        "10": 4.695,
+        "60": 3.561,
+        "300": 2.524,
+        "3600": 1.706
       },
       "ladder": {
         "strategy": "v2_niche",
         "latency_ms": 0
       },
-      "units": 0,
-      "pnl_per_unit": null,
+      "units": 1,
+      "pnl_per_unit": -18.22,
       "pnl_per_unit_ci": null
     },
     {
       "name": "v2_niche_125ms",
       "role": "treatment",
       "description": "v2_niche at 125ms order latency on a faster re-quote step (latency ladder).",
-      "fills": 678,
-      "size": 712,
-      "markets": 1070,
-      "pnl": 5.17,
-      "realized": 14.43,
-      "mtm": -9.26,
-      "fees": 0.0,
-      "pnl_per_size_c": 0.726,
-      "resolved_contracts": 265,
-      "realized_per_resolved_c": 5.445,
-      "passive_exit_share": 1.0,
+      "fills": 1458,
+      "size": 1598,
+      "markets": 1487,
+      "pnl": -13.05,
+      "realized": 2.18,
+      "mtm": -15.22,
+      "fees": 0.05,
+      "pnl_per_size_c": -0.816,
+      "resolved_contracts": 759,
+      "realized_per_resolved_c": 0.291,
+      "passive_exit_share": 0.819,
       "exits": {
         "passive": {
-          "contracts": 265,
-          "pnl": 14.43,
-          "per_contract_c": 5.44
+          "contracts": 622,
+          "pnl": 36.0,
+          "per_contract_c": 5.79
+        },
+        "settled": {
+          "contracts": 137,
+          "pnl": -33.79,
+          "per_contract_c": -24.66
         }
       },
       "per_market_pnl_ci": [
-        -0.0032,
-        0.0126
+        -0.022,
+        0.0033
       ],
       "markouts_c": null,
       "live_markouts_c": {
-        "10": 5.031,
-        "60": 3.838,
-        "300": 2.7,
-        "3600": 0.908
+        "10": 4.695,
+        "60": 3.561,
+        "300": 2.524,
+        "3600": 1.706
       },
       "ladder": {
         "strategy": "v2_niche",
         "latency_ms": 125
       },
-      "units": 0,
-      "pnl_per_unit": null,
+      "units": 1,
+      "pnl_per_unit": -18.22,
       "pnl_per_unit_ci": null
     },
     {
       "name": "v2_niche_250ms",
       "role": "treatment",
       "description": "v2_niche at 250ms order latency on a faster re-quote step (latency ladder).",
-      "fills": 678,
-      "size": 712,
-      "markets": 1070,
-      "pnl": 5.17,
-      "realized": 14.43,
-      "mtm": -9.26,
-      "fees": 0.0,
-      "pnl_per_size_c": 0.726,
-      "resolved_contracts": 265,
-      "realized_per_resolved_c": 5.445,
-      "passive_exit_share": 1.0,
+      "fills": 1458,
+      "size": 1598,
+      "markets": 1487,
+      "pnl": -13.05,
+      "realized": 2.18,
+      "mtm": -15.22,
+      "fees": 0.05,
+      "pnl_per_size_c": -0.816,
+      "resolved_contracts": 759,
+      "realized_per_resolved_c": 0.291,
+      "passive_exit_share": 0.819,
       "exits": {
         "passive": {
-          "contracts": 265,
-          "pnl": 14.43,
-          "per_contract_c": 5.44
+          "contracts": 622,
+          "pnl": 36.0,
+          "per_contract_c": 5.79
+        },
+        "settled": {
+          "contracts": 137,
+          "pnl": -33.79,
+          "per_contract_c": -24.66
         }
       },
       "per_market_pnl_ci": [
-        -0.0032,
-        0.0126
+        -0.022,
+        0.0033
       ],
       "markouts_c": null,
       "live_markouts_c": {
-        "10": 5.031,
-        "60": 3.838,
-        "300": 2.7,
-        "3600": 0.908
+        "10": 4.695,
+        "60": 3.561,
+        "300": 2.524,
+        "3600": 1.706
       },
       "ladder": {
         "strategy": "v2_niche",
         "latency_ms": 250
       },
-      "units": 0,
-      "pnl_per_unit": null,
+      "units": 1,
+      "pnl_per_unit": -18.22,
       "pnl_per_unit_ci": null
     },
     {
       "name": "v2_niche_375ms",
       "role": "treatment",
       "description": "v2_niche at 375ms order latency on a faster re-quote step (latency ladder).",
-      "fills": 678,
-      "size": 712,
-      "markets": 1070,
-      "pnl": 5.17,
-      "realized": 14.43,
-      "mtm": -9.26,
-      "fees": 0.0,
-      "pnl_per_size_c": 0.726,
-      "resolved_contracts": 265,
-      "realized_per_resolved_c": 5.445,
-      "passive_exit_share": 1.0,
+      "fills": 1458,
+      "size": 1598,
+      "markets": 1487,
+      "pnl": -13.05,
+      "realized": 2.18,
+      "mtm": -15.22,
+      "fees": 0.05,
+      "pnl_per_size_c": -0.816,
+      "resolved_contracts": 759,
+      "realized_per_resolved_c": 0.291,
+      "passive_exit_share": 0.819,
       "exits": {
         "passive": {
-          "contracts": 265,
-          "pnl": 14.43,
-          "per_contract_c": 5.44
+          "contracts": 622,
+          "pnl": 36.0,
+          "per_contract_c": 5.79
+        },
+        "settled": {
+          "contracts": 137,
+          "pnl": -33.79,
+          "per_contract_c": -24.66
         }
       },
       "per_market_pnl_ci": [
-        -0.0032,
-        0.0126
+        -0.022,
+        0.0033
       ],
       "markouts_c": null,
       "live_markouts_c": {
-        "10": 5.031,
-        "60": 3.838,
-        "300": 2.7,
-        "3600": 0.908
+        "10": 4.695,
+        "60": 3.561,
+        "300": 2.524,
+        "3600": 1.706
       },
       "ladder": {
         "strategy": "v2_niche",
         "latency_ms": 375
       },
-      "units": 0,
-      "pnl_per_unit": null,
+      "units": 1,
+      "pnl_per_unit": -18.22,
       "pnl_per_unit_ci": null
     },
     {
       "name": "v2_niche_500ms",
       "role": "treatment",
       "description": "v2_niche at 500ms order latency on a faster re-quote step (latency ladder).",
-      "fills": 678,
-      "size": 712,
-      "markets": 1070,
-      "pnl": 5.17,
-      "realized": 14.43,
-      "mtm": -9.26,
-      "fees": 0.0,
-      "pnl_per_size_c": 0.726,
-      "resolved_contracts": 265,
-      "realized_per_resolved_c": 5.445,
-      "passive_exit_share": 1.0,
+      "fills": 1458,
+      "size": 1598,
+      "markets": 1487,
+      "pnl": -13.05,
+      "realized": 2.18,
+      "mtm": -15.22,
+      "fees": 0.05,
+      "pnl_per_size_c": -0.816,
+      "resolved_contracts": 759,
+      "realized_per_resolved_c": 0.291,
+      "passive_exit_share": 0.819,
       "exits": {
         "passive": {
-          "contracts": 265,
-          "pnl": 14.43,
-          "per_contract_c": 5.44
+          "contracts": 622,
+          "pnl": 36.0,
+          "per_contract_c": 5.79
+        },
+        "settled": {
+          "contracts": 137,
+          "pnl": -33.79,
+          "per_contract_c": -24.66
         }
       },
       "per_market_pnl_ci": [
-        -0.0032,
-        0.0126
+        -0.022,
+        0.0033
       ],
       "markouts_c": null,
       "live_markouts_c": {
-        "10": 5.031,
-        "60": 3.838,
-        "300": 2.7,
-        "3600": 0.908
+        "10": 4.695,
+        "60": 3.561,
+        "300": 2.524,
+        "3600": 1.706
       },
       "ladder": {
         "strategy": "v2_niche",
         "latency_ms": 500
       },
-      "units": 0,
-      "pnl_per_unit": null,
+      "units": 1,
+      "pnl_per_unit": -18.22,
       "pnl_per_unit_ci": null
     }
   ],
@@ -592,10 +617,10 @@
       "treatment": "v2_niche",
       "control": "baseline",
       "metric": "pnl_per_day",
-      "diff": -1.095,
+      "diff": -3.754,
       "ci": [
-        -8.12,
-        8.4775
+        -10.904,
+        5.812
       ],
       "verdict": "collecting"
     },
@@ -603,10 +628,10 @@
       "treatment": "v2_crypto",
       "control": "baseline",
       "metric": "pnl_per_day",
-      "diff": 0.885,
+      "diff": 1.118,
       "ci": [
-        -8.24,
-        11.27
+        -6.182,
+        9.452
       ],
       "verdict": "collecting"
     }
@@ -696,6 +721,39 @@
         "v2_niche_375ms": 1,
         "v2_niche_500ms": 1
       }
+    },
+    {
+      "date": "2026-09-30",
+      "pnl": {
+        "baseline": -0.88,
+        "v2_niche": -15.27,
+        "v2_crypto": 1.17,
+        "v2_crypto_0ms": 5.45,
+        "v2_crypto_125ms": -6.05,
+        "v2_crypto_250ms": -1.16,
+        "v2_crypto_375ms": -3.65,
+        "v2_crypto_500ms": -0.08,
+        "v2_niche_0ms": -18.22,
+        "v2_niche_125ms": -18.22,
+        "v2_niche_250ms": -18.22,
+        "v2_niche_375ms": -18.22,
+        "v2_niche_500ms": -18.22
+      },
+      "units": {
+        "baseline": 1,
+        "v2_niche": 1,
+        "v2_crypto": 1,
+        "v2_crypto_0ms": 1,
+        "v2_crypto_125ms": 1,
+        "v2_crypto_250ms": 1,
+        "v2_crypto_375ms": 1,
+        "v2_crypto_500ms": 1,
+        "v2_niche_0ms": 1,
+        "v2_niche_125ms": 1,
+        "v2_niche_250ms": 1,
+        "v2_niche_375ms": 1,
+        "v2_niche_500ms": 1
+      }
     }
   ],
   "latency_curve": [
@@ -706,52 +764,52 @@
         {
           "latency_ms": 0,
           "arm": "v2_crypto_0ms",
-          "fills": 320,
-          "pnl": 14.61,
-          "realized_per_resolved_c": 2.971,
-          "passive_per_contract_c": 3.48,
-          "settled_per_contract_c": 2.09,
-          "markout_c": 0.047
+          "fills": 1136,
+          "pnl": 20.06,
+          "realized_per_resolved_c": 1.429,
+          "passive_per_contract_c": 2.38,
+          "settled_per_contract_c": -0.81,
+          "markout_c": 0.51
         },
         {
           "latency_ms": 125,
           "arm": "v2_crypto_125ms",
-          "fills": 349,
-          "pnl": 12.28,
-          "realized_per_resolved_c": 2.282,
-          "passive_per_contract_c": 1.85,
-          "settled_per_contract_c": 2.9,
-          "markout_c": 0.237
+          "fills": 1135,
+          "pnl": 6.23,
+          "realized_per_resolved_c": 0.617,
+          "passive_per_contract_c": 1.0,
+          "settled_per_contract_c": -0.16,
+          "markout_c": 0.423
         },
         {
           "latency_ms": 250,
           "arm": "v2_crypto_250ms",
-          "fills": 349,
-          "pnl": 9.3,
-          "realized_per_resolved_c": 1.792,
-          "passive_per_contract_c": 2.46,
-          "settled_per_contract_c": 0.79,
-          "markout_c": -0.059
+          "fills": 1159,
+          "pnl": 8.14,
+          "realized_per_resolved_c": 0.78,
+          "passive_per_contract_c": 2.11,
+          "settled_per_contract_c": -2.22,
+          "markout_c": 0.616
         },
         {
           "latency_ms": 375,
           "arm": "v2_crypto_375ms",
-          "fills": 343,
-          "pnl": 3.3,
-          "realized_per_resolved_c": 0.66,
+          "fills": 1168,
+          "pnl": -0.35,
+          "realized_per_resolved_c": 0.409,
           "passive_per_contract_c": 2.3,
-          "settled_per_contract_c": -1.81,
-          "markout_c": 0.172
+          "settled_per_contract_c": -4.21,
+          "markout_c": 0.268
         },
         {
           "latency_ms": 500,
           "arm": "v2_crypto_500ms",
-          "fills": 352,
-          "pnl": 11.43,
-          "realized_per_resolved_c": 2.096,
-          "passive_per_contract_c": 1.42,
-          "settled_per_contract_c": 3.05,
-          "markout_c": -0.232
+          "fills": 1177,
+          "pnl": 11.35,
+          "realized_per_resolved_c": 1.107,
+          "passive_per_contract_c": 1.89,
+          "settled_per_contract_c": -0.87,
+          "markout_c": -0.274
         }
       ]
     },
@@ -762,52 +820,52 @@
         {
           "latency_ms": 0,
           "arm": "v2_niche_0ms",
-          "fills": 678,
-          "pnl": 5.17,
-          "realized_per_resolved_c": 5.445,
-          "passive_per_contract_c": 5.44,
-          "settled_per_contract_c": null,
-          "markout_c": 3.838
+          "fills": 1458,
+          "pnl": -13.05,
+          "realized_per_resolved_c": 0.291,
+          "passive_per_contract_c": 5.79,
+          "settled_per_contract_c": -24.66,
+          "markout_c": 3.561
         },
         {
           "latency_ms": 125,
           "arm": "v2_niche_125ms",
-          "fills": 678,
-          "pnl": 5.17,
-          "realized_per_resolved_c": 5.445,
-          "passive_per_contract_c": 5.44,
-          "settled_per_contract_c": null,
-          "markout_c": 3.838
+          "fills": 1458,
+          "pnl": -13.05,
+          "realized_per_resolved_c": 0.291,
+          "passive_per_contract_c": 5.79,
+          "settled_per_contract_c": -24.66,
+          "markout_c": 3.561
         },
         {
           "latency_ms": 250,
           "arm": "v2_niche_250ms",
-          "fills": 678,
-          "pnl": 5.17,
-          "realized_per_resolved_c": 5.445,
-          "passive_per_contract_c": 5.44,
-          "settled_per_contract_c": null,
-          "markout_c": 3.838
+          "fills": 1458,
+          "pnl": -13.05,
+          "realized_per_resolved_c": 0.291,
+          "passive_per_contract_c": 5.79,
+          "settled_per_contract_c": -24.66,
+          "markout_c": 3.561
         },
         {
           "latency_ms": 375,
           "arm": "v2_niche_375ms",
-          "fills": 678,
-          "pnl": 5.17,
-          "realized_per_resolved_c": 5.445,
-          "passive_per_contract_c": 5.44,
-          "settled_per_contract_c": null,
-          "markout_c": 3.838
+          "fills": 1458,
+          "pnl": -13.05,
+          "realized_per_resolved_c": 0.291,
+          "passive_per_contract_c": 5.79,
+          "settled_per_contract_c": -24.66,
+          "markout_c": 3.561
         },
         {
           "latency_ms": 500,
           "arm": "v2_niche_500ms",
-          "fills": 678,
-          "pnl": 5.17,
-          "realized_per_resolved_c": 5.445,
-          "passive_per_contract_c": 5.44,
-          "settled_per_contract_c": null,
-          "markout_c": 3.838
+          "fills": 1458,
+          "pnl": -13.05,
+          "realized_per_resolved_c": 0.291,
+          "passive_per_contract_c": 5.79,
+          "settled_per_contract_c": -24.66,
+          "markout_c": 3.561
         }
       ]
     }
