@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T17:00:10.710978+00:00",
+  "generated_at": "2026-09-30T18:00:09.116645+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,22 +14,22 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1428.32,
-      "net_at_hold": 1.3044,
+      "net_apr": 1436.64,
+      "net_at_hold": 1.312,
       "cost_bps": 26.0
     },
     {
-      "base": "PENDLE",
+      "base": "EIGEN",
       "type": "perp-perp",
-      "long_venue": "Lighter",
+      "long_venue": "GRVT",
       "short_venue": "Coinbase",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1290.79,
-      "net_at_hold": 1.1788,
-      "cost_bps": 26.0
+      "net_apr": 1276.06,
+      "net_at_hold": 1.16536,
+      "cost_bps": 36.94
     },
     {
       "base": "PNUT",
@@ -42,33 +42,20 @@
       "scans": 24,
       "net_apr": 1233.46,
       "net_at_hold": 1.12645,
-      "cost_bps": 45.84
+      "cost_bps": 45.76
     },
     {
       "base": "PENDLE",
       "type": "perp-perp",
-      "long_venue": "Binance",
+      "long_venue": "Lighter",
       "short_venue": "Coinbase",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1196.2,
-      "net_at_hold": 1.09242,
-      "cost_bps": 36.0
-    },
-    {
-      "base": "EIGEN",
-      "type": "perp-perp",
-      "long_venue": "GRVT",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1184.0,
-      "net_at_hold": 1.08128,
-      "cost_bps": 36.94
+      "net_apr": 1225.96,
+      "net_at_hold": 1.1196,
+      "cost_bps": 26.0
     },
     {
       "base": "EIGEN",
@@ -79,35 +66,48 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1180.47,
-      "net_at_hold": 1.07805,
-      "cost_bps": 50.6
+      "net_apr": 1184.55,
+      "net_at_hold": 1.08178,
+      "cost_bps": 50.7
     },
     {
       "base": "PENDLE",
       "type": "perp-perp",
-      "long_venue": "Bitget",
+      "long_venue": "Binance",
       "short_venue": "Coinbase",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1171.78,
-      "net_at_hold": 1.07012,
-      "cost_bps": 38.04
+      "net_apr": 1125.69,
+      "net_at_hold": 1.02802,
+      "cost_bps": 36.0
     },
     {
-      "base": "PENDLE",
+      "base": "OPG",
       "type": "perp-perp",
-      "long_venue": "KuCoin",
+      "long_venue": "Aster",
       "short_venue": "Coinbase",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1158.95,
-      "net_at_hold": 1.0584,
-      "cost_bps": 38.0
+      "net_apr": 1117.04,
+      "net_at_hold": 1.02013,
+      "cost_bps": 54.51
+    },
+    {
+      "base": "PENDLE",
+      "type": "perp-perp",
+      "long_venue": "GRVT",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1100.97,
+      "net_at_hold": 1.00546,
+      "cost_bps": 35.73
     }
   ]
 }
