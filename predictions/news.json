@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-30T16:24:52.223250+00:00",
+  "generated_at": "2026-09-30T17:25:03.651165+00:00",
   "window_hours": 24,
-  "articles_in_window": 2559,
+  "articles_in_window": 2596,
   "collection_days": 31,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,91 +10,91 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 262,
+      "articles": 272,
       "sources": 44,
       "sentiment_direction": "mixed",
-      "surge": 0.9,
-      "sentiment_mean": 0.111,
-      "headline": "Trump Hosts AI CEOs to Discuss Safety Standards, Rebrands AI as 'Super Intelligence'",
-      "headline_source": "Slashdot",
-      "headline_url": "https://politics.slashdot.org/story/26/09/30/0523201/trump-hosts-ai-ceos-to-discuss-safety-standards-rebrands-ai-as-super-intelligence?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+      "surge": 0.94,
+      "sentiment_mean": 0.078,
+      "headline": "The Fed\u2019s building renovations and Trump\u2019s push to oust Powell",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/economic-indicators/the-feds-building-renovations-and-trumps-push-to-oust-powell-4925651"
     },
     {
       "term": "president",
-      "articles": 119,
-      "sources": 33,
+      "articles": 120,
+      "sources": 34,
       "sentiment_direction": "positive",
-      "surge": 0.79,
-      "sentiment_mean": 0.248,
-      "headline": "Cornell student body president describes what it's like on campus right now",
-      "headline_source": "NBC News",
-      "headline_url": "https://www.nbcnews.com/now/video/cornell-student-body-president-describes-what-it-s-like-on-campus-amid-alleged-gang-rape-investigation-270790213770"
+      "surge": 0.8,
+      "sentiment_mean": 0.26,
+      "headline": "\u2018President of the Unites States\u2019: White House\u2019s AI accord includes spelling error",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/us-news/2026/sep/30/trump-ai-accord-spelling-error"
+    },
+    {
+      "term": "data",
+      "articles": 80,
+      "sources": 32,
+      "sentiment_direction": "mixed",
+      "surge": 1.4,
+      "sentiment_mean": 0.131,
+      "headline": "Trump Uses Decades-Old Law to Collect Flock Data Nationwide",
+      "headline_source": "Reddit r/politics",
+      "headline_url": "https://www.reddit.com/r/politics/comments/1wu9az6/trump_uses_decadesold_law_to_collect_flock_data/"
     },
     {
       "term": "country",
       "articles": 97,
-      "sources": 32,
+      "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 1.82,
-      "sentiment_mean": 0.047,
+      "surge": 1.79,
+      "sentiment_mean": 0.066,
       "headline": "Riley Green drops acoustic performance of 'That's Just Me' and country music fans can't get enough",
       "headline_source": "Fox News",
       "headline_url": "https://www.foxnews.com/outkick-culture/riley-green-drops-acoustic-performance-thats-just-me-country-music-fans-cant-get-enough"
     },
     {
-      "term": "government",
-      "articles": 93,
-      "sources": 31,
-      "sentiment_direction": "mixed",
-      "surge": 1.08,
-      "sentiment_mean": 0.079,
-      "headline": "Half a million trees to be planted in England in three years, says government. Environment secretary Angela Eagle to make pledge as part of efforts to protect against extreme weather.",
-      "headline_source": "Reddit r/environment",
-      "headline_url": "https://www.reddit.com/r/environment/comments/1wu75fl/half_a_million_trees_to_be_planted_in_england_in/"
-    },
-    {
       "term": "court",
-      "articles": 104,
+      "articles": 105,
       "sources": 30,
       "sentiment_direction": "mixed",
       "surge": 1.63,
-      "sentiment_mean": -0.094,
-      "headline": "Appeals court halts execution of Tennessee woman less than two hours before lethal injection",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/americas/20260930-appeals-court-halts-execution-of-tennessee-woman-less-than-two-hours-before-lethal-injection"
+      "sentiment_mean": -0.078,
+      "headline": "Tennessee court makes last minute move to temporarily halt Christa Pike's execution",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/tennessee-court-makes-last-minute-move-to-temporarily-halt-christa-pikes-execution/"
     },
     {
       "term": "tech",
-      "articles": 78,
+      "articles": 77,
       "sources": 30,
       "sentiment_direction": "positive",
-      "surge": 2.0,
-      "sentiment_mean": 0.365,
-      "headline": "UK accuses China of using academics to spy on AI and other tech research - Reuters",
-      "headline_source": "Reuters",
-      "headline_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONkRsU3ZvS0tLMjlkTEpDNUtQTnJ6eThiY2l6QjFudUtXUFRnUXl0NWc3NlludDlHMnladFY4OUNZd09zWm5NZnJkUTJDcnFEWUp6YkVOMWZmdnJTYk03aTkyd0lYdkdVNkp4b3B0aEpkekpzck9QWHlGOG5KTzlfUXNZMGtfbDQ4Rl9YNDhjd0tIM3pJejNaQm16T3NqaGNOX1BxenY2WQ?oc=5"
+      "surge": 1.99,
+      "sentiment_mean": 0.364,
+      "headline": "These two chip stocks could join the elite $2 trillion tech giant club, says top analyst",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/09/30/these-chip-stocks-could-join-the-2-trillion-tech-giant-club-says-top-analyst.html"
+    },
+    {
+      "term": "government",
+      "articles": 98,
+      "sources": 29,
+      "sentiment_direction": "mixed",
+      "surge": 1.13,
+      "sentiment_mean": 0.038,
+      "headline": "Government must stop dithering over energy bill support for the vulnerable | Nils Pratley",
+      "headline_source": "Guardian Business",
+      "headline_url": "https://www.theguardian.com/money/2026/sep/30/energy-bill-support-social-tariff-warm-homes-discount"
     },
     {
       "term": "house",
       "articles": 73,
-      "sources": 29,
+      "sources": 28,
       "sentiment_direction": "positive",
       "surge": 0.8,
-      "sentiment_mean": 0.256,
-      "headline": "Trump\u2019s 'Monster Bash' brings AI titans to White House to police each other",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/us/trumps-monster-bash-brings-ai-titans-to-white-house-to-police-each-other/articleshow/134598046.cms"
-    },
-    {
-      "term": "company",
-      "articles": 75,
-      "sources": 28,
-      "sentiment_direction": "mixed",
-      "surge": 1.22,
-      "sentiment_mean": 0.075,
-      "headline": "MI5 issues spy alert to UK universities over Chinese front company stealing research",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/uk-news/2026/sep/30/mi5-issues-spy-alert-over-body-linked-chinese-state-stealing-vital-uk-research-universities"
+      "sentiment_mean": 0.28,
+      "headline": "Trump to unveil $200 billion investment in US projects by South Korea, White House says",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/commodities-news/trump-expected-to-announce-54-billion-south-korea-investment-in-alaska-lng-sources-say-4925265"
     }
   ],
   "hours_since_fetch": 0.0
