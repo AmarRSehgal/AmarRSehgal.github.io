@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-01T11:24:39.086812+00:00",
+  "generated_at": "2026-10-01T12:24:44.013474+00:00",
   "window_hours": 24,
-  "articles_in_window": 2557,
+  "articles_in_window": 2555,
   "collection_days": 32,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,91 +10,91 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 231,
+      "articles": 230,
       "sources": 42,
       "sentiment_direction": "mixed",
       "surge": 0.86,
-      "sentiment_mean": -0.082,
-      "headline": "Democratic senators accuse Trump administration of worsening childcare crisis",
+      "sentiment_mean": -0.089,
+      "headline": "Ukraine persists with Russian oil refinery strikes, defying Trump on fuel price warnings",
       "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/us-news/2026/oct/01/childcare-crisis-trump-administration"
+      "headline_url": "https://www.theguardian.com/world/2026/oct/01/ukraine-russian-oil-refinery-strikes-defying-trump-fuel-price-warnings"
     },
     {
       "term": "president",
-      "articles": 113,
+      "articles": 115,
       "sources": 35,
       "sentiment_direction": "mixed",
-      "surge": 0.83,
-      "sentiment_mean": 0.023,
+      "surge": 0.85,
+      "sentiment_mean": 0.033,
       "headline": "The Flailing President",
       "headline_source": "The Atlantic",
       "headline_url": "https://www.theatlantic.com/politics/2026/10/trump-midterms-polls-senate/688840/?utm_source=feed"
     },
     {
       "term": "data",
-      "articles": 92,
-      "sources": 35,
+      "articles": 90,
+      "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 1.63,
-      "sentiment_mean": 0.097,
-      "headline": "Monte Rosa reports positive phase 1 data for MRT-8102",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/company-news/monte-rosa-reports-positive-phase-1-data-for-mrt8102-93CH-4927075"
+      "surge": 1.59,
+      "sentiment_mean": 0.096,
+      "headline": "Passengers recount chaos on Tel Aviv flight. And, FBI probes employee-data hack",
+      "headline_source": "NPR News",
+      "headline_url": "https://www.npr.org/2026/10/01/g-s1-145879/up-first-newsletter-tel-aviv-flight-passengers-fbi-employee-data-hack"
     },
     {
       "term": "government",
-      "articles": 80,
+      "articles": 78,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 0.91,
-      "sentiment_mean": -0.123,
-      "headline": "EXCLUSIVE: Syrian government officials and Hezbollah held secret talks in Turkey, sources say - reuters.com",
-      "headline_source": "Reuters",
-      "headline_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdzNSVk8xcS0weTJwZkdGVVR2OVJqSUlnRlhRaG9HVlUxVEs0dWs0R2VTSkpCUlV4alRiVENpNnc4M3ZCVF9VVVBmWW9CQzJLRzhOaC1SODlHNmNhRWdXZHBDZ0g5UEJ1c2Fkd3ltenFpSHcwRWp6VEt6YnBhX0pUdVUyMUdTTkRKV2FBRDNRb3dJdk9BQVBqdGRBd19RNHltTUtmMERiZEFYUHJ0d2dHel9CSEpYeWlmRlZWbE5uaVlWVF9MbjBj?oc=5"
+      "surge": 0.9,
+      "sentiment_mean": -0.124,
+      "headline": "Global alarm as cases rise of AI targeting government websites, computer systems",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/technology/technology-news/global-alarm-as-cases-rise-of-ai-agents-targeting-government-websites-computer-systems/articleshow/134617414.cms"
     },
     {
       "term": "pilot",
       "articles": 99,
-      "sources": 29,
+      "sources": 30,
       "sentiment_direction": "negative",
-      "surge": 22.22,
-      "sentiment_mean": -0.392,
+      "surge": 21.43,
+      "sentiment_mean": -0.388,
       "headline": "Who is the Indian pilot who fought off his cockpit attacker?",
       "headline_source": "Washington Post",
       "headline_url": "https://www.washingtonpost.com/world/2026/10/01/flydubai-indian-pilot-smit-machchhar-hailed-hero-after-cockpit-stabbing/"
     },
     {
       "term": "flight",
-      "articles": 101,
-      "sources": 28,
+      "articles": 99,
+      "sources": 29,
       "sentiment_direction": "negative",
-      "surge": 4.86,
-      "sentiment_mean": -0.503,
-      "headline": "First Thing: Details remain unclear after \u2018terror attack\u2019 on Dubai-Israel flight",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/us-news/2026/oct/01/first-thing-details-remain-unclear-after-terror-attack-on-dubai-israel-flight"
+      "surge": 4.55,
+      "sentiment_mean": -0.486,
+      "headline": "Should cockpits stay locked from the inside? Flydubai stabbing raises flight security questions",
+      "headline_source": "Guardian Business",
+      "headline_url": "https://www.theguardian.com/business/2026/oct/01/flydubai-stabbing-cockpit-security-fz-1073"
+    },
+    {
+      "term": "million",
+      "articles": 98,
+      "sources": 28,
+      "sentiment_direction": "positive",
+      "surge": 1.47,
+      "sentiment_mean": 0.18,
+      "headline": "Evernorth-Armada II merger approved, to raise $300 million",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/company-news/evernortharmada-ii-merger-approved-to-raise-300-million-93CH-4927327"
     },
     {
       "term": "security",
-      "articles": 78,
+      "articles": 77,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 1.48,
-      "sentiment_mean": 0.021,
-      "headline": "Nokia and Iceye to make low-orbit satellite systems for defence, security - Reuters",
-      "headline_source": "Reuters",
-      "headline_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPV2dPVGlvb25vX2FSY25GQ1FJT3FiWVhIaE00YTNaY1RCbkw0d0lCdTlhUmlDRWNzM05NdzNNU0ZETFk4dGlwNVFvdU8zNFYxTlZCUjBETFYyU2k2OUFmcEt3bFdLWjdRbzlNOWZkSkd0bTRlVUhQT3J4SEZRYlNIVEVTTm1kcDRYeWpTb3YzODV5Qm1iMk5KTHNNWlY?oc=5"
-    },
-    {
-      "term": "military",
-      "articles": 59,
-      "sources": 28,
-      "sentiment_direction": "mixed",
-      "surge": 1.23,
-      "sentiment_mean": -0.062,
-      "headline": "Pete Hegseth to cut generals &amp; admirals in US military by 20%; Pentagon to create new drone command",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/us/pete-hegseth-to-cut-generals-admirals-in-us-military-by-20-pentagon-to-create-new-drone-command/articleshow/134616268.cms"
+      "surge": 1.46,
+      "sentiment_mean": 0.02,
+      "headline": "Should cockpits stay locked from the inside? Flydubai stabbing raises flight security questions",
+      "headline_source": "Guardian Business",
+      "headline_url": "https://www.theguardian.com/business/2026/oct/01/flydubai-stabbing-cockpit-security-fz-1073"
     }
   ],
   "hours_since_fetch": 0.0
