@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T19:00:09.163677+00:00",
+  "generated_at": "2026-10-01T20:00:08.590813+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1522.05,
-      "net_at_hold": 1.39,
+      "net_apr": 1181.29,
+      "net_at_hold": 1.0788,
       "cost_bps": 26.0
     },
     {
@@ -27,8 +27,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1522.05,
-      "net_at_hold": 1.39,
+      "net_apr": 1162.89,
+      "net_at_hold": 1.062,
       "cost_bps": 26.0
     },
     {
@@ -40,8 +40,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1471.24,
-      "net_at_hold": 1.3436,
+      "net_apr": 1142.74,
+      "net_at_hold": 1.0436,
       "cost_bps": 26.0
     },
     {
@@ -53,25 +53,12 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1427.44,
-      "net_at_hold": 1.3036,
+      "net_apr": 1113.4,
+      "net_at_hold": 1.0168,
       "cost_bps": 26.0
     },
     {
-      "base": "INJ",
-      "type": "perp-perp",
-      "long_venue": "OKX",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1388.32,
-      "net_at_hold": 1.26787,
-      "cost_bps": 32.35
-    },
-    {
-      "base": "1000PEPE",
+      "base": "ROBO",
       "type": "perp-perp",
       "long_venue": "Lighter",
       "short_venue": "Coinbase",
@@ -79,8 +66,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1381.45,
-      "net_at_hold": 1.2616,
+      "net_apr": 1099.82,
+      "net_at_hold": 1.0044,
       "cost_bps": 26.0
     },
     {
@@ -92,9 +79,22 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1377.82,
-      "net_at_hold": 1.25829,
+      "net_apr": 1073.37,
+      "net_at_hold": 0.98024,
       "cost_bps": 33.35
+    },
+    {
+      "base": "INJ",
+      "type": "perp-perp",
+      "long_venue": "OKX",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1069.28,
+      "net_at_hold": 0.97651,
+      "cost_bps": 32.35
     },
     {
       "base": "INJ",
@@ -105,8 +105,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1373.34,
-      "net_at_hold": 1.25419,
+      "net_apr": 1069.2,
+      "net_at_hold": 0.97644,
       "cost_bps": 33.67
     }
   ]
