@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-09-30T16:30:28.283492+00:00",
-  "date": "2026-09-30",
+  "generated_at": "2026-10-01T16:30:29.364824+00:00",
+  "date": "2026-10-01",
   "season_status": "in_season",
   "games": [],
   "track_record": {
     "season": 2026,
     "n_games": 2459,
-    "accuracy": 0.5348,
+    "accuracy": 0.5344,
     "baseline_accuracy": 0.5222,
     "baseline_label": "always pick the home team",
-    "mcnemar_p_vs_baseline": 0.2867,
+    "mcnemar_p_vs_baseline": 0.3046,
     "beats_baseline": false,
     "high_conf_threshold": 0.6,
-    "high_conf_n": 472,
-    "high_conf_stated": 0.6468,
-    "high_conf_realized": 0.572,
-    "calibration_gap": -0.0748
+    "high_conf_n": 460,
+    "high_conf_stated": 0.6482,
+    "high_conf_realized": 0.5739,
+    "calibration_gap": -0.0742
   },
   "published_record": {
     "n_games": 177,
