@@ -1105,6 +1105,7 @@ button:focus-visible {
 .game-hit { color: #4ade80; }
 .game-miss { color: #f87171; }
 .game-pending { color: var(--text-muted); }
+.game-bet-open { color: var(--text); }
 
 .game-score {
     margin-left: 0.5rem;
