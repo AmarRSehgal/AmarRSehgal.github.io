@@ -1,10 +1,23 @@
 {
-  "generated_at": "2026-10-01T12:00:10.947685+00:00",
+  "generated_at": "2026-10-01T13:00:09.915746+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
+    {
+      "base": "ARK",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "Hyperliquid",
+      "long_instrument": "perp",
+      "min_hold_h": 1,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1725.59,
+      "net_at_hold": 0.20195,
+      "cost_bps": 26.7
+    },
     {
       "base": "EIGEN",
       "type": "perp-perp",
@@ -55,7 +68,7 @@
       "scans": 24,
       "net_apr": 1380.43,
       "net_at_hold": 1.26067,
-      "cost_bps": 38.98
+      "cost_bps": 38.97
     },
     {
       "base": "PENDLE",
@@ -81,7 +94,7 @@
       "scans": 24,
       "net_apr": 1375.36,
       "net_at_hold": 1.25603,
-      "cost_bps": 34.03
+      "cost_bps": 34.05
     },
     {
       "base": "RUNE",
@@ -95,19 +108,6 @@
       "net_apr": 1363.06,
       "net_at_hold": 1.2448,
       "cost_bps": 36.0
-    },
-    {
-      "base": "RUNE",
-      "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1348.62,
-      "net_at_hold": 1.23162,
-      "cost_bps": 37.29
     }
   ]
 }
