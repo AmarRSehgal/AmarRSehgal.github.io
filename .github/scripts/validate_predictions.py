@@ -815,6 +815,43 @@ def check_game_result(where, g):
                       f'{g["pick"]!r} against winner={winner!r}')
 
 
+BET_STATUS = ('bet', 'pass', 'unpriced')
+
+
+def check_slate_bet(where, g):
+    """The bet the value rule takes on a game, published before it is played.
+
+    `status` is derivable from `edge`, and `team` from `selection`, so both are checked
+    rather than trusted: a "bet" on a side with no edge is the claim this feed exists
+    not to make.
+    """
+    b = g.get('bet')
+    if b is None:
+        return
+    if not isinstance(b, dict) or b.get('status') not in BET_STATUS:
+        raise Invalid(f'{where}.bet.status must be one of {list(BET_STATUS)}')
+    if b['status'] == 'unpriced':
+        return
+    w = f'{where}.bet'
+    if b.get('team') not in (g['away_team'], g['home_team']):
+        raise Invalid(f'{w}.team={b.get("team")!r} is not one of the two teams')
+    want = g.get('home_team_full') if b['team'] == g['home_team'] else g.get('away_team_full')
+    if want and b.get('selection') != want:
+        raise Invalid(f'{w}.selection={b.get("selection")!r} does not name team {b["team"]!r}')
+    price = require_number(w, 'price', b.get('price'))
+    if price <= 1.0:
+        raise Invalid(f'{w}.price={price} is not a decimal price above 1.0')
+    require_probability(w, 'model_prob', b.get('model_prob'))
+    edge = require_number(w, 'edge', b.get('edge'))
+    require_str(w, 'book', b.get('book'))
+    try:
+        datetime.fromisoformat(str(b.get('quoted_at')).replace('Z', '+00:00'))
+    except ValueError:
+        raise Invalid(f'{w}.quoted_at={b.get("quoted_at")!r} is not ISO 8601')
+    if (b['status'] == 'bet') != (edge > 0):
+        raise Invalid(f'{w}: status={b["status"]!r} contradicts edge={edge}')
+
+
 def check_portfolio(port):
     """Real positions marked against live prices, published beside the screen.
 
@@ -1343,10 +1380,12 @@ def validate(sport, data, now=None):
         elif sport == 'mlb':
             check_team_game(where, item, spread_required=False)
             check_game_result(where, item)
+            check_slate_bet(where, item)
         else:
             check_team_game(where, item)
             if sport in ('nfl', 'nba'):
                 check_game_result(where, item)
+                check_slate_bet(where, item)
 
     if sport == 'magicformula':
         if len(items) > data['screened']:

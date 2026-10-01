@@ -1214,6 +1214,7 @@ function renderGamesWithResults(data) {
         } else if (g.kickoff) {
             meta.push(P.formatKickoff(g.kickoff));
         }
+        const bet = betLine(g);
         const mark = r
             ? `<span class="game-mark ${r.correct ? 'game-hit' : 'game-miss'}">`
               + `${r.correct ? 'correct' : 'wrong'}</span>`
@@ -1228,6 +1229,7 @@ function renderGamesWithResults(data) {
                         ${r ? `<span class="game-score">${r.away_pts}-${r.home_pts}</span>` : ''}
                     </div>
                     <div class="nba-meta">${esc(meta.join(' | '))}</div>
+                    ${bet ? `<div class="nba-meta game-bet ${bet.cls}">${esc(bet.text)}</div>` : ''}
                 </div>
                 <div class="nba-pick">
                     <div class="nba-pick-label">Pick</div>
@@ -1243,7 +1245,42 @@ function renderGamesWithResults(data) {
         ? `<div class="prediction-slate">${hits} of ${played.length} played so far this `
           + `slate</div>`
         : '';
-    return head + rows;
+    return head + betSummary(data.games) + rows;
+}
+
+// The bet the value rule takes on a game -- the same rule the track record settles by,
+// so these are the bets that record will score. Settled here from the published result.
+function betLine(g) {
+    const b = g.bet;
+    if (!b) return null;
+    if (b.status === 'unpriced') return { text: 'No bet: no preferred-book price yet', cls: '' };
+    const edge = `${b.edge >= 0 ? '+' : ''}${(b.edge * 100).toFixed(1)}%`;
+    if (b.status === 'pass') {
+        return { text: `No bet: no side beats its price (best ${b.team} ${b.price} at ${b.book}, `
+            + `edge ${edge})`, cls: '' };
+    }
+    let text = `Bet: $${b.stake} ${b.team} ML at ${b.price} (${b.book}) | model `
+        + `${(b.model_prob * 100).toFixed(0)}% vs ${(b.implied_prob * 100).toFixed(0)}% implied, edge ${edge}`;
+    let cls = 'game-bet-open';
+    if (g.result) {
+        const won = g.result.winner === b.team;
+        text += ` | ${won ? 'won' : 'lost'} ${P.formatSigned(won ? b.stake * (b.price - 1) : -b.stake)}`;
+        cls = won ? 'game-hit' : 'game-miss';
+    }
+    return { text, cls };
+}
+
+function betSummary(games) {
+    const bets = games.filter(g => g.bet && g.bet.status === 'bet');
+    if (!games.some(g => g.bet)) return '';
+    const quoted = games.map(g => g.bet && g.bet.quoted_at).filter(Boolean).sort().pop();
+    const open = bets.filter(g => !g.result).length;
+    return `<div class="prediction-note">${bets.length} bet${bets.length === 1 ? '' : 's'} on `
+        + `this slate (${open} still to play), flat $100 on every side whose model probability `
+        + `beats the best DraftKings/FanDuel/BetMGM price`
+        + (quoted ? `, prices as of ${esc(P.formatStamp(quoted))}` : '')
+        + `. Unplayed prices move until the close, which is what the record settles at, `
+        + `so a listed bet can flip before kickoff.</div>`;
 }
 
 // Per-instrument PnL and the book's own return. The screen is a ranking and a ranking

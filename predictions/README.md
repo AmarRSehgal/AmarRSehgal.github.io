@@ -128,6 +128,23 @@ the *pick's* probability rather than the *home team's*, convert before emitting:
 
 Sort `games` in kickoff order. Cap at ~16 entries (one week's slate).
 
+### `games[].bet` (nfl, nba, mlb; optional)
+
+The bet the value rule takes on the game, stamped before kickoff by
+`odds_data/pnl.py:attach_slate_bets` -- the same rule `track_record.betting` later
+settles, so the slate shows in advance the bets the record will score.
+
+| field | meaning |
+|---|---|
+| `status` | `"bet"` (edge > 0), `"pass"` (no side beats its price), `"unpriced"` (no preferred-book quote; no other fields) |
+| `team` / `selection` | side backed (or best side, on a pass): short code / full name |
+| `price`, `book`, `quoted_at` | best DraftKings/FanDuel/BetMGM decimal price in the last sweep before min(now, kickoff) |
+| `model_prob`, `implied_prob`, `edge`, `ev_per_dollar`, `stake` | model vs raw `1/price`; flat $100 |
+
+Pre-game the price is the latest sweep, not the close the record settles at, so a bet
+can flip before kickoff. The validator checks `status` against `edge` and `team`
+against `selection`.
+
 ## `nba.json`
 
 Same shape and the same sign convention, minus `season`/`week`/`kickoff`, plus a slate
