@@ -1,133 +1,133 @@
 {
-  "generated_at": "2026-09-30T13:35:19.292360+00:00",
+  "generated_at": "2026-10-01T13:35:18.298979+00:00",
   "strategy": "MultiFactorV3",
   "account": "PA37U0PIU9B9",
   "paper": true,
   "started": "2026-09-12",
   "starting_equity": 100000.0,
-  "equity": 95743.07,
-  "cash": 2645.15,
-  "return_pct": -0.0426,
+  "equity": 94830.5,
+  "cash": 2573.34,
+  "return_pct": -0.0517,
   "positions": [
     {
-      "ticker": "GILD",
-      "qty": 51.9622,
-      "avg_entry": 148.84,
-      "price": 150.04,
-      "market_value": 7796.4,
-      "pnl": 62.35,
-      "return_pct": 0.0081,
-      "weight_pct": 0.0814
-    },
-    {
-      "ticker": "DHR",
-      "qty": 34.5934,
-      "avg_entry": 223.57,
-      "price": 225.09,
-      "market_value": 7786.8,
-      "pnl": 52.75,
-      "return_pct": 0.0068,
-      "weight_pct": 0.0813
+      "ticker": "SPGI",
+      "qty": 19.3382,
+      "avg_entry": 395.96,
+      "price": 399.64,
+      "market_value": 7728.33,
+      "pnl": 71.16,
+      "return_pct": 0.0093,
+      "weight_pct": 0.0815
     },
     {
       "ticker": "UBER",
       "qty": 112.6965,
       "avg_entry": 68.46,
-      "price": 68.87,
-      "market_value": 7761.46,
-      "pnl": 45.96,
-      "return_pct": 0.006,
-      "weight_pct": 0.0811
+      "price": 68.53,
+      "market_value": 7722.53,
+      "pnl": 7.03,
+      "return_pct": 0.0009,
+      "weight_pct": 0.0814
     },
     {
-      "ticker": "DIS",
-      "qty": 73.5726,
-      "avg_entry": 105.12,
-      "price": 105.55,
-      "market_value": 7765.59,
-      "pnl": 31.54,
-      "return_pct": 0.0041,
-      "weight_pct": 0.0811
-    },
-    {
-      "ticker": "ABBV",
-      "qty": 29.1697,
-      "avg_entry": 265.14,
-      "price": 264.88,
-      "market_value": 7726.61,
-      "pnl": -7.44,
-      "return_pct": -0.001,
-      "weight_pct": 0.0807
+      "ticker": "GILD",
+      "qty": 51.9622,
+      "avg_entry": 148.84,
+      "price": 148.67,
+      "market_value": 7725.22,
+      "pnl": -8.83,
+      "return_pct": -0.0011,
+      "weight_pct": 0.0815
     },
     {
       "ticker": "AXP",
       "qty": 25.1599,
       "avg_entry": 306.66,
-      "price": 304.53,
-      "market_value": 7661.94,
-      "pnl": -53.56,
-      "return_pct": -0.0069,
-      "weight_pct": 0.08
+      "price": 304.21,
+      "market_value": 7653.89,
+      "pnl": -61.61,
+      "return_pct": -0.008,
+      "weight_pct": 0.0807
     },
     {
-      "ticker": "MS",
-      "qty": 39.7921,
-      "avg_entry": 196.84,
-      "price": 191.89,
-      "market_value": 7635.71,
-      "pnl": -196.83,
-      "return_pct": -0.0251,
+      "ticker": "DIS",
+      "qty": 73.5726,
+      "avg_entry": 105.12,
+      "price": 104.13,
+      "market_value": 7661.12,
+      "pnl": -72.93,
+      "return_pct": -0.0094,
+      "weight_pct": 0.0808
+    },
+    {
+      "ticker": "ABBV",
+      "qty": 29.1697,
+      "avg_entry": 265.14,
+      "price": 260.27,
+      "market_value": 7591.99,
+      "pnl": -142.06,
+      "return_pct": -0.0184,
+      "weight_pct": 0.0801
+    },
+    {
+      "ticker": "DHR",
+      "qty": 34.5934,
+      "avg_entry": 223.57,
+      "price": 218.72,
+      "market_value": 7566.27,
+      "pnl": -167.78,
+      "return_pct": -0.0217,
       "weight_pct": 0.0798
     },
     {
-      "ticker": "COP",
-      "qty": 63.0805,
-      "avg_entry": 131.8,
-      "price": 125.89,
-      "market_value": 7941.21,
-      "pnl": -373.12,
-      "return_pct": -0.0449,
-      "weight_pct": 0.0829
+      "ticker": "PG",
+      "qty": 52.5259,
+      "avg_entry": 148.19,
+      "price": 144.56,
+      "market_value": 7593.41,
+      "pnl": -190.27,
+      "return_pct": -0.0244,
+      "weight_pct": 0.0801
     },
     {
       "ticker": "T",
       "qty": 312.5561,
       "avg_entry": 25.87,
-      "price": 24.59,
-      "market_value": 7687.32,
-      "pnl": -398.76,
-      "return_pct": -0.0493,
-      "weight_pct": 0.0803
+      "price": 24.55,
+      "market_value": 7673.25,
+      "pnl": -412.83,
+      "return_pct": -0.051,
+      "weight_pct": 0.0809
+    },
+    {
+      "ticker": "COP",
+      "qty": 63.0805,
+      "avg_entry": 131.8,
+      "price": 124.96,
+      "market_value": 7882.55,
+      "pnl": -431.78,
+      "return_pct": -0.0519,
+      "weight_pct": 0.0831
     },
     {
       "ticker": "QCOM",
-      "qty": 40.9793,
-      "avg_entry": 197.19,
-      "price": 186.6,
-      "market_value": 7646.74,
-      "pnl": -434.05,
-      "return_pct": -0.0537,
-      "weight_pct": 0.0799
-    },
-    {
-      "ticker": "SCHW",
-      "qty": 79.1414,
-      "avg_entry": 104.97,
-      "price": 98.86,
-      "market_value": 7823.98,
-      "pnl": -483.44,
-      "return_pct": -0.0582,
-      "weight_pct": 0.0817
+      "qty": 41.3559,
+      "avg_entry": 197.07,
+      "price": 183.51,
+      "market_value": 7589.22,
+      "pnl": -560.79,
+      "return_pct": -0.0688,
+      "weight_pct": 0.08
     },
     {
       "ticker": "CMCSA",
       "qty": 360.245,
       "avg_entry": 24.45,
-      "price": 21.82,
-      "market_value": 7858.74,
-      "pnl": -948.19,
-      "return_pct": -0.1077,
-      "weight_pct": 0.0821
+      "price": 21.84,
+      "market_value": 7867.75,
+      "pnl": -939.18,
+      "return_pct": -0.1066,
+      "weight_pct": 0.083
     }
   ],
   "open_positions": 12,
@@ -183,12 +183,16 @@
     {
       "date": "2026-09-30",
       "equity": 95667.28
+    },
+    {
+      "date": "2026-10-01",
+      "equity": 94932.21
     }
   ],
   "benchmark": "SPY",
-  "benchmark_return_pct": 0.0094,
-  "excess_return_pct": -0.052,
-  "days_live": 18,
+  "benchmark_return_pct": 0.0073,
+  "excess_return_pct": -0.059,
+  "days_live": 19,
   "verdict_due": false,
   "retire_after_days": 180,
   "backtest": {
