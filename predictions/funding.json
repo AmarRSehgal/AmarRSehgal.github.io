@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-01T18:00:11.251998+00:00",
+  "generated_at": "2026-10-01T19:00:09.163677+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
     {
-      "base": "EIGEN",
+      "base": "CHIP",
       "type": "perp-perp",
       "long_venue": "Lighter",
       "short_venue": "Coinbase",
@@ -14,12 +14,12 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1523.36,
-      "net_at_hold": 1.3912,
+      "net_apr": 1522.05,
+      "net_at_hold": 1.39,
       "cost_bps": 26.0
     },
     {
-      "base": "CHIP",
+      "base": "EIGEN",
       "type": "perp-perp",
       "long_venue": "Lighter",
       "short_venue": "Coinbase",
@@ -53,21 +53,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1449.34,
-      "net_at_hold": 1.3236,
-      "cost_bps": 26.0
-    },
-    {
-      "base": "1000PEPE",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1421.75,
-      "net_at_hold": 1.2984,
+      "net_apr": 1427.44,
+      "net_at_hold": 1.3036,
       "cost_bps": 26.0
     },
     {
@@ -84,17 +71,17 @@
       "cost_bps": 32.35
     },
     {
-      "base": "EIGEN",
+      "base": "1000PEPE",
       "type": "perp-perp",
-      "long_venue": "GRVT",
+      "long_venue": "Lighter",
       "short_venue": "Coinbase",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1380.43,
-      "net_at_hold": 1.26067,
-      "cost_bps": 38.99
+      "net_apr": 1381.45,
+      "net_at_hold": 1.2616,
+      "cost_bps": 26.0
     },
     {
       "base": "INJ",
@@ -108,6 +95,19 @@
       "net_apr": 1377.82,
       "net_at_hold": 1.25829,
       "cost_bps": 33.35
+    },
+    {
+      "base": "INJ",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1373.34,
+      "net_at_hold": 1.25419,
+      "cost_bps": 33.67
     }
   ]
 }
