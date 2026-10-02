@@ -1,11 +1,30 @@
 {
-  "generated_at": "2026-10-01T15:01:19.531205+00:00",
-  "snapshot_date": "2026-10-01",
-  "snapshots": 32,
-  "observing_snapshots": 30,
+  "generated_at": "2026-10-02T15:01:01.678492+00:00",
+  "snapshot_date": "2026-10-02",
+  "snapshots": 33,
+  "observing_snapshots": 31,
   "days_since_new_data": 0,
-  "notices_tracked": 84580,
+  "notices_tracked": 85357,
   "lanes": [
+    {
+      "office": "FCC COLEMAN",
+      "agency": "JUSTICE, DEPARTMENT OF",
+      "group": "Subsistence/FOOD",
+      "lane": "fcc coleman produce",
+      "evidence": "OBSERVED",
+      "solicitations": 3,
+      "cadence": "monthly",
+      "cadence_days": 26,
+      "cadence_source": "dates",
+      "regularity": 0.15,
+      "span_days": 52,
+      "next_expected": "2026-10-27",
+      "open_deadline": "2026-10-12",
+      "states": [
+        "FL"
+      ],
+      "link": "https://sam.gov/opp/89f5d01ea7cd4ee3ad8146c8755040c3/view"
+    },
     {
       "office": "W6QM MICC-FT DRUM",
       "agency": "DEPT OF DEFENSE",
@@ -49,12 +68,12 @@
       "lane": "office furniture",
       "evidence": "OBSERVED",
       "solicitations": 15,
-      "cadence": "biweekly",
-      "cadence_days": 12,
+      "cadence": "weekly",
+      "cadence_days": 10,
       "cadence_source": "dates",
-      "regularity": 0.75,
-      "span_days": 378,
-      "next_expected": "2026-09-30",
+      "regularity": 0.8,
+      "span_days": 379,
+      "next_expected": "2026-09-29",
       "open_deadline": "",
       "states": [
         "CA"
@@ -136,73 +155,9 @@
         "OK"
       ],
       "link": "https://sam.gov/opp/c33de8c49a16410b9536726e8baecf16/view"
-    },
-    {
-      "office": "FCI DANBURY",
-      "agency": "JUSTICE, DEPARTMENT OF",
-      "group": "Subsistence/FOOD",
-      "lane": "fci danbury subsistence",
-      "evidence": "PERIOD-MARKER",
-      "solicitations": 2,
-      "cadence": "biweekly",
-      "cadence_days": 12,
-      "cadence_source": "dates",
-      "regularity": null,
-      "span_days": 12,
-      "next_expected": "2026-09-13",
-      "open_deadline": "2027-08-28",
-      "states": [
-        "CT"
-      ],
-      "link": "https://sam.gov/opp/e8215bb2434444329c39d046d4775073/view"
     }
   ],
   "open": [
-    {
-      "title": "09-23-30 GRADULAR FERTILIZER & APPLICATION",
-      "office": "FEDERAL PRISON INDUSTRIES, INC",
-      "group": "Agriculture supplies",
-      "state": "OK",
-      "deadline": "2026-10-01",
-      "access": "small-biz",
-      "link": "https://sam.gov/opp/d6f15fa22c6f428bba2aa94ac90aedb2/view"
-    },
-    {
-      "title": "48X48 Sideboard Pallets",
-      "office": "W6QM MICC-FT DRUM",
-      "group": "Containers/packaging",
-      "state": "",
-      "deadline": "2026-10-01",
-      "access": "small-biz",
-      "link": "https://sam.gov/opp/4666135f87b74074a48efd649a4761cd/view"
-    },
-    {
-      "title": "DRS ASSAULT KITCHEN UTENSILS",
-      "office": "W6QK ACC-RI",
-      "group": "Food prep/serving equip",
-      "state": "",
-      "deadline": "2026-10-01",
-      "access": "small-biz",
-      "link": "https://sam.gov/opp/699f6c6c6d6c4e808cb6a53b910b9e52/view"
-    },
-    {
-      "title": "Request for Quotation No. 19VM3026Q0024 \ufffd Procurement of cleaning supplies",
-      "office": "U.S. EMBASSY HANOI",
-      "group": "Office supplies",
-      "state": "VN-HN",
-      "deadline": "2026-10-01",
-      "access": "OPEN",
-      "link": "https://sam.gov/opp/6802051b77854460bdef7754b43fe030/view"
-    },
-    {
-      "title": "SPE60527Q0200 - SOUTHPORT, NC 8,500 GALS GASOLINE, PREM UNL (MUP), without Ethanol, REQUIRED DELIVERY DATE (RDD) 02 OCTOBER 2026",
-      "office": "DLA ENERGY",
-      "group": "Fuels/lubricants",
-      "state": "NC",
-      "deadline": "2026-10-01",
-      "access": "small-biz",
-      "link": "https://sam.gov/opp/df24515df5c74ad3a4f23c59d91d4fe6/view"
-    },
     {
       "title": "20-Foot MilSpec CONNEX Storage Container",
       "office": "GSA/FAS REGION 7 ACQUSITION CENTER",
@@ -211,6 +166,51 @@
       "deadline": "2026-10-02",
       "access": "small-biz",
       "link": "https://sam.gov/opp/8a43506305844b5297783e67962f1126/view"
+    },
+    {
+      "title": "GREASE,GENERAL PURP",
+      "office": "NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "group": "Fuels/lubricants",
+      "state": "",
+      "deadline": "2026-10-02",
+      "access": "OPEN",
+      "link": "https://sam.gov/opp/645fa60b1f5047ddb1eccbca27fca860/view"
+    },
+    {
+      "title": "Supply and Delivery of Tactical, Surveillance, Protective, and Evidence-Handling Equipment",
+      "office": "ACQUISITIONS - RPSO FRANKFURT",
+      "group": "Clothing/textiles",
+      "state": "LB-BA",
+      "deadline": "2026-10-02",
+      "access": "OPEN",
+      "link": "https://sam.gov/opp/3ab5f5d290c643f58414660b9c9b860a/view"
+    },
+    {
+      "title": "7930014336632, Polish, Plastic",
+      "office": "GSA/FAS/GSS/QSCB, SUPPLY CHAIN MANAGEMENT CONTRACTING DIVISION",
+      "group": "Cleaning supplies",
+      "state": "",
+      "deadline": "2026-10-05",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/7590c33dd3534de6934b7c0b9ec8da34/view"
+    },
+    {
+      "title": "ADAPTER,COMPRESSED",
+      "office": "NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "group": "Containers/packaging",
+      "state": "",
+      "deadline": "2026-10-05",
+      "access": "OPEN",
+      "link": "https://sam.gov/opp/c232f7378e4b4b36ae7fc4d0f1d96347/view"
+    },
+    {
+      "title": "Catered Meals - Pineville, LA",
+      "office": "PROCUREMENT DIVISION, OSS",
+      "group": "Subsistence/FOOD",
+      "state": "LA",
+      "deadline": "2026-10-05",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/095a6518369744ebb9065ca3452cab83/view"
     }
   ]
 }
