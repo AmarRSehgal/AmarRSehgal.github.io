@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-01T22:30:04Z",
+  "generated_at": "2026-10-02T04:37:22Z",
   "sources": [
     {
       "source": "ad_capital",
       "label": "AD Capital universe scan",
       "status": "empty",
-      "as_of": "2026-09-30T00:30:29Z",
-      "age_hours": 46.0,
+      "as_of": "2026-10-02T00:30:31Z",
+      "age_hours": 4.1,
       "count": 0,
       "caveat": "A mechanical factor scan of a 374-name universe, not a recommendation. The stop and target are volatility-sized bands, not predictions, and nothing here has had a fundamental read. The paper book behind this signal could not be priced on this run, so no track record is attached to these names.",
       "note": "Scan ran and found nothing that cleared the bar.",
@@ -17,7 +17,7 @@
       "label": "Perp funding vs realized drift",
       "status": "fresh",
       "as_of": "2026-10-01T15:15:08Z",
-      "age_hours": 7.2,
+      "age_hours": 13.4,
       "count": 15,
       "caveat": "An observation, NOT a trade recommendation. This repo's own study found the ranking is ~99% price momentum (rank correlation 0.996 with plain return) and that the convergence reading of the funding term is backwards.",
       "note": null,
@@ -54,50 +54,40 @@
     {
       "source": "crypto_arb",
       "label": "Cross-exchange crypto arbs",
-      "status": "fresh",
-      "as_of": "2026-10-01T20:14:33Z",
-      "age_hours": 2.3,
-      "count": 2,
+      "status": "empty",
+      "as_of": "2026-10-02T04:14:34Z",
+      "age_hours": 0.4,
+      "count": 0,
       "caveat": "Observed, not executed. Each row is a spread that EXISTED between two venues for a few seconds of a 4-minute scan -- it is not a fill. Capturing it needs inventory already sitting on both venues, and the transfer time between them is far longer than the spread lasted.",
-      "note": null,
-      "opportunities": [
-        {
-          "title": "FET  Binance -> MEXC",
-          "detail": "spot | 21.7bp gross less 15.0bp fees | $296 at the touch | lived 8.2s | 3.5% of the scan",
-          "metric_value": 6.74,
-          "metric_display": "+6.7bp net",
-          "link": null,
-          "rank": 1,
-          "source": "crypto_arb"
-        },
-        {
-          "title": "FET  LBank -> MEXC",
-          "detail": "spot | 21.7bp gross less 15.0bp fees | $296 at the touch | lived 4.5s | 1.9% of the scan",
-          "metric_value": 6.74,
-          "metric_display": "+6.7bp net",
-          "link": null,
-          "rank": 2,
-          "source": "crypto_arb"
-        }
-      ]
+      "note": "Scan ran and found nothing that cleared the bar.",
+      "opportunities": []
     },
     {
       "source": "funding_rate_arb",
       "label": "Funding-rate carry",
       "status": "fresh",
-      "as_of": "2026-10-01T22:00:10Z",
-      "age_hours": 0.5,
+      "as_of": "2026-10-02T04:00:10Z",
+      "age_hours": 0.6,
       "count": 8,
       "caveat": "Quoted APRs annualize the CURRENT funding rate, which reprices every few hours. They are not a return you can lock in, and they ignore execution, borrow limits and the capital tied up on both legs.",
       "note": null,
       "opportunities": [
         {
           "title": "TRUMP  Lighter / Coinbase",
-          "detail": "long Lighter perp, short Coinbase perp | annualises to ~873% | round trip 26bp | positive in 24/24 scans",
-          "metric_value": 0.7972,
-          "metric_display": "+0.797% per 8h hold",
+          "detail": "long Lighter perp, short Coinbase perp | annualises to ~867% | round trip 26bp | positive in 24/24 scans",
+          "metric_value": 0.792,
+          "metric_display": "+0.792% per 8h hold",
           "link": null,
           "rank": 1,
+          "source": "funding_rate_arb"
+        },
+        {
+          "title": "LDO  Coinbase / Lighter",
+          "detail": "long Coinbase perp, short Lighter perp | annualises to ~847% | round trip 26bp | positive in 24/24 scans",
+          "metric_value": 0.7736,
+          "metric_display": "+0.774% per 8h hold",
+          "link": null,
+          "rank": 2,
           "source": "funding_rate_arb"
         },
         {
@@ -105,15 +95,6 @@
           "detail": "long Lighter perp, short Coinbase perp | annualises to ~837% | round trip 26bp | positive in 24/24 scans",
           "metric_value": 0.7648,
           "metric_display": "+0.765% per 8h hold",
-          "link": null,
-          "rank": 2,
-          "source": "funding_rate_arb"
-        },
-        {
-          "title": "SEI  Lighter / Coinbase",
-          "detail": "long Lighter perp, short Coinbase perp | annualises to ~821% | round trip 26bp | positive in 24/24 scans",
-          "metric_value": 0.7496,
-          "metric_display": "+0.750% per 8h hold",
           "link": null,
           "rank": 3,
           "source": "funding_rate_arb"
@@ -125,7 +106,7 @@
       "label": "Magic Formula screen",
       "status": "fresh",
       "as_of": "2026-09-28T15:01:35Z",
-      "age_hours": 79.5,
+      "age_hours": 85.6,
       "count": 10,
       "caveat": "A mechanical rank of a hand-pasted universe. It says nothing about whether the business is sound, and nothing here is advice.",
       "note": null,
@@ -164,7 +145,7 @@
       "label": "Real estate deal screen",
       "status": "fresh",
       "as_of": "2026-09-27T15:03:41Z",
-      "age_hours": 103.4,
+      "age_hours": 109.6,
       "count": 12,
       "caveat": "Discounts are against comparable-sale estimates, not appraisals, and the screen has never seen the inside of any of these. Screening output only.",
       "note": null,
@@ -203,7 +184,7 @@
       "label": "Federal resale lanes",
       "status": "fresh",
       "as_of": "2026-10-01T15:01:19Z",
-      "age_hours": 7.5,
+      "age_hours": 13.6,
       "count": 8,
       "caveat": "Finding a lane is not winning one. SAM entity registration takes weeks and gates every bid, set-asides are hard gates, and the extract carries no line-item quantities -- so none of these carry a computed margin.",
       "note": null,
@@ -242,7 +223,7 @@
       "label": "Swing-trade signals",
       "status": "fresh",
       "as_of": "2026-09-30T21:00:34Z",
-      "age_hours": 25.5,
+      "age_hours": 31.6,
       "count": 12,
       "caveat": "Rule output on daily bars, not a recommendation. It carries no position sizing or risk limits, and most rows are positions already open rather than fresh buys. Measured on 12 broad and sector ETFs (survivorship-free) 2019-01-01..2025-07-01, this strategy returned 48.3% against 145.6% for simply holding the same universe, at Sharpe 0.46 against 0.80. It beat same-window buy-and-hold in 3 of 17 walk-forward windows. What does hold up is drawdown: -31.6% against -35.8% for the benchmark.",
       "note": null,
@@ -281,10 +262,10 @@
       "label": "Severe weather risk",
       "status": "stale",
       "as_of": "2026-09-14T14:01:40Z",
-      "age_hours": 416.5,
+      "age_hours": 422.6,
       "count": 0,
       "caveat": "Not a weather warning -- use the National Weather Service for those. The score is how much current conditions resemble the run-up to a severe event, not a probability that one occurs.",
-      "note": "Last scan was 416h ago, past this source's 30h budget. Showing nothing rather than passing it off as current.",
+      "note": "Last scan was 423h ago, past this source's 30h budget. Showing nothing rather than passing it off as current.",
       "opportunities": []
     },
     {
@@ -292,7 +273,7 @@
       "label": "Polymarket BTC 5-min binaries",
       "status": "fresh",
       "as_of": "2026-10-01T14:46:45Z",
-      "age_hours": 7.7,
+      "age_hours": 13.8,
       "count": 1,
       "caveat": "Publishes an observation, not picks. The repo's own backtest on real fills found the market's own price forecasts the settlement BETTER than the model, and that what survives costs is feed latency rather than the pricing model. Simulation only -- the repo has no order-placement path. Latest scan: model Brier 0.1619 vs market 0.1569, so the market is ahead (lower is better).",
       "note": null,
@@ -309,7 +290,7 @@
       ]
     }
   ],
-  "total_opportunities": 21,
+  "total_opportunities": 19,
   "fresh_sources": 9,
   "methodology": "A digest: the top 3 from each scanner, so one glance shows what is live right now. Each scanner runs on its own schedule and publishes its own full panel; this merges them and runs nothing itself, so a slow source can only make its own row go quiet. Items are ranked WITHIN a source and there is deliberately no cross-source score -- basis points, an earnings yield and a contract cadence are not commensurable, and one leaderboard over them would be invented. Every section carries its own caveat; read it before the numbers. Nothing here is advice, none of it is an executed trade, and a section that has gone stale shows nothing rather than yesterday's numbers."
 }
