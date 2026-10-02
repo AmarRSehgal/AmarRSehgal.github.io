@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-01T23:24:37.520683+00:00",
+  "generated_at": "2026-10-02T00:24:38.442807+00:00",
   "window_hours": 24,
-  "articles_in_window": 2508,
-  "collection_days": 32,
+  "articles_in_window": 2515,
+  "collection_days": 33,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
   "surge_available": true,
@@ -10,33 +10,33 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 236,
+      "articles": 233,
       "sources": 42,
       "sentiment_direction": "negative",
-      "surge": 0.91,
-      "sentiment_mean": -0.175,
-      "headline": "Housing Official, Who Targeted Trump Foes, Cuts Watchdog Office",
-      "headline_source": "NYT Politics",
-      "headline_url": "https://www.nytimes.com/2026/10/01/us/politics/bill-pulte-trump-inspector-general.html"
+      "surge": 0.9,
+      "sentiment_mean": -0.164,
+      "headline": "Trump promotes tariffs, tries to shore up support for Ken Paxton in Texas",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/trump-promotes-tariffs-tries-shore-up-support-ken-paxton-texas/"
     },
     {
       "term": "government",
-      "articles": 93,
+      "articles": 94,
       "sources": 34,
       "sentiment_direction": "negative",
-      "surge": 1.1,
-      "sentiment_mean": -0.205,
-      "headline": "'You're public servants': Bombay HC raps casual approach of government officials",
+      "surge": 1.12,
+      "sentiment_mean": -0.203,
+      "headline": "KPSC recruitment row: BJP targets Rahul Gandhi over Karnataka government's SC plea",
       "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/india/youre-public-servants-bombay-hc-raps-casual-approach-of-government-officials/articleshow/134629470.cms"
+      "headline_url": "https://timesofindia.indiatimes.com/india/bjp-slams-congress-accuses-rahul-of-hypocrisy-lying/articleshow/134629534.cms"
     },
     {
       "term": "president",
-      "articles": 105,
+      "articles": 104,
       "sources": 32,
       "sentiment_direction": "mixed",
       "surge": 0.84,
-      "sentiment_mean": -0.068,
+      "sentiment_mean": -0.054,
       "headline": "Musk\u2019s AI chatbot Grok reportedly encouraged Trump to capture  Venezuela\u2019s president",
       "headline_source": "TechCrunch",
       "headline_url": "https://techcrunch.com/2026/10/01/musks-ai-chatbot-grok-reportedly-encouraged-trump-to-capture-venezuelas-president/"
@@ -46,30 +46,30 @@
       "articles": 82,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 1.64,
-      "sentiment_mean": -0.096,
-      "headline": "US tells European allies to act \u2018immediately\u2019 to lower diesel prices",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/world/united-states-canada/article/3369488/us-tells-european-allies-act-immediately-lower-diesel-prices?utm_source=rss_feed"
+      "surge": 1.63,
+      "sentiment_mean": -0.087,
+      "headline": "RAM Maker Celebrates Record Profits And Predicts \u2018Even Higher Prices\u2019 And \u2018Greater Tightness In The Industry\u2019 In The Years Ahead",
+      "headline_source": "Reddit r/technology",
+      "headline_url": "https://www.reddit.com/r/technology/comments/1wve6mc/ram_maker_celebrates_record_profits_and_predicts/"
     },
     {
       "term": "good",
-      "articles": 50,
+      "articles": 51,
       "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 1.91,
-      "sentiment_mean": -0.063,
-      "headline": "Homan asked about ICE killing of Renee Good as family files civil suits: \"What happened was tragic\"",
+      "surge": 1.93,
+      "sentiment_mean": -0.103,
+      "headline": "Tom Homan on fatal ICE shooting: \"I wish Renee Good was alive today\"",
       "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/homan-comments-on-ice-killing-of-renee-good-as-family-files-civil-suits/"
+      "headline_url": "https://www.cbsnews.com/video/tom-homan-on-fatal-ice-shooting-i-wish-renee-good-was-alive-today/"
     },
     {
       "term": "country",
-      "articles": 53,
+      "articles": 52,
       "sources": 30,
-      "sentiment_direction": "negative",
-      "surge": 0.97,
-      "sentiment_mean": -0.153,
+      "sentiment_direction": "mixed",
+      "surge": 0.95,
+      "sentiment_mean": -0.137,
       "headline": "Country star Luke Combs says he\u2019s 'down 30 pounds' during elk hunting trip",
       "headline_source": "Fox News",
       "headline_url": "https://www.foxnews.com/entertainment/country-star-luke-combs-says-hes-down-30-lbs-during-elk-hunting-trip"
@@ -79,22 +79,22 @@
       "articles": 65,
       "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 1.55,
-      "sentiment_mean": 0.097,
+      "surge": 1.56,
+      "sentiment_mean": 0.07,
       "headline": "South Korea to build 8 nuclear power plants in US, invest $120bn",
       "headline_source": "Reddit r/worldnews",
       "headline_url": "https://www.reddit.com/r/worldnews/comments/1wvcuka/south_korea_to_build_8_nuclear_power_plants_in_us/"
     },
     {
       "term": "data",
-      "articles": 60,
+      "articles": 61,
       "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 1.02,
-      "sentiment_mean": -0.03,
-      "headline": "Why Did a TV Price Jump By $100 in the Target Parking Lot? Inside Target\u2019s App Pricing Debate | New York\u2019s 2025 algorithmic-pricing disclosure law forces retailers to flag when personal data shapes the price a shopper sees",
-      "headline_source": "Reddit r/technology",
-      "headline_url": "https://www.reddit.com/r/technology/comments/1wvd3o5/why_did_a_tv_price_jump_by_100_in_the_target/"
+      "surge": 1.04,
+      "sentiment_mean": -0.006,
+      "headline": "New Mexico wants Meta to pay up to $40 billion in penalties after data privacy trial - Reuters",
+      "headline_source": "Reuters",
+      "headline_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPejVnckU0ZWxSMDJ5V2d2WXZfa0ZTQ3ctRW9zQWRCMDZYVjhBZ3F0QTJSRVNuN3MzbTZyVzNCREJLclVDZmowNzZCRDV3UmtyblJQd3M4aWxFVXc0UkRwSzExSUh4cTVpdWZuYXItYTM1YWVrbFJzMnR0ZWR3b3A4NVZrbU9maVc3Z3NpNmg3YVpaOEk4OEx1a3VFQXQteEJ6T1NHRmxaX0JKQzZHRmE5emVDOFM3bGFFNVl3?oc=5"
     }
   ],
   "hours_since_fetch": 0.0
