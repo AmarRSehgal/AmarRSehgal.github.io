@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-03T09:44:46.365364+00:00",
+  "generated_at": "2026-10-03T17:57:24.804570+00:00",
   "window_hours": 24,
-  "articles_in_window": 1771,
+  "articles_in_window": 698,
   "collection_days": 34,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,92 +10,92 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 163,
-      "sources": 36,
+      "articles": 73,
+      "sources": 26,
       "sentiment_direction": "mixed",
-      "surge": 0.68,
-      "sentiment_mean": 0.04,
+      "surge": 0.3,
+      "sentiment_mean": 0.043,
       "headline": "Extended interview: Ted Cruz on NIL legislation, Paxton-Talarico, Trump's approval rating and more",
       "headline_source": "CBS News",
       "headline_url": "https://www.cbsnews.com/video/extended-interview-ted-cruz-on-nil-legislation-paxton-talarico-trumps-approval-rating-and-more/"
     },
     {
       "term": "president",
-      "articles": 86,
-      "sources": 29,
-      "sentiment_direction": "mixed",
-      "surge": 0.76,
-      "sentiment_mean": 0.119,
+      "articles": 38,
+      "sources": 19,
+      "sentiment_direction": "positive",
+      "surge": 0.33,
+      "sentiment_mean": 0.164,
       "headline": "Tennessee fans drank $1.3 million worth of alcohol before, during Texas game attended by president",
       "headline_source": "Fox News",
       "headline_url": "https://www.foxnews.com/outkick-sports/tennessee-fans-drank-1-3-million-worth-alcohol-texas-game-attended-president"
     },
     {
-      "term": "government",
-      "articles": 73,
-      "sources": 29,
+      "term": "national",
+      "articles": 25,
+      "sources": 17,
       "sentiment_direction": "negative",
-      "surge": 0.88,
-      "sentiment_mean": -0.369,
+      "surge": 0.49,
+      "sentiment_mean": -0.172,
+      "headline": "Auburn National Bancorporation director buys $2,007 in stock",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/insider-trading-news/auburn-national-bancorporation-director-buys-2007-in-stock-93CH-4930563"
+    },
+    {
+      "term": "court",
+      "articles": 29,
+      "sources": 16,
+      "sentiment_direction": "mixed",
+      "surge": 0.45,
+      "sentiment_mean": -0.035,
+      "headline": "US road rage killer's sentence quashed because AI video of victim was shown in court",
+      "headline_source": "BBC World",
+      "headline_url": "https://www.bbc.co.uk/news/articles/cwgkvygg5nzvo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "term": "christa",
+      "articles": 17,
+      "sources": 15,
+      "sentiment_direction": "negative",
+      "surge": 0.97,
+      "sentiment_mean": -0.325,
+      "headline": "Christa Pike unconscious after failed execution \u2014 attorneys",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/christa-pike-unconscious-after-failed-execution-attorneys/a-79526118?maca=en-rss-en-all-1573-rdf"
+    },
+    {
+      "term": "failed",
+      "articles": 17,
+      "sources": 15,
+      "sentiment_direction": "negative",
+      "surge": 0.83,
+      "sentiment_mean": -0.694,
+      "headline": "Christa Pike unconscious after failed execution \u2014 attorneys",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/christa-pike-unconscious-after-failed-execution-attorneys/a-79526118?maca=en-rss-en-all-1573-rdf"
+    },
+    {
+      "term": "cornell",
+      "articles": 24,
+      "sources": 14,
+      "sentiment_direction": "negative",
+      "surge": 0.82,
+      "sentiment_mean": -0.714,
+      "headline": "Title IX expert explains reporting process amid Cornell rape investigation",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/title-ix-expert-explains-reporting-process-amid-cornell-rape-investigation/"
+    },
+    {
+      "term": "government",
+      "articles": 21,
+      "sources": 14,
+      "sentiment_direction": "negative",
+      "surge": 0.25,
+      "sentiment_mean": -0.266,
       "headline": "Bernie Sanders introduces bill to ban the federal government from using Flock",
       "headline_source": "Reddit r/technology",
       "headline_url": "https://www.reddit.com/r/technology/comments/1ww9lov/bernie_sanders_introduces_bill_to_ban_the_federal/"
-    },
-    {
-      "term": "diesel",
-      "articles": 55,
-      "sources": 29,
-      "sentiment_direction": "negative",
-      "surge": 2.97,
-      "sentiment_mean": -0.238,
-      "headline": "Trump rules out diesel export ban after Europe agrees to tap stockpiles",
-      "headline_source": "Reddit r/geopolitics",
-      "headline_url": "https://www.reddit.com/r/geopolitics/comments/1ww77eo/trump_rules_out_diesel_export_ban_after_europe/"
-    },
-    {
-      "term": "market",
-      "articles": 75,
-      "sources": 28,
-      "sentiment_direction": "mixed",
-      "surge": 0.98,
-      "sentiment_mean": 0.12,
-      "headline": "Which clubs did Man City's 'inflated' money flow to in transfer market? - BBC",
-      "headline_source": "Google News Top",
-      "headline_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9YRTBzczRWM25adV9kZUpuaUhlVFpkdk1KOVFjN1NXN2o2ZkVnOGNjcENjQ1Rzczhtalp6aVZVY2J0WUlZN3ZOTllqaDZpZUlUU3VZY3dvMHd4S1BBU0VFLXZ2b1gyc0Zq?oc=5"
-    },
-    {
-      "term": "jobs",
-      "articles": 68,
-      "sources": 26,
-      "sentiment_direction": "mixed",
-      "surge": 4.31,
-      "sentiment_mean": -0.038,
-      "headline": "U.S. jobs growth slows in September as unemployment climbs to 4.2%",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/us-jobs-growth-slows-in-september-as-unemployment-climbs-to-42/"
-    },
-    {
-      "term": "release",
-      "articles": 50,
-      "sources": 26,
-      "sentiment_direction": "mixed",
-      "surge": 1.9,
-      "sentiment_mean": -0.028,
-      "headline": "G-7 agrees to release oil reserves to reduce fuel prices after U.S. pressure - The Washington Post",
-      "headline_source": "Google News Top",
-      "headline_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRFIxeWtpUXU5RzJsMjFIbEI2eU1pSkJyVlVleWROa0t5NXNHLUJjcDJOd0ZMeTdQSUNEYkUzbk9yOWd5WVItVUtTMTg4a3NKUEZWUWVJWFc5c2JUb01LdmV5MzdmdWN6dU5BTDNCTUNDZlNKTHJ2QlMtX3l0cHhoa3VzY2J5cXZST2hIZmktN3EwckhjT3NJckM3VHdUSkFtYXQ0c1huMk9XQjEtZ3BBS1MwVFBMb1YzSlBYNWF3?oc=5"
-    },
-    {
-      "term": "million",
-      "articles": 59,
-      "sources": 25,
-      "sentiment_direction": "mixed",
-      "surge": 0.89,
-      "sentiment_mean": 0.05,
-      "headline": "Hongkongers lose HK$220 million to customer service scams in August",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3369628/hongkongers-lose-hk220-million-customer-service-scams-august?utm_source=rss_feed"
     }
   ],
-  "hours_since_fetch": 5.18
+  "hours_since_fetch": 13.4
 }
