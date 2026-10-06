@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T14:21:04.501068+00:00",
+  "generated_at": "2026-10-06T07:02:50.614385+00:00",
   "experiment": "Kalshi market making: v1 against the v2 engine",
   "venue": "Kalshi",
   "paper": true,
@@ -7,7 +7,7 @@
   "unit": "day",
   "min_units_for_verdict": 14,
   "status": "collecting",
-  "headline": "Collecting: day 9 of 14 before the arms are scored against each other. Running totals, not results: baseline -18.27 over 469 fills; v2_niche -73.18 over 4610 fills; v2_crypto -34.65 over 3741 fills; v2_crypto_0ms -13.15 over 2063 fills; v2_crypto_125ms -27.16 over 2085 fills; v2_crypto_250ms -22.22 over 2089 fills; v2_crypto_375ms -30.03 over 2111 fills; v2_crypto_500ms -13.73 over 2138 fills; v2_niche_0ms -57.73 over 2570 fills; v2_niche_125ms -57.73 over 2570 fills; v2_niche_250ms -57.73 over 2570 fills; v2_niche_375ms -57.73 over 2570 fills; v2_niche_500ms -57.73 over 2570 fills.",
+  "headline": "Collecting: day 10 of 14 before the arms are scored against each other. Running totals, not results: baseline -18.27 over 469 fills; v2_niche -73.18 over 4610 fills; v2_crypto -34.65 over 3741 fills; v2_crypto_0ms -13.15 over 2063 fills; v2_crypto_125ms -27.16 over 2085 fills; v2_crypto_250ms -22.22 over 2089 fills; v2_crypto_375ms -30.03 over 2111 fills; v2_crypto_500ms -13.73 over 2138 fills; v2_niche_0ms -57.73 over 2570 fills; v2_niche_125ms -57.73 over 2570 fills; v2_niche_250ms -57.73 over 2570 fills; v2_niche_375ms -57.73 over 2570 fills; v2_niche_500ms -57.73 over 2570 fills.",
   "arms": [
     {
       "name": "baseline",
@@ -43,11 +43,11 @@
       "markouts_c": null,
       "live_markouts_c": null,
       "ladder": null,
-      "units": 9,
-      "pnl_per_unit": -1.884,
+      "units": 10,
+      "pnl_per_unit": -1.696,
       "pnl_per_unit_ci": [
-        -3.3744,
-        -0.5589
+        -3.111,
+        -0.499
       ]
     },
     {
@@ -89,11 +89,11 @@
         "3600": 2.429
       },
       "ladder": null,
-      "units": 9,
-      "pnl_per_unit": -8.638,
+      "units": 10,
+      "pnl_per_unit": -7.774,
       "pnl_per_unit_ci": [
-        -13.4322,
-        -3.1911
+        -12.585,
+        -2.826
       ]
     },
     {
@@ -135,11 +135,11 @@
         "3600": 1.402
       },
       "ladder": null,
-      "units": 9,
-      "pnl_per_unit": -3.218,
+      "units": 10,
+      "pnl_per_unit": -2.896,
       "pnl_per_unit_ci": [
-        -10.5478,
-        3.3544
+        -9.482,
+        3.225
       ]
     },
     {
@@ -184,11 +184,11 @@
         "strategy": "v2_crypto",
         "latency_ms": 0
       },
-      "units": 5,
-      "pnl_per_unit": -5.552,
+      "units": 6,
+      "pnl_per_unit": -4.627,
       "pnl_per_unit_ci": [
-        -21.078,
-        3.846
+        -17.1367,
+        3.205
       ]
     },
     {
@@ -233,11 +233,11 @@
         "strategy": "v2_crypto",
         "latency_ms": 125
       },
-      "units": 5,
-      "pnl_per_unit": -7.888,
+      "units": 6,
+      "pnl_per_unit": -6.573,
       "pnl_per_unit_ci": [
-        -21.4,
-        0.156
+        -17.8333,
+        0.13
       ]
     },
     {
@@ -282,11 +282,11 @@
         "strategy": "v2_crypto",
         "latency_ms": 250
       },
-      "units": 5,
-      "pnl_per_unit": -6.304,
+      "units": 6,
+      "pnl_per_unit": -5.253,
       "pnl_per_unit_ci": [
-        -19.212,
-        0.764
+        -16.01,
+        0.6367
       ]
     },
     {
@@ -331,11 +331,11 @@
         "strategy": "v2_crypto",
         "latency_ms": 375
       },
-      "units": 5,
-      "pnl_per_unit": -6.666,
+      "units": 6,
+      "pnl_per_unit": -5.555,
       "pnl_per_unit_ci": [
-        -18.412,
-        -0.084
+        -15.3783,
+        -0.035
       ]
     },
     {
@@ -380,11 +380,11 @@
         "strategy": "v2_crypto",
         "latency_ms": 500
       },
-      "units": 5,
-      "pnl_per_unit": -5.032,
+      "units": 6,
+      "pnl_per_unit": -4.193,
       "pnl_per_unit_ci": [
-        -14.976,
-        -0.016
+        -12.4933,
+        -0.0133
       ]
     },
     {
@@ -429,11 +429,11 @@
         "strategy": "v2_niche",
         "latency_ms": 0
       },
-      "units": 5,
-      "pnl_per_unit": -12.58,
+      "units": 6,
+      "pnl_per_unit": -10.483,
       "pnl_per_unit_ci": [
-        -18.948,
-        -5.72
+        -16.5567,
+        -3.78
       ]
     },
     {
@@ -478,11 +478,11 @@
         "strategy": "v2_niche",
         "latency_ms": 125
       },
-      "units": 5,
-      "pnl_per_unit": -12.58,
+      "units": 6,
+      "pnl_per_unit": -10.483,
       "pnl_per_unit_ci": [
-        -18.948,
-        -5.72
+        -16.5567,
+        -3.78
       ]
     },
     {
@@ -527,11 +527,11 @@
         "strategy": "v2_niche",
         "latency_ms": 250
       },
-      "units": 5,
-      "pnl_per_unit": -12.58,
+      "units": 6,
+      "pnl_per_unit": -10.483,
       "pnl_per_unit_ci": [
-        -18.948,
-        -5.72
+        -16.5567,
+        -3.78
       ]
     },
     {
@@ -576,11 +576,11 @@
         "strategy": "v2_niche",
         "latency_ms": 375
       },
-      "units": 5,
-      "pnl_per_unit": -12.58,
+      "units": 6,
+      "pnl_per_unit": -10.483,
       "pnl_per_unit_ci": [
-        -18.948,
-        -5.72
+        -16.5567,
+        -3.78
       ]
     },
     {
@@ -625,11 +625,11 @@
         "strategy": "v2_niche",
         "latency_ms": 500
       },
-      "units": 5,
-      "pnl_per_unit": -12.58,
+      "units": 6,
+      "pnl_per_unit": -10.483,
       "pnl_per_unit_ci": [
-        -18.948,
-        -5.72
+        -16.5567,
+        -3.78
       ]
     }
   ],
@@ -638,10 +638,10 @@
       "treatment": "v2_niche",
       "control": "baseline",
       "metric": "pnl_per_day",
-      "diff": -6.753,
+      "diff": -6.078,
       "ci": [
-        -12.5322,
-        -0.3244
+        -11.588,
+        -0.383
       ],
       "verdict": "collecting"
     },
@@ -649,10 +649,10 @@
       "treatment": "v2_crypto",
       "control": "baseline",
       "metric": "pnl_per_day",
-      "diff": -1.333,
+      "diff": -1.2,
       "ci": [
-        -8.9611,
-        5.78
+        -8.015,
+        5.496
       ],
       "verdict": "collecting"
     }
@@ -891,6 +891,39 @@
         "v2_niche_250ms": -22.0,
         "v2_niche_375ms": -22.0,
         "v2_niche_500ms": -22.0
+      },
+      "units": {
+        "baseline": 1,
+        "v2_niche": 1,
+        "v2_crypto": 1,
+        "v2_crypto_0ms": 1,
+        "v2_crypto_125ms": 1,
+        "v2_crypto_250ms": 1,
+        "v2_crypto_375ms": 1,
+        "v2_crypto_500ms": 1,
+        "v2_niche_0ms": 1,
+        "v2_niche_125ms": 1,
+        "v2_niche_250ms": 1,
+        "v2_niche_375ms": 1,
+        "v2_niche_500ms": 1
+      }
+    },
+    {
+      "date": "2026-10-05",
+      "pnl": {
+        "baseline": 0.0,
+        "v2_niche": 0.0,
+        "v2_crypto": 0.0,
+        "v2_crypto_0ms": 0.0,
+        "v2_crypto_125ms": 0.0,
+        "v2_crypto_250ms": 0.0,
+        "v2_crypto_375ms": 0.0,
+        "v2_crypto_500ms": 0.0,
+        "v2_niche_0ms": 0.0,
+        "v2_niche_125ms": 0.0,
+        "v2_niche_250ms": 0.0,
+        "v2_niche_375ms": 0.0,
+        "v2_niche_500ms": 0.0
       },
       "units": {
         "baseline": 1,
