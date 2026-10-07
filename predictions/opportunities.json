@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-07T16:45:43Z",
+  "generated_at": "2026-10-07T22:30:04Z",
   "sources": [
     {
       "source": "ad_capital",
       "label": "AD Capital universe scan",
       "status": "stale",
       "as_of": "2026-10-02T00:30:31Z",
-      "age_hours": 136.3,
+      "age_hours": 142.0,
       "count": 0,
       "caveat": "A mechanical factor scan of a 374-name universe, not a recommendation. The stop and target are volatility-sized bands, not predictions, and nothing here has had a fundamental read. The paper book behind this signal could not be priced on this run, so no track record is attached to these names.",
-      "note": "Last scan was 136h ago, past this source's 96h budget. Showing nothing rather than passing it off as current.",
+      "note": "Last scan was 142h ago, past this source's 96h budget. Showing nothing rather than passing it off as current.",
       "opportunities": []
     },
     {
@@ -17,43 +17,99 @@
       "label": "Perp funding vs realized drift",
       "status": "stale",
       "as_of": "2026-10-02T15:15:08Z",
-      "age_hours": 121.5,
+      "age_hours": 127.2,
       "count": 0,
       "caveat": "An observation, NOT a trade recommendation. This repo's own study found the ranking is ~99% price momentum (rank correlation 0.996 with plain return) and that the convergence reading of the funding term is backwards.",
-      "note": "Last scan was 122h ago, past this source's 36h budget. Showing nothing rather than passing it off as current.",
+      "note": "Last scan was 127h ago, past this source's 36h budget. Showing nothing rather than passing it off as current.",
       "opportunities": []
     },
     {
       "source": "crypto_arb",
       "label": "Cross-exchange crypto arbs",
-      "status": "stale",
-      "as_of": "2026-10-03T00:14:34Z",
-      "age_hours": 112.5,
-      "count": 0,
+      "status": "fresh",
+      "as_of": "2026-10-07T20:14:35Z",
+      "age_hours": 2.3,
+      "count": 8,
       "caveat": "Observed, not executed. Each row is a spread that EXISTED between two venues for a few seconds of a 4-minute scan -- it is not a fill. Capturing it needs inventory already sitting on both venues, and the transfer time between them is far longer than the spread lasted.",
-      "note": "Last scan was 113h ago, past this source's 6h budget. Showing nothing rather than passing it off as current.",
-      "opportunities": []
+      "note": null,
+      "opportunities": [
+        {
+          "title": "NEAR  CoinW -> Gate",
+          "detail": "spot | 44.2bp gross less 30.0bp fees | $435 at the touch | lived 2.5s | 1.1% of the scan",
+          "metric_value": 14.16,
+          "metric_display": "+14.2bp net",
+          "link": null,
+          "rank": 1,
+          "source": "crypto_arb"
+        },
+        {
+          "title": "NEAR  CoinW -> Bitget",
+          "detail": "spot | 42.3bp gross less 30.0bp fees | $366 at the touch | lived 2.8s | 1.2% of the scan",
+          "metric_value": 12.32,
+          "metric_display": "+12.3bp net",
+          "link": null,
+          "rank": 2,
+          "source": "crypto_arb"
+        },
+        {
+          "title": "NEAR  CoinW -> Bybit",
+          "detail": "spot | 41.4bp gross less 30.0bp fees | $850 at the touch | lived 3.5s | 1.5% of the scan",
+          "metric_value": 11.39,
+          "metric_display": "+11.4bp net",
+          "link": null,
+          "rank": 3,
+          "source": "crypto_arb"
+        }
+      ]
     },
     {
       "source": "funding_rate_arb",
       "label": "Funding-rate carry",
-      "status": "stale",
-      "as_of": "2026-10-03T04:35:22Z",
-      "age_hours": 108.2,
-      "count": 0,
+      "status": "fresh",
+      "as_of": "2026-10-07T22:00:23Z",
+      "age_hours": 0.5,
+      "count": 8,
       "caveat": "Quoted APRs annualize the CURRENT funding rate, which reprices every few hours. They are not a return you can lock in, and they ignore execution, borrow limits and the capital tied up on both legs.",
-      "note": "Last scan was 108h ago, past this source's 36h budget. Showing nothing rather than passing it off as current.",
-      "opportunities": []
+      "note": null,
+      "opportunities": [
+        {
+          "title": "LDO  Coinbase / Lighter",
+          "detail": "long Coinbase perp, short Lighter perp | annualises to ~847% | round trip 26bp | positive in 24/24 scans",
+          "metric_value": 0.7736,
+          "metric_display": "+0.774% per 8h hold",
+          "link": null,
+          "rank": 1,
+          "source": "funding_rate_arb"
+        },
+        {
+          "title": "CHIP  Lighter / Coinbase",
+          "detail": "long Lighter perp, short Coinbase perp | annualises to ~837% | round trip 26bp | positive in 24/24 scans",
+          "metric_value": 0.7648,
+          "metric_display": "+0.765% per 8h hold",
+          "link": null,
+          "rank": 2,
+          "source": "funding_rate_arb"
+        },
+        {
+          "title": "SEI  Lighter / Coinbase",
+          "detail": "long Lighter perp, short Coinbase perp | annualises to ~821% | round trip 26bp | positive in 24/24 scans",
+          "metric_value": 0.7496,
+          "metric_display": "+0.750% per 8h hold",
+          "link": null,
+          "rank": 3,
+          "source": "funding_rate_arb"
+        }
+      ]
     },
     {
       "source": "magic_formula",
       "label": "Magic Formula screen",
       "status": "stale",
       "as_of": "2026-09-28T15:01:35Z",
-      "age_hours": 217.7,
+      "age_hours": 223.5,
       "count": 0,
       "caveat": "A mechanical rank of a hand-pasted universe. It says nothing about whether the business is sound, and nothing here is advice.",
-      "note": "Last scan was 218h ago, past this source's 216h budget. Showing nothing rather than passing it off as current.",
+      "note": "Last scan was 223h ago, past this source's 216h budget. Showing nothing rather than passing it off as current.",
       "opportunities": []
     },
     {
@@ -61,7 +117,7 @@
       "label": "Real estate deal screen",
       "status": "fresh",
       "as_of": "2026-10-04T17:25:07Z",
-      "age_hours": 71.3,
+      "age_hours": 77.1,
       "count": 12,
       "caveat": "Discounts are against comparable-sale estimates, not appraisals, and the screen has never seen the inside of any of these. Screening output only.",
       "note": null,
@@ -100,7 +156,7 @@
       "label": "Federal resale lanes",
       "status": "fresh",
       "as_of": "2026-10-07T15:44:53Z",
-      "age_hours": 1.0,
+      "age_hours": 6.8,
       "count": 8,
       "caveat": "Finding a lane is not winning one. SAM entity registration takes weeks and gates every bid, set-asides are hard gates, and the extract carries no line-item quantities -- so none of these carry a computed margin.",
       "note": null,
@@ -137,23 +193,51 @@
     {
       "source": "stock_signals",
       "label": "Swing-trade signals",
-      "status": "empty",
-      "as_of": "2026-10-06T21:35:16Z",
-      "age_hours": 19.2,
-      "count": 0,
+      "status": "fresh",
+      "as_of": "2026-10-07T21:00:32Z",
+      "age_hours": 1.5,
+      "count": 12,
       "caveat": "Rule output on daily bars, not a recommendation. It carries no position sizing or risk limits, and most rows are positions already open rather than fresh buys. Measured on 12 broad and sector ETFs (survivorship-free) 2019-01-01..2025-07-01, this strategy returned 48.3% against 145.6% for simply holding the same universe, at Sharpe 0.46 against 0.80. It beat same-window buy-and-hold in 3 of 17 walk-forward windows. What does hold up is drawdown: -31.6% against -35.8% for the benchmark.",
-      "note": "Scan ran and found nothing that cleared the bar.",
-      "opportunities": []
+      "note": null,
+      "opportunities": [
+        {
+          "title": "META - hold long",
+          "detail": "unrealized 6.0%, held 16d, entered 2026-09-21",
+          "metric_value": 5.0588235294117645,
+          "metric_display": "5/6 factors",
+          "link": null,
+          "rank": 1,
+          "source": "stock_signals"
+        },
+        {
+          "title": "XOM - hold long",
+          "detail": "unrealized 7.4%, held 68d, entered 2026-07-31",
+          "metric_value": 4.0144927536231885,
+          "metric_display": "4/6 factors",
+          "link": null,
+          "rank": 2,
+          "source": "stock_signals"
+        },
+        {
+          "title": "TSLA - hold long",
+          "detail": "unrealized 1.7%, held 16d, entered 2026-09-21",
+          "metric_value": 3.0588235294117645,
+          "metric_display": "3/6 factors",
+          "link": null,
+          "rank": 3,
+          "source": "stock_signals"
+        }
+      ]
     },
     {
       "source": "weather_risk",
       "label": "Severe weather risk",
       "status": "stale",
       "as_of": "2026-09-14T14:01:40Z",
-      "age_hours": 554.7,
+      "age_hours": 560.5,
       "count": 0,
       "caveat": "Not a weather warning -- use the National Weather Service for those. The score is how much current conditions resemble the run-up to a severe event, not a probability that one occurs.",
-      "note": "Last scan was 555h ago, past this source's 30h budget. Showing nothing rather than passing it off as current.",
+      "note": "Last scan was 560h ago, past this source's 30h budget. Showing nothing rather than passing it off as current.",
       "opportunities": []
     },
     {
@@ -161,14 +245,14 @@
       "label": "Polymarket BTC 5-min binaries",
       "status": "stale",
       "as_of": "2026-10-02T14:46:37Z",
-      "age_hours": 122.0,
+      "age_hours": 127.7,
       "count": 0,
       "caveat": "Publishes an observation, not picks. The repo's own backtest on real fills found the market's own price forecasts the settlement BETTER than the model, and that what survives costs is feed latency rather than the pricing model. Simulation only -- the repo has no order-placement path. Latest scan: model Brier 0.1507 vs market 0.1496, so the market is ahead (lower is better). Post-cost returns cross zero at 36.2s of BTC feed staleness, against a 3.75s decision cadence.",
-      "note": "Last scan was 122h ago, past this source's 30h budget. Showing nothing rather than passing it off as current.",
+      "note": "Last scan was 128h ago, past this source's 30h budget. Showing nothing rather than passing it off as current.",
       "opportunities": []
     }
   ],
-  "total_opportunities": 6,
-  "fresh_sources": 3,
+  "total_opportunities": 15,
+  "fresh_sources": 5,
   "methodology": "A digest: the top 3 from each scanner, so one glance shows what is live right now. Each scanner runs on its own schedule and publishes its own full panel; this merges them and runs nothing itself, so a slow source can only make its own row go quiet. Items are ranked WITHIN a source and there is deliberately no cross-source score -- basis points, an earnings yield and a contract cadence are not commensurable, and one leaderboard over them would be invented. Every section carries its own caveat; read it before the numbers. Nothing here is advice, none of it is an executed trade, and a section that has gone stale shows nothing rather than yesterday's numbers."
 }
