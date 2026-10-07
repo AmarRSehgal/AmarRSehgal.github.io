@@ -1,13 +1,93 @@
 {
-  "generated_at": "2026-10-07T12:59:05.001087+00:00",
+  "generated_at": "2026-10-07T17:21:31.867755+00:00",
   "window_hours": 24,
-  "articles_in_window": 0,
-  "collection_days": 35,
+  "articles_in_window": 141,
+  "collection_days": 36,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
   "surge_available": true,
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
-  "topics": [],
-  "hours_since_fetch": 74.04,
-  "note": "No articles collected in the last 24h -- collection has stopped or has not started."
+  "topics": [
+    {
+      "term": "data",
+      "articles": 9,
+      "sources": 4,
+      "sentiment_direction": "unknown",
+      "surge": 0.32,
+      "headline": "Man discovers his parents\u2019 coffee machine used 1TB of data in 10 days",
+      "headline_source": "Reddit r/technology",
+      "headline_url": "https://www.reddit.com/r/technology/comments/1x00kmg/man_discovers_his_parents_coffee_machine_used_1tb/"
+    },
+    {
+      "term": "company",
+      "articles": 8,
+      "sources": 4,
+      "sentiment_direction": "unknown",
+      "surge": 0.28,
+      "headline": "TPP Global Scam or Legitimate",
+      "headline_source": "Reddit r/investing",
+      "headline_url": "https://www.reddit.com/r/investing/comments/1wzs5v8/tpp_global_scam_or_legitimate/"
+    },
+    {
+      "term": "record",
+      "articles": 7,
+      "sources": 4,
+      "sentiment_direction": "unknown",
+      "surge": 0.36,
+      "headline": "Heat record tied in Denver as Colorado's Front Range cooks with way above-normal temperatures",
+      "headline_source": "Reddit r/environment",
+      "headline_url": "https://www.reddit.com/r/environment/comments/1wzywed/heat_record_tied_in_denver_as_colorados_front/"
+    },
+    {
+      "term": "risk",
+      "articles": 7,
+      "sources": 4,
+      "sentiment_direction": "unknown",
+      "surge": 0.55,
+      "headline": "Ships\u2019 captains being paid $100,000 a month to transit Strait of Hormuz \u2014 Salaries and bonuses spiral for seafarers willing to risk perilous trip through waterway in face of Iranian attacks",
+      "headline_source": "Reddit r/economics",
+      "headline_url": "https://www.reddit.com/r/Economics/comments/1wze2zo/ships_captains_being_paid_100000_a_month_to/"
+    },
+    {
+      "term": "billion",
+      "articles": 6,
+      "sources": 4,
+      "sentiment_direction": "unknown",
+      "surge": 0.35,
+      "headline": "SpaceX in Talks to Borrow $40 Billion to Buy Nvidia Chips",
+      "headline_source": "Reddit r/technology",
+      "headline_url": "https://www.reddit.com/r/technology/comments/1wznljn/spacex_in_talks_to_borrow_40_billion_to_buy/"
+    },
+    {
+      "term": "think",
+      "articles": 6,
+      "sources": 4,
+      "sentiment_direction": "unknown",
+      "surge": 0.69,
+      "headline": "Francis Halzen Wins Nobel Physics Prize For Antarctic 'Ghost Particle' Hunt",
+      "headline_source": "Slashdot",
+      "headline_url": "https://slashdot.org/story/26/10/07/0336250/francis-halzen-wins-nobel-physics-prize-for-antarctic-ghost-particle-hunt?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    },
+    {
+      "term": "deal",
+      "articles": 5,
+      "sources": 4,
+      "sentiment_direction": "unknown",
+      "surge": 0.3,
+      "headline": "Hormuz reopening no longer hinges on a US-Iran deal Hormuz: Normalisation no longer needs to wait for a deal | Kpler",
+      "headline_source": "Reddit r/economics",
+      "headline_url": "https://www.reddit.com/r/Economics/comments/1x0152s/hormuz_reopening_no_longer_hinges_on_a_usiran/"
+    },
+    {
+      "term": "directly",
+      "articles": 5,
+      "sources": 4,
+      "sentiment_direction": "unknown",
+      "surge": 1.38,
+      "headline": "Florida's dengue fever outbreak might not be directly caused by climate change, but climate change will soon enough cause a dengue fever outbreak near you.",
+      "headline_source": "Reddit r/environment",
+      "headline_url": "https://www.reddit.com/r/environment/comments/1wzygwg/floridas_dengue_fever_outbreak_might_not_be/"
+    }
+  ],
+  "hours_since_fetch": 0.0
 }
