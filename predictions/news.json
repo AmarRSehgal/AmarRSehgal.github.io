@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-08T18:24:31.584243+00:00",
+  "generated_at": "2026-10-08T19:24:28.887945+00:00",
   "window_hours": 24,
-  "articles_in_window": 2557,
+  "articles_in_window": 2545,
   "collection_days": 37,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,80 +10,69 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 212,
-      "sources": 39,
+      "articles": 210,
+      "sources": 37,
       "sentiment_direction": "mixed",
-      "surge": 2.89,
-      "sentiment_mean": -0.098,
-      "headline": "Trump made \u2018clear\u2019 that media ban was due to critical coverage, lawyer tells judge",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/media/2026/oct/08/trump-media-ban-hearing"
+      "surge": 2.83,
+      "sentiment_mean": -0.085,
+      "headline": "Trump Administration Cuts Off Access to a Major Immigration Program for Workers at Microsoft and Adobe",
+      "headline_source": "Wired",
+      "headline_url": "https://www.wired.com/story/trump-administration-crackdown-microsoft-adobe-immigration/"
     },
     {
       "term": "president",
-      "articles": 143,
+      "articles": 148,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 3.69,
-      "sentiment_mean": -0.15,
-      "headline": "Indian students make extraordinary contributions: University of Arizona president",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/india/indian-students-make-extraordinary-contributions-to-our-campus-says-indian-american-president-of-university-of-arizona-suresh-garimella/articleshow/134795762.cms"
+      "surge": 3.8,
+      "sentiment_mean": -0.129,
+      "headline": "Venezuela\u2019s president expects third-quarter growth after earthquake hit",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/economy-news/venezuelas-president-expects-thirdquarter-growth-after-earthquake-hit-4939635"
     },
     {
       "term": "data",
       "articles": 65,
       "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 2.61,
-      "sentiment_mean": -0.061,
+      "surge": 2.68,
+      "sentiment_mean": -0.062,
       "headline": "One of America\u2019s Last Chestnut Groves Is About to Be Destroyed for a Data Center",
       "headline_source": "Reddit r/environment",
       "headline_url": "https://www.reddit.com/r/environment/comments/1x0yav5/one_of_americas_last_chestnut_groves_is_about_to/"
     },
     {
-      "term": "attack",
-      "articles": 75,
-      "sources": 28,
-      "sentiment_direction": "negative",
-      "surge": 3.8,
-      "sentiment_mean": -0.637,
-      "headline": "Trump says US will not attack Iran before November\u2019s midterm elections",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/world/united-states-canada/article/3370235/trump-says-us-will-not-attack-iran-novembers-midterm-elections?utm_source=rss_feed"
-    },
-    {
       "term": "prices",
-      "articles": 64,
+      "articles": 61,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 2.57,
-      "sentiment_mean": -0.104,
+      "surge": 2.4,
+      "sentiment_mean": -0.109,
       "headline": "Little relief expected for gas prices ahead of Election Day, according to prediction markets",
       "headline_source": "CNBC Finance",
       "headline_url": "https://www.cnbc.com/2026/10/08/little-relief-expected-for-gas-prices-ahead-of-election-day.html"
-    },
-    {
-      "term": "government",
-      "articles": 96,
-      "sources": 27,
-      "sentiment_direction": "mixed",
-      "surge": 2.84,
-      "sentiment_mean": -0.124,
-      "headline": "French teens march for decent schools despite government\u2019s pledge to act",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/economy-news/french-teens-march-for-decent-schools-despite-governments-pledge-to-act-4938931"
     },
     {
       "term": "company",
       "articles": 80,
       "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 3.2,
-      "sentiment_mean": 0.048,
-      "headline": "Litecoin Foundations Randi Hipper interviews Evan Kuhn, the Head of DeLorean Labs, as he explains how the company's Web3 division is shaping the iconic brand.",
-      "headline_source": "Reddit r/crypto",
-      "headline_url": "https://www.reddit.com/r/CryptoCurrency/comments/1x0w84e/litecoin_foundations_randi_hipper_interviews_evan/"
+      "surge": 3.24,
+      "sentiment_mean": 0.045,
+      "headline": "US suspends Microsoft from Green Card programme, here is what the company has to say",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/technology/tech-news/us-suspends-microsoft-from-green-card-sponsorship-programme-company-responds-microsoft-only-files-h-1b-petitions-for-those-who-/articleshow/134799105.cms"
+    },
+    {
+      "term": "across",
+      "articles": 70,
+      "sources": 27,
+      "sentiment_direction": "negative",
+      "surge": 2.75,
+      "sentiment_mean": -0.206,
+      "headline": "Multiple solar eruptions could spark auroras across the northern US starting tonight - ABC News - Breaking News, Latest News and Videos",
+      "headline_source": "Google News Top",
+      "headline_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPejhmN3c0dERGWDhtVE56SzZwU1VaZmdwN09XTmtZNWVFbEJSUWZQcVBjSlZKNjJXSEN2V05XMi1sU1hCeFp5YUNLcW8wdTlrTlU5QmxhNmhGTUlkUF85T2JvcXd2Q3BGaFNlRnRrWXpsNGJqYl9VZUNZZ0NGOGpBQWZnZ056dUx1NmRHRVlOSVVPb3p3dktRaEFuazFNclQ0ZjZJ0gGoAUFVX3lxTE82Sno3bkNLZ0pKN3hyZ0JUSWlTRVZDX0RKbnR2WUNaX0VGdnNHNzMtWldJUUJQU0p1WWtTb21MOV9fR3hITXNzVl9yUGJwRUZOMzZucGVsb1BQZHQ4RVkxcmFSajJRRnlvVEo5R05pOU5YeHkyZzRkblFtdzhqVlV1TWdqVFlQalZfWTVVX3NtRkNKR0ZSS0NYaUYtYWkyYlk3djJoLW0xQg?oc=5"
     },
     {
       "term": "former",
@@ -91,10 +80,21 @@
       "sources": 26,
       "sentiment_direction": "negative",
       "surge": 3.73,
-      "sentiment_mean": -0.237,
-      "headline": "Former Venezuelan leader Nicolas Maduro, wife face new charges over alleged torture",
-      "headline_source": "ABC News",
-      "headline_url": "https://abcnews.com/US/former-venezuelan-president-nicolas-maduro-wife-face-new/story?id=137097107"
+      "sentiment_mean": -0.248,
+      "headline": "Former US Open golf champion Corey Pavin announces wife's cancer 'never went away completely'",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/outkick-sports/former-us-open-golf-champion-corey-pavin-announces-wifes-cancer-never-went-away-completely"
+    },
+    {
+      "term": "including",
+      "articles": 74,
+      "sources": 26,
+      "sentiment_direction": "negative",
+      "surge": 3.69,
+      "sentiment_mean": -0.152,
+      "headline": "US Suspends Visa Program for Tech Firms Including Microsoft",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-10-08/us-suspends-visa-program-for-tech-firms-video"
     }
   ],
   "hours_since_fetch": 0.0
