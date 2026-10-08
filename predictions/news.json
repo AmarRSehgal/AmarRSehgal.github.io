@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-08T13:24:34.243063+00:00",
+  "generated_at": "2026-10-08T14:24:30.471875+00:00",
   "window_hours": 24,
-  "articles_in_window": 2511,
+  "articles_in_window": 2565,
   "collection_days": 37,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,91 +10,91 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 210,
+      "articles": 207,
       "sources": 37,
       "sentiment_direction": "mixed",
-      "surge": 2.64,
-      "sentiment_mean": -0.135,
-      "headline": "Trump blasts Talarico in Texas and reverses comments on Iran bombing LA, San Diego",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/trump-blasts-talarico-in-texas-and-reverses-comments-on-iran-bombing-la-san-diego/"
+      "surge": 2.7,
+      "sentiment_mean": -0.125,
+      "headline": "Trump bought up to $25 million in Meta and millions in SpaceX debt in August",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/10/08/trump-august-trades-meta-spacex-financial-disclosure.html"
     },
     {
       "term": "data",
-      "articles": 68,
-      "sources": 33,
+      "articles": 71,
+      "sources": 34,
       "sentiment_direction": "mixed",
-      "surge": 2.84,
-      "sentiment_mean": -0.033,
-      "headline": "Data Centers Pitched as Less Thirsty Than Farms in Message Pivot",
-      "headline_source": "Reddit r/environment",
-      "headline_url": "https://www.reddit.com/r/environment/comments/1x0qep4/data_centers_pitched_as_less_thirsty_than_farms/"
+      "surge": 3.0,
+      "sentiment_mean": -0.039,
+      "headline": "Data center boom is pushing prices higher, according to Fed officials",
+      "headline_source": "Reddit r/technology",
+      "headline_url": "https://www.reddit.com/r/technology/comments/1x0qr28/data_center_boom_is_pushing_prices_higher/"
     },
     {
       "term": "government",
       "articles": 100,
-      "sources": 32,
+      "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 2.83,
-      "sentiment_mean": -0.124,
+      "surge": 2.86,
+      "sentiment_mean": -0.116,
       "headline": "France student protests: What measures is the government taking?",
       "headline_source": "France24",
       "headline_url": "https://www.france24.com/en/video/20261008-france-student-protests-what-measures-is-the-government-taking"
+    },
+    {
+      "term": "president",
+      "articles": 122,
+      "sources": 29,
+      "sentiment_direction": "negative",
+      "surge": 3.05,
+      "sentiment_mean": -0.212,
+      "headline": "Sri Lanka arrests ex-President Rajapaksa\u2019s wife in graft case",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/sri-lanka-arrests-ex-president-rajapaksas-wife-in-graft-case?traffic_source=rss"
     },
     {
       "term": "prices",
       "articles": 60,
       "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 2.35,
-      "sentiment_mean": -0.122,
-      "headline": "Oil prices hit $105 and stocks tumble as Trump considers renewed strikes on Iran",
-      "headline_source": "NBC News",
-      "headline_url": "https://www.nbcnews.com/business/energy/oil-prices-stocks-trump-iran-rcna602248"
-    },
-    {
-      "term": "president",
-      "articles": 118,
-      "sources": 28,
-      "sentiment_direction": "negative",
-      "surge": 2.88,
-      "sentiment_mean": -0.226,
-      "headline": "Sri Lanka arrests ex-President Rajapaksa\u2019s wife in graft case",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/sri-lanka-arrests-ex-president-rajapaksas-wife-in-graft-case?traffic_source=rss"
+      "surge": 2.32,
+      "sentiment_mean": -0.14,
+      "headline": "Iowa trucker says Iran war, fuel prices have been \"major struggle\"",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/iowa-trucker-says-iran-war-fuel-prices-have-been-major-struggle/"
     },
     {
       "term": "across",
-      "articles": 69,
+      "articles": 70,
       "sources": 28,
       "sentiment_direction": "negative",
-      "surge": 2.71,
-      "sentiment_mean": -0.21,
-      "headline": "SpaceX reportedly seeking $40 billion debt package for Nvidia AI hardware \u2014 massive raise could fund roughly 360,000 Vera Rubin GPUs across 5,000 NVL72 racks",
-      "headline_source": "Reddit r/technology",
-      "headline_url": "https://www.reddit.com/r/technology/comments/1x0p6fo/spacex_reportedly_seeking_40_billion_debt_package/"
-    },
-    {
-      "term": "student",
-      "articles": 61,
-      "sources": 28,
-      "sentiment_direction": "negative",
-      "surge": 4.28,
-      "sentiment_mean": -0.385,
-      "headline": "France student protests: What measures is the government taking?",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/video/20261008-france-student-protests-what-measures-is-the-government-taking"
+      "surge": 2.73,
+      "sentiment_mean": -0.232,
+      "headline": "PIMCO ETFs plc announces dividend distributions across funds",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/company-news/pimco-etfs-plc-announces-dividend-distributions-across-funds-93CH-4939306"
     },
     {
       "term": "risk",
       "articles": 48,
       "sources": 28,
       "sentiment_direction": "negative",
-      "surge": 3.42,
-      "sentiment_mean": -0.176,
-      "headline": "AI Darlings, Defense Shares Most at Risk as US Midterms Near",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/articles/2026-10-08/ai-darlings-defense-shares-most-at-risk-as-us-midterms-near"
+      "surge": 3.38,
+      "sentiment_mean": -0.183,
+      "headline": "Early-onset cancer rising worldwide: Causes, risk, prevention",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/early-onset-cancer-rising-worldwide-causes-risk-prevention/a-79597097?maca=en-rss-en-all-1573-rdf"
+    },
+    {
+      "term": "student",
+      "articles": 61,
+      "sources": 27,
+      "sentiment_direction": "negative",
+      "surge": 4.28,
+      "sentiment_mean": -0.372,
+      "headline": "From France to Italy, Belgium to Greece, student protests spread across Europe",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/world/europe/from-france-to-italy-belgium-to-greece-student-protests-spread-across-europe/articleshow/134785388.cms"
     }
   ],
   "hours_since_fetch": 0.0
