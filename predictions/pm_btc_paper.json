@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T23:17:33.912138+00:00",
+  "generated_at": "2026-10-08T22:06:23.738385+00:00",
   "experiment": "Polymarket BTC 5-minute binaries: taker v1 vs passive makers",
   "venue": "Polymarket",
   "paper": true,
@@ -7,52 +7,52 @@
   "unit": "window",
   "min_units_for_verdict": 200,
   "status": "verdict",
-  "headline": "The best scored maker (maker_model_0ms) beats the original taker by $+0.430 per window (95% CI $+0.033 to $+0.800). Latency-ladder arms are still collecting.",
+  "headline": "The best scored maker (maker_model_0ms) beats the original taker by $+0.408 per window (95% CI $+0.037 to $+0.737). Latency-ladder arms are still collecting.",
   "arms": [
     {
       "name": "taker_v1",
       "role": "control",
       "description": "The original tool, unchanged: buys the ask when N(d2) beats ask + taker fee, polling REST every 3s.",
-      "units": 654,
-      "active_units": 589,
-      "fills": 6941,
-      "size": 6941.0,
-      "pnl": -165.51,
-      "pnl_per_unit": -0.2531,
+      "units": 726,
+      "active_units": 660,
+      "fills": 7817,
+      "size": 7817.0,
+      "pnl": -192.98,
+      "pnl_per_unit": -0.2658,
       "pnl_per_unit_ci": [
-        -0.5579,
-        0.0502
+        -0.5615,
+        0.0249
       ],
-      "pnl_per_size_c": -2.385,
-      "roi": -0.0577,
-      "max_drawdown": 172.39,
+      "pnl_per_size_c": -2.469,
+      "roi": -0.0602,
+      "max_drawdown": 200.65,
       "edge_at_fill_c": null,
       "markouts_c": null,
-      "fees": 103.19,
+      "fees": 116.06,
       "ladder": null
     },
     {
       "name": "maker_mid",
       "role": "treatment",
       "description": "Rests quotes around the Polymarket mid. No outside information -- measures what passive quoting alone is worth.",
-      "units": 620,
-      "active_units": 521,
-      "fills": 3219,
-      "size": 13719.1,
-      "pnl": -438.42,
-      "pnl_per_unit": -0.7071,
+      "units": 692,
+      "active_units": 588,
+      "fills": 3596,
+      "size": 15328.7,
+      "pnl": -467.35,
+      "pnl_per_unit": -0.6754,
       "pnl_per_unit_ci": [
-        -0.8964,
-        -0.5221
+        -0.8512,
+        -0.4962
       ],
-      "pnl_per_size_c": -3.196,
-      "roi": -0.0619,
-      "max_drawdown": 443.26,
-      "edge_at_fill_c": 7.299,
+      "pnl_per_size_c": -3.049,
+      "roi": -0.0592,
+      "max_drawdown": 467.35,
+      "edge_at_fill_c": 7.347,
       "markouts_c": {
-        "5": -2.883,
-        "30": -2.573,
-        "60": -1.97
+        "5": -2.901,
+        "30": -2.519,
+        "60": -1.632
       },
       "fees": 0.0,
       "ladder": null
@@ -61,24 +61,24 @@
       "name": "maker_model",
       "role": "treatment",
       "description": "Rests quotes around the N(d2) model price.",
-      "units": 620,
-      "active_units": 544,
-      "fills": 2292,
-      "size": 9950.8,
-      "pnl": -110.45,
-      "pnl_per_unit": -0.1781,
+      "units": 692,
+      "active_units": 609,
+      "fills": 2535,
+      "size": 11041.3,
+      "pnl": -134.55,
+      "pnl_per_unit": -0.1944,
       "pnl_per_unit_ci": [
-        -0.4205,
-        0.065
+        -0.426,
+        0.0368
       ],
-      "pnl_per_size_c": -1.11,
-      "roi": -0.0245,
-      "max_drawdown": 162.07,
-      "edge_at_fill_c": 7.632,
+      "pnl_per_size_c": -1.219,
+      "roi": -0.0272,
+      "max_drawdown": 198.27,
+      "edge_at_fill_c": 7.642,
       "markouts_c": {
-        "5": -1.357,
-        "30": -0.911,
-        "60": -0.5
+        "5": -1.4,
+        "30": -0.882,
+        "60": -0.407
       },
       "fees": 0.0,
       "ladder": null
@@ -87,24 +87,24 @@
       "name": "maker_anchored",
       "role": "treatment",
       "description": "Rests quotes around the Polymarket mid moved by the spot-implied change since its recent average.",
-      "units": 620,
-      "active_units": 506,
-      "fills": 2815,
-      "size": 12262.3,
-      "pnl": -85.3,
-      "pnl_per_unit": -0.1376,
+      "units": 692,
+      "active_units": 565,
+      "fills": 3083,
+      "size": 13468.0,
+      "pnl": -78.35,
+      "pnl_per_unit": -0.1132,
       "pnl_per_unit_ci": [
-        -0.335,
-        0.0639
+        -0.3028,
+        0.0732
       ],
-      "pnl_per_size_c": -0.696,
-      "roi": -0.0141,
+      "pnl_per_size_c": -0.582,
+      "roi": -0.0119,
       "max_drawdown": 114.54,
-      "edge_at_fill_c": 7.548,
+      "edge_at_fill_c": 7.589,
       "markouts_c": {
-        "5": -1.461,
-        "30": -1.022,
-        "60": -0.744
+        "5": -1.445,
+        "30": -0.872,
+        "60": -0.642
       },
       "fees": 0.0,
       "ladder": null
@@ -113,24 +113,24 @@
       "name": "maker_mid_0ms",
       "role": "treatment",
       "description": "maker_mid at 0ms order latency, re-quoting every 50ms (latency ladder).",
-      "units": 363,
-      "active_units": 306,
-      "fills": 1296,
-      "size": 5604.9,
-      "pnl": -108.6,
-      "pnl_per_unit": -0.2992,
+      "units": 435,
+      "active_units": 361,
+      "fills": 1496,
+      "size": 6458.9,
+      "pnl": -98.24,
+      "pnl_per_unit": -0.2258,
       "pnl_per_unit_ci": [
-        -0.5325,
-        -0.0779
+        -0.4414,
+        -0.0287
       ],
-      "pnl_per_size_c": -1.938,
-      "roi": -0.0382,
-      "max_drawdown": 112.04,
-      "edge_at_fill_c": 7.611,
+      "pnl_per_size_c": -1.521,
+      "roi": -0.0302,
+      "max_drawdown": 116.9,
+      "edge_at_fill_c": 7.646,
       "markouts_c": {
-        "5": -1.594,
-        "30": -1.609,
-        "60": -0.915
+        "5": -1.73,
+        "30": -1.529,
+        "60": -0.97
       },
       "fees": 0.0,
       "ladder": {
@@ -142,24 +142,24 @@
       "name": "maker_mid_100ms",
       "role": "treatment",
       "description": "maker_mid at 100ms order latency, re-quoting every 50ms (latency ladder).",
-      "units": 363,
-      "active_units": 325,
-      "fills": 1506,
-      "size": 6491.6,
-      "pnl": -147.32,
-      "pnl_per_unit": -0.4058,
+      "units": 435,
+      "active_units": 386,
+      "fills": 1746,
+      "size": 7483.9,
+      "pnl": -152.27,
+      "pnl_per_unit": -0.35,
       "pnl_per_unit_ci": [
-        -0.6594,
-        -0.1592
+        -0.5832,
+        -0.1343
       ],
-      "pnl_per_size_c": -2.269,
-      "roi": -0.0446,
-      "max_drawdown": 152.32,
-      "edge_at_fill_c": 7.56,
+      "pnl_per_size_c": -2.035,
+      "roi": -0.0402,
+      "max_drawdown": 171.0,
+      "edge_at_fill_c": 7.597,
       "markouts_c": {
-        "5": -1.64,
-        "30": -1.199,
-        "60": -0.803
+        "5": -1.772,
+        "30": -1.143,
+        "60": -0.836
       },
       "fees": 0.0,
       "ladder": {
@@ -171,24 +171,24 @@
       "name": "maker_mid_200ms",
       "role": "treatment",
       "description": "maker_mid at 200ms order latency, re-quoting every 50ms (latency ladder).",
-      "units": 363,
-      "active_units": 338,
-      "fills": 1911,
-      "size": 8198.6,
-      "pnl": -198.04,
-      "pnl_per_unit": -0.5456,
+      "units": 435,
+      "active_units": 401,
+      "fills": 2230,
+      "size": 9492.8,
+      "pnl": -209.25,
+      "pnl_per_unit": -0.481,
       "pnl_per_unit_ci": [
-        -0.7855,
-        -0.2994
+        -0.703,
+        -0.2654
       ],
-      "pnl_per_size_c": -2.415,
-      "roi": -0.0471,
-      "max_drawdown": 204.1,
-      "edge_at_fill_c": 7.416,
+      "pnl_per_size_c": -2.204,
+      "roi": -0.0431,
+      "max_drawdown": 222.77,
+      "edge_at_fill_c": 7.441,
       "markouts_c": {
-        "5": -1.983,
-        "30": -1.436,
-        "60": -1.02
+        "5": -2.131,
+        "30": -1.494,
+        "60": -1.054
       },
       "fees": 0.0,
       "ladder": {
@@ -200,24 +200,24 @@
       "name": "maker_mid_300ms",
       "role": "treatment",
       "description": "maker_mid at 300ms order latency, re-quoting every 50ms (latency ladder).",
-      "units": 363,
-      "active_units": 343,
-      "fills": 2242,
-      "size": 9603.7,
-      "pnl": -226.27,
-      "pnl_per_unit": -0.6233,
+      "units": 435,
+      "active_units": 409,
+      "fills": 2616,
+      "size": 11195.4,
+      "pnl": -254.34,
+      "pnl_per_unit": -0.5847,
       "pnl_per_unit_ci": [
-        -0.8767,
-        -0.3717
+        -0.8116,
+        -0.3675
       ],
-      "pnl_per_size_c": -2.356,
-      "roi": -0.046,
-      "max_drawdown": 231.52,
-      "edge_at_fill_c": 7.42,
+      "pnl_per_size_c": -2.272,
+      "roi": -0.0444,
+      "max_drawdown": 260.17,
+      "edge_at_fill_c": 7.431,
       "markouts_c": {
-        "5": -2.209,
-        "30": -1.515,
-        "60": -0.833
+        "5": -2.298,
+        "30": -1.523,
+        "60": -0.85
       },
       "fees": 0.0,
       "ladder": {
@@ -229,24 +229,24 @@
       "name": "maker_mid_400ms",
       "role": "treatment",
       "description": "maker_mid at 400ms order latency, re-quoting every 50ms (latency ladder).",
-      "units": 363,
-      "active_units": 343,
-      "fills": 2505,
-      "size": 10742.6,
-      "pnl": -291.94,
-      "pnl_per_unit": -0.8042,
+      "units": 435,
+      "active_units": 411,
+      "fills": 2932,
+      "size": 12506.5,
+      "pnl": -332.52,
+      "pnl_per_unit": -0.7644,
       "pnl_per_unit_ci": [
-        -1.0597,
-        -0.553
+        -0.9957,
+        -0.5445
       ],
-      "pnl_per_size_c": -2.718,
-      "roi": -0.0528,
-      "max_drawdown": 294.1,
-      "edge_at_fill_c": 7.324,
+      "pnl_per_size_c": -2.659,
+      "roi": -0.052,
+      "max_drawdown": 333.74,
+      "edge_at_fill_c": 7.345,
       "markouts_c": {
-        "5": -2.496,
-        "30": -2.459,
-        "60": -1.52
+        "5": -2.613,
+        "30": -2.478,
+        "60": -1.552
       },
       "fees": 0.0,
       "ladder": {
@@ -258,24 +258,24 @@
       "name": "maker_model_0ms",
       "role": "treatment",
       "description": "maker_model at 0ms order latency, re-quoting every 50ms (latency ladder).",
-      "units": 363,
-      "active_units": 339,
-      "fills": 1015,
-      "size": 4327.3,
-      "pnl": 82.37,
-      "pnl_per_unit": 0.2269,
+      "units": 435,
+      "active_units": 395,
+      "fills": 1175,
+      "size": 5039.8,
+      "pnl": 76.35,
+      "pnl_per_unit": 0.1755,
       "pnl_per_unit_ci": [
-        -0.0976,
-        0.5612
+        -0.1141,
+        0.4643
       ],
-      "pnl_per_size_c": 1.904,
-      "roi": 0.0456,
-      "max_drawdown": 37.04,
-      "edge_at_fill_c": 7.63,
+      "pnl_per_size_c": 1.515,
+      "roi": 0.0367,
+      "max_drawdown": 57.32,
+      "edge_at_fill_c": 7.649,
       "markouts_c": {
-        "5": 0.48,
-        "30": 1.223,
-        "60": 1.109
+        "5": 0.349,
+        "30": 1.222,
+        "60": 1.086
       },
       "fees": 0.0,
       "ladder": {
@@ -287,24 +287,24 @@
       "name": "maker_model_100ms",
       "role": "treatment",
       "description": "maker_model at 100ms order latency, re-quoting every 50ms (latency ladder).",
-      "units": 363,
-      "active_units": 344,
-      "fills": 1092,
-      "size": 4632.2,
-      "pnl": 62.46,
-      "pnl_per_unit": 0.1721,
+      "units": 435,
+      "active_units": 401,
+      "fills": 1257,
+      "size": 5365.6,
+      "pnl": 59.89,
+      "pnl_per_unit": 0.1377,
       "pnl_per_unit_ci": [
-        -0.1558,
-        0.5196
+        -0.1539,
+        0.4334
       ],
-      "pnl_per_size_c": 1.348,
-      "roi": 0.032,
-      "max_drawdown": 48.99,
-      "edge_at_fill_c": 7.679,
+      "pnl_per_size_c": 1.116,
+      "roi": 0.0267,
+      "max_drawdown": 71.37,
+      "edge_at_fill_c": 7.687,
       "markouts_c": {
-        "5": 0.266,
-        "30": 1.145,
-        "60": 1.03
+        "5": 0.148,
+        "30": 1.116,
+        "60": 0.983
       },
       "fees": 0.0,
       "ladder": {
@@ -316,24 +316,24 @@
       "name": "maker_model_200ms",
       "role": "treatment",
       "description": "maker_model at 200ms order latency, re-quoting every 50ms (latency ladder).",
-      "units": 363,
-      "active_units": 346,
-      "fills": 1194,
-      "size": 5099.9,
-      "pnl": 9.64,
-      "pnl_per_unit": 0.0266,
+      "units": 435,
+      "active_units": 406,
+      "fills": 1394,
+      "size": 5966.1,
+      "pnl": 4.83,
+      "pnl_per_unit": 0.0111,
       "pnl_per_unit_ci": [
-        -0.3097,
-        0.3785
+        -0.2936,
+        0.3237
       ],
-      "pnl_per_size_c": 0.189,
-      "roi": 0.0044,
-      "max_drawdown": 52.11,
-      "edge_at_fill_c": 7.715,
+      "pnl_per_size_c": 0.081,
+      "roi": 0.0019,
+      "max_drawdown": 74.71,
+      "edge_at_fill_c": 7.752,
       "markouts_c": {
-        "5": -0.111,
-        "30": 0.704,
-        "60": 0.601
+        "5": -0.196,
+        "30": 0.574,
+        "60": 0.768
       },
       "fees": 0.0,
       "ladder": {
@@ -345,24 +345,24 @@
       "name": "maker_model_300ms",
       "role": "treatment",
       "description": "maker_model at 300ms order latency, re-quoting every 50ms (latency ladder).",
-      "units": 363,
-      "active_units": 350,
-      "fills": 1317,
-      "size": 5573.3,
-      "pnl": 16.03,
-      "pnl_per_unit": 0.0442,
+      "units": 435,
+      "active_units": 413,
+      "fills": 1539,
+      "size": 6531.5,
+      "pnl": 16.75,
+      "pnl_per_unit": 0.0385,
       "pnl_per_unit_ci": [
-        -0.3016,
-        0.3975
+        -0.2783,
+        0.3569
       ],
-      "pnl_per_size_c": 0.288,
-      "roi": 0.0068,
-      "max_drawdown": 52.17,
-      "edge_at_fill_c": 7.747,
+      "pnl_per_size_c": 0.256,
+      "roi": 0.0061,
+      "max_drawdown": 65.41,
+      "edge_at_fill_c": 7.763,
       "markouts_c": {
-        "5": -0.417,
-        "30": 0.589,
-        "60": 0.179
+        "5": -0.433,
+        "30": 0.517,
+        "60": 0.378
       },
       "fees": 0.0,
       "ladder": {
@@ -374,24 +374,24 @@
       "name": "maker_model_400ms",
       "role": "treatment",
       "description": "maker_model at 400ms order latency, re-quoting every 50ms (latency ladder).",
-      "units": 363,
-      "active_units": 352,
-      "fills": 1483,
-      "size": 6361.2,
-      "pnl": 1.79,
-      "pnl_per_unit": 0.0049,
+      "units": 435,
+      "active_units": 419,
+      "fills": 1729,
+      "size": 7414.3,
+      "pnl": -25.87,
+      "pnl_per_unit": -0.0595,
       "pnl_per_unit_ci": [
-        -0.3514,
-        0.3497
+        -0.3769,
+        0.2522
       ],
-      "pnl_per_size_c": 0.028,
-      "roi": 0.0007,
-      "max_drawdown": 53.49,
-      "edge_at_fill_c": 7.729,
+      "pnl_per_size_c": -0.349,
+      "roi": -0.0082,
+      "max_drawdown": 91.11,
+      "edge_at_fill_c": 7.742,
       "markouts_c": {
-        "5": -0.513,
-        "30": 0.878,
-        "60": 0.184
+        "5": -0.633,
+        "30": 0.551,
+        "60": 0.226
       },
       "fees": 0.0,
       "ladder": {
@@ -403,24 +403,24 @@
       "name": "maker_anchored_0ms",
       "role": "treatment",
       "description": "maker_anchored at 0ms order latency, re-quoting every 50ms (latency ladder).",
-      "units": 363,
-      "active_units": 293,
-      "fills": 1112,
-      "size": 4882.7,
-      "pnl": 46.6,
-      "pnl_per_unit": 0.1284,
+      "units": 435,
+      "active_units": 337,
+      "fills": 1253,
+      "size": 5493.8,
+      "pnl": 50.63,
+      "pnl_per_unit": 0.1164,
       "pnl_per_unit_ci": [
-        -0.1133,
-        0.3732
+        -0.0985,
+        0.3337
       ],
-      "pnl_per_size_c": 0.954,
-      "roi": 0.0198,
-      "max_drawdown": 25.55,
-      "edge_at_fill_c": 7.515,
+      "pnl_per_size_c": 0.922,
+      "roi": 0.0192,
+      "max_drawdown": 46.9,
+      "edge_at_fill_c": 7.555,
       "markouts_c": {
-        "5": 0.569,
-        "30": 0.847,
-        "60": 0.938
+        "5": 0.446,
+        "30": 0.817,
+        "60": 0.9
       },
       "fees": 0.0,
       "ladder": {
@@ -432,24 +432,24 @@
       "name": "maker_anchored_100ms",
       "role": "treatment",
       "description": "maker_anchored at 100ms order latency, re-quoting every 50ms (latency ladder).",
-      "units": 363,
-      "active_units": 300,
-      "fills": 1229,
-      "size": 5423.6,
-      "pnl": 65.25,
-      "pnl_per_unit": 0.1798,
+      "units": 435,
+      "active_units": 350,
+      "fills": 1381,
+      "size": 6081.8,
+      "pnl": 53.31,
+      "pnl_per_unit": 0.1225,
       "pnl_per_unit_ci": [
-        -0.0737,
-        0.434
+        -0.1086,
+        0.3525
       ],
-      "pnl_per_size_c": 1.203,
-      "roi": 0.0249,
-      "max_drawdown": 24.16,
-      "edge_at_fill_c": 7.574,
+      "pnl_per_size_c": 0.876,
+      "roi": 0.0182,
+      "max_drawdown": 51.65,
+      "edge_at_fill_c": 7.604,
       "markouts_c": {
-        "5": 0.523,
-        "30": 0.554,
-        "60": 0.472
+        "5": 0.408,
+        "30": 0.408,
+        "60": 0.273
       },
       "fees": 0.0,
       "ladder": {
@@ -461,24 +461,24 @@
       "name": "maker_anchored_200ms",
       "role": "treatment",
       "description": "maker_anchored at 200ms order latency, re-quoting every 50ms (latency ladder).",
-      "units": 363,
-      "active_units": 317,
-      "fills": 1402,
-      "size": 6121.3,
-      "pnl": 39.94,
-      "pnl_per_unit": 0.11,
+      "units": 435,
+      "active_units": 375,
+      "fills": 1608,
+      "size": 6993.6,
+      "pnl": 36.65,
+      "pnl_per_unit": 0.0843,
       "pnl_per_unit_ci": [
-        -0.1329,
-        0.3655
+        -0.1427,
+        0.3049
       ],
-      "pnl_per_size_c": 0.653,
-      "roi": 0.0134,
-      "max_drawdown": 47.7,
-      "edge_at_fill_c": 7.613,
+      "pnl_per_size_c": 0.524,
+      "roi": 0.0109,
+      "max_drawdown": 64.54,
+      "edge_at_fill_c": 7.688,
       "markouts_c": {
-        "5": 0.19,
-        "30": 0.303,
-        "60": 0.331
+        "5": 0.071,
+        "30": 0.282,
+        "60": 0.301
       },
       "fees": 0.0,
       "ladder": {
@@ -490,24 +490,24 @@
       "name": "maker_anchored_300ms",
       "role": "treatment",
       "description": "maker_anchored at 300ms order latency, re-quoting every 50ms (latency ladder).",
-      "units": 363,
-      "active_units": 328,
-      "fills": 1554,
-      "size": 6746.7,
-      "pnl": -2.64,
-      "pnl_per_unit": -0.0073,
+      "units": 435,
+      "active_units": 391,
+      "fills": 1806,
+      "size": 7814.7,
+      "pnl": -13.41,
+      "pnl_per_unit": -0.0308,
       "pnl_per_unit_ci": [
-        -0.259,
-        0.2434
+        -0.2702,
+        0.2009
       ],
-      "pnl_per_size_c": -0.039,
-      "roi": -0.0008,
-      "max_drawdown": 56.37,
-      "edge_at_fill_c": 7.623,
+      "pnl_per_size_c": -0.172,
+      "roi": -0.0036,
+      "max_drawdown": 79.03,
+      "edge_at_fill_c": 7.696,
       "markouts_c": {
-        "5": -0.428,
-        "30": -0.204,
-        "60": -0.747
+        "5": -0.443,
+        "30": 0.011,
+        "60": -0.627
       },
       "fees": 0.0,
       "ladder": {
@@ -519,24 +519,24 @@
       "name": "maker_anchored_400ms",
       "role": "treatment",
       "description": "maker_anchored at 400ms order latency, re-quoting every 50ms (latency ladder).",
-      "units": 363,
-      "active_units": 336,
-      "fills": 1831,
-      "size": 7853.3,
-      "pnl": -40.44,
-      "pnl_per_unit": -0.1114,
+      "units": 435,
+      "active_units": 401,
+      "fills": 2124,
+      "size": 9092.2,
+      "pnl": -66.81,
+      "pnl_per_unit": -0.1536,
       "pnl_per_unit_ci": [
-        -0.3894,
-        0.1513
+        -0.3968,
+        0.0848
       ],
-      "pnl_per_size_c": -0.515,
-      "roi": -0.0105,
-      "max_drawdown": 97.06,
-      "edge_at_fill_c": 7.54,
+      "pnl_per_size_c": -0.735,
+      "roi": -0.0151,
+      "max_drawdown": 133.72,
+      "edge_at_fill_c": 7.593,
       "markouts_c": {
-        "5": -0.938,
-        "30": -0.421,
-        "60": -0.66
+        "5": -0.971,
+        "30": -0.283,
+        "60": -0.671
       },
       "fees": 0.0,
       "ladder": {
@@ -550,10 +550,10 @@
       "treatment": "maker_mid",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.4528,
+      "diff": -0.4078,
       "ci": [
-        -0.8585,
-        -0.0383
+        -0.8125,
+        -0.0108
       ],
       "verdict": "worse"
     },
@@ -561,10 +561,10 @@
       "treatment": "maker_model",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.0762,
+      "diff": 0.0731,
       "ci": [
-        -0.2415,
-        0.4129
+        -0.2399,
+        0.3823
       ],
       "verdict": "indistinguishable"
     },
@@ -572,10 +572,10 @@
       "treatment": "maker_anchored",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.1167,
+      "diff": 0.1543,
       "ci": [
-        -0.3041,
-        0.523
+        -0.2521,
+        0.5607
       ],
       "verdict": "indistinguishable"
     },
@@ -583,10 +583,10 @@
       "treatment": "maker_mid_0ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.0964,
+      "diff": 0.0066,
       "ci": [
-        -0.6465,
-        0.413
+        -0.4818,
+        0.464
       ],
       "verdict": "indistinguishable"
     },
@@ -594,10 +594,10 @@
       "treatment": "maker_mid_100ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.203,
+      "diff": -0.1176,
       "ci": [
-        -0.7581,
-        0.3306
+        -0.6162,
+        0.3696
       ],
       "verdict": "indistinguishable"
     },
@@ -605,10 +605,10 @@
       "treatment": "maker_mid_200ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.3427,
+      "diff": -0.2486,
       "ci": [
-        -0.8876,
-        0.1668
+        -0.7372,
+        0.2386
       ],
       "verdict": "indistinguishable"
     },
@@ -616,10 +616,10 @@
       "treatment": "maker_mid_300ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.4205,
+      "diff": -0.3523,
       "ci": [
-        -0.9554,
-        0.1006
+        -0.8521,
+        0.1437
       ],
       "verdict": "indistinguishable"
     },
@@ -627,10 +627,10 @@
       "treatment": "maker_mid_400ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.6014,
+      "diff": -0.532,
       "ci": [
-        -1.1321,
-        -0.0863
+        -1.0274,
+        -0.0458
       ],
       "verdict": "worse"
     },
@@ -638,10 +638,10 @@
       "treatment": "maker_model_0ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.4297,
+      "diff": 0.4079,
       "ci": [
-        0.0325,
-        0.8
+        0.0368,
+        0.7371
       ],
       "verdict": "better"
     },
@@ -649,10 +649,10 @@
       "treatment": "maker_model_100ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.3749,
+      "diff": 0.3701,
       "ci": [
-        -0.0403,
-        0.7567
+        -0.0146,
+        0.7217
       ],
       "verdict": "indistinguishable"
     },
@@ -660,10 +660,10 @@
       "treatment": "maker_model_200ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.2294,
+      "diff": 0.2435,
       "ci": [
-        -0.2001,
-        0.6285
+        -0.1417,
+        0.6164
       ],
       "verdict": "indistinguishable"
     },
@@ -671,10 +671,10 @@
       "treatment": "maker_model_300ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.247,
+      "diff": 0.2709,
       "ci": [
-        -0.1732,
-        0.643
+        -0.1181,
+        0.6467
       ],
       "verdict": "indistinguishable"
     },
@@ -682,10 +682,10 @@
       "treatment": "maker_model_400ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.2078,
+      "diff": 0.1729,
       "ci": [
-        -0.2288,
-        0.6106
+        -0.2208,
+        0.547
       ],
       "verdict": "indistinguishable"
     },
@@ -693,10 +693,10 @@
       "treatment": "maker_anchored_0ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.3312,
+      "diff": 0.3488,
       "ci": [
-        -0.1986,
-        0.8322
+        -0.1185,
+        0.8059
       ],
       "verdict": "indistinguishable"
     },
@@ -704,10 +704,10 @@
       "treatment": "maker_anchored_100ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.3826,
+      "diff": 0.3549,
       "ci": [
-        -0.1556,
-        0.8943
+        -0.1355,
+        0.8183
       ],
       "verdict": "indistinguishable"
     },
@@ -715,10 +715,10 @@
       "treatment": "maker_anchored_200ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.3129,
+      "diff": 0.3167,
       "ci": [
-        -0.1874,
-        0.8107
+        -0.1827,
+        0.7876
       ],
       "verdict": "indistinguishable"
     },
@@ -726,10 +726,10 @@
       "treatment": "maker_anchored_300ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.1955,
+      "diff": 0.2016,
       "ci": [
-        -0.3271,
-        0.7207
+        -0.2814,
+        0.6835
       ],
       "verdict": "indistinguishable"
     },
@@ -737,10 +737,10 @@
       "treatment": "maker_anchored_400ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.0914,
+      "diff": 0.0788,
       "ci": [
-        -0.4781,
-        0.632
+        -0.4399,
+        0.5557
       ],
       "verdict": "indistinguishable"
     }
@@ -974,46 +974,91 @@
     {
       "date": "2026-10-08",
       "pnl": {
-        "taker_v1": -61.16,
-        "maker_mid": -64.79,
-        "maker_model": -60.55,
-        "maker_anchored": -14.19,
-        "maker_mid_0ms": -40.77,
-        "maker_mid_100ms": -57.89,
-        "maker_mid_200ms": -80.35,
-        "maker_mid_300ms": -82.76,
-        "maker_mid_400ms": -89.13,
-        "maker_model_0ms": -23.46,
-        "maker_model_100ms": -41.16,
-        "maker_model_200ms": -44.52,
-        "maker_model_300ms": -42.11,
-        "maker_model_400ms": -41.75,
-        "maker_anchored_0ms": -16.43,
-        "maker_anchored_100ms": -14.22,
-        "maker_anchored_200ms": -30.34,
-        "maker_anchored_300ms": -37.79,
-        "maker_anchored_400ms": -27.86
+        "taker_v1": -61.2,
+        "maker_mid": -70.69,
+        "maker_model": -69.6,
+        "maker_anchored": -20.69,
+        "maker_mid_0ms": -38.27,
+        "maker_mid_100ms": -59.85,
+        "maker_mid_200ms": -82.0,
+        "maker_mid_300ms": -87.87,
+        "maker_mid_400ms": -95.38,
+        "maker_model_0ms": -24.63,
+        "maker_model_100ms": -42.43,
+        "maker_model_200ms": -43.97,
+        "maker_model_300ms": -40.16,
+        "maker_model_400ms": -45.0,
+        "maker_anchored_0ms": -18.63,
+        "maker_anchored_100ms": -16.52,
+        "maker_anchored_200ms": -32.64,
+        "maker_anchored_300ms": -43.19,
+        "maker_anchored_400ms": -34.06
       },
       "units": {
-        "taker_v1": 71,
-        "maker_mid": 71,
-        "maker_model": 71,
-        "maker_anchored": 71,
-        "maker_mid_0ms": 71,
-        "maker_mid_100ms": 71,
-        "maker_mid_200ms": 71,
-        "maker_mid_300ms": 71,
-        "maker_mid_400ms": 71,
-        "maker_model_0ms": 71,
-        "maker_model_100ms": 71,
-        "maker_model_200ms": 71,
-        "maker_model_300ms": 71,
-        "maker_model_400ms": 71,
-        "maker_anchored_0ms": 71,
-        "maker_anchored_100ms": 71,
-        "maker_anchored_200ms": 71,
-        "maker_anchored_300ms": 71,
-        "maker_anchored_400ms": 71
+        "taker_v1": 73,
+        "maker_mid": 73,
+        "maker_model": 73,
+        "maker_anchored": 73,
+        "maker_mid_0ms": 73,
+        "maker_mid_100ms": 73,
+        "maker_mid_200ms": 73,
+        "maker_mid_300ms": 73,
+        "maker_mid_400ms": 73,
+        "maker_model_0ms": 73,
+        "maker_model_100ms": 73,
+        "maker_model_200ms": 73,
+        "maker_model_300ms": 73,
+        "maker_model_400ms": 73,
+        "maker_anchored_0ms": 73,
+        "maker_anchored_100ms": 73,
+        "maker_anchored_200ms": 73,
+        "maker_anchored_300ms": 73,
+        "maker_anchored_400ms": 73
+      }
+    },
+    {
+      "date": "2026-10-09",
+      "pnl": {
+        "taker_v1": -27.46,
+        "maker_mid": -23.03,
+        "maker_model": -15.05,
+        "maker_anchored": 13.43,
+        "maker_mid_0ms": 7.85,
+        "maker_mid_100ms": -2.98,
+        "maker_mid_200ms": -9.57,
+        "maker_mid_300ms": -22.97,
+        "maker_mid_400ms": -34.33,
+        "maker_model_0ms": -4.87,
+        "maker_model_100ms": -1.32,
+        "maker_model_200ms": -5.36,
+        "maker_model_300ms": -1.23,
+        "maker_model_400ms": -24.42,
+        "maker_anchored_0ms": 6.24,
+        "maker_anchored_100ms": -9.63,
+        "maker_anchored_200ms": -0.96,
+        "maker_anchored_300ms": -5.35,
+        "maker_anchored_400ms": -20.17
+      },
+      "units": {
+        "taker_v1": 70,
+        "maker_mid": 70,
+        "maker_model": 70,
+        "maker_anchored": 70,
+        "maker_mid_0ms": 70,
+        "maker_mid_100ms": 70,
+        "maker_mid_200ms": 70,
+        "maker_mid_300ms": 70,
+        "maker_mid_400ms": 70,
+        "maker_model_0ms": 70,
+        "maker_model_100ms": 70,
+        "maker_model_200ms": 70,
+        "maker_model_300ms": 70,
+        "maker_model_400ms": 70,
+        "maker_anchored_0ms": 70,
+        "maker_anchored_100ms": 70,
+        "maker_anchored_200ms": 70,
+        "maker_anchored_300ms": 70,
+        "maker_anchored_400ms": 70
       }
     }
   ],
@@ -1025,67 +1070,67 @@
         {
           "latency_ms": 0,
           "arm": "maker_mid_0ms",
-          "units": 363,
-          "fills": 1296,
-          "pnl": -108.6,
-          "pnl_per_unit": -0.2992,
+          "units": 435,
+          "fills": 1496,
+          "pnl": -98.24,
+          "pnl_per_unit": -0.2258,
           "pnl_per_unit_ci": [
-            -0.5325,
-            -0.0779
+            -0.4414,
+            -0.0287
           ],
-          "markout_c": -1.594
+          "markout_c": -1.73
         },
         {
           "latency_ms": 100,
           "arm": "maker_mid_100ms",
-          "units": 363,
-          "fills": 1506,
-          "pnl": -147.32,
-          "pnl_per_unit": -0.4058,
+          "units": 435,
+          "fills": 1746,
+          "pnl": -152.27,
+          "pnl_per_unit": -0.35,
           "pnl_per_unit_ci": [
-            -0.6594,
-            -0.1592
+            -0.5832,
+            -0.1343
           ],
-          "markout_c": -1.64
+          "markout_c": -1.772
         },
         {
           "latency_ms": 200,
           "arm": "maker_mid_200ms",
-          "units": 363,
-          "fills": 1911,
-          "pnl": -198.04,
-          "pnl_per_unit": -0.5456,
+          "units": 435,
+          "fills": 2230,
+          "pnl": -209.25,
+          "pnl_per_unit": -0.481,
           "pnl_per_unit_ci": [
-            -0.7855,
-            -0.2994
+            -0.703,
+            -0.2654
           ],
-          "markout_c": -1.983
+          "markout_c": -2.131
         },
         {
           "latency_ms": 300,
           "arm": "maker_mid_300ms",
-          "units": 363,
-          "fills": 2242,
-          "pnl": -226.27,
-          "pnl_per_unit": -0.6233,
+          "units": 435,
+          "fills": 2616,
+          "pnl": -254.34,
+          "pnl_per_unit": -0.5847,
           "pnl_per_unit_ci": [
-            -0.8767,
-            -0.3717
+            -0.8116,
+            -0.3675
           ],
-          "markout_c": -2.209
+          "markout_c": -2.298
         },
         {
           "latency_ms": 400,
           "arm": "maker_mid_400ms",
-          "units": 363,
-          "fills": 2505,
-          "pnl": -291.94,
-          "pnl_per_unit": -0.8042,
+          "units": 435,
+          "fills": 2932,
+          "pnl": -332.52,
+          "pnl_per_unit": -0.7644,
           "pnl_per_unit_ci": [
-            -1.0597,
-            -0.553
+            -0.9957,
+            -0.5445
           ],
-          "markout_c": -2.496
+          "markout_c": -2.613
         }
       ]
     },
@@ -1096,67 +1141,67 @@
         {
           "latency_ms": 0,
           "arm": "maker_model_0ms",
-          "units": 363,
-          "fills": 1015,
-          "pnl": 82.37,
-          "pnl_per_unit": 0.2269,
+          "units": 435,
+          "fills": 1175,
+          "pnl": 76.35,
+          "pnl_per_unit": 0.1755,
           "pnl_per_unit_ci": [
-            -0.0976,
-            0.5612
+            -0.1141,
+            0.4643
           ],
-          "markout_c": 0.48
+          "markout_c": 0.349
         },
         {
           "latency_ms": 100,
           "arm": "maker_model_100ms",
-          "units": 363,
-          "fills": 1092,
-          "pnl": 62.46,
-          "pnl_per_unit": 0.1721,
+          "units": 435,
+          "fills": 1257,
+          "pnl": 59.89,
+          "pnl_per_unit": 0.1377,
           "pnl_per_unit_ci": [
-            -0.1558,
-            0.5196
+            -0.1539,
+            0.4334
           ],
-          "markout_c": 0.266
+          "markout_c": 0.148
         },
         {
           "latency_ms": 200,
           "arm": "maker_model_200ms",
-          "units": 363,
-          "fills": 1194,
-          "pnl": 9.64,
-          "pnl_per_unit": 0.0266,
+          "units": 435,
+          "fills": 1394,
+          "pnl": 4.83,
+          "pnl_per_unit": 0.0111,
           "pnl_per_unit_ci": [
-            -0.3097,
-            0.3785
+            -0.2936,
+            0.3237
           ],
-          "markout_c": -0.111
+          "markout_c": -0.196
         },
         {
           "latency_ms": 300,
           "arm": "maker_model_300ms",
-          "units": 363,
-          "fills": 1317,
-          "pnl": 16.03,
-          "pnl_per_unit": 0.0442,
+          "units": 435,
+          "fills": 1539,
+          "pnl": 16.75,
+          "pnl_per_unit": 0.0385,
           "pnl_per_unit_ci": [
-            -0.3016,
-            0.3975
+            -0.2783,
+            0.3569
           ],
-          "markout_c": -0.417
+          "markout_c": -0.433
         },
         {
           "latency_ms": 400,
           "arm": "maker_model_400ms",
-          "units": 363,
-          "fills": 1483,
-          "pnl": 1.79,
-          "pnl_per_unit": 0.0049,
+          "units": 435,
+          "fills": 1729,
+          "pnl": -25.87,
+          "pnl_per_unit": -0.0595,
           "pnl_per_unit_ci": [
-            -0.3514,
-            0.3497
+            -0.3769,
+            0.2522
           ],
-          "markout_c": -0.513
+          "markout_c": -0.633
         }
       ]
     },
@@ -1167,67 +1212,67 @@
         {
           "latency_ms": 0,
           "arm": "maker_anchored_0ms",
-          "units": 363,
-          "fills": 1112,
-          "pnl": 46.6,
-          "pnl_per_unit": 0.1284,
+          "units": 435,
+          "fills": 1253,
+          "pnl": 50.63,
+          "pnl_per_unit": 0.1164,
           "pnl_per_unit_ci": [
-            -0.1133,
-            0.3732
+            -0.0985,
+            0.3337
           ],
-          "markout_c": 0.569
+          "markout_c": 0.446
         },
         {
           "latency_ms": 100,
           "arm": "maker_anchored_100ms",
-          "units": 363,
-          "fills": 1229,
-          "pnl": 65.25,
-          "pnl_per_unit": 0.1798,
+          "units": 435,
+          "fills": 1381,
+          "pnl": 53.31,
+          "pnl_per_unit": 0.1225,
           "pnl_per_unit_ci": [
-            -0.0737,
-            0.434
+            -0.1086,
+            0.3525
           ],
-          "markout_c": 0.523
+          "markout_c": 0.408
         },
         {
           "latency_ms": 200,
           "arm": "maker_anchored_200ms",
-          "units": 363,
-          "fills": 1402,
-          "pnl": 39.94,
-          "pnl_per_unit": 0.11,
+          "units": 435,
+          "fills": 1608,
+          "pnl": 36.65,
+          "pnl_per_unit": 0.0843,
           "pnl_per_unit_ci": [
-            -0.1329,
-            0.3655
+            -0.1427,
+            0.3049
           ],
-          "markout_c": 0.19
+          "markout_c": 0.071
         },
         {
           "latency_ms": 300,
           "arm": "maker_anchored_300ms",
-          "units": 363,
-          "fills": 1554,
-          "pnl": -2.64,
-          "pnl_per_unit": -0.0073,
+          "units": 435,
+          "fills": 1806,
+          "pnl": -13.41,
+          "pnl_per_unit": -0.0308,
           "pnl_per_unit_ci": [
-            -0.259,
-            0.2434
+            -0.2702,
+            0.2009
           ],
-          "markout_c": -0.428
+          "markout_c": -0.443
         },
         {
           "latency_ms": 400,
           "arm": "maker_anchored_400ms",
-          "units": 363,
-          "fills": 1831,
-          "pnl": -40.44,
-          "pnl_per_unit": -0.1114,
+          "units": 435,
+          "fills": 2124,
+          "pnl": -66.81,
+          "pnl_per_unit": -0.1536,
           "pnl_per_unit_ci": [
-            -0.3894,
-            0.1513
+            -0.3968,
+            0.0848
           ],
-          "markout_c": -0.938
+          "markout_c": -0.971
         }
       ]
     }
