@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-08T15:02:40.489826+00:00",
-  "snapshot_date": "2026-10-08",
-  "snapshots": 39,
-  "observing_snapshots": 32,
+  "generated_at": "2026-10-09T15:02:00.856025+00:00",
+  "snapshot_date": "2026-10-09",
+  "snapshots": 40,
+  "observing_snapshots": 33,
   "days_since_new_data": 0,
-  "notices_tracked": 88665,
+  "notices_tracked": 89397,
   "lanes": [
     {
       "office": "FCC COLEMAN",
@@ -24,6 +24,23 @@
         "FL"
       ],
       "link": "https://sam.gov/opp/89f5d01ea7cd4ee3ad8146c8755040c3/view"
+    },
+    {
+      "office": "DLA ENERGY",
+      "agency": "DEPT OF DEFENSE",
+      "group": "Fuels/lubricants",
+      "lane": "dla energy bulk petroleum products inland east gulf coast ieg program",
+      "evidence": "OBSERVED",
+      "solicitations": 2,
+      "cadence": "annual",
+      "cadence_days": 290,
+      "cadence_source": "dates",
+      "regularity": null,
+      "span_days": 290,
+      "next_expected": "2027-04-15",
+      "open_deadline": "",
+      "states": [],
+      "link": "https://sam.gov/opp/4c8ba95fc3a44e3981773b2db372b1a6/view"
     },
     {
       "office": "W6QM MICC-FT DRUM",
@@ -136,46 +153,9 @@
         "SC"
       ],
       "link": "https://sam.gov/opp/f75f94c19e3745a9815c536897e793df/view"
-    },
-    {
-      "office": "FTC OKLAHOMA CITY",
-      "agency": "JUSTICE, DEPARTMENT OF",
-      "group": "Subsistence/FOOD",
-      "lane": "ftc okl bread",
-      "evidence": "POSTED-HISTORY",
-      "solicitations": 3,
-      "cadence": "quarterly",
-      "cadence_days": 84,
-      "cadence_source": "dates",
-      "regularity": 0.06,
-      "span_days": 168,
-      "next_expected": "2026-11-06",
-      "open_deadline": "",
-      "states": [
-        "OK"
-      ],
-      "link": "https://sam.gov/opp/c33de8c49a16410b9536726e8baecf16/view"
     }
   ],
   "open": [
-    {
-      "title": "87--Delta WH&B Facility Hay",
-      "office": "UTAH STATE OFFICE",
-      "group": "Agriculture supplies",
-      "state": "",
-      "deadline": "2026-10-08",
-      "access": "OPEN",
-      "link": "https://sam.gov/opp/f378dbb82c9a41b0b87507c41535259f/view"
-    },
-    {
-      "title": "Faraday Bags",
-      "office": "COMMANDING GENERAL",
-      "group": "Clothing/textiles",
-      "state": "NC",
-      "deadline": "2026-10-08",
-      "access": "small-biz",
-      "link": "https://sam.gov/opp/5368de7c5c8d412494135692839947b6/view"
-    },
     {
       "title": "Bulk Canine Diet (Carnivore) 5 Year BPA",
       "office": "FWS, OVER SAT G/S",
@@ -211,6 +191,24 @@
       "deadline": "2026-10-09",
       "access": "small-biz",
       "link": "https://sam.gov/opp/2b60d73319ae41cbab9893fcf38b4ffb/view"
+    },
+    {
+      "title": "Food Service Equipment, Ft. Jackson",
+      "office": "DLA TROOP SUPPORT",
+      "group": "Food prep/serving equip",
+      "state": "SC",
+      "deadline": "2026-10-09",
+      "access": "OPEN",
+      "link": "https://sam.gov/opp/e97a1ee7faa24b3697e9d20309bf8551/view"
+    },
+    {
+      "title": "eTool Cabinets",
+      "office": "FA8125  AFSC PZIMA",
+      "group": "Furniture",
+      "state": "OK",
+      "deadline": "2026-10-09",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/f11a196592df422da465ed21a4ce89df/view"
     }
   ]
 }
