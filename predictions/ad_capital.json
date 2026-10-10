@@ -1,13 +1,34 @@
 {
-  "generated_at": "2026-10-02T00:30:31.667865+00:00",
-  "as_of": "2026-10-01",
+  "generated_at": "2026-10-10T00:30:18.412481+00:00",
+  "as_of": "2026-10-10",
   "universe_size": 374,
-  "scanned": 308,
+  "scanned": 316,
   "qualifying": 0,
   "min_score": 5,
   "max_score": 6,
   "strategy": "MultiFactorV3 (ported from stock_prediction)",
   "holding_period": "1-4 weeks",
   "opportunities": [],
-  "book": null
+  "book": {
+    "inception_date": "2026-04-13",
+    "capital_base": 1000.0,
+    "total_value": 1059.33,
+    "return_pct": 5.93,
+    "benchmark": "SPY",
+    "benchmark_return_pct": 12.8,
+    "alpha_pct": -6.87,
+    "positions": 51,
+    "stale_marks": [
+      "APD",
+      "C",
+      "ESTC",
+      "IQV",
+      "MAA",
+      "PINS",
+      "POOL",
+      "TEAM",
+      "USB",
+      "VMRK"
+    ]
+  }
 }
