@@ -1,10 +1,23 @@
 {
-  "generated_at": "2026-10-10T07:00:10.576512+00:00",
+  "generated_at": "2026-10-10T08:00:10.059491+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
+    {
+      "base": "KAIA",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "GRVT",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1085.63,
+      "net_at_hold": 0.99144,
+      "cost_bps": 48.55
+    },
     {
       "base": "LDO",
       "type": "perp-perp",
@@ -58,6 +71,19 @@
       "cost_bps": 26.0
     },
     {
+      "base": "PENGU",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 812.05,
+      "net_at_hold": 0.7416,
+      "cost_bps": 26.0
+    },
+    {
       "base": "EIGEN",
       "type": "perp-perp",
       "long_venue": "Lighter",
@@ -81,32 +107,6 @@
       "scans": 24,
       "net_apr": 805.92,
       "net_at_hold": 0.736,
-      "cost_bps": 26.0
-    },
-    {
-      "base": "TRUMP",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 803.29,
-      "net_at_hold": 0.7336,
-      "cost_bps": 26.0
-    },
-    {
-      "base": "S",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 802.42,
-      "net_at_hold": 0.7328,
       "cost_bps": 26.0
     }
   ]
