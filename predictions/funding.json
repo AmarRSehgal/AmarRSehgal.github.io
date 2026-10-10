@@ -1,23 +1,10 @@
 {
-  "generated_at": "2026-10-10T11:00:09.807874+00:00",
+  "generated_at": "2026-10-10T12:00:10.364826+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
-    {
-      "base": "KAIA",
-      "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "GRVT",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1133.71,
-      "net_at_hold": 1.03535,
-      "cost_bps": 46.99
-    },
     {
       "base": "KAIA",
       "type": "perp-perp",
@@ -27,9 +14,22 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1100.65,
-      "net_at_hold": 1.00516,
+      "net_apr": 1085.63,
+      "net_at_hold": 0.99144,
       "cost_bps": 45.88
+    },
+    {
+      "base": "KAIA",
+      "type": "perp-perp",
+      "long_venue": "Binance",
+      "short_venue": "GRVT",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1025.58,
+      "net_at_hold": 0.9366,
+      "cost_bps": 46.99
     },
     {
       "base": "KAIA",
@@ -40,9 +40,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1069.25,
-      "net_at_hold": 0.97648,
-      "cost_bps": 48.49
+      "net_apr": 966.12,
+      "net_at_hold": 0.8823,
+      "cost_bps": 48.34
     },
     {
       "base": "LDO",
