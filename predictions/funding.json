@@ -1,10 +1,23 @@
 {
-  "generated_at": "2026-10-10T08:00:10.059491+00:00",
+  "generated_at": "2026-10-10T09:00:09.179685+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
+    {
+      "base": "KAIA",
+      "type": "perp-perp",
+      "long_venue": "Binance",
+      "short_venue": "GRVT",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1133.71,
+      "net_at_hold": 1.03535,
+      "cost_bps": 46.99
+    },
     {
       "base": "KAIA",
       "type": "perp-perp",
@@ -14,9 +27,22 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1085.63,
-      "net_at_hold": 0.99144,
-      "cost_bps": 48.55
+      "net_apr": 1100.65,
+      "net_at_hold": 1.00516,
+      "cost_bps": 45.49
+    },
+    {
+      "base": "KAIA",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "GRVT",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1069.25,
+      "net_at_hold": 0.97648,
+      "cost_bps": 47.81
     },
     {
       "base": "LDO",
@@ -81,32 +107,6 @@
       "scans": 24,
       "net_apr": 812.05,
       "net_at_hold": 0.7416,
-      "cost_bps": 26.0
-    },
-    {
-      "base": "EIGEN",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 806.8,
-      "net_at_hold": 0.7368,
-      "cost_bps": 26.0
-    },
-    {
-      "base": "WIF",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 805.92,
-      "net_at_hold": 0.736,
       "cost_bps": 26.0
     }
   ]
