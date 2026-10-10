@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-10T15:24:38.034486+00:00",
+  "generated_at": "2026-10-10T16:24:31.683302+00:00",
   "window_hours": 24,
-  "articles_in_window": 1900,
+  "articles_in_window": 1865,
   "collection_days": 39,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,91 +10,91 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 248,
-      "sources": 40,
+      "articles": 240,
+      "sources": 39,
       "sentiment_direction": "mixed",
-      "surge": 2.58,
-      "sentiment_mean": -0.105,
-      "headline": "Trump touts diesel deal with Putin ahead of midterms",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/trump-touts-diesel-deal-with-putin-ahead-of-midterms/"
+      "surge": 2.43,
+      "sentiment_mean": -0.101,
+      "headline": "Katie Zacharia hits ground running, promises Trump diesel deal delivers cheaper gas for Americans",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/media/incoming-press-chief-hits-ground-running-promises-trump-diesel-deal-delivers-cheaper-gas-americans"
     },
     {
       "term": "diesel",
-      "articles": 93,
+      "articles": 96,
       "sources": 35,
       "sentiment_direction": "negative",
-      "surge": 13.43,
-      "sentiment_mean": -0.239,
-      "headline": "Trump touts diesel deal with Putin ahead of midterms",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/trump-touts-diesel-deal-with-putin-ahead-of-midterms/"
+      "surge": 12.93,
+      "sentiment_mean": -0.225,
+      "headline": "Russian Diesel Deal Unlikely to Lower US Prices",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-10-10/russian-diesel-deal-unlikely-to-lower-us-prices-video"
     },
     {
       "term": "deal",
-      "articles": 86,
-      "sources": 34,
+      "articles": 87,
+      "sources": 35,
       "sentiment_direction": "negative",
-      "surge": 3.62,
-      "sentiment_mean": -0.245,
-      "headline": "Trump touts diesel deal with Putin ahead of midterms",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/trump-touts-diesel-deal-with-putin-ahead-of-midterms/"
-    },
-    {
-      "term": "president",
-      "articles": 99,
-      "sources": 32,
-      "sentiment_direction": "mixed",
-      "surge": 1.9,
-      "sentiment_mean": -0.113,
-      "headline": "United Auto Workers president Shawn Fain easily wins re-election",
-      "headline_source": "Guardian Business",
-      "headline_url": "https://www.theguardian.com/us-news/2026/oct/10/uaw-president-shawn-fain-wins-re-election"
+      "surge": 3.54,
+      "sentiment_mean": -0.237,
+      "headline": "Hormuz reopening no longer hinges on a US-Iran deal",
+      "headline_source": "Reddit r/geopolitics",
+      "headline_url": "https://www.reddit.com/r/geopolitics/comments/1x2j6pp/hormuz_reopening_no_longer_hinges_on_a_usiran_deal/"
     },
     {
       "term": "russia",
-      "articles": 77,
+      "articles": 80,
       "sources": 32,
       "sentiment_direction": "negative",
-      "surge": 2.52,
-      "sentiment_mean": -0.285,
-      "headline": "Major fire reported at oil terminal linked to Russia's Novoshakhtinsk refinery after suspected drone strike",
-      "headline_source": "Reddit r/worldnews",
-      "headline_url": "https://www.reddit.com/r/worldnews/comments/1x2fnrl/major_fire_reported_at_oil_terminal_linked_to/"
+      "surge": 2.59,
+      "sentiment_mean": -0.283,
+      "headline": "Russia Plague Scare Raises Public Health Questions",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-10-10/russia-plague-scare-raises-public-health-questions-video"
+    },
+    {
+      "term": "president",
+      "articles": 100,
+      "sources": 31,
+      "sentiment_direction": "mixed",
+      "surge": 1.89,
+      "sentiment_mean": -0.129,
+      "headline": "A Referendum on the President\u2019s Policies",
+      "headline_source": "The Atlantic",
+      "headline_url": "https://www.theatlantic.com/national/2026/10/trump-red-states-washington-week/688963/?utm_source=feed"
     },
     {
       "term": "russian",
-      "articles": 79,
+      "articles": 85,
       "sources": 31,
       "sentiment_direction": "negative",
-      "surge": 3.38,
-      "sentiment_mean": -0.381,
-      "headline": "Ukraine hit by deadly Russian strikes as \u2018thanks\u2019 for Trump diesel deal, Zelenskyy says",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/world/2026/oct/10/ukraine-russia-strikes-war-trump-diesel-deal-zelenskyy"
+      "surge": 3.63,
+      "sentiment_mean": -0.377,
+      "headline": "Russian Diesel Deal Unlikely to Lower US Prices",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-10-10/russian-diesel-deal-unlikely-to-lower-us-prices-video"
+    },
+    {
+      "term": "prices",
+      "articles": 58,
+      "sources": 30,
+      "sentiment_direction": "negative",
+      "surge": 1.96,
+      "sentiment_mean": -0.201,
+      "headline": "Russian Diesel Deal Unlikely to Lower US Prices",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-10-10/russian-diesel-deal-unlikely-to-lower-us-prices-video"
     },
     {
       "term": "data",
-      "articles": 52,
-      "sources": 31,
+      "articles": 47,
+      "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 1.68,
-      "sentiment_mean": 0.038,
-      "headline": "Vance says Microsoft replaced laid-off workers with foreign hires. Here\u2019s what the visa data shows",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/10/10/vance-microsoft-h1b-layoffs-visa-data.html"
-    },
-    {
-      "term": "execution",
-      "articles": 67,
-      "sources": 29,
-      "sentiment_direction": "negative",
-      "surge": 2.76,
-      "sentiment_mean": -0.391,
-      "headline": "Pope Leo declares death penalty 'inadmissible' as his native US plans to livestream execution",
-      "headline_source": "Reddit r/worldnews",
-      "headline_url": "https://www.reddit.com/r/worldnews/comments/1x2gbkp/pope_leo_declares_death_penalty_inadmissible_as/"
+      "surge": 1.47,
+      "sentiment_mean": 0.019,
+      "headline": "Senate probe accuses Big Tech of misleading public on AI data centers \u2014 massive 100 MW sites create only 100 jobs while securing lucrative GPU tax breaks; Senators question the number of permanent jobs, but companies refuse to divulge data",
+      "headline_source": "Reddit r/technology",
+      "headline_url": "https://www.reddit.com/r/technology/comments/1x2imz1/senate_probe_accuses_big_tech_of_misleading/"
     }
   ],
   "hours_since_fetch": 0.0
