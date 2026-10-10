@@ -1,23 +1,10 @@
 {
-  "generated_at": "2026-10-10T14:00:10.612738+00:00",
+  "generated_at": "2026-10-10T15:00:11.947084+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
-    {
-      "base": "KAIA",
-      "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "GRVT",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 949.77,
-      "net_at_hold": 0.86737,
-      "cost_bps": 46.99
-    },
     {
       "base": "KAIA",
       "type": "perp-perp",
@@ -27,9 +14,22 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 918.51,
-      "net_at_hold": 0.83882,
-      "cost_bps": 45.03
+      "net_apr": 888.0,
+      "net_at_hold": 0.81096,
+      "cost_bps": 44.86
+    },
+    {
+      "base": "KAIA",
+      "type": "perp-perp",
+      "long_venue": "Binance",
+      "short_venue": "GRVT",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 866.65,
+      "net_at_hold": 0.79146,
+      "cost_bps": 46.99
     },
     {
       "base": "LDO",
@@ -43,19 +43,6 @@
       "net_apr": 847.09,
       "net_at_hold": 0.7736,
       "cost_bps": 26.0
-    },
-    {
-      "base": "KAIA",
-      "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "GRVT",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 846.88,
-      "net_at_hold": 0.77341,
-      "cost_bps": 48.34
     },
     {
       "base": "CHIP",
@@ -107,6 +94,19 @@
       "scans": 24,
       "net_apr": 812.05,
       "net_at_hold": 0.7416,
+      "cost_bps": 26.0
+    },
+    {
+      "base": "EIGEN",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 806.8,
+      "net_at_hold": 0.7368,
       "cost_bps": 26.0
     }
   ]
