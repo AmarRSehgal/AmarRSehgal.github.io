@@ -1,23 +1,10 @@
 {
-  "generated_at": "2026-10-10T13:00:11.282591+00:00",
+  "generated_at": "2026-10-10T14:00:10.612738+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
-    {
-      "base": "KAIA",
-      "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "GRVT",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1006.26,
-      "net_at_hold": 0.91896,
-      "cost_bps": 45.88
-    },
     {
       "base": "KAIA",
       "type": "perp-perp",
@@ -27,22 +14,22 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 965.03,
-      "net_at_hold": 0.88131,
+      "net_apr": 949.77,
+      "net_at_hold": 0.86737,
       "cost_bps": 46.99
     },
     {
       "base": "KAIA",
       "type": "perp-perp",
-      "long_venue": "Bitget",
+      "long_venue": "Gate",
       "short_venue": "GRVT",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 897.57,
-      "net_at_hold": 0.8197,
-      "cost_bps": 48.34
+      "net_apr": 918.51,
+      "net_at_hold": 0.83882,
+      "cost_bps": 45.03
     },
     {
       "base": "LDO",
@@ -56,6 +43,19 @@
       "net_apr": 847.09,
       "net_at_hold": 0.7736,
       "cost_bps": 26.0
+    },
+    {
+      "base": "KAIA",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "GRVT",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 846.88,
+      "net_at_hold": 0.77341,
+      "cost_bps": 48.34
     },
     {
       "base": "CHIP",
