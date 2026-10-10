@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-09T23:24:42.406605+00:00",
+  "generated_at": "2026-10-10T00:24:33.372063+00:00",
   "window_hours": 24,
-  "articles_in_window": 2416,
-  "collection_days": 38,
+  "articles_in_window": 2399,
+  "collection_days": 39,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
   "surge_available": true,
@@ -10,91 +10,91 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 252,
+      "articles": 256,
       "sources": 47,
       "sentiment_direction": "mixed",
-      "surge": 3.39,
-      "sentiment_mean": -0.137,
-      "headline": "Trump names new press secretary to succeed Karoline Leavitt",
-      "headline_source": "DW News",
-      "headline_url": "https://www.dw.com/en/trump-names-new-press-secretary-to-succeed-karoline-leavitt/a-79623824?maca=en-rss-en-all-1573-rdf"
+      "surge": 3.4,
+      "sentiment_mean": -0.123,
+      "headline": "Iran war live: Kremlin says Trump welcomed Russia effort in Iran deal",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/news/liveblog/2026/10/10/iran-war-live-kremlin-says-trump-welcomed-russia-effort-in-iran-deal?traffic_source=rss"
     },
     {
       "term": "president",
-      "articles": 98,
+      "articles": 103,
       "sources": 34,
       "sentiment_direction": "mixed",
-      "surge": 2.26,
-      "sentiment_mean": -0.111,
-      "headline": "JUST IN via Kalshi: President Trump says he has struck a deal with Putin for Russia to supply 4.8M tons of diesel to the US and global markets \ud83c\uddfa\ud83c\uddf8 \ud83c\udf4a \ud83c\uddf7\ud83c\uddfa",
-      "headline_source": "Reddit r/energy",
-      "headline_url": "https://www.reddit.com/r/energy/comments/1x1u0ly/just_in_via_kalshi_president_trump_says_he_has/"
-    },
-    {
-      "term": "execution",
-      "articles": 91,
-      "sources": 31,
-      "sentiment_direction": "negative",
-      "surge": 5.58,
-      "sentiment_mean": -0.413,
-      "headline": "Doctor and medical ethicist unpacks Christa Pike's botched execution",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/doctor-medical-ethicist-unpacks-christa-pike-botched-execution/"
+      "surge": 2.37,
+      "sentiment_mean": -0.106,
+      "headline": "Venezuela president authorizes SpaceX\u2019s Starlink to operate in the country",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/stock-market-news/venezuela-president-authorizes-spacexs-starlink-to-operate-in-the-country-4941872"
     },
     {
       "term": "former",
-      "articles": 94,
-      "sources": 30,
+      "articles": 95,
+      "sources": 31,
       "sentiment_direction": "mixed",
       "surge": 3.31,
-      "sentiment_mean": 0.052,
-      "headline": "Kalshi taps former FBI agent to fight against money laundering",
-      "headline_source": "NPR News",
-      "headline_url": "https://www.npr.org/2026/10/09/nx-s1-5996683/kalshi-fbi-sean-fern-money-laundering"
-    },
-    {
-      "term": "iran",
-      "articles": 74,
-      "sources": 30,
-      "sentiment_direction": "negative",
-      "surge": 3.06,
-      "sentiment_mean": -0.431,
-      "headline": "Tanker attacks in Strait of Hormuz surge to wartime high as Iran tries to choke off oil exports",
-      "headline_source": "Reddit r/worldnews",
-      "headline_url": "https://www.reddit.com/r/worldnews/comments/1x1y27a/tanker_attacks_in_strait_of_hormuz_surge_to/"
+      "sentiment_mean": 0.067,
+      "headline": "Trump hits International Criminal Court with sanctions after Nobel goes to former judge - The Washington Post",
+      "headline_source": "Google News Top",
+      "headline_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQbnIxSGZ1cXZ1OGRKT21CTV9oa2U3WjJYSW9NS290alRJdHgxQWxxWHN5WTAwM25RTHZmTHl5WEtiRE14MEx3cGoyTHVwNWxLeHFzWmFRelNlek5SbGkwVHRSdjA4RTQ5cWNqallxamtiN3JZMm1JRFZNVk8tWmFveXJMR2U2STV2d1I2V25XMG5JRUdhNS1EdWx5bDJyUU5zcmxCSjFkbGJVUlF0YXlz?oc=5"
     },
     {
       "term": "russia",
-      "articles": 74,
+      "articles": 78,
+      "sources": 31,
+      "sentiment_direction": "negative",
+      "surge": 3.16,
+      "sentiment_mean": -0.328,
+      "headline": "Iran war live: Kremlin says Trump welcomed Russia effort in Iran deal",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/news/liveblog/2026/10/10/iran-war-live-kremlin-says-trump-welcomed-russia-effort-in-iran-deal?traffic_source=rss"
+    },
+    {
+      "term": "iran",
+      "articles": 68,
+      "sources": 30,
+      "sentiment_direction": "negative",
+      "surge": 2.69,
+      "sentiment_mean": -0.426,
+      "headline": "Iran war live: Kremlin says Trump welcomed Russia effort in Iran deal",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/news/liveblog/2026/10/10/iran-war-live-kremlin-says-trump-welcomed-russia-effort-in-iran-deal?traffic_source=rss"
+    },
+    {
+      "term": "diesel",
+      "articles": 50,
+      "sources": 30,
+      "sentiment_direction": "mixed",
+      "surge": 7.65,
+      "sentiment_mean": -0.081,
+      "headline": "Trump announces deal for Russian diesel as Zelensky criticises 'gift to Putin'",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1x20ph5/trump_announces_deal_for_russian_diesel_as/"
+    },
+    {
+      "term": "execution",
+      "articles": 90,
       "sources": 29,
       "sentiment_direction": "negative",
-      "surge": 3.0,
-      "sentiment_mean": -0.338,
-      "headline": "Trump says Russia to supply diesel to U.S. and global markets",
-      "headline_source": "Japan Times",
-      "headline_url": "https://www.japantimes.co.jp/news/2026/10/10/world/politics/trump-russia-diesel-us-global-markets/"
+      "surge": 5.15,
+      "sentiment_mean": -0.434,
+      "headline": "Republicans divided over Pentagon's plan to livestream execution of Fort Hood shooter",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/republicans-divided-over-pentagons-plan-to-livestream-execution-of-fort-hood-shooter/"
     },
     {
-      "term": "public",
-      "articles": 89,
-      "sources": 28,
-      "sentiment_direction": "negative",
-      "surge": 4.58,
-      "sentiment_mean": -0.336,
-      "headline": "Daniel Lurie argues progressivism led San Francisco astray on public safety, drug crisis",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/media/daniel-lurie-argues-progressivism-led-san-francisco-astray-public-safety-drug-crisis"
-    },
-    {
-      "term": "international",
-      "articles": 81,
-      "sources": 28,
+      "term": "data",
+      "articles": 71,
+      "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 5.29,
-      "sentiment_mean": 0.11,
-      "headline": "Climbers scale St. Louis trees during international tree climbing competition - AP News",
-      "headline_source": "AP News",
-      "headline_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPTE5PZ3EwXzNxcnhCYm40TTJLN0pKTjNMWGpTeWlZQm4zYnRtYlk0Zk1DUWllbVF0UGhJZTlfdng0SHVYbkY0SDh5STA2SUVxVHZuZURjWmcwSjIyajVDd1hfRUg2ZGgtZHJaNVN6VmFFNmZlVXB0LTJRYW9ZRlZTTTBjSno2ck5SemVTRkh2WTdzQW1zbVFGck11LWJ1aWFYVERXUVJacGJSMGpB?oc=5"
+      "surge": 2.86,
+      "sentiment_mean": -0.104,
+      "headline": "Ukraine\u2019s drones knock out AI data center belonging to \"Russia\u2019s Google\"",
+      "headline_source": "Ars Technica",
+      "headline_url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
     }
   ],
   "hours_since_fetch": 0.0
