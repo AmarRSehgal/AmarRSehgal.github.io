@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-11T16:34:28Z",
+  "generated_at": "2026-10-11T22:40:04Z",
   "sources": [
     {
       "source": "ad_capital",
       "label": "AD Capital universe scan",
       "status": "empty",
       "as_of": "2026-10-10T00:30:18Z",
-      "age_hours": 40.1,
+      "age_hours": 46.2,
       "count": 0,
       "caveat": "A mechanical factor scan of a 374-name universe, not a recommendation. The stop and target are volatility-sized bands, not predictions, and nothing here has had a fundamental read. The paper book running this signal is 6.87pp behind SPY since 2026-04-13 (5.93% vs 12.8%).",
       "note": "Scan ran and found nothing that cleared the bar.",
@@ -17,7 +17,7 @@
       "label": "Perp funding vs realized drift",
       "status": "fresh",
       "as_of": "2026-10-10T15:15:07Z",
-      "age_hours": 25.3,
+      "age_hours": 31.4,
       "count": 15,
       "caveat": "An observation, NOT a trade recommendation. This repo's own study found the ranking is ~99% price momentum (rank correlation 0.996 with plain return) and that the convergence reading of the funding term is backwards.",
       "note": null,
@@ -56,10 +56,10 @@
       "label": "Cross-exchange crypto arbs",
       "status": "stale",
       "as_of": "2026-10-11T00:14:35Z",
-      "age_hours": 16.3,
+      "age_hours": 22.4,
       "count": 0,
       "caveat": "Observed, not executed. Each row is a spread that EXISTED between two venues for a few seconds of a 4-minute scan -- it is not a fill. Capturing it needs inventory already sitting on both venues, and the transfer time between them is far longer than the spread lasted.",
-      "note": "Last scan was 16h ago, past this source's 6h budget. Showing nothing rather than passing it off as current.",
+      "note": "Last scan was 22h ago, past this source's 6h budget. Showing nothing rather than passing it off as current.",
       "opportunities": []
     },
     {
@@ -67,7 +67,7 @@
       "label": "Funding-rate carry",
       "status": "fresh",
       "as_of": "2026-10-11T01:00:11Z",
-      "age_hours": 15.6,
+      "age_hours": 21.7,
       "count": 8,
       "caveat": "Quoted APRs annualize the CURRENT funding rate, which reprices every few hours. They are not a return you can lock in, and they ignore execution, borrow limits and the capital tied up on both legs.",
       "note": null,
@@ -106,57 +106,29 @@
       "label": "Magic Formula screen",
       "status": "stale",
       "as_of": "2026-09-28T15:01:35Z",
-      "age_hours": 313.5,
+      "age_hours": 319.6,
       "count": 0,
       "caveat": "A mechanical rank of a hand-pasted universe. It says nothing about whether the business is sound, and nothing here is advice.",
-      "note": "Last scan was 314h ago, past this source's 216h budget. Showing nothing rather than passing it off as current.",
+      "note": "Last scan was 320h ago, past this source's 216h budget. Showing nothing rather than passing it off as current.",
       "opportunities": []
     },
     {
       "source": "real_estate",
       "label": "Real estate deal screen",
-      "status": "fresh",
-      "as_of": "2026-10-04T17:25:07Z",
-      "age_hours": 167.2,
-      "count": 12,
+      "status": "empty",
+      "as_of": "2026-10-11T16:48:36Z",
+      "age_hours": 5.9,
+      "count": 0,
       "caveat": "Discounts are against comparable-sale estimates, not appraisals, and the screen has never seen the inside of any of these. Screening output only.",
-      "note": null,
-      "opportunities": [
-        {
-          "title": "4213 W Cayuga St, Tampa FL",
-          "detail": "listed $1.2M vs $4.7M comparable value",
-          "metric_value": 0.745,
-          "metric_display": "74% below comps",
-          "link": "https://www.realtor.com/realestateandhomes-detail/4213-W-Cayuga-St_Tampa_FL_33614_M61586-18825",
-          "rank": 1,
-          "source": "real_estate"
-        },
-        {
-          "title": "1234 Francisco St Apt 3, San Francisco CA",
-          "detail": "listed $799.0K vs $2.2M comparable value",
-          "metric_value": 0.6433,
-          "metric_display": "64% below comps",
-          "link": "https://www.realtor.com/realestateandhomes-detail/1234-Francisco-St-Apt-3_San-Francisco_CA_94123_M29894-46901",
-          "rank": 2,
-          "source": "real_estate"
-        },
-        {
-          "title": "88 Hoff St Apt 101, San Francisco CA",
-          "detail": "listed $472.9K vs $1.1M comparable value",
-          "metric_value": 0.5624,
-          "metric_display": "56% below comps",
-          "link": "https://www.realtor.com/realestateandhomes-detail/88-Hoff-St-Apt-101_San-Francisco_CA_94110_M16098-79408",
-          "rank": 3,
-          "source": "real_estate"
-        }
-      ]
+      "note": "Scan ran and found nothing that cleared the bar.",
+      "opportunities": []
     },
     {
       "source": "contracts",
       "label": "Federal resale lanes",
       "status": "fresh",
       "as_of": "2026-10-11T15:04:40Z",
-      "age_hours": 1.5,
+      "age_hours": 7.6,
       "count": 8,
       "caveat": "Finding a lane is not winning one. SAM entity registration takes weeks and gates every bid, set-asides are hard gates, and the extract carries no line-item quantities -- so none of these carry a computed margin.",
       "note": null,
@@ -193,76 +165,38 @@
     {
       "source": "stock_signals",
       "label": "Swing-trade signals",
-      "status": "fresh",
-      "as_of": "2026-10-10T21:00:26Z",
-      "age_hours": 19.6,
-      "count": 12,
+      "status": "empty",
+      "as_of": "2026-10-11T21:04:23Z",
+      "age_hours": 1.6,
+      "count": 0,
       "caveat": "Rule output on daily bars, not a recommendation. It carries no position sizing or risk limits, and most rows are positions already open rather than fresh buys. Measured on 12 broad and sector ETFs (survivorship-free) 2019-01-01..2025-07-01, this strategy returned 48.3% against 145.6% for simply holding the same universe, at Sharpe 0.46 against 0.80. It beat same-window buy-and-hold in 3 of 17 walk-forward windows. What does hold up is drawdown: -31.6% against -35.8% for the benchmark.",
-      "note": null,
-      "opportunities": [
-        {
-          "title": "META - hold long",
-          "detail": "unrealized 5.6%, held 18d, entered 2026-09-21",
-          "metric_value": 5.052631578947368,
-          "metric_display": "5/6 factors",
-          "link": null,
-          "rank": 1,
-          "source": "stock_signals"
-        },
-        {
-          "title": "ADI - buy",
-          "detail": "unrealized 1.0%, held 1d, entered 2026-10-08",
-          "metric_value": 4.5,
-          "metric_display": "4/6 factors",
-          "link": null,
-          "rank": 2,
-          "source": "stock_signals"
-        },
-        {
-          "title": "PFE - hold long",
-          "detail": "unrealized 5.0%, held 59d, entered 2026-08-11",
-          "metric_value": 4.016666666666667,
-          "metric_display": "4/6 factors",
-          "link": null,
-          "rank": 3,
-          "source": "stock_signals"
-        }
-      ]
+      "note": "Scan ran and found nothing that cleared the bar.",
+      "opportunities": []
     },
     {
       "source": "weather_risk",
       "label": "Severe weather risk",
       "status": "stale",
       "as_of": "2026-09-14T14:01:40Z",
-      "age_hours": 650.5,
+      "age_hours": 656.6,
       "count": 0,
       "caveat": "Not a weather warning -- use the National Weather Service for those. The score is how much current conditions resemble the run-up to a severe event, not a probability that one occurs.",
-      "note": "Last scan was 651h ago, past this source's 30h budget. Showing nothing rather than passing it off as current.",
+      "note": "Last scan was 657h ago, past this source's 30h budget. Showing nothing rather than passing it off as current.",
       "opportunities": []
     },
     {
       "source": "polymarket_btc",
       "label": "Polymarket BTC 5-min binaries",
-      "status": "fresh",
+      "status": "stale",
       "as_of": "2026-10-10T14:46:07Z",
-      "age_hours": 25.8,
-      "count": 1,
+      "age_hours": 31.9,
+      "count": 0,
       "caveat": "Publishes an observation, not picks. The repo's own backtest on real fills found the market's own price forecasts the settlement BETTER than the model, and that what survives costs is feed latency rather than the pricing model. Simulation only -- the repo has no order-placement path. Latest scan: model Brier 0.1609 vs market 0.1487, so the market is ahead (lower is better).",
-      "note": null,
-      "opportunities": [
-        {
-          "title": "BTC 5-min binaries: market ahead of the model",
-          "detail": "model Brier 0.1609 vs market 0.1487 (lower is better), post-cost returns never cross zero",
-          "metric_value": -0.0157,
-          "metric_display": "-1.6%",
-          "link": null,
-          "rank": 1,
-          "source": "polymarket_btc"
-        }
-      ]
+      "note": "Last scan was 32h ago, past this source's 30h budget. Showing nothing rather than passing it off as current.",
+      "opportunities": []
     }
   ],
-  "total_opportunities": 16,
-  "fresh_sources": 7,
+  "total_opportunities": 9,
+  "fresh_sources": 6,
   "methodology": "A digest: the top 3 from each scanner, so one glance shows what is live right now. Each scanner runs on its own schedule and publishes its own full panel; this merges them and runs nothing itself, so a slow source can only make its own row go quiet. Items are ranked WITHIN a source and there is deliberately no cross-source score -- basis points, an earnings yield and a contract cadence are not commensurable, and one leaderboard over them would be invented. Every section carries its own caveat; read it before the numbers. Nothing here is advice, none of it is an executed trade, and a section that has gone stale shows nothing rather than yesterday's numbers."
 }
