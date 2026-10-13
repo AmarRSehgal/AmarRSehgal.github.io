@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T22:37:24.196523+00:00",
+  "generated_at": "2026-10-13T22:23:58.129341+00:00",
   "experiment": "Kalshi market making: v1 against the v2 engine",
   "venue": "Kalshi",
   "paper": true,
@@ -7,7 +7,7 @@
   "unit": "day",
   "min_units_for_verdict": 14,
   "status": "verdict",
-  "headline": "After 17 days: v2_niche indistinguishable than v1 (-2.59/day, 95% CI -6.99 to +1.73); v2_crypto indistinguishable than v1 (+2.92/day, 95% CI -2.75 to +8.83). v1 itself: -21.95.",
+  "headline": "After 18 days: v2_niche indistinguishable than v1 (-2.45/day, 95% CI -6.42 to +1.66); v2_crypto indistinguishable than v1 (+2.76/day, 95% CI -2.45 to +8.16). v1 itself: -21.95.",
   "arms": [
     {
       "name": "baseline",
@@ -43,11 +43,11 @@
       "markouts_c": null,
       "live_markouts_c": null,
       "ladder": null,
-      "units": 17,
-      "pnl_per_unit": -1.214,
+      "units": 18,
+      "pnl_per_unit": -1.147,
       "pnl_per_unit_ci": [
-        -2.1059,
-        -0.4182
+        -2.0422,
+        -0.4339
       ]
     },
     {
@@ -89,11 +89,11 @@
         "3600": 2.516
       },
       "ladder": null,
-      "units": 17,
-      "pnl_per_unit": -3.808,
+      "units": 18,
+      "pnl_per_unit": -3.597,
       "pnl_per_unit_ci": [
-        -7.8935,
-        0.3212
+        -7.41,
+        0.3378
       ]
     },
     {
@@ -135,11 +135,11 @@
         "3600": 0.328
       },
       "ladder": null,
-      "units": 17,
-      "pnl_per_unit": 1.705,
+      "units": 18,
+      "pnl_per_unit": 1.611,
       "pnl_per_unit_ci": [
-        -3.8129,
-        7.42
+        -3.5594,
+        6.905
       ]
     },
     {
@@ -184,11 +184,11 @@
         "strategy": "v2_crypto",
         "latency_ms": 0
       },
-      "units": 13,
-      "pnl_per_unit": 1.519,
+      "units": 14,
+      "pnl_per_unit": 1.411,
       "pnl_per_unit_ci": [
-        -6.6123,
-        8.0977
+        -6.2107,
+        7.59
       ]
     },
     {
@@ -233,11 +233,11 @@
         "strategy": "v2_crypto",
         "latency_ms": 125
       },
-      "units": 13,
-      "pnl_per_unit": 0.788,
+      "units": 14,
+      "pnl_per_unit": 0.731,
       "pnl_per_unit_ci": [
-        -7.0377,
-        8.2285
+        -6.86,
+        7.5564
       ]
     },
     {
@@ -282,11 +282,11 @@
         "strategy": "v2_crypto",
         "latency_ms": 250
       },
-      "units": 13,
-      "pnl_per_unit": 2.423,
+      "units": 14,
+      "pnl_per_unit": 2.25,
       "pnl_per_unit_ci": [
-        -5.8454,
-        10.4992
+        -5.4043,
+        9.6664
       ]
     },
     {
@@ -331,11 +331,11 @@
         "strategy": "v2_crypto",
         "latency_ms": 375
       },
-      "units": 13,
-      "pnl_per_unit": 1.72,
+      "units": 14,
+      "pnl_per_unit": 1.597,
       "pnl_per_unit_ci": [
-        -5.9285,
-        9.7085
+        -5.7114,
+        8.9671
       ]
     },
     {
@@ -380,11 +380,11 @@
         "strategy": "v2_crypto",
         "latency_ms": 500
       },
-      "units": 13,
-      "pnl_per_unit": 1.575,
+      "units": 14,
+      "pnl_per_unit": 1.463,
       "pnl_per_unit_ci": [
-        -5.09,
-        8.7831
+        -4.7336,
+        8.2293
       ]
     },
     {
@@ -429,11 +429,11 @@
         "strategy": "v2_niche",
         "latency_ms": 0
       },
-      "units": 13,
-      "pnl_per_unit": -4.609,
+      "units": 14,
+      "pnl_per_unit": -4.28,
       "pnl_per_unit_ci": [
-        -9.7723,
-        0.3485
+        -9.2221,
+        0.26
       ]
     },
     {
@@ -478,11 +478,11 @@
         "strategy": "v2_niche",
         "latency_ms": 125
       },
-      "units": 13,
-      "pnl_per_unit": -4.609,
+      "units": 14,
+      "pnl_per_unit": -4.28,
       "pnl_per_unit_ci": [
-        -9.7723,
-        0.3485
+        -9.2221,
+        0.26
       ]
     },
     {
@@ -527,11 +527,11 @@
         "strategy": "v2_niche",
         "latency_ms": 250
       },
-      "units": 13,
-      "pnl_per_unit": -4.609,
+      "units": 14,
+      "pnl_per_unit": -4.28,
       "pnl_per_unit_ci": [
-        -9.7723,
-        0.3485
+        -9.2221,
+        0.26
       ]
     },
     {
@@ -576,11 +576,11 @@
         "strategy": "v2_niche",
         "latency_ms": 375
       },
-      "units": 13,
-      "pnl_per_unit": -4.609,
+      "units": 14,
+      "pnl_per_unit": -4.28,
       "pnl_per_unit_ci": [
-        -9.7723,
-        0.3485
+        -9.2221,
+        0.26
       ]
     },
     {
@@ -625,11 +625,11 @@
         "strategy": "v2_niche",
         "latency_ms": 500
       },
-      "units": 13,
-      "pnl_per_unit": -4.609,
+      "units": 14,
+      "pnl_per_unit": -4.28,
       "pnl_per_unit_ci": [
-        -9.7723,
-        0.3485
+        -9.2221,
+        0.26
       ]
     }
   ],
@@ -638,10 +638,10 @@
       "treatment": "v2_niche",
       "control": "baseline",
       "metric": "pnl_per_day",
-      "diff": -2.594,
+      "diff": -2.45,
       "ci": [
-        -6.9865,
-        1.7288
+        -6.4167,
+        1.6572
       ],
       "verdict": "indistinguishable"
     },
@@ -649,10 +649,10 @@
       "treatment": "v2_crypto",
       "control": "baseline",
       "metric": "pnl_per_day",
-      "diff": 2.919,
+      "diff": 2.757,
       "ci": [
-        -2.7459,
-        8.8329
+        -2.4506,
+        8.1606
       ],
       "verdict": "indistinguishable"
     }
@@ -1141,6 +1141,39 @@
     },
     {
       "date": "2026-10-12",
+      "pnl": {
+        "baseline": 0.0,
+        "v2_niche": 0.0,
+        "v2_crypto": 0.0,
+        "v2_crypto_0ms": 0.0,
+        "v2_crypto_125ms": 0.0,
+        "v2_crypto_250ms": 0.0,
+        "v2_crypto_375ms": 0.0,
+        "v2_crypto_500ms": 0.0,
+        "v2_niche_0ms": 0.0,
+        "v2_niche_125ms": 0.0,
+        "v2_niche_250ms": 0.0,
+        "v2_niche_375ms": 0.0,
+        "v2_niche_500ms": 0.0
+      },
+      "units": {
+        "baseline": 1,
+        "v2_niche": 1,
+        "v2_crypto": 1,
+        "v2_crypto_0ms": 1,
+        "v2_crypto_125ms": 1,
+        "v2_crypto_250ms": 1,
+        "v2_crypto_375ms": 1,
+        "v2_crypto_500ms": 1,
+        "v2_niche_0ms": 1,
+        "v2_niche_125ms": 1,
+        "v2_niche_250ms": 1,
+        "v2_niche_375ms": 1,
+        "v2_niche_500ms": 1
+      }
+    },
+    {
+      "date": "2026-10-13",
       "pnl": {
         "baseline": 0.0,
         "v2_niche": 0.0,
