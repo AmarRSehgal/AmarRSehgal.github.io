@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T08:29:42.746489+00:00",
+  "generated_at": "2026-10-24T08:59:51.760838+00:00",
   "strategy": "MultiFactorV3",
   "account": "PA37U0PIU9B9",
   "paper": true,
@@ -260,7 +260,19 @@
   "benchmark": "SPY",
   "benchmark_return_pct": 0.0038,
   "excess_return_pct": -0.0465,
-  "days_live": 42,
+  "ex_downtime": {
+    "windows": [
+      {
+        "start": "2026-10-02",
+        "end": "2026-10-24"
+      }
+    ],
+    "sessions_excluded": 16,
+    "return_pct": -0.0614,
+    "benchmark_return_pct": 0.0091,
+    "excess_return_pct": -0.0705
+  },
+  "days_live": 19,
   "verdict_due": false,
   "retire_after_days": 180,
   "backtest": {
