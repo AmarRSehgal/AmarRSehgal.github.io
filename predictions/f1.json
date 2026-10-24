@@ -1,15 +1,135 @@
 {
-  "generated_at": "2026-10-11T15:21:33Z",
+  "generated_at": "2026-10-24T08:29:36Z",
   "track_record": {
-    "races_scored": 2,
+    "races_scored": 3,
     "basis": "grids published to the site before each race, from the run ledger",
-    "winners_correct": 2,
+    "winners_correct": 3,
     "winner_hit_rate": 1.0,
-    "podium_hits": 5,
-    "podium_slots": 6,
-    "mean_abs_position_error": 3.37,
-    "mean_spearman": 0.642,
+    "podium_hits": 7,
+    "podium_slots": 9,
+    "mean_abs_position_error": 3.07,
+    "mean_spearman": 0.708,
     "races": [
+      {
+        "year": 2026,
+        "round": 17,
+        "race_name": "Singapore Grand Prix",
+        "published_at": "2026-10-10T23:05:06Z",
+        "drivers_scored": 21,
+        "predicted_winner": "VER",
+        "actual_winner": "VER",
+        "winner_correct": true,
+        "podium_hits": 2,
+        "mean_abs_position_error": 2.48,
+        "spearman": 0.839,
+        "finishers": [
+          {
+            "driver": "VER",
+            "predicted": 1,
+            "actual": 1
+          },
+          {
+            "driver": "LEC",
+            "predicted": 3,
+            "actual": 2
+          },
+          {
+            "driver": "ANT",
+            "predicted": 6,
+            "actual": 3
+          },
+          {
+            "driver": "NOR",
+            "predicted": 5,
+            "actual": 4
+          },
+          {
+            "driver": "PIA",
+            "predicted": 7,
+            "actual": 5
+          },
+          {
+            "driver": "HAM",
+            "predicted": 2,
+            "actual": 6
+          },
+          {
+            "driver": "LAW",
+            "predicted": 8,
+            "actual": 7
+          },
+          {
+            "driver": "HUL",
+            "predicted": 10,
+            "actual": 8
+          },
+          {
+            "driver": "RUS",
+            "predicted": 4,
+            "actual": 9
+          },
+          {
+            "driver": "GAS",
+            "predicted": 11,
+            "actual": 11
+          },
+          {
+            "driver": "BEA",
+            "predicted": 13,
+            "actual": 12
+          },
+          {
+            "driver": "OCO",
+            "predicted": 14,
+            "actual": 13
+          },
+          {
+            "driver": "SAI",
+            "predicted": 16,
+            "actual": 14
+          },
+          {
+            "driver": "LIN",
+            "predicted": 9,
+            "actual": 15
+          },
+          {
+            "driver": "ALO",
+            "predicted": 19,
+            "actual": 16
+          },
+          {
+            "driver": "PER",
+            "predicted": 17,
+            "actual": 17
+          },
+          {
+            "driver": "ALB",
+            "predicted": 20,
+            "actual": 18
+          },
+          {
+            "driver": "BOT",
+            "predicted": 18,
+            "actual": 19
+          },
+          {
+            "driver": "STR",
+            "predicted": 21,
+            "actual": 20
+          },
+          {
+            "driver": "COL",
+            "predicted": 12,
+            "actual": 21
+          },
+          {
+            "driver": "BOR",
+            "predicted": 15,
+            "actual": 22
+          }
+        ]
+      },
       {
         "year": 2026,
         "round": 15,
