@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T06:20:48.826423+00:00",
+  "generated_at": "2026-10-24T07:00:13.779861+00:00",
   "experiment": "Polymarket BTC 5-minute binaries: taker v1 vs passive makers",
   "venue": "Polymarket",
   "paper": true,
@@ -747,18 +747,33 @@
   ],
   "daily": [
     {
-      "date": "2026-09-26",
+      "date": "2026-09-25",
       "pnl": {
-        "taker_v1": -48.06,
-        "maker_mid": -150.08,
-        "maker_model": -12.81,
-        "maker_anchored": -87.5
+        "taker_v1": -35.02,
+        "maker_mid": -52.06,
+        "maker_model": 32.85,
+        "maker_anchored": -5.56
       },
       "units": {
-        "taker_v1": 149,
-        "maker_mid": 115,
-        "maker_model": 115,
-        "maker_anchored": 115
+        "taker_v1": 76,
+        "maker_mid": 42,
+        "maker_model": 42,
+        "maker_anchored": 42
+      }
+    },
+    {
+      "date": "2026-09-26",
+      "pnl": {
+        "taker_v1": -13.04,
+        "maker_mid": -98.02,
+        "maker_model": -45.67,
+        "maker_anchored": -81.94
+      },
+      "units": {
+        "taker_v1": 73,
+        "maker_mid": 73,
+        "maker_model": 73,
+        "maker_anchored": 73
       }
     },
     {
@@ -972,7 +987,7 @@
       }
     },
     {
-      "date": "2026-10-08",
+      "date": "2026-10-07",
       "pnl": {
         "taker_v1": -61.2,
         "maker_mid": -70.69,
@@ -1017,7 +1032,7 @@
       }
     },
     {
-      "date": "2026-10-09",
+      "date": "2026-10-08",
       "pnl": {
         "taker_v1": -35.48,
         "maker_mid": -30.98,
@@ -1062,7 +1077,7 @@
       }
     },
     {
-      "date": "2026-10-10",
+      "date": "2026-10-09",
       "pnl": {
         "taker_v1": 27.43,
         "maker_mid": -30.25,
@@ -1107,7 +1122,7 @@
       }
     },
     {
-      "date": "2026-10-11",
+      "date": "2026-10-10",
       "pnl": {
         "taker_v1": -26.68,
         "maker_mid": -67.49,
