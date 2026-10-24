@@ -907,11 +907,25 @@ function bookHistory(d) {
         rows.push(['SPY, same window', sign(d.benchmark_return_pct)]);
         rows.push(['Excess', sign(d.excess_return_pct)]);
     }
+    const x = d.ex_downtime;
+    if (x) {
+        rows.push(['Return, excluding downtime', sign(x.return_pct)]);
+        if (x.benchmark_return_pct != null) {
+            rows.push(['SPY, same sessions', sign(x.benchmark_return_pct)]);
+            rows.push(['Excess, excluding downtime', sign(x.excess_return_pct)]);
+        }
+    }
     if (d.dividends_total) rows.push(['Dividends credited', P.formatMoney(d.dividends_total)]);
     if (d.days_live != null) rows.push(['Days live', String(d.days_live)]);
 
     let note = 'Live, out-of-sample, on simulated fills. The equity figure is Alpaca\u2019s '
         + 'own, so the curve above and this table cannot disagree.';
+    if (x) {
+        note += ' The machine running this book was off for ' + x.sessions_excluded
+              + ' sessions (' + x.windows.map(w => w.start + ' to ' + w.end).join(', ')
+              + '); the book placed no orders then, so the excluding-downtime rows drop '
+              + 'those sessions from both the book and SPY.';
+    }
     if (d.backtest) {
         const b = d.backtest;
         rows.push(['Backtest return', sign(b.strategy_return)]);

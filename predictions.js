@@ -944,6 +944,7 @@ function bookSlate(d) {
         bits.push(`SPY ${pct(d.benchmark_return_pct)}`);
     }
     if (d.excess_return_pct != null) bits.push(`${pct(d.excess_return_pct)} excess`);
+    if (d.ex_downtime) bits.push(`${pct(d.ex_downtime.return_pct)} ex-downtime`);
     return bits.join(' | ');
 }
 
