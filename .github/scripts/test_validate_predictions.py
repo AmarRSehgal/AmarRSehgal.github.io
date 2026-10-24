@@ -527,6 +527,14 @@ class PaperBooks(ContractBase):
         d['positions'][0]['qty'] = -10
         self.rejects('swing_book', d, 'long only')
 
+    def test_stock_levels_short_position_accepted(self):
+        """stock_levels is dollar-neutral; its shorts are the strategy, not a reconcile bug."""
+        d = copy.deepcopy(payload(SWING_BOOK))
+        del d['backtest']
+        d['positions'][0]['qty'] = -10
+        d.update(strategies=[{'name': 'momentum', 'alloc_pct': 1.0, 'names': 40, 'asof': '2026-10-01', 'funded': True}], research={'note': 'record'})
+        self.assertEqual(len(self.ok('stock_levels', d)), 1)
+
     def test_backtest_must_carry_the_comparison(self):
         """The swing book exists BECAUSE the backtest says the strategy loses.
         Publishing the live number alone loses that framing."""

@@ -993,11 +993,11 @@ def check_level(where, lv):
         raise Invalid(f'{where}: short_trigger={sht} is not below or_low={lo}')
 
 
-def check_book_position(where, pos):
+def check_book_position(where, pos, long_only=True):
     require_str(where, 'ticker', pos['ticker'])
     for key in ('qty', 'avg_entry', 'price', 'market_value', 'pnl', 'return_pct'):
         require_number(where, key, pos[key])
-    if pos['qty'] <= 0:
+    if pos['qty'] == 0 or (long_only and pos['qty'] < 0):
         raise Invalid(f'{where}.qty={pos["qty"]} -- these books are long only, and a '
                       f'zero or short quantity means the reconcile went wrong')
     if pos['avg_entry'] <= 0 or pos['price'] <= 0:
@@ -1358,7 +1358,8 @@ def validate(sport, data, now=None):
         elif sport == 'contracts':
             check_lane(where, item)
         elif sport in ('swing_book', 'mf_book', 'stock_levels'):
-            check_book_position(where, item)
+            # stock_levels is dollar-neutral: its shorts are the strategy, not a reconcile bug.
+            check_book_position(where, item, long_only=sport != 'stock_levels')
         elif sport == 'options_levels':
             check_level(where, item)
         elif sport == 'f1':
