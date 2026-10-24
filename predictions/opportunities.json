@@ -1,67 +1,179 @@
 {
-  "generated_at": "2026-10-24T06:21:01Z",
+  "generated_at": "2026-10-24T16:30:05Z",
   "sources": [
     {
       "source": "ad_capital",
       "label": "AD Capital universe scan",
       "status": "stale",
       "as_of": "2026-10-10T00:30:18Z",
-      "age_hours": 341.8,
+      "age_hours": 352.0,
       "count": 0,
       "caveat": "A mechanical factor scan of a 374-name universe, not a recommendation. The stop and target are volatility-sized bands, not predictions, and nothing here has had a fundamental read. The paper book running this signal is 6.87pp behind SPY since 2026-04-13 (5.93% vs 12.8%).",
-      "note": "Last scan was 342h ago, past this source's 96h budget. Showing nothing rather than passing it off as current.",
+      "note": "Last scan was 352h ago, past this source's 96h budget. Showing nothing rather than passing it off as current.",
       "opportunities": []
     },
     {
       "source": "funding_drift",
       "label": "Perp funding vs realized drift",
-      "status": "stale",
-      "as_of": "2026-10-10T15:15:07Z",
-      "age_hours": 327.1,
-      "count": 0,
+      "status": "fresh",
+      "as_of": "2026-10-24T15:15:07Z",
+      "age_hours": 1.2,
+      "count": 15,
       "caveat": "An observation, NOT a trade recommendation. This repo's own study found the ranking is ~99% price momentum (rank correlation 0.996 with plain return) and that the convergence reading of the funding term is backwards.",
-      "note": "Last scan was 327h ago, past this source's 36h budget. Showing nothing rather than passing it off as current.",
-      "opportunities": []
+      "note": null,
+      "opportunities": [
+        {
+          "title": "ORDER on OKX",
+          "detail": "24h return 108.0%, funding -21.7%",
+          "metric_value": 1.2970474958425695,
+          "metric_display": "drift 129.7%",
+          "link": null,
+          "rank": 1,
+          "source": "funding_drift"
+        },
+        {
+          "title": "BMT on Bybit",
+          "detail": "24h return 55.9%, funding -15.0%",
+          "metric_value": 0.70861,
+          "metric_display": "drift 70.9%",
+          "link": null,
+          "rank": 2,
+          "source": "funding_drift"
+        },
+        {
+          "title": "BIRB on KuCoin",
+          "detail": "24h return 39.2%, funding -6.6%",
+          "metric_value": 0.458472,
+          "metric_display": "drift 45.8%",
+          "link": null,
+          "rank": 3,
+          "source": "funding_drift"
+        }
+      ]
     },
     {
       "source": "crypto_arb",
       "label": "Cross-exchange crypto arbs",
-      "status": "stale",
-      "as_of": "2026-10-11T00:14:35Z",
-      "age_hours": 318.1,
-      "count": 0,
+      "status": "fresh",
+      "as_of": "2026-10-24T16:14:35Z",
+      "age_hours": 0.3,
+      "count": 8,
       "caveat": "Observed, not executed. Each row is a spread that EXISTED between two venues for a few seconds of a 4-minute scan -- it is not a fill. Capturing it needs inventory already sitting on both venues, and the transfer time between them is far longer than the spread lasted.",
-      "note": "Last scan was 318h ago, past this source's 6h budget. Showing nothing rather than passing it off as current.",
-      "opportunities": []
+      "note": null,
+      "opportunities": [
+        {
+          "title": "SUI  BingX -> Bybit",
+          "detail": "spot | 38.9bp gross less 20.0bp fees | $325 at the touch | lived 4.8s | 2.0% of the scan",
+          "metric_value": 18.86,
+          "metric_display": "+18.9bp net",
+          "link": null,
+          "rank": 1,
+          "source": "crypto_arb"
+        },
+        {
+          "title": "SUI  BingX -> KuCoin",
+          "detail": "spot | 36.7bp gross less 20.0bp fees | $489 at the touch | lived 9.0s | 3.8% of the scan",
+          "metric_value": 16.7,
+          "metric_display": "+16.7bp net",
+          "link": null,
+          "rank": 2,
+          "source": "crypto_arb"
+        },
+        {
+          "title": "SUI  BingX -> Backpack",
+          "detail": "spot | 34.5bp gross less 20.0bp fees | $2,103 at the touch | lived 6.8s | 2.9% of the scan",
+          "metric_value": 14.55,
+          "metric_display": "+14.6bp net",
+          "link": null,
+          "rank": 3,
+          "source": "crypto_arb"
+        }
+      ]
     },
     {
       "source": "funding_rate_arb",
       "label": "Funding-rate carry",
-      "status": "stale",
-      "as_of": "2026-10-11T01:00:11Z",
-      "age_hours": 317.3,
-      "count": 0,
+      "status": "fresh",
+      "as_of": "2026-10-24T16:00:11Z",
+      "age_hours": 0.5,
+      "count": 8,
       "caveat": "Quoted APRs annualize the CURRENT funding rate, which reprices every few hours. They are not a return you can lock in, and they ignore execution, borrow limits and the capital tied up on both legs.",
-      "note": "Last scan was 317h ago, past this source's 36h budget. Showing nothing rather than passing it off as current.",
-      "opportunities": []
+      "note": null,
+      "opportunities": [
+        {
+          "title": "LDO  Coinbase / Lighter",
+          "detail": "long Coinbase perp, short Lighter perp | annualises to ~847% | round trip 26bp | positive in 24/24 scans",
+          "metric_value": 0.7736,
+          "metric_display": "+0.774% per 8h hold",
+          "link": null,
+          "rank": 1,
+          "source": "funding_rate_arb"
+        },
+        {
+          "title": "CHIP  Lighter / Coinbase",
+          "detail": "long Lighter perp, short Coinbase perp | annualises to ~837% | round trip 26bp | positive in 24/24 scans",
+          "metric_value": 0.7648,
+          "metric_display": "+0.765% per 8h hold",
+          "link": null,
+          "rank": 2,
+          "source": "funding_rate_arb"
+        },
+        {
+          "title": "SEI  Lighter / Coinbase",
+          "detail": "long Lighter perp, short Coinbase perp | annualises to ~821% | round trip 26bp | positive in 24/24 scans",
+          "metric_value": 0.7496,
+          "metric_display": "+0.750% per 8h hold",
+          "link": null,
+          "rank": 3,
+          "source": "funding_rate_arb"
+        }
+      ]
     },
     {
       "source": "magic_formula",
       "label": "Magic Formula screen",
-      "status": "stale",
-      "as_of": "2026-09-28T15:01:35Z",
-      "age_hours": 615.3,
-      "count": 0,
+      "status": "fresh",
+      "as_of": "2026-10-24T08:30:59Z",
+      "age_hours": 8.0,
+      "count": 10,
       "caveat": "A mechanical rank of a hand-pasted universe. It says nothing about whether the business is sound, and nothing here is advice.",
-      "note": "Last scan was 615h ago, past this source's 216h budget. Showing nothing rather than passing it off as current.",
-      "opportunities": []
+      "note": null,
+      "opportunities": [
+        {
+          "title": "IRWD - Ironwood Pharmaceuticals, Inc.",
+          "detail": "ROC 536.5% | $571.7M | Healthcare",
+          "metric_value": -1.0,
+          "metric_display": "EY 27.0%",
+          "link": null,
+          "rank": 1,
+          "source": "magic_formula"
+        },
+        {
+          "title": "TDC - Teradata Corporation",
+          "detail": "ROC 481.2% | $3.2B | Technology",
+          "metric_value": -2.0,
+          "metric_display": "EY 21.0%",
+          "link": null,
+          "rank": 2,
+          "source": "magic_formula"
+        },
+        {
+          "title": "AFMJF - Alphamin Resources Corp.",
+          "detail": "ROC 95.3% | $1.2B | Basic Materials",
+          "metric_value": -3.0,
+          "metric_display": "EY 37.6%",
+          "link": null,
+          "rank": 3,
+          "source": "magic_formula"
+        }
+      ]
     },
     {
       "source": "real_estate",
       "label": "Real estate deal screen",
       "status": "empty",
       "as_of": "2026-10-18T17:09:58Z",
-      "age_hours": 133.2,
+      "age_hours": 143.3,
       "count": 0,
       "caveat": "Discounts are against comparable-sale estimates, not appraisals, and the screen has never seen the inside of any of these. Screening output only.",
       "note": "Scan ran and found nothing that cleared the bar.",
@@ -71,8 +183,8 @@
       "source": "contracts",
       "label": "Federal resale lanes",
       "status": "fresh",
-      "as_of": "2026-10-22T15:56:28Z",
-      "age_hours": 38.4,
+      "as_of": "2026-10-24T15:01:02Z",
+      "age_hours": 1.5,
       "count": 8,
       "caveat": "Finding a lane is not winning one. SAM entity registration takes weeks and gates every bid, set-asides are hard gates, and the extract carries no line-item quantities -- so none of these carry a computed margin.",
       "note": null,
@@ -80,8 +192,8 @@
         {
           "title": "office furniture - W6QM MICC-FT DRUM",
           "detail": "biweekly | evidence OBSERVED",
-          "metric_value": 15.0,
-          "metric_display": "15 seen",
+          "metric_value": 16.0,
+          "metric_display": "16 seen",
           "link": "https://sam.gov/opp/5f645d37c1014a41a588adb6312ccc9e/view",
           "rank": 1,
           "source": "contracts"
@@ -109,38 +221,76 @@
     {
       "source": "stock_signals",
       "label": "Swing-trade signals",
-      "status": "empty",
-      "as_of": "2026-10-21T21:05:51Z",
-      "age_hours": 57.3,
-      "count": 0,
+      "status": "fresh",
+      "as_of": "2026-10-24T08:30:02Z",
+      "age_hours": 8.0,
+      "count": 12,
       "caveat": "Rule output on daily bars, not a recommendation. It carries no position sizing or risk limits, and most rows are positions already open rather than fresh buys. Measured on 12 broad and sector ETFs (survivorship-free) 2019-01-01..2025-07-01, this strategy returned 48.3% against 145.6% for simply holding the same universe, at Sharpe 0.46 against 0.80. It beat same-window buy-and-hold in 3 of 17 walk-forward windows. What does hold up is drawdown: -31.6% against -35.8% for the benchmark.",
-      "note": "Scan ran and found nothing that cleared the bar.",
-      "opportunities": []
+      "note": null,
+      "opportunities": [
+        {
+          "title": "AMT - buy",
+          "detail": "unrealized 2.4%, held 3d, entered 2026-10-20",
+          "metric_value": 6.25,
+          "metric_display": "6/6 factors",
+          "link": null,
+          "rank": 1,
+          "source": "stock_signals"
+        },
+        {
+          "title": "COP - hold long",
+          "detail": "unrealized 27.8%, held 79d, entered 2026-08-05",
+          "metric_value": 5.0125,
+          "metric_display": "5/6 factors",
+          "link": null,
+          "rank": 2,
+          "source": "stock_signals"
+        },
+        {
+          "title": "CVX - hold long",
+          "detail": "unrealized 20.4%, held 81d, entered 2026-08-03",
+          "metric_value": 5.012195121951219,
+          "metric_display": "5/6 factors",
+          "link": null,
+          "rank": 3,
+          "source": "stock_signals"
+        }
+      ]
     },
     {
       "source": "weather_risk",
       "label": "Severe weather risk",
       "status": "stale",
       "as_of": "2026-09-14T14:01:40Z",
-      "age_hours": 952.3,
+      "age_hours": 962.5,
       "count": 0,
       "caveat": "Not a weather warning -- use the National Weather Service for those. The score is how much current conditions resemble the run-up to a severe event, not a probability that one occurs.",
-      "note": "Last scan was 952h ago, past this source's 30h budget. Showing nothing rather than passing it off as current.",
+      "note": "Last scan was 962h ago, past this source's 30h budget. Showing nothing rather than passing it off as current.",
       "opportunities": []
     },
     {
       "source": "polymarket_btc",
       "label": "Polymarket BTC 5-min binaries",
-      "status": "stale",
-      "as_of": "2026-10-10T14:46:07Z",
-      "age_hours": 327.6,
-      "count": 0,
-      "caveat": "Publishes an observation, not picks. The repo's own backtest on real fills found the market's own price forecasts the settlement BETTER than the model, and that what survives costs is feed latency rather than the pricing model. Simulation only -- the repo has no order-placement path. Latest scan: model Brier 0.1609 vs market 0.1487, so the market is ahead (lower is better).",
-      "note": "Last scan was 328h ago, past this source's 30h budget. Showing nothing rather than passing it off as current.",
-      "opportunities": []
+      "status": "fresh",
+      "as_of": "2026-10-24T14:46:37Z",
+      "age_hours": 1.7,
+      "count": 1,
+      "caveat": "Publishes an observation, not picks. The repo's own backtest on real fills found the market's own price forecasts the settlement BETTER than the model, and that what survives costs is feed latency rather than the pricing model. Simulation only -- the repo has no order-placement path. Latest scan: model Brier 0.1694 vs market 0.1616, so the market is ahead (lower is better).",
+      "note": null,
+      "opportunities": [
+        {
+          "title": "BTC 5-min binaries: market ahead of the model",
+          "detail": "model Brier 0.1694 vs market 0.1616 (lower is better), post-cost returns never cross zero",
+          "metric_value": -0.0065,
+          "metric_display": "-0.7%",
+          "link": null,
+          "rank": 1,
+          "source": "polymarket_btc"
+        }
+      ]
     }
   ],
-  "total_opportunities": 3,
-  "fresh_sources": 3,
+  "total_opportunities": 19,
+  "fresh_sources": 8,
   "methodology": "A digest: the top 3 from each scanner, so one glance shows what is live right now. Each scanner runs on its own schedule and publishes its own full panel; this merges them and runs nothing itself, so a slow source can only make its own row go quiet. Items are ranked WITHIN a source and there is deliberately no cross-source score -- basis points, an earnings yield and a contract cadence are not commensurable, and one leaderboard over them would be invented. Every section carries its own caveat; read it before the numbers. Nothing here is advice, none of it is an executed trade, and a section that has gone stale shows nothing rather than yesterday's numbers."
 }
