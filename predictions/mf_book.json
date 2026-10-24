@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T08:29:48.842632+00:00",
+  "generated_at": "2026-10-24T08:59:50.313493+00:00",
   "account": "PA3RTYOZ01QS",
   "paper": true,
   "started": "2026-09-12",
@@ -237,6 +237,18 @@
       "equity": 100093.6
     }
   ],
+  "ex_downtime": {
+    "windows": [
+      {
+        "start": "2026-10-02",
+        "end": "2026-10-24"
+      }
+    ],
+    "sessions_excluded": 16,
+    "return_pct": -0.0176,
+    "benchmark_return_pct": 0.0091,
+    "excess_return_pct": -0.0267
+  },
   "benchmark": "SPY",
   "benchmark_return_pct": 0.0038,
   "excess_return_pct": -0.0029
