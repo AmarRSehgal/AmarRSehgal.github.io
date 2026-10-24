@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-24T09:27:51.138765+00:00",
+  "generated_at": "2026-10-24T10:24:47.210478+00:00",
   "window_hours": 24,
-  "articles_in_window": 1249,
+  "articles_in_window": 1297,
   "collection_days": 41,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,69 +10,80 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 147,
+      "articles": 151,
       "sources": 34,
       "sentiment_direction": "negative",
-      "surge": 19.3,
-      "sentiment_mean": -0.18,
-      "headline": "Ukraine\u2019s Feeling of Moral Whiplash at the Hands of Trump",
-      "headline_source": "NYT World",
-      "headline_url": "https://www.nytimes.com/2026/10/24/world/europe/ukraine-trump.html"
+      "surge": 19.0,
+      "sentiment_mean": -0.182,
+      "headline": "Trump is pushing a massive AI buildout. His own voters are wary of what comes with it",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/10/24/trump-ai-data-centers-voter-backlash-midterms.html"
     },
     {
       "term": "city",
-      "articles": 62,
+      "articles": 64,
       "sources": 28,
       "sentiment_direction": "negative",
-      "surge": 22.24,
-      "sentiment_mean": -0.258,
+      "surge": 22.94,
+      "sentiment_mean": -0.265,
       "headline": "City Holding Co director Reyes buys $13,502 in stock",
       "headline_source": "Investing.com News",
       "headline_url": "https://www.investing.com/news/insider-trading-news/city-holding-co-director-reyes-buys-13502-in-stock-93CH-4970739"
     },
     {
       "term": "election",
-      "articles": 61,
+      "articles": 63,
       "sources": 28,
       "sentiment_direction": "negative",
-      "surge": 23.25,
-      "sentiment_mean": -0.157,
+      "surge": 24.0,
+      "sentiment_mean": -0.16,
       "headline": "A Fact-Check on Trump\u2019s Election Claims",
       "headline_source": "NYT Politics",
       "headline_url": "https://www.nytimes.com/2026/10/24/us/politics/trump-elections-voting-fact-check.html"
     },
     {
       "term": "president",
-      "articles": 70,
+      "articles": 72,
       "sources": 26,
       "sentiment_direction": "negative",
-      "surge": 15.78,
-      "sentiment_mean": -0.176,
-      "headline": "The Other Bolsonaro Who Could Become Brazil\u2019s Next President",
-      "headline_source": "NYT World",
-      "headline_url": "https://www.nytimes.com/2026/10/24/world/americas/flavio-bolsonaro-brazil-election-president.html"
-    },
-    {
-      "term": "iran",
-      "articles": 43,
-      "sources": 24,
-      "sentiment_direction": "negative",
-      "surge": 17.6,
-      "sentiment_mean": -0.316,
-      "headline": "Iran has 'substantially increased' efforts to target Americans abroad, US intelligence memo warns",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/politics/iran-substantially-increased-efforts-target-americans-abroad-us-intelligence-memo-warns"
+      "surge": 15.64,
+      "sentiment_mean": -0.172,
+      "headline": "Travelers evp & president sells $14.04M of company stock",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/insider-trading-news/travelers-evp--president-sells-1404m-of-company-stock-93CH-4970766"
     },
     {
       "term": "ukraine",
-      "articles": 54,
-      "sources": 23,
+      "articles": 57,
+      "sources": 24,
       "sentiment_direction": "negative",
-      "surge": 11.79,
-      "sentiment_mean": -0.174,
-      "headline": "Ukraine\u2019s Feeling of Moral Whiplash at the Hands of Trump",
+      "surge": 12.0,
+      "sentiment_mean": -0.159,
+      "headline": "Speed of Starshield Satellite Network Is Improving, Ukraine Says",
       "headline_source": "NYT World",
-      "headline_url": "https://www.nytimes.com/2026/10/24/world/europe/ukraine-trump.html"
+      "headline_url": "https://www.nytimes.com/2026/10/24/world/europe/ukraine-starshield-drone-speed.html"
+    },
+    {
+      "term": "iran",
+      "articles": 44,
+      "sources": 24,
+      "sentiment_direction": "negative",
+      "surge": 18.0,
+      "sentiment_mean": -0.309,
+      "headline": "Iran rebuilds drone production as 1,300 Chinese air shipments deliver dual-use components",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1xe3lf8/iran_rebuilds_drone_production_as_1300_chinese/"
+    },
+    {
+      "term": "house",
+      "articles": 40,
+      "sources": 23,
+      "sentiment_direction": "mixed",
+      "surge": 12.95,
+      "sentiment_mean": -0.031,
+      "headline": "White House says Melania Trump brokered truce for Ukraine city 'on brink of disaster'",
+      "headline_source": "BBC World",
+      "headline_url": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss"
     },
     {
       "term": "race",
@@ -84,18 +95,7 @@
       "headline": "How Brazil's changing working class is reshaping the presidential race",
       "headline_source": "BBC World",
       "headline_url": "https://www.bbc.co.uk/news/articles/cw80zx79nkvno?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "term": "data",
-      "articles": 32,
-      "sources": 23,
-      "sentiment_direction": "mixed",
-      "surge": 7.62,
-      "sentiment_mean": 0.015,
-      "headline": "Park24 to pay \u00a53,000 to Times Car users hit by data breach",
-      "headline_source": "Japan Times",
-      "headline_url": "https://www.japantimes.co.jp/business/2026/10/24/park24-3000-yen-compensation/"
     }
   ],
-  "hours_since_fetch": 0.02
+  "hours_since_fetch": 0.0
 }
