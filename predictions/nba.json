@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T08:29:31Z",
+  "generated_at": "2026-10-24T16:00:24Z",
   "date": "2026-10-24",
   "games": [
     {
@@ -135,21 +135,21 @@
       "tipoff": "2026-10-25T00:30Z",
       "pick": "ATL",
       "pred_spread": 0.4,
-      "ml_win_prob": 0.53,
-      "confidence": 0.53,
+      "ml_win_prob": 0.503,
+      "confidence": 0.503,
       "pred_total": 223.1,
       "bet": {
-        "status": "pass",
-        "team": "ATL",
+        "status": "bet",
+        "team": "HOU",
         "stake": 100.0,
-        "selection": "Atlanta Hawks",
-        "price": 1.83,
-        "book": "FanDuel",
+        "selection": "Houston Rockets",
+        "price": 2.05,
+        "book": "BetMGM",
         "quoted_at": "2026-10-24T06:21:49Z",
-        "model_prob": 0.53,
-        "implied_prob": 0.5464,
-        "edge": -0.0164,
-        "ev_per_dollar": -0.0301
+        "model_prob": 0.497,
+        "implied_prob": 0.4878,
+        "edge": 0.0092,
+        "ev_per_dollar": 0.0188
       }
     },
     {
@@ -159,9 +159,9 @@
       "home_team_full": "Denver Nuggets",
       "tipoff": "2026-10-25T01:00Z",
       "pick": "DEN",
-      "pred_spread": -8.4,
-      "ml_win_prob": 0.684,
-      "confidence": 0.684,
+      "pred_spread": -7.9,
+      "ml_win_prob": 0.652,
+      "confidence": 0.652,
       "pred_total": 241.0,
       "bet": {
         "status": "bet",
@@ -171,10 +171,10 @@
         "price": 4.85,
         "book": "FanDuel",
         "quoted_at": "2026-10-24T06:21:49Z",
-        "model_prob": 0.316,
+        "model_prob": 0.348,
         "implied_prob": 0.2062,
-        "edge": 0.1098,
-        "ev_per_dollar": 0.5326
+        "edge": 0.1418,
+        "ev_per_dollar": 0.6878
       }
     },
     {
@@ -184,9 +184,9 @@
       "home_team_full": "Phoenix Suns",
       "tipoff": "2026-10-25T02:00Z",
       "pick": "PHX",
-      "pred_spread": -11.1,
-      "ml_win_prob": 0.643,
-      "confidence": 0.643,
+      "pred_spread": -11.0,
+      "ml_win_prob": 0.656,
+      "confidence": 0.656,
       "pred_total": 222.2,
       "bet": {
         "status": "bet",
@@ -196,10 +196,10 @@
         "price": 4.3,
         "book": "FanDuel",
         "quoted_at": "2026-10-24T06:21:49Z",
-        "model_prob": 0.357,
+        "model_prob": 0.344,
         "implied_prob": 0.2326,
-        "edge": 0.1244,
-        "ev_per_dollar": 0.5351
+        "edge": 0.1114,
+        "ev_per_dollar": 0.4792
       }
     }
   ],
