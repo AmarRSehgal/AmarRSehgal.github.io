@@ -1,13 +1,101 @@
 {
-  "generated_at": "2026-10-22T15:56:53.822828+00:00",
+  "generated_at": "2026-10-24T07:25:28.065373+00:00",
   "window_hours": 24,
-  "articles_in_window": 0,
-  "collection_days": 40,
+  "articles_in_window": 1028,
+  "collection_days": 41,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
   "surge_available": true,
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
-  "topics": [],
-  "hours_since_fetch": 278.54,
-  "note": "No articles collected in the last 24h -- collection has stopped or has not started."
+  "topics": [
+    {
+      "term": "trump",
+      "articles": 121,
+      "sources": 34,
+      "sentiment_direction": "negative",
+      "surge": 23.61,
+      "sentiment_mean": -0.151,
+      "headline": "White House says Melania Trump brokered truce for Ukraine city 'on brink of disaster'",
+      "headline_source": "BBC World",
+      "headline_url": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "term": "president",
+      "articles": 59,
+      "sources": 27,
+      "sentiment_direction": "negative",
+      "surge": 16.36,
+      "sentiment_mean": -0.175,
+      "headline": "Players in WNBA Finals tuning out President Trump, other outside noise, say their focus on the games - AP News",
+      "headline_source": "AP News",
+      "headline_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPUk92eDVKRVM5dGJWSXZZdWtSOGlNQV9UdG5YMTEzYmxyU1R3V0pxY085cFFkMzFKR1BqYW9KRmo2dEl2ekxoWjY0ODlvQ1JjVmFid3F6NHJLS2hfUFNFeUg5Wk5yWnV3dTFjQVZUTlhXXzFZY0NjS2NaZ3M5UDhEUzMyWQ?oc=5"
+    },
+    {
+      "term": "election",
+      "articles": 53,
+      "sources": 26,
+      "sentiment_direction": "mixed",
+      "surge": 23.14,
+      "sentiment_mean": -0.15,
+      "headline": "Opposition deepfake video of Spanish PM\u2019s wife sparks outrage before election",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/world/2026/oct/23/opposition-deepfake-video-spain-election"
+    },
+    {
+      "term": "city",
+      "articles": 40,
+      "sources": 22,
+      "sentiment_direction": "negative",
+      "surge": 16.4,
+      "sentiment_mean": -0.242,
+      "headline": "White House says Melania Trump brokered truce for Ukraine city 'on brink of disaster'",
+      "headline_source": "BBC World",
+      "headline_url": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "term": "iran",
+      "articles": 36,
+      "sources": 22,
+      "sentiment_direction": "negative",
+      "surge": 18.5,
+      "sentiment_mean": -0.348,
+      "headline": "Gulf nations brace for possible return to all-out war between US and Iran",
+      "headline_source": "Reddit r/geopolitics",
+      "headline_url": "https://www.reddit.com/r/geopolitics/comments/1xe0w19/gulf_nations_brace_for_possible_return_to_allout/"
+    },
+    {
+      "term": "race",
+      "articles": 31,
+      "sources": 22,
+      "sentiment_direction": "mixed",
+      "surge": 11.29,
+      "sentiment_mean": -0.086,
+      "headline": "How Brazil's changing working class is reshaping the presidential race",
+      "headline_source": "BBC World",
+      "headline_url": "https://www.bbc.co.uk/news/articles/cw80zx79nkvno?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "term": "ukraine",
+      "articles": 49,
+      "sources": 21,
+      "sentiment_direction": "negative",
+      "surge": 11.11,
+      "sentiment_mean": -0.194,
+      "headline": "White House says Melania Trump brokered truce for Ukraine city 'on brink of disaster'",
+      "headline_source": "BBC World",
+      "headline_url": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "term": "police",
+      "articles": 48,
+      "sources": 21,
+      "sentiment_direction": "negative",
+      "surge": 26.73,
+      "sentiment_mean": -0.611,
+      "headline": "A teenager starved to death months after being detained. Her mom\u2019s taking police to court",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1xe1dmz/a_teenager_starved_to_death_months_after_being/"
+    }
+  ],
+  "hours_since_fetch": 0.0
 }
