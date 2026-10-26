@@ -1,15 +1,140 @@
 {
-  "generated_at": "2026-10-25T23:05:07Z",
+  "generated_at": "2026-10-26T03:05:06Z",
   "track_record": {
-    "races_scored": 3,
+    "races_scored": 4,
     "basis": "grids published to the site before each race, from the run ledger",
     "winners_correct": 3,
-    "winner_hit_rate": 1.0,
-    "podium_hits": 7,
-    "podium_slots": 9,
-    "mean_abs_position_error": 3.07,
-    "mean_spearman": 0.708,
+    "winner_hit_rate": 0.75,
+    "podium_hits": 9,
+    "podium_slots": 12,
+    "mean_abs_position_error": 2.9,
+    "mean_spearman": 0.746,
     "races": [
+      {
+        "year": 2026,
+        "round": 18,
+        "race_name": "United States Grand Prix",
+        "published_at": "2026-10-25T07:34:42Z",
+        "drivers_scored": 22,
+        "predicted_winner": "VER",
+        "actual_winner": "ANT",
+        "winner_correct": false,
+        "podium_hits": 2,
+        "mean_abs_position_error": 2.36,
+        "spearman": 0.86,
+        "finishers": [
+          {
+            "driver": "ANT",
+            "predicted": 3,
+            "actual": 1
+          },
+          {
+            "driver": "LEC",
+            "predicted": 4,
+            "actual": 2
+          },
+          {
+            "driver": "VER",
+            "predicted": 1,
+            "actual": 3
+          },
+          {
+            "driver": "HAM",
+            "predicted": 5,
+            "actual": 4
+          },
+          {
+            "driver": "NOR",
+            "predicted": 6,
+            "actual": 5
+          },
+          {
+            "driver": "HAD",
+            "predicted": 7,
+            "actual": 6
+          },
+          {
+            "driver": "PIA",
+            "predicted": 8,
+            "actual": 7
+          },
+          {
+            "driver": "RUS",
+            "predicted": 2,
+            "actual": 8
+          },
+          {
+            "driver": "LAW",
+            "predicted": 9,
+            "actual": 9
+          },
+          {
+            "driver": "GAS",
+            "predicted": 12,
+            "actual": 10
+          },
+          {
+            "driver": "HUL",
+            "predicted": 10,
+            "actual": 11
+          },
+          {
+            "driver": "LIN",
+            "predicted": 11,
+            "actual": 12
+          },
+          {
+            "driver": "BOR",
+            "predicted": 15,
+            "actual": 13
+          },
+          {
+            "driver": "OCO",
+            "predicted": 16,
+            "actual": 14
+          },
+          {
+            "driver": "STR",
+            "predicted": 20,
+            "actual": 15
+          },
+          {
+            "driver": "ALO",
+            "predicted": 17,
+            "actual": 16
+          },
+          {
+            "driver": "ALB",
+            "predicted": 22,
+            "actual": 17
+          },
+          {
+            "driver": "SAI",
+            "predicted": 18,
+            "actual": 18
+          },
+          {
+            "driver": "PER",
+            "predicted": 19,
+            "actual": 19
+          },
+          {
+            "driver": "BOT",
+            "predicted": 21,
+            "actual": 20
+          },
+          {
+            "driver": "COL",
+            "predicted": 14,
+            "actual": 21
+          },
+          {
+            "driver": "BEA",
+            "predicted": 13,
+            "actual": 22
+          }
+        ]
+      },
       {
         "year": 2026,
         "round": 17,
