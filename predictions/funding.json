@@ -1,10 +1,23 @@
 {
-  "generated_at": "2026-10-25T23:00:11.179083+00:00",
+  "generated_at": "2026-10-26T00:00:10.204298+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
+    {
+      "base": "ROBO",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 864.17,
+      "net_at_hold": 0.7892,
+      "cost_bps": 26.0
+    },
     {
       "base": "LDO",
       "type": "perp-perp",
@@ -94,19 +107,6 @@
       "scans": 24,
       "net_apr": 802.42,
       "net_at_hold": 0.7328,
-      "cost_bps": 26.0
-    },
-    {
-      "base": "TIA",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 795.41,
-      "net_at_hold": 0.7264,
       "cost_bps": 26.0
     }
   ]
