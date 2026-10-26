@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-26T02:24:49.977667+00:00",
+  "generated_at": "2026-10-26T03:24:51.409618+00:00",
   "window_hours": 24,
-  "articles_in_window": 1632,
+  "articles_in_window": 1648,
   "collection_days": 43,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,36 +10,69 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 162,
-      "sources": 32,
+      "articles": 167,
+      "sources": 31,
       "sentiment_direction": "negative",
-      "surge": 2.88,
-      "sentiment_mean": -0.242,
-      "headline": "Ninth Circuit questions Trump DOJ's emergency request to set aside 20,000 California mail ballots",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/politics/ninth-circuit-questions-trump-doj-emergency-request-set-aside-20000-california-mail-ballots"
+      "surge": 2.93,
+      "sentiment_mean": -0.246,
+      "headline": "Vladimir Putin seems to have Donald Trump exactly where he wants him",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1xflm9b/vladimir_putin_seems_to_have_donald_trump_exactly/"
     },
     {
       "term": "election",
-      "articles": 153,
-      "sources": 28,
+      "articles": 155,
+      "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 6.42,
-      "sentiment_mean": -0.073,
-      "headline": "Brazil Markets Brace for Rout on Lula\u2019s Improbable Election Win",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/articles/2026-10-26/brazil-markets-brace-for-rout-on-lula-s-improbable-election-win"
+      "surge": 6.46,
+      "sentiment_mean": -0.072,
+      "headline": "Trump critic Lula comes from behind to win re-election in Brazil",
+      "headline_source": "Sydney Morning Herald",
+      "headline_url": "https://www.smh.com.au/world/south-america/trump-critic-lula-comes-from-behind-to-win-re-election-in-brazil-20261026-p618m9.html?ref=rss&utm_medium=rss&utm_source=rss_world"
     },
     {
       "term": "president",
-      "articles": 100,
-      "sources": 27,
+      "articles": 99,
+      "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 3.81,
-      "sentiment_mean": -0.029,
-      "headline": "Brazil\u2019s Lula beats Bolsonaro to win fourth term as president",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/economy-news/brazils-lula-beats-bolsonaro-to-win-fourth-term-as-president-4971348"
+      "surge": 3.7,
+      "sentiment_mean": -0.02,
+      "headline": "Global leaders react to Brazil President Lula's reelection",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1xfkupw/global_leaders_react_to_brazil_president_lulas/"
+    },
+    {
+      "term": "elections",
+      "articles": 69,
+      "sources": 26,
+      "sentiment_direction": "negative",
+      "surge": 5.45,
+      "sentiment_mean": -0.166,
+      "headline": "Brazil elections: Lula secures fourth term after dramatic comeback",
+      "headline_source": "Hacker News",
+      "headline_url": "https://www.bbc.com/news/articles/cmvg7p001qj9o"
+    },
+    {
+      "term": "brazil",
+      "articles": 67,
+      "sources": 25,
+      "sentiment_direction": "mixed",
+      "surge": 8.33,
+      "sentiment_mean": 0.098,
+      "headline": "Brazil elections: Lula secures fourth term after dramatic comeback",
+      "headline_source": "Hacker News",
+      "headline_url": "https://www.bbc.com/news/articles/cmvg7p001qj9o"
+    },
+    {
+      "term": "lula",
+      "articles": 67,
+      "sources": 25,
+      "sentiment_direction": "mixed",
+      "surge": 12.36,
+      "sentiment_mean": 0.101,
+      "headline": "Brazil elections: Lula secures fourth term after dramatic comeback",
+      "headline_source": "Hacker News",
+      "headline_url": "https://www.bbc.com/news/articles/cmvg7p001qj9o"
     },
     {
       "term": "returns",
@@ -53,48 +86,15 @@
       "headline_url": "https://www.japantimes.co.jp/news/2026/10/26/world/machado-venezuela-return/"
     },
     {
-      "term": "elections",
-      "articles": 67,
-      "sources": 24,
-      "sentiment_direction": "negative",
-      "surge": 5.44,
-      "sentiment_mean": -0.168,
-      "headline": "Brazil elections: Lula leads Bolsonaro with 80% of votes counted",
-      "headline_source": "DW News",
-      "headline_url": "https://www.dw.com/en/brazil-elections-lula-leads-bolsonaro-with-80-of-votes-counted/live-79755630?maca=en-rss-en-all-1573-rdf"
-    },
-    {
-      "term": "lula",
-      "articles": 64,
-      "sources": 24,
+      "term": "leader",
+      "articles": 72,
+      "sources": 23,
       "sentiment_direction": "mixed",
-      "surge": 12.19,
-      "sentiment_mean": 0.104,
-      "headline": "\u2018Brazil is no one\u2019s backyard\u2019: Lula\u2019s swipe at US after Bolsonaro\u2019s defeat",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/rest-of-world/brazil-is-no-ones-backyard-lulas-jibe-at-us-after-winning-fourth-presidential-term/articleshow/135200567.cms"
-    },
-    {
-      "term": "brazil",
-      "articles": 62,
-      "sources": 24,
-      "sentiment_direction": "mixed",
-      "surge": 7.71,
-      "sentiment_mean": 0.09,
-      "headline": "\u2018Brazil is no one\u2019s backyard\u2019: Lula\u2019s swipe at US after Bolsonaro\u2019s defeat",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/rest-of-world/brazil-is-no-ones-backyard-lulas-jibe-at-us-after-winning-fourth-presidential-term/articleshow/135200567.cms"
-    },
-    {
-      "term": "bank",
-      "articles": 43,
-      "sources": 24,
-      "sentiment_direction": "negative",
-      "surge": 2.93,
-      "sentiment_mean": -0.175,
-      "headline": "Currency markets subdued ahead of pivotal central bank week - Reuters",
-      "headline_source": "Reuters",
-      "headline_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWlRGQXNlMDJDS0ZlQnJqVlI0Q3FOUUhyZmpfcUY2TDJNOTA5a0NDMEc5QWpKZ3NrQlZ0QWJSMERlU2wzQlFxcWF0OVFRVlNOSUYydEdiaU5LaTFvVDMxTk5NWTF6NVVFZEdRcW8tOHpZRnlmWDhiRnV3QlllYnVtVldqTGllWmY2RnF1MWVlMFRBT0xWbHliN3pWM3NhQnNzRV80ZHJ5T0M?oc=5"
+      "surge": 11.53,
+      "sentiment_mean": 0.026,
+      "headline": "One year after split with LDP, Komeito seeks fresh direction with new leader",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/news/2026/10/26/japan/politics/komeito-okamoto/"
     }
   ],
   "hours_since_fetch": 0.0
