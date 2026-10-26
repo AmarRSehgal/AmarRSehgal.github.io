@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-26T00:24:47.199279+00:00",
+  "generated_at": "2026-10-26T01:24:47.445202+00:00",
   "window_hours": 24,
-  "articles_in_window": 1596,
+  "articles_in_window": 1617,
   "collection_days": 43,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,47 +10,69 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 160,
-      "sources": 30,
+      "articles": 164,
+      "sources": 32,
       "sentiment_direction": "negative",
-      "surge": 3.02,
-      "sentiment_mean": -0.231,
-      "headline": "Trump-backed right-wing Flavio Bolsonaro loses to incumbent left-wing President, Lula Da Silva in Brazil",
-      "headline_source": "Reddit r/politics",
-      "headline_url": "https://www.reddit.com/r/politics/comments/1xfi1l9/trumpbacked_rightwing_flavio_bolsonaro_loses_to/"
+      "surge": 2.99,
+      "sentiment_mean": -0.219,
+      "headline": "Trump critic Lula wins reelection in Brazil, securing fourth presidential term",
+      "headline_source": "ABC News",
+      "headline_url": "https://abcnews.com/Business/wireStory/brazil-faces-tense-lula-bolsonaro-runoff-us-influence-137548341"
     },
     {
       "term": "election",
-      "articles": 139,
-      "sources": 27,
+      "articles": 154,
+      "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 6.09,
-      "sentiment_mean": -0.12,
-      "headline": "Netanyahu's party lags in polls ahead of first election since Oct. 7, 2023",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/netanyahus-party-lags-polls-ahead-first-election-since-oct-7-2023/"
+      "surge": 6.64,
+      "sentiment_mean": -0.065,
+      "headline": "Brazil's Lula wins presidential election in runoff vote",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/10/26/brazil-lula-win-presidential-election-runoff-vote.html"
     },
     {
       "term": "president",
-      "articles": 87,
-      "sources": 25,
+      "articles": 96,
+      "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 3.5,
-      "sentiment_mean": -0.122,
-      "headline": "Trump-backed right-wing Flavio Bolsonaro loses to incumbent left-wing President, Lula Da Silva in Brazil",
-      "headline_source": "Reddit r/politics",
-      "headline_url": "https://www.reddit.com/r/politics/comments/1xfi1l9/trumpbacked_rightwing_flavio_bolsonaro_loses_to/"
+      "surge": 3.73,
+      "sentiment_mean": -0.059,
+      "headline": "Lula re-elected Brazil\u2019s president in knife-edge election",
+      "headline_source": "Financial Times",
+      "headline_url": "https://www.ft.com/content/7585a18f-88d9-4fcd-882d-ed938c7c9c41?syn-25a6b1a6=1"
     },
     {
-      "term": "elections",
-      "articles": 66,
+      "term": "brazil",
+      "articles": 58,
+      "sources": 25,
+      "sentiment_direction": "mixed",
+      "surge": 7.7,
+      "sentiment_mean": 0.113,
+      "headline": "Brazil's Lula wins presidential election in runoff vote",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/10/26/brazil-lula-win-presidential-election-runoff-vote.html"
+    },
+    {
+      "term": "returns",
+      "articles": 34,
+      "sources": 25,
+      "sentiment_direction": "positive",
+      "surge": 8.75,
+      "sentiment_mean": 0.192,
+      "headline": "Machado returns to Venezuela to urge democratic transition",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/news/2026/10/26/world/machado-venezuela-return/"
+    },
+    {
+      "term": "lula",
+      "articles": 59,
       "sources": 24,
-      "sentiment_direction": "negative",
-      "surge": 5.66,
-      "sentiment_mean": -0.195,
-      "headline": "Brazil elections: Lula leads Bolsonaro with 80% of votes counted",
-      "headline_source": "DW News",
-      "headline_url": "https://www.dw.com/en/brazil-elections-lula-leads-bolsonaro-with-80-of-votes-counted/live-79755630?maca=en-rss-en-all-1573-rdf"
+      "sentiment_direction": "mixed",
+      "surge": 12.41,
+      "sentiment_mean": 0.124,
+      "headline": "Brazil's Lula wins presidential election in runoff vote",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/10/26/brazil-lula-win-presidential-election-runoff-vote.html"
     },
     {
       "term": "bank",
@@ -64,37 +86,15 @@
       "headline_url": "https://www.nbcnews.com/nightly-news/video/crackdown-in-the-west-bank-days-ahead-of-israeli-elections-272201285820"
     },
     {
-      "term": "returns",
-      "articles": 32,
-      "sources": 24,
-      "sentiment_direction": "positive",
-      "surge": 8.25,
-      "sentiment_mean": 0.221,
-      "headline": "Venezuela\u2019s opposition leader Machado returns after months in exile",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/10/25/venezuelas-opposition-leader-machado-returns-after-months-in-exile?traffic_source=rss"
-    },
-    {
-      "term": "leader",
-      "articles": 64,
-      "sources": 23,
-      "sentiment_direction": "mixed",
-      "surge": 11.14,
-      "sentiment_mean": 0.0,
-      "headline": "Venezuela\u2019s opposition leader Machado returns after months in exile",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/10/25/venezuelas-opposition-leader-machado-returns-after-months-in-exile?traffic_source=rss"
-    },
-    {
-      "term": "across",
-      "articles": 58,
+      "term": "elections",
+      "articles": 68,
       "sources": 23,
       "sentiment_direction": "negative",
-      "surge": 2.77,
-      "sentiment_mean": -0.218,
-      "headline": "LogSync: an implantable neural chip focused on psychiatric applications that tracks communication across brain regions, identifying cognitive and emotional states in real time. It measures 4\u00d72 mm and requires less than 200 microwatts",
-      "headline_source": "Reddit r/science",
-      "headline_url": "https://www.reddit.com/r/science/comments/1xf8pb3/logsync_an_implantable_neural_chip_focused_on/"
+      "surge": 5.67,
+      "sentiment_mean": -0.162,
+      "headline": "Brazil elections: Lula leads Bolsonaro with 80% of votes counted",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/brazil-elections-lula-leads-bolsonaro-with-80-of-votes-counted/live-79755630?maca=en-rss-en-all-1573-rdf"
     }
   ],
   "hours_since_fetch": 0.0
