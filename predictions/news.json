@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-26T14:25:04.191989+00:00",
+  "generated_at": "2026-10-26T15:24:55.907008+00:00",
   "window_hours": 24,
-  "articles_in_window": 1986,
+  "articles_in_window": 2069,
   "collection_days": 43,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,91 +10,91 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 198,
+      "articles": 203,
       "sources": 35,
       "sentiment_direction": "negative",
-      "surge": 2.95,
-      "sentiment_mean": -0.212,
-      "headline": "Opinion | How Trump Unwittingly Boosted Green Energy",
+      "surge": 2.96,
+      "sentiment_mean": -0.231,
+      "headline": "Trump's DOE posts map of US with two states missing in humiliating error",
       "headline_source": "Reddit r/energy",
-      "headline_url": "https://www.reddit.com/r/energy/comments/1xfy0va/opinion_how_trump_unwittingly_boosted_green_energy/"
-    },
-    {
-      "term": "election",
-      "articles": 176,
-      "sources": 32,
-      "sentiment_direction": "mixed",
-      "surge": 5.13,
-      "sentiment_mean": -0.053,
-      "headline": "Brazilian Markets Convulse After Unlikely Election Result",
-      "headline_source": "NYT Business",
-      "headline_url": "https://www.nytimes.com/2026/10/26/business/brazil-markets-election-lula.html"
+      "headline_url": "https://www.reddit.com/r/energy/comments/1xfzo2u/trumps_doe_posts_map_of_us_with_two_states/"
     },
     {
       "term": "president",
-      "articles": 136,
+      "articles": 145,
+      "sources": 33,
+      "sentiment_direction": "mixed",
+      "surge": 4.54,
+      "sentiment_mean": 0.03,
+      "headline": "French President promises 'concrete measures' in response to French students' demands",
+      "headline_source": "France24",
+      "headline_url": "https://www.france24.com/en/video/20261026-french-president-promises-concrete-measures-in-response-to-french-students-demands"
+    },
+    {
+      "term": "election",
+      "articles": 180,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 4.3,
-      "sentiment_mean": 0.025,
-      "headline": "Who is Lula? From ex-worker and prisoner to Brazil's president again",
-      "headline_source": "BBC World",
-      "headline_url": "https://www.bbc.co.uk/news/articles/c35yn2ye1x85o?at_medium=RSS&at_campaign=rss"
+      "surge": 5.07,
+      "sentiment_mean": -0.039,
+      "headline": "Alaska Senate: Peltola seeks quick dismissal of DOJ election lawsuit before midterm",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/10/26/alaska-senate-peltola-doj-lawsuit-election-sullivan.html"
     },
     {
       "term": "lula",
-      "articles": 104,
-      "sources": 30,
+      "articles": 109,
+      "sources": 31,
       "sentiment_direction": "positive",
-      "surge": 12.12,
-      "sentiment_mean": 0.241,
-      "headline": "Lula wins fourth term: What are the reactions in Brazil?",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/lula-wins-fourth-term-what-are-the-reactions-in-brazil"
+      "surge": 12.45,
+      "sentiment_mean": 0.257,
+      "headline": "Win for Lula boosts China\u2019s foothold and gives Brazil rare earths leverage",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/china/diplomacy/article/3372207/win-lula-boosts-chinas-foothold-and-gives-brazil-rare-earths-leverage"
     },
     {
       "term": "brazil",
-      "articles": 99,
-      "sources": 29,
+      "articles": 104,
+      "sources": 30,
       "sentiment_direction": "positive",
-      "surge": 8.82,
-      "sentiment_mean": 0.211,
-      "headline": "Lula wins fourth term: What are the reactions in Brazil?",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/lula-wins-fourth-term-what-are-the-reactions-in-brazil"
+      "surge": 9.13,
+      "sentiment_mean": 0.228,
+      "headline": "Win for Lula boosts China\u2019s foothold and gives Brazil rare earths leverage",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/china/diplomacy/article/3372207/win-lula-boosts-chinas-foothold-and-gives-brazil-rare-earths-leverage"
     },
     {
       "term": "elections",
       "articles": 82,
-      "sources": 29,
+      "sources": 30,
       "sentiment_direction": "negative",
-      "surge": 4.98,
-      "sentiment_mean": -0.206,
-      "headline": "Israel braces for national elections seen as a referendum on Netanyahu",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/israel-braces-for-national-elections-seen-as-a-referendum-on-netanyahu"
-    },
-    {
-      "term": "country",
-      "articles": 66,
-      "sources": 25,
-      "sentiment_direction": "mixed",
-      "surge": 3.12,
-      "sentiment_mean": -0.057,
-      "headline": "Nigeria's Ebola patient medically evacuated from country, Arise TV reports - Reuters",
-      "headline_source": "Reuters",
-      "headline_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQ2JzYTNSSkhYZVdfa2VWN092SzJLc3I1d3dWdjhtQjIzcHNFVVJYUVN0N3d4MllSZTJyTEtyYkEzeGx0TXljcDZpNkZfZlBLbXMtY0VUcHdsV2JabXlkYzlhZTZKRi03dEhqeTZYZk15SlBseW9iMHRCLU9ueFR0TVQyUWtrZHJwU0E4UVVIcGZPczVCRURkNzQyZXVCREJpRExJWjFqenVHYUFCSjlMWDREN216Y1U?oc=5"
+      "surge": 4.7,
+      "sentiment_mean": -0.223,
+      "headline": "Inside House GOP's unprecedented push to monitor midterm elections and prepare for legal fights",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/politics/inside-house-gops-unprecedented-push-monitor-midterm-elections-prepare-legal-fights"
     },
     {
       "term": "government",
-      "articles": 64,
-      "sources": 25,
+      "articles": 70,
+      "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 2.89,
-      "sentiment_mean": -0.088,
+      "surge": 3.16,
+      "sentiment_mean": -0.083,
       "headline": "The US Government Is Hiding a Secret Court Ruling About How It Spies on Americans",
-      "headline_source": "Wired",
-      "headline_url": "https://www.wired.com/story/the-us-government-is-hiding-a-secret-court-ruling-about-how-it-spies-on-americans/"
+      "headline_source": "Reddit r/politics",
+      "headline_url": "https://www.reddit.com/r/politics/comments/1xfyisv/the_us_government_is_hiding_a_secret_court_ruling/"
+    },
+    {
+      "term": "anthropic",
+      "articles": 51,
+      "sources": 27,
+      "sentiment_direction": "positive",
+      "surge": 14.86,
+      "sentiment_mean": 0.204,
+      "headline": "Anthropic\u2019s IPO: A close look at AI frontrunner\u2019s rapid growth, spiraling costs",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/stock-market-news/anthropics-ipo-a-close-look-at-ai-frontrunners-rapid-growth-spiraling-costs-4972917"
     }
   ],
   "hours_since_fetch": 0.0
