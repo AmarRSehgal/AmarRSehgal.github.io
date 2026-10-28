@@ -29,6 +29,7 @@ import json
 import os
 import subprocess
 import sys
+from datetime import datetime, timezone
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_DIR = os.path.join(REPO, "predictions", "history")
@@ -54,7 +55,9 @@ def git(*args: str) -> str:
 def runs(feed: str) -> list[dict]:
     path = f"predictions/{feed}.json"
     out, seen = [], set()
-    log = git("log", "--format=%H %aI", "--reverse", "--", path).strip()
+    # Epoch, rendered in UTC: %aI carries whatever zone the Mac was set to that day, and a
+    # laptop that travels left 2026-10-08..24 stamped +08:00 among the -07:00 rows.
+    log = git("log", "--format=%H %at", "--reverse", "--", path).strip()
     for line in log.split("\n"):
         if not line.strip():
             continue
@@ -72,7 +75,7 @@ def runs(feed: str) -> list[dict]:
         rec = {k: v for k, v in data.items()
                if k not in (FEEDS[feed], "methodology", "caveat")}
         rec["_sha"] = sha
-        rec["_committed_at"] = committed
+        rec["_committed_at"] = datetime.fromtimestamp(int(committed), timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         rec["_items"] = data.get(FEEDS[feed]) or []
         out.append(rec)
     return out
