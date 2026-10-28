@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T06:00:10.470376+00:00",
+  "generated_at": "2026-10-28T07:00:10.594919+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -29,7 +29,7 @@
       "scans": 24,
       "net_apr": 678.81,
       "net_at_hold": 0.30996,
-      "cost_bps": 26.87
+      "cost_bps": 26.89
     },
     {
       "base": "DOOD",
@@ -81,7 +81,7 @@
       "scans": 24,
       "net_apr": 517.67,
       "net_at_hold": 0.47276,
-      "cost_bps": 54.12
+      "cost_bps": 54.37
     },
     {
       "base": "DOOD",
@@ -94,20 +94,20 @@
       "scans": 24,
       "net_apr": 735.57,
       "net_at_hold": 0.33588,
-      "cost_bps": 26.86
+      "cost_bps": 26.87
     },
     {
       "base": "DOOD",
       "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "Aster",
+      "long_venue": "Binance",
+      "short_venue": "Hyperliquid",
       "long_instrument": "perp",
-      "min_hold_h": 8,
+      "min_hold_h": 4,
       "hits": 23,
       "scans": 24,
-      "net_apr": 621.75,
-      "net_at_hold": 0.5678,
-      "cost_bps": 49.99
+      "net_apr": 694.41,
+      "net_at_hold": 0.31708,
+      "cost_bps": 27.0
     }
   ]
 }
