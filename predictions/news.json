@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-28T22:25:02.520456+00:00",
+  "generated_at": "2026-10-28T23:25:45.048001+00:00",
   "window_hours": 24,
-  "articles_in_window": 2629,
+  "articles_in_window": 2630,
   "collection_days": 45,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,92 +9,92 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
+      "term": "election",
+      "articles": 180,
+      "sources": 36,
+      "sentiment_direction": "negative",
+      "surge": 1.61,
+      "sentiment_mean": -0.152,
+      "headline": "What's next for Israel after election produces political gridlock",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/show/whats-next-for-israel-after-election-produces-political-gridlock"
+    },
+    {
       "term": "government",
-      "articles": 129,
+      "articles": 124,
       "sources": 36,
       "sentiment_direction": "mixed",
-      "surge": 2.47,
-      "sentiment_mean": 0.017,
-      "headline": "AI company aims to make confusing local government easier to understand",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/ai-company-hamlet-aims-make-local-government-easier-understand/"
-    },
-    {
-      "term": "election",
-      "articles": 185,
-      "sources": 35,
-      "sentiment_direction": "mixed",
-      "surge": 1.68,
-      "sentiment_mean": -0.113,
-      "headline": "California election official says federal agents threatened him over \u2018voter fraud\u2019",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/us-news/2026/oct/28/california-elections-federal-agents-voter-fraud"
-    },
-    {
-      "term": "trump",
-      "articles": 193,
-      "sources": 34,
-      "sentiment_direction": "mixed",
-      "surge": 1.18,
-      "sentiment_mean": -0.099,
-      "headline": "UN condemns US embargo of Cuba, but more nations sit out after Trump pressure",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/world/americas/article/3372494/un-condemns-us-embargo-cuba-more-nations-sit-out-after-trump-pressure"
+      "surge": 2.3,
+      "sentiment_mean": 0.032,
+      "headline": "Rahul lashes out at government over Tatas, FM Nirmala Sitharaman hits back",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/india/rahul-lashes-out-at-government-over-tatas-fm-nirmala-sitharaman-hits-back/articleshow/135280964.cms"
     },
     {
       "term": "costs",
-      "articles": 76,
-      "sources": 33,
+      "articles": 80,
+      "sources": 35,
       "sentiment_direction": "mixed",
-      "surge": 2.61,
-      "sentiment_mean": -0.069,
-      "headline": "Craig Carton rips Chiefs' 'win at all costs' approach after controversial Justin Tucker signing",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/outkick-sports/craig-carton-rips-chiefs-win-all-costs-approach-controversial-justin-tucker-signing"
+      "surge": 2.75,
+      "sentiment_mean": -0.071,
+      "headline": "Super-rich get \u2018double dividend\u2019 from causes and costs of climate crisis, report finds",
+      "headline_source": "Reddit r/environment",
+      "headline_url": "https://www.reddit.com/r/environment/comments/1xi2kwh/superrich_get_double_dividend_from_causes_and/"
+    },
+    {
+      "term": "trump",
+      "articles": 177,
+      "sources": 34,
+      "sentiment_direction": "mixed",
+      "surge": 1.05,
+      "sentiment_mean": -0.109,
+      "headline": "UN condemns U.S. economic embargo of Cuba though more nations sit out amid Trump push",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/world/un-condemns-u-s-economic-embargo-of-cuba-though-more-nations-sit-out-amid-trump-push"
     },
     {
       "term": "results",
-      "articles": 86,
-      "sources": 32,
+      "articles": 87,
+      "sources": 33,
       "sentiment_direction": "positive",
-      "surge": 3.37,
-      "sentiment_mean": 0.267,
-      "headline": "Align Q3 2026 slides: aligner growth lifts results, scanner shift continues",
+      "surge": 3.32,
+      "sentiment_mean": 0.25,
+      "headline": "Earnings call transcript: Rush Street Interactive Q3 2026 results beat on EPS",
       "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/company-news/align-q3-2026-slides-aligner-growth-lifts-results-scanner-shift-continues-93CH-4981091"
+      "headline_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-rush-street-interactive-q3-2026-results-beat-on-eps-93CH-4981190"
     },
     {
       "term": "president",
-      "articles": 103,
-      "sources": 30,
+      "articles": 95,
+      "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 1.25,
-      "sentiment_mean": -0.037,
-      "headline": "Former President Obama campaigns for Democrats in Georgia ahead of midterms",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/former-president-obama-campaigns-for-democrats-in-georgia-ahead-of-midterms/"
+      "surge": 1.12,
+      "sentiment_mean": -0.027,
+      "headline": "Brazil's Bolsonaro deletes letter calling himself 'president-elect,' changes wording to 'leader'",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1xi3153/brazils_bolsonaro_deletes_letter_calling_himself/"
     },
     {
       "term": "rates",
       "articles": 75,
       "sources": 29,
       "sentiment_direction": "positive",
-      "surge": 6.33,
-      "sentiment_mean": 0.284,
-      "headline": "Federal reserve holds interest rates steady despite high inflation",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/federal-reserve-holds-interest-rates-steady-despite-high-inflation/"
+      "surge": 6.16,
+      "sentiment_mean": 0.261,
+      "headline": "ECB to hold rates as investors focus on French bonds,\u00a0Lagarde\u2019s future",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/economy-news/ecb-to-hold-rates-as-investors-focus-on-french-bondslagardes-future-4981183"
     },
     {
-      "term": "record",
-      "articles": 65,
+      "term": "rate",
+      "articles": 74,
       "sources": 29,
       "sentiment_direction": "positive",
-      "surge": 2.19,
-      "sentiment_mean": 0.243,
-      "headline": "Microsoft hits 10 quarters of record-breaking revenue in a row",
-      "headline_source": "TechCrunch",
-      "headline_url": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/"
+      "surge": 3.81,
+      "sentiment_mean": 0.401,
+      "headline": "Here are five key takeaways from the Fed rate decision and Warsh news conference",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/10/28/fed-rate-decision-warsh-takeaways.html"
     }
   ],
   "hours_since_fetch": 0.0
