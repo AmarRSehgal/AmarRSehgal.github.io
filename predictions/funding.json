@@ -1,10 +1,23 @@
 {
-  "generated_at": "2026-10-28T20:00:07.531375+00:00",
+  "generated_at": "2026-10-28T21:00:10.513330+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
+    {
+      "base": "TIA",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Crypto.com",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 20,
+      "scans": 24,
+      "net_apr": 156.04,
+      "net_at_hold": 0.14251,
+      "cost_bps": 20.19
+    },
     {
       "base": "DOOD",
       "type": "perp-perp",
@@ -12,11 +25,11 @@
       "short_venue": "Hyperliquid",
       "long_instrument": "perp",
       "min_hold_h": 4,
-      "hits": 20,
+      "hits": 19,
       "scans": 24,
-      "net_apr": 1257.35,
-      "net_at_hold": 0.57413,
-      "cost_bps": 27.92
+      "net_apr": 1509.09,
+      "net_at_hold": 0.68908,
+      "cost_bps": 27.95
     },
     {
       "base": "DOOD",
@@ -25,50 +38,24 @@
       "short_venue": "Hyperliquid",
       "long_instrument": "perp",
       "min_hold_h": 4,
-      "hits": 20,
+      "hits": 19,
       "scans": 24,
-      "net_apr": 1044.32,
-      "net_at_hold": 0.47686,
+      "net_apr": 1310.86,
+      "net_at_hold": 0.59857,
       "cost_bps": 27.0
     },
     {
       "base": "DOOD",
       "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "Hyperliquid",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 20,
-      "scans": 24,
-      "net_apr": 1023.38,
-      "net_at_hold": 0.4673,
-      "cost_bps": 26.87
-    },
-    {
-      "base": "DOOD",
-      "type": "perp-perp",
       "long_venue": "Binance",
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 20,
+      "hits": 19,
       "scans": 24,
-      "net_apr": 973.49,
-      "net_at_hold": 0.88903,
-      "cost_bps": 50.1
-    },
-    {
-      "base": "DOOD",
-      "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 20,
-      "scans": 24,
-      "net_apr": 957.01,
-      "net_at_hold": 0.87398,
-      "cost_bps": 51.82
+      "net_apr": 1292.92,
+      "net_at_hold": 1.18075,
+      "cost_bps": 50.36
     },
     {
       "base": "DOOD",
@@ -77,11 +64,37 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 20,
+      "hits": 19,
       "scans": 24,
-      "net_apr": 939.97,
-      "net_at_hold": 0.85842,
-      "cost_bps": 55.15
+      "net_apr": 1218.28,
+      "net_at_hold": 1.11259,
+      "cost_bps": 55.52
+    },
+    {
+      "base": "DOOD",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "Hyperliquid",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 19,
+      "scans": 24,
+      "net_apr": 1105.93,
+      "net_at_hold": 0.50499,
+      "cost_bps": 26.87
+    },
+    {
+      "base": "DOOD",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 19,
+      "scans": 24,
+      "net_apr": 1086.36,
+      "net_at_hold": 0.99211,
+      "cost_bps": 52.89
     },
     {
       "base": "DOOD",
@@ -90,24 +103,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 20,
-      "scans": 24,
-      "net_apr": 697.88,
-      "net_at_hold": 0.63733,
-      "cost_bps": 50.12
-    },
-    {
-      "base": "DOOD",
-      "type": "perp-perp",
-      "long_venue": "Bybit",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 1500.26,
-      "net_at_hold": 1.3701,
-      "cost_bps": 54.54
+      "net_apr": 720.16,
+      "net_at_hold": 0.65768,
+      "cost_bps": 50.44
     }
   ]
 }
