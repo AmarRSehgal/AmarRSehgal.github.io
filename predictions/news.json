@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-28T03:25:50.617363+00:00",
+  "generated_at": "2026-10-28T04:24:55.582446+00:00",
   "window_hours": 24,
-  "articles_in_window": 2582,
+  "articles_in_window": 2600,
   "collection_days": 45,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,36 +10,36 @@
   "topics": [
     {
       "term": "government",
-      "articles": 112,
+      "articles": 113,
       "sources": 37,
       "sentiment_direction": "mixed",
-      "surge": 2.84,
-      "sentiment_mean": -0.102,
-      "headline": "Trump says government to \u2018terminate\u2019 Biden-era methane emissions rules",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/us-news/2026/oct/27/trump-biden-era-methane-emissions-rules-oil-gas"
+      "surge": 2.83,
+      "sentiment_mean": -0.085,
+      "headline": "Chinese Government to Speed Bond Sales to Stimulate Growth",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/articles/2026-10-28/chinese-government-to-speed-bond-sales-to-stimulate-growth"
     },
     {
       "term": "trump",
-      "articles": 214,
+      "articles": 217,
       "sources": 36,
       "sentiment_direction": "mixed",
-      "surge": 1.58,
-      "sentiment_mean": -0.092,
-      "headline": "Trump says Iran war will end 'when I want it to' as costs reportedly balloon to $47 billion",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/10/28/us-iran-war-trump-hormuz-costs-centcom.html"
+      "surge": 1.6,
+      "sentiment_mean": -0.087,
+      "headline": "Texas Senate Rivals Converge on Lubbock, With Trump in the Mix",
+      "headline_source": "NYT Politics",
+      "headline_url": "https://www.nytimes.com/2026/10/27/us/elections/paxton-talarico-texas-senate-rally-lubbock.html"
     },
     {
       "term": "election",
-      "articles": 190,
+      "articles": 192,
       "sources": 35,
       "sentiment_direction": "mixed",
-      "surge": 2.3,
-      "sentiment_mean": -0.141,
-      "headline": "Fl\u00e1vio Bolsonaro flees to US after Brazil election defeat",
-      "headline_source": "Financial Times",
-      "headline_url": "https://www.ft.com/content/ec7a3e3e-21e3-44de-81ee-db2f2073bee3?syn-25a6b1a6=1"
+      "surge": 2.32,
+      "sentiment_mean": -0.123,
+      "headline": "Israel election results live: exit polls point to tie between Netanyahu and Eisenkot blocs",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/world/live/2026/oct/28/israel-election-results-live-updates-exit-polls-netanyahu-likud-eisenkot-latest-news"
     },
     {
       "term": "president",
@@ -47,54 +47,54 @@
       "sources": 29,
       "sentiment_direction": "mixed",
       "surge": 1.48,
-      "sentiment_mean": -0.044,
+      "sentiment_mean": -0.05,
       "headline": "Interface president & CEO Laurel Hurd sells $254,940 in stock",
       "headline_source": "Investing.com News",
       "headline_url": "https://www.investing.com/news/insider-trading-news/interface-president--ceo-laurel-hurd-sells-254940-in-stock-93CH-4977366"
     },
     {
-      "term": "anthropic",
+      "term": "company",
       "articles": 75,
       "sources": 28,
       "sentiment_direction": "positive",
-      "surge": 3.23,
-      "sentiment_mean": 0.215,
-      "headline": "Anthropic IPO warns its AI could blackmail people, become sentient, end humanity. Seven potential AI nightmares pulled from Anthropic\u2019s 93-page \u201cRisk Factor\u201d tome.",
-      "headline_source": "Reddit r/technology",
-      "headline_url": "https://www.reddit.com/r/technology/comments/1xhawer/anthropic_ipo_warns_its_ai_could_blackmail_people/"
+      "surge": 2.17,
+      "sentiment_mean": 0.232,
+      "headline": "Honeywell CEO Vimal Kapur sells $1.43 million in company stock",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/insider-trading-news/honeywell-ceo-vimal-kapur-sells-143-million-in-company-stock-93CH-4977426"
     },
     {
       "term": "federal",
       "articles": 75,
       "sources": 28,
       "sentiment_direction": "negative",
-      "surge": 3.8,
-      "sentiment_mean": -0.195,
+      "surge": 3.74,
+      "sentiment_mean": -0.228,
       "headline": "Federal officials identify 400 noncitizens registered to vote in Washington state: 'Tip of the iceberg'",
       "headline_source": "Fox News",
       "headline_url": "https://www.foxnews.com/politics/federal-officials-identify-400-noncitizens-registered-vote-washington-state-tip-iceberg"
     },
     {
-      "term": "company",
+      "term": "anthropic",
       "articles": 74,
       "sources": 28,
       "sentiment_direction": "positive",
-      "surge": 2.14,
-      "sentiment_mean": 0.236,
-      "headline": "Symbotic CSO Boyd III sells $357,026 in company stock",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/insider-trading-news/symbotic-cso-boyd-iii-sells-357026-in-company-stock-93CH-4977378"
+      "surge": 3.17,
+      "sentiment_mean": 0.218,
+      "headline": "Anthropic IPO warns its AI could blackmail people, become sentient, end humanity. Seven potential AI nightmares pulled from Anthropic\u2019s 93-page \u201cRisk Factor\u201d tome.",
+      "headline_source": "Reddit r/technology",
+      "headline_url": "https://www.reddit.com/r/technology/comments/1xhawer/anthropic_ipo_warns_its_ai_could_blackmail_people/"
     },
     {
-      "term": "court",
-      "articles": 82,
-      "sources": 27,
-      "sentiment_direction": "negative",
-      "surge": 3.19,
-      "sentiment_mean": -0.283,
-      "headline": "Judge berates DOJ attorney in court over new charge filed against former FBI officials",
-      "headline_source": "NBC News",
-      "headline_url": "https://www.nbcnews.com/politics/justice-department/judge-berates-doj-attorney-new-charge-filed-former-fbi-officials-rcna606013"
+      "term": "public",
+      "articles": 73,
+      "sources": 28,
+      "sentiment_direction": "mixed",
+      "surge": 2.3,
+      "sentiment_mean": 0.143,
+      "headline": "Discord is making its public communities more searchable, and people have concerns",
+      "headline_source": "TechCrunch",
+      "headline_url": "https://techcrunch.com/2026/10/27/discord-is-making-its-public-communities-more-searchable-and-people-have-concerns/"
     }
   ],
   "hours_since_fetch": 0.0
