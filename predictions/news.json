@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-28T14:25:01.772071+00:00",
+  "generated_at": "2026-10-28T15:24:54.239389+00:00",
   "window_hours": 24,
-  "articles_in_window": 2585,
+  "articles_in_window": 2596,
   "collection_days": 45,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,92 +9,92 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
-      "term": "government",
-      "articles": 119,
-      "sources": 38,
-      "sentiment_direction": "mixed",
-      "surge": 2.57,
-      "sentiment_mean": -0.072,
-      "headline": "As forest fires rage, hundreds of Indonesian students protest government response - Reuters",
-      "headline_source": "Reuters",
-      "headline_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdWZTWUkyUHE5V0p0b3B1TmJZWmpaM2JpMXVfRnhYbG53VEJycjFwNEpnSmROU0duVENhalpFV1JjZzdUb05MQXRnLW1nTnE0dWRuWWJ4VFNVUmlvWFVpZW1DVFVua201N1o3MTVZMGpfMk5ybW03Y1laRkZjcHFxX0Z6dUJiNnpKWjRqb1hRLUZiN3k4bG15QTZUV1c4eTZ2RlQ0ZWkxN01EQndxek8tMjFTeVJDUDJC?oc=5"
-    },
-    {
       "term": "trump",
-      "articles": 217,
+      "articles": 208,
       "sources": 37,
       "sentiment_direction": "mixed",
-      "surge": 1.47,
-      "sentiment_mean": -0.054,
-      "headline": "Trump Explores Lifting Sanctions on Russia\u2019s Flagship Investment Fund",
-      "headline_source": "Reddit r/economics",
-      "headline_url": "https://www.reddit.com/r/Economics/comments/1xhooje/trump_explores_lifting_sanctions_on_russias/"
+      "surge": 1.39,
+      "sentiment_mean": -0.082,
+      "headline": "Trump admin hit with $461M lawsuit as embassy fight started under Biden comes back to haunt State Dept",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/politics/trump-admin-hit-461m-lawsuit-embassy-fight-started-under-biden-comes-back-haunt-state-dept"
     },
     {
       "term": "election",
-      "articles": 199,
+      "articles": 194,
+      "sources": 34,
+      "sentiment_direction": "mixed",
+      "surge": 2.01,
+      "sentiment_mean": -0.119,
+      "headline": "Israel election: what we know so far",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/world/2026/oct/28/israel-election-results-what-we-know-so-far-ntwnfb"
+    },
+    {
+      "term": "government",
+      "articles": 121,
       "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 2.12,
-      "sentiment_mean": -0.103,
-      "headline": "Israel Election Results Live Updates: Exit Polls Show No Clear Winner - The New York Times",
-      "headline_source": "Google News Top",
-      "headline_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5TU2dTNUpFYmtDYnpGanZvRnR5cGFqWmE2ZVYycGxmWnotU3dNeGJPZ255dWN5a3BVU3JGYTBpUy02MXFiLTgwTkt6QzBlaURsMzZ4Wk1GbE9uMGVyRXB3SE1IdzgtbTVmTXRmTFpDTQ?oc=5"
+      "surge": 2.55,
+      "sentiment_mean": -0.029,
+      "headline": "'People choose government, not vice versa': CJP backs INDIA bloc's November 1 rally",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/india/people-choose-government-not-vice-versa-cjp-backs-india-blocs-november-1-rally/articleshow/135269275.cms"
     },
     {
       "term": "president",
-      "articles": 100,
+      "articles": 99,
       "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 1.32,
-      "sentiment_mean": -0.007,
-      "headline": "Former Fed President Harker Says Policy Is Not Restrictive",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/videos/2026-10-28/former-fed-president-harker-policy-is-not-restrictive-video"
+      "surge": 1.29,
+      "sentiment_mean": -0.028,
+      "headline": "'Israeli president trying to form unity govt: They will not need Arab parties nor Orthodox parties'",
+      "headline_source": "France24",
+      "headline_url": "https://www.france24.com/en/video/20261028-israeli-president-trying-to-form-unity-govt-they-will-not-need-arab-parties-nor-orthodox-parties"
     },
     {
       "term": "costs",
-      "articles": 61,
-      "sources": 30,
+      "articles": 64,
+      "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 2.27,
-      "sentiment_mean": -0.141,
-      "headline": "CNBC TEC Summit live updates: Cisco, Levi's executives discuss AI risks and costs",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/10/28/cnbc-technology-summit-live-updates.html"
+      "surge": 2.35,
+      "sentiment_mean": -0.124,
+      "headline": "Cruise billed as floating home suspends global voyage over fuel costs, stranding passengers",
+      "headline_source": "CBC World",
+      "headline_url": "https://www.cbc.ca/news/world/cruise-ship-fuel-odyssey-9.7399290?cmp=rss"
     },
     {
       "term": "home",
-      "articles": 86,
+      "articles": 91,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 2.17,
-      "sentiment_mean": 0.04,
-      "headline": "Mark Carney is celebrated abroad \u2013 while consolidating power at home | Shiri Pasternak",
-      "headline_source": "Guardian Business",
-      "headline_url": "https://www.theguardian.com/commentisfree/2026/oct/28/mark-carney-trump-davos"
-    },
-    {
-      "term": "record",
-      "articles": 69,
-      "sources": 28,
-      "sentiment_direction": "positive",
-      "surge": 2.64,
-      "sentiment_mean": 0.219,
-      "headline": "Photos show record-breaking tides flooding homes, roads in California",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/news/photos-high-tides-flooding-homes-roads-southern-california/"
+      "surge": 2.26,
+      "sentiment_mean": 0.029,
+      "headline": "Heating your home with oil could cost $750 more this winter. Read this before you pay the price.",
+      "headline_source": "MarketWatch Top Stories",
+      "headline_url": "https://www.marketwatch.com/story/heating-your-home-with-oil-could-cost-750-more-this-winter-read-this-before-you-pay-the-price-e39f0d52?mod=mw_rss_topstories"
     },
     {
       "term": "results",
-      "articles": 68,
+      "articles": 69,
       "sources": 28,
       "sentiment_direction": "positive",
-      "surge": 2.88,
-      "sentiment_mean": 0.231,
+      "surge": 2.9,
+      "sentiment_mean": 0.236,
       "headline": "Israel Election Results Live Updates: Exit Polls Show No Clear Winner - The New York Times",
       "headline_source": "Google News Top",
       "headline_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5TU2dTNUpFYmtDYnpGanZvRnR5cGFqWmE2ZVYycGxmWnotU3dNeGJPZ255dWN5a3BVU3JGYTBpUy02MXFiLTgwTkt6QzBlaURsMzZ4Wk1GbE9uMGVyRXB3SE1IdzgtbTVmTXRmTFpDTQ?oc=5"
+    },
+    {
+      "term": "record",
+      "articles": 68,
+      "sources": 28,
+      "sentiment_direction": "positive",
+      "surge": 2.54,
+      "sentiment_mean": 0.2,
+      "headline": "Constellium Q3 2026 slides: record EBITDA, shares slip on outlook",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/company-news/constellium-q3-2026-slides-record-ebitda-shares-slip-on-outlook-93CH-4980010"
     }
   ],
   "hours_since_fetch": 0.0
