@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T01:00:08.980306+00:00",
+  "generated_at": "2026-10-28T02:00:10.250519+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 620.87,
-      "net_at_hold": 0.2835,
+      "net_apr": 650.43,
+      "net_at_hold": 0.297,
       "cost_bps": 29.0
     },
     {
@@ -27,8 +27,8 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 586.19,
-      "net_at_hold": 0.26767,
+      "net_apr": 607.82,
+      "net_at_hold": 0.27755,
       "cost_bps": 26.86
     },
     {
@@ -40,22 +40,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 526.56,
-      "net_at_hold": 0.48088,
+      "net_apr": 576.52,
+      "net_at_hold": 0.52651,
       "cost_bps": 51.57
-    },
-    {
-      "base": "DOOD",
-      "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Hyperliquid",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 498.95,
-      "net_at_hold": 0.22783,
-      "cost_bps": 31.7
     },
     {
       "base": "DOOD",
@@ -66,9 +53,22 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 466.62,
-      "net_at_hold": 0.42614,
+      "net_apr": 511.8,
+      "net_at_hold": 0.4674,
       "cost_bps": 49.49
+    },
+    {
+      "base": "DOOD",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "Hyperliquid",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 510.12,
+      "net_at_hold": 0.23293,
+      "cost_bps": 31.7
     },
     {
       "base": "DOOD",
@@ -79,35 +79,35 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 442.88,
-      "net_at_hold": 0.40445,
+      "net_apr": 470.67,
+      "net_at_hold": 0.42983,
       "cost_bps": 54.12
     },
     {
-      "base": "LDO",
+      "base": "DOOD",
       "type": "perp-perp",
-      "long_venue": "Coinbase",
-      "short_venue": "Lighter",
+      "long_venue": "Gate",
+      "short_venue": "Hyperliquid",
       "long_instrument": "perp",
-      "min_hold_h": 8,
+      "min_hold_h": 4,
       "hits": 23,
       "scans": 24,
-      "net_apr": 847.09,
-      "net_at_hold": 0.7736,
-      "cost_bps": 26.0
+      "net_apr": 652.56,
+      "net_at_hold": 0.29797,
+      "cost_bps": 26.87
     },
     {
-      "base": "CHIP",
+      "base": "DOOD",
       "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Coinbase",
+      "long_venue": "Gate",
+      "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 837.46,
-      "net_at_hold": 0.7648,
-      "cost_bps": 26.0
+      "net_apr": 523.24,
+      "net_at_hold": 0.47785,
+      "cost_bps": 49.99
     }
   ]
 }
