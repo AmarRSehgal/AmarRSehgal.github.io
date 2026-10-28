@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T11:00:10.446753+00:00",
+  "generated_at": "2026-10-28T12:00:10.950002+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 909.37,
-      "net_at_hold": 0.41524,
+      "net_apr": 888.41,
+      "net_at_hold": 0.40567,
       "cost_bps": 27.89
     },
     {
@@ -27,22 +27,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 811.72,
-      "net_at_hold": 0.7413,
-      "cost_bps": 54.37
-    },
-    {
-      "base": "DOOD",
-      "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "Hyperliquid",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 777.56,
-      "net_at_hold": 0.35505,
-      "cost_bps": 27.0
+      "net_apr": 792.51,
+      "net_at_hold": 0.72375,
+      "cost_bps": 54.7
     },
     {
       "base": "DOOD",
@@ -53,9 +40,35 @@
       "min_hold_h": 4,
       "hits": 24,
       "scans": 24,
-      "net_apr": 759.52,
-      "net_at_hold": 0.34681,
+      "net_apr": 757.73,
+      "net_at_hold": 0.34599,
       "cost_bps": 26.88
+    },
+    {
+      "base": "DOOD",
+      "type": "perp-perp",
+      "long_venue": "Binance",
+      "short_venue": "Hyperliquid",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 739.92,
+      "net_at_hold": 0.33786,
+      "cost_bps": 27.0
+    },
+    {
+      "base": "DOOD",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "Hyperliquid",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 706.39,
+      "net_at_hold": 0.32255,
+      "cost_bps": 31.73
     },
     {
       "base": "DOOD",
@@ -66,8 +79,8 @@
       "min_hold_h": 2,
       "hits": 24,
       "scans": 24,
-      "net_apr": 716.14,
-      "net_at_hold": 0.30654,
+      "net_apr": 678.81,
+      "net_at_hold": 0.28742,
       "cost_bps": 26.87
     },
     {
@@ -79,35 +92,22 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 701.19,
-      "net_at_hold": 0.64035,
-      "cost_bps": 49.73
+      "net_apr": 654.9,
+      "net_at_hold": 0.59808,
+      "cost_bps": 49.81
     },
     {
       "base": "DOOD",
       "type": "perp-perp",
       "long_venue": "Bitget",
-      "short_venue": "Hyperliquid",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 685.47,
-      "net_at_hold": 0.313,
-      "cost_bps": 31.74
-    },
-    {
-      "base": "DOOD",
-      "type": "perp-perp",
-      "long_venue": "Gate",
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 649.04,
-      "net_at_hold": 0.59273,
-      "cost_bps": 51.44
+      "net_apr": 638.92,
+      "net_at_hold": 0.58349,
+      "cost_bps": 54.63
     }
   ]
 }
