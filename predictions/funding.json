@@ -1,62 +1,10 @@
 {
-  "generated_at": "2026-10-28T16:00:11.028001+00:00",
+  "generated_at": "2026-10-28T17:00:07.754166+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
-    {
-      "base": "DOOD",
-      "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "Hyperliquid",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 693.57,
-      "net_at_hold": 0.3167,
-      "cost_bps": 27.0
-    },
-    {
-      "base": "DOOD",
-      "type": "perp-perp",
-      "long_venue": "OKX",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 643.32,
-      "net_at_hold": 0.58751,
-      "cost_bps": 49.68
-    },
-    {
-      "base": "DOOD",
-      "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 616.91,
-      "net_at_hold": 0.56339,
-      "cost_bps": 49.73
-    },
-    {
-      "base": "DOOD",
-      "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 608.94,
-      "net_at_hold": 0.55611,
-      "cost_bps": 54.63
-    },
     {
       "base": "DOOD",
       "type": "perp-perp",
@@ -73,15 +21,28 @@
     {
       "base": "DOOD",
       "type": "perp-perp",
-      "long_venue": "Bitget",
+      "long_venue": "Binance",
       "short_venue": "Hyperliquid",
       "long_instrument": "perp",
       "min_hold_h": 4,
       "hits": 23,
       "scans": 24,
-      "net_apr": 677.74,
-      "net_at_hold": 0.30947,
-      "cost_bps": 31.72
+      "net_apr": 694.41,
+      "net_at_hold": 0.31708,
+      "cost_bps": 27.0
+    },
+    {
+      "base": "DOOD",
+      "type": "perp-perp",
+      "long_venue": "OKX",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 23,
+      "scans": 24,
+      "net_apr": 675.6,
+      "net_at_hold": 0.61698,
+      "cost_bps": 49.8
     },
     {
       "base": "DOOD",
@@ -99,15 +60,54 @@
     {
       "base": "DOOD",
       "type": "perp-perp",
+      "long_venue": "Binance",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 23,
+      "scans": 24,
+      "net_apr": 654.06,
+      "net_at_hold": 0.59732,
+      "cost_bps": 49.83
+    },
+    {
+      "base": "DOOD",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 23,
+      "scans": 24,
+      "net_apr": 638.12,
+      "net_at_hold": 0.58276,
+      "cost_bps": 54.77
+    },
+    {
+      "base": "DOOD",
+      "type": "perp-perp",
       "long_venue": "Bybit",
       "short_venue": "Hyperliquid",
       "long_instrument": "perp",
       "min_hold_h": 4,
       "hits": 22,
       "scans": 24,
-      "net_apr": 968.85,
-      "net_at_hold": 0.4424,
-      "cost_bps": 27.88
+      "net_apr": 947.89,
+      "net_at_hold": 0.43282,
+      "cost_bps": 27.92
+    },
+    {
+      "base": "DOOD",
+      "type": "perp-perp",
+      "long_venue": "Bybit",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 22,
+      "scans": 24,
+      "net_apr": 876.62,
+      "net_at_hold": 0.80057,
+      "cost_bps": 54.7
     }
   ]
 }
