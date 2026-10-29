@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T08:00:11.553157+00:00",
+  "generated_at": "2026-10-29T09:00:11.530863+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -12,24 +12,11 @@
       "short_venue": "Lighter",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 19,
+      "hits": 20,
       "scans": 24,
-      "net_apr": 362.87,
-      "net_at_hold": 0.33139,
+      "net_apr": 359.8,
+      "net_at_hold": 0.32858,
       "cost_bps": 15.21
-    },
-    {
-      "base": "PUFFER",
-      "type": "perp-perp",
-      "long_venue": "Bybit",
-      "short_venue": "Binance",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 288.98,
-      "net_at_hold": 0.26391,
-      "cost_bps": 35.21
     },
     {
       "base": "UNITREE",
@@ -38,11 +25,11 @@
       "short_venue": "Lighter",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 18,
+      "hits": 19,
       "scans": 24,
-      "net_apr": 183.92,
-      "net_at_hold": 0.16796,
-      "cost_bps": 16.03
+      "net_apr": 208.91,
+      "net_at_hold": 0.19079,
+      "cost_bps": 16.04
     },
     {
       "base": "TIA",
@@ -53,8 +40,8 @@
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 138.74,
-      "net_at_hold": 0.1267,
+      "net_apr": 116.03,
+      "net_at_hold": 0.10596,
       "cost_bps": 20.19
     }
   ]
