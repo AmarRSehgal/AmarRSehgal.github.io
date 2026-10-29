@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T09:00:11.530863+00:00",
+  "generated_at": "2026-10-29T10:00:12.544121+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -25,11 +25,24 @@
       "short_venue": "Lighter",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 19,
+      "hits": 20,
       "scans": 24,
-      "net_apr": 208.91,
-      "net_at_hold": 0.19079,
+      "net_apr": 239.57,
+      "net_at_hold": 0.21878,
       "cost_bps": 16.04
+    },
+    {
+      "base": "BLUR",
+      "type": "perp-perp",
+      "long_venue": "Binance",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 252.91,
+      "net_at_hold": 0.23097,
+      "cost_bps": 74.83
     },
     {
       "base": "TIA",
