@@ -1,10 +1,23 @@
 {
-  "generated_at": "2026-10-28T23:00:10.353112+00:00",
+  "generated_at": "2026-10-29T01:00:11.467082+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
+    {
+      "base": "PUFFER",
+      "type": "perp-perp",
+      "long_venue": "Bybit",
+      "short_venue": "Binance",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 22,
+      "scans": 24,
+      "net_apr": 328.84,
+      "net_at_hold": 0.30031,
+      "cost_bps": 35.26
+    },
     {
       "base": "TIA",
       "type": "perp-perp",
@@ -19,19 +32,6 @@
       "cost_bps": 20.19
     },
     {
-      "base": "PUFFER",
-      "type": "perp-perp",
-      "long_venue": "Bybit",
-      "short_venue": "Binance",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 21,
-      "scans": 24,
-      "net_apr": 330.98,
-      "net_at_hold": 0.30227,
-      "cost_bps": 35.25
-    },
-    {
       "base": "UNITREE",
       "type": "perp-perp",
       "long_venue": "Gate",
@@ -40,8 +40,8 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 328.49,
-      "net_at_hold": 0.29999,
+      "net_apr": 356.72,
+      "net_at_hold": 0.32577,
       "cost_bps": 15.21
     }
   ]
