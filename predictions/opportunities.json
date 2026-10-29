@@ -1,50 +1,50 @@
 {
-  "generated_at": "2026-10-29T04:33:44Z",
+  "generated_at": "2026-10-29T16:30:02Z",
   "sources": [
     {
       "source": "ad_capital",
       "label": "AD Capital universe scan",
       "status": "stale",
       "as_of": "2026-10-10T00:30:18Z",
-      "age_hours": 460.1,
+      "age_hours": 472.0,
       "count": 0,
       "caveat": "A mechanical factor scan of a 374-name universe, not a recommendation. The stop and target are volatility-sized bands, not predictions, and nothing here has had a fundamental read. The paper book running this signal is 6.87pp behind SPY since 2026-04-13 (5.93% vs 12.8%).",
-      "note": "Last scan was 460h ago, past this source's 96h budget. Showing nothing rather than passing it off as current.",
+      "note": "Last scan was 472h ago, past this source's 96h budget. Showing nothing rather than passing it off as current.",
       "opportunities": []
     },
     {
       "source": "funding_drift",
       "label": "Perp funding vs realized drift",
       "status": "fresh",
-      "as_of": "2026-10-28T15:15:09Z",
-      "age_hours": 13.3,
+      "as_of": "2026-10-29T15:15:09Z",
+      "age_hours": 1.2,
       "count": 15,
       "caveat": "An observation, NOT a trade recommendation. This repo's own study found the ranking is ~99% price momentum (rank correlation 0.996 with plain return) and that the convergence reading of the funding term is backwards.",
       "note": null,
       "opportunities": [
         {
-          "title": "EVAA on KuCoin",
-          "detail": "24h return 99.6%, funding -0.1%",
-          "metric_value": 0.99644,
-          "metric_display": "drift 99.6%",
+          "title": "IDOL on Bitget",
+          "detail": "24h return 76.8%, funding 0.0%",
+          "metric_value": 0.76796,
+          "metric_display": "drift 76.8%",
           "link": null,
           "rank": 1,
           "source": "funding_drift"
         },
         {
-          "title": "XAN on Bybit",
-          "detail": "24h return 35.7%, funding -1.2%",
-          "metric_value": 0.36892092,
-          "metric_display": "drift 36.9%",
+          "title": "BEAT on Gate",
+          "detail": "24h return 38.4%, funding 0.0%",
+          "metric_value": 0.38365,
+          "metric_display": "drift 38.4%",
           "link": null,
           "rank": 2,
           "source": "funding_drift"
         },
         {
-          "title": "DOS on Bybit",
-          "detail": "24h return 36.4%, funding 0.0%",
-          "metric_value": 0.36385999999999996,
-          "metric_display": "drift 36.4%",
+          "title": "DOS on Gate",
+          "detail": "24h return -38.1%, funding 0.0%",
+          "metric_value": 0.38118399999999997,
+          "metric_display": "drift -38.1%",
           "link": null,
           "rank": 3,
           "source": "funding_drift"
@@ -54,40 +54,77 @@
     {
       "source": "crypto_arb",
       "label": "Cross-exchange crypto arbs",
-      "status": "empty",
-      "as_of": "2026-10-29T00:14:36Z",
-      "age_hours": 4.3,
-      "count": 0,
+      "status": "fresh",
+      "as_of": "2026-10-29T16:14:33Z",
+      "age_hours": 0.3,
+      "count": 10,
       "caveat": "Observed, not executed. Each row is a spread that EXISTED between two venues for a few seconds of a 4-minute scan -- it is not a fill. Capturing it needs inventory already sitting on both venues, and the transfer time between them is far longer than the spread lasted.",
-      "note": "Scan ran and found nothing that cleared the bar.",
-      "opportunities": []
+      "note": null,
+      "opportunities": [
+        {
+          "title": "WIF  Binance -> BingX",
+          "detail": "spot | 37.3bp gross less 20.0bp fees | $600 at the touch | lived 6.2s | 2.7% of the scan",
+          "metric_value": 17.26,
+          "metric_display": "+17.3bp net",
+          "link": null,
+          "rank": 1,
+          "source": "crypto_arb"
+        },
+        {
+          "title": "WIF  OKX -> BingX",
+          "detail": "spot | 37.3bp gross less 20.0bp fees | $300 at the touch | lived 6.5s | 2.8% of the scan",
+          "metric_value": 17.26,
+          "metric_display": "+17.3bp net",
+          "link": null,
+          "rank": 2,
+          "source": "crypto_arb"
+        },
+        {
+          "title": "WIF  Bitget -> BingX",
+          "detail": "spot | 37.3bp gross less 20.0bp fees | $651 at the touch | lived 2.8s | 1.2% of the scan",
+          "metric_value": 17.26,
+          "metric_display": "+17.3bp net",
+          "link": null,
+          "rank": 3,
+          "source": "crypto_arb"
+        }
+      ]
     },
     {
       "source": "funding_rate_arb",
       "label": "Funding-rate carry",
       "status": "fresh",
-      "as_of": "2026-10-29T03:00:10Z",
-      "age_hours": 1.6,
-      "count": 2,
+      "as_of": "2026-10-29T16:00:10Z",
+      "age_hours": 0.5,
+      "count": 4,
       "caveat": "Quoted APRs annualize the CURRENT funding rate, which reprices every few hours. They are not a return you can lock in, and they ignore execution, borrow limits and the capital tied up on both legs.",
       "note": null,
       "opportunities": [
         {
-          "title": "PUFFER  Bybit / Binance",
-          "detail": "long Bybit perp, short Binance perp | annualises to ~310% | round trip 35bp | positive in 22/24 scans",
-          "metric_value": 0.28283,
-          "metric_display": "+0.283% per 8h hold",
+          "title": "H100  Lighter / OKX",
+          "detail": "long Lighter perp, short OKX perp | annualises to ~5,496% | round trip 17bp | positive in 18/24 scans",
+          "metric_value": 5.01904,
+          "metric_display": "+5.019% per 8h hold",
           "link": null,
           "rank": 1,
           "source": "funding_rate_arb"
         },
         {
-          "title": "TIA  Lighter / Crypto.com",
-          "detail": "long Lighter perp, short Crypto.com perp | annualises to ~153% | round trip 20bp | positive in 21/24 scans",
-          "metric_value": 0.13985,
-          "metric_display": "+0.140% per 8h hold",
+          "title": "UNITREE  Gate / Lighter",
+          "detail": "long Gate perp, short Lighter perp | annualises to ~324% | round trip 16bp | positive in 19/24 scans",
+          "metric_value": 0.29557,
+          "metric_display": "+0.296% per 8h hold",
           "link": null,
           "rank": 2,
+          "source": "funding_rate_arb"
+        },
+        {
+          "title": "UNITREE  OKX / Lighter",
+          "detail": "long OKX perp, short Lighter perp | annualises to ~158% | round trip 16bp | positive in 18/24 scans",
+          "metric_value": 0.14474,
+          "metric_display": "+0.145% per 8h hold",
+          "link": null,
+          "rank": 3,
           "source": "funding_rate_arb"
         }
       ]
@@ -97,7 +134,7 @@
       "label": "Magic Formula screen",
       "status": "fresh",
       "as_of": "2026-10-26T15:01:53Z",
-      "age_hours": 61.5,
+      "age_hours": 73.5,
       "count": 10,
       "caveat": "A mechanical rank of a hand-pasted universe. It says nothing about whether the business is sound, and nothing here is advice.",
       "note": null,
@@ -136,7 +173,7 @@
       "label": "Real estate deal screen",
       "status": "fresh",
       "as_of": "2026-10-25T15:03:56Z",
-      "age_hours": 85.5,
+      "age_hours": 97.4,
       "count": 12,
       "caveat": "Discounts are against comparable-sale estimates, not appraisals, and the screen has never seen the inside of any of these. Screening output only.",
       "note": null,
@@ -174,8 +211,8 @@
       "source": "contracts",
       "label": "Federal resale lanes",
       "status": "fresh",
-      "as_of": "2026-10-28T15:00:59Z",
-      "age_hours": 13.5,
+      "as_of": "2026-10-29T15:01:00Z",
+      "age_hours": 1.5,
       "count": 8,
       "caveat": "Finding a lane is not winning one. SAM entity registration takes weeks and gates every bid, set-asides are hard gates, and the extract carries no line-item quantities -- so none of these carry a computed margin.",
       "note": null,
@@ -214,7 +251,7 @@
       "label": "Swing-trade signals",
       "status": "fresh",
       "as_of": "2026-10-28T21:00:34Z",
-      "age_hours": 7.6,
+      "age_hours": 19.5,
       "count": 12,
       "caveat": "Rule output on daily bars, not a recommendation. It carries no position sizing or risk limits, and most rows are positions already open rather than fresh buys. Measured on 12 broad and sector ETFs (survivorship-free) 2019-01-01..2025-07-01, this strategy returned 48.3% against 145.6% for simply holding the same universe, at Sharpe 0.46 against 0.80. It beat same-window buy-and-hold in 3 of 17 walk-forward windows. What does hold up is drawdown: -31.6% against -35.8% for the benchmark.",
       "note": null,
@@ -253,27 +290,27 @@
       "label": "Severe weather risk",
       "status": "stale",
       "as_of": "2026-09-14T14:01:40Z",
-      "age_hours": 1070.5,
+      "age_hours": 1082.5,
       "count": 0,
       "caveat": "Not a weather warning -- use the National Weather Service for those. The score is how much current conditions resemble the run-up to a severe event, not a probability that one occurs.",
-      "note": "Last scan was 1071h ago, past this source's 30h budget. Showing nothing rather than passing it off as current.",
+      "note": "Last scan was 1082h ago, past this source's 30h budget. Showing nothing rather than passing it off as current.",
       "opportunities": []
     },
     {
       "source": "polymarket_btc",
       "label": "Polymarket BTC 5-min binaries",
       "status": "fresh",
-      "as_of": "2026-10-28T14:46:41Z",
-      "age_hours": 13.8,
+      "as_of": "2026-10-29T14:46:47Z",
+      "age_hours": 1.7,
       "count": 1,
-      "caveat": "Publishes an observation, not picks. The repo's own backtest on real fills found the market's own price forecasts the settlement BETTER than the model, and that what survives costs is feed latency rather than the pricing model. Simulation only -- the repo has no order-placement path. Latest scan: model Brier 0.1575 vs market 0.152, so the market is ahead (lower is better). Post-cost returns cross zero at 1.1s of BTC feed staleness, against a 3.75s decision cadence.",
+      "caveat": "Publishes an observation, not picks. The repo's own backtest on real fills found the market's own price forecasts the settlement BETTER than the model, and that what survives costs is feed latency rather than the pricing model. Simulation only -- the repo has no order-placement path. Latest scan: model Brier 0.1724 vs market 0.171, so the market is ahead (lower is better). Post-cost returns cross zero at 5.4s of BTC feed staleness, against a 3.75s decision cadence.",
       "note": null,
       "opportunities": [
         {
           "title": "BTC 5-min binaries: market ahead of the model",
-          "detail": "model Brier 0.1575 vs market 0.152 (lower is better), break-even at 1.1s of feed lag",
-          "metric_value": 0.0065,
-          "metric_display": "0.7%",
+          "detail": "model Brier 0.1724 vs market 0.171 (lower is better), break-even at 5.4s of feed lag",
+          "metric_value": 0.0336,
+          "metric_display": "3.4%",
           "link": null,
           "rank": 1,
           "source": "polymarket_btc"
@@ -281,7 +318,7 @@
       ]
     }
   ],
-  "total_opportunities": 18,
+  "total_opportunities": 22,
   "fresh_sources": 8,
   "methodology": "A digest: the top 3 from each scanner, so one glance shows what is live right now. Each scanner runs on its own schedule and publishes its own full panel; this merges them and runs nothing itself, so a slow source can only make its own row go quiet. Items are ranked WITHIN a source and there is deliberately no cross-source score -- basis points, an earnings yield and a contract cadence are not commensurable, and one leaderboard over them would be invented. Every section carries its own caveat; read it before the numbers. Nothing here is advice, none of it is an executed trade, and a section that has gone stale shows nothing rather than yesterday's numbers."
 }
