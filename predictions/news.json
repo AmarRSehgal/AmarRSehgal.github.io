@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-29T18:24:59.178629+00:00",
+  "generated_at": "2026-10-29T19:25:56.293048+00:00",
   "window_hours": 24,
-  "articles_in_window": 2619,
+  "articles_in_window": 2611,
   "collection_days": 46,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,70 +9,81 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
-      "term": "trump",
-      "articles": 223,
-      "sources": 35,
+      "term": "data",
+      "articles": 83,
+      "sources": 36,
       "sentiment_direction": "mixed",
-      "surge": 1.18,
-      "sentiment_mean": -0.126,
-      "headline": "Libertarians challenge Trump-backed Republicans, look to shake up midterms beyond GOP-Dem duopoly",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/politics/libertarians-challenge-trump-backed-republicans-look-shake-up-midterms-beyond-gop-dem-duopoly"
+      "surge": 2.02,
+      "sentiment_mean": 0.129,
+      "headline": "The AI Energy Paradox: How Tech Giants Are Turning to Next-Gen Software and Direct-Air Carbon Capture to Net Out Their Data Center Footprint",
+      "headline_source": "Reddit r/energy",
+      "headline_url": "https://www.reddit.com/r/energy/comments/1xitg6w/the_ai_energy_paradox_how_tech_giants_are_turning/"
     },
     {
-      "term": "data",
-      "articles": 80,
+      "term": "trump",
+      "articles": 222,
       "sources": 34,
-      "sentiment_direction": "positive",
-      "surge": 1.97,
-      "sentiment_mean": 0.18,
-      "headline": "Data centers could send US climate pollution skyrocketing",
-      "headline_source": "The Verge",
-      "headline_url": "https://www.theverge.com/science/1022258/data-centers-climate-change-carbon-dioxide-pollution-gas"
+      "sentiment_direction": "negative",
+      "surge": 1.16,
+      "sentiment_mean": -0.151,
+      "headline": "Trump touts projects and payouts on the campaign trail. Many are uncertain",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/commodities-news/trump-touts-projects-and-payouts-on-the-campaign-trail-many-are-uncertain-4982295"
     },
     {
       "term": "election",
-      "articles": 139,
+      "articles": 138,
       "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 1.02,
-      "sentiment_mean": -0.045,
-      "headline": "Election law expert on 2 Dan Sullivans in Alaska, DOJ bid to force California to set aside ballots",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/election-law-expert-on-2-dan-sullivans-in-alaska-doj-bid-to-force-california-to-set-aside-ballots/"
+      "surge": 1.0,
+      "sentiment_mean": -0.023,
+      "headline": "People who deactivated Facebook and Instagram for six weeks before the 2020 election reported substantial improvement in measures of happiness, depression, and anxiety (relative to controls who deactivated for just the first of those six weeks).",
+      "headline_source": "Reddit r/science",
+      "headline_url": "https://www.reddit.com/r/science/comments/1xit71d/people_who_deactivated_facebook_and_instagram_for/"
+    },
+    {
+      "term": "including",
+      "articles": 76,
+      "sources": 33,
+      "sentiment_direction": "mixed",
+      "surge": 1.73,
+      "sentiment_mean": 0.09,
+      "headline": "A study of 36 clinical trial participants found that ketamine and MDMA treatments were associated with DNA methylation changes in hundreds of genes, including those linked to brain plasticity and immune regulation, suggesting possible molecular mechanisms behind their psychiatric effects.",
+      "headline_source": "Reddit r/science",
+      "headline_url": "https://www.reddit.com/r/science/comments/1xirp23/a_study_of_36_clinical_trial_participants_found/"
     },
     {
       "term": "president",
-      "articles": 131,
-      "sources": 32,
+      "articles": 123,
+      "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 1.39,
-      "sentiment_mean": -0.091,
+      "surge": 1.28,
+      "sentiment_mean": -0.123,
       "headline": "Lula\u2019s Top Court Problem: Moraes Passport Order Angers Brazil\u2019s President",
       "headline_source": "Bloomberg Markets",
       "headline_url": "https://www.bloomberg.com/news/articles/2026-10-29/lula-s-top-court-problem-moraes-passport-order-angers-brazil-s-president"
     },
     {
-      "term": "including",
-      "articles": 76,
-      "sources": 32,
-      "sentiment_direction": "mixed",
-      "surge": 1.74,
-      "sentiment_mean": 0.09,
-      "headline": "Ottawa vows to prepare for all contingencies, \u2018including war,\u2019 in national security plan",
-      "headline_source": "Reddit r/worldnews",
-      "headline_url": "https://www.reddit.com/r/worldnews/comments/1xiqf9l/ottawa_vows_to_prepare_for_all_contingencies/"
-    },
-    {
       "term": "government",
-      "articles": 101,
-      "sources": 30,
+      "articles": 97,
+      "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 1.46,
-      "sentiment_mean": 0.008,
+      "surge": 1.39,
+      "sentiment_mean": -0.029,
       "headline": "'Deeply regressive': How the French government plans to make protesters pay for riots and looting",
       "headline_source": "France24",
       "headline_url": "https://www.france24.com/en/france/20261029-deeply-regressive-how-the-french-government-plans-to-make-protesters-pay-for-riots-and-looting"
+    },
+    {
+      "term": "market",
+      "articles": 92,
+      "sources": 29,
+      "sentiment_direction": "positive",
+      "surge": 1.41,
+      "sentiment_mean": 0.24,
+      "headline": "Medline exits bed market after two deaths linked to safety risks",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/stock-market-news/medline-exits-bed-market-after-two-deaths-linked-to-safety-risks-93CH-4984905"
     },
     {
       "term": "costs",
@@ -80,21 +91,10 @@
       "sources": 29,
       "sentiment_direction": "mixed",
       "surge": 1.87,
-      "sentiment_mean": 0.002,
-      "headline": "Agnico Eagle (AEM) Flags Diesel Risk to Gold Output Costs Next Year",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/articles/2026-10-29/agnico-eagle-aem-flags-diesel-risk-to-gold-output-costs-next-year"
-    },
-    {
-      "term": "market",
-      "articles": 91,
-      "sources": 28,
-      "sentiment_direction": "positive",
-      "surge": 1.41,
-      "sentiment_mean": 0.258,
-      "headline": "Google, ServiceNow among market cap stock movers on Thursday",
+      "sentiment_mean": 0.019,
+      "headline": "UK will reduce \u2019unsustainable\u2019 welfare costs, Healey says",
       "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/google-servicenow-among-market-cap-stock-movers-on-thursday-93CH-4984854"
+      "headline_url": "https://www.investing.com/news/economy-news/uk-will-reduce-unsustainable-welfare-costs-healey-says-4984904"
     }
   ],
   "hours_since_fetch": 0.0
