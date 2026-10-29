@@ -432,6 +432,9 @@ function renderPaperAB(data) {
     const rows = data.arms.filter(a => !a.ladder).map(a => {
         const facts = [`${a.fills} fills`, `${a.size} ${data.unit === 'window' ? 'shares' : 'contracts'}`];
         if (a.pnl_per_size_c != null) facts.push(`${Number(a.pnl_per_size_c).toFixed(2)}c per unit traded`);
+        if (a.breakeven_rebate_c != null && a.breakeven_rebate_c > 0) {
+            facts.push(`breaks even at a ${Number(a.breakeven_rebate_c).toFixed(2)}c maker rebate per unit`);
+        }
         if (a.passive_exit_share != null) facts.push(`${(a.passive_exit_share * 100).toFixed(0)}% passive exits`);
         const mk = a.markouts_c || {};
         const h = Object.keys(mk).sort((x, y) => x - y)[0];
