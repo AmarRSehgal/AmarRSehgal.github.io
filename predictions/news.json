@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-29T04:52:43.804218+00:00",
+  "generated_at": "2026-10-29T05:25:03.026591+00:00",
   "window_hours": 24,
-  "articles_in_window": 2677,
+  "articles_in_window": 2682,
   "collection_days": 46,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,67 +9,67 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
+      "term": "trump",
+      "articles": 188,
+      "sources": 35,
+      "sentiment_direction": "mixed",
+      "surge": 1.08,
+      "sentiment_mean": -0.127,
+      "headline": "Hegseth fires Pentagon\u2019s top military planner as Trump weighs new Iran strikes",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/world/united-states-canada/article/3372530/hegseth-fires-pentagons-top-military-planner-trump-weighs-new-iran-strikes"
+    },
+    {
       "term": "election",
       "articles": 186,
       "sources": 35,
       "sentiment_direction": "mixed",
-      "surge": 1.6,
-      "sentiment_mean": -0.118,
-      "headline": "In Michigan, El-Sayed Faces Heat From Former Primary Rival as Election Nears",
-      "headline_source": "NYT Politics",
-      "headline_url": "https://www.nytimes.com/2026/10/28/us/politics/stevens-el-sayed-senate-democrats-michigan.html"
-    },
-    {
-      "term": "trump",
-      "articles": 186,
-      "sources": 35,
-      "sentiment_direction": "mixed",
-      "surge": 1.07,
-      "sentiment_mean": -0.118,
-      "headline": "\u2018Decoy Dan\u2019 dirty trick has sent Trump on the warpath in Alaska",
-      "headline_source": "Sydney Morning Herald",
-      "headline_url": "https://www.smh.com.au/world/north-america/decoy-dan-dirty-trick-has-sent-trump-on-the-warpath-in-alaska-20261029-p619nk.html?ref=rss&utm_medium=rss&utm_source=rss_world"
+      "surge": 1.59,
+      "sentiment_mean": -0.106,
+      "headline": "Israel election results live: count of absentee ballots under way as coalition talks among Eisenkot bloc set to begin",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/world/live/2026/oct/29/israel-election-results-live-updates-poll-netanyahu-eisenkot-bloc-coalition-latest-news"
     },
     {
       "term": "government",
-      "articles": 106,
+      "articles": 105,
       "sources": 34,
       "sentiment_direction": "mixed",
-      "surge": 1.81,
-      "sentiment_mean": 0.005,
+      "surge": 1.78,
+      "sentiment_mean": 0.034,
       "headline": "Global fund managers grow bullish on Japanese government bonds",
       "headline_source": "Japan Times",
       "headline_url": "https://www.japantimes.co.jp/business/2026/10/29/markets/fund-managers-jgb-bullish/"
     },
     {
       "term": "results",
-      "articles": 91,
+      "articles": 93,
       "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 3.27,
-      "sentiment_mean": 0.149,
-      "headline": "Why Alphabet\u2019s stock could see its worst drop in years after the latest results - MarketWatch",
-      "headline_source": "Google News Top",
-      "headline_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOWlBxRDZhQ1NwcDZLUzFsX1FMNU0tLXRIMmctT3I0cVNQRU9SMzhqN2RwSkhaclJ5dVQ3c3lFUTN2ZmpLbVc0X0QyalZTT0U4ZGNfN2ZyaVkzWFFQUWIwS1lxcGFuYW94SmJyWDZHSDRQOTdhWHE3RU8yWDJOZEtkOEl2UXBGN3FzRi1xVWZHOFVuZEM3U1Q2OFVVdm8xbTkwbnJJZ21TcDh0dlBUWERmMmQtZXJqN0lOSWM1aUtR?oc=5"
+      "surge": 3.34,
+      "sentiment_mean": 0.147,
+      "headline": "Israel election results live: count of absentee ballots under way as coalition talks among Eisenkot bloc set to begin",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/world/live/2026/oct/29/israel-election-results-live-updates-poll-netanyahu-eisenkot-bloc-coalition-latest-news"
     },
     {
       "term": "costs",
-      "articles": 75,
+      "articles": 76,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 2.38,
-      "sentiment_mean": -0.063,
+      "surge": 2.39,
+      "sentiment_mean": -0.054,
       "headline": "Fuel costs jump from $1,800 to $8,000: Cruise ship residents forced ashore in Cambodia",
       "headline_source": "Times of India",
       "headline_url": "https://timesofindia.indiatimes.com/world/rest-of-world/iran-war-fallout-cruise-ship-carrying-permanent-residents-suspends-voyages-over-soaring-fuel-costs/articleshow/135288607.cms"
     },
     {
       "term": "president",
-      "articles": 103,
+      "articles": 102,
       "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 1.18,
-      "sentiment_mean": -0.028,
+      "surge": 1.17,
+      "sentiment_mean": -0.046,
       "headline": "U.S President admin sues Utah to save Kalshi from the state's total ban on gambling | U.S agency has sued 10 states for trying to stop gambling on prediction markets.",
       "headline_source": "Reddit r/technology",
       "headline_url": "https://www.reddit.com/r/technology/comments/1xi9tiq/us_president_admin_sues_utah_to_save_kalshi_from/"
@@ -79,23 +79,23 @@
       "articles": 65,
       "sources": 30,
       "sentiment_direction": "positive",
-      "surge": 1.79,
-      "sentiment_mean": 0.203,
-      "headline": "DHS investigates massive data breach exposing 40,000 employees, including ICE and Border Patrol agents",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/us/dhs-investigates-massive-data-breach-exposing-40000-employees-including-ice-border-patrol-agents"
+      "surge": 1.78,
+      "sentiment_mean": 0.188,
+      "headline": "Gold falls toward $4,040 as Fed outlook leaves traders awaiting inflation data",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/commodities-news/gold-slips-after-fed-holds-rates-pce-inflation-data-in-focus-4981309"
     },
     {
       "term": "rates",
       "articles": 82,
-      "sources": 29,
+      "sources": 28,
       "sentiment_direction": "positive",
-      "surge": 6.55,
-      "sentiment_mean": 0.287,
-      "headline": "Henderson Land: HK Home Market Resilient to High Rates",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/videos/2026-10-29/henderson-land-hk-home-market-resilient-to-high-rates-video"
+      "surge": 6.47,
+      "sentiment_mean": 0.275,
+      "headline": "How LADWP's rates compare to other utilities in Southern California",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/losangeles/news/how-ladwps-rates-compare-to-other-utilities-in-southern-california/"
     }
   ],
-  "hours_since_fetch": 0.0
+  "hours_since_fetch": 0.04
 }
