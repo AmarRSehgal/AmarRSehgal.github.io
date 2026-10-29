@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T02:00:11.779293+00:00",
+  "generated_at": "2026-10-29T03:00:10.513591+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -12,11 +12,11 @@
       "short_venue": "Binance",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 23,
+      "hits": 22,
       "scans": 24,
-      "net_apr": 326.7,
-      "net_at_hold": 0.29836,
-      "cost_bps": 35.25
+      "net_apr": 309.7,
+      "net_at_hold": 0.28283,
+      "cost_bps": 35.23
     },
     {
       "base": "TIA",
@@ -30,19 +30,6 @@
       "net_apr": 153.14,
       "net_at_hold": 0.13985,
       "cost_bps": 20.19
-    },
-    {
-      "base": "UNITREE",
-      "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "Lighter",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 359.8,
-      "net_at_hold": 0.32858,
-      "cost_bps": 15.21
     }
   ]
 }
