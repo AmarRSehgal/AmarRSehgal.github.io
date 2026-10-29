@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-29T09:25:02.068380+00:00",
+  "generated_at": "2026-10-29T10:25:02.085145+00:00",
   "window_hours": 24,
-  "articles_in_window": 2687,
+  "articles_in_window": 2672,
   "collection_days": 46,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,93 +9,93 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
-      "term": "election",
-      "articles": 183,
-      "sources": 37,
-      "sentiment_direction": "mixed",
-      "surge": 1.53,
-      "sentiment_mean": -0.091,
-      "headline": "Israelis await final election results as Netanyahu's bloc holds slight edge",
-      "headline_source": "CBC World",
-      "headline_url": "https://www.cbc.ca/news/world/israel-election-9.7400701?cmp=rss"
-    },
-    {
       "term": "trump",
-      "articles": 189,
-      "sources": 35,
+      "articles": 190,
+      "sources": 36,
       "sentiment_direction": "mixed",
       "surge": 1.06,
-      "sentiment_mean": -0.134,
-      "headline": "Trump\u2019s anti-Muslim attacks dominate Michigan\u2019s election homestretch",
-      "headline_source": "Politico",
-      "headline_url": "https://www.politico.com/news/2026/10/29/trump-muslim-attacks-michigan-el-sayed-01140171"
+      "sentiment_mean": -0.133,
+      "headline": "The Trump Aide Trying to Stop a Blue Wave",
+      "headline_source": "The Atlantic",
+      "headline_url": "https://www.theatlantic.com/politics/2026/10/james-blair-trump-midterm-elections/689175/?utm_source=feed"
+    },
+    {
+      "term": "election",
+      "articles": 174,
+      "sources": 36,
+      "sentiment_direction": "mixed",
+      "surge": 1.43,
+      "sentiment_mean": -0.093,
+      "headline": "Law Firm Linked to Elon Musk Started an \u2018Election Integrity\u2019 Organization",
+      "headline_source": "Wired",
+      "headline_url": "https://www.wired.com/story/law-firm-linked-to-elon-musk-started-an-election-integrity-organization/"
     },
     {
       "term": "government",
-      "articles": 110,
-      "sources": 32,
+      "articles": 107,
+      "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 1.8,
-      "sentiment_mean": 0.007,
-      "headline": "5 key takeaways from government release of report on Tai Po blaze",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/article/3372584/5-key-takeaways-government-release-report-tai-po-blaze"
+      "surge": 1.71,
+      "sentiment_mean": 0.004,
+      "headline": "Andy Burnham\u2019s government talks of change, then does nothing",
+      "headline_source": "The Economist",
+      "headline_url": "https://www.economist.com/leaders/2026/10/29/andy-burnhams-government-talks-of-change-then-does-nothing"
     },
     {
       "term": "president",
-      "articles": 104,
+      "articles": 106,
       "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 1.17,
-      "sentiment_mean": -0.021,
-      "headline": "Germany does not want China decoupling but must defend its interests, president warns",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/china/diplomacy/article/3372562/we-dont-want-china-decoupling-we-must-defend-our-interests-german-president-warns"
+      "surge": 1.18,
+      "sentiment_mean": -0.059,
+      "headline": "ECB President Lagarde resigns effective Feb 7",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/economy-news/ecb-president-lagarde-resigns-effective-feb-7-4982341"
     },
     {
       "term": "results",
-      "articles": 87,
+      "articles": 80,
       "sources": 30,
       "sentiment_direction": "positive",
-      "surge": 2.87,
-      "sentiment_mean": 0.172,
-      "headline": "Earnings call transcript: Indra Q3 2026 results show strong growth and backlog",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-indra-q3-2026-results-show-strong-growth-and-backlog-93CH-4982051"
+      "surge": 2.53,
+      "sentiment_mean": 0.173,
+      "headline": "Nasdaq futures fall 1% as Alphabet results intensify AI spending fears - Reuters",
+      "headline_source": "Reuters",
+      "headline_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxObTRZdktaNHNaUkc2SG45TFV3V3hKRlMwdWdFTEhyUVFSRnBodWFIM0gxSHh5NWZDVkp3WnJOX3RTZGFtUDVIN3ZPQnB6NlNOQ01OOXhTRnNhNjkyajZ2ejhEZkRBS1IxMkxjVWJmY3FYa3lqcHUxajVqRXpWdS1UWjdxZFZYTW8tUjBtN2NZTGlLSWFiRlpjTDNKaVlVbHRiLVRCcA?oc=5"
     },
     {
       "term": "data",
-      "articles": 65,
+      "articles": 66,
       "sources": 30,
       "sentiment_direction": "positive",
-      "surge": 1.72,
-      "sentiment_mean": 0.178,
-      "headline": "Data center health worries animate midterm campaigns",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/news/data-center-health-risks-midterm-elections/"
+      "surge": 1.74,
+      "sentiment_mean": 0.192,
+      "headline": "FTC orders Delta, Uber and others to hand over data on algorithmic pricing",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/us-news/2026/oct/29/delta-uber-ftc-pricing"
     },
     {
       "term": "costs",
-      "articles": 70,
+      "articles": 67,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 2.06,
-      "sentiment_mean": -0.006,
+      "surge": 1.94,
+      "sentiment_mean": -0.013,
       "headline": "Tariffs, diesel and computer chips are driving up costs for automakers",
       "headline_source": "NPR News",
       "headline_url": "https://www.npr.org/2026/10/29/nx-s1-6008066/automakers-inflation-tariffs-chips-diesel-earnings"
     },
     {
-      "term": "including",
-      "articles": 52,
+      "term": "plan",
+      "articles": 60,
       "sources": 28,
-      "sentiment_direction": "mixed",
-      "surge": 1.27,
-      "sentiment_mean": 0.137,
-      "headline": "A single malformed WAP Push SMS crashes com.android.phone on Android, dropping active calls (including emergency calls)",
-      "headline_source": "Lobsters",
-      "headline_url": "https://smsofdeath.com/"
+      "sentiment_direction": "positive",
+      "surge": 1.79,
+      "sentiment_mean": 0.169,
+      "headline": "A Plan for Two Dans: How Democrats Manipulated Alaska\u2019s Ballot",
+      "headline_source": "NYT Politics",
+      "headline_url": "https://www.nytimes.com/2026/10/29/podcasts/the-daily/democrats-alaska-senate-midterms-dan-sullivan.html"
     }
   ],
-  "hours_since_fetch": 0.11
+  "hours_since_fetch": 0.0
 }
