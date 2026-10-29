@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-29T01:24:58.027595+00:00",
+  "generated_at": "2026-10-29T02:25:01.490351+00:00",
   "window_hours": 24,
-  "articles_in_window": 2655,
+  "articles_in_window": 2666,
   "collection_days": 46,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,92 +9,92 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
-      "term": "election",
-      "articles": 187,
-      "sources": 36,
-      "sentiment_direction": "mixed",
-      "surge": 1.65,
-      "sentiment_mean": -0.127,
-      "headline": "Why Wouldn\u2019t Google Tell Me Who Won the 2020 Election?",
-      "headline_source": "The Atlantic",
-      "headline_url": "https://www.theatlantic.com/technology/2026/10/google-search-ai-2020-election-trump/689197/?utm_source=feed"
-    },
-    {
       "term": "trump",
-      "articles": 193,
+      "articles": 192,
       "sources": 35,
       "sentiment_direction": "mixed",
-      "surge": 1.14,
-      "sentiment_mean": -0.105,
-      "headline": "Exclusive-Bloomberg, two trading firms agree to pay Trump\u2019s Truth Social for faster access to president\u2019s posts, sources say",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/exclusivebloomberg-two-trading-firms-agree-to-pay-trumps-truth-social-for-faster-access-to-presidents-posts-sources-say-4981264"
+      "surge": 1.13,
+      "sentiment_mean": -0.11,
+      "headline": "Judge Rejects Trump Officials\u2019 Bid to Set Aside California Ballots",
+      "headline_source": "NYT Politics",
+      "headline_url": "https://www.nytimes.com/2026/10/28/us/politics/california-noncitizen-voters-trump.html"
+    },
+    {
+      "term": "election",
+      "articles": 190,
+      "sources": 35,
+      "sentiment_direction": "mixed",
+      "surge": 1.66,
+      "sentiment_mean": -0.114,
+      "headline": "From U.S., Bolsonaro declares himself rightful leader of Brazil after election loss",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/news/2026/10/29/world/politics/flavio-bolsonaro-us-brazil-election/"
     },
     {
       "term": "government",
       "articles": 113,
-      "sources": 34,
+      "sources": 35,
       "sentiment_direction": "mixed",
-      "surge": 2.01,
-      "sentiment_mean": 0.023,
-      "headline": "Israelis rally for Jewish-Arab government after election gains",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/israelis-rally-for-jewish-arab-government-after-election-gains?traffic_source=rss"
+      "surge": 2.0,
+      "sentiment_mean": 0.019,
+      "headline": "Global fund managers grow bullish on Japanese government bonds",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/business/2026/10/29/markets/fund-managers-jgb-bullish/"
     },
     {
       "term": "results",
       "articles": 90,
       "sources": 33,
       "sentiment_direction": "positive",
-      "surge": 3.37,
-      "sentiment_mean": 0.205,
+      "surge": 3.33,
+      "sentiment_mean": 0.208,
       "headline": "Why Alphabet\u2019s stock could see its worst drop in years after the latest results",
       "headline_source": "MarketWatch Top Stories",
       "headline_url": "https://www.marketwatch.com/story/why-alphabets-stock-could-see-its-worst-drop-in-years-after-the-latest-results-6b64cf98?mod=mw_rss_topstories"
     },
     {
       "term": "costs",
-      "articles": 80,
+      "articles": 79,
       "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 2.67,
-      "sentiment_mean": -0.056,
+      "surge": 2.61,
+      "sentiment_mean": -0.064,
       "headline": "Earnings call transcript: Syrah Resources lifts output in Q3 2026 as costs rise",
       "headline_source": "Investing.com News",
       "headline_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-syrah-resources-lifts-output-in-q3-2026-as-costs-rise-93CH-4981286"
+    },
+    {
+      "term": "president",
+      "articles": 103,
+      "sources": 30,
+      "sentiment_direction": "mixed",
+      "surge": 1.2,
+      "sentiment_mean": -0.04,
+      "headline": "Exclusive-Bloomberg, two trading firms agree to pay Trump\u2019s Truth Social for faster access to president\u2019s posts, sources say",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/stock-market-news/exclusivebloomberg-two-trading-firms-agree-to-pay-trumps-truth-social-for-faster-access-to-presidents-posts-sources-say-4981264"
     },
     {
       "term": "data",
       "articles": 57,
       "sources": 30,
       "sentiment_direction": "positive",
-      "surge": 1.59,
-      "sentiment_mean": 0.172,
-      "headline": "Personal data of 40,000 U.S. Homeland Security employees leaked in security breach",
-      "headline_source": "CBC World",
-      "headline_url": "https://www.cbc.ca/news/world/dhs-data-breach-leak-distributed-denial-of-secrets-9.7400488?cmp=rss"
-    },
-    {
-      "term": "president",
-      "articles": 103,
-      "sources": 29,
-      "sentiment_direction": "mixed",
-      "surge": 1.21,
-      "sentiment_mean": -0.033,
-      "headline": "Exclusive-Bloomberg, two trading firms agree to pay Trump\u2019s Truth Social for faster access to president\u2019s posts, sources say",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/exclusivebloomberg-two-trading-firms-agree-to-pay-trumps-truth-social-for-faster-access-to-presidents-posts-sources-say-4981264"
+      "surge": 1.58,
+      "sentiment_mean": 0.18,
+      "headline": "Kansai emerges as key data center hub as other regions vie for share",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/news/2026/10/29/japan/japan-data-center-regional-expansion/"
     },
     {
       "term": "rates",
-      "articles": 77,
+      "articles": 78,
       "sources": 29,
       "sentiment_direction": "positive",
-      "surge": 6.16,
-      "sentiment_mean": 0.268,
-      "headline": "Federal Reserve holds interest rates steady despite inflation",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/federal-reserve-holds-interest-rates-steady-despite-inflation/"
+      "surge": 6.24,
+      "sentiment_mean": 0.277,
+      "headline": "Federal Reserve holds interest rates steady - The Washington Post",
+      "headline_source": "Google News Top",
+      "headline_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNcFVkNXozVXFDZmYzRUlaajVOYzF5RnZNaHZ3d2QxWkRhbXJKeVY5a3k2cV9jRWd2YU5UcEpuODg1T3JxaDFsRFhHdzIwZ3hpNmd3elJ2alBFb3J1NU1MT3FodWhfcHpkV1dkXzlLNmVUaXFyT1BTNVdJbHhwOHhqWGVKZWFlZmduejd3YURDa2FOZDdaYlptNkVn?oc=5"
     }
   ],
   "hours_since_fetch": 0.0
