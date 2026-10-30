@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-10-29T23:15:08.514674+00:00",
+  "generated_at": "2026-10-30T14:05:22.405188+00:00",
   "account": "PA3RTYOZ01QS",
   "paper": true,
   "started": "2026-09-12",
   "starting_equity": 100000.0,
-  "equity": 100203.43,
+  "equity": 100344.85,
   "cash": 72163.83,
-  "return_pct": 0.002,
+  "return_pct": 0.0034,
   "dividends_total": 39.53,
   "positions": [
     {
       "ticker": "HRB",
       "qty": 93.7142,
       "avg_entry": 42.02,
-      "price": 49.9,
-      "market_value": 4676.34,
-      "pnl": 738.47,
-      "return_pct": 0.1875,
+      "price": 51.17,
+      "market_value": 4795.35,
+      "pnl": 857.48,
+      "return_pct": 0.2177,
       "dividends": 0.0,
       "entered": "2026-10-01",
-      "days_held": 28,
+      "days_held": 29,
       "sell_on": "2027-10-02",
       "sell_due": false
     },
@@ -27,13 +27,13 @@
       "ticker": "TDC",
       "qty": 136.3332,
       "avg_entry": 29.34,
-      "price": 34.6,
-      "market_value": 4717.13,
-      "pnl": 717.15,
-      "return_pct": 0.1793,
+      "price": 34.73,
+      "market_value": 4734.17,
+      "pnl": 734.19,
+      "return_pct": 0.1835,
       "dividends": 0.0,
       "entered": "2026-09-15",
-      "days_held": 44,
+      "days_held": 45,
       "sell_on": "2027-09-16",
       "sell_due": false
     },
@@ -41,13 +41,13 @@
       "ticker": "OTEX",
       "qty": 168.9708,
       "avg_entry": 23.67,
-      "price": 27.07,
-      "market_value": 4574.04,
-      "pnl": 574.05,
-      "return_pct": 0.1435,
+      "price": 27.12,
+      "market_value": 4582.49,
+      "pnl": 582.5,
+      "return_pct": 0.1456,
       "dividends": 0.0,
       "entered": "2026-09-15",
-      "days_held": 44,
+      "days_held": 45,
       "sell_on": "2027-09-16",
       "sell_due": false
     },
@@ -55,13 +55,13 @@
       "ticker": "INVA",
       "qty": 188.1448,
       "avg_entry": 20.93,
-      "price": 21.31,
-      "market_value": 4009.37,
-      "pnl": 71.5,
-      "return_pct": 0.0182,
+      "price": 21.45,
+      "market_value": 4035.71,
+      "pnl": 97.84,
+      "return_pct": 0.0248,
       "dividends": 0.0,
       "entered": "2026-10-01",
-      "days_held": 28,
+      "days_held": 29,
       "sell_on": "2027-10-02",
       "sell_due": false
     },
@@ -69,27 +69,13 @@
       "ticker": "IRWD",
       "qty": 963.3261,
       "avg_entry": 4.15,
-      "price": 3.58,
-      "market_value": 3448.71,
-      "pnl": -551.28,
-      "return_pct": -0.1378,
+      "price": 3.59,
+      "market_value": 3458.34,
+      "pnl": -541.65,
+      "return_pct": -0.1354,
       "dividends": 0.0,
       "entered": "2026-09-15",
-      "days_held": 44,
-      "sell_on": "2027-09-14",
-      "sell_due": false
-    },
-    {
-      "ticker": "ABUS",
-      "qty": 776.6971,
-      "avg_entry": 5.15,
-      "price": 4.32,
-      "market_value": 3355.33,
-      "pnl": -644.66,
-      "return_pct": -0.1612,
-      "dividends": 0.0,
-      "entered": "2026-09-15",
-      "days_held": 44,
+      "days_held": 45,
       "sell_on": "2027-09-14",
       "sell_due": false
     },
@@ -97,13 +83,27 @@
       "ticker": "VSNT",
       "qty": 105.4016,
       "avg_entry": 37.95,
-      "price": 30.92,
-      "market_value": 3258.69,
-      "pnl": -741.3,
-      "return_pct": -0.1853,
+      "price": 31.34,
+      "market_value": 3303.29,
+      "pnl": -696.7,
+      "return_pct": -0.1742,
       "dividends": 39.53,
       "entered": "2026-09-15",
-      "days_held": 44,
+      "days_held": 45,
+      "sell_on": "2027-09-14",
+      "sell_due": false
+    },
+    {
+      "ticker": "ABUS",
+      "qty": 776.6971,
+      "avg_entry": 5.15,
+      "price": 4.21,
+      "market_value": 3273.78,
+      "pnl": -726.21,
+      "return_pct": -0.1815,
+      "dividends": 0.0,
+      "entered": "2026-09-15",
+      "days_held": 45,
       "sell_on": "2027-09-14",
       "sell_due": false
     }
@@ -247,6 +247,10 @@
     {
       "date": "2026-10-29",
       "equity": 99948.45
+    },
+    {
+      "date": "2026-10-30",
+      "equity": 100199.56
     }
   ],
   "ex_downtime": {
@@ -254,14 +258,18 @@
       {
         "start": "2026-10-02",
         "end": "2026-10-24"
+      },
+      {
+        "start": "2026-10-29",
+        "end": "2026-10-29"
       }
     ],
-    "sessions_excluded": 16,
-    "return_pct": -0.0166,
+    "sessions_excluded": 17,
+    "return_pct": -0.0177,
     "benchmark_return_pct": 0.0255,
-    "excess_return_pct": -0.042
+    "excess_return_pct": -0.0431
   },
   "benchmark": "SPY",
-  "benchmark_return_pct": 0.0201,
-  "excess_return_pct": -0.0181
+  "benchmark_return_pct": 0.0162,
+  "excess_return_pct": -0.0128
 }
