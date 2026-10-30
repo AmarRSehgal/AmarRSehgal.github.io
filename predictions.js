@@ -462,7 +462,12 @@ function renderPaperAB(data) {
                 </div>
             </div>`;
     }).join('');
-    return `<div class="prediction-note">${esc(data.headline)}</div>` + rows + renderLatencyCurve(data, money)
+    const prev = (data.previous_phases || []).map(p => `phase ${p.phase} (${p.started} to ${p.ended}, `
+        + `no aggro close) is archived in ${p.archive}` + (p.result ? `. Its result: ${p.result}` : '')).join('; ');
+    const phase = data.phase ? `<div class="prediction-note">${esc(`Phase ${data.phase} since ${data.started}, `
+        + `every maker with an aggro close (positions always rest at the touch to exit)`
+        + (prev ? `; ${prev}.` : '.'))}</div>` : '';
+    return phase + `<div class="prediction-note">${esc(data.headline)}</div>` + rows + renderLatencyCurve(data, money)
         + `<div class="prediction-note">${esc((data.caveats || []).join(' '))}</div>`;
 }
 
@@ -476,7 +481,8 @@ function renderLatencyCurve(data, money) {
     const rows = curves.map(c => {
         const r = c.rungs;
         const facts = r.map(x => `${x.latency_ms}ms ${money(x.pnl)}`
-            + (x.markout_c != null ? ` (${Number(x.markout_c).toFixed(2)}c)` : '')).join(' | ');
+            + (x.markout_c != null ? ` (${Number(x.markout_c).toFixed(2)}c)` : '')
+            + (x.breakeven_rebate_bps > 0 ? ` needs ${Number(x.breakeven_rebate_bps).toFixed(0)}bp` : '')).join(' | ');
         const fast = r[0], slow = r[r.length - 1];
         const gain = fast.fills || slow.fills ? fast.pnl - slow.pnl : null;
         return `
@@ -494,7 +500,8 @@ function renderLatencyCurve(data, money) {
             </div>`;
     }).join('');
     return `<div class="prediction-note">Latency ladder: each strategy re-run at several paper order `
-        + `latencies on the same feed; markout in brackets at ${esc(curves[0].markout_horizon_s)}s.</div>` + rows;
+        + `latencies on the same feed; markout in brackets at ${esc(curves[0].markout_horizon_s)}s; `
+        + `"needs" is the maker rebate that would break a losing rung even.</div>` + rows;
 }
 
 // One section of the cross-source board, rendered as its own panel. `staleAfter` is

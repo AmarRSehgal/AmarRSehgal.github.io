@@ -1368,9 +1368,9 @@ function projectPanel(proj) {
 // from the payload is skipped rather than rendered as "undefined".
 const FACTS = {
     pm_btc_paper: d => [['Status', d.status], ['Settled windows', d.arms.length ? d.arms[0].units : 0],
-                        ['Needed for a verdict', d.min_units_for_verdict], ['Started', d.started]],
+                        ['Needed for a verdict', d.min_units_for_verdict], ['Phase', d.phase], ['Started', d.started]],
     kalshi_mm_paper: d => [['Status', d.status], ['Paired days', d.arms.length ? d.arms[0].units : 0],
-                           ['Needed for a verdict', d.min_units_for_verdict], ['Started', d.started]],
+                           ['Needed for a verdict', d.min_units_for_verdict], ['Phase', d.phase], ['Started', d.started]],
     nfl: d => [['Season', d.season], ['Week', d.week], ['Games', len(d.games)]],
     nba: d => [['Slate', d.date], ['Games', len(d.games)]],
     mlb: d => [['Slate', d.date], ['Games', len(d.games)],
