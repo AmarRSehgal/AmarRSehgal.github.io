@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T08:00:12.194737+00:00",
+  "generated_at": "2026-10-30T09:00:12.076377+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -25,11 +25,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 19,
+      "hits": 20,
       "scans": 24,
-      "net_apr": 313.06,
-      "net_at_hold": 0.2859,
-      "cost_bps": 24.57
+      "net_apr": 267.11,
+      "net_at_hold": 0.24393,
+      "cost_bps": 24.53
     },
     {
       "base": "UNITREE",
@@ -38,10 +38,10 @@
       "short_venue": "Bitget",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 19,
+      "hits": 20,
       "scans": 24,
-      "net_apr": 174.16,
-      "net_at_hold": 0.15905,
+      "net_apr": 172.83,
+      "net_at_hold": 0.15783,
       "cost_bps": 23.06
     },
     {
@@ -56,19 +56,6 @@
       "net_apr": 139.04,
       "net_at_hold": 0.12698,
       "cost_bps": 26.04
-    },
-    {
-      "base": "UNITREE",
-      "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "Lighter",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 157.65,
-      "net_at_hold": 0.14397,
-      "cost_bps": 15.62
     }
   ]
 }
