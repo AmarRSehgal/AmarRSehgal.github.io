@@ -1,133 +1,133 @@
 {
-  "generated_at": "2026-10-29T23:15:01.866830+00:00",
+  "generated_at": "2026-10-30T13:35:15.379514+00:00",
   "strategy": "MultiFactorV3",
   "account": "PA37U0PIU9B9",
   "paper": true,
   "started": "2026-09-12",
   "starting_equity": 100000.0,
-  "equity": 96499.31,
-  "cash": 2339.89,
-  "return_pct": -0.035,
+  "equity": 97274.82,
+  "cash": 2176.92,
+  "return_pct": -0.0273,
   "positions": [
     {
       "ticker": "ADI",
       "qty": 19.2445,
       "avg_entry": 397.43,
-      "price": 430.98,
-      "market_value": 8293.99,
-      "pnl": 645.65,
-      "return_pct": 0.0844,
-      "weight_pct": 0.0859
+      "price": 422.83,
+      "market_value": 8137.15,
+      "pnl": 488.81,
+      "return_pct": 0.0639,
+      "weight_pct": 0.0837
     },
     {
       "ticker": "AMGN",
       "qty": 17.3417,
       "avg_entry": 446.06,
-      "price": 470.2,
-      "market_value": 8154.07,
-      "pnl": 418.62,
-      "return_pct": 0.0541,
-      "weight_pct": 0.0845
-    },
-    {
-      "ticker": "TSLA",
-      "qty": 19.7993,
-      "avg_entry": 386.79,
-      "price": 396.1,
-      "market_value": 7842.52,
-      "pnl": 184.32,
-      "return_pct": 0.0241,
-      "weight_pct": 0.0813
+      "price": 472.63,
+      "market_value": 8196.29,
+      "pnl": 460.84,
+      "return_pct": 0.0596,
+      "weight_pct": 0.0843
     },
     {
       "ticker": "INTU",
       "qty": 23.933,
       "avg_entry": 325.8,
-      "price": 332.88,
-      "market_value": 7966.81,
-      "pnl": 169.34,
-      "return_pct": 0.0217,
-      "weight_pct": 0.0826
-    },
-    {
-      "ticker": "TJX",
-      "qty": 54.7088,
-      "avg_entry": 139.17,
-      "price": 141.39,
-      "market_value": 7735.28,
-      "pnl": 121.22,
-      "return_pct": 0.0159,
-      "weight_pct": 0.0802
+      "price": 338.35,
+      "market_value": 8097.73,
+      "pnl": 300.26,
+      "return_pct": 0.0385,
+      "weight_pct": 0.0832
     },
     {
       "ticker": "CB",
       "qty": 21.5634,
       "avg_entry": 357.22,
-      "price": 362.28,
-      "market_value": 7811.97,
-      "pnl": 109.03,
-      "return_pct": 0.0141,
-      "weight_pct": 0.081
+      "price": 368.74,
+      "market_value": 7951.16,
+      "pnl": 248.22,
+      "return_pct": 0.0322,
+      "weight_pct": 0.0817
     },
     {
-      "ticker": "COST",
-      "qty": 7.7209,
-      "avg_entry": 1003.73,
-      "price": 1010.0,
-      "market_value": 7798.09,
-      "pnl": 48.42,
-      "return_pct": 0.0063,
-      "weight_pct": 0.0808
-    },
-    {
-      "ticker": "CVX",
-      "qty": 33.1767,
-      "avg_entry": 232.08,
-      "price": 232.76,
-      "market_value": 7722.21,
-      "pnl": 22.71,
-      "return_pct": 0.0029,
-      "weight_pct": 0.08
+      "ticker": "TJX",
+      "qty": 54.7088,
+      "avg_entry": 139.17,
+      "price": 143.55,
+      "market_value": 7853.45,
+      "pnl": 239.39,
+      "return_pct": 0.0314,
+      "weight_pct": 0.0807
     },
     {
       "ticker": "PG",
       "qty": 48.1029,
       "avg_entry": 160.73,
-      "price": 160.59,
-      "market_value": 7724.84,
-      "pnl": -6.7,
-      "return_pct": -0.0009,
-      "weight_pct": 0.0801
+      "price": 164.95,
+      "market_value": 7934.57,
+      "pnl": 203.03,
+      "return_pct": 0.0263,
+      "weight_pct": 0.0816
+    },
+    {
+      "ticker": "CVX",
+      "qty": 33.1767,
+      "avg_entry": 232.08,
+      "price": 235.46,
+      "market_value": 7811.78,
+      "pnl": 112.28,
+      "return_pct": 0.0146,
+      "weight_pct": 0.0803
     },
     {
       "ticker": "COP",
       "qty": 51.2935,
       "avg_entry": 150.6,
-      "price": 150.03,
-      "market_value": 7695.57,
-      "pnl": -29.13,
-      "return_pct": -0.0038,
-      "weight_pct": 0.0797
+      "price": 152.24,
+      "market_value": 7808.92,
+      "pnl": 84.22,
+      "return_pct": 0.0109,
+      "weight_pct": 0.0803
+    },
+    {
+      "ticker": "COST",
+      "qty": 7.7209,
+      "avg_entry": 1003.73,
+      "price": 1013.5,
+      "market_value": 7825.16,
+      "pnl": 75.49,
+      "return_pct": 0.0097,
+      "weight_pct": 0.0804
     },
     {
       "ticker": "NEE",
-      "qty": 93.2543,
-      "avg_entry": 82.6,
-      "price": 82.14,
-      "market_value": 7659.91,
-      "pnl": -43.04,
-      "return_pct": -0.0056,
-      "weight_pct": 0.0794
+      "qty": 93.9755,
+      "avg_entry": 82.61,
+      "price": 83.32,
+      "market_value": 7830.04,
+      "pnl": 67.07,
+      "return_pct": 0.0086,
+      "weight_pct": 0.0805
+    },
+    {
+      "ticker": "TSLA",
+      "qty": 20.0648,
+      "avg_entry": 386.8,
+      "price": 387.7,
+      "market_value": 7779.11,
+      "pnl": 17.97,
+      "return_pct": 0.0023,
+      "weight_pct": 0.08
     },
     {
       "ticker": "AMT",
       "qty": 41.716,
       "avg_entry": 190.47,
-      "price": 185.88,
-      "market_value": 7754.17,
-      "pnl": -191.65,
-      "return_pct": -0.0241,
-      "weight_pct": 0.0804
+      "price": 188.89,
+      "market_value": 7879.74,
+      "pnl": -66.08,
+      "return_pct": -0.0083,
+      "weight_pct": 0.081
     }
   ],
   "open_positions": 12,
@@ -267,22 +267,30 @@
     {
       "date": "2026-10-29",
       "equity": 95179.2
+    },
+    {
+      "date": "2026-10-30",
+      "equity": 96330.84
     }
   ],
   "benchmark": "SPY",
-  "benchmark_return_pct": 0.0201,
-  "excess_return_pct": -0.0551,
+  "benchmark_return_pct": 0.0162,
+  "excess_return_pct": -0.0435,
   "ex_downtime": {
     "windows": [
       {
         "start": "2026-10-02",
         "end": "2026-10-24"
+      },
+      {
+        "start": "2026-10-29",
+        "end": "2026-10-29"
       }
     ],
-    "sessions_excluded": 16,
-    "return_pct": -0.0539,
+    "sessions_excluded": 17,
+    "return_pct": -0.0577,
     "benchmark_return_pct": 0.0255,
-    "excess_return_pct": -0.0793
+    "excess_return_pct": -0.0831
   },
   "days_live": 24,
   "verdict_due": false,
