@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T22:00:11.630915+00:00",
+  "generated_at": "2026-10-30T23:00:09.876416+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -25,11 +25,24 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
+      "hits": 19,
+      "scans": 24,
+      "net_apr": 46.41,
+      "net_at_hold": 0.04239,
+      "cost_bps": 21.82
+    },
+    {
+      "base": "TRX",
+      "type": "perp-perp",
+      "long_venue": "Backpack",
+      "short_venue": "Bybit",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 47.51,
-      "net_at_hold": 0.04339,
-      "cost_bps": 21.8
+      "net_apr": 350.82,
+      "net_at_hold": 0.32039,
+      "cost_bps": 38.98
     }
   ]
 }
