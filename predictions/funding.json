@@ -1,10 +1,23 @@
 {
-  "generated_at": "2026-10-31T14:00:10.334864+00:00",
+  "generated_at": "2026-10-31T15:00:12.003641+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
+    {
+      "base": "H100",
+      "type": "perp-perp",
+      "long_venue": "OKX",
+      "short_venue": "Lighter",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 3297.35,
+      "net_at_hold": 3.01128,
+      "cost_bps": 34.05
+    },
     {
       "base": "JOE",
       "type": "perp-perp",
@@ -14,8 +27,8 @@
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 15.16,
-      "net_at_hold": 0.01385,
+      "net_apr": 15.44,
+      "net_at_hold": 0.0141,
       "cost_bps": 33.59
     }
   ]
