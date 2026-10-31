@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T21:00:08.327279+00:00",
+  "generated_at": "2026-10-31T22:00:10.634251+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 23.48,
-      "net_at_hold": 0.02144,
-      "cost_bps": 33.57
+      "net_apr": 27.06,
+      "net_at_hold": 0.02471,
+      "cost_bps": 33.56
     },
     {
       "base": "RED",
@@ -32,16 +32,29 @@
       "cost_bps": 48.2
     },
     {
+      "base": "RONIN",
+      "type": "perp-perp",
+      "long_venue": "Aster",
+      "short_venue": "Crypto.com",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 145.42,
+      "net_at_hold": 0.1328,
+      "cost_bps": 54.78
+    },
+    {
       "base": "QTUM",
       "type": "perp-perp",
       "long_venue": "Binance",
       "short_venue": "Crypto.com",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 19,
+      "hits": 18,
       "scans": 24,
-      "net_apr": 114.86,
-      "net_at_hold": 0.10489,
+      "net_apr": 114.9,
+      "net_at_hold": 0.10493,
       "cost_bps": 31.28
     }
   ]
