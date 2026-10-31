@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T23:00:09.876416+00:00",
+  "generated_at": "2026-10-31T00:00:11.646789+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -12,10 +12,10 @@
       "short_venue": "Crypto.com",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 24,
+      "hits": 23,
       "scans": 24,
-      "net_apr": 108.4,
-      "net_at_hold": 0.09899,
+      "net_apr": 108.45,
+      "net_at_hold": 0.09904,
       "cost_bps": 22.33
     },
     {
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 46.41,
-      "net_at_hold": 0.04239,
-      "cost_bps": 21.82
+      "net_apr": 39.25,
+      "net_at_hold": 0.03584,
+      "cost_bps": 21.79
     },
     {
       "base": "TRX",
@@ -40,9 +40,22 @@
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 350.82,
-      "net_at_hold": 0.32039,
-      "cost_bps": 38.98
+      "net_apr": 296.44,
+      "net_at_hold": 0.27072,
+      "cost_bps": 38.99
+    },
+    {
+      "base": "TRX",
+      "type": "perp-perp",
+      "long_venue": "OKX",
+      "short_venue": "Lighter",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 142.81,
+      "net_at_hold": 0.13042,
+      "cost_bps": 15.3
     }
   ]
 }
