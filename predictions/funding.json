@@ -1,8 +1,22 @@
 {
-  "generated_at": "2026-10-31T13:00:10.576541+00:00",
+  "generated_at": "2026-10-31T14:00:10.334864+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
-  "opportunities": []
+  "opportunities": [
+    {
+      "base": "JOE",
+      "type": "perp-perp",
+      "long_venue": "Crypto.com",
+      "short_venue": "Binance",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 15.16,
+      "net_at_hold": 0.01385,
+      "cost_bps": 33.59
+    }
+  ]
 }
