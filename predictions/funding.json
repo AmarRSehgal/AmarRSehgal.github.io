@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T22:00:10.634251+00:00",
+  "generated_at": "2026-10-31T23:00:11.281438+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 27.06,
-      "net_at_hold": 0.02471,
+      "net_apr": 31.01,
+      "net_at_hold": 0.02832,
       "cost_bps": 33.56
     },
     {
@@ -38,24 +38,11 @@
       "short_venue": "Crypto.com",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 18,
+      "hits": 19,
       "scans": 24,
-      "net_apr": 145.42,
-      "net_at_hold": 0.1328,
-      "cost_bps": 54.78
-    },
-    {
-      "base": "QTUM",
-      "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "Crypto.com",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 114.9,
-      "net_at_hold": 0.10493,
-      "cost_bps": 31.28
+      "net_apr": 142.92,
+      "net_at_hold": 0.13052,
+      "cost_bps": 54.77
     }
   ]
 }
