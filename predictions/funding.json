@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T06:18:37.912630+00:00",
+  "generated_at": "2026-10-31T07:00:11.675774+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -12,10 +12,10 @@
       "short_venue": "Crypto.com",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 21,
+      "hits": 20,
       "scans": 24,
-      "net_apr": 157.03,
-      "net_at_hold": 0.14341,
+      "net_apr": 157.13,
+      "net_at_hold": 0.1435,
       "cost_bps": 22.34
     },
     {
@@ -27,22 +27,9 @@
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 127.24,
-      "net_at_hold": 0.1162,
+      "net_apr": 117.19,
+      "net_at_hold": 0.10703,
       "cost_bps": 15.3
-    },
-    {
-      "base": "TRX",
-      "type": "perp-perp",
-      "long_venue": "OKX",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 28.78,
-      "net_at_hold": 0.02628,
-      "cost_bps": 21.65
     }
   ]
 }
