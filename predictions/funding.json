@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T01:00:09.380664+00:00",
+  "generated_at": "2026-10-31T06:18:37.912630+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -12,37 +12,11 @@
       "short_venue": "Crypto.com",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 22,
+      "hits": 21,
       "scans": 24,
-      "net_apr": 132.74,
-      "net_at_hold": 0.12123,
+      "net_apr": 157.03,
+      "net_at_hold": 0.14341,
       "cost_bps": 22.34
-    },
-    {
-      "base": "TRX",
-      "type": "perp-perp",
-      "long_venue": "OKX",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 19,
-      "scans": 24,
-      "net_apr": 31.67,
-      "net_at_hold": 0.02892,
-      "cost_bps": 21.79
-    },
-    {
-      "base": "TRX",
-      "type": "perp-perp",
-      "long_venue": "Backpack",
-      "short_venue": "Bybit",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 296.44,
-      "net_at_hold": 0.27072,
-      "cost_bps": 38.99
     },
     {
       "base": "TRX",
@@ -53,9 +27,22 @@
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 136.53,
-      "net_at_hold": 0.12468,
+      "net_apr": 127.24,
+      "net_at_hold": 0.1162,
       "cost_bps": 15.3
+    },
+    {
+      "base": "TRX",
+      "type": "perp-perp",
+      "long_venue": "OKX",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 28.78,
+      "net_at_hold": 0.02628,
+      "cost_bps": 21.65
     }
   ]
 }
