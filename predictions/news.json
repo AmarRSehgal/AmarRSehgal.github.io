@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-31T10:25:00.540179+00:00",
+  "generated_at": "2026-10-31T11:24:51.609060+00:00",
   "window_hours": 24,
-  "articles_in_window": 2155,
+  "articles_in_window": 2080,
   "collection_days": 48,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,91 +10,91 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 212,
+      "articles": 202,
       "sources": 35,
       "sentiment_direction": "mixed",
-      "surge": 0.97,
-      "sentiment_mean": -0.113,
-      "headline": "Trump vs MAGA: Why his movement is splitting",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/video/20261031-trump-vs-maga-why-his-movement-is-splitting"
+      "surge": 0.92,
+      "sentiment_mean": -0.103,
+      "headline": "Canada shows the limits of Trump\u2019s hardball trade tactics \u2014 Trump\u2019s trade war with Canada assumed economic size would translate into bargaining power",
+      "headline_source": "Reddit r/economics",
+      "headline_url": "https://www.reddit.com/r/Economics/comments/1xk7h3o/canada_shows_the_limits_of_trumps_hardball_trade/"
     },
     {
       "term": "company",
-      "articles": 85,
+      "articles": 84,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 1.25,
-      "sentiment_mean": 0.137,
-      "headline": "OceanFirst Financial senior evp & cfo buys $89,500 in company stock",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/insider-trading-news/oceanfirst-financial-senior-evp--cfo-buys-89500-in-company-stock-93CH-4989213"
+      "surge": 1.23,
+      "sentiment_mean": 0.14,
+      "headline": "Supersonic Airliner In Doubt As Company Shifts to Powering AI Data Centers",
+      "headline_source": "Slashdot",
+      "headline_url": "https://hardware.slashdot.org/story/26/10/30/2355244/supersonic-airliner-in-doubt-as-company-shifts-to-powering-ai-data-centers?utm_source=rss1.0mainlinkanon&utm_medium=feed"
     },
     {
       "term": "tech",
-      "articles": 78,
+      "articles": 77,
       "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 1.69,
-      "sentiment_mean": 0.044,
-      "headline": "Keurig Alta Brewer Review: Brand-New Tech, Classically Good Coffee",
-      "headline_source": "Wired",
-      "headline_url": "https://www.wired.com/review/keurig-alta-brewer/"
+      "surge": 1.67,
+      "sentiment_mean": 0.03,
+      "headline": "Tech risk-reward turns favorable after rout, Deutsche Bank says",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/stock-market-news/tech-riskreward-turns-favorable-after-rout-deutsche-bank-says-4989239"
     },
     {
       "term": "binance",
-      "articles": 77,
+      "articles": 73,
       "sources": 31,
       "sentiment_direction": "negative",
-      "surge": 6.78,
-      "sentiment_mean": -0.239,
-      "headline": "The $3 Billion Kill-Switch: Inside the $6.4B Binance Heist\u2014and Why Only Bitcoin Is Real Bearer Money.",
-      "headline_source": "Reddit r/crypto",
-      "headline_url": "https://www.reddit.com/r/CryptoCurrency/comments/1xk2kq9/the_3_billion_killswitch_inside_the_64b_binance/"
+      "surge": 5.77,
+      "sentiment_mean": -0.224,
+      "headline": "\u2018Binance will absorb impact, not users\u2019: Crypto giant sets aside $6.34 bn to cover losses",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/business/international-business/binance-will-absorb-the-impact-not-users-crypto-exchange-sets-aside-6-34-billion-to-cover-hack-losses/articleshow/135398082.cms"
     },
     {
       "term": "election",
-      "articles": 122,
-      "sources": 29,
+      "articles": 106,
+      "sources": 28,
       "sentiment_direction": "negative",
-      "surge": 0.75,
-      "sentiment_mean": -0.165,
-      "headline": "CCTV, zip ties and election watchers: How US mail-in votes are secured and counted",
-      "headline_source": "BBC World",
-      "headline_url": "https://www.bbc.co.uk/news/videos/cw4g1vlj4v2jo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "term": "security",
-      "articles": 63,
-      "sources": 29,
-      "sentiment_direction": "mixed",
-      "surge": 1.06,
-      "sentiment_mean": -0.017,
-      "headline": "Why Did So Many People File Early for Social Security Last Year?",
-      "headline_source": "NYT Business",
-      "headline_url": "https://www.nytimes.com/2026/10/31/well/whats-behind-a-recent-spike-in-early-social-security-claims.html"
+      "surge": 0.64,
+      "sentiment_mean": -0.18,
+      "headline": "Trump admin threatens Iran with 'consequences' as allies convene amid threats of post-election escalation",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/politics/trump-admin-threatens-iran-consequences-allies-convene-amid-threats-post-election-escalation"
     },
     {
       "term": "billion",
-      "articles": 95,
+      "articles": 89,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 1.4,
-      "sentiment_mean": 0.024,
+      "surge": 1.29,
+      "sentiment_mean": 0.046,
       "headline": "A Martian meteorite that formed \u22734.1 billion years ago samples Mars\u2019 early crust and mantle",
       "headline_source": "Reddit r/science",
       "headline_url": "https://www.reddit.com/r/science/comments/1xk2w2q/a_martian_meteorite_that_formed_41_billion_years/"
     },
     {
-      "term": "data",
-      "articles": 52,
+      "term": "security",
+      "articles": 60,
       "sources": 28,
       "sentiment_direction": "mixed",
+      "surge": 1.01,
+      "sentiment_mean": 0.013,
+      "headline": "Crypto exchanges rush to tighten security after $6.3bn Binance heist",
+      "headline_source": "Financial Times",
+      "headline_url": "https://www.ft.com/content/c7062e37-86fd-45ef-8f58-573de0fcaaf0?syn-25a6b1a6=1"
+    },
+    {
+      "term": "data",
+      "articles": 52,
+      "sources": 27,
+      "sentiment_direction": "positive",
       "surge": 0.92,
-      "sentiment_mean": 0.14,
-      "headline": "Power bills and data centers cast rare spotlight on utilities in US midterms",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/power-bills-and-data-centers-cast-rare-spotlight-on-utilities-in-us-midterms-4989220"
+      "sentiment_mean": 0.175,
+      "headline": "Supersonic Airliner In Doubt As Company Shifts to Powering AI Data Centers",
+      "headline_source": "Slashdot",
+      "headline_url": "https://hardware.slashdot.org/story/26/10/30/2355244/supersonic-airliner-in-doubt-as-company-shifts-to-powering-ai-data-centers?utm_source=rss1.0mainlinkanon&utm_medium=feed"
     }
   ],
   "hours_since_fetch": 0.0
