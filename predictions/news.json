@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-31T19:24:49.151746+00:00",
+  "generated_at": "2026-10-31T20:24:55.456505+00:00",
   "window_hours": 24,
-  "articles_in_window": 1696,
+  "articles_in_window": 1657,
   "collection_days": 48,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,36 +10,36 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 173,
-      "sources": 33,
+      "articles": 171,
+      "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 0.76,
-      "sentiment_mean": -0.102,
-      "headline": "Virginia and D.C. sue over Trump's arch, adding to legal challenges as government wants work to begin",
-      "headline_source": "PBS NewsHour",
-      "headline_url": "https://www.pbs.org/newshour/politics/virginia-and-d-c-sue-over-trumps-arch-adding-to-legal-challenges-as-government-wants-work-to-begin"
+      "surge": 0.75,
+      "sentiment_mean": -0.1,
+      "headline": "Trump lawsuit against Wall Street Journal over Epstein birthday letter dismissed with prejudice",
+      "headline_source": "CBC World",
+      "headline_url": "https://www.cbc.ca/news/world/trump-jeffrey-epstein-lawsuit-dismissed-9.7404357?cmp=rss"
     },
     {
       "term": "election",
-      "articles": 69,
+      "articles": 65,
       "sources": 29,
       "sentiment_direction": "negative",
-      "surge": 0.41,
-      "sentiment_mean": -0.273,
+      "surge": 0.38,
+      "sentiment_mean": -0.266,
       "headline": "When will we know 2026 midterm election results? It may take some time, but that's normal",
       "headline_source": "PBS NewsHour",
       "headline_url": "https://www.pbs.org/newshour/politics/when-will-we-know-2026-midterm-election-results-it-may-take-some-time-but-thats-normal"
     },
     {
-      "term": "company",
-      "articles": 58,
-      "sources": 26,
+      "term": "president",
+      "articles": 78,
+      "sources": 25,
       "sentiment_direction": "mixed",
-      "surge": 0.81,
-      "sentiment_mean": 0.127,
-      "headline": "Microsoft's ex-lawyer, now Washington governor, takes a dig at company",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/technology/tech-news/microsofts-ex-lawyer-and-now-washington-governor-is-angry-with-the-company-says-i-love-the-company-but-whats-up-with-/articleshow/135407135.cms"
+      "surge": 0.68,
+      "sentiment_mean": -0.086,
+      "headline": "Bill Maher hits back at Trump over blistering Truth Social post, jokes about president's dinner review",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/media/bill-maher-hits-back-trump-blistering-truth-social-post-jokes-president-dinner-review"
     },
     {
       "term": "midterms",
@@ -53,48 +53,48 @@
       "headline_url": "https://www.aljazeera.com/news/longform/2026/10/31/a-cure-for-trump-why-democratic-doctors-are-running-in-the-2026-midterms?traffic_source=rss"
     },
     {
-      "term": "security",
-      "articles": 51,
-      "sources": 25,
-      "sentiment_direction": "mixed",
-      "surge": 0.83,
-      "sentiment_mean": 0.001,
-      "headline": "Ukraine calls for emergency UN Security Council meeting over deadly Russian attacks on Dnipro, Chernihiv, Kremenchuk",
-      "headline_source": "Reddit r/worldnews",
-      "headline_url": "https://www.reddit.com/r/worldnews/comments/1xkcuiz/ukraine_calls_for_emergency_un_security_council/"
-    },
-    {
-      "term": "president",
-      "articles": 77,
-      "sources": 24,
-      "sentiment_direction": "mixed",
-      "surge": 0.67,
-      "sentiment_mean": -0.079,
-      "headline": "Bill Maher hits back at Trump over blistering Truth Social post, jokes about president's dinner review",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/media/bill-maher-hits-back-trump-blistering-truth-social-post-jokes-president-dinner-review"
-    },
-    {
-      "term": "court",
-      "articles": 68,
-      "sources": 24,
-      "sentiment_direction": "negative",
-      "surge": 1.03,
-      "sentiment_mean": -0.238,
-      "headline": "Judge says court will investigate government officials in DC golf course case",
-      "headline_source": "ABC News",
-      "headline_url": "https://abcnews.com/Politics/judge-court-investigate-government-officials-dc-golf-case/story?id=137723824"
-    },
-    {
       "term": "government",
-      "articles": 60,
+      "articles": 61,
       "sources": 24,
       "sentiment_direction": "mixed",
-      "surge": 0.68,
-      "sentiment_mean": -0.072,
-      "headline": "Virginia and D.C. sue over Trump's arch, adding to legal challenges as government wants work to begin",
-      "headline_source": "PBS NewsHour",
-      "headline_url": "https://www.pbs.org/newshour/politics/virginia-and-d-c-sue-over-trumps-arch-adding-to-legal-challenges-as-government-wants-work-to-begin"
+      "surge": 0.69,
+      "sentiment_mean": -0.063,
+      "headline": "Thousands return to Lisbon square, press government to scrap rental bill",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/economic-indicators/thousands-return-to-lisbon-square-press-government-to-scrap-rental-bill-4989325"
+    },
+    {
+      "term": "company",
+      "articles": 55,
+      "sources": 24,
+      "sentiment_direction": "mixed",
+      "surge": 0.76,
+      "sentiment_mean": 0.146,
+      "headline": "Microsoft's ex-lawyer, now Washington governor, takes a dig at company",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/technology/tech-news/microsofts-ex-lawyer-and-now-washington-governor-is-angry-with-the-company-says-i-love-the-company-but-whats-up-with-/articleshow/135407135.cms"
+    },
+    {
+      "term": "security",
+      "articles": 50,
+      "sources": 24,
+      "sentiment_direction": "mixed",
+      "surge": 0.82,
+      "sentiment_mean": 0.045,
+      "headline": "WWYD? Single mom trying to find financial security.",
+      "headline_source": "Reddit r/personalfinance",
+      "headline_url": "https://www.reddit.com/r/personalfinance/comments/1xkk4kp/wwyd_single_mom_trying_to_find_financial_security/"
+    },
+    {
+      "term": "power",
+      "articles": 41,
+      "sources": 24,
+      "sentiment_direction": "mixed",
+      "surge": 0.84,
+      "sentiment_mean": 0.134,
+      "headline": "Mystery of 60-Second Fluctuations in Power Grids Solved",
+      "headline_source": "Lobsters",
+      "headline_url": "https://www.fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-second-fluctuations-in-power-grids-solved"
     }
   ],
   "hours_since_fetch": 0.0
