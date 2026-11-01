@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T20:00:10.651525+00:00",
+  "generated_at": "2026-11-01T21:00:11.851101+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -12,11 +12,37 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 20,
+      "hits": 21,
       "scans": 24,
-      "net_apr": 636.08,
-      "net_at_hold": 0.5809,
-      "cost_bps": 46.87
+      "net_apr": 696.59,
+      "net_at_hold": 0.63616,
+      "cost_bps": 45.98
+    },
+    {
+      "base": "POWR",
+      "type": "perp-perp",
+      "long_venue": "Bybit",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 19,
+      "scans": 24,
+      "net_apr": 1178.08,
+      "net_at_hold": 1.07588,
+      "cost_bps": 42.23
+    },
+    {
+      "base": "POWR",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 19,
+      "scans": 24,
+      "net_apr": 957.03,
+      "net_at_hold": 0.874,
+      "cost_bps": 37.64
     },
     {
       "base": "BIRB",
@@ -27,35 +53,9 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 148.34,
-      "net_at_hold": 0.13547,
-      "cost_bps": 60.84
-    },
-    {
-      "base": "POWR",
-      "type": "perp-perp",
-      "long_venue": "Bybit",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 1320.75,
-      "net_at_hold": 1.20617,
-      "cost_bps": 42.62
-    },
-    {
-      "base": "POWR",
-      "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 1013.26,
-      "net_at_hold": 0.92535,
-      "cost_bps": 38.52
+      "net_apr": 151.89,
+      "net_at_hold": 0.13871,
+      "cost_bps": 61.29
     }
   ]
 }
