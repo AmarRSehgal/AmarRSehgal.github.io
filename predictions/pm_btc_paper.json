@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T13:02:20.153851+00:00",
+  "generated_at": "2026-11-01T13:02:53.373661+00:00",
   "experiment": "Polymarket BTC 5-minute binaries: taker v1 vs passive makers",
   "venue": "Polymarket",
   "paper": true,
@@ -17,55 +17,55 @@
   ],
   "unit": "window",
   "min_units_for_verdict": 200,
-  "status": "collecting",
-  "headline": "Collecting: 144 of 200 settled windows before any arm is scored. Numbers below are running totals, not results.",
+  "status": "verdict",
+  "headline": "The best scored maker (maker_model_0ms) cannot yet be told apart from the original taker by $-0.260 per window (95% CI $-0.890 to $+0.374). Latency-ladder arms are still collecting.",
   "arms": [
     {
       "name": "taker_v1",
       "role": "control",
       "description": "The original tool, unchanged: buys the ask when N(d2) beats ask + taker fee, polling REST every 3s.",
-      "units": 144,
-      "active_units": 144,
-      "fills": 1699,
-      "size": 1699.0,
-      "pnl": -45.36,
-      "pnl_per_unit": -0.315,
+      "units": 204,
+      "active_units": 204,
+      "fills": 2389,
+      "size": 2389.0,
+      "pnl": -51.11,
+      "pnl_per_unit": -0.2506,
       "pnl_per_unit_ci": [
-        -1.0174,
-        0.4073
+        -0.8558,
+        0.3483
       ],
-      "pnl_per_size_c": -2.67,
+      "pnl_per_size_c": -2.14,
       "breakeven_rebate_bps": null,
-      "roi": -0.0648,
+      "roi": -0.0514,
       "max_drawdown": 86.26,
       "edge_at_fill_c": null,
       "markouts_c": null,
-      "fees": 25.19,
+      "fees": 35.69,
       "ladder": null
     },
     {
       "name": "maker_mid",
       "role": "treatment",
       "description": "Rests quotes around the Polymarket mid. No outside information -- measures what passive quoting alone is worth. Phase 2: any position also rests in full at the touch on the closing side at all times (aggro close), never crossing.",
-      "units": 144,
-      "active_units": 136,
-      "fills": 2207,
-      "size": 9170.6,
-      "pnl": -292.77,
-      "pnl_per_unit": -2.0331,
+      "units": 204,
+      "active_units": 192,
+      "fills": 2801,
+      "size": 11636.8,
+      "pnl": -402.96,
+      "pnl_per_unit": -1.9753,
       "pnl_per_unit_ci": [
-        -2.403,
-        -1.6884
+        -2.2657,
+        -1.6881
       ],
-      "pnl_per_size_c": -3.192,
-      "breakeven_rebate_bps": 600.5,
-      "roi": -0.0601,
-      "max_drawdown": 292.87,
-      "edge_at_fill_c": 3.561,
+      "pnl_per_size_c": -3.463,
+      "breakeven_rebate_bps": 648.5,
+      "roi": -0.0649,
+      "max_drawdown": 403.06,
+      "edge_at_fill_c": 3.567,
       "markouts_c": {
-        "5": -3.713,
-        "30": -3.158,
-        "60": -2.565
+        "5": -3.92,
+        "30": -3.292,
+        "60": -2.591
       },
       "fees": 0.0,
       "ladder": null
@@ -74,25 +74,25 @@
       "name": "maker_model",
       "role": "treatment",
       "description": "Rests quotes around the N(d2) model price. Phase 2: any position also rests in full at the touch on the closing side at all times (aggro close), never crossing.",
-      "units": 144,
-      "active_units": 105,
-      "fills": 1505,
-      "size": 6421.5,
-      "pnl": -150.35,
-      "pnl_per_unit": -1.0441,
+      "units": 204,
+      "active_units": 153,
+      "fills": 1975,
+      "size": 8425.4,
+      "pnl": -210.15,
+      "pnl_per_unit": -1.0302,
       "pnl_per_unit_ci": [
-        -1.2969,
-        -0.8079
+        -1.2379,
+        -0.8379
       ],
-      "pnl_per_size_c": -2.341,
-      "breakeven_rebate_bps": 446.5,
-      "roi": -0.0447,
-      "max_drawdown": 150.35,
-      "edge_at_fill_c": -0.298,
+      "pnl_per_size_c": -2.494,
+      "breakeven_rebate_bps": 474.3,
+      "roi": -0.0474,
+      "max_drawdown": 211.12,
+      "edge_at_fill_c": -0.531,
       "markouts_c": {
-        "5": -2.573,
-        "30": -2.816,
-        "60": -2.852
+        "5": -2.758,
+        "30": -2.981,
+        "60": -3.178
       },
       "fees": 0.0,
       "ladder": null
@@ -101,25 +101,25 @@
       "name": "maker_anchored",
       "role": "treatment",
       "description": "Rests quotes around the Polymarket mid moved by the spot-implied change since its recent average. Phase 2: any position also rests in full at the touch on the closing side at all times (aggro close), never crossing.",
-      "units": 144,
-      "active_units": 132,
-      "fills": 1925,
-      "size": 8282.7,
-      "pnl": -197.16,
-      "pnl_per_unit": -1.3692,
+      "units": 204,
+      "active_units": 190,
+      "fills": 2627,
+      "size": 11242.3,
+      "pnl": -293.19,
+      "pnl_per_unit": -1.4372,
       "pnl_per_unit_ci": [
-        -1.6448,
-        -1.0955
+        -1.6616,
+        -1.2094
       ],
-      "pnl_per_size_c": -2.38,
-      "breakeven_rebate_bps": 455.2,
-      "roi": -0.0455,
-      "max_drawdown": 197.16,
-      "edge_at_fill_c": 0.202,
+      "pnl_per_size_c": -2.608,
+      "breakeven_rebate_bps": 496.6,
+      "roi": -0.0497,
+      "max_drawdown": 293.42,
+      "edge_at_fill_c": 0.155,
       "markouts_c": {
-        "5": -2.464,
-        "30": -2.448,
-        "60": -2.782
+        "5": -2.684,
+        "30": -2.682,
+        "60": -2.747
       },
       "fees": 0.0,
       "ladder": null
@@ -128,25 +128,25 @@
       "name": "maker_mid_0ms",
       "role": "treatment",
       "description": "maker_mid at 0ms order latency, re-quoting every 50ms (latency ladder). Phase 2: any position also rests in full at the touch on the closing side at all times (aggro close), never crossing.",
-      "units": 144,
-      "active_units": 132,
-      "fills": 1409,
-      "size": 5889.5,
-      "pnl": -152.75,
-      "pnl_per_unit": -1.0607,
+      "units": 204,
+      "active_units": 187,
+      "fills": 1844,
+      "size": 7780.0,
+      "pnl": -219.12,
+      "pnl_per_unit": -1.0741,
       "pnl_per_unit_ci": [
-        -1.3647,
-        -0.7874
+        -1.3119,
+        -0.8624
       ],
-      "pnl_per_size_c": -2.594,
-      "breakeven_rebate_bps": 490.3,
-      "roi": -0.049,
-      "max_drawdown": 157.66,
-      "edge_at_fill_c": 3.749,
+      "pnl_per_size_c": -2.816,
+      "breakeven_rebate_bps": 530.0,
+      "roi": -0.053,
+      "max_drawdown": 219.12,
+      "edge_at_fill_c": 3.766,
       "markouts_c": {
-        "5": -3.041,
-        "30": -2.998,
-        "60": -3.141
+        "5": -3.332,
+        "30": -3.214,
+        "60": -3.293
       },
       "fees": 0.0,
       "ladder": {
@@ -158,25 +158,25 @@
       "name": "maker_mid_100ms",
       "role": "treatment",
       "description": "maker_mid at 100ms order latency, re-quoting every 50ms (latency ladder). Phase 2: any position also rests in full at the touch on the closing side at all times (aggro close), never crossing.",
-      "units": 144,
-      "active_units": 131,
-      "fills": 1660,
-      "size": 6985.8,
-      "pnl": -218.11,
-      "pnl_per_unit": -1.5147,
+      "units": 204,
+      "active_units": 186,
+      "fills": 2143,
+      "size": 9085.6,
+      "pnl": -302.46,
+      "pnl_per_unit": -1.4827,
       "pnl_per_unit_ci": [
-        -1.8687,
-        -1.1859
+        -1.7683,
+        -1.2301
       ],
-      "pnl_per_size_c": -3.122,
-      "breakeven_rebate_bps": 587.1,
-      "roi": -0.0587,
-      "max_drawdown": 223.02,
-      "edge_at_fill_c": 3.64,
+      "pnl_per_size_c": -3.329,
+      "breakeven_rebate_bps": 624.8,
+      "roi": -0.0625,
+      "max_drawdown": 302.46,
+      "edge_at_fill_c": 3.655,
       "markouts_c": {
-        "5": -3.431,
-        "30": -3.346,
-        "60": -3.241
+        "5": -3.598,
+        "30": -3.481,
+        "60": -3.42
       },
       "fees": 0.0,
       "ladder": {
@@ -188,25 +188,25 @@
       "name": "maker_mid_200ms",
       "role": "treatment",
       "description": "maker_mid at 200ms order latency, re-quoting every 50ms (latency ladder). Phase 2: any position also rests in full at the touch on the closing side at all times (aggro close), never crossing.",
-      "units": 144,
-      "active_units": 135,
-      "fills": 2041,
-      "size": 8481.2,
-      "pnl": -266.62,
-      "pnl_per_unit": -1.8515,
+      "units": 204,
+      "active_units": 190,
+      "fills": 2616,
+      "size": 10869.2,
+      "pnl": -362.05,
+      "pnl_per_unit": -1.7748,
       "pnl_per_unit_ci": [
-        -2.2512,
-        -1.4956
+        -2.1091,
+        -1.4823
       ],
-      "pnl_per_size_c": -3.144,
-      "breakeven_rebate_bps": 589.5,
-      "roi": -0.059,
-      "max_drawdown": 266.62,
-      "edge_at_fill_c": 3.515,
+      "pnl_per_size_c": -3.331,
+      "breakeven_rebate_bps": 623.3,
+      "roi": -0.0623,
+      "max_drawdown": 362.05,
+      "edge_at_fill_c": 3.538,
       "markouts_c": {
-        "5": -3.292,
-        "30": -2.899,
-        "60": -2.509
+        "5": -3.477,
+        "30": -3.205,
+        "60": -2.879
       },
       "fees": 0.0,
       "ladder": {
@@ -218,25 +218,25 @@
       "name": "maker_mid_300ms",
       "role": "treatment",
       "description": "maker_mid at 300ms order latency, re-quoting every 50ms (latency ladder). Phase 2: any position also rests in full at the touch on the closing side at all times (aggro close), never crossing.",
-      "units": 144,
-      "active_units": 138,
-      "fills": 2313,
-      "size": 9801.7,
-      "pnl": -327.33,
-      "pnl_per_unit": -2.2731,
+      "units": 204,
+      "active_units": 193,
+      "fills": 2961,
+      "size": 12572.8,
+      "pnl": -443.16,
+      "pnl_per_unit": -2.1724,
       "pnl_per_unit_ci": [
-        -2.7051,
-        -1.877
+        -2.5221,
+        -1.8509
       ],
-      "pnl_per_size_c": -3.34,
-      "breakeven_rebate_bps": 625.7,
-      "roi": -0.0626,
-      "max_drawdown": 327.33,
-      "edge_at_fill_c": 3.412,
+      "pnl_per_size_c": -3.525,
+      "breakeven_rebate_bps": 659.0,
+      "roi": -0.0659,
+      "max_drawdown": 443.16,
+      "edge_at_fill_c": 3.419,
       "markouts_c": {
-        "5": -3.579,
-        "30": -2.972,
-        "60": -2.934
+        "5": -3.755,
+        "30": -3.181,
+        "60": -3.12
       },
       "fees": 0.0,
       "ladder": {
@@ -248,25 +248,25 @@
       "name": "maker_mid_400ms",
       "role": "treatment",
       "description": "maker_mid at 400ms order latency, re-quoting every 50ms (latency ladder). Phase 2: any position also rests in full at the touch on the closing side at all times (aggro close), never crossing.",
-      "units": 144,
-      "active_units": 139,
-      "fills": 2473,
-      "size": 10880.0,
-      "pnl": -359.46,
-      "pnl_per_unit": -2.4963,
+      "units": 204,
+      "active_units": 193,
+      "fills": 3160,
+      "size": 13918.3,
+      "pnl": -474.18,
+      "pnl_per_unit": -2.3244,
       "pnl_per_unit_ci": [
-        -2.9564,
-        -2.07
+        -2.6775,
+        -1.9888
       ],
-      "pnl_per_size_c": -3.304,
-      "breakeven_rebate_bps": 620.4,
-      "roi": -0.062,
-      "max_drawdown": 359.46,
-      "edge_at_fill_c": 3.272,
+      "pnl_per_size_c": -3.407,
+      "breakeven_rebate_bps": 638.1,
+      "roi": -0.0638,
+      "max_drawdown": 474.18,
+      "edge_at_fill_c": 3.27,
       "markouts_c": {
-        "5": -3.629,
-        "30": -3.336,
-        "60": -2.74
+        "5": -3.737,
+        "30": -3.434,
+        "60": -2.789
       },
       "fees": 0.0,
       "ladder": {
@@ -278,25 +278,25 @@
       "name": "maker_model_0ms",
       "role": "treatment",
       "description": "maker_model at 0ms order latency, re-quoting every 50ms (latency ladder). Phase 2: any position also rests in full at the touch on the closing side at all times (aggro close), never crossing.",
-      "units": 144,
-      "active_units": 94,
-      "fills": 1205,
-      "size": 5266.0,
-      "pnl": -69.21,
-      "pnl_per_unit": -0.4806,
+      "units": 204,
+      "active_units": 143,
+      "fills": 1632,
+      "size": 7230.5,
+      "pnl": -104.21,
+      "pnl_per_unit": -0.5108,
       "pnl_per_unit_ci": [
-        -0.6597,
-        -0.3163
+        -0.6533,
+        -0.3737
       ],
-      "pnl_per_size_c": -1.314,
-      "breakeven_rebate_bps": 256.2,
-      "roi": -0.0256,
-      "max_drawdown": 69.31,
-      "edge_at_fill_c": -0.215,
+      "pnl_per_size_c": -1.441,
+      "breakeven_rebate_bps": 280.3,
+      "roi": -0.028,
+      "max_drawdown": 104.21,
+      "edge_at_fill_c": -0.438,
       "markouts_c": {
-        "5": -1.46,
-        "30": -1.277,
-        "60": -1.276
+        "5": -1.672,
+        "30": -1.464,
+        "60": -1.607
       },
       "fees": 0.0,
       "ladder": {
@@ -308,25 +308,25 @@
       "name": "maker_model_100ms",
       "role": "treatment",
       "description": "maker_model at 100ms order latency, re-quoting every 50ms (latency ladder). Phase 2: any position also rests in full at the touch on the closing side at all times (aggro close), never crossing.",
-      "units": 144,
-      "active_units": 95,
-      "fills": 1354,
-      "size": 5922.0,
-      "pnl": -98.3,
-      "pnl_per_unit": -0.6826,
+      "units": 204,
+      "active_units": 144,
+      "fills": 1817,
+      "size": 8061.9,
+      "pnl": -139.89,
+      "pnl_per_unit": -0.6858,
       "pnl_per_unit_ci": [
-        -0.8898,
-        -0.4827
+        -0.8439,
+        -0.531
       ],
-      "pnl_per_size_c": -1.66,
-      "breakeven_rebate_bps": 321.2,
-      "roi": -0.0321,
-      "max_drawdown": 98.3,
-      "edge_at_fill_c": -0.274,
+      "pnl_per_size_c": -1.735,
+      "breakeven_rebate_bps": 335.2,
+      "roi": -0.0335,
+      "max_drawdown": 139.89,
+      "edge_at_fill_c": -0.48,
       "markouts_c": {
-        "5": -1.937,
-        "30": -1.821,
-        "60": -1.94
+        "5": -2.044,
+        "30": -1.967,
+        "60": -2.216
       },
       "fees": 0.0,
       "ladder": {
@@ -338,25 +338,25 @@
       "name": "maker_model_200ms",
       "role": "treatment",
       "description": "maker_model at 200ms order latency, re-quoting every 50ms (latency ladder). Phase 2: any position also rests in full at the touch on the closing side at all times (aggro close), never crossing.",
-      "units": 144,
-      "active_units": 99,
-      "fills": 1524,
-      "size": 6612.1,
-      "pnl": -119.22,
-      "pnl_per_unit": -0.8279,
+      "units": 204,
+      "active_units": 148,
+      "fills": 1986,
+      "size": 8651.3,
+      "pnl": -165.3,
+      "pnl_per_unit": -0.8103,
       "pnl_per_unit_ci": [
-        -1.0532,
-        -0.6118
+        -1.001,
+        -0.6315
       ],
-      "pnl_per_size_c": -1.803,
-      "breakeven_rebate_bps": 346.3,
-      "roi": -0.0346,
-      "max_drawdown": 119.22,
-      "edge_at_fill_c": -0.363,
+      "pnl_per_size_c": -1.911,
+      "breakeven_rebate_bps": 366.8,
+      "roi": -0.0367,
+      "max_drawdown": 165.3,
+      "edge_at_fill_c": -0.518,
       "markouts_c": {
-        "5": -2.16,
-        "30": -1.99,
-        "60": -1.949
+        "5": -2.359,
+        "30": -2.129,
+        "60": -2.328
       },
       "fees": 0.0,
       "ladder": {
@@ -368,25 +368,25 @@
       "name": "maker_model_300ms",
       "role": "treatment",
       "description": "maker_model at 300ms order latency, re-quoting every 50ms (latency ladder). Phase 2: any position also rests in full at the touch on the closing side at all times (aggro close), never crossing.",
-      "units": 144,
-      "active_units": 100,
-      "fills": 1535,
-      "size": 6514.0,
-      "pnl": -127.11,
-      "pnl_per_unit": -0.8827,
+      "units": 204,
+      "active_units": 149,
+      "fills": 2051,
+      "size": 8771.1,
+      "pnl": -179.64,
+      "pnl_per_unit": -0.8806,
       "pnl_per_unit_ci": [
-        -1.125,
-        -0.6544
+        -1.0698,
+        -0.6922
       ],
-      "pnl_per_size_c": -1.951,
-      "breakeven_rebate_bps": 375.1,
-      "roi": -0.0375,
-      "max_drawdown": 127.11,
-      "edge_at_fill_c": -0.435,
+      "pnl_per_size_c": -2.048,
+      "breakeven_rebate_bps": 392.7,
+      "roi": -0.0393,
+      "max_drawdown": 179.64,
+      "edge_at_fill_c": -0.631,
       "markouts_c": {
-        "5": -2.382,
-        "30": -1.869,
-        "60": -1.877
+        "5": -2.524,
+        "30": -2.111,
+        "60": -2.271
       },
       "fees": 0.0,
       "ladder": {
@@ -398,25 +398,25 @@
       "name": "maker_model_400ms",
       "role": "treatment",
       "description": "maker_model at 400ms order latency, re-quoting every 50ms (latency ladder). Phase 2: any position also rests in full at the touch on the closing side at all times (aggro close), never crossing.",
-      "units": 144,
-      "active_units": 102,
-      "fills": 1620,
-      "size": 6987.3,
-      "pnl": -151.62,
-      "pnl_per_unit": -1.0529,
+      "units": 204,
+      "active_units": 151,
+      "fills": 2130,
+      "size": 9248.4,
+      "pnl": -218.59,
+      "pnl_per_unit": -1.0715,
       "pnl_per_unit_ci": [
-        -1.3356,
-        -0.7886
+        -1.2961,
+        -0.8533
       ],
-      "pnl_per_size_c": -2.17,
-      "breakeven_rebate_bps": 416.7,
-      "roi": -0.0417,
-      "max_drawdown": 151.62,
-      "edge_at_fill_c": -0.44,
+      "pnl_per_size_c": -2.364,
+      "breakeven_rebate_bps": 452.4,
+      "roi": -0.0452,
+      "max_drawdown": 220.79,
+      "edge_at_fill_c": -0.672,
       "markouts_c": {
-        "5": -2.486,
-        "30": -1.891,
-        "60": -2.06
+        "5": -2.652,
+        "30": -2.121,
+        "60": -2.472
       },
       "fees": 0.0,
       "ladder": {
@@ -428,25 +428,25 @@
       "name": "maker_anchored_0ms",
       "role": "treatment",
       "description": "maker_anchored at 0ms order latency, re-quoting every 50ms (latency ladder). Phase 2: any position also rests in full at the touch on the closing side at all times (aggro close), never crossing.",
-      "units": 144,
-      "active_units": 113,
-      "fills": 1480,
-      "size": 6863.4,
-      "pnl": -91.41,
-      "pnl_per_unit": -0.6348,
+      "units": 204,
+      "active_units": 170,
+      "fills": 2049,
+      "size": 9389.1,
+      "pnl": -124.83,
+      "pnl_per_unit": -0.6119,
       "pnl_per_unit_ci": [
-        -0.8716,
-        -0.3907
+        -0.818,
+        -0.4167
       ],
-      "pnl_per_size_c": -1.332,
-      "breakeven_rebate_bps": 259.5,
+      "pnl_per_size_c": -1.33,
+      "breakeven_rebate_bps": 258.7,
       "roi": -0.0259,
-      "max_drawdown": 94.33,
-      "edge_at_fill_c": 0.17,
+      "max_drawdown": 124.83,
+      "edge_at_fill_c": 0.085,
       "markouts_c": {
-        "5": -1.152,
-        "30": -1.477,
-        "60": -1.731
+        "5": -1.181,
+        "30": -1.213,
+        "60": -1.324
       },
       "fees": 0.0,
       "ladder": {
@@ -458,25 +458,25 @@
       "name": "maker_anchored_100ms",
       "role": "treatment",
       "description": "maker_anchored at 100ms order latency, re-quoting every 50ms (latency ladder). Phase 2: any position also rests in full at the touch on the closing side at all times (aggro close), never crossing.",
-      "units": 144,
-      "active_units": 117,
-      "fills": 1577,
-      "size": 7198.0,
-      "pnl": -118.59,
-      "pnl_per_unit": -0.8235,
+      "units": 204,
+      "active_units": 174,
+      "fills": 2205,
+      "size": 10004.0,
+      "pnl": -168.74,
+      "pnl_per_unit": -0.8272,
       "pnl_per_unit_ci": [
-        -1.0899,
-        -0.5679
+        -1.0424,
+        -0.6191
       ],
-      "pnl_per_size_c": -1.648,
-      "breakeven_rebate_bps": 319.7,
-      "roi": -0.032,
-      "max_drawdown": 118.59,
-      "edge_at_fill_c": -0.027,
+      "pnl_per_size_c": -1.687,
+      "breakeven_rebate_bps": 326.7,
+      "roi": -0.0327,
+      "max_drawdown": 168.89,
+      "edge_at_fill_c": -0.088,
       "markouts_c": {
-        "5": -1.277,
-        "30": -1.613,
-        "60": -2.069
+        "5": -1.236,
+        "30": -1.379,
+        "60": -1.78
       },
       "fees": 0.0,
       "ladder": {
@@ -488,25 +488,25 @@
       "name": "maker_anchored_200ms",
       "role": "treatment",
       "description": "maker_anchored at 200ms order latency, re-quoting every 50ms (latency ladder). Phase 2: any position also rests in full at the touch on the closing side at all times (aggro close), never crossing.",
-      "units": 144,
-      "active_units": 122,
-      "fills": 1746,
-      "size": 7928.2,
-      "pnl": -156.21,
-      "pnl_per_unit": -1.0848,
+      "units": 204,
+      "active_units": 179,
+      "fills": 2401,
+      "size": 10801.8,
+      "pnl": -217.82,
+      "pnl_per_unit": -1.0678,
       "pnl_per_unit_ci": [
-        -1.3804,
-        -0.8011
+        -1.3149,
+        -0.8285
       ],
-      "pnl_per_size_c": -1.97,
-      "breakeven_rebate_bps": 379.6,
-      "roi": -0.038,
-      "max_drawdown": 156.21,
-      "edge_at_fill_c": -0.245,
+      "pnl_per_size_c": -2.017,
+      "breakeven_rebate_bps": 388.0,
+      "roi": -0.0388,
+      "max_drawdown": 217.87,
+      "edge_at_fill_c": -0.242,
       "markouts_c": {
-        "5": -1.736,
-        "30": -1.722,
-        "60": -1.993
+        "5": -1.718,
+        "30": -1.758,
+        "60": -1.943
       },
       "fees": 0.0,
       "ladder": {
@@ -518,25 +518,25 @@
       "name": "maker_anchored_300ms",
       "role": "treatment",
       "description": "maker_anchored at 300ms order latency, re-quoting every 50ms (latency ladder). Phase 2: any position also rests in full at the touch on the closing side at all times (aggro close), never crossing.",
-      "units": 144,
-      "active_units": 124,
-      "fills": 1840,
-      "size": 8222.0,
-      "pnl": -176.78,
-      "pnl_per_unit": -1.2277,
+      "units": 204,
+      "active_units": 182,
+      "fills": 2587,
+      "size": 11470.7,
+      "pnl": -260.67,
+      "pnl_per_unit": -1.2778,
       "pnl_per_unit_ci": [
-        -1.5289,
-        -0.9409
+        -1.5278,
+        -1.0429
       ],
-      "pnl_per_size_c": -2.15,
-      "breakeven_rebate_bps": 411.8,
-      "roi": -0.0412,
-      "max_drawdown": 176.78,
-      "edge_at_fill_c": -0.206,
+      "pnl_per_size_c": -2.273,
+      "breakeven_rebate_bps": 434.9,
+      "roi": -0.0435,
+      "max_drawdown": 260.72,
+      "edge_at_fill_c": -0.263,
       "markouts_c": {
-        "5": -2.068,
-        "30": -2.225,
-        "60": -2.491
+        "5": -2.032,
+        "30": -2.176,
+        "60": -2.368
       },
       "fees": 0.0,
       "ladder": {
@@ -548,25 +548,25 @@
       "name": "maker_anchored_400ms",
       "role": "treatment",
       "description": "maker_anchored at 400ms order latency, re-quoting every 50ms (latency ladder). Phase 2: any position also rests in full at the touch on the closing side at all times (aggro close), never crossing.",
-      "units": 144,
-      "active_units": 131,
-      "fills": 2026,
-      "size": 9069.9,
-      "pnl": -196.45,
-      "pnl_per_unit": -1.3642,
+      "units": 204,
+      "active_units": 189,
+      "fills": 2782,
+      "size": 12401.5,
+      "pnl": -285.82,
+      "pnl_per_unit": -1.4011,
       "pnl_per_unit_ci": [
-        -1.6957,
-        -1.0567
+        -1.6702,
+        -1.131
       ],
-      "pnl_per_size_c": -2.166,
-      "breakeven_rebate_bps": 413.1,
-      "roi": -0.0413,
-      "max_drawdown": 196.45,
-      "edge_at_fill_c": -0.169,
+      "pnl_per_size_c": -2.305,
+      "breakeven_rebate_bps": 439.1,
+      "roi": -0.0439,
+      "max_drawdown": 286.35,
+      "edge_at_fill_c": -0.188,
       "markouts_c": {
-        "5": -2.307,
-        "30": -2.272,
-        "60": -2.248
+        "5": -2.302,
+        "30": -2.385,
+        "60": -2.141
       },
       "fees": 0.0,
       "ladder": {
@@ -580,199 +580,199 @@
       "treatment": "maker_mid",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -1.7181,
+      "diff": -1.7247,
       "ci": [
-        -2.5827,
-        -0.8949
+        -2.4326,
+        -1.0082
       ],
-      "verdict": "collecting"
+      "verdict": "worse"
     },
     {
       "treatment": "maker_model",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.729,
+      "diff": -0.7796,
       "ci": [
-        -1.5199,
-        0.0798
+        -1.4219,
+        -0.1256
       ],
-      "verdict": "collecting"
+      "verdict": "worse"
     },
     {
       "treatment": "maker_anchored",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -1.0541,
+      "diff": -1.1866,
       "ci": [
-        -1.8475,
-        -0.2456
+        -1.8665,
+        -0.4907
       ],
-      "verdict": "collecting"
+      "verdict": "worse"
     },
     {
       "treatment": "maker_mid_0ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.7457,
+      "diff": -0.8235,
       "ci": [
-        -1.5704,
-        0.0626
+        -1.5192,
+        -0.1182
       ],
-      "verdict": "collecting"
+      "verdict": "worse"
     },
     {
       "treatment": "maker_mid_100ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -1.1996,
+      "diff": -1.2321,
       "ci": [
-        -2.0271,
-        -0.4004
+        -1.9225,
+        -0.5408
       ],
-      "verdict": "collecting"
+      "verdict": "worse"
     },
     {
       "treatment": "maker_mid_200ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -1.5365,
+      "diff": -1.5242,
       "ci": [
-        -2.4543,
-        -0.6774
+        -2.2678,
+        -0.7941
       ],
-      "verdict": "collecting"
+      "verdict": "worse"
     },
     {
       "treatment": "maker_mid_300ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -1.9581,
+      "diff": -1.9218,
       "ci": [
-        -2.8389,
-        -1.0976
+        -2.6582,
+        -1.1959
       ],
-      "verdict": "collecting"
+      "verdict": "worse"
     },
     {
       "treatment": "maker_mid_400ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -2.1812,
+      "diff": -2.0738,
       "ci": [
-        -3.0809,
-        -1.2716
+        -2.8047,
+        -1.3489
       ],
-      "verdict": "collecting"
+      "verdict": "worse"
     },
     {
       "treatment": "maker_model_0ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.1656,
+      "diff": -0.2603,
       "ci": [
-        -0.9489,
-        0.5835
+        -0.8901,
+        0.3738
       ],
-      "verdict": "collecting"
+      "verdict": "indistinguishable"
     },
     {
       "treatment": "maker_model_100ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.3676,
+      "diff": -0.4352,
       "ci": [
-        -1.1673,
-        0.3907
+        -1.0622,
+        0.205
       ],
-      "verdict": "collecting"
+      "verdict": "indistinguishable"
     },
     {
       "treatment": "maker_model_200ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.5129,
+      "diff": -0.5598,
       "ci": [
-        -1.2951,
-        0.2775
+        -1.2045,
+        0.1078
       ],
-      "verdict": "collecting"
+      "verdict": "indistinguishable"
     },
     {
       "treatment": "maker_model_300ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.5677,
+      "diff": -0.63,
       "ci": [
-        -1.3785,
-        0.2062
+        -1.2677,
+        0.0123
       ],
-      "verdict": "collecting"
+      "verdict": "indistinguishable"
     },
     {
       "treatment": "maker_model_400ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.7379,
+      "diff": -0.821,
       "ci": [
-        -1.5497,
-        0.0321
+        -1.4533,
+        -0.1709
       ],
-      "verdict": "collecting"
+      "verdict": "worse"
     },
     {
       "treatment": "maker_anchored_0ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.3198,
+      "diff": -0.3614,
       "ci": [
-        -1.1051,
-        0.453
+        -1.0422,
+        0.3075
       ],
-      "verdict": "collecting"
+      "verdict": "indistinguishable"
     },
     {
       "treatment": "maker_anchored_100ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.5085,
+      "diff": -0.5766,
       "ci": [
-        -1.2792,
-        0.295
+        -1.2359,
+        0.0944
       ],
-      "verdict": "collecting"
+      "verdict": "indistinguishable"
     },
     {
       "treatment": "maker_anchored_200ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.7698,
+      "diff": -0.8172,
       "ci": [
-        -1.5996,
-        0.0537
+        -1.5065,
+        -0.1189
       ],
-      "verdict": "collecting"
+      "verdict": "worse"
     },
     {
       "treatment": "maker_anchored_300ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.9126,
+      "diff": -1.0272,
       "ci": [
-        -1.7084,
-        -0.1206
+        -1.7149,
+        -0.3311
       ],
-      "verdict": "collecting"
+      "verdict": "worse"
     },
     {
       "treatment": "maker_anchored_400ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -1.0492,
+      "diff": -1.1505,
       "ci": [
-        -1.8771,
-        -0.2292
+        -1.8059,
+        -0.4479
       ],
-      "verdict": "collecting"
+      "verdict": "worse"
     }
   ],
   "daily": [
@@ -825,45 +825,90 @@
       "date": "2026-10-31",
       "pnl": {
         "taker_v1": -23.59,
-        "maker_mid": -186.94,
-        "maker_model": -27.14,
-        "maker_anchored": -135.97,
-        "maker_mid_0ms": -93.33,
-        "maker_mid_100ms": -144.87,
-        "maker_mid_200ms": -160.74,
-        "maker_mid_300ms": -202.91,
-        "maker_mid_400ms": -222.13,
-        "maker_model_0ms": -19.54,
-        "maker_model_100ms": -28.34,
-        "maker_model_200ms": -25.83,
-        "maker_model_300ms": -26.15,
-        "maker_model_400ms": -27.33,
-        "maker_anchored_0ms": -85.0,
-        "maker_anchored_100ms": -98.56,
-        "maker_anchored_200ms": -119.47,
-        "maker_anchored_300ms": -129.2,
-        "maker_anchored_400ms": -146.0
+        "maker_mid": -198.69,
+        "maker_model": -26.86,
+        "maker_anchored": -146.22,
+        "maker_mid_0ms": -99.26,
+        "maker_mid_100ms": -157.86,
+        "maker_mid_200ms": -174.84,
+        "maker_mid_300ms": -218.76,
+        "maker_mid_400ms": -234.05,
+        "maker_model_0ms": -19.59,
+        "maker_model_100ms": -28.39,
+        "maker_model_200ms": -25.88,
+        "maker_model_300ms": -26.2,
+        "maker_model_400ms": -27.38,
+        "maker_anchored_0ms": -84.48,
+        "maker_anchored_100ms": -104.62,
+        "maker_anchored_200ms": -130.27,
+        "maker_anchored_300ms": -140.6,
+        "maker_anchored_400ms": -158.54
       },
       "units": {
-        "taker_v1": 71,
-        "maker_mid": 71,
-        "maker_model": 71,
-        "maker_anchored": 71,
-        "maker_mid_0ms": 71,
-        "maker_mid_100ms": 71,
-        "maker_mid_200ms": 71,
-        "maker_mid_300ms": 71,
-        "maker_mid_400ms": 71,
-        "maker_model_0ms": 71,
-        "maker_model_100ms": 71,
-        "maker_model_200ms": 71,
-        "maker_model_300ms": 71,
-        "maker_model_400ms": 71,
-        "maker_anchored_0ms": 71,
-        "maker_anchored_100ms": 71,
-        "maker_anchored_200ms": 71,
-        "maker_anchored_300ms": 71,
-        "maker_anchored_400ms": 71
+        "taker_v1": 73,
+        "maker_mid": 73,
+        "maker_model": 73,
+        "maker_anchored": 73,
+        "maker_mid_0ms": 73,
+        "maker_mid_100ms": 73,
+        "maker_mid_200ms": 73,
+        "maker_mid_300ms": 73,
+        "maker_mid_400ms": 73,
+        "maker_model_0ms": 73,
+        "maker_model_100ms": 73,
+        "maker_model_200ms": 73,
+        "maker_model_300ms": 73,
+        "maker_model_400ms": 73,
+        "maker_anchored_0ms": 73,
+        "maker_anchored_100ms": 73,
+        "maker_anchored_200ms": 73,
+        "maker_anchored_300ms": 73,
+        "maker_anchored_400ms": 73
+      }
+    },
+    {
+      "date": "2026-11-01",
+      "pnl": {
+        "taker_v1": -5.79,
+        "maker_mid": -98.42,
+        "maker_model": -60.09,
+        "maker_anchored": -85.79,
+        "maker_mid_0ms": -60.44,
+        "maker_mid_100ms": -71.37,
+        "maker_mid_200ms": -81.34,
+        "maker_mid_300ms": -99.99,
+        "maker_mid_400ms": -102.81,
+        "maker_model_0ms": -34.98,
+        "maker_model_100ms": -41.56,
+        "maker_model_200ms": -46.05,
+        "maker_model_300ms": -52.48,
+        "maker_model_400ms": -66.9,
+        "maker_anchored_0ms": -33.95,
+        "maker_anchored_100ms": -44.11,
+        "maker_anchored_200ms": -50.81,
+        "maker_anchored_300ms": -72.48,
+        "maker_anchored_400ms": -76.8
+      },
+      "units": {
+        "taker_v1": 58,
+        "maker_mid": 58,
+        "maker_model": 58,
+        "maker_anchored": 58,
+        "maker_mid_0ms": 58,
+        "maker_mid_100ms": 58,
+        "maker_mid_200ms": 58,
+        "maker_mid_300ms": 58,
+        "maker_mid_400ms": 58,
+        "maker_model_0ms": 58,
+        "maker_model_100ms": 58,
+        "maker_model_200ms": 58,
+        "maker_model_300ms": 58,
+        "maker_model_400ms": 58,
+        "maker_anchored_0ms": 58,
+        "maker_anchored_100ms": 58,
+        "maker_anchored_200ms": 58,
+        "maker_anchored_300ms": 58,
+        "maker_anchored_400ms": 58
       }
     }
   ],
@@ -875,72 +920,72 @@
         {
           "latency_ms": 0,
           "arm": "maker_mid_0ms",
-          "units": 144,
-          "fills": 1409,
-          "breakeven_rebate_bps": 490.3,
-          "pnl": -152.75,
-          "pnl_per_unit": -1.0607,
+          "units": 204,
+          "fills": 1844,
+          "breakeven_rebate_bps": 530.0,
+          "pnl": -219.12,
+          "pnl_per_unit": -1.0741,
           "pnl_per_unit_ci": [
-            -1.3647,
-            -0.7874
+            -1.3119,
+            -0.8624
           ],
-          "markout_c": -3.041
+          "markout_c": -3.332
         },
         {
           "latency_ms": 100,
           "arm": "maker_mid_100ms",
-          "units": 144,
-          "fills": 1660,
-          "breakeven_rebate_bps": 587.1,
-          "pnl": -218.11,
-          "pnl_per_unit": -1.5147,
+          "units": 204,
+          "fills": 2143,
+          "breakeven_rebate_bps": 624.8,
+          "pnl": -302.46,
+          "pnl_per_unit": -1.4827,
           "pnl_per_unit_ci": [
-            -1.8687,
-            -1.1859
+            -1.7683,
+            -1.2301
           ],
-          "markout_c": -3.431
+          "markout_c": -3.598
         },
         {
           "latency_ms": 200,
           "arm": "maker_mid_200ms",
-          "units": 144,
-          "fills": 2041,
-          "breakeven_rebate_bps": 589.5,
-          "pnl": -266.62,
-          "pnl_per_unit": -1.8515,
+          "units": 204,
+          "fills": 2616,
+          "breakeven_rebate_bps": 623.3,
+          "pnl": -362.05,
+          "pnl_per_unit": -1.7748,
           "pnl_per_unit_ci": [
-            -2.2512,
-            -1.4956
+            -2.1091,
+            -1.4823
           ],
-          "markout_c": -3.292
+          "markout_c": -3.477
         },
         {
           "latency_ms": 300,
           "arm": "maker_mid_300ms",
-          "units": 144,
-          "fills": 2313,
-          "breakeven_rebate_bps": 625.7,
-          "pnl": -327.33,
-          "pnl_per_unit": -2.2731,
+          "units": 204,
+          "fills": 2961,
+          "breakeven_rebate_bps": 659.0,
+          "pnl": -443.16,
+          "pnl_per_unit": -2.1724,
           "pnl_per_unit_ci": [
-            -2.7051,
-            -1.877
+            -2.5221,
+            -1.8509
           ],
-          "markout_c": -3.579
+          "markout_c": -3.755
         },
         {
           "latency_ms": 400,
           "arm": "maker_mid_400ms",
-          "units": 144,
-          "fills": 2473,
-          "breakeven_rebate_bps": 620.4,
-          "pnl": -359.46,
-          "pnl_per_unit": -2.4963,
+          "units": 204,
+          "fills": 3160,
+          "breakeven_rebate_bps": 638.1,
+          "pnl": -474.18,
+          "pnl_per_unit": -2.3244,
           "pnl_per_unit_ci": [
-            -2.9564,
-            -2.07
+            -2.6775,
+            -1.9888
           ],
-          "markout_c": -3.629
+          "markout_c": -3.737
         }
       ]
     },
@@ -951,72 +996,72 @@
         {
           "latency_ms": 0,
           "arm": "maker_model_0ms",
-          "units": 144,
-          "fills": 1205,
-          "breakeven_rebate_bps": 256.2,
-          "pnl": -69.21,
-          "pnl_per_unit": -0.4806,
+          "units": 204,
+          "fills": 1632,
+          "breakeven_rebate_bps": 280.3,
+          "pnl": -104.21,
+          "pnl_per_unit": -0.5108,
           "pnl_per_unit_ci": [
-            -0.6597,
-            -0.3163
+            -0.6533,
+            -0.3737
           ],
-          "markout_c": -1.46
+          "markout_c": -1.672
         },
         {
           "latency_ms": 100,
           "arm": "maker_model_100ms",
-          "units": 144,
-          "fills": 1354,
-          "breakeven_rebate_bps": 321.2,
-          "pnl": -98.3,
-          "pnl_per_unit": -0.6826,
+          "units": 204,
+          "fills": 1817,
+          "breakeven_rebate_bps": 335.2,
+          "pnl": -139.89,
+          "pnl_per_unit": -0.6858,
           "pnl_per_unit_ci": [
-            -0.8898,
-            -0.4827
+            -0.8439,
+            -0.531
           ],
-          "markout_c": -1.937
+          "markout_c": -2.044
         },
         {
           "latency_ms": 200,
           "arm": "maker_model_200ms",
-          "units": 144,
-          "fills": 1524,
-          "breakeven_rebate_bps": 346.3,
-          "pnl": -119.22,
-          "pnl_per_unit": -0.8279,
+          "units": 204,
+          "fills": 1986,
+          "breakeven_rebate_bps": 366.8,
+          "pnl": -165.3,
+          "pnl_per_unit": -0.8103,
           "pnl_per_unit_ci": [
-            -1.0532,
-            -0.6118
+            -1.001,
+            -0.6315
           ],
-          "markout_c": -2.16
+          "markout_c": -2.359
         },
         {
           "latency_ms": 300,
           "arm": "maker_model_300ms",
-          "units": 144,
-          "fills": 1535,
-          "breakeven_rebate_bps": 375.1,
-          "pnl": -127.11,
-          "pnl_per_unit": -0.8827,
+          "units": 204,
+          "fills": 2051,
+          "breakeven_rebate_bps": 392.7,
+          "pnl": -179.64,
+          "pnl_per_unit": -0.8806,
           "pnl_per_unit_ci": [
-            -1.125,
-            -0.6544
+            -1.0698,
+            -0.6922
           ],
-          "markout_c": -2.382
+          "markout_c": -2.524
         },
         {
           "latency_ms": 400,
           "arm": "maker_model_400ms",
-          "units": 144,
-          "fills": 1620,
-          "breakeven_rebate_bps": 416.7,
-          "pnl": -151.62,
-          "pnl_per_unit": -1.0529,
+          "units": 204,
+          "fills": 2130,
+          "breakeven_rebate_bps": 452.4,
+          "pnl": -218.59,
+          "pnl_per_unit": -1.0715,
           "pnl_per_unit_ci": [
-            -1.3356,
-            -0.7886
+            -1.2961,
+            -0.8533
           ],
-          "markout_c": -2.486
+          "markout_c": -2.652
         }
       ]
     },
@@ -1027,72 +1072,72 @@
         {
           "latency_ms": 0,
           "arm": "maker_anchored_0ms",
-          "units": 144,
-          "fills": 1480,
-          "breakeven_rebate_bps": 259.5,
-          "pnl": -91.41,
-          "pnl_per_unit": -0.6348,
+          "units": 204,
+          "fills": 2049,
+          "breakeven_rebate_bps": 258.7,
+          "pnl": -124.83,
+          "pnl_per_unit": -0.6119,
           "pnl_per_unit_ci": [
-            -0.8716,
-            -0.3907
+            -0.818,
+            -0.4167
           ],
-          "markout_c": -1.152
+          "markout_c": -1.181
         },
         {
           "latency_ms": 100,
           "arm": "maker_anchored_100ms",
-          "units": 144,
-          "fills": 1577,
-          "breakeven_rebate_bps": 319.7,
-          "pnl": -118.59,
-          "pnl_per_unit": -0.8235,
+          "units": 204,
+          "fills": 2205,
+          "breakeven_rebate_bps": 326.7,
+          "pnl": -168.74,
+          "pnl_per_unit": -0.8272,
           "pnl_per_unit_ci": [
-            -1.0899,
-            -0.5679
+            -1.0424,
+            -0.6191
           ],
-          "markout_c": -1.277
+          "markout_c": -1.236
         },
         {
           "latency_ms": 200,
           "arm": "maker_anchored_200ms",
-          "units": 144,
-          "fills": 1746,
-          "breakeven_rebate_bps": 379.6,
-          "pnl": -156.21,
-          "pnl_per_unit": -1.0848,
+          "units": 204,
+          "fills": 2401,
+          "breakeven_rebate_bps": 388.0,
+          "pnl": -217.82,
+          "pnl_per_unit": -1.0678,
           "pnl_per_unit_ci": [
-            -1.3804,
-            -0.8011
+            -1.3149,
+            -0.8285
           ],
-          "markout_c": -1.736
+          "markout_c": -1.718
         },
         {
           "latency_ms": 300,
           "arm": "maker_anchored_300ms",
-          "units": 144,
-          "fills": 1840,
-          "breakeven_rebate_bps": 411.8,
-          "pnl": -176.78,
-          "pnl_per_unit": -1.2277,
+          "units": 204,
+          "fills": 2587,
+          "breakeven_rebate_bps": 434.9,
+          "pnl": -260.67,
+          "pnl_per_unit": -1.2778,
           "pnl_per_unit_ci": [
-            -1.5289,
-            -0.9409
+            -1.5278,
+            -1.0429
           ],
-          "markout_c": -2.068
+          "markout_c": -2.032
         },
         {
           "latency_ms": 400,
           "arm": "maker_anchored_400ms",
-          "units": 144,
-          "fills": 2026,
-          "breakeven_rebate_bps": 413.1,
-          "pnl": -196.45,
-          "pnl_per_unit": -1.3642,
+          "units": 204,
+          "fills": 2782,
+          "breakeven_rebate_bps": 439.1,
+          "pnl": -285.82,
+          "pnl_per_unit": -1.4011,
           "pnl_per_unit_ci": [
-            -1.6957,
-            -1.0567
+            -1.6702,
+            -1.131
           ],
-          "markout_c": -2.307
+          "markout_c": -2.302
         }
       ]
     }
