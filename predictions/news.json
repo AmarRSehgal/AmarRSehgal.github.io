@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-01T22:24:56.380845+00:00",
+  "generated_at": "2026-11-01T23:24:47.336580+00:00",
   "window_hours": 24,
-  "articles_in_window": 1581,
+  "articles_in_window": 1592,
   "collection_days": 49,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,58 +10,80 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 144,
-      "sources": 32,
+      "articles": 145,
+      "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 0.63,
-      "sentiment_mean": -0.117,
-      "headline": "Ukraine defies Trump to resume attacks on Russian oil refineries | Ukraine",
-      "headline_source": "Reddit r/energy",
-      "headline_url": "https://www.reddit.com/r/energy/comments/1xlg9pr/ukraine_defies_trump_to_resume_attacks_on_russian/"
+      "surge": 0.64,
+      "sentiment_mean": -0.096,
+      "headline": "Haley Stevens Nukes Own Political Career, Gets Trump Tweet as Consolation: In endorsing Republican Mike Rogers, Michigan Rep. Haley Stevens on Sunday not only tanked her own political career but also managed to unite the entire Democratic Party behind Abdul El-Sayed.",
+      "headline_source": "Reddit r/politics",
+      "headline_url": "https://www.reddit.com/r/politics/comments/1xlgxj8/haley_stevens_nukes_own_political_career_gets/"
     },
     {
       "term": "election",
       "articles": 86,
-      "sources": 29,
+      "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 0.54,
-      "sentiment_mean": -0.02,
-      "headline": "Bulgarian acting president Iliana Iotova wins run-off election, exit polls show",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/world/europe/article/3372909/bulgarian-acting-president-iliana-iotova-wins-run-election-exit-polls-show"
+      "surge": 0.55,
+      "sentiment_mean": -0.032,
+      "headline": "Trump signals he'll give closing election pitch at the Reflecting Pool, a revamp plagued by problems - AP News",
+      "headline_source": "AP News",
+      "headline_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQRTdUMkROUkZWSFVLOUVHWDRfck8yZjJleFdpeno4azFMWG1jNmxoNHZYMm45OHhMazBtNkZqa2pNOGRxMkhRdUVlSTZnSmRuQV9LenFsb1BqMTJ4T3k3SFJtSS1YNUk4akVUbno4NW5JRTRocE5weW1MWnA1anhYanF2TXpRdzRRaXpORHpLWE5JUGRXTGdtV1U5NTZ4VW54X3hDMEcybw?oc=5"
+    },
+    {
+      "term": "midterm",
+      "articles": 55,
+      "sources": 24,
+      "sentiment_direction": "mixed",
+      "surge": 0.88,
+      "sentiment_mean": 0.007,
+      "headline": "Democrats turn on each other in Michigan ahead of midterm elections",
+      "headline_source": "Sydney Morning Herald",
+      "headline_url": "https://www.smh.com.au/world/north-america/democrats-turn-on-each-other-in-michigan-ahead-of-midterm-elections-20261102-p61ahh.html?ref=rss&utm_medium=rss&utm_source=rss_world"
+    },
+    {
+      "term": "senate",
+      "articles": 75,
+      "sources": 23,
+      "sentiment_direction": "mixed",
+      "surge": 1.34,
+      "sentiment_mean": 0.039,
+      "headline": "Democratic Rep. Stevens endorses GOP candidate Mike Rogers in Michigan US Senate race",
+      "headline_source": "ABC News",
+      "headline_url": "https://abcnews.com/Politics/democratic-rep-haley-stevens-endorses-gop-candidate-mike/story?id=137752255"
     },
     {
       "term": "president",
-      "articles": 67,
+      "articles": 66,
       "sources": 23,
       "sentiment_direction": "mixed",
       "surge": 0.59,
-      "sentiment_mean": -0.079,
+      "sentiment_mean": -0.102,
       "headline": "Bulgaria\u2019s acting President Iotova leads in run-off exit polls",
       "headline_source": "Al Jazeera",
       "headline_url": "https://www.aljazeera.com/news/2026/11/1/bulgarian-president-yotova-leads-runoff-exit-polls-show?traffic_source=rss"
     },
     {
-      "term": "police",
-      "articles": 62,
+      "term": "party",
+      "articles": 58,
       "sources": 23,
-      "sentiment_direction": "negative",
-      "surge": 1.22,
-      "sentiment_mean": -0.593,
-      "headline": "Police clash with housing crisis protesters in Portugal",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/police-clash-with-housing-crisis-protesters-in-portugal?traffic_source=rss"
+      "sentiment_direction": "positive",
+      "surge": 1.28,
+      "sentiment_mean": 0.341,
+      "headline": "Haley Stevens Nukes Own Political Career, Gets Trump Tweet as Consolation: In endorsing Republican Mike Rogers, Michigan Rep. Haley Stevens on Sunday not only tanked her own political career but also managed to unite the entire Democratic Party behind Abdul El-Sayed.",
+      "headline_source": "Reddit r/politics",
+      "headline_url": "https://www.reddit.com/r/politics/comments/1xlgxj8/haley_stevens_nukes_own_political_career_gets/"
     },
     {
-      "term": "midterm",
+      "term": "elections",
       "articles": 52,
       "sources": 23,
       "sentiment_direction": "mixed",
-      "surge": 0.83,
-      "sentiment_mean": 0.009,
-      "headline": "Trump says he'll become 'Mr Veto' if midterm elections don't go his way",
-      "headline_source": "Reddit r/politics",
-      "headline_url": "https://www.reddit.com/r/politics/comments/1xle4o7/trump_says_hell_become_mr_veto_if_midterm/"
+      "surge": 0.78,
+      "sentiment_mean": -0.072,
+      "headline": "Democrats turn on each other in Michigan ahead of midterm elections",
+      "headline_source": "Sydney Morning Herald",
+      "headline_url": "https://www.smh.com.au/world/north-america/democrats-turn-on-each-other-in-michigan-ahead-of-midterm-elections-20261102-p61ahh.html?ref=rss&utm_medium=rss&utm_source=rss_world"
     },
     {
       "term": "power",
@@ -73,28 +95,6 @@
       "headline": "Russian strikes cut power to thousands in Ukraine as drones damage Russian facility",
       "headline_source": "Investing.com News",
       "headline_url": "https://www.investing.com/news/commodities-news/russian-strikes-cut-power-to-thousands-in-ukraine-as-drones-damage-russian-facility-4989707"
-    },
-    {
-      "term": "senate",
-      "articles": 72,
-      "sources": 22,
-      "sentiment_direction": "mixed",
-      "surge": 1.27,
-      "sentiment_mean": 0.047,
-      "headline": "Democratic Rep. Stevens endorses GOP candidate Mike Rogers in Michigan US Senate race",
-      "headline_source": "ABC News",
-      "headline_url": "https://abcnews.com/Politics/democratic-rep-haley-stevens-endorses-gop-candidate-mike/story?id=137752255"
-    },
-    {
-      "term": "party",
-      "articles": 55,
-      "sources": 22,
-      "sentiment_direction": "positive",
-      "surge": 1.21,
-      "sentiment_mean": 0.326,
-      "headline": "Rep. Haley Stevens is no longer a Michigan Democratic Party member, chair says",
-      "headline_source": "Reddit r/politics",
-      "headline_url": "https://www.reddit.com/r/politics/comments/1xlehay/rep_haley_stevens_is_no_longer_a_michigan/"
     }
   ],
   "hours_since_fetch": 0.0
