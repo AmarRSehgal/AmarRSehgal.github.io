@@ -1,50 +1,50 @@
 {
-  "generated_at": "2026-11-01T04:30:04Z",
+  "generated_at": "2026-11-01T17:30:04Z",
   "sources": [
     {
       "source": "ad_capital",
       "label": "AD Capital universe scan",
       "status": "stale",
       "as_of": "2026-10-10T00:30:18Z",
-      "age_hours": 532.0,
+      "age_hours": 545.0,
       "count": 0,
       "caveat": "A mechanical factor scan of a 374-name universe, not a recommendation. The stop and target are volatility-sized bands, not predictions, and nothing here has had a fundamental read. The paper book running this signal is 6.87pp behind SPY since 2026-04-13 (5.93% vs 12.8%).",
-      "note": "Last scan was 532h ago, past this source's 96h budget. Showing nothing rather than passing it off as current.",
+      "note": "Last scan was 545h ago, past this source's 96h budget. Showing nothing rather than passing it off as current.",
       "opportunities": []
     },
     {
       "source": "funding_drift",
       "label": "Perp funding vs realized drift",
       "status": "fresh",
-      "as_of": "2026-10-31T15:15:07Z",
-      "age_hours": 13.2,
+      "as_of": "2026-11-01T16:15:05Z",
+      "age_hours": 1.2,
       "count": 15,
       "caveat": "An observation, NOT a trade recommendation. This repo's own study found the ranking is ~99% price momentum (rank correlation 0.996 with plain return) and that the convergence reading of the funding term is backwards.",
       "note": null,
       "opportunities": [
         {
-          "title": "LSK on Bitget",
-          "detail": "24h return 55.3%, funding -1.1%",
-          "metric_value": 0.564022,
-          "metric_display": "drift 56.4%",
+          "title": "ESPORTS on KuCoin",
+          "detail": "24h return 85.5%, funding 0.2%",
+          "metric_value": 0.8524120000000001,
+          "metric_display": "drift 85.2%",
           "link": null,
           "rank": 1,
           "source": "funding_drift"
         },
         {
-          "title": "AKE on Bitget",
-          "detail": "24h return -41.4%, funding 1.1%",
-          "metric_value": 0.425492,
-          "metric_display": "drift -42.5%",
+          "title": "UAI on Bitget",
+          "detail": "24h return -42.6%, funding 0.0%",
+          "metric_value": 0.42618000000000006,
+          "metric_display": "drift -42.6%",
           "link": null,
           "rank": 2,
           "source": "funding_drift"
         },
         {
-          "title": "AIN on Gate",
-          "detail": "24h return 37.1%, funding 0.0%",
-          "metric_value": 0.37063999999999997,
-          "metric_display": "drift 37.1%",
+          "title": "LSK on HTX",
+          "detail": "24h return -30.5%, funding 0.0%",
+          "metric_value": 0.30522000000000005,
+          "metric_display": "drift -30.5%",
           "link": null,
           "rank": 3,
           "source": "funding_drift"
@@ -55,37 +55,19 @@
       "source": "crypto_arb",
       "label": "Cross-exchange crypto arbs",
       "status": "fresh",
-      "as_of": "2026-11-01T04:14:34Z",
+      "as_of": "2026-11-01T17:14:33Z",
       "age_hours": 0.3,
-      "count": 12,
+      "count": 1,
       "caveat": "Observed, not executed. Each row is a spread that EXISTED between two venues for a few seconds of a 4-minute scan -- it is not a fill. Capturing it needs inventory already sitting on both venues, and the transfer time between them is far longer than the spread lasted.",
       "note": null,
       "opportunities": [
         {
-          "title": "UNI  Backpack -> Binance",
-          "detail": "spot | 41.5bp gross less 20.0bp fees | $500 at the touch | lived 18.0s | 7.7% of the scan",
-          "metric_value": 21.54,
-          "metric_display": "+21.5bp net",
+          "title": "PEPE  Backpack -> LBank",
+          "detail": "spot | 24.6bp gross less 20.0bp fees | $500 at the touch | lived 4.0s | 1.7% of the scan",
+          "metric_value": 4.65,
+          "metric_display": "+4.7bp net",
           "link": null,
           "rank": 1,
-          "source": "crypto_arb"
-        },
-        {
-          "title": "UNI  Backpack -> LBank",
-          "detail": "spot | 40.4bp gross less 20.0bp fees | $500 at the touch | lived 6.0s | 2.6% of the scan",
-          "metric_value": 20.41,
-          "metric_display": "+20.4bp net",
-          "link": null,
-          "rank": 2,
-          "source": "crypto_arb"
-        },
-        {
-          "title": "NEAR  Bybit -> BingX",
-          "detail": "spot | 38.6bp gross less 20.0bp fees | $789 at the touch | lived 9.5s | 4.0% of the scan",
-          "metric_value": 18.62,
-          "metric_display": "+18.6bp net",
-          "link": null,
-          "rank": 3,
           "source": "crypto_arb"
         }
       ]
@@ -93,30 +75,20 @@
     {
       "source": "funding_rate_arb",
       "label": "Funding-rate carry",
-      "status": "fresh",
-      "as_of": "2026-11-01T04:00:10Z",
+      "status": "empty",
+      "as_of": "2026-11-01T17:00:11Z",
       "age_hours": 0.5,
-      "count": 1,
+      "count": 0,
       "caveat": "Quoted APRs annualize the CURRENT funding rate, which reprices every few hours. They are not a return you can lock in, and they ignore execution, borrow limits and the capital tied up on both legs.",
-      "note": null,
-      "opportunities": [
-        {
-          "title": "WET  Crypto.com / Aster",
-          "detail": "long Crypto.com perp, short Aster perp | annualises to ~425% | round trip 61bp | positive in 18/24 scans",
-          "metric_value": 0.38784,
-          "metric_display": "+0.388% per 8h hold",
-          "link": null,
-          "rank": 1,
-          "source": "funding_rate_arb"
-        }
-      ]
+      "note": "Scan ran and found nothing that cleared the bar.",
+      "opportunities": []
     },
     {
       "source": "magic_formula",
       "label": "Magic Formula screen",
       "status": "fresh",
       "as_of": "2026-10-26T15:01:53Z",
-      "age_hours": 133.5,
+      "age_hours": 146.5,
       "count": 10,
       "caveat": "A mechanical rank of a hand-pasted universe. It says nothing about whether the business is sound, and nothing here is advice.",
       "note": null,
@@ -154,8 +126,8 @@
       "source": "real_estate",
       "label": "Real estate deal screen",
       "status": "fresh",
-      "as_of": "2026-10-25T15:03:56Z",
-      "age_hours": 157.4,
+      "as_of": "2026-11-01T16:05:18Z",
+      "age_hours": 1.4,
       "count": 12,
       "caveat": "Discounts are against comparable-sale estimates, not appraisals, and the screen has never seen the inside of any of these. Screening output only.",
       "note": null,
@@ -170,20 +142,20 @@
           "source": "real_estate"
         },
         {
-          "title": "88 Hoff St Apt 101, San Francisco CA",
-          "detail": "listed $472.9K vs $1.1M comparable value",
-          "metric_value": 0.5663,
-          "metric_display": "57% below comps",
-          "link": "https://www.realtor.com/realestateandhomes-detail/88-Hoff-St-Apt-101_San-Francisco_CA_94110_M16098-79408",
+          "title": "8007 N Klondyke St, Tampa FL",
+          "detail": "listed $124.9K vs $257.9K comparable value",
+          "metric_value": 0.5156,
+          "metric_display": "52% below comps",
+          "link": "https://www.realtor.com/realestateandhomes-detail/8007-N-Klondyke-St_Tampa_FL_33604_M56407-03542",
           "rank": 2,
           "source": "real_estate"
         },
         {
-          "title": "8007 N Klondyke St, Tampa FL",
-          "detail": "listed $124.9K vs $258.0K comparable value",
-          "metric_value": 0.5158,
-          "metric_display": "52% below comps",
-          "link": "https://www.realtor.com/realestateandhomes-detail/8007-N-Klondyke-St_Tampa_FL_33604_M56407-03542",
+          "title": "375 Day St, San Francisco CA",
+          "detail": "listed $1.3M vs $2.6M comparable value",
+          "metric_value": 0.4977,
+          "metric_display": "50% below comps",
+          "link": "https://www.realtor.com/realestateandhomes-detail/375-Day-St_San-Francisco_CA_94131_M28643-05940",
           "rank": 3,
           "source": "real_estate"
         }
@@ -193,8 +165,8 @@
       "source": "contracts",
       "label": "Federal resale lanes",
       "status": "fresh",
-      "as_of": "2026-10-31T15:01:11Z",
-      "age_hours": 13.5,
+      "as_of": "2026-11-01T16:01:18Z",
+      "age_hours": 1.5,
       "count": 8,
       "caveat": "Finding a lane is not winning one. SAM entity registration takes weeks and gates every bid, set-asides are hard gates, and the extract carries no line-item quantities -- so none of these carry a computed margin.",
       "note": null,
@@ -233,7 +205,7 @@
       "label": "Swing-trade signals",
       "status": "fresh",
       "as_of": "2026-10-30T21:00:31Z",
-      "age_hours": 31.5,
+      "age_hours": 44.5,
       "count": 12,
       "caveat": "Rule output on daily bars, not a recommendation. It carries no position sizing or risk limits, and most rows are positions already open rather than fresh buys. Measured on 12 broad and sector ETFs (survivorship-free) 2019-01-01..2025-07-01, this strategy returned 48.3% against 145.6% for simply holding the same universe, at Sharpe 0.46 against 0.80. It beat same-window buy-and-hold in 3 of 17 walk-forward windows. What does hold up is drawdown: -31.6% against -35.8% for the benchmark.",
       "note": null,
@@ -272,27 +244,27 @@
       "label": "Severe weather risk",
       "status": "stale",
       "as_of": "2026-09-14T14:01:40Z",
-      "age_hours": 1142.5,
+      "age_hours": 1155.5,
       "count": 0,
       "caveat": "Not a weather warning -- use the National Weather Service for those. The score is how much current conditions resemble the run-up to a severe event, not a probability that one occurs.",
-      "note": "Last scan was 1142h ago, past this source's 30h budget. Showing nothing rather than passing it off as current.",
+      "note": "Last scan was 1155h ago, past this source's 30h budget. Showing nothing rather than passing it off as current.",
       "opportunities": []
     },
     {
       "source": "polymarket_btc",
       "label": "Polymarket BTC 5-min binaries",
       "status": "fresh",
-      "as_of": "2026-10-31T14:46:27Z",
-      "age_hours": 13.7,
+      "as_of": "2026-11-01T15:46:12Z",
+      "age_hours": 1.7,
       "count": 1,
-      "caveat": "Publishes an observation, not picks. The repo's own backtest on real fills found the market's own price forecasts the settlement BETTER than the model, and that what survives costs is feed latency rather than the pricing model. Simulation only -- the repo has no order-placement path. Latest scan: model Brier 0.1592 vs market 0.1548, so the market is ahead (lower is better). Post-cost returns cross zero at 2.5s of BTC feed staleness, against a 3.75s decision cadence.",
+      "caveat": "Publishes an observation, not picks. The repo's own backtest on real fills found the market's own price forecasts the settlement BETTER than the model, and that what survives costs is feed latency rather than the pricing model. Simulation only -- the repo has no order-placement path. Latest scan: model Brier 0.1597 vs market 0.1438, so the market is ahead (lower is better).",
       "note": null,
       "opportunities": [
         {
           "title": "BTC 5-min binaries: market ahead of the model",
-          "detail": "model Brier 0.1592 vs market 0.1548 (lower is better), break-even at 2.5s of feed lag",
-          "metric_value": 0.0144,
-          "metric_display": "1.4%",
+          "detail": "model Brier 0.1597 vs market 0.1438 (lower is better), post-cost returns never cross zero",
+          "metric_value": -0.0304,
+          "metric_display": "-3.0%",
           "link": null,
           "rank": 1,
           "source": "polymarket_btc"
@@ -300,7 +272,7 @@
       ]
     }
   ],
-  "total_opportunities": 20,
+  "total_opportunities": 17,
   "fresh_sources": 8,
   "methodology": "A digest: the top 3 from each scanner, so one glance shows what is live right now. Each scanner runs on its own schedule and publishes its own full panel; this merges them and runs nothing itself, so a slow source can only make its own row go quiet. Items are ranked WITHIN a source and there is deliberately no cross-source score -- basis points, an earnings yield and a contract cadence are not commensurable, and one leaderboard over them would be invented. Every section carries its own caveat; read it before the numbers. Nothing here is advice, none of it is an executed trade, and a section that has gone stale shows nothing rather than yesterday's numbers."
 }
