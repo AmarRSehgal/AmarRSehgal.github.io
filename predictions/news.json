@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-01T21:24:49.778243+00:00",
+  "generated_at": "2026-11-01T22:24:56.380845+00:00",
   "window_hours": 24,
-  "articles_in_window": 1566,
+  "articles_in_window": 1581,
   "collection_days": 49,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,14 +10,14 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 151,
-      "sources": 31,
+      "articles": 144,
+      "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 0.66,
-      "sentiment_mean": -0.119,
-      "headline": "Trump questioned about new Iran strikes: \u2018Would I tell you?\u2019",
-      "headline_source": "Sydney Morning Herald",
-      "headline_url": "https://www.smh.com.au/world/trump-questioned-about-new-iran-strikes-would-i-tell-you-20261102-p61ah8.html?ref=rss&utm_medium=rss&utm_source=rss_world"
+      "surge": 0.63,
+      "sentiment_mean": -0.117,
+      "headline": "Ukraine defies Trump to resume attacks on Russian oil refineries | Ukraine",
+      "headline_source": "Reddit r/energy",
+      "headline_url": "https://www.reddit.com/r/energy/comments/1xlg9pr/ukraine_defies_trump_to_resume_attacks_on_russian/"
     },
     {
       "term": "election",
@@ -32,69 +32,69 @@
     },
     {
       "term": "president",
-      "articles": 69,
-      "sources": 24,
+      "articles": 67,
+      "sources": 23,
       "sentiment_direction": "mixed",
-      "surge": 0.61,
-      "sentiment_mean": -0.087,
+      "surge": 0.59,
+      "sentiment_mean": -0.079,
       "headline": "Bulgaria\u2019s acting President Iotova leads in run-off exit polls",
       "headline_source": "Al Jazeera",
       "headline_url": "https://www.aljazeera.com/news/2026/11/1/bulgarian-president-yotova-leads-runoff-exit-polls-show?traffic_source=rss"
     },
     {
-      "term": "midterm",
-      "articles": 53,
-      "sources": 24,
-      "sentiment_direction": "mixed",
-      "surge": 0.84,
-      "sentiment_mean": -0.026,
-      "headline": "Analysis: Republicans face a midterm reckoning of Trump's making",
-      "headline_source": "Reddit r/economics",
-      "headline_url": "https://www.reddit.com/r/Economics/comments/1xlcxxy/analysis_republicans_face_a_midterm_reckoning_of/"
-    },
-    {
       "term": "police",
-      "articles": 63,
+      "articles": 62,
       "sources": 23,
       "sentiment_direction": "negative",
-      "surge": 1.25,
-      "sentiment_mean": -0.6,
+      "surge": 1.22,
+      "sentiment_mean": -0.593,
       "headline": "Police clash with housing crisis protesters in Portugal",
       "headline_source": "Al Jazeera",
       "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/police-clash-with-housing-crisis-protesters-in-portugal?traffic_source=rss"
     },
     {
-      "term": "power",
-      "articles": 34,
+      "term": "midterm",
+      "articles": 52,
       "sources": 23,
       "sentiment_direction": "mixed",
-      "surge": 0.68,
-      "sentiment_mean": 0.012,
+      "surge": 0.83,
+      "sentiment_mean": 0.009,
+      "headline": "Trump says he'll become 'Mr Veto' if midterm elections don't go his way",
+      "headline_source": "Reddit r/politics",
+      "headline_url": "https://www.reddit.com/r/politics/comments/1xle4o7/trump_says_hell_become_mr_veto_if_midterm/"
+    },
+    {
+      "term": "power",
+      "articles": 35,
+      "sources": 23,
+      "sentiment_direction": "mixed",
+      "surge": 0.71,
+      "sentiment_mean": -0.039,
       "headline": "Russian strikes cut power to thousands in Ukraine as drones damage Russian facility",
       "headline_source": "Investing.com News",
       "headline_url": "https://www.investing.com/news/commodities-news/russian-strikes-cut-power-to-thousands-in-ukraine-as-drones-damage-russian-facility-4989707"
     },
     {
+      "term": "senate",
+      "articles": 72,
+      "sources": 22,
+      "sentiment_direction": "mixed",
+      "surge": 1.27,
+      "sentiment_mean": 0.047,
+      "headline": "Democratic Rep. Stevens endorses GOP candidate Mike Rogers in Michigan US Senate race",
+      "headline_source": "ABC News",
+      "headline_url": "https://abcnews.com/Politics/democratic-rep-haley-stevens-endorses-gop-candidate-mike/story?id=137752255"
+    },
+    {
       "term": "party",
-      "articles": 54,
+      "articles": 55,
       "sources": 22,
       "sentiment_direction": "positive",
-      "surge": 1.19,
-      "sentiment_mean": 0.321,
+      "surge": 1.21,
+      "sentiment_mean": 0.326,
       "headline": "Rep. Haley Stevens is no longer a Michigan Democratic Party member, chair says",
       "headline_source": "Reddit r/politics",
       "headline_url": "https://www.reddit.com/r/politics/comments/1xlehay/rep_haley_stevens_is_no_longer_a_michigan/"
-    },
-    {
-      "term": "senate",
-      "articles": 74,
-      "sources": 21,
-      "sentiment_direction": "mixed",
-      "surge": 1.31,
-      "sentiment_mean": 0.033,
-      "headline": "Democratic divisions shake up pivotal Michigan Senate race as congresswoman breaks ranks",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/world/united-states-canada/article/3372911/democratic-divisions-shake-pivotal-michigan-senate-race-congresswoman-breaks-ranks"
     }
   ],
   "hours_since_fetch": 0.0
