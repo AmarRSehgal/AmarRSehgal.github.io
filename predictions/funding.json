@@ -1,23 +1,10 @@
 {
-  "generated_at": "2026-11-01T08:00:13.571774+00:00",
+  "generated_at": "2026-11-01T09:00:08.825546+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
-    {
-      "base": "WET",
-      "type": "perp-perp",
-      "long_venue": "Crypto.com",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 19,
-      "scans": 24,
-      "net_apr": 914.87,
-      "net_at_hold": 0.8355,
-      "cost_bps": 61.22
-    },
     {
       "base": "BULLA",
       "type": "perp-perp",
@@ -25,11 +12,24 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 19,
+      "hits": 20,
       "scans": 24,
-      "net_apr": 486.83,
-      "net_at_hold": 0.44459,
-      "cost_bps": 53.75
+      "net_apr": 485.22,
+      "net_at_hold": 0.44313,
+      "cost_bps": 53.89
+    },
+    {
+      "base": "WET",
+      "type": "perp-perp",
+      "long_venue": "Crypto.com",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 544.57,
+      "net_at_hold": 0.49732,
+      "cost_bps": 62.26
     }
   ]
 }
