@@ -1,8 +1,22 @@
 {
-  "generated_at": "2026-11-01T03:00:11.613034+00:00",
+  "generated_at": "2026-11-01T04:00:10.749810+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
-  "opportunities": []
+  "opportunities": [
+    {
+      "base": "WET",
+      "type": "perp-perp",
+      "long_venue": "Crypto.com",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 424.69,
+      "net_at_hold": 0.38784,
+      "cost_bps": 61.03
+    }
+  ]
 }
