@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-01T03:24:51.802102+00:00",
+  "generated_at": "2026-11-01T04:24:55.913017+00:00",
   "window_hours": 24,
-  "articles_in_window": 1556,
+  "articles_in_window": 1563,
   "collection_days": 49,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,14 +10,14 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 150,
+      "articles": 152,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 0.66,
-      "sentiment_mean": -0.142,
-      "headline": "Trump grants visa for mother of Ghanaian boy killed in NYC \u2014 Mamdani",
-      "headline_source": "DW News",
-      "headline_url": "https://www.dw.com/en/trump-grants-visa-for-mother-of-ghanaian-boy-killed-in-nyc-mamdani/a-79820019?maca=en-rss-en-all-1573-rdf"
+      "surge": 0.67,
+      "sentiment_mean": -0.146,
+      "headline": "Trump promised to slash energy costs \u2014 but gasoline, diesel and jet fuel all soared instead",
+      "headline_source": "Reddit r/economics",
+      "headline_url": "https://www.reddit.com/r/Economics/comments/1xktj74/trump_promised_to_slash_energy_costs_but_gasoline/"
     },
     {
       "term": "president",
@@ -25,10 +25,10 @@
       "sources": 28,
       "sentiment_direction": "negative",
       "surge": 0.52,
-      "sentiment_mean": -0.201,
-      "headline": "Polish president holds crisis talks in court standoff",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/news/2026/11/1/polish-president-holds-crisis-talks-in-court-standoff?traffic_source=rss"
+      "sentiment_mean": -0.226,
+      "headline": "\u2018I Came as Donald Trump\u2019: The President Hosts a Luxury Halloween at Mar-a-Lago",
+      "headline_source": "NYT Politics",
+      "headline_url": "https://www.nytimes.com/2026/10/31/us/politics/trump-halloween-party-scene.html"
     },
     {
       "term": "election",
@@ -43,14 +43,25 @@
     },
     {
       "term": "government",
-      "articles": 57,
+      "articles": 59,
       "sources": 24,
       "sentiment_direction": "mixed",
-      "surge": 0.64,
-      "sentiment_mean": -0.007,
+      "surge": 0.66,
+      "sentiment_mean": -0.016,
       "headline": "Rubio says the US government did not facilitate Bolsonaro\u2019s flight to the US - AP News",
       "headline_source": "AP News",
       "headline_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRVg0V2VkUXZFZ2RqeDZXUE82RnFiS1NqTzhDSG5HZjU4QnNtTWFJMGtzelgySGU1ZndRX1NLU1pVelIwS1RDMDlyczAxU1hpQmhVUnc2Rzl3WHhPbXM3a2p0LUMyNzZjUnVJcWpuNEV2dS1PMW1la2xNdFRRd3EtWGNHUmF1M24wTHBOZ1g4QWZCMDBpMFE?oc=5"
+    },
+    {
+      "term": "billion",
+      "articles": 52,
+      "sources": 22,
+      "sentiment_direction": "mixed",
+      "surge": 0.64,
+      "sentiment_mean": -0.12,
+      "headline": "South Korea's Exports Exceed $900 Billion for First Time... Annual '$1 Trillion' Goal Within Reach",
+      "headline_source": "Reddit r/economics",
+      "headline_url": "https://www.reddit.com/r/Economics/comments/1xktk4l/south_koreas_exports_exceed_900_billion_for_first/"
     },
     {
       "term": "binance",
@@ -65,33 +76,22 @@
     },
     {
       "term": "power",
-      "articles": 38,
+      "articles": 37,
       "sources": 22,
       "sentiment_direction": "mixed",
-      "surge": 0.77,
-      "sentiment_mean": 0.088,
+      "surge": 0.75,
+      "sentiment_mean": 0.095,
       "headline": "Russia\u2019s Baltic Exclave Goes Dark as Major Power Plant Failure Triggers Widespread Blackout",
       "headline_source": "Reddit r/worldnews",
       "headline_url": "https://www.reddit.com/r/worldnews/comments/1xkqewb/russias_baltic_exclave_goes_dark_as_major_power/"
     },
     {
-      "term": "third",
-      "articles": 38,
-      "sources": 22,
-      "sentiment_direction": "negative",
-      "surge": 0.8,
-      "sentiment_mean": -0.24,
-      "headline": "A third weekend of protests in France as youth-led rallies sweep Europe",
-      "headline_source": "CNBC World",
-      "headline_url": "https://www.cnbc.com/2026/10/31/a-third-weekend-of-protests-as-youth-led-rallies-sweep-europe.html"
-    },
-    {
       "term": "data",
-      "articles": 32,
+      "articles": 33,
       "sources": 22,
       "sentiment_direction": "mixed",
-      "surge": 0.54,
-      "sentiment_mean": 0.043,
+      "surge": 0.55,
+      "sentiment_mean": 0.031,
       "headline": "Data centers are now a midterm issue, even in Brooklyn",
       "headline_source": "TechCrunch",
       "headline_url": "https://techcrunch.com/2026/10/31/data-centers-are-now-a-midterm-issue-even-in-brooklyn/"
