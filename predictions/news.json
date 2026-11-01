@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-01T07:24:53.328243+00:00",
+  "generated_at": "2026-11-01T08:24:51.813371+00:00",
   "window_hours": 24,
-  "articles_in_window": 1564,
+  "articles_in_window": 1576,
   "collection_days": 49,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,69 +10,58 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 148,
-      "sources": 31,
+      "articles": 149,
+      "sources": 32,
       "sentiment_direction": "negative",
       "surge": 0.65,
-      "sentiment_mean": -0.182,
-      "headline": "As US midterms near, Trump administration ramps up rhetoric with bigoted, racist memes",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/world/united-states-canada/article/3372874/us-midterms-near-trump-administration-ramps-rhetoric-bigoted-racist-memes"
+      "sentiment_mean": -0.192,
+      "headline": "Donald Trump loses allies after elections in Serbia and Brazil",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/donald-trump-loses-allies-after-elections-in-serbia-and-brazil/a-79812075?maca=en-rss-en-all-1573-rdf"
     },
     {
       "term": "president",
       "articles": 54,
       "sources": 27,
       "sentiment_direction": "negative",
-      "surge": 0.46,
-      "sentiment_mean": -0.243,
+      "surge": 0.47,
+      "sentiment_mean": -0.262,
       "headline": "\u2018I Came as Donald Trump\u2019: The President Hosts a Luxury Halloween at Mar-a-Lago",
       "headline_source": "NYT Politics",
       "headline_url": "https://www.nytimes.com/2026/10/31/us/politics/trump-halloween-party-scene.html"
     },
     {
       "term": "election",
-      "articles": 52,
-      "sources": 27,
+      "articles": 51,
+      "sources": 26,
       "sentiment_direction": "negative",
-      "surge": 0.31,
-      "sentiment_mean": -0.215,
+      "surge": 0.3,
+      "sentiment_mean": -0.207,
       "headline": "2026 General Election Results: Senate, House and Governor Races - AP News",
       "headline_source": "AP News",
       "headline_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9EUEZoM3MzbXBaSnZQREppaHRmbDRQWnNQbUdhNFVqNi1qdHUtT01SWHJKTnE0MDU1aHE1dWhya1BWbGg0NWxJRzF1aktwbjVFVUpEaC1R?oc=5"
     },
     {
-      "term": "government",
-      "articles": 62,
-      "sources": 24,
+      "term": "city",
+      "articles": 60,
+      "sources": 23,
       "sentiment_direction": "mixed",
-      "surge": 0.7,
-      "sentiment_mean": -0.001,
+      "surge": 1.21,
+      "sentiment_mean": 0.101,
+      "headline": "'We came back from hell', say Ukrainians after years in Russia-occupied front-line city",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1xkwff3/we_came_back_from_hell_say_ukrainians_after_years/"
+    },
+    {
+      "term": "government",
+      "articles": 60,
+      "sources": 22,
+      "sentiment_direction": "mixed",
+      "surge": 0.68,
+      "sentiment_mean": -0.008,
       "headline": "Rubio says the US government did not facilitate Bolsonaro\u2019s flight to the US - AP News",
       "headline_source": "AP News",
       "headline_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRVg0V2VkUXZFZ2RqeDZXUE82RnFiS1NqTzhDSG5HZjU4QnNtTWFJMGtzelgySGU1ZndRX1NLU1pVelIwS1RDMDlyczAxU1hpQmhVUnc2Rzl3WHhPbXM3a2p0LUMyNzZjUnVJcWpuNEV2dS1PMW1la2xNdFRRd3EtWGNHUmF1M24wTHBOZ1g4QWZCMDBpMFE?oc=5"
-    },
-    {
-      "term": "midterm",
-      "articles": 48,
-      "sources": 23,
-      "sentiment_direction": "mixed",
-      "surge": 0.79,
-      "sentiment_mean": -0.023,
-      "headline": "Bond investors sit out \u2018most consequential\u2019 US midterm elections in years",
-      "headline_source": "Financial Times",
-      "headline_url": "https://www.ft.com/content/937308d7-aa2e-4dac-b19b-423d83bc1253?syn-25a6b1a6=1"
-    },
-    {
-      "term": "city",
-      "articles": 57,
-      "sources": 22,
-      "sentiment_direction": "mixed",
-      "surge": 1.15,
-      "sentiment_mean": 0.116,
-      "headline": "Lawson disqualified from Mexico City GP Qualifying for technical breach - Formula 1",
-      "headline_source": "Google News Top",
-      "headline_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPYU52TTVzNmxSRWh4YkFuUVk1cjRxVHdZZl93YUl0aE9mN3lBZFhkRUVnUWl6bUNMWk5va2w1MnJrbVFNZzlrS0pMWHRYbmZVbGJyUWstWS1lNlBQZVJPZXM4dUNwRTllMXljTEpSLWRZUEJHQ3VOV2ZhbWVoZlhsYUZCUVc0dHRESG9nTUlvbXJyQkNCZENmRWFycWxaU2szUktLcmV3UktsZnpoNGxrVnNGUS11Tk55MEdIZ0pCRUlLcGtRb3cwdFJKSElSckxDQmlJ?oc=5"
     },
     {
       "term": "protests",
@@ -80,22 +69,33 @@
       "sources": 22,
       "sentiment_direction": "negative",
       "surge": 1.66,
-      "sentiment_mean": -0.41,
+      "sentiment_mean": -0.402,
       "headline": "Rioters loot stores in Germany amid cost of living protests",
       "headline_source": "CBS News",
       "headline_url": "https://www.cbsnews.com/news/germany-protest-frankfurt-looting-violence/"
     },
     {
-      "term": "record",
-      "articles": 44,
+      "term": "midterms",
+      "articles": 40,
       "sources": 22,
       "sentiment_direction": "mixed",
-      "surge": 0.85,
-      "sentiment_mean": 0.078,
-      "headline": "Binance to resume crypto withdrawals in phases after record $6 billion hack",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/cryptocurrency-news/binance-to-resume-crypto-withdrawals-in-phases-after-record-6-billion-hack-4989397"
+      "surge": 0.72,
+      "sentiment_mean": 0.029,
+      "headline": "As US midterms near, Trump administration ramps up rhetoric with bigoted, racist memes",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/world/united-states-canada/article/3372874/us-midterms-near-trump-administration-ramps-rhetoric-bigoted-racist-memes"
+    },
+    {
+      "term": "police",
+      "articles": 65,
+      "sources": 21,
+      "sentiment_direction": "negative",
+      "surge": 1.3,
+      "sentiment_mean": -0.537,
+      "headline": "1 dead, 8 injured in Alabama shooting after football game, police say",
+      "headline_source": "ABC News",
+      "headline_url": "https://abcnews.com/US/1-dead-8-injured-alabama-shooting-after-football/story?id=137744731"
     }
   ],
-  "hours_since_fetch": 0.01
+  "hours_since_fetch": 0.0
 }
