@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T07:00:11.806852+00:00",
+  "generated_at": "2026-11-02T08:00:10.867283+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 474.73,
-      "net_at_hold": 0.43354,
-      "cost_bps": 34.14
+      "net_apr": 460.16,
+      "net_at_hold": 0.42024,
+      "cost_bps": 33.1
     },
     {
       "base": "POWR",
@@ -25,11 +25,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 23,
+      "hits": 24,
       "scans": 24,
-      "net_apr": 451.7,
-      "net_at_hold": 0.41251,
-      "cost_bps": 33.59
+      "net_apr": 446.36,
+      "net_at_hold": 0.40764,
+      "cost_bps": 32.96
     },
     {
       "base": "BIRB",
@@ -38,11 +38,11 @@
       "short_venue": "Crypto.com",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 23,
+      "hits": 22,
       "scans": 24,
-      "net_apr": 158.59,
-      "net_at_hold": 0.14483,
-      "cost_bps": 60.84
+      "net_apr": 157.2,
+      "net_at_hold": 0.14356,
+      "cost_bps": 61.07
     },
     {
       "base": "POWR",
@@ -51,11 +51,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 22,
+      "hits": 21,
       "scans": 24,
-      "net_apr": 453.49,
-      "net_at_hold": 0.41414,
-      "cost_bps": 35.74
+      "net_apr": 450.23,
+      "net_at_hold": 0.41117,
+      "cost_bps": 35.3
     },
     {
       "base": "CKB",
@@ -67,21 +67,8 @@
       "hits": 20,
       "scans": 24,
       "net_apr": 331.68,
-      "net_at_hold": 0.3029,
+      "net_at_hold": 0.30291,
       "cost_bps": 32.08
-    },
-    {
-      "base": "POWR",
-      "type": "perp-perp",
-      "long_venue": "KuCoin",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 19,
-      "scans": 24,
-      "net_apr": 380.44,
-      "net_at_hold": 0.34744,
-      "cost_bps": 35.73
     },
     {
       "base": "CKB",
@@ -90,11 +77,37 @@
       "short_venue": "Binance",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 19,
+      "hits": 20,
       "scans": 24,
-      "net_apr": 304.62,
-      "net_at_hold": 0.27819,
+      "net_apr": 308.54,
+      "net_at_hold": 0.28177,
       "cost_bps": 30.08
+    },
+    {
+      "base": "POWR",
+      "type": "perp-perp",
+      "long_venue": "KuCoin",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 393.44,
+      "net_at_hold": 0.35931,
+      "cost_bps": 35.67
+    },
+    {
+      "base": "CKB",
+      "type": "perp-perp",
+      "long_venue": "Crypto.com",
+      "short_venue": "Bybit",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 301.04,
+      "net_at_hold": 0.27492,
+      "cost_bps": 38.43
     }
   ]
 }
