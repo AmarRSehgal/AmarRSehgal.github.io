@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-02T01:25:03.868139+00:00",
+  "generated_at": "2026-11-02T02:25:35.848993+00:00",
   "window_hours": 24,
-  "articles_in_window": 1628,
+  "articles_in_window": 1644,
   "collection_days": 50,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,92 +10,92 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 146,
+      "articles": 147,
       "sources": 30,
       "sentiment_direction": "mixed",
       "surge": 0.65,
-      "sentiment_mean": -0.111,
-      "headline": "How Trump\u2019s noncitizen voter lists could affect the midterms",
-      "headline_source": "Japan Times",
-      "headline_url": "https://www.japantimes.co.jp/news/2026/11/02/world/trump-noncitizen-voter-lists-midterms/"
+      "sentiment_mean": -0.092,
+      "headline": "Trump\u2019s Iran war brings on record oil company profits. The US oil industry has earned almost $130 billion in profits since Trump's war began in February. Trump\u2019s personal wealth in oil and gas stocks grew as much as $35.8 million this year. \u201cWe\u2019re making a freaking fortune,\u201d Trump said.",
+      "headline_source": "Reddit r/energy",
+      "headline_url": "https://www.reddit.com/r/energy/comments/1xll526/trumps_iran_war_brings_on_record_oil_company/"
     },
     {
       "term": "election",
-      "articles": 94,
-      "sources": 26,
+      "articles": 95,
+      "sources": 25,
       "sentiment_direction": "mixed",
-      "surge": 0.61,
-      "sentiment_mean": 0.002,
+      "surge": 0.62,
+      "sentiment_mean": -0.017,
       "headline": "Israeli officials say results stand as Netanyahu claims election \u2018stolen\u2019",
       "headline_source": "Al Jazeera",
       "headline_url": "https://www.aljazeera.com/news/2026/11/2/israeli-officials-say-results-stand-as-netanyahu-claims-election-stolen?traffic_source=rss"
     },
     {
+      "term": "power",
+      "articles": 39,
+      "sources": 24,
+      "sentiment_direction": "mixed",
+      "surge": 0.79,
+      "sentiment_mean": 0.064,
+      "headline": "Russia strikes power plant in Ukraine after Trump announces energy ceasefire. A thermal power plant was struck at least twice. Trump said earlier on social media that both Russia and Ukraine had agreed. Zelenskyy was surprised by Trump's announcement and only learned about it on social media.",
+      "headline_source": "Reddit r/energy",
+      "headline_url": "https://www.reddit.com/r/energy/comments/1xll0i5/russia_strikes_power_plant_in_ukraine_after_trump/"
+    },
+    {
       "term": "party",
       "articles": 64,
-      "sources": 24,
+      "sources": 23,
       "sentiment_direction": "positive",
-      "surge": 1.43,
-      "sentiment_mean": 0.34,
-      "headline": "Haley Stevens Nukes Own Political Career, Gets Trump Tweet as Consolation: In endorsing Republican Mike Rogers, Michigan Rep. Haley Stevens on Sunday not only tanked her own political career but also managed to unite the entire Democratic Party behind Abdul El-Sayed.",
-      "headline_source": "Reddit r/politics",
-      "headline_url": "https://www.reddit.com/r/politics/comments/1xlgxj8/haley_stevens_nukes_own_political_career_gets/"
+      "surge": 1.44,
+      "sentiment_mean": 0.36,
+      "headline": "Trump invites Michigan Democrat Stevens to join the Republican Party",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/2/trump-invites-michigan-democrat-stevens-to-join-the-republican-party?traffic_source=rss"
     },
     {
       "term": "midterm",
-      "articles": 60,
-      "sources": 24,
-      "sentiment_direction": "mixed",
-      "surge": 0.96,
-      "sentiment_mean": 0.021,
-      "headline": "Stock futures tick higher ahead of busy week of earnings, jobs data and the midterm elections: Live updates - CNBC",
-      "headline_source": "Google News Top",
-      "headline_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBrbkQzMEJlOVN5RDBtcEZuU2VQSkZydW01ejJqY2hObWJXOUl0dUhUMWVoVXRwZWhsU3BIRkVGR0lhc3JmM0w4ak5ybUpCVElXOWxKMm1tQ3ByOE5TNzNJQm5YUDFaa2hRNENZNDJacnlMci1tZmU00gF8QVVfeXFMUHRLQWRCRkw3cUdsOVZINFdPc1VsLVN4UzJKT1BmX2ZaMlBrcDM2WER5cXY1LTdZQjZXMy1FVUU3RFhFcHVxcXA5eEx0a041Vlo2Y3BlVXN2S0hpTG9tVVV3SndoWVRMU2JweGZKUVNpVWxJeXk4Sno4a2hmZQ?oc=5"
-    },
-    {
-      "term": "police",
       "articles": 62,
       "sources": 23,
-      "sentiment_direction": "negative",
-      "surge": 1.21,
-      "sentiment_mean": -0.636,
-      "headline": "German protests turn violent as activists clash with police",
-      "headline_source": "Japan Times",
-      "headline_url": "https://www.japantimes.co.jp/news/2026/11/02/world/germany-protests-activists-police/"
+      "sentiment_direction": "mixed",
+      "surge": 0.99,
+      "sentiment_mean": 0.026,
+      "headline": "Oil falls as Trump favours Iran diplomacy before midterm elections",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/commodities-news/oil-falls-as-trump-favours-iran-diplomacy-before-midterm-elections-4989799"
     },
     {
       "term": "elections",
-      "articles": 56,
+      "articles": 58,
       "sources": 23,
       "sentiment_direction": "mixed",
-      "surge": 0.85,
-      "sentiment_mean": -0.08,
-      "headline": "Stock futures tick higher ahead of busy week of earnings, jobs data and the midterm elections: Live updates - CNBC",
-      "headline_source": "Google News Top",
-      "headline_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBrbkQzMEJlOVN5RDBtcEZuU2VQSkZydW01ejJqY2hObWJXOUl0dUhUMWVoVXRwZWhsU3BIRkVGR0lhc3JmM0w4ak5ybUpCVElXOWxKMm1tQ3ByOE5TNzNJQm5YUDFaa2hRNENZNDJacnlMci1tZmU00gF8QVVfeXFMUHRLQWRCRkw3cUdsOVZINFdPc1VsLVN4UzJKT1BmX2ZaMlBrcDM2WER5cXY1LTdZQjZXMy1FVUU3RFhFcHVxcXA5eEx0a041Vlo2Y3BlVXN2S0hpTG9tVVV3SndoWVRMU2JweGZKUVNpVWxJeXk4Sno4a2hmZQ?oc=5"
-    },
-    {
-      "term": "power",
-      "articles": 35,
-      "sources": 23,
-      "sentiment_direction": "mixed",
-      "surge": 0.71,
-      "sentiment_mean": 0.014,
-      "headline": "Russian strikes cut power to thousands in Ukraine as drones damage Russian facility",
+      "surge": 0.88,
+      "sentiment_mean": -0.071,
+      "headline": "Oil falls as Trump favours Iran diplomacy before midterm elections",
       "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/commodities-news/russian-strikes-cut-power-to-thousands-in-ukraine-as-drones-damage-russian-facility-4989707"
+      "headline_url": "https://www.investing.com/news/commodities-news/oil-falls-as-trump-favours-iran-diplomacy-before-midterm-elections-4989799"
     },
     {
       "term": "senate",
-      "articles": 83,
+      "articles": 82,
       "sources": 22,
       "sentiment_direction": "mixed",
-      "surge": 1.48,
-      "sentiment_mean": 0.053,
+      "surge": 1.46,
+      "sentiment_mean": 0.068,
       "headline": "Democrats Show Strength in Final Days of Race for the Senate, New Polls Find",
       "headline_source": "NYT Politics",
       "headline_url": "https://www.nytimes.com/2026/11/01/us/politics/times-siena-poll-senate.html"
+    },
+    {
+      "term": "president",
+      "articles": 72,
+      "sources": 22,
+      "sentiment_direction": "mixed",
+      "surge": 0.66,
+      "sentiment_mean": -0.016,
+      "headline": "Bulgaria\u2019s acting President Iotova leads in run-off exit polls",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/news/2026/11/1/bulgarian-president-yotova-leads-runoff-exit-polls-show?traffic_source=rss"
     }
   ],
-  "hours_since_fetch": 0.0
+  "hours_since_fetch": 0.01
 }
