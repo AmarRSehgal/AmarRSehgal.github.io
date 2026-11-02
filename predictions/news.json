@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-02T16:24:52.857255+00:00",
+  "generated_at": "2026-11-02T17:25:06.159219+00:00",
   "window_hours": 24,
-  "articles_in_window": 2090,
+  "articles_in_window": 2152,
   "collection_days": 50,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,91 +10,91 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 161,
-      "sources": 36,
-      "sentiment_direction": "negative",
-      "surge": 0.74,
-      "sentiment_mean": -0.167,
-      "headline": "Texas voters on high gas prices under Trump: \u2018Probably made me go more Democrat\u2019",
-      "headline_source": "Reddit r/economics",
-      "headline_url": "https://www.reddit.com/r/Economics/comments/1xm16rf/texas_voters_on_high_gas_prices_under_trump/"
+      "articles": 171,
+      "sources": 37,
+      "sentiment_direction": "mixed",
+      "surge": 0.79,
+      "sentiment_mean": -0.138,
+      "headline": "Trump promised a steel mill in this rural Iowa region. But is it all a midterm election ploy?",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/us-news/2026/nov/02/iowa-midterms-steel-mill"
     },
     {
       "term": "iran",
-      "articles": 76,
+      "articles": 81,
       "sources": 31,
       "sentiment_direction": "negative",
-      "surge": 1.37,
-      "sentiment_mean": -0.425,
-      "headline": "UAE boosts oil exports despite Iran war, energy minister says",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/commodities-news/uae-boosts-oil-exports-despite-iran-war-energy-minister-says-93CH-4992349"
+      "surge": 1.49,
+      "sentiment_mean": -0.403,
+      "headline": "Iran offers deal on Hormuz Strait, Netanyahu wants to 'finish the job'",
+      "headline_source": "France24",
+      "headline_url": "https://www.france24.com/en/video/20261102-iran-offers-deal-on-hormuz-strait-netanyahu-wants-to-finish-the-job"
     },
     {
       "term": "midterm",
-      "articles": 90,
-      "sources": 28,
+      "articles": 96,
+      "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 1.43,
-      "sentiment_mean": 0.014,
-      "headline": "Stock market after midterm elections: What S&P 500 history shows",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/02/stock-market-after-midterm-elections-sp-500-history.html"
+      "surge": 1.52,
+      "sentiment_mean": 0.032,
+      "headline": "Trump promised a steel mill in this rural Iowa region. But is it all a midterm election ploy?",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/us-news/2026/nov/02/iowa-midterms-steel-mill"
     },
     {
       "term": "president",
-      "articles": 91,
-      "sources": 27,
+      "articles": 96,
+      "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 0.9,
-      "sentiment_mean": -0.005,
-      "headline": "Israel's president begins process of coalition government negotiations",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/video/20261102-israel-s-president-begins-process-of-coalition-government-negotiations"
-    },
-    {
-      "term": "elections",
-      "articles": 83,
-      "sources": 27,
-      "sentiment_direction": "mixed",
-      "surge": 1.31,
-      "sentiment_mean": 0.018,
-      "headline": "Stock market after midterm elections: What S&P 500 history shows",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/02/stock-market-after-midterm-elections-sp-500-history.html"
+      "surge": 0.95,
+      "sentiment_mean": -0.045,
+      "headline": "China not interested in US-Russia summit on Ukraine, German president claims",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1xm1bzv/china_not_interested_in_usrussia_summit_on/"
     },
     {
       "term": "midterms",
-      "articles": 79,
+      "articles": 86,
       "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 1.36,
-      "sentiment_mean": 0.1,
-      "headline": "Midterms, jobs and AI earnings: can tech find a floor this week? My outlook for November 2-6",
-      "headline_source": "Reddit r/stocks",
-      "headline_url": "https://www.reddit.com/r/stocks/comments/1xm1bdl/midterms_jobs_and_ai_earnings_can_tech_find_a/"
+      "surge": 1.48,
+      "sentiment_mean": 0.109,
+      "headline": "Hear from Mike Rogers and Abdul El-Sayed as their midterms race makes headlines",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/hear-from-mike-rogers-and-abdul-el-sayed-as-their-midterms-race-makes-headlines/"
+    },
+    {
+      "term": "elections",
+      "articles": 84,
+      "sources": 27,
+      "sentiment_direction": "mixed",
+      "surge": 1.35,
+      "sentiment_mean": 0.027,
+      "headline": "Fox News suffers sharp drop in ratings as US elections approach",
+      "headline_source": "Reddit r/politics",
+      "headline_url": "https://www.reddit.com/r/politics/comments/1xm1d8m/fox_news_suffers_sharp_drop_in_ratings_as_us/"
+    },
+    {
+      "term": "across",
+      "articles": 88,
+      "sources": 26,
+      "sentiment_direction": "mixed",
+      "surge": 1.58,
+      "sentiment_mean": -0.058,
+      "headline": "Supermarket Freezers Across Europe Hit By Second Suspected Cyberattack",
+      "headline_source": "Slashdot",
+      "headline_url": "https://it.slashdot.org/story/26/11/02/1522249/supermarket-freezers-across-europe-hit-by-second-suspected-cyberattack?utm_source=rss1.0mainlinkanon&utm_medium=feed"
     },
     {
       "term": "election",
-      "articles": 94,
-      "sources": 26,
+      "articles": 93,
+      "sources": 25,
       "sentiment_direction": "mixed",
       "surge": 0.64,
-      "sentiment_mean": 0.021,
-      "headline": "Chaos and campaigning in the final day before the election - LIVE \u00b7 2026 Midterm Elections Live Updates - Politico",
-      "headline_source": "Google News Top",
-      "headline_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1xTzBaa3hJZ2F3ZXNHTGJ6cjhtbmkyTzNGc1N2cy0zT3FvYTlFTHdNYlNuUGdOQWhDdk90LTNET1RJOWsweHoxa2VzaEZxTUQ1SVFadkhRb2ZMc2ZNR2dSUS1tVkFnbWNTemtCN2d0eVJRXzQtZ19IWG9LNA?oc=5"
-    },
-    {
-      "term": "senate",
-      "articles": 108,
-      "sources": 24,
-      "sentiment_direction": "mixed",
-      "surge": 1.92,
-      "sentiment_mean": 0.035,
-      "headline": "Dems taking over House and Senate will be very good for investors and the economy because that begets stability and certainty",
-      "headline_source": "Reddit r/stocks",
-      "headline_url": "https://www.reddit.com/r/stocks/comments/1xm1i7p/dems_taking_over_house_and_senate_will_be_very/"
+      "sentiment_mean": 0.036,
+      "headline": "Trump promised a steel mill in this rural Iowa region. But is it all a midterm election ploy?",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/us-news/2026/nov/02/iowa-midterms-steel-mill"
     }
   ],
   "hours_since_fetch": 0.0
