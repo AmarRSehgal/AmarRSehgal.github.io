@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-02T10:24:52.463525+00:00",
+  "generated_at": "2026-11-02T11:24:57.478932+00:00",
   "window_hours": 24,
-  "articles_in_window": 1920,
+  "articles_in_window": 1922,
   "collection_days": 50,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,25 +10,14 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 153,
+      "articles": 150,
       "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 0.69,
-      "sentiment_mean": -0.134,
-      "headline": "Midterms: Will Trump backlash lead to Democratic landslide?",
+      "surge": 0.67,
+      "sentiment_mean": -0.141,
+      "headline": "'Give them the hammer': Trump threatens Iran ahead of midterms",
       "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/video/20261102-midterms-will-trump-backlash-lead-to-democratic-landslide"
-    },
-    {
-      "term": "midterm",
-      "articles": 74,
-      "sources": 27,
-      "sentiment_direction": "mixed",
-      "surge": 1.17,
-      "sentiment_mean": 0.034,
-      "headline": "Parties End the Midterm Election With Their Closing Arguments",
-      "headline_source": "NYT Politics",
-      "headline_url": "https://www.nytimes.com/2026/11/02/us/politics/midterm-elections.html"
+      "headline_url": "https://www.france24.com/en/video/20261102-give-them-the-hammer-trump-threatens-iran-ahead-of-midterms"
     },
     {
       "term": "election",
@@ -37,64 +26,75 @@
       "sentiment_direction": "mixed",
       "surge": 0.65,
       "sentiment_mean": -0.006,
-      "headline": "When Will We Know Election Outcomes? Don\u2019t Hold Your Breath.",
-      "headline_source": "NYT Politics",
-      "headline_url": "https://www.nytimes.com/2026/11/02/us/politics/election-vote-counts.html"
+      "headline": "Defense, healthcare, crypto and AI: How the midterm election could affect stocks",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/11/02/midterm-election-stocks-defense-healthcare-crypto-ai.html"
+    },
+    {
+      "term": "midterm",
+      "articles": 74,
+      "sources": 26,
+      "sentiment_direction": "mixed",
+      "surge": 1.17,
+      "sentiment_mean": 0.02,
+      "headline": "US voters in a sour economic mood heading into midterm elections",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/economy-news/us-voters-in-a-sour-economic-mood-heading-into-midterm-elections-4990812"
     },
     {
       "term": "elections",
-      "articles": 69,
+      "articles": 72,
       "sources": 26,
       "sentiment_direction": "mixed",
-      "surge": 1.07,
-      "sentiment_mean": -0.015,
-      "headline": "Midterm Elections: Who Is Winning the Race for Congress?",
-      "headline_source": "NYT Politics",
-      "headline_url": "https://www.nytimes.com/2026/11/02/us/politics/congress-races-midterms.html"
+      "surge": 1.12,
+      "sentiment_mean": -0.017,
+      "headline": "US voters in a sour economic mood heading into midterm elections",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/economy-news/us-voters-in-a-sour-economic-mood-heading-into-midterm-elections-4990812"
     },
     {
       "term": "iran",
       "articles": 67,
       "sources": 26,
       "sentiment_direction": "negative",
-      "surge": 1.16,
-      "sentiment_mean": -0.45,
-      "headline": "Gulf Economies, Torn by War in Iran, Desperately Need a Return to Normal",
-      "headline_source": "NYT Business",
-      "headline_url": "https://www.nytimes.com/2026/11/02/business/iran-war-gulf-economies.html"
+      "surge": 1.17,
+      "sentiment_mean": -0.461,
+      "headline": "'Give them the hammer': Trump threatens Iran ahead of midterms",
+      "headline_source": "France24",
+      "headline_url": "https://www.france24.com/en/video/20261102-give-them-the-hammer-trump-threatens-iran-ahead-of-midterms"
     },
     {
       "term": "president",
-      "articles": 81,
+      "articles": 83,
       "sources": 25,
       "sentiment_direction": "mixed",
-      "surge": 0.76,
-      "sentiment_mean": -0.056,
+      "surge": 0.78,
+      "sentiment_mean": -0.05,
       "headline": "How the president\u2019s party has fared in every US midterm election since 1946",
       "headline_source": "Al Jazeera",
       "headline_url": "https://www.aljazeera.com/news/2026/11/2/how-the-presidents-party-has-fared-in-every-us-midterm-election-since-1946?traffic_source=rss"
     },
     {
+      "term": "data",
+      "articles": 54,
+      "sources": 24,
+      "sentiment_direction": "mixed",
+      "surge": 0.94,
+      "sentiment_mean": 0.112,
+      "headline": "Ford launches a \u2018privacy promise\u2019 and explains how and why it uses customer data",
+      "headline_source": "TechCrunch",
+      "headline_url": "https://techcrunch.com/2026/11/02/ford-launches-a-privacy-promise-and-explains-how-and-why-it-uses-a-customers-data/"
+    },
+    {
       "term": "party",
-      "articles": 57,
+      "articles": 58,
       "sources": 23,
       "sentiment_direction": "positive",
-      "surge": 1.26,
-      "sentiment_mean": 0.39,
+      "surge": 1.28,
+      "sentiment_mean": 0.393,
       "headline": "Senate Control After the Midterms: Party Switches, Ties and Wild Cards",
       "headline_source": "NYT Politics",
       "headline_url": "https://www.nytimes.com/2026/11/02/us/politics/senate-midterms-tie-independents-wild-cards.html"
-    },
-    {
-      "term": "data",
-      "articles": 51,
-      "sources": 23,
-      "sentiment_direction": "mixed",
-      "surge": 0.89,
-      "sentiment_mean": 0.094,
-      "headline": "More companies seeking cyber insurance following high-profile data breaches",
-      "headline_source": "Japan Times",
-      "headline_url": "https://www.japantimes.co.jp/business/2026/11/02/companies/cyber-security-insurance-policies/"
     }
   ],
   "hours_since_fetch": 0.0
