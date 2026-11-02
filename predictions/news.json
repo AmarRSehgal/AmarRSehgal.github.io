@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-02T02:25:35.848993+00:00",
+  "generated_at": "2026-11-02T03:24:51.478797+00:00",
   "window_hours": 24,
-  "articles_in_window": 1644,
+  "articles_in_window": 1677,
   "collection_days": 50,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,32 +10,43 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 147,
+      "articles": 143,
       "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 0.65,
-      "sentiment_mean": -0.092,
-      "headline": "Trump\u2019s Iran war brings on record oil company profits. The US oil industry has earned almost $130 billion in profits since Trump's war began in February. Trump\u2019s personal wealth in oil and gas stocks grew as much as $35.8 million this year. \u201cWe\u2019re making a freaking fortune,\u201d Trump said.",
-      "headline_source": "Reddit r/energy",
-      "headline_url": "https://www.reddit.com/r/energy/comments/1xll526/trumps_iran_war_brings_on_record_oil_company/"
+      "surge": 0.63,
+      "sentiment_mean": -0.077,
+      "headline": "Rubio says Trump wants to end Iran war 'peacefully' even as both sides prepare for strikes",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/11/02/us-iran-war-trump-hormuz-rubio.html"
     },
     {
       "term": "election",
       "articles": 95,
-      "sources": 25,
+      "sources": 24,
       "sentiment_direction": "mixed",
       "surge": 0.62,
-      "sentiment_mean": -0.017,
+      "sentiment_mean": -0.027,
       "headline": "Israeli officials say results stand as Netanyahu claims election \u2018stolen\u2019",
       "headline_source": "Al Jazeera",
       "headline_url": "https://www.aljazeera.com/news/2026/11/2/israeli-officials-say-results-stand-as-netanyahu-claims-election-stolen?traffic_source=rss"
+    },
+    {
+      "term": "midterm",
+      "articles": 66,
+      "sources": 24,
+      "sentiment_direction": "mixed",
+      "surge": 1.05,
+      "sentiment_mean": -0.004,
+      "headline": "Oil falls as Trump favours Iran diplomacy before midterm elections",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/commodities-news/oil-falls-as-trump-favours-iran-diplomacy-before-midterm-elections-4989799"
     },
     {
       "term": "power",
       "articles": 39,
       "sources": 24,
       "sentiment_direction": "mixed",
-      "surge": 0.79,
+      "surge": 0.8,
       "sentiment_mean": 0.064,
       "headline": "Russia strikes power plant in Ukraine after Trump announces energy ceasefire. A thermal power plant was struck at least twice. Trump said earlier on social media that both Russia and Ukraine had agreed. Zelenskyy was surprised by Trump's announcement and only learned about it on social media.",
       "headline_source": "Reddit r/energy",
@@ -43,59 +54,48 @@
     },
     {
       "term": "party",
-      "articles": 64,
+      "articles": 63,
       "sources": 23,
       "sentiment_direction": "positive",
-      "surge": 1.44,
-      "sentiment_mean": 0.36,
+      "surge": 1.42,
+      "sentiment_mean": 0.356,
       "headline": "Trump invites Michigan Democrat Stevens to join the Republican Party",
       "headline_source": "Al Jazeera",
       "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/2/trump-invites-michigan-democrat-stevens-to-join-the-republican-party?traffic_source=rss"
     },
     {
-      "term": "midterm",
+      "term": "elections",
       "articles": 62,
       "sources": 23,
       "sentiment_direction": "mixed",
-      "surge": 0.99,
-      "sentiment_mean": 0.026,
-      "headline": "Oil falls as Trump favours Iran diplomacy before midterm elections",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/commodities-news/oil-falls-as-trump-favours-iran-diplomacy-before-midterm-elections-4989799"
-    },
-    {
-      "term": "elections",
-      "articles": 58,
-      "sources": 23,
-      "sentiment_direction": "mixed",
-      "surge": 0.88,
-      "sentiment_mean": -0.071,
+      "surge": 0.94,
+      "sentiment_mean": -0.09,
       "headline": "Oil falls as Trump favours Iran diplomacy before midterm elections",
       "headline_source": "Investing.com News",
       "headline_url": "https://www.investing.com/news/commodities-news/oil-falls-as-trump-favours-iran-diplomacy-before-midterm-elections-4989799"
     },
     {
       "term": "senate",
-      "articles": 82,
+      "articles": 85,
       "sources": 22,
       "sentiment_direction": "mixed",
-      "surge": 1.46,
-      "sentiment_mean": 0.068,
-      "headline": "Democrats Show Strength in Final Days of Race for the Senate, New Polls Find",
-      "headline_source": "NYT Politics",
-      "headline_url": "https://www.nytimes.com/2026/11/01/us/politics/times-siena-poll-senate.html"
+      "surge": 1.52,
+      "sentiment_mean": 0.083,
+      "headline": "El-Sayed dismisses Stevens\u2019 backing of Republican Senate candidate",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/2/el-sayed-dismisses-haley-stevens-for-backing-of-republican-rival?traffic_source=rss"
     },
     {
       "term": "president",
-      "articles": 72,
+      "articles": 73,
       "sources": 22,
       "sentiment_direction": "mixed",
-      "surge": 0.66,
-      "sentiment_mean": -0.016,
-      "headline": "Bulgaria\u2019s acting President Iotova leads in run-off exit polls",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/news/2026/11/1/bulgarian-president-yotova-leads-runoff-exit-polls-show?traffic_source=rss"
+      "surge": 0.67,
+      "sentiment_mean": 0.005,
+      "headline": "Live Updates: FSU President Richard McCullough, Interim AD Bruce Warwick discuss change of football leadership - 247Sports",
+      "headline_source": "Google News Top",
+      "headline_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOb0JFSEtDYWxTSGFGOXZtOElIaW1iTWhreDh4dUVfbzV0UmhwNVV4X1B1UDRBU2ctbWVibmRFQjVRaDFRel9UOG5zMFZTT0NhWlB4LXhSbnVncVVDRkhPSHhuRUxBRVB5MkJiTEJvWXhkNFhuQ2JFM3NZSkt4SWFGa1lYYkNFOUI0TDIxYlQwY3ROLWZQYUpiTDhZXzBSY2ZCaTJVdDNSUzBMTkxPZFpyUjJ4TndSb0k?oc=5"
     }
   ],
-  "hours_since_fetch": 0.01
+  "hours_since_fetch": 0.0
 }
