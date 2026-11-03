@@ -1,10 +1,36 @@
 {
-  "generated_at": "2026-11-03T17:00:12.314583+00:00",
+  "generated_at": "2026-11-03T18:00:09.660876+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
+    {
+      "base": "H100",
+      "type": "perp-perp",
+      "long_venue": "OKX",
+      "short_venue": "Bitget",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 23,
+      "scans": 24,
+      "net_apr": 8227.2,
+      "net_at_hold": 7.51343,
+      "cost_bps": 33.94
+    },
+    {
+      "base": "H100",
+      "type": "perp-perp",
+      "long_venue": "OKX",
+      "short_venue": "Lighter",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 23,
+      "scans": 24,
+      "net_apr": 7473.8,
+      "net_at_hold": 6.82539,
+      "cost_bps": 20.03
+    },
     {
       "base": "1000CAT",
       "type": "perp-perp",
@@ -14,8 +40,8 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 234.73,
-      "net_at_hold": 0.21436,
+      "net_apr": 226.84,
+      "net_at_hold": 0.20716,
       "cost_bps": 54.28
     },
     {
@@ -28,34 +54,8 @@
       "hits": 23,
       "scans": 24,
       "net_apr": 52.48,
-      "net_at_hold": 0.04793,
+      "net_at_hold": 0.04792,
       "cost_bps": 20.1
-    },
-    {
-      "base": "H100",
-      "type": "perp-perp",
-      "long_venue": "OKX",
-      "short_venue": "Bitget",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 22,
-      "scans": 24,
-      "net_apr": 8261.42,
-      "net_at_hold": 7.54468,
-      "cost_bps": 36.22
-    },
-    {
-      "base": "H100",
-      "type": "perp-perp",
-      "long_venue": "OKX",
-      "short_venue": "Lighter",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 22,
-      "scans": 24,
-      "net_apr": 7330.15,
-      "net_at_hold": 6.6942,
-      "cost_bps": 21.09
     },
     {
       "base": "H100",
@@ -64,11 +64,11 @@
       "short_venue": "Gate",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 20,
+      "hits": 21,
       "scans": 24,
-      "net_apr": 7280.3,
-      "net_at_hold": 6.64868,
-      "cost_bps": 76.13
+      "net_apr": 7267.56,
+      "net_at_hold": 6.63705,
+      "cost_bps": 79.65
     },
     {
       "base": "FOLKS",
