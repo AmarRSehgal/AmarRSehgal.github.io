@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T20:00:11.225223+00:00",
+  "generated_at": "2026-11-03T21:00:10.336510+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 8227.2,
-      "net_at_hold": 7.51343,
-      "cost_bps": 33.94
+      "net_apr": 7940.28,
+      "net_at_hold": 7.2514,
+      "cost_bps": 35.36
     },
     {
       "base": "H100",
@@ -29,7 +29,7 @@
       "scans": 24,
       "net_apr": 7473.8,
       "net_at_hold": 6.82539,
-      "cost_bps": 19.87
+      "cost_bps": 20.03
     },
     {
       "base": "ZK",
@@ -40,8 +40,8 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 45.7,
-      "net_at_hold": 0.04174,
+      "net_apr": 52.48,
+      "net_at_hold": 0.04792,
       "cost_bps": 20.1
     },
     {
@@ -53,9 +53,9 @@
       "min_hold_h": 8,
       "hits": 21,
       "scans": 24,
-      "net_apr": 7267.56,
-      "net_at_hold": 6.63705,
-      "cost_bps": 81.62
+      "net_apr": 7235.92,
+      "net_at_hold": 6.60814,
+      "cost_bps": 94.62
     },
     {
       "base": "1000CAT",
@@ -64,11 +64,24 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 21,
+      "hits": 20,
       "scans": 24,
-      "net_apr": 226.84,
-      "net_at_hold": 0.20716,
-      "cost_bps": 54.28
+      "net_apr": 222.23,
+      "net_at_hold": 0.20295,
+      "cost_bps": 54.47
+    },
+    {
+      "base": "ERA",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 410.44,
+      "net_at_hold": 0.37483,
+      "cost_bps": 54.92
     }
   ]
 }
