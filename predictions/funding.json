@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T19:00:11.930768+00:00",
+  "generated_at": "2026-11-03T20:00:11.225223+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -45,19 +45,6 @@
       "cost_bps": 20.1
     },
     {
-      "base": "1000CAT",
-      "type": "perp-perp",
-      "long_venue": "Binance",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 22,
-      "scans": 24,
-      "net_apr": 230.78,
-      "net_at_hold": 0.21076,
-      "cost_bps": 54.22
-    },
-    {
       "base": "H100",
       "type": "perp-perp",
       "long_venue": "OKX",
@@ -68,33 +55,20 @@
       "scans": 24,
       "net_apr": 7267.56,
       "net_at_hold": 6.63705,
-      "cost_bps": 79.65
+      "cost_bps": 81.62
     },
     {
-      "base": "FOLKS",
+      "base": "1000CAT",
       "type": "perp-perp",
       "long_venue": "Binance",
-      "short_venue": "Lighter",
+      "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 18,
+      "hits": 21,
       "scans": 24,
-      "net_apr": 152.42,
-      "net_at_hold": 0.1392,
-      "cost_bps": 20.0
-    },
-    {
-      "base": "FOLKS",
-      "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "Lighter",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 101.8,
-      "net_at_hold": 0.09297,
-      "cost_bps": 24.32
+      "net_apr": 226.84,
+      "net_at_hold": 0.20716,
+      "cost_bps": 54.28
     }
   ]
 }
