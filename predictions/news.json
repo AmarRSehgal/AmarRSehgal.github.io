@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-02T23:24:55.246001+00:00",
+  "generated_at": "2026-11-03T00:24:55.143860+00:00",
   "window_hours": 24,
-  "articles_in_window": 2401,
-  "collection_days": 50,
+  "articles_in_window": 2432,
+  "collection_days": 51,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
   "surge_available": true,
@@ -10,58 +10,69 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 203,
-      "sources": 36,
+      "articles": 209,
+      "sources": 37,
       "sentiment_direction": "mixed",
-      "surge": 0.98,
-      "sentiment_mean": -0.041,
-      "headline": "Trump\u2019s approval rating is near a career low ahead of elections, poll finds",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/world/united-states-canada/article/3373049/trumps-approval-rating-near-career-low-ahead-elections-poll-finds"
+      "surge": 1.01,
+      "sentiment_mean": -0.053,
+      "headline": "Latest on Alaska Senate race after judge tosses Trump lawsuit seeking to delay certification",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/latest-on-alaska-senate-race-after-judge-tosses-trump-lawsuit-seeking-to-delay-certification/"
+    },
+    {
+      "term": "midterm",
+      "articles": 129,
+      "sources": 32,
+      "sentiment_direction": "mixed",
+      "surge": 2.01,
+      "sentiment_mean": 0.048,
+      "headline": "S&P 500 futures are flat as investors weigh Apple earnings; U.S. midterm elections loom: Live updates",
+      "headline_source": "CNBC World",
+      "headline_url": "https://www.cnbc.com/2026/11/02/stock-market-today-live-updates.html"
     },
     {
       "term": "midterms",
-      "articles": 115,
+      "articles": 120,
       "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 2.0,
-      "sentiment_mean": 0.143,
-      "headline": "US midterms 2026: What polls reveal about Democratic, Republican voters",
+      "surge": 2.07,
+      "sentiment_mean": 0.091,
+      "headline": "War, tariffs and China: What the US midterms mean for the Asia-Pacific",
       "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/news/2026/11/2/us-midterms-2026-what-polls-reveal-about-democratic-republican-voters?traffic_source=rss"
+      "headline_url": "https://www.aljazeera.com/news/2026/11/2/war-tariffs-and-china-what-the-us-midterms-mean-for-the-asia-pacific?traffic_source=rss"
     },
     {
       "term": "across",
-      "articles": 103,
+      "articles": 102,
       "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 1.85,
-      "sentiment_mean": -0.071,
+      "surge": 1.82,
+      "sentiment_mean": -0.059,
       "headline": "Hackers Raise Supermarket Freezers to 55\u00b0C as Cyberattack Spreads Across Seven EU Countries",
       "headline_source": "Reddit r/worldnews",
       "headline_url": "https://www.reddit.com/r/worldnews/comments/1xm3gve/hackers_raise_supermarket_freezers_to_55c_as/"
     },
     {
-      "term": "midterm",
-      "articles": 125,
+      "term": "elections",
+      "articles": 104,
       "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 1.96,
-      "sentiment_mean": 0.057,
-      "headline": "Trump Delivers a Closing Midterm Message. Mostly About Landscaping.",
-      "headline_source": "NYT Politics",
-      "headline_url": "https://www.nytimes.com/2026/11/02/us/politics/trump-reflecting-pool-midterms.html"
+      "surge": 1.64,
+      "sentiment_mean": 0.023,
+      "headline": "S&P 500 futures are flat as investors weigh Apple earnings; U.S. midterm elections loom: Live updates",
+      "headline_source": "CNBC World",
+      "headline_url": "https://www.cnbc.com/2026/11/02/stock-market-today-live-updates.html"
     },
     {
       "term": "iran",
       "articles": 82,
       "sources": 30,
       "sentiment_direction": "negative",
-      "surge": 1.5,
-      "sentiment_mean": -0.326,
-      "headline": "Netanyahu is pressing Trump to attack Iran after US midterm elections, officials say",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/world/united-states-canada/article/3373046/netanyahu-pressing-trump-attack-iran-after-us-midterm-elections-officials-say"
+      "surge": 1.49,
+      "sentiment_mean": -0.328,
+      "headline": "Investment in renewable energy cushioned Iran war blow: PM Modi",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/india/investment-in-renewable-energy-cushioned-iran-war-blow-pm-modi/articleshow/135477177.cms"
     },
     {
       "term": "president",
@@ -69,32 +80,21 @@
       "sources": 29,
       "sentiment_direction": "mixed",
       "surge": 1.27,
-      "sentiment_mean": -0.041,
-      "headline": "Initial results suggest Iliana Yotova wins runoff to become Bulgaria's 1st elected female president",
-      "headline_source": "Reddit r/worldnews",
-      "headline_url": "https://www.reddit.com/r/worldnews/comments/1xmal26/initial_results_suggest_iliana_yotova_wins_runoff/"
+      "sentiment_mean": -0.045,
+      "headline": "British singer Boy George meets Israeli president, visits Western Wall in Jerusalem - AP News",
+      "headline_source": "AP News",
+      "headline_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOQ1JsMXhmRzRKSlc2UjNjbm13Q21BbGtQQkljYmxLSS1Yc014dXVaN3ZtcVJoQ2pkQWkwNFZqV1B0bGkwLVJXbUp5aS1PaVQxam1YUUwyYk5LX2RBNWlYS1RERnhJdDRrd2tqV3RubEtlVnlIUTRBcTB0a3JOa091NW1hZk9uN2ZjZnFfal9VNDZkdjZjWDUyR2ZiNDZsZkRmMVh4cEJYcUdHVnNzdm9CTjVpVHR1Mk93dGhMb21hZmMyWmFWMWQyRWJIalZyYVdUNTV0N0RjTQ?oc=5"
     },
     {
-      "term": "election",
-      "articles": 102,
+      "term": "democrats",
+      "articles": 82,
       "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 0.72,
-      "sentiment_mean": 0.103,
-      "headline": "The Anger Election\u2019s Final Twist",
-      "headline_source": "The Atlantic",
-      "headline_url": "https://www.theatlantic.com/podcasts/2026/11/ra-voter-issues/689254/?utm_source=feed"
-    },
-    {
-      "term": "elections",
-      "articles": 100,
-      "sources": 27,
-      "sentiment_direction": "mixed",
-      "surge": 1.59,
-      "sentiment_mean": 0.015,
-      "headline": "Trump\u2019s approval rating is near a career low ahead of elections, poll finds",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/world/united-states-canada/article/3373049/trumps-approval-rating-near-career-low-ahead-elections-poll-finds"
+      "surge": 1.95,
+      "sentiment_mean": 0.106,
+      "headline": "US: Trump labels Democrats 'dangerous' ahead of midterms",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/us-trump-labels-democrats-dangerous-ahead-of-midterms/a-79834945?maca=en-rss-en-all-1573-rdf"
     }
   ],
   "hours_since_fetch": 0.0
