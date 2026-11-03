@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T14:00:11.297971+00:00",
+  "generated_at": "2026-11-03T15:00:11.894662+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 315.16,
-      "net_at_hold": 0.28782,
+      "net_apr": 303.74,
+      "net_at_hold": 0.27739,
       "cost_bps": 54.16
     },
     {
@@ -28,7 +28,7 @@
       "hits": 23,
       "scans": 24,
       "net_apr": 52.48,
-      "net_at_hold": 0.04792,
+      "net_at_hold": 0.04793,
       "cost_bps": 20.1
     },
     {
@@ -48,19 +48,6 @@
       "base": "H100",
       "type": "perp-perp",
       "long_venue": "OKX",
-      "short_venue": "Gate",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 22,
-      "scans": 24,
-      "net_apr": 7251.74,
-      "net_at_hold": 6.62259,
-      "cost_bps": 71.41
-    },
-    {
-      "base": "H100",
-      "type": "perp-perp",
-      "long_venue": "OKX",
       "short_venue": "Lighter",
       "long_instrument": "perp",
       "min_hold_h": 8,
@@ -74,14 +61,40 @@
       "base": "H100",
       "type": "perp-perp",
       "long_venue": "OKX",
-      "short_venue": "HTX",
+      "short_venue": "Gate",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 21,
+      "scans": 24,
+      "net_apr": 7267.56,
+      "net_at_hold": 6.63705,
+      "cost_bps": 70.21
+    },
+    {
+      "base": "FOLKS",
+      "type": "perp-perp",
+      "long_venue": "Binance",
+      "short_venue": "Lighter",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 8349.97,
-      "net_at_hold": 7.62555,
-      "cost_bps": 27.85
+      "net_apr": 152.42,
+      "net_at_hold": 0.1392,
+      "cost_bps": 20.0
+    },
+    {
+      "base": "FOLKS",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "Lighter",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 101.8,
+      "net_at_hold": 0.09297,
+      "cost_bps": 24.32
     }
   ]
 }
