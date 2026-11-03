@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T02:00:09.062072+00:00",
+  "generated_at": "2026-11-03T07:00:12.854282+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -43,6 +43,19 @@
       "net_apr": 4841.78,
       "net_at_hold": 4.42171,
       "cost_bps": 72.78
+    },
+    {
+      "base": "ZK",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Crypto.com",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 38.01,
+      "net_at_hold": 0.03471,
+      "cost_bps": 20.1
     }
   ]
 }
