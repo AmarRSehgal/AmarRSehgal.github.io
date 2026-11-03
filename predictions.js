@@ -462,11 +462,11 @@ function renderPaperAB(data) {
                 </div>
             </div>`;
     }).join('');
-    const prev = (data.previous_phases || []).map(p => `phase ${p.phase} (${p.started} to ${p.ended}, `
-        + `no aggro close) is archived in ${p.archive}` + (p.result ? `. Its result: ${p.result}` : '')).join('; ');
-    const phase = data.phase ? `<div class="prediction-note">${esc(`Phase ${data.phase} since ${data.started}, `
-        + `every maker with an aggro close (positions always rest at the touch to exit)`
-        + (prev ? `; ${prev}.` : '.'))}</div>` : '';
+    const prev = (data.previous_phases || []).map(p => `Phase ${p.phase} (${p.started} to ${p.ended}; ${p.change}) `
+        + `is archived in ${p.archive}.` + (p.result ? ` ${p.result}` : ''));
+    const phase = data.phase ? `<div class="prediction-note">${esc(`Phase ${data.phase} since ${data.started}: `
+        + `${data.phase_rule || ''}.`)}</div>`
+        + prev.map(t => `<div class="prediction-note">${esc(t)}</div>`).join('') : '';
     return phase + `<div class="prediction-note">${esc(data.headline)}</div>` + rows + renderLatencyCurve(data, money)
         + `<div class="prediction-note">${esc((data.caveats || []).join(' '))}</div>`;
 }
