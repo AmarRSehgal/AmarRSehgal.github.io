@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-04T17:24:57.001482+00:00",
+  "generated_at": "2026-11-04T18:24:57.194260+00:00",
   "window_hours": 24,
-  "articles_in_window": 2505,
+  "articles_in_window": 2489,
   "collection_days": 52,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,92 +9,92 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
-      "term": "trump",
-      "articles": 384,
-      "sources": 41,
-      "sentiment_direction": "mixed",
-      "surge": 1.78,
-      "sentiment_mean": -0.009,
-      "headline": "What Trump can achieve without approval from a Democratic-led Congress",
-      "headline_source": "MarketWatch Top Stories",
-      "headline_url": "https://www.marketwatch.com/story/what-trump-can-achieve-without-approval-from-a-democratic-led-congress-3401de75?mod=mw_rss_topstories"
-    },
-    {
       "term": "democrats",
-      "articles": 371,
+      "articles": 394,
       "sources": 40,
       "sentiment_direction": "positive",
-      "surge": 6.95,
-      "sentiment_mean": 0.302,
-      "headline": "US voters rebuke Trump as Democrats win control of Congress in \u2018blue wave\u2019",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/us-news/2026/nov/04/democrats-house-midterm-elections-results"
+      "surge": 7.41,
+      "sentiment_mean": 0.284,
+      "headline": "Democrats warn Trump camp to \u2018lawyer up\u2019 as anger over corruption drives midterms wipeout",
+      "headline_source": "France24",
+      "headline_url": "https://www.france24.com/en/americas/20261104-democrats-warn-trump-camp-lawyer-up-anger-over-corruption-drives-midterms-wipeout-gop"
     },
     {
-      "term": "midterm",
-      "articles": 346,
-      "sources": 37,
+      "term": "trump",
+      "articles": 391,
+      "sources": 40,
       "sentiment_direction": "mixed",
-      "surge": 3.59,
-      "sentiment_mean": 0.12,
-      "headline": "Live updates: 2026 US midterm elections and results - BBC",
-      "headline_source": "Google News Top",
-      "headline_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE12UGtQS1M3eEd3N1BXOGR4TDdmeVlabFdQOXFya3NiNlZRTkdteEdCM2JPbHlVYzJzMEhwc1dhOENCUE1TbnFiWExFQWtuX0VqRlZhVFNB?oc=5"
+      "surge": 1.8,
+      "sentiment_mean": -0.001,
+      "headline": "Democrats warn Trump camp to \u2018lawyer up\u2019 as anger over corruption drives midterms wipeout",
+      "headline_source": "France24",
+      "headline_url": "https://www.france24.com/en/americas/20261104-democrats-warn-trump-camp-lawyer-up-anger-over-corruption-drives-midterms-wipeout-gop"
     },
     {
       "term": "election",
-      "articles": 327,
+      "articles": 329,
+      "sources": 38,
+      "sentiment_direction": "positive",
+      "surge": 2.39,
+      "sentiment_mean": 0.161,
+      "headline": "Mississippi U.S. Senate Election Live Results 2026 - AP News",
+      "headline_source": "AP News",
+      "headline_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE40QzF6VWVSbVp6Zkx1Q0I1OGU4aG5UVTdmMDM5UTdIVTNDd0t5RmJ1RHUxVW9DMmVialI4TWxCMERpUy1pTk1la01IS1ZVdFJJUnJGNmdBX29GU2M5ZlVqaDJ5VFctbUZtRXpLbVlpNGlYNDdkdkM0UEhod0Jmdw?oc=5"
+    },
+    {
+      "term": "midterm",
+      "articles": 364,
       "sources": 37,
       "sentiment_direction": "mixed",
-      "surge": 2.38,
-      "sentiment_mean": 0.149,
-      "headline": "Jim Cramer says this bank stock is a buy after its post-election pullback",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/investingclub/2026/11/04/cramer-says-this-bank-stock-is-a-buy-after-its-post-election-pullback.html"
+      "surge": 3.74,
+      "sentiment_mean": 0.111,
+      "headline": "US midterm results a 'victory' for Canadians hopeful of tariff relief",
+      "headline_source": "BBC World",
+      "headline_url": "https://www.bbc.co.uk/news/articles/cqev3mw3e0kdo?at_medium=RSS&at_campaign=rss"
     },
     {
       "term": "midterms",
-      "articles": 188,
-      "sources": 36,
+      "articles": 191,
+      "sources": 37,
       "sentiment_direction": "mixed",
-      "surge": 2.4,
-      "sentiment_mean": 0.12,
-      "headline": "US midterms bring a wave of historic firsts as minorities win key races",
+      "surge": 2.43,
+      "sentiment_mean": 0.132,
+      "headline": "Democrats warn Trump camp to \u2018lawyer up\u2019 as anger over corruption drives midterms wipeout",
       "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/us-midterms-bring-a-wave-of-historic-firsts-as-minorities-win-key-races"
-    },
-    {
-      "term": "senate",
-      "articles": 323,
-      "sources": 35,
-      "sentiment_direction": "positive",
-      "surge": 3.94,
-      "sentiment_mean": 0.303,
-      "headline": "Democrats usher in a new era with their resounding sweep of the House and the Senate - AP News",
-      "headline_source": "AP News",
-      "headline_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQemZtNHA3MndVd0YwZEZjYVZSdXA5NVpnXzhpUnY5Mkp5U2lBTnBtNEV6dVB0LUJZVXBDV2lUNnNHbTczNWFVVEtXUVhFdlUxdm5sOWl6U0JFMjhGXzgzQ19GNXdrNUVJMlB4czlkenlNOUctMGllMmFLRTJrVXl0T1hoQ1ZUcmI4N0xxU18wTEhuQUNHYm5mNFhNc0pVRjJqY0s0clotUW42czd0TTRCNw?oc=5"
+      "headline_url": "https://www.france24.com/en/americas/20261104-democrats-warn-trump-camp-lawyer-up-anger-over-corruption-drives-midterms-wipeout-gop"
     },
     {
       "term": "results",
       "articles": 235,
-      "sources": 35,
+      "sources": 36,
       "sentiment_direction": "positive",
-      "surge": 4.01,
-      "sentiment_mean": 0.21,
-      "headline": "Live updates: 2026 US midterm elections and results - BBC",
-      "headline_source": "Google News Top",
-      "headline_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE12UGtQS1M3eEd3N1BXOGR4TDdmeVlabFdQOXFya3NiNlZRTkdteEdCM2JPbHlVYzJzMEhwc1dhOENCUE1TbnFiWExFQWtuX0VqRlZhVFNB?oc=5"
+      "surge": 3.94,
+      "sentiment_mean": 0.201,
+      "headline": "US midterm results a 'victory' for Canadians hopeful of tariff relief",
+      "headline_source": "BBC World",
+      "headline_url": "https://www.bbc.co.uk/news/articles/cqev3mw3e0kdo?at_medium=RSS&at_campaign=rss"
     },
     {
       "term": "president",
-      "articles": 201,
+      "articles": 204,
       "sources": 35,
       "sentiment_direction": "mixed",
-      "surge": 1.88,
-      "sentiment_mean": -0.033,
-      "headline": "Israel's president to begin consultations with parties after election deadlock",
-      "headline_source": "BBC World",
-      "headline_url": "https://www.bbc.co.uk/news/articles/c6z98z5z91ppo?at_medium=RSS&at_campaign=rss"
+      "surge": 1.89,
+      "sentiment_mean": -0.031,
+      "headline": "Supreme Court President Flees Bolivia Citing Threats to His Life",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/articles/2026-11-04/supreme-court-president-flees-bolivia-citing-threats-to-his-life"
+    },
+    {
+      "term": "voters",
+      "articles": 138,
+      "sources": 35,
+      "sentiment_direction": "mixed",
+      "surge": 2.19,
+      "sentiment_mean": 0.019,
+      "headline": "Iranian leaders say midterm results show U.S. voters have rejected Trump's war",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/world/iranian-leaders-say-midterm-results-show-u-s-voters-have-rejected-trumps-war"
     }
   ],
   "hours_since_fetch": 0.0
