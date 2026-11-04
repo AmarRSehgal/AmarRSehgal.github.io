@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T03:06:19Z",
+  "generated_at": "2026-11-04T04:05:10Z",
   "track_record": {
     "races_scored": 4,
     "basis": "grids published to the site before each race, from the run ledger",
@@ -8,7 +8,7 @@
     "podium_hits": 9,
     "podium_slots": 12,
     "mean_abs_position_error": 2.9,
-    "mean_spearman": 0.746,
+    "mean_spearman": 0.747,
     "races": [
       {
         "year": 2026,
@@ -266,7 +266,7 @@
         "winner_correct": true,
         "podium_hits": 2,
         "mean_abs_position_error": 4.64,
-        "spearman": 0.525,
+        "spearman": 0.529,
         "finishers": [
           {
             "driver": "RUS",
@@ -329,18 +329,18 @@
             "actual": 12
           },
           {
-            "driver": "BOR",
-            "predicted": 14,
-            "actual": 13
-          },
-          {
             "driver": "PIA",
             "predicted": 4,
-            "actual": 14
+            "actual": 13
           },
           {
             "driver": "PER",
             "predicted": 20,
+            "actual": 14
+          },
+          {
+            "driver": "BOR",
+            "predicted": 14,
             "actual": 15
           },
           {
