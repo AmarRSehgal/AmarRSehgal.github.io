@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T13:00:11.390550+00:00",
+  "generated_at": "2026-11-04T14:00:11.011942+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -16,7 +16,7 @@
       "scans": 24,
       "net_apr": 5473.09,
       "net_at_hold": 4.99826,
-      "cost_bps": 42.72
+      "cost_bps": 45.77
     },
     {
       "base": "H100",
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 4925.68,
-      "net_at_hold": 4.49834,
-      "cost_bps": 26.65
+      "net_apr": 4885.17,
+      "net_at_hold": 4.46134,
+      "cost_bps": 26.82
     },
     {
       "base": "BMT",
@@ -42,7 +42,7 @@
       "scans": 24,
       "net_apr": 925.61,
       "net_at_hold": 0.84531,
-      "cost_bps": 82.78
+      "cost_bps": 82.39
     },
     {
       "base": "BMT",
@@ -55,7 +55,7 @@
       "scans": 24,
       "net_apr": 791.21,
       "net_at_hold": 0.72257,
-      "cost_bps": 82.67
+      "cost_bps": 82.47
     },
     {
       "base": "ERA",
@@ -64,24 +64,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 23,
+      "hits": 22,
       "scans": 24,
-      "net_apr": 456.8,
-      "net_at_hold": 0.41717,
-      "cost_bps": 53.63
-    },
-    {
-      "base": "H100",
-      "type": "perp-perp",
-      "long_venue": "OKX",
-      "short_venue": "Gate",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 19,
-      "scans": 24,
-      "net_apr": 3832.08,
-      "net_at_hold": 3.49962,
-      "cost_bps": 249.82
+      "net_apr": 410.44,
+      "net_at_hold": 0.37483,
+      "cost_bps": 53.82
     },
     {
       "base": "BMT",
@@ -92,9 +79,9 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 1413.09,
-      "net_at_hold": 1.2905,
-      "cost_bps": 84.12
+      "net_apr": 977.21,
+      "net_at_hold": 0.89243,
+      "cost_bps": 84.0
     },
     {
       "base": "ZK",
@@ -108,6 +95,19 @@
       "net_apr": 115.24,
       "net_at_hold": 0.10524,
       "cost_bps": 20.1
+    },
+    {
+      "base": "H100",
+      "type": "perp-perp",
+      "long_venue": "OKX",
+      "short_venue": "Gate",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 3782.27,
+      "net_at_hold": 3.45413,
+      "cost_bps": 260.85
     }
   ]
 }
