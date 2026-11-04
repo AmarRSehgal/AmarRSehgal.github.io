@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-04T05:38:34.906851+00:00",
+  "generated_at": "2026-11-04T06:24:53.812418+00:00",
   "window_hours": 24,
-  "articles_in_window": 2364,
+  "articles_in_window": 2554,
   "collection_days": 52,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,93 +9,93 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
-      "term": "election",
-      "articles": 288,
-      "sources": 38,
+      "term": "trump",
+      "articles": 315,
+      "sources": 39,
       "sentiment_direction": "mixed",
-      "surge": 2.27,
-      "sentiment_mean": 0.095,
-      "headline": "Market analysts react to US midterm election results",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/economy-news/analysts-react-to-us-midterm-election-results-4997173"
+      "surge": 1.53,
+      "sentiment_mean": -0.014,
+      "headline": "\"Trump Trades\" Falter Post-Midterms Stocks Fall With Dollar",
+      "headline_source": "Reddit r/stocks",
+      "headline_url": "https://www.reddit.com/r/stocks/comments/1xngw4w/trump_trades_falter_postmidterms_stocks_fall_with/"
     },
     {
-      "term": "trump",
-      "articles": 273,
-      "sources": 37,
+      "term": "election",
+      "articles": 335,
+      "sources": 38,
       "sentiment_direction": "mixed",
-      "surge": 1.32,
-      "sentiment_mean": -0.018,
-      "headline": "Takeaways from election night: Young voters, Hispanics shift away from the GOP as voters show unhappiness with Trump",
-      "headline_source": "PBS NewsHour",
-      "headline_url": "https://www.pbs.org/newshour/politics/takeaways-from-election-night-young-voters-hispanics-shift-away-from-the-gop-as-voters-show-unhappiness-with-trump"
+      "surge": 2.64,
+      "sentiment_mean": 0.111,
+      "headline": "US midterm election results: Democrats win crucial seats. Here's what else the data tells us",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/us-midterm-election-results-democrats-win-crucial-seats-here-s-what-else-the-data-tells-us/a-79841886?maca=en-rss-en-all-1573-rdf"
+    },
+    {
+      "term": "midterm",
+      "articles": 253,
+      "sources": 35,
+      "sentiment_direction": "mixed",
+      "surge": 3.1,
+      "sentiment_mean": 0.131,
+      "headline": "These candidates made history in the 2026 midterm elections",
+      "headline_source": "ABC News",
+      "headline_url": "https://abcnews.com/Politics/candidates-made-history-2026-midterm-elections/story?id=137829582"
+    },
+    {
+      "term": "results",
+      "articles": 207,
+      "sources": 35,
+      "sentiment_direction": "positive",
+      "surge": 4.0,
+      "sentiment_mean": 0.202,
+      "headline": "US midterm election results: Democrats win crucial seats. Here's what else the data tells us",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/us-midterm-election-results-democrats-win-crucial-seats-here-s-what-else-the-data-tells-us/a-79841886?maca=en-rss-en-all-1573-rdf"
     },
     {
       "term": "president",
-      "articles": 147,
+      "articles": 164,
       "sources": 35,
       "sentiment_direction": "mixed",
-      "surge": 1.47,
-      "sentiment_mean": 0.012,
+      "surge": 1.64,
+      "sentiment_mean": 0.019,
       "headline": "US midterms: \"Voters have become increasingly frustrated with President Trump\"",
       "headline_source": "France24",
       "headline_url": "https://www.france24.com/en/video/20261104-us-midterms-voters-have-become-increasingly-frustrated-with-president-trump"
     },
     {
-      "term": "midterm",
-      "articles": 221,
-      "sources": 34,
-      "sentiment_direction": "mixed",
-      "surge": 2.72,
-      "sentiment_mean": 0.101,
-      "headline": "Market analysts react to US midterm election results",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/economy-news/analysts-react-to-us-midterm-election-results-4997173"
-    },
-    {
-      "term": "results",
-      "articles": 168,
+      "term": "democrats",
+      "articles": 193,
       "sources": 34,
       "sentiment_direction": "positive",
-      "surge": 3.23,
-      "sentiment_mean": 0.194,
-      "headline": "Market analysts react to US midterm election results",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/economy-news/analysts-react-to-us-midterm-election-results-4997173"
-    },
-    {
-      "term": "elections",
-      "articles": 163,
-      "sources": 32,
-      "sentiment_direction": "mixed",
-      "surge": 2.23,
-      "sentiment_mean": 0.094,
-      "headline": "ANC faces anger over poor services as South Africans vote in local elections",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/world/2026/nov/04/anc-south-africa-local-elections-water-outages-power-cuts"
-    },
-    {
-      "term": "midterms",
-      "articles": 111,
-      "sources": 32,
-      "sentiment_direction": "mixed",
-      "surge": 1.53,
-      "sentiment_mean": 0.066,
-      "headline": "Midterms reduce uncertainty",
-      "headline_source": "Reddit r/investing",
-      "headline_url": "https://www.reddit.com/r/investing/comments/1xnfjmf/midterms_reduce_uncertainty/"
+      "surge": 3.87,
+      "sentiment_mean": 0.338,
+      "headline": "US midterm election results: Democrats win crucial seats. Here's what else the data tells us",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/us-midterm-election-results-democrats-win-crucial-seats-here-s-what-else-the-data-tells-us/a-79841886?maca=en-rss-en-all-1573-rdf"
     },
     {
       "term": "across",
-      "articles": 82,
-      "sources": 32,
+      "articles": 86,
+      "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 1.26,
-      "sentiment_mean": -0.109,
+      "surge": 1.32,
+      "sentiment_mean": -0.074,
       "headline": "Seven flights across Europe targeted by suspected bomb threats",
       "headline_source": "Al Jazeera",
       "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/seven-flights-across-europe-targeted-by-suspected-bomb-threats?traffic_source=rss"
+    },
+    {
+      "term": "power",
+      "articles": 83,
+      "sources": 33,
+      "sentiment_direction": "mixed",
+      "surge": 1.76,
+      "sentiment_mean": 0.138,
+      "headline": "Earnings call transcript: Diamond Power posts first INR 1,000 crore quarter in Q2 FY 2027",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-diamond-power-posts-first-inr-1000-crore-quarter-in-q2-fy-2027-93CH-4997406"
     }
   ],
-  "hours_since_fetch": 0.0
+  "hours_since_fetch": 0.01
 }
