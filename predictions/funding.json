@@ -1,10 +1,36 @@
 {
-  "generated_at": "2026-11-04T10:00:10.548834+00:00",
+  "generated_at": "2026-11-04T11:00:10.470437+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
+    {
+      "base": "BMT",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 875.73,
+      "net_at_hold": 0.79976,
+      "cost_bps": 83.03
+    },
+    {
+      "base": "BMT",
+      "type": "perp-perp",
+      "long_venue": "KuCoin",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 745.69,
+      "net_at_hold": 0.681,
+      "cost_bps": 82.71
+    },
     {
       "base": "H100",
       "type": "perp-perp",
@@ -14,9 +40,9 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 6185.9,
-      "net_at_hold": 5.64923,
-      "cost_bps": 42.91
+      "net_apr": 5722.85,
+      "net_at_hold": 5.22635,
+      "cost_bps": 42.53
     },
     {
       "base": "H100",
@@ -27,35 +53,9 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 5623.54,
-      "net_at_hold": 5.13565,
-      "cost_bps": 26.61
-    },
-    {
-      "base": "BMT",
-      "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 23,
-      "scans": 24,
-      "net_apr": 922.7,
-      "net_at_hold": 0.84264,
-      "cost_bps": 83.17
-    },
-    {
-      "base": "BMT",
-      "type": "perp-perp",
-      "long_venue": "KuCoin",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 23,
-      "scans": 24,
-      "net_apr": 700.18,
-      "net_at_hold": 0.63943,
-      "cost_bps": 82.76
+      "net_apr": 5261.41,
+      "net_at_hold": 4.80494,
+      "cost_bps": 24.27
     },
     {
       "base": "ERA",
@@ -66,9 +66,9 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 557.49,
-      "net_at_hold": 0.50913,
-      "cost_bps": 55.04
+      "net_apr": 456.8,
+      "net_at_hold": 0.41717,
+      "cost_bps": 54.52
     },
     {
       "base": "ZK",
@@ -79,8 +79,8 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 67.37,
-      "net_at_hold": 0.06152,
+      "net_apr": 112.36,
+      "net_at_hold": 0.10261,
       "cost_bps": 20.1
     },
     {
@@ -92,9 +92,9 @@
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 4440.6,
-      "net_at_hold": 4.05534,
-      "cost_bps": 227.3
+      "net_apr": 4251.96,
+      "net_at_hold": 3.88307,
+      "cost_bps": 248.78
     },
     {
       "base": "BMT",
