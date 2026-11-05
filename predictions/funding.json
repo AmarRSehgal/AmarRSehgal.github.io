@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T03:00:10.867490+00:00",
+  "generated_at": "2026-11-05T04:00:06.266328+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,22 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 219.35,
-      "net_at_hold": 0.20032,
+      "net_apr": 233.42,
+      "net_at_hold": 0.21317,
       "cost_bps": 20.22
+    },
+    {
+      "base": "ZK",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Crypto.com",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 20,
+      "scans": 24,
+      "net_apr": 124.54,
+      "net_at_hold": 0.11373,
+      "cost_bps": 20.1
     },
     {
       "base": "BMT",
@@ -27,8 +40,8 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 956.31,
-      "net_at_hold": 0.87335,
+      "net_apr": 928.53,
+      "net_at_hold": 0.84797,
       "cost_bps": 56.89
     },
     {
@@ -40,22 +53,9 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 791.21,
-      "net_at_hold": 0.72257,
+      "net_apr": 493.95,
+      "net_at_hold": 0.45109,
       "cost_bps": 61.55
-    },
-    {
-      "base": "ZK",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Crypto.com",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 19,
-      "scans": 24,
-      "net_apr": 124.53,
-      "net_at_hold": 0.11373,
-      "cost_bps": 20.1
     },
     {
       "base": "H100",
@@ -66,9 +66,9 @@
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 3948.89,
-      "net_at_hold": 3.60629,
-      "cost_bps": 52.83
+      "net_apr": 4076.85,
+      "net_at_hold": 3.72315,
+      "cost_bps": 51.44
     },
     {
       "base": "H100",
@@ -79,9 +79,9 @@
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 3528.82,
-      "net_at_hold": 3.22267,
-      "cost_bps": 39.17
+      "net_apr": 3851.02,
+      "net_at_hold": 3.51691,
+      "cost_bps": 35.95
     }
   ]
 }
