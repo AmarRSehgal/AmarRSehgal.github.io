@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T06:00:09.149882+00:00",
+  "generated_at": "2026-11-05T07:00:08.273568+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 260.64,
-      "net_at_hold": 0.23803,
+      "net_apr": 264.11,
+      "net_at_hold": 0.2412,
       "cost_bps": 20.22
     },
     {
@@ -25,24 +25,11 @@
       "short_venue": "Crypto.com",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 21,
+      "hits": 22,
       "scans": 24,
-      "net_apr": 124.53,
-      "net_at_hold": 0.11373,
+      "net_apr": 124.52,
+      "net_at_hold": 0.11372,
       "cost_bps": 20.1
-    },
-    {
-      "base": "BMT",
-      "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 19,
-      "scans": 24,
-      "net_apr": 828.77,
-      "net_at_hold": 0.75687,
-      "cost_bps": 56.89
     },
     {
       "base": "BMT",
@@ -53,9 +40,35 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 460.29,
-      "net_at_hold": 0.42035,
+      "net_apr": 430.0,
+      "net_at_hold": 0.39269,
       "cost_bps": 61.55
+    },
+    {
+      "base": "ERA",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "Crypto.com",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 765.09,
+      "net_at_hold": 0.34936,
+      "cost_bps": 29.49
+    },
+    {
+      "base": "BMT",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 670.65,
+      "net_at_hold": 0.61246,
+      "cost_bps": 56.55
     }
   ]
 }
