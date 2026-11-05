@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-04T16:02:39.224163+00:00",
-  "snapshot_date": "2026-11-04",
-  "snapshots": 65,
-  "observing_snapshots": 46,
+  "generated_at": "2026-11-05T16:00:23.887404+00:00",
+  "snapshot_date": "2026-11-05",
+  "snapshots": 66,
+  "observing_snapshots": 47,
   "days_since_new_data": 0,
-  "notices_tracked": 103413,
+  "notices_tracked": 104339,
   "lanes": [
     {
       "office": "FCC COLEMAN",
@@ -38,9 +38,28 @@
       "regularity": null,
       "span_days": 162,
       "next_expected": "2027-04-08",
-      "open_deadline": "2026-11-04",
+      "open_deadline": "",
       "states": [],
       "link": "https://sam.gov/opp/489da87c620a48eb9431d9e29c021dc4/view"
+    },
+    {
+      "office": "MDC BROOKLYN",
+      "agency": "JUSTICE, DEPARTMENT OF",
+      "group": "Subsistence/FOOD",
+      "lane": "national kosher halal food",
+      "evidence": "OBSERVED",
+      "solicitations": 2,
+      "cadence": "quarterly",
+      "cadence_days": 95,
+      "cadence_source": "dates",
+      "regularity": null,
+      "span_days": 95,
+      "next_expected": "2027-02-05",
+      "open_deadline": "2026-11-16",
+      "states": [
+        "NY"
+      ],
+      "link": "https://sam.gov/opp/223505d083984427886c6f1eb170406e/view"
     },
     {
       "office": "DLA ENERGY",
@@ -132,81 +151,62 @@
         "SC"
       ],
       "link": "https://sam.gov/opp/424aea8fdde6459abfd86109b8a5b88b/view"
-    },
-    {
-      "office": "FCI EDGEFIELD",
-      "agency": "JUSTICE, DEPARTMENT OF",
-      "group": "Subsistence/FOOD",
-      "lane": "subsistence",
-      "evidence": "POSTED-HISTORY",
-      "solicitations": 6,
-      "cadence": "quarterly",
-      "cadence_days": 102,
-      "cadence_source": "dates",
-      "regularity": 0.18,
-      "span_days": 1635,
-      "next_expected": "2026-08-15",
-      "open_deadline": "",
-      "states": [
-        "SC"
-      ],
-      "link": "https://sam.gov/opp/f75f94c19e3745a9815c536897e793df/view"
     }
   ],
   "open": [
     {
-      "title": "12-1NFG-27-B-0002 - AMS International Bulk Sorghum Solicitation",
+      "title": "Bottled Fruit Juice for use in Domestic Food Assistance Programs",
+      "office": "USDA  AMS  3J14",
+      "group": "Subsistence/FOOD",
+      "state": "DC",
+      "deadline": "2026-11-05",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/4c33594e3d8847a8b2f3f7447ef45670/view"
+    },
+    {
+      "title": "CHICKEN And CHICKEN PRODUCTS for Domestic Food Assistance Programs",
       "office": "USDA  AMS  3J14",
       "group": "Subsistence/FOOD",
       "state": "",
-      "deadline": "2026-11-04",
+      "deadline": "2026-11-05",
       "access": "OPEN",
-      "link": "https://sam.gov/opp/e5125dec39e34e52bf5770e17cc327e3/view"
+      "link": "https://sam.gov/opp/01102c9311ca4de2b4068deb41b82f17/view"
     },
     {
-      "title": "2-20 foot Containers with Gantry Beam and Chain Lift",
-      "office": "W07V ENDIST ST PAUL",
-      "group": "Containers/packaging",
+      "title": "CMT Catered Meals",
+      "office": "W7MZ USPFO ACTIVITY CT ARNG",
+      "group": "Subsistence/FOOD",
+      "state": "CT",
+      "deadline": "2026-11-05",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/b56a7e00a8a64207bed8cf961eba5273/view"
+    },
+    {
+      "title": "Cooked Meats: Beef Crumbles, Pulled Pork, Chicken Pulled and Chicken Fajita Strips for use in Domestic Food Assistance Programs",
+      "office": "USDA  AMS  3J14",
+      "group": "Subsistence/FOOD",
       "state": "",
-      "deadline": "2026-11-04",
+      "deadline": "2026-11-05",
       "access": "small-biz",
-      "link": "https://sam.gov/opp/7a6fde370fa6472ab50d7ac31a0b4dcc/view"
+      "link": "https://sam.gov/opp/1a2d3e666d1e4a99a142e886bf67bee3/view"
     },
     {
-      "title": "DDAA SPI Container Kit",
-      "office": "DLA DISTRIBUTION",
-      "group": "Containers/packaging",
-      "state": "AL",
-      "deadline": "2026-11-04",
-      "access": "small-biz",
-      "link": "https://sam.gov/opp/5a99411c8819462fb9a98c31d0c41b4a/view"
-    },
-    {
-      "title": "Molded Fabric Sheet (Brand Name Mandatory)",
-      "office": "DLA MARITIME - PORTSMOUTH",
-      "group": "Textiles/leather",
-      "state": "ME",
-      "deadline": "2026-11-04",
-      "access": "small-biz",
-      "link": "https://sam.gov/opp/5c72d462d9bd43c59d6e1d372123bbd4/view"
-    },
-    {
-      "title": "Pressure Seal V-Fold Mailer",
-      "office": "DEPT OF COMMERCE CENSUS",
-      "group": "Office supplies",
-      "state": "IN",
-      "deadline": "2026-11-04",
-      "access": "small-biz",
-      "link": "https://sam.gov/opp/36df3a3c7c90474c93952a355f1bcbcd/view"
-    },
-    {
-      "title": "retail displays",
-      "office": "W6QM MICC-FT DRUM",
-      "group": "Furniture",
+      "title": "Frozen Vegetable Products: Carrots, Broccoli, Black Bean Burger Patties for Domestic Food Assistance",
+      "office": "USDA  AMS  3J14",
+      "group": "Subsistence/FOOD",
       "state": "",
-      "deadline": "2026-11-04",
-      "access": "small-biz",
-      "link": "https://sam.gov/opp/4543f47f790c4c82b845e080c1e2a5d3/view"
+      "deadline": "2026-11-05",
+      "access": "OPEN",
+      "link": "https://sam.gov/opp/3d0a0afb53dd4a1aaf9de0543b34d5d5/view"
+    },
+    {
+      "title": "Ham and Pork Products for use in Domestic Food Assistance Programs",
+      "office": "USDA  AMS  3J14",
+      "group": "Subsistence/FOOD",
+      "state": "",
+      "deadline": "2026-11-05",
+      "access": "OPEN",
+      "link": "https://sam.gov/opp/68e2993683a1456d9e0d91a656703eb1/view"
     }
   ]
 }
