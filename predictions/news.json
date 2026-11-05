@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-05T22:24:54.587810+00:00",
+  "generated_at": "2026-11-05T23:24:52.223252+00:00",
   "window_hours": 24,
-  "articles_in_window": 2510,
+  "articles_in_window": 2502,
   "collection_days": 53,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,92 +9,92 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
+      "term": "midterm",
+      "articles": 235,
+      "sources": 38,
+      "sentiment_direction": "mixed",
+      "surge": 1.4,
+      "sentiment_mean": 0.046,
+      "headline": "OpenAI Responds to US Midterm Elections With New Commitment to Communities",
+      "headline_source": "Slashdot",
+      "headline_url": "https://politics.slashdot.org/story/26/11/05/2150249/openai-responds-to-us-midterm-elections-with-new-commitment-to-communities?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    },
+    {
       "term": "trump",
       "articles": 235,
-      "sources": 37,
+      "sources": 38,
       "sentiment_direction": "mixed",
       "surge": 0.92,
-      "sentiment_mean": -0.068,
-      "headline": "Trump's energy deals are about to face a wave of investigations. Trump's deal making and political intervention in the energy sector will be a focus when Democrats take control of Congress in January. The Energy and Commerce Committee intends to pursue an aggressive agenda to root out corruption.",
-      "headline_source": "Reddit r/energy",
-      "headline_url": "https://www.reddit.com/r/energy/comments/1xovvgf/trumps_energy_deals_are_about_to_face_a_wave_of/"
-    },
-    {
-      "term": "midterm",
-      "articles": 245,
-      "sources": 36,
-      "sentiment_direction": "mixed",
-      "surge": 1.49,
-      "sentiment_mean": 0.054,
-      "headline": "Wall Street sheds $3.2tn as Democratic midterm sweep triggers brutal AI rout \u2014 Tech-heavy Nasdaq 100 tumbles 6.4% in day of chaotic trading",
-      "headline_source": "Reddit r/economics",
-      "headline_url": "https://www.reddit.com/r/Economics/comments/1xovrp8/wall_street_sheds_32tn_as_democratic_midterm/"
-    },
-    {
-      "term": "democrats",
-      "articles": 209,
-      "sources": 36,
-      "sentiment_direction": "positive",
-      "surge": 1.65,
-      "sentiment_mean": 0.226,
-      "headline": "Trump's energy deals are about to face a wave of investigations. Trump's deal making and political intervention in the energy sector will be a focus when Democrats take control of Congress in January. The Energy and Commerce Committee intends to pursue an aggressive agenda to root out corruption.",
-      "headline_source": "Reddit r/energy",
-      "headline_url": "https://www.reddit.com/r/energy/comments/1xovvgf/trumps_energy_deals_are_about_to_face_a_wave_of/"
+      "sentiment_mean": -0.061,
+      "headline": "After taking control of Congress, Democrats vow major probes into Trump's 'tentacles of corruption'",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/politics/after-taking-control-of-congress-democrats-vow-major-probes-into-trumps-tentacles-of-corruption"
     },
     {
       "term": "election",
-      "articles": 182,
+      "articles": 177,
       "sources": 36,
       "sentiment_direction": "mixed",
-      "surge": 1.03,
-      "sentiment_mean": 0.13,
-      "headline": "Generation Z and diversity redefine US politics in groundbreaking election",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/news/2026/11/5/generation-z-and-diversity-redefine-us-politics-in-groundbreaking-election?traffic_source=rss"
+      "surge": 1.0,
+      "sentiment_mean": 0.131,
+      "headline": "2026 Arizona Proposition 144 Election Live Results - AP News",
+      "headline_source": "AP News",
+      "headline_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQYkNxSEF1NnM1amE2RS1PMEUyVkZlZk9EcnRQdU0zQVhnVkxwTHlYS0ZTMDlsV3dzSVZrX3A1eUl0SlRTT05yVU1tTzR0TEhGUXNoaGxpR3ZaRkl3Rjh6VnE4Mnp3OC1fWlg0WkF0YXVaOTJEeUxHcFlyMXNqNF9jVg?oc=5"
     },
     {
       "term": "president",
-      "articles": 150,
+      "articles": 148,
       "sources": 36,
       "sentiment_direction": "mixed",
-      "surge": 1.24,
-      "sentiment_mean": -0.121,
-      "headline": "Paraguay\u2019s President, Santiago Pe\u00f1a, Quits Amid Ueno Bank Scandal",
-      "headline_source": "NYT World",
-      "headline_url": "https://www.nytimes.com/2026/11/05/world/americas/paraguay-santiago-pena-resigns.html"
+      "surge": 1.22,
+      "sentiment_mean": -0.12,
+      "headline": "Rubio Dismisses Reports He Will Leave His Jobs to Run for President",
+      "headline_source": "NYT Politics",
+      "headline_url": "https://www.nytimes.com/2026/11/05/us/politics/marco-rubio-2028.html"
     },
     {
-      "term": "house",
-      "articles": 121,
-      "sources": 33,
-      "sentiment_direction": "mixed",
-      "surge": 1.43,
-      "sentiment_mean": 0.121,
-      "headline": "Want to Rent an Internet Address at the White House?",
-      "headline_source": "Slashdot",
-      "headline_url": "https://it.slashdot.org/story/26/11/05/1924217/want-to-rent-an-internet-address-at-the-white-house?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+      "term": "democrats",
+      "articles": 201,
+      "sources": 35,
+      "sentiment_direction": "positive",
+      "surge": 1.56,
+      "sentiment_mean": 0.217,
+      "headline": "After taking control of Congress, Democrats vow major probes into Trump's 'tentacles of corruption'",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/politics/after-taking-control-of-congress-democrats-vow-major-probes-into-trumps-tentacles-of-corruption"
     },
     {
       "term": "elections",
-      "articles": 117,
-      "sources": 32,
+      "articles": 116,
+      "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 1.03,
-      "sentiment_mean": 0.068,
-      "headline": "Three consumer stocks to buy after the midterm elections",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/05/three-consumer-stocks-to-buy-after-the-midterm-elections.html"
+      "surge": 1.01,
+      "sentiment_mean": 0.062,
+      "headline": "OpenAI Responds to US Midterm Elections With New Commitment to Communities",
+      "headline_source": "Slashdot",
+      "headline_url": "https://politics.slashdot.org/story/26/11/05/2150249/openai-responds-to-us-midterm-elections-with-new-commitment-to-communities?utm_source=rss1.0mainlinkanon&utm_medium=feed"
     },
     {
       "term": "data",
-      "articles": 83,
+      "articles": 82,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 1.35,
-      "sentiment_mean": 0.001,
-      "headline": "Top Democrats call to rein in AI buildout after midterms sweep: 'National data center moratorium now'",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/05/democrats-data-center-restrictions-midterms.html"
+      "surge": 1.33,
+      "sentiment_mean": -0.025,
+      "headline": "OpenAI faces Democratic backlash over AI data center expansion - Fox News",
+      "headline_source": "Google News Top",
+      "headline_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdFhCek56UEgzRnEzcXdrWXUwMTRoOEZGdjd4aFJoQVlSbnVScVlQdGlCd0hoNUtYTmloZHlKc25UZy1EUXFReEJGQ2JOMHZJN1FBQnBMaUlBU3dRYXNaaE44NnlhUk9oSVBBak1pdTYyS2licU1iS0tyZnNxU2hFWGp2cGJJZw?oc=5"
+    },
+    {
+      "term": "house",
+      "articles": 116,
+      "sources": 31,
+      "sentiment_direction": "mixed",
+      "surge": 1.36,
+      "sentiment_mean": 0.118,
+      "headline": "Want to Rent an Internet Address at the White House?",
+      "headline_source": "Slashdot",
+      "headline_url": "https://it.slashdot.org/story/26/11/05/1924217/want-to-rent-an-internet-address-at-the-white-house?utm_source=rss1.0mainlinkanon&utm_medium=feed"
     }
   ],
   "hours_since_fetch": 0.0
