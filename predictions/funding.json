@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T02:00:11.130454+00:00",
+  "generated_at": "2026-11-05T03:00:10.867490+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,35 +14,9 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 212.39,
-      "net_at_hold": 0.19397,
+      "net_apr": 219.35,
+      "net_at_hold": 0.20032,
       "cost_bps": 20.22
-    },
-    {
-      "base": "H100",
-      "type": "perp-perp",
-      "long_venue": "OKX",
-      "short_venue": "Bitget",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 19,
-      "scans": 24,
-      "net_apr": 4049.98,
-      "net_at_hold": 3.69861,
-      "cost_bps": 51.68
-    },
-    {
-      "base": "H100",
-      "type": "perp-perp",
-      "long_venue": "OKX",
-      "short_venue": "Lighter",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 19,
-      "scans": 24,
-      "net_apr": 3848.09,
-      "net_at_hold": 3.51424,
-      "cost_bps": 38.94
     },
     {
       "base": "BMT",
@@ -53,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 928.53,
-      "net_at_hold": 0.84797,
-      "cost_bps": 58.01
+      "net_apr": 956.31,
+      "net_at_hold": 0.87335,
+      "cost_bps": 56.89
     },
     {
       "base": "BMT",
@@ -66,9 +40,9 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 493.95,
-      "net_at_hold": 0.45109,
-      "cost_bps": 66.13
+      "net_apr": 791.21,
+      "net_at_hold": 0.72257,
+      "cost_bps": 61.55
     },
     {
       "base": "ZK",
@@ -79,9 +53,35 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 124.51,
-      "net_at_hold": 0.11371,
+      "net_apr": 124.53,
+      "net_at_hold": 0.11373,
       "cost_bps": 20.1
+    },
+    {
+      "base": "H100",
+      "type": "perp-perp",
+      "long_venue": "OKX",
+      "short_venue": "Bitget",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 3948.89,
+      "net_at_hold": 3.60629,
+      "cost_bps": 52.83
+    },
+    {
+      "base": "H100",
+      "type": "perp-perp",
+      "long_venue": "OKX",
+      "short_venue": "Lighter",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 3528.82,
+      "net_at_hold": 3.22267,
+      "cost_bps": 39.17
     }
   ]
 }
