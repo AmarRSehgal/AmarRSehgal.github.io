@@ -1,23 +1,10 @@
 {
-  "generated_at": "2026-11-05T08:00:10.856453+00:00",
+  "generated_at": "2026-11-05T09:00:10.410897+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
-    {
-      "base": "TIA",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Crypto.com",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 23,
-      "scans": 24,
-      "net_apr": 277.29,
-      "net_at_hold": 0.25323,
-      "cost_bps": 20.22
-    },
     {
       "base": "ZK",
       "type": "perp-perp",
@@ -25,11 +12,37 @@
       "short_venue": "Crypto.com",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 23,
+      "hits": 24,
       "scans": 24,
-      "net_apr": 124.51,
-      "net_at_hold": 0.11371,
+      "net_apr": 119.88,
+      "net_at_hold": 0.10948,
       "cost_bps": 20.1
+    },
+    {
+      "base": "TIA",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Crypto.com",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 22,
+      "scans": 24,
+      "net_apr": 279.03,
+      "net_at_hold": 0.25482,
+      "cost_bps": 20.22
+    },
+    {
+      "base": "TIA",
+      "type": "perp-perp",
+      "long_venue": "Aster",
+      "short_venue": "Crypto.com",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 19,
+      "scans": 24,
+      "net_apr": 146.59,
+      "net_at_hold": 0.13388,
+      "cost_bps": 31.73
     },
     {
       "base": "ERA",
@@ -43,32 +56,6 @@
       "net_apr": 765.09,
       "net_at_hold": 0.34936,
       "cost_bps": 29.49
-    },
-    {
-      "base": "BMT",
-      "type": "perp-perp",
-      "long_venue": "KuCoin",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 412.53,
-      "net_at_hold": 0.37674,
-      "cost_bps": 63.84
-    },
-    {
-      "base": "TIA",
-      "type": "perp-perp",
-      "long_venue": "Aster",
-      "short_venue": "Crypto.com",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 143.79,
-      "net_at_hold": 0.13131,
-      "cost_bps": 31.74
     }
   ]
 }
