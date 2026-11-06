@@ -1,10 +1,23 @@
 {
-  "generated_at": "2026-11-06T10:00:09.169437+00:00",
+  "generated_at": "2026-11-06T11:00:11.179740+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
+    {
+      "base": "HUMA",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 19,
+      "scans": 24,
+      "net_apr": 317.7,
+      "net_at_hold": 0.29014,
+      "cost_bps": 69.48
+    },
     {
       "base": "CKB",
       "type": "perp-perp",
@@ -21,15 +34,28 @@
     {
       "base": "HUMA",
       "type": "perp-perp",
-      "long_venue": "Bitget",
+      "long_venue": "Gate",
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 313.96,
-      "net_at_hold": 0.28672,
-      "cost_bps": 70.81
+      "net_apr": 310.64,
+      "net_at_hold": 0.28369,
+      "cost_bps": 69.47
+    },
+    {
+      "base": "HUMA",
+      "type": "perp-perp",
+      "long_venue": "KuCoin",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 169.93,
+      "net_at_hold": 0.15519,
+      "cost_bps": 56.73
     }
   ]
 }
