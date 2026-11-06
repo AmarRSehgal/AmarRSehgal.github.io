@@ -1,33 +1,148 @@
 {
-  "generated_at": "2026-11-05T17:00:13Z",
-  "date": "2026-11-05",
+  "generated_at": "2026-11-06T17:00:08Z",
+  "date": "2026-11-06",
   "games": [
     {
-      "away_team": "ORL",
-      "home_team": "PHX",
-      "away_team_full": "Orlando Magic",
-      "home_team_full": "Phoenix Suns",
-      "tipoff": "2026-11-06T02:00Z",
-      "pick": "PHX",
-      "pred_spread": -0.6,
-      "ml_win_prob": 0.659,
-      "confidence": 0.659,
-      "pred_total": 220.1,
+      "away_team": "WSH",
+      "home_team": "ATL",
+      "away_team_full": "Washington Wizards",
+      "home_team_full": "Atlanta Hawks",
+      "tipoff": "2026-11-07T00:00Z",
+      "pick": "ATL",
+      "pred_spread": -5.3,
+      "ml_win_prob": 0.602,
+      "confidence": 0.602,
+      "pred_total": 228.8,
       "bet": {
         "status": "unpriced"
       }
     },
     {
-      "away_team": "MIA",
-      "home_team": "GS",
-      "away_team_full": "Miami Heat",
-      "home_team_full": "Golden State Warriors",
-      "tipoff": "2026-11-06T03:00Z",
-      "pick": "GS",
-      "pred_spread": -5.9,
-      "ml_win_prob": 0.555,
-      "confidence": 0.555,
-      "pred_total": 237.2,
+      "away_team": "BOS",
+      "home_team": "CHA",
+      "away_team_full": "Boston Celtics",
+      "home_team_full": "Charlotte Hornets",
+      "tipoff": "2026-11-07T00:00Z",
+      "pick": "BOS",
+      "pred_spread": 7.3,
+      "ml_win_prob": 0.297,
+      "confidence": 0.703,
+      "pred_total": 223.6,
+      "bet": {
+        "status": "unpriced"
+      }
+    },
+    {
+      "away_team": "PHI",
+      "home_team": "CLE",
+      "away_team_full": "Philadelphia 76ers",
+      "home_team_full": "Cleveland Cavaliers",
+      "tipoff": "2026-11-07T00:30Z",
+      "pick": "CLE",
+      "pred_spread": -0.3,
+      "ml_win_prob": 0.533,
+      "confidence": 0.533,
+      "pred_total": 221.3,
+      "bet": {
+        "status": "unpriced"
+      }
+    },
+    {
+      "away_team": "UTAH",
+      "home_team": "DAL",
+      "away_team_full": "Utah Jazz",
+      "home_team_full": "Dallas Mavericks",
+      "tipoff": "2026-11-07T01:00Z",
+      "pick": "DAL",
+      "pred_spread": -6.4,
+      "ml_win_prob": 0.726,
+      "confidence": 0.726,
+      "pred_total": 233.3,
+      "bet": {
+        "status": "unpriced"
+      }
+    },
+    {
+      "away_team": "OKC",
+      "home_team": "MEM",
+      "away_team_full": "Oklahoma City Thunder",
+      "home_team_full": "Memphis Grizzlies",
+      "tipoff": "2026-11-07T01:00Z",
+      "pick": "OKC",
+      "pred_spread": 9.9,
+      "ml_win_prob": 0.2,
+      "confidence": 0.8,
+      "pred_total": 225.1,
+      "bet": {
+        "status": "unpriced"
+      }
+    },
+    {
+      "away_team": "TOR",
+      "home_team": "MIL",
+      "away_team_full": "Toronto Raptors",
+      "home_team_full": "Milwaukee Bucks",
+      "tipoff": "2026-11-07T01:00Z",
+      "pick": "TOR",
+      "pred_spread": 5.4,
+      "ml_win_prob": 0.28,
+      "confidence": 0.72,
+      "pred_total": 229.7,
+      "bet": {
+        "status": "unpriced"
+      }
+    },
+    {
+      "away_team": "MIN",
+      "home_team": "NO",
+      "away_team_full": "Minnesota Timberwolves",
+      "home_team_full": "New Orleans Pelicans",
+      "tipoff": "2026-11-07T01:00Z",
+      "pick": "MIN",
+      "pred_spread": 2.5,
+      "ml_win_prob": 0.361,
+      "confidence": 0.639,
+      "pred_total": 231.3,
+      "bet": {
+        "status": "unpriced"
+      }
+    },
+    {
+      "away_team": "POR",
+      "home_team": "LAL",
+      "away_team_full": "Portland Trail Blazers",
+      "home_team_full": "Los Angeles Lakers",
+      "tipoff": "2026-11-07T03:00Z",
+      "pick": "LAL",
+      "pred_spread": -5.3,
+      "ml_win_prob": 0.64,
+      "confidence": 0.64,
+      "pred_total": 224.0,
+      "bet": {
+        "status": "bet",
+        "team": "LAL",
+        "stake": 100.0,
+        "selection": "Los Angeles Lakers",
+        "price": 1.8,
+        "book": "BetMGM",
+        "quoted_at": "2026-10-27T18:54:40Z",
+        "model_prob": 0.64,
+        "implied_prob": 0.5556,
+        "edge": 0.0844,
+        "ev_per_dollar": 0.152
+      }
+    },
+    {
+      "away_team": "SA",
+      "home_team": "SAC",
+      "away_team_full": "San Antonio Spurs",
+      "home_team_full": "Sacramento Kings",
+      "tipoff": "2026-11-07T03:00Z",
+      "pick": "SA",
+      "pred_spread": 15.0,
+      "ml_win_prob": 0.063,
+      "confidence": 0.937,
+      "pred_total": 226.4,
       "bet": {
         "status": "unpriced"
       }
