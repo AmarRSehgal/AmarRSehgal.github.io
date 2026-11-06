@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T09:00:12.294691+00:00",
+  "generated_at": "2026-11-06T10:00:09.169437+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -17,6 +17,19 @@
       "net_apr": 177.17,
       "net_at_hold": 0.1618,
       "cost_bps": 32.09
+    },
+    {
+      "base": "HUMA",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 313.96,
+      "net_at_hold": 0.28672,
+      "cost_bps": 70.81
     }
   ]
 }
