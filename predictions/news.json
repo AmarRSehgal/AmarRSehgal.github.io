@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-06T20:26:12.890119+00:00",
+  "generated_at": "2026-11-06T21:32:23.755323+00:00",
   "window_hours": 24,
-  "articles_in_window": 2063,
+  "articles_in_window": 2052,
   "collection_days": 54,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,93 +9,93 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
-      "term": "tech",
-      "articles": 101,
+      "term": "democrats",
+      "articles": 125,
       "sources": 38,
       "sentiment_direction": "mixed",
-      "surge": 1.9,
-      "sentiment_mean": -0.071,
-      "headline": "Breaking Down Tech\u2019s Brutal Election",
-      "headline_source": "The Atlantic",
-      "headline_url": "https://www.theatlantic.com/podcasts/2026/11/breaking-down-techs-brutal-election/689325/?utm_source=feed"
-    },
-    {
-      "term": "democrats",
-      "articles": 132,
-      "sources": 37,
-      "sentiment_direction": "mixed",
-      "surge": 0.86,
-      "sentiment_mean": 0.129,
+      "surge": 0.8,
+      "sentiment_mean": 0.137,
       "headline": "Democrats brace to take control of Congress after flipping dozens of Republican seats",
       "headline_source": "CBS News",
       "headline_url": "https://www.cbsnews.com/video/democrats-brace-to-take-control-of-congress-after-flipping-dozens-of-republican-seats/"
     },
     {
-      "term": "trump",
-      "articles": 199,
-      "sources": 35,
+      "term": "tech",
+      "articles": 100,
+      "sources": 38,
       "sentiment_direction": "mixed",
-      "surge": 0.76,
-      "sentiment_mean": -0.086,
-      "headline": "Amazon is now making a Melania Trump TV series",
-      "headline_source": "The Verge",
-      "headline_url": "https://www.theverge.com/tech/1028854/amazon-melania-the-series-mgm-studios-prime-video"
+      "surge": 1.87,
+      "sentiment_mean": -0.037,
+      "headline": "'No Blank Checks for Big Tech': Schumer Faces Protest Over 'Dirty Data Center Deal'",
+      "headline_source": "Reddit r/technology",
+      "headline_url": "https://www.reddit.com/r/technology/comments/1xpmxhv/no_blank_checks_for_big_tech_schumer_faces/"
+    },
+    {
+      "term": "trump",
+      "articles": 193,
+      "sources": 37,
+      "sentiment_direction": "mixed",
+      "surge": 0.74,
+      "sentiment_mean": -0.058,
+      "headline": "Susie Wiles, Trump's longest-serving White House chief of staff, is leaving the administration",
+      "headline_source": "Reddit r/news",
+      "headline_url": "https://www.reddit.com/r/news/comments/1xpl7rj/susie_wiles_trumps_longestserving_white_house/"
     },
     {
       "term": "midterm",
-      "articles": 158,
-      "sources": 35,
+      "articles": 150,
+      "sources": 36,
       "sentiment_direction": "mixed",
-      "surge": 0.83,
-      "sentiment_mean": -0.057,
-      "headline": "Dems pivot from \u2018affordability\u2019 pitch to DHS probe threats after midterm wins",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/politics/dems-pivot-affordability-pitch-dhs-probe-threats-midterm-wins"
+      "surge": 0.78,
+      "sentiment_mean": -0.048,
+      "headline": "After the Midterm Rout, Can Trump Change Course Without Giving Up Tariffs?",
+      "headline_source": "Reddit r/geopolitics",
+      "headline_url": "https://www.reddit.com/r/geopolitics/comments/1xpk58v/after_the_midterm_rout_can_trump_change_course/"
     },
     {
       "term": "midterms",
-      "articles": 89,
-      "sources": 35,
+      "articles": 90,
+      "sources": 36,
       "sentiment_direction": "mixed",
-      "surge": 0.76,
-      "sentiment_mean": -0.103,
+      "surge": 0.77,
+      "sentiment_mean": -0.107,
       "headline": "US midterms mark 'the beginning of the end' for Trump, John Bolton says",
       "headline_source": "France24",
       "headline_url": "https://www.france24.com/en/tv-shows/t%C3%AAte-%C3%A0-t%C3%AAte/20261106-us-midterms-mark-the-beginning-of-the-end-for-trump-john-bolton-says"
     },
     {
       "term": "data",
-      "articles": 104,
-      "sources": 34,
+      "articles": 105,
+      "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 1.57,
+      "surge": 1.59,
+      "sentiment_mean": -0.015,
+      "headline": "'No Blank Checks for Big Tech': Schumer Faces Protest Over 'Dirty Data Center Deal'",
+      "headline_source": "Reddit r/technology",
+      "headline_url": "https://www.reddit.com/r/technology/comments/1xpmxhv/no_blank_checks_for_big_tech_schumer_faces/"
+    },
+    {
+      "term": "deal",
+      "articles": 52,
+      "sources": 31,
+      "sentiment_direction": "mixed",
+      "surge": 1.29,
       "sentiment_mean": -0.028,
-      "headline": "Data center backlash fuels votes for change, stock market swing",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/news/ai-data-centers-stock-market-congress/"
+      "headline": "'No Blank Checks for Big Tech': Schumer Faces Protest Over 'Dirty Data Center Deal'",
+      "headline_source": "Reddit r/technology",
+      "headline_url": "https://www.reddit.com/r/technology/comments/1xpmxhv/no_blank_checks_for_big_tech_schumer_faces/"
     },
     {
       "term": "market",
-      "articles": 135,
+      "articles": 131,
       "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 1.88,
-      "sentiment_mean": 0.099,
+      "surge": 1.82,
+      "sentiment_mean": 0.115,
       "headline": "Data center backlash fuels votes for change, stock market swing",
       "headline_source": "CBS News",
       "headline_url": "https://www.cbsnews.com/news/ai-data-centers-stock-market-congress/"
-    },
-    {
-      "term": "iran",
-      "articles": 64,
-      "sources": 30,
-      "sentiment_direction": "negative",
-      "surge": 0.77,
-      "sentiment_mean": -0.519,
-      "headline": "Iran war: Gulf tanker attacked, 1 seaferer killed",
-      "headline_source": "DW News",
-      "headline_url": "https://www.dw.com/en/iran-war-gulf-tanker-attacked-1-seaferer-killed/a-79879270?maca=en-rss-en-all-1573-rdf"
     }
   ],
-  "hours_since_fetch": 2.02
+  "hours_since_fetch": 0.0
 }
