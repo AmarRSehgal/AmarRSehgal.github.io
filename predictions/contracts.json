@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-05T16:00:23.887404+00:00",
-  "snapshot_date": "2026-11-05",
-  "snapshots": 66,
-  "observing_snapshots": 47,
+  "generated_at": "2026-11-06T16:06:02.992908+00:00",
+  "snapshot_date": "2026-11-06",
+  "snapshots": 67,
+  "observing_snapshots": 48,
   "days_since_new_data": 0,
-  "notices_tracked": 104339,
+  "notices_tracked": 105586,
   "lanes": [
     {
       "office": "FCC COLEMAN",
@@ -12,14 +12,14 @@
       "group": "Subsistence/FOOD",
       "lane": "fcc coleman produce",
       "evidence": "OBSERVED",
-      "solicitations": 3,
+      "solicitations": 4,
       "cadence": "monthly",
-      "cadence_days": 26,
+      "cadence_days": 30,
       "cadence_source": "dates",
-      "regularity": 0.15,
-      "span_days": 52,
-      "next_expected": "2026-10-27",
-      "open_deadline": "",
+      "regularity": 0.17,
+      "span_days": 87,
+      "next_expected": "2026-12-05",
+      "open_deadline": "2026-11-16",
       "states": [
         "FL"
       ],
@@ -60,6 +60,25 @@
         "NY"
       ],
       "link": "https://sam.gov/opp/223505d083984427886c6f1eb170406e/view"
+    },
+    {
+      "office": "DLA AVIATION AT HUNTSVILLE, AL",
+      "agency": "DEPT OF DEFENSE",
+      "group": "Containers/packaging",
+      "lane": "shipping storag",
+      "evidence": "OBSERVED",
+      "solicitations": 2,
+      "cadence": "monthly",
+      "cadence_days": 22,
+      "cadence_source": "dates",
+      "regularity": null,
+      "span_days": 22,
+      "next_expected": "2026-10-28",
+      "open_deadline": "2026-12-07",
+      "states": [
+        "OK"
+      ],
+      "link": "https://sam.gov/opp/3b2d38d9b72b4ba8a5e711f7a01d0408/view"
     },
     {
       "office": "DLA ENERGY",
@@ -132,81 +151,62 @@
         "ES-MD"
       ],
       "link": "https://sam.gov/opp/6d5e2b58f49644a48c82171d45690558/view"
-    },
-    {
-      "office": "FCI EDGEFIELD",
-      "agency": "JUSTICE, DEPARTMENT OF",
-      "group": "Subsistence/FOOD",
-      "lane": "bread",
-      "evidence": "POSTED-HISTORY",
-      "solicitations": 6,
-      "cadence": "quarterly",
-      "cadence_days": 102,
-      "cadence_source": "dates",
-      "regularity": 0.18,
-      "span_days": 1635,
-      "next_expected": "2026-08-15",
-      "open_deadline": "",
-      "states": [
-        "SC"
-      ],
-      "link": "https://sam.gov/opp/424aea8fdde6459abfd86109b8a5b88b/view"
     }
   ],
   "open": [
     {
-      "title": "Bottled Fruit Juice for use in Domestic Food Assistance Programs",
+      "title": "BULK TURKEY for use in Domestic Food Assistance Program",
       "office": "USDA  AMS  3J14",
       "group": "Subsistence/FOOD",
-      "state": "DC",
-      "deadline": "2026-11-05",
+      "state": "",
+      "deadline": "2026-11-06",
       "access": "small-biz",
-      "link": "https://sam.gov/opp/4c33594e3d8847a8b2f3f7447ef45670/view"
+      "link": "https://sam.gov/opp/ac62d366c7134f21a603a6905f8f93f3/view"
     },
     {
-      "title": "CHICKEN And CHICKEN PRODUCTS for Domestic Food Assistance Programs",
-      "office": "USDA  AMS  3J14",
-      "group": "Subsistence/FOOD",
+      "title": "Boots",
+      "office": "W6QM MICC-FT DRUM",
+      "group": "Clothing/textiles",
       "state": "",
-      "deadline": "2026-11-05",
-      "access": "OPEN",
-      "link": "https://sam.gov/opp/01102c9311ca4de2b4068deb41b82f17/view"
-    },
-    {
-      "title": "CMT Catered Meals",
-      "office": "W7MZ USPFO ACTIVITY CT ARNG",
-      "group": "Subsistence/FOOD",
-      "state": "CT",
-      "deadline": "2026-11-05",
+      "deadline": "2026-11-06",
       "access": "small-biz",
-      "link": "https://sam.gov/opp/b56a7e00a8a64207bed8cf961eba5273/view"
+      "link": "https://sam.gov/opp/c6b06109089a46268d087ab7e1cf4208/view"
     },
     {
-      "title": "Cooked Meats: Beef Crumbles, Pulled Pork, Chicken Pulled and Chicken Fajita Strips for use in Domestic Food Assistance Programs",
-      "office": "USDA  AMS  3J14",
-      "group": "Subsistence/FOOD",
-      "state": "",
-      "deadline": "2026-11-05",
+      "title": "DDSP 6\ufffd X 8\ufffd labels",
+      "office": "DLA DISTRIBUTION",
+      "group": "Office supplies",
+      "state": "PA",
+      "deadline": "2026-11-06",
       "access": "small-biz",
-      "link": "https://sam.gov/opp/1a2d3e666d1e4a99a142e886bf67bee3/view"
+      "link": "https://sam.gov/opp/f7188d6cfd274ff9a84f2b972ca98eca/view"
     },
     {
-      "title": "Frozen Vegetable Products: Carrots, Broccoli, Black Bean Burger Patties for Domestic Food Assistance",
+      "title": "Multispectral Camouflage Overgarment",
+      "office": "COMMANDER",
+      "group": "Clothing/textiles",
+      "state": "VA",
+      "deadline": "2026-11-06",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/60533b63b198463397fd3bd5667f7675/view"
+    },
+    {
+      "title": "Rice Products",
       "office": "USDA  AMS  3J14",
       "group": "Subsistence/FOOD",
       "state": "",
-      "deadline": "2026-11-05",
+      "deadline": "2026-11-06",
       "access": "OPEN",
-      "link": "https://sam.gov/opp/3d0a0afb53dd4a1aaf9de0543b34d5d5/view"
+      "link": "https://sam.gov/opp/a565d267322d4135a67e07d71172ffec/view"
     },
     {
-      "title": "Ham and Pork Products for use in Domestic Food Assistance Programs",
-      "office": "USDA  AMS  3J14",
-      "group": "Subsistence/FOOD",
+      "title": "Solicitation: Repair Kit, Tentage",
+      "office": "W6QK ACC- DTA",
+      "group": "Textiles/leather",
       "state": "",
-      "deadline": "2026-11-05",
-      "access": "OPEN",
-      "link": "https://sam.gov/opp/68e2993683a1456d9e0d91a656703eb1/view"
+      "deadline": "2026-11-06",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/5d0d42dec0644389ba8c0496e7435337/view"
     }
   ]
 }
