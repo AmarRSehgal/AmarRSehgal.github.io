@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T07:00:09.984124+00:00",
+  "generated_at": "2026-11-07T08:00:05.768728+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 179.61,
-      "net_at_hold": 0.16403,
+      "net_apr": 195.32,
+      "net_at_hold": 0.17837,
       "cost_bps": 32.09
     },
     {
@@ -40,8 +40,8 @@
       "min_hold_h": 8,
       "hits": 22,
       "scans": 24,
-      "net_apr": 149.23,
-      "net_at_hold": 0.13628,
+      "net_apr": 154.77,
+      "net_at_hold": 0.14134,
       "cost_bps": 34.36
     },
     {
@@ -53,35 +53,9 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 320.15,
-      "net_at_hold": 0.29238,
+      "net_apr": 301.13,
+      "net_at_hold": 0.275,
       "cost_bps": 56.82
-    },
-    {
-      "base": "H100",
-      "type": "perp-perp",
-      "long_venue": "OKX",
-      "short_venue": "Lighter",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 2751.55,
-      "net_at_hold": 2.51283,
-      "cost_bps": 36.29
-    },
-    {
-      "base": "H100",
-      "type": "perp-perp",
-      "long_venue": "OKX",
-      "short_venue": "Bitget",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 2568.12,
-      "net_at_hold": 2.34532,
-      "cost_bps": 51.5
     },
     {
       "base": "HUMA",
@@ -92,9 +66,9 @@
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 321.65,
-      "net_at_hold": 0.29375,
-      "cost_bps": 62.06
+      "net_apr": 311.96,
+      "net_at_hold": 0.2849,
+      "cost_bps": 59.97
     },
     {
       "base": "HUMA",
@@ -105,9 +79,22 @@
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 222.69,
-      "net_at_hold": 0.20337,
+      "net_apr": 214.65,
+      "net_at_hold": 0.19602,
       "cost_bps": 52.27
+    },
+    {
+      "base": "CKB",
+      "type": "perp-perp",
+      "long_venue": "Crypto.com",
+      "short_venue": "Bitget",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 162.18,
+      "net_at_hold": 0.14811,
+      "cost_bps": 43.4
     }
   ]
 }
