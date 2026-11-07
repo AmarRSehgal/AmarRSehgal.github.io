@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T05:00:20.193735+00:00",
+  "generated_at": "2026-11-07T06:00:10.249668+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 178.39,
-      "net_at_hold": 0.16291,
+      "net_apr": 179.6,
+      "net_at_hold": 0.16402,
       "cost_bps": 32.09
     },
     {
@@ -38,11 +38,11 @@
       "short_venue": "Gate",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 21,
+      "hits": 22,
       "scans": 24,
-      "net_apr": 144.96,
-      "net_at_hold": 0.13239,
-      "cost_bps": 34.37
+      "net_apr": 149.23,
+      "net_at_hold": 0.13628,
+      "cost_bps": 34.36
     },
     {
       "base": "HUMA",
@@ -82,6 +82,19 @@
       "net_apr": 215.52,
       "net_at_hold": 0.19682,
       "cost_bps": 54.21
+    },
+    {
+      "base": "CKB",
+      "type": "perp-perp",
+      "long_venue": "Crypto.com",
+      "short_venue": "Bitget",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 158.22,
+      "net_at_hold": 0.14449,
+      "cost_bps": 43.38
     }
   ]
 }
