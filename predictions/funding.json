@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T23:00:10.456999+00:00",
+  "generated_at": "2026-11-07T00:00:10.318552+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -29,7 +29,20 @@
       "scans": 24,
       "net_apr": 311.96,
       "net_at_hold": 0.2849,
-      "cost_bps": 68.88
+      "cost_bps": 66.95
+    },
+    {
+      "base": "HUMA",
+      "type": "perp-perp",
+      "long_venue": "OKX",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 20,
+      "scans": 24,
+      "net_apr": 192.16,
+      "net_at_hold": 0.17549,
+      "cost_bps": 57.16
     },
     {
       "base": "HUMA",
@@ -42,7 +55,7 @@
       "scans": 24,
       "net_apr": 301.13,
       "net_at_hold": 0.275,
-      "cost_bps": 60.82
+      "cost_bps": 57.45
     },
     {
       "base": "HUMA",
@@ -55,20 +68,7 @@
       "scans": 24,
       "net_apr": 203.87,
       "net_at_hold": 0.18618,
-      "cost_bps": 55.63
-    },
-    {
-      "base": "HUMA",
-      "type": "perp-perp",
-      "long_venue": "OKX",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 19,
-      "scans": 24,
-      "net_apr": 170.54,
-      "net_at_hold": 0.15575,
-      "cost_bps": 57.44
+      "cost_bps": 54.19
     },
     {
       "base": "CKB",
@@ -79,8 +79,8 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 92.39,
-      "net_at_hold": 0.08437,
+      "net_apr": 95.23,
+      "net_at_hold": 0.08697,
       "cost_bps": 43.19
     }
   ]
