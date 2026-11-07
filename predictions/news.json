@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-07T07:24:19.497248+00:00",
+  "generated_at": "2026-11-07T08:24:19.535219+00:00",
   "window_hours": 24,
-  "articles_in_window": 2138,
+  "articles_in_window": 2105,
   "collection_days": 55,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,58 +10,69 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 242,
+      "articles": 238,
       "sources": 44,
       "sentiment_direction": "mixed",
-      "surge": 0.91,
-      "sentiment_mean": -0.125,
-      "headline": "Iran distributes anti-radiation iodine tablets in Bushehr amid Trump threats",
-      "headline_source": "Reddit r/worldnews",
-      "headline_url": "https://www.reddit.com/r/worldnews/comments/1xpzuqx/iran_distributes_antiradiation_iodine_tablets_in/"
+      "surge": 0.89,
+      "sentiment_mean": -0.121,
+      "headline": "Trump confirms US strikes in Iran, insists \u2018it\u2019s not a war\u2019",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/trump-confirms-us-strikes-in-iran-insists-its-not-a?traffic_source=rss"
     },
     {
       "term": "democrats",
-      "articles": 129,
+      "articles": 128,
       "sources": 37,
       "sentiment_direction": "positive",
-      "surge": 0.8,
-      "sentiment_mean": 0.15,
+      "surge": 0.79,
+      "sentiment_mean": 0.154,
       "headline": "How the Iran war helped Democrats win the midterms",
       "headline_source": "Al Jazeera",
       "headline_url": "https://www.aljazeera.com/opinions/2026/11/7/how-the-iran-war-helped-democrats-win-the-midterms?traffic_source=rss"
     },
     {
       "term": "chief",
-      "articles": 90,
+      "articles": 91,
       "sources": 34,
       "sentiment_direction": "negative",
-      "surge": 2.79,
-      "sentiment_mean": -0.179,
-      "headline": "From mass deportations to White House chief, how Stephen Miller became Trump's key pick",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/us/from-mass-deportations-to-white-house-chief-how-stephen-miller-became-trumps-key-pick/articleshow/135625340.cms"
+      "surge": 2.83,
+      "sentiment_mean": -0.185,
+      "headline": "Report: PM, Mossad chief planned Iran op on eve of Israeli election; it was thwarted after US accidentally tipped off",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1xpzuld/report_pm_mossad_chief_planned_iran_op_on_eve_of/"
     },
     {
       "term": "midterms",
-      "articles": 76,
+      "articles": 75,
       "sources": 34,
       "sentiment_direction": "mixed",
-      "surge": 0.63,
-      "sentiment_mean": -0.048,
+      "surge": 0.62,
+      "sentiment_mean": -0.031,
       "headline": "Trump administration drops California mail-in ballot lawsuit after midterms",
       "headline_source": "Investing.com News",
       "headline_url": "https://www.investing.com/news/economy-news/trump-administration-drops-california-mailin-ballot-lawsuit-after-midterms-5009726"
     },
     {
       "term": "president",
-      "articles": 144,
+      "articles": 140,
       "sources": 33,
       "sentiment_direction": "negative",
-      "surge": 1.07,
-      "sentiment_mean": -0.191,
+      "surge": 1.03,
+      "sentiment_mean": -0.178,
       "headline": "Ousted Paraguay president under house arrest after bank collapse",
       "headline_source": "France24",
       "headline_url": "https://www.france24.com/en/americas/20261107-ousted-paraguay-president-under-house-arrest-after-banking-crisis"
+    },
+    {
+      "term": "midterm",
+      "articles": 139,
+      "sources": 33,
+      "sentiment_direction": "mixed",
+      "surge": 0.69,
+      "sentiment_mean": -0.079,
+      "headline": "AI Stock CEOs After Midterm Election",
+      "headline_source": "Reddit r/wallstreetbets",
+      "headline_url": "https://www.reddit.com/r/wallstreetbets/comments/1xq0l07/ai_stock_ceos_after_midterm_election/"
     },
     {
       "term": "house",
@@ -69,32 +80,21 @@
       "sources": 33,
       "sentiment_direction": "mixed",
       "surge": 1.2,
-      "sentiment_mean": -0.117,
-      "headline": "Ousted Paraguay president under house arrest after bank collapse",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/americas/20261107-ousted-paraguay-president-under-house-arrest-after-banking-crisis"
+      "sentiment_mean": -0.12,
+      "headline": "Malaysia\u2019s king warns against challenging Najib\u2019s house arrest",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/asia/southeast-asia/article/3373642/malaysias-king-warns-against-challenging-najibs-house-arrest"
     },
     {
-      "term": "data",
+      "term": "election",
       "articles": 101,
       "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 1.41,
-      "sentiment_mean": -0.048,
-      "headline": "Environmental groups embrace AI, even as they warn of data center impacts",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/environmental-groups-embrace-ai-even-as-they-warn-of-data-center-impacts-5009711"
-    },
-    {
-      "term": "deal",
-      "articles": 57,
-      "sources": 33,
-      "sentiment_direction": "mixed",
-      "surge": 1.38,
-      "sentiment_mean": 0.01,
-      "headline": "Left India with $8 in 1972, now 'Canada's Warren Buffett' in \u20b952,878 crore bank deal",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/life-style/people/he-left-india-in-1972-with-just-8-and-worked-as-a-salesman-to-survive-54-years-later-the-hyderabad-born-investor-known-as-canadas-warren-buffett-is-making-a-52878-crore-bank-deal/articleshow/135618936.cms"
+      "surge": 0.53,
+      "sentiment_mean": 0.049,
+      "headline": "Polls close in New Zealand's federal election",
+      "headline_source": "Sydney Morning Herald",
+      "headline_url": "https://www.smh.com.au/world/polls-close-in-new-zealands-federal-election-20261107-p61cae.html?ref=rss&utm_medium=rss&utm_source=rss_world"
     }
   ],
   "hours_since_fetch": 0.0
