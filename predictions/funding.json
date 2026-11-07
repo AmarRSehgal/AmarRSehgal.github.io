@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T09:00:10.080149+00:00",
+  "generated_at": "2026-11-07T10:00:10.521317+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 211.03,
-      "net_at_hold": 0.19272,
+      "net_apr": 211.04,
+      "net_at_hold": 0.19273,
       "cost_bps": 32.09
     },
     {
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 22,
       "scans": 24,
-      "net_apr": 235.5,
-      "net_at_hold": 0.21507,
-      "cost_bps": 53.9
+      "net_apr": 292.05,
+      "net_at_hold": 0.26671,
+      "cost_bps": 51.59
     },
     {
       "base": "CKB",
@@ -40,8 +40,8 @@
       "min_hold_h": 8,
       "hits": 22,
       "scans": 24,
-      "net_apr": 157.88,
-      "net_at_hold": 0.14419,
+      "net_apr": 170.36,
+      "net_at_hold": 0.15558,
       "cost_bps": 38.78
     },
     {
@@ -55,7 +55,20 @@
       "scans": 24,
       "net_apr": 301.13,
       "net_at_hold": 0.275,
-      "cost_bps": 56.4
+      "cost_bps": 54.73
+    },
+    {
+      "base": "CYBER",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "Hyperliquid",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 19,
+      "scans": 24,
+      "net_apr": 89.42,
+      "net_at_hold": 0.08166,
+      "cost_bps": 25.1
     },
     {
       "base": "HUMA",
@@ -68,7 +81,7 @@
       "scans": 24,
       "net_apr": 294.7,
       "net_at_hold": 0.26914,
-      "cost_bps": 59.97
+      "cost_bps": 57.26
     },
     {
       "base": "HUMA",
@@ -79,9 +92,9 @@
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 192.16,
-      "net_at_hold": 0.17549,
-      "cost_bps": 52.27
+      "net_apr": 214.65,
+      "net_at_hold": 0.19602,
+      "cost_bps": 49.4
     },
     {
       "base": "CKB",
@@ -92,22 +105,9 @@
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 162.64,
-      "net_at_hold": 0.14853,
-      "cost_bps": 43.41
-    },
-    {
-      "base": "CYBER",
-      "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "Hyperliquid",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 96.5,
-      "net_at_hold": 0.08812,
-      "cost_bps": 25.08
+      "net_apr": 170.54,
+      "net_at_hold": 0.15574,
+      "cost_bps": 43.42
     }
   ]
 }
