@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-07T13:24:17.354940+00:00",
+  "generated_at": "2026-11-07T14:24:22.498812+00:00",
   "window_hours": 24,
-  "articles_in_window": 1984,
+  "articles_in_window": 1941,
   "collection_days": 55,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,80 +10,69 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 237,
-      "sources": 45,
+      "articles": 235,
+      "sources": 44,
       "sentiment_direction": "mixed",
-      "surge": 0.89,
+      "surge": 0.88,
       "sentiment_mean": -0.09,
-      "headline": "Trump\u2019s elevation of Stephen Miller a middle finger to millions of voters",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/us-news/2026/nov/07/trump-stephen-miller-midterms"
-    },
-    {
-      "term": "president",
-      "articles": 142,
-      "sources": 35,
-      "sentiment_direction": "negative",
-      "surge": 1.04,
-      "sentiment_mean": -0.185,
-      "headline": "Marriott president & CEO Anthony Capuano sells $26.6m in company stock",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/insider-trading-news/marriott-president--ceo-anthony-capuano-sells-266m-in-company-stock-93CH-5009848"
+      "headline": "Healthcare, Iran war &amp; tariffs: Resurgent Democrats set stage to confront Trump",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/world/us/healthcare-iran-war-tariffs-resurgent-democrats-set-stage-to-confront-trump/articleshow/135638893.cms"
     },
     {
       "term": "democrats",
-      "articles": 107,
-      "sources": 35,
+      "articles": 103,
+      "sources": 36,
       "sentiment_direction": "positive",
-      "surge": 0.64,
-      "sentiment_mean": 0.177,
-      "headline": "These five stock groups could rally after Democrats' midterms sweep, analysts say",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/07/these-five-stock-types-could-rally-after-us-midterms-analysts-say.html"
+      "surge": 0.61,
+      "sentiment_mean": 0.182,
+      "headline": "After victory in the midterms, what next for US Democrats?",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/after-victory-in-the-midterms-what-next-for-us-democrats/a-79884957?maca=en-rss-en-all-1573-rdf"
+    },
+    {
+      "term": "president",
+      "articles": 144,
+      "sources": 35,
+      "sentiment_direction": "negative",
+      "surge": 1.05,
+      "sentiment_mean": -0.178,
+      "headline": "History repeats in Shenzhen? China hosts another lame-duck US president",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/china/diplomacy/article/3373654/history-repeats-shenzhen-china-hosts-another-lame-duck-us-president"
     },
     {
       "term": "chief",
-      "articles": 91,
+      "articles": 93,
       "sources": 35,
       "sentiment_direction": "mixed",
-      "surge": 2.8,
-      "sentiment_mean": -0.15,
-      "headline": "'Poor Biharis don't know anything': Cong UP in-charge targets BJP chief Nabin",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/india/poor-biharis-dont-know-anything-congress-up-in-charge-rajendra-pal-gautam-targets-bjp-chief-nitin-nabin/articleshow/135635083.cms"
+      "surge": 2.85,
+      "sentiment_mean": -0.114,
+      "headline": "Velocity Financial chief legal officer sells $57,600 in stock",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/insider-trading-news/velocity-financial-chief-legal-officer-sells-57600-in-stock-93CH-5009901"
     },
     {
       "term": "house",
-      "articles": 138,
-      "sources": 33,
+      "articles": 136,
+      "sources": 32,
       "sentiment_direction": "negative",
-      "surge": 1.3,
-      "sentiment_mean": -0.176,
-      "headline": "House GOP erupts at Stephen Miller as Trump elevates him after midterm massacre: 'Megalomaniac'",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/politics/house-gop-erupts-stephen-miller-trump-elevates-him-after-midterm-massacre-megalomaniac"
+      "surge": 1.28,
+      "sentiment_mean": -0.208,
+      "headline": "Who is Hakeem Jeffries, the Democrat poised to become House speaker?",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/news/2026/11/7/who-is-hakeem-jeffries-the-democrat-poised-to-become-house-speaker?traffic_source=rss"
     },
     {
       "term": "midterm",
-      "articles": 120,
-      "sources": 32,
+      "articles": 116,
+      "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 0.58,
-      "sentiment_mean": -0.033,
+      "surge": 0.56,
+      "sentiment_mean": -0.006,
       "headline": "Risk of Iran war escalation remains high despite Democratic sweep in U.S. midterm elections",
       "headline_source": "CNBC Top News",
       "headline_url": "https://www.cnbc.com/2026/11/07/iran-war-midterm-election-oil-price-trump.html"
-    },
-    {
-      "term": "data",
-      "articles": 90,
-      "sources": 32,
-      "sentiment_direction": "mixed",
-      "surge": 1.24,
-      "sentiment_mean": -0.034,
-      "headline": "Anthropic IPO meets AI backlash after midterms show stinging rebuke of data centers",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/07/anthropic-ipo-ai-data-center-backlash.html"
     },
     {
       "term": "election",
@@ -91,11 +80,22 @@
       "sources": 31,
       "sentiment_direction": "mixed",
       "surge": 0.54,
-      "sentiment_mean": 0.055,
-      "headline": "New Zealand election first count ends with 2 main parties nearly deadlocked",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/asia/australasia/article/3373657/new-zealand-election-first-count-ends-2-main-parties-nearly-deadlocked"
+      "sentiment_mean": 0.08,
+      "headline": "Will this week's blue wave election usher in a Democratic president in 2028?",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/11/07/2026-midterm-election-blue-wave-2028-president.html"
+    },
+    {
+      "term": "data",
+      "articles": 85,
+      "sources": 31,
+      "sentiment_direction": "mixed",
+      "surge": 1.15,
+      "sentiment_mean": -0.019,
+      "headline": "Anthropic IPO meets AI backlash after midterms show stinging rebuke of data centers",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/11/07/anthropic-ipo-ai-data-center-backlash.html"
     }
   ],
-  "hours_since_fetch": 0.02
+  "hours_since_fetch": 0.04
 }
