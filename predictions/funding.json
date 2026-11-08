@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T17:00:10.650103+00:00",
+  "generated_at": "2026-11-08T18:00:07.292419+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -25,11 +25,11 @@
       "short_venue": "Gate",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 22,
+      "hits": 21,
       "scans": 24,
-      "net_apr": 336.7,
-      "net_at_hold": 0.30749,
-      "cost_bps": 39.98
+      "net_apr": 306.16,
+      "net_at_hold": 0.2796,
+      "cost_bps": 44.42
     },
     {
       "base": "CKB",
@@ -38,10 +38,10 @@
       "short_venue": "KuCoin",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 21,
+      "hits": 20,
       "scans": 24,
       "net_apr": 425.26,
-      "net_at_hold": 0.38837,
+      "net_at_hold": 0.38836,
       "cost_bps": 32.1
     },
     {
@@ -51,11 +51,11 @@
       "short_venue": "Bitget",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 21,
+      "hits": 20,
       "scans": 24,
-      "net_apr": 293.05,
-      "net_at_hold": 0.26762,
-      "cost_bps": 44.65
+      "net_apr": 284.59,
+      "net_at_hold": 0.2599,
+      "cost_bps": 44.67
     },
     {
       "base": "CELR",
@@ -79,22 +79,9 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 155.22,
-      "net_at_hold": 0.14175,
+      "net_apr": 183.41,
+      "net_at_hold": 0.1675,
       "cost_bps": 48.95
-    },
-    {
-      "base": "CHILLGUY",
-      "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 194.01,
-      "net_at_hold": 0.17718,
-      "cost_bps": 68.45
     },
     {
       "base": "CELR",
@@ -105,9 +92,9 @@
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 98.66,
-      "net_at_hold": 0.0901,
-      "cost_bps": 49.85
+      "net_apr": 110.52,
+      "net_at_hold": 0.10093,
+      "cost_bps": 49.9
     }
   ]
 }
