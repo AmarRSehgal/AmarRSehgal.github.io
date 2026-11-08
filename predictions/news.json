@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-08T13:24:12.223182+00:00",
+  "generated_at": "2026-11-08T14:24:10.573127+00:00",
   "window_hours": 24,
-  "articles_in_window": 1450,
+  "articles_in_window": 1470,
   "collection_days": 56,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,48 +9,59 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
-      "term": "president",
-      "articles": 108,
-      "sources": 32,
+      "term": "trump",
+      "articles": 126,
+      "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 0.72,
-      "sentiment_mean": -0.043,
-      "headline": "Blow for Netanyahu as opposition rival asked to form government by Israel&#x27;s president",
-      "headline_source": "Reddit r/worldnews",
-      "headline_url": "https://www.reddit.com/r/worldnews/comments/1xqxkze/blow_for_netanyahu_as_opposition_rival_asked_to/"
+      "surge": 0.45,
+      "sentiment_mean": 0.02,
+      "headline": "Wall Street Races for Megadeals as Countdown Begins on Trump Era",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/articles/2026-11-08/wall-street-races-for-megadeals-as-countdown-begins-on-trump-era"
     },
     {
-      "term": "trump",
-      "articles": 123,
-      "sources": 31,
+      "term": "president",
+      "articles": 104,
+      "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 0.44,
-      "sentiment_mean": 0.02,
-      "headline": "How Democrats will try to end Trump's tariffs",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/08/trump-tariffs-democrats-congress-canada.html"
+      "surge": 0.69,
+      "sentiment_mean": -0.031,
+      "headline": "Community Bancorp president and CEO buys $21,492 in stock",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/insider-trading-news/community-bancorp-president-and-ceo-buys-21492-in-stock-93CH-5010227"
     },
     {
       "term": "government",
-      "articles": 80,
-      "sources": 28,
+      "articles": 82,
+      "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 1.2,
-      "sentiment_mean": -0.033,
-      "headline": "Blow for Netanyahu as opposition rival asked to form government by Israel&#x27;s president",
-      "headline_source": "Reddit r/worldnews",
-      "headline_url": "https://www.reddit.com/r/worldnews/comments/1xqxkze/blow_for_netanyahu_as_opposition_rival_asked_to/"
+      "surge": 1.23,
+      "sentiment_mean": -0.053,
+      "headline": "At least 21 dead after migrant boat sinks off Senegal coast, government says - Reuters",
+      "headline_source": "Reuters",
+      "headline_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQWEyY01QZXphanRHT21PZUR2UVdNcEQzUVdRSW44Z2oxb1hfanV3TE00ZXhkMDJnZVdXYnF6OTdsZ3Jwd0lqamgxYlpTS2h3NjBjaTVaNC1nQXM0RXFNX2phMWItS1Q4UldFdzN3WFlocExfUElZZEJwQ2hVX1YzRmlDQnpDMEhrTC1oNk5VYmVCQ2pLc090LUlfbFY5VXk3YTFhTlg4NUJSTXk1WDVVTXdNYkp1RmF3TW02bDZR?oc=5"
     },
     {
       "term": "house",
-      "articles": 66,
-      "sources": 25,
+      "articles": 67,
+      "sources": 26,
       "sentiment_direction": "mixed",
-      "surge": 0.54,
-      "sentiment_mean": 0.008,
-      "headline": "China\u2019s focus on getting its house in order offers lessons in governance",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/opinion/china-opinion/article/3373416/chinas-focus-getting-its-house-order-offers-lessons-governance"
+      "surge": 0.55,
+      "sentiment_mean": 0.031,
+      "headline": "House poised to impeach Pete Hegseth after GOP midterm defeat",
+      "headline_source": "Reddit r/politics",
+      "headline_url": "https://www.reddit.com/r/politics/comments/1xqxrh7/house_poised_to_impeach_pete_hegseth_after_gop/"
+    },
+    {
+      "term": "white",
+      "articles": 53,
+      "sources": 24,
+      "sentiment_direction": "mixed",
+      "surge": 1.33,
+      "sentiment_mean": 0.042,
+      "headline": "Could UFC boss Dana White be next White House press secretary?",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/could-ufc-boss-dana-white-be-next-white-house-press-secretary?traffic_source=rss"
     },
     {
       "term": "eisenkot",
@@ -64,37 +75,26 @@
       "headline_url": "https://www.aljazeera.com/news/2026/11/8/will-eisenkot-be-able-to-form-israels-next-govt-amid-divided-opposition?traffic_source=rss"
     },
     {
-      "term": "white",
-      "articles": 51,
-      "sources": 23,
-      "sentiment_direction": "mixed",
-      "surge": 1.28,
-      "sentiment_mean": 0.055,
-      "headline": "Could UFC boss Dana White be next White House press secretary?",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/could-ufc-boss-dana-white-be-next-white-house-press-secretary?traffic_source=rss"
-    },
-    {
       "term": "form",
-      "articles": 45,
+      "articles": 44,
       "sources": 23,
       "sentiment_direction": "mixed",
-      "surge": 3.21,
-      "sentiment_mean": 0.026,
+      "surge": 3.18,
+      "sentiment_mean": 0.027,
       "headline": "Blow for Netanyahu as opposition rival asked to form government by Israel&#x27;s president",
       "headline_source": "Reddit r/worldnews",
       "headline_url": "https://www.reddit.com/r/worldnews/comments/1xqxkze/blow_for_netanyahu_as_opposition_rival_asked_to/"
     },
     {
-      "term": "chief",
-      "articles": 53,
-      "sources": 22,
+      "term": "press",
+      "articles": 44,
+      "sources": 23,
       "sentiment_direction": "mixed",
-      "surge": 1.2,
-      "sentiment_mean": 0.103,
-      "headline": "AI will soon master biology, unleashing new safety risks, Tencent AI chief warns",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/tech/big-tech/article/3373697/ai-will-soon-master-biology-unleashing-new-safety-risks-tencent-ai-chief-warns"
+      "surge": 3.03,
+      "sentiment_mean": 0.127,
+      "headline": "Could UFC boss Dana White be next White House press secretary?",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/could-ufc-boss-dana-white-be-next-white-house-press-secretary?traffic_source=rss"
     }
   ],
   "hours_since_fetch": 0.0
