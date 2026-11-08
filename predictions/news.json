@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-08T14:24:10.573127+00:00",
+  "generated_at": "2026-11-08T15:24:14.436011+00:00",
   "window_hours": 24,
-  "articles_in_window": 1470,
+  "articles_in_window": 1499,
   "collection_days": 56,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,22 +10,22 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 126,
+      "articles": 131,
       "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 0.45,
-      "sentiment_mean": 0.02,
+      "surge": 0.47,
+      "sentiment_mean": 0.06,
       "headline": "Wall Street Races for Megadeals as Countdown Begins on Trump Era",
       "headline_source": "Bloomberg Markets",
       "headline_url": "https://www.bloomberg.com/news/articles/2026-11-08/wall-street-races-for-megadeals-as-countdown-begins-on-trump-era"
     },
     {
       "term": "president",
-      "articles": 104,
+      "articles": 103,
       "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 0.69,
-      "sentiment_mean": -0.031,
+      "surge": 0.68,
+      "sentiment_mean": 0.01,
       "headline": "Community Bancorp president and CEO buys $21,492 in stock",
       "headline_source": "Investing.com News",
       "headline_url": "https://www.investing.com/news/insider-trading-news/community-bancorp-president-and-ceo-buys-21492-in-stock-93CH-5010227"
@@ -35,33 +35,44 @@
       "articles": 82,
       "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 1.23,
-      "sentiment_mean": -0.053,
+      "surge": 1.24,
+      "sentiment_mean": -0.041,
       "headline": "At least 21 dead after migrant boat sinks off Senegal coast, government says - Reuters",
       "headline_source": "Reuters",
       "headline_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQWEyY01QZXphanRHT21PZUR2UVdNcEQzUVdRSW44Z2oxb1hfanV3TE00ZXhkMDJnZVdXYnF6OTdsZ3Jwd0lqamgxYlpTS2h3NjBjaTVaNC1nQXM0RXFNX2phMWItS1Q4UldFdzN3WFlocExfUElZZEJwQ2hVX1YzRmlDQnpDMEhrTC1oNk5VYmVCQ2pLc090LUlfbFY5VXk3YTFhTlg4NUJSTXk1WDVVTXdNYkp1RmF3TW02bDZR?oc=5"
     },
     {
-      "term": "house",
-      "articles": 67,
+      "term": "democrats",
+      "articles": 55,
       "sources": 26,
       "sentiment_direction": "mixed",
-      "surge": 0.55,
-      "sentiment_mean": 0.031,
-      "headline": "House poised to impeach Pete Hegseth after GOP midterm defeat",
-      "headline_source": "Reddit r/politics",
-      "headline_url": "https://www.reddit.com/r/politics/comments/1xqxrh7/house_poised_to_impeach_pete_hegseth_after_gop/"
+      "surge": 0.31,
+      "sentiment_mean": 0.144,
+      "headline": "New House Democrats Set Their Priorities",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-11-08/new-house-democrats-set-their-priorities-video"
+    },
+    {
+      "term": "house",
+      "articles": 67,
+      "sources": 25,
+      "sentiment_direction": "mixed",
+      "surge": 0.54,
+      "sentiment_mean": 0.04,
+      "headline": "New House Democrats Set Their Priorities",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-11-08/new-house-democrats-set-their-priorities-video"
     },
     {
       "term": "white",
-      "articles": 53,
+      "articles": 54,
       "sources": 24,
       "sentiment_direction": "mixed",
-      "surge": 1.33,
-      "sentiment_mean": 0.042,
-      "headline": "Could UFC boss Dana White be next White House press secretary?",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/could-ufc-boss-dana-white-be-next-white-house-press-secretary?traffic_source=rss"
+      "surge": 1.36,
+      "sentiment_mean": 0.054,
+      "headline": "Dana White says he will meet with Trump to discuss White House press secretary role - The Hill",
+      "headline_source": "Google News Top",
+      "headline_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVzJuNmpQTEhOSi1aVC1OeDRQNHBsbG1CNHk2aTFGWS1nZ18wNG10U1ctYW8yNGRtMVEzQS10SkpKQlhfbVAwUHYxYVU5QkV6bXJleXpVMV9oMFNlVWZoc05WTXBKZzh5eEJZZUFLSkpVU1JTc3lzZ2R1aTl2cUp4eElrWnMwZ21sWDd2S3JR0gGTAUFVX3lxTE1lR2tmRHItRzItaHZ5M0U0bVVLQnpyWi03NG9NNGI4OEQ0dklncDI5d3o5SE1GR0swRmU2cmdpWk9RX1VHbXRpWXcxMXZmdWZmRTZRd21kcWNxWFZUdnZkYmVlOElGTW5sbEhQdWhmM0tqV1VXaVlabld4YmxtWGxuVFRfXzVXNFczQjNEXzV3SHM2VQ?oc=5"
     },
     {
       "term": "eisenkot",
@@ -75,26 +86,15 @@
       "headline_url": "https://www.aljazeera.com/news/2026/11/8/will-eisenkot-be-able-to-form-israels-next-govt-amid-divided-opposition?traffic_source=rss"
     },
     {
-      "term": "form",
-      "articles": 44,
-      "sources": 23,
+      "term": "secretary",
+      "articles": 40,
+      "sources": 24,
       "sentiment_direction": "mixed",
-      "surge": 3.18,
-      "sentiment_mean": 0.027,
-      "headline": "Blow for Netanyahu as opposition rival asked to form government by Israel&#x27;s president",
-      "headline_source": "Reddit r/worldnews",
-      "headline_url": "https://www.reddit.com/r/worldnews/comments/1xqxkze/blow_for_netanyahu_as_opposition_rival_asked_to/"
-    },
-    {
-      "term": "press",
-      "articles": 44,
-      "sources": 23,
-      "sentiment_direction": "mixed",
-      "surge": 3.03,
-      "sentiment_mean": 0.127,
-      "headline": "Could UFC boss Dana White be next White House press secretary?",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/could-ufc-boss-dana-white-be-next-white-house-press-secretary?traffic_source=rss"
+      "surge": 2.41,
+      "sentiment_mean": 0.072,
+      "headline": "Dana White says he will meet with Trump to discuss White House press secretary role - The Hill",
+      "headline_source": "Google News Top",
+      "headline_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVzJuNmpQTEhOSi1aVC1OeDRQNHBsbG1CNHk2aTFGWS1nZ18wNG10U1ctYW8yNGRtMVEzQS10SkpKQlhfbVAwUHYxYVU5QkV6bXJleXpVMV9oMFNlVWZoc05WTXBKZzh5eEJZZUFLSkpVU1JTc3lzZ2R1aTl2cUp4eElrWnMwZ21sWDd2S3JR0gGTAUFVX3lxTE1lR2tmRHItRzItaHZ5M0U0bVVLQnpyWi03NG9NNGI4OEQ0dklncDI5d3o5SE1GR0swRmU2cmdpWk9RX1VHbXRpWXcxMXZmdWZmRTZRd21kcWNxWFZUdnZkYmVlOElGTW5sbEhQdWhmM0tqV1VXaVlabld4YmxtWGxuVFRfXzVXNFczQjNEXzV3SHM2VQ?oc=5"
     }
   ],
   "hours_since_fetch": 0.0
