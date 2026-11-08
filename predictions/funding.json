@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T02:00:09.529077+00:00",
+  "generated_at": "2026-11-08T03:00:10.168558+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -16,20 +16,7 @@
       "scans": 24,
       "net_apr": 308.02,
       "net_at_hold": 0.2813,
-      "cost_bps": 43.95
-    },
-    {
-      "base": "SKR",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Crypto.com",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 23,
-      "scans": 24,
-      "net_apr": 365.28,
-      "net_at_hold": 0.33359,
-      "cost_bps": 23.03
+      "cost_bps": 44.07
     },
     {
       "base": "CKB",
@@ -40,9 +27,22 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 334.77,
-      "net_at_hold": 0.30573,
+      "net_apr": 443.79,
+      "net_at_hold": 0.40528,
       "cost_bps": 32.1
+    },
+    {
+      "base": "SKR",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Crypto.com",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 23,
+      "scans": 24,
+      "net_apr": 359.58,
+      "net_at_hold": 0.32838,
+      "cost_bps": 23.1
     },
     {
       "base": "CKB",
@@ -53,8 +53,8 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 282.58,
-      "net_at_hold": 0.25807,
+      "net_apr": 305.95,
+      "net_at_hold": 0.27941,
       "cost_bps": 44.16
     },
     {
@@ -66,9 +66,9 @@
       "min_hold_h": 8,
       "hits": 22,
       "scans": 24,
-      "net_apr": 188.26,
-      "net_at_hold": 0.17193,
-      "cost_bps": 39.7
+      "net_apr": 179.3,
+      "net_at_hold": 0.16374,
+      "cost_bps": 39.92
     },
     {
       "base": "STORJ",
@@ -77,10 +77,10 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 18,
+      "hits": 19,
       "scans": 24,
-      "net_apr": 721.53,
-      "net_at_hold": 0.65893,
+      "net_apr": 748.65,
+      "net_at_hold": 0.6837,
       "cost_bps": 35.25
     }
   ]
