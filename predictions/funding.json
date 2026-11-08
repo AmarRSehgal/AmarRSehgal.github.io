@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T08:00:10.316266+00:00",
+  "generated_at": "2026-11-08T09:00:08.303828+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 317.01,
-      "net_at_hold": 0.2895,
-      "cost_bps": 23.1
+      "net_apr": 310.34,
+      "net_at_hold": 0.28341,
+      "cost_bps": 23.14
     },
     {
       "base": "CKB",
@@ -55,7 +55,7 @@
       "scans": 24,
       "net_apr": 406.27,
       "net_at_hold": 0.37102,
-      "cost_bps": 44.27
+      "cost_bps": 44.29
     },
     {
       "base": "CHILLGUY",
@@ -64,11 +64,11 @@
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 21,
+      "hits": 20,
       "scans": 24,
-      "net_apr": 310.88,
-      "net_at_hold": 0.28391,
-      "cost_bps": 68.64
+      "net_apr": 319.85,
+      "net_at_hold": 0.2921,
+      "cost_bps": 68.67
     },
     {
       "base": "CHILLGUY",
@@ -77,10 +77,10 @@
       "short_venue": "Hyperliquid",
       "long_instrument": "perp",
       "min_hold_h": 4,
-      "hits": 19,
+      "hits": 20,
       "scans": 24,
-      "net_apr": 242.58,
-      "net_at_hold": 0.11077,
+      "net_apr": 230.56,
+      "net_at_hold": 0.10528,
       "cost_bps": 33.94
     },
     {
@@ -97,17 +97,17 @@
       "cost_bps": 36.11
     },
     {
-      "base": "SKR",
+      "base": "CHILLGUY",
       "type": "perp-perp",
-      "long_venue": "Aster",
-      "short_venue": "Crypto.com",
+      "long_venue": "Bitget",
+      "short_venue": "KuCoin",
       "long_instrument": "perp",
-      "min_hold_h": 8,
+      "min_hold_h": 4,
       "hits": 18,
       "scans": 24,
-      "net_apr": 166.24,
-      "net_at_hold": 0.15181,
-      "cost_bps": 39.7
+      "net_apr": 114.53,
+      "net_at_hold": 0.0523,
+      "cost_bps": 38.9
     }
   ]
 }
