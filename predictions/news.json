@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-08T12:24:11.270056+00:00",
+  "generated_at": "2026-11-08T13:24:12.223182+00:00",
   "window_hours": 24,
-  "articles_in_window": 1468,
+  "articles_in_window": 1450,
   "collection_days": 56,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,59 +9,48 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
-      "term": "trump",
-      "articles": 125,
-      "sources": 32,
-      "sentiment_direction": "mixed",
-      "surge": 0.45,
-      "sentiment_mean": 0.039,
-      "headline": "Healthcare, tariffs \u2013 but not Trump impeachment: Democrats chart next two years of power",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/us-news/2026/nov/08/democrats-congress-trump-midterms"
-    },
-    {
       "term": "president",
       "articles": 108,
       "sources": 32,
       "sentiment_direction": "mixed",
       "surge": 0.72,
-      "sentiment_mean": -0.053,
-      "headline": "In Argentina, Pope Leo to Meet Church at Odds With President Milei",
-      "headline_source": "NYT World",
-      "headline_url": "https://www.nytimes.com/2026/11/08/world/americas/pope-leo-argentina-milei.html"
+      "sentiment_mean": -0.043,
+      "headline": "Blow for Netanyahu as opposition rival asked to form government by Israel&#x27;s president",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1xqxkze/blow_for_netanyahu_as_opposition_rival_asked_to/"
+    },
+    {
+      "term": "trump",
+      "articles": 123,
+      "sources": 31,
+      "sentiment_direction": "mixed",
+      "surge": 0.44,
+      "sentiment_mean": 0.02,
+      "headline": "How Democrats will try to end Trump's tariffs",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/11/08/trump-tariffs-democrats-congress-canada.html"
     },
     {
       "term": "government",
-      "articles": 78,
+      "articles": 80,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 1.17,
-      "sentiment_mean": -0.051,
-      "headline": "Government 'looking seriously' at banning under-16s from Vinted and eBay",
-      "headline_source": "BBC Business",
-      "headline_url": "https://www.bbc.co.uk/news/articles/cmzxjvpqrjxro?at_medium=RSS&at_campaign=rss"
+      "surge": 1.2,
+      "sentiment_mean": -0.033,
+      "headline": "Blow for Netanyahu as opposition rival asked to form government by Israel&#x27;s president",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1xqxkze/blow_for_netanyahu_as_opposition_rival_asked_to/"
     },
     {
       "term": "house",
-      "articles": 70,
+      "articles": 66,
       "sources": 25,
       "sentiment_direction": "mixed",
-      "surge": 0.57,
-      "sentiment_mean": 0.001,
-      "headline": "Could UFC boss Dana White be next White House press secretary?",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/could-ufc-boss-dana-white-be-next-white-house-press-secretary?traffic_source=rss"
-    },
-    {
-      "term": "white",
-      "articles": 53,
-      "sources": 24,
-      "sentiment_direction": "mixed",
-      "surge": 1.34,
-      "sentiment_mean": 0.08,
-      "headline": "Could UFC boss Dana White be next White House press secretary?",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/could-ufc-boss-dana-white-be-next-white-house-press-secretary?traffic_source=rss"
+      "surge": 0.54,
+      "sentiment_mean": 0.008,
+      "headline": "China\u2019s focus on getting its house in order offers lessons in governance",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/opinion/china-opinion/article/3373416/chinas-focus-getting-its-house-order-offers-lessons-governance"
     },
     {
       "term": "eisenkot",
@@ -75,26 +64,37 @@
       "headline_url": "https://www.aljazeera.com/news/2026/11/8/will-eisenkot-be-able-to-form-israels-next-govt-amid-divided-opposition?traffic_source=rss"
     },
     {
-      "term": "chief",
-      "articles": 57,
+      "term": "white",
+      "articles": 51,
       "sources": 23,
       "sentiment_direction": "mixed",
-      "surge": 1.31,
-      "sentiment_mean": 0.111,
-      "headline": "AI will soon master biology, unleashing new safety risks, Tencent AI chief warns",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/tech/big-tech/article/3373697/ai-will-soon-master-biology-unleashing-new-safety-risks-tencent-ai-chief-warns"
+      "surge": 1.28,
+      "sentiment_mean": 0.055,
+      "headline": "Could UFC boss Dana White be next White House press secretary?",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/could-ufc-boss-dana-white-be-next-white-house-press-secretary?traffic_source=rss"
     },
     {
       "term": "form",
-      "articles": 43,
+      "articles": 45,
       "sources": 23,
       "sentiment_direction": "mixed",
-      "surge": 3.0,
-      "sentiment_mean": 0.01,
-      "headline": "Will Eisenkot be able to form Israel\u2019s next gov\u2019t amid divided opposition?",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/news/2026/11/8/will-eisenkot-be-able-to-form-israels-next-govt-amid-divided-opposition?traffic_source=rss"
+      "surge": 3.21,
+      "sentiment_mean": 0.026,
+      "headline": "Blow for Netanyahu as opposition rival asked to form government by Israel&#x27;s president",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1xqxkze/blow_for_netanyahu_as_opposition_rival_asked_to/"
+    },
+    {
+      "term": "chief",
+      "articles": 53,
+      "sources": 22,
+      "sentiment_direction": "mixed",
+      "surge": 1.2,
+      "sentiment_mean": 0.103,
+      "headline": "AI will soon master biology, unleashing new safety risks, Tencent AI chief warns",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/tech/big-tech/article/3373697/ai-will-soon-master-biology-unleashing-new-safety-risks-tencent-ai-chief-warns"
     }
   ],
   "hours_since_fetch": 0.0
