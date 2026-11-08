@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T10:00:07.237322+00:00",
+  "generated_at": "2026-11-08T11:00:09.352869+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -16,7 +16,7 @@
       "scans": 24,
       "net_apr": 404.38,
       "net_at_hold": 0.3693,
-      "cost_bps": 44.21
+      "cost_bps": 44.28
     },
     {
       "base": "SKR",
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 302.12,
-      "net_at_hold": 0.27591,
-      "cost_bps": 23.14
+      "net_apr": 295.78,
+      "net_at_hold": 0.27012,
+      "cost_bps": 23.18
     },
     {
       "base": "CKB",
@@ -55,7 +55,20 @@
       "scans": 24,
       "net_apr": 406.27,
       "net_at_hold": 0.37102,
-      "cost_bps": 44.31
+      "cost_bps": 44.33
+    },
+    {
+      "base": "CHILLGUY",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 21,
+      "scans": 24,
+      "net_apr": 310.88,
+      "net_at_hold": 0.28391,
+      "cost_bps": 68.71
     },
     {
       "base": "CHILLGUY",
@@ -66,22 +79,9 @@
       "min_hold_h": 4,
       "hits": 21,
       "scans": 24,
-      "net_apr": 218.55,
-      "net_at_hold": 0.09979,
-      "cost_bps": 33.94
-    },
-    {
-      "base": "CHILLGUY",
-      "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 20,
-      "scans": 24,
-      "net_apr": 319.85,
-      "net_at_hold": 0.2921,
-      "cost_bps": 68.67
+      "net_apr": 208.71,
+      "net_at_hold": 0.0953,
+      "cost_bps": 33.98
     },
     {
       "base": "CELR",
@@ -95,19 +95,6 @@
       "net_apr": 213.08,
       "net_at_hold": 0.19459,
       "cost_bps": 36.11
-    },
-    {
-      "base": "CHILLGUY",
-      "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "KuCoin",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 114.53,
-      "net_at_hold": 0.0523,
-      "cost_bps": 38.9
     }
   ]
 }
