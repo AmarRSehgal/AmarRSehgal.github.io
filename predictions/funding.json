@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T16:00:10.390577+00:00",
+  "generated_at": "2026-11-08T17:00:10.650103+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -16,7 +16,7 @@
       "scans": 24,
       "net_apr": 165.8,
       "net_at_hold": 0.15142,
-      "cost_bps": 23.95
+      "cost_bps": 23.21
     },
     {
       "base": "CKB",
@@ -25,11 +25,11 @@
       "short_venue": "Gate",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 23,
+      "hits": 22,
       "scans": 24,
-      "net_apr": 367.25,
-      "net_at_hold": 0.33539,
-      "cost_bps": 44.29
+      "net_apr": 336.7,
+      "net_at_hold": 0.30749,
+      "cost_bps": 39.98
     },
     {
       "base": "CKB",
@@ -38,10 +38,10 @@
       "short_venue": "KuCoin",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 22,
+      "hits": 21,
       "scans": 24,
-      "net_apr": 431.77,
-      "net_at_hold": 0.39431,
+      "net_apr": 425.26,
+      "net_at_hold": 0.38837,
       "cost_bps": 32.1
     },
     {
@@ -51,11 +51,11 @@
       "short_venue": "Bitget",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 22,
+      "hits": 21,
       "scans": 24,
-      "net_apr": 293.72,
-      "net_at_hold": 0.26824,
-      "cost_bps": 44.58
+      "net_apr": 293.05,
+      "net_at_hold": 0.26762,
+      "cost_bps": 44.65
     },
     {
       "base": "CELR",
@@ -66,22 +66,9 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 238.39,
-      "net_at_hold": 0.21771,
-      "cost_bps": 36.11
-    },
-    {
-      "base": "CHILLGUY",
-      "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 19,
-      "scans": 24,
-      "net_apr": 207.95,
-      "net_at_hold": 0.18991,
-      "cost_bps": 68.71
+      "net_apr": 303.35,
+      "net_at_hold": 0.27703,
+      "cost_bps": 36.12
     },
     {
       "base": "CELR",
@@ -92,9 +79,35 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 135.09,
-      "net_at_hold": 0.12337,
+      "net_apr": 155.22,
+      "net_at_hold": 0.14175,
       "cost_bps": 48.95
+    },
+    {
+      "base": "CHILLGUY",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 194.01,
+      "net_at_hold": 0.17718,
+      "cost_bps": 68.45
+    },
+    {
+      "base": "CELR",
+      "type": "perp-perp",
+      "long_venue": "Crypto.com",
+      "short_venue": "Gate",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 98.66,
+      "net_at_hold": 0.0901,
+      "cost_bps": 49.85
     }
   ]
 }
