@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T04:00:10.263839+00:00",
+  "generated_at": "2026-11-08T05:00:04.980946+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -16,7 +16,7 @@
       "scans": 24,
       "net_apr": 308.07,
       "net_at_hold": 0.28134,
-      "cost_bps": 44.07
+      "cost_bps": 44.17
     },
     {
       "base": "CKB",
@@ -53,8 +53,8 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 359.54,
-      "net_at_hold": 0.32834,
+      "net_apr": 336.07,
+      "net_at_hold": 0.30692,
       "cost_bps": 23.1
     },
     {
@@ -64,11 +64,11 @@
       "short_venue": "Crypto.com",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 21,
+      "hits": 20,
       "scans": 24,
-      "net_apr": 178.68,
-      "net_at_hold": 0.16318,
-      "cost_bps": 40.11
+      "net_apr": 176.42,
+      "net_at_hold": 0.16111,
+      "cost_bps": 39.92
     },
     {
       "base": "STORJ",
@@ -82,6 +82,19 @@
       "net_apr": 749.38,
       "net_at_hold": 0.68437,
       "cost_bps": 35.25
+    },
+    {
+      "base": "CHILLGUY",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 338.53,
+      "net_at_hold": 0.30916,
+      "cost_bps": 68.67
     }
   ]
 }
