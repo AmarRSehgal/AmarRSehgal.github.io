@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-08T20:24:15.660004+00:00",
+  "generated_at": "2026-11-08T21:24:15.998725+00:00",
   "window_hours": 24,
-  "articles_in_window": 1440,
+  "articles_in_window": 1460,
   "collection_days": 56,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,58 +10,47 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 126,
-      "sources": 29,
+      "articles": 123,
+      "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 0.45,
-      "sentiment_mean": -0.005,
-      "headline": "\u2018They\u2019re a failing nation\u2019: Trump says fresh Iran strikes \u2018highly unlikely\u2019",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/middle-east/theyre-a-failing-nation-trump-says-fresh-iran-strikes-highly-unlikely-if-tehran-signs-strong-agreement/articleshow/135664914.cms"
+      "surge": 0.44,
+      "sentiment_mean": 0.014,
+      "headline": "Trump and his Justice Department stand defiant as Democrats ready an investigative blitz",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/politics/trump-and-his-justice-department-stand-defiant-as-democrats-ready-an-investigative-blitz"
     },
     {
       "term": "democrats",
-      "articles": 60,
-      "sources": 26,
+      "articles": 65,
+      "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 0.33,
-      "sentiment_mean": 0.098,
-      "headline": "Democrats amp up Trump investigation threats, Blanche counters he may probe lawmakers",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/08/democrats-trump-oversight-blanche-doj-investigations.html"
+      "surge": 0.36,
+      "sentiment_mean": 0.113,
+      "headline": "Trump and his Justice Department stand defiant as Democrats ready an investigative blitz",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/politics/trump-and-his-justice-department-stand-defiant-as-democrats-ready-an-investigative-blitz"
     },
     {
       "term": "president",
-      "articles": 78,
+      "articles": 76,
       "sources": 25,
-      "sentiment_direction": "positive",
-      "surge": 0.5,
-      "sentiment_mean": 0.152,
-      "headline": "Germany news: Merz to nominate Aigner for president",
-      "headline_source": "DW News",
-      "headline_url": "https://www.dw.com/en/germany-news-merz-to-nominate-aigner-for-president/live-79883533?maca=en-rss-en-all-1573-rdf"
+      "sentiment_direction": "mixed",
+      "surge": 0.49,
+      "sentiment_mean": 0.115,
+      "headline": "How a digital bank\u2019s collapse toppled Paraguay\u2019s president",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/stock-market-news/how-a-digital-banks-collapse-toppled-paraguays-president-5010316"
     },
     {
       "term": "house",
       "articles": 68,
-      "sources": 24,
+      "sources": 23,
       "sentiment_direction": "mixed",
       "surge": 0.54,
-      "sentiment_mean": 0.065,
-      "headline": "House Minority Leader Hakeem Jeffries says he is a \u2018hard yes\u2019 on impeaching Defense Secretary Pete Hegseth",
-      "headline_source": "NBC News",
-      "headline_url": "https://www.nbcnews.com/politics/congress/house-minority-leader-hakeem-jeffries-hard-yes-impeaching-hegseth-rcna608137"
-    },
-    {
-      "term": "party",
-      "articles": 39,
-      "sources": 23,
-      "sentiment_direction": "positive",
-      "surge": 0.52,
-      "sentiment_mean": 0.167,
-      "headline": "After GOP's brutal midterms, \u2018Chuck Norris of Florida politics\u2019 tells party to 'get up and fight'",
+      "sentiment_mean": 0.083,
+      "headline": "Deputy White House Chief of Staff Richard Walters exits job ahead of Stephen Miller takeover",
       "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/politics/gop-brutal-midterms-chuck-norris-florida-politics-tells-party-get-fight"
+      "headline_url": "https://www.foxnews.com/politics/deputy-white-house-chief-staff-richard-walters-exits-job-ahead-stephen-miller-takeover"
     },
     {
       "term": "election",
@@ -69,32 +58,43 @@
       "sources": 22,
       "sentiment_direction": "mixed",
       "surge": 0.35,
-      "sentiment_mean": 0.014,
-      "headline": "Treasury Rally Gets New Boost as Election Hammers the AI Trade",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/articles/2026-11-08/treasury-rally-gets-new-boost-as-election-hammers-the-ai-trade"
+      "sentiment_mean": 0.045,
+      "headline": "The Kremlin hopes the U.S. election shake-up won't shift Trump's negotiations on Ukraine",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/world/the-kremlin-hopes-the-u-s-election-shake-up-wont-shift-trumps-negotiations-on-ukraine"
     },
     {
       "term": "iran",
-      "articles": 46,
+      "articles": 48,
       "sources": 22,
       "sentiment_direction": "negative",
-      "surge": 0.51,
-      "sentiment_mean": -0.37,
-      "headline": "/r/WorldNews Discussion Thread: US and Israel launch attack on Iran; Iran retaliates (Thread #23)",
-      "headline_source": "Reddit r/worldnews",
-      "headline_url": "https://www.reddit.com/r/worldnews/comments/1xr6yoy/rworldnews_discussion_thread_us_and_israel_launch/"
+      "surge": 0.53,
+      "sentiment_mean": -0.383,
+      "headline": "Iran: Trump says strikes unlikely if peace talks keep moving",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/iran-trump-says-strikes-unlikely-if-peace-talks-keep-moving/a-79894190?maca=en-rss-en-all-1573-rdf"
     },
     {
-      "term": "government",
-      "articles": 72,
-      "sources": 21,
-      "sentiment_direction": "mixed",
-      "surge": 1.04,
-      "sentiment_mean": -0.069,
-      "headline": "Government 'looking seriously' at banning under-16s from Vinted and eBay",
-      "headline_source": "Reddit r/technology",
-      "headline_url": "https://www.reddit.com/r/technology/comments/1xr66eq/government_looking_seriously_at_banning_under16s/"
+      "term": "power",
+      "articles": 44,
+      "sources": 22,
+      "sentiment_direction": "negative",
+      "surge": 0.71,
+      "sentiment_mean": -0.262,
+      "headline": "On <em>SNL</em>, the Struggle (for Power) Was Real",
+      "headline_source": "The Atlantic",
+      "headline_url": "https://www.theatlantic.com/culture/2026/11/saturday-night-live-james-talarico-cold-open/689344/?utm_source=feed"
+    },
+    {
+      "term": "party",
+      "articles": 38,
+      "sources": 22,
+      "sentiment_direction": "positive",
+      "surge": 0.51,
+      "sentiment_mean": 0.189,
+      "headline": "After GOP's brutal midterms, \u2018Chuck Norris of Florida politics\u2019 tells party to 'get up and fight'",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/politics/gop-brutal-midterms-chuck-norris-florida-politics-tells-party-get-fight"
     }
   ],
   "hours_since_fetch": 0.0
