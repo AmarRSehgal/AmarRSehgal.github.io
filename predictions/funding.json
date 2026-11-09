@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T03:00:09.338134+00:00",
+  "generated_at": "2026-11-09T04:00:10.265590+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 155.21,
-      "net_at_hold": 0.14174,
+      "net_apr": 155.23,
+      "net_at_hold": 0.14176,
       "cost_bps": 23.24
     },
     {
@@ -27,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 22,
       "scans": 24,
-      "net_apr": 98.73,
-      "net_at_hold": 0.09016,
-      "cost_bps": 36.15
+      "net_apr": 98.48,
+      "net_at_hold": 0.08993,
+      "cost_bps": 36.16
     },
     {
       "base": "CYBER",
@@ -38,37 +38,11 @@
       "short_venue": "Hyperliquid",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 20,
+      "hits": 21,
       "scans": 24,
-      "net_apr": 933.88,
-      "net_at_hold": 0.85286,
+      "net_apr": 908.73,
+      "net_at_hold": 0.82989,
       "cost_bps": 25.67
-    },
-    {
-      "base": "CELR",
-      "type": "perp-perp",
-      "long_venue": "Crypto.com",
-      "short_venue": "KuCoin",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 20,
-      "scans": 24,
-      "net_apr": 238.29,
-      "net_at_hold": 0.21762,
-      "cost_bps": 36.35
-    },
-    {
-      "base": "CELR",
-      "type": "perp-perp",
-      "long_venue": "Crypto.com",
-      "short_venue": "Gate",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 20,
-      "scans": 24,
-      "net_apr": 122.5,
-      "net_at_hold": 0.11187,
-      "cost_bps": 49.82
     },
     {
       "base": "CYBER",
@@ -77,10 +51,10 @@
       "short_venue": "Hyperliquid",
       "long_instrument": "perp",
       "min_hold_h": 4,
-      "hits": 18,
+      "hits": 19,
       "scans": 24,
-      "net_apr": 549.69,
-      "net_at_hold": 0.251,
+      "net_apr": 532.39,
+      "net_at_hold": 0.2431,
       "cost_bps": 29.0
     },
     {
@@ -90,24 +64,50 @@
       "short_venue": "Hyperliquid",
       "long_instrument": "perp",
       "min_hold_h": 4,
-      "hits": 18,
+      "hits": 19,
       "scans": 24,
-      "net_apr": 483.86,
-      "net_at_hold": 0.22094,
-      "cost_bps": 29.01
+      "net_apr": 402.9,
+      "net_at_hold": 0.18397,
+      "cost_bps": 29.14
     },
     {
       "base": "CELR",
       "type": "perp-perp",
       "long_venue": "Crypto.com",
+      "short_venue": "KuCoin",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 19,
+      "scans": 24,
+      "net_apr": 238.19,
+      "net_at_hold": 0.21752,
+      "cost_bps": 36.35
+    },
+    {
+      "base": "CELR",
+      "type": "perp-perp",
+      "long_venue": "Crypto.com",
+      "short_venue": "Gate",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 19,
+      "scans": 24,
+      "net_apr": 131.24,
+      "net_at_hold": 0.11986,
+      "cost_bps": 49.82
+    },
+    {
+      "base": "H100",
+      "type": "perp-perp",
+      "long_venue": "OKX",
       "short_venue": "Bitget",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 131.93,
-      "net_at_hold": 0.12048,
-      "cost_bps": 47.97
+      "net_apr": 6261.76,
+      "net_at_hold": 5.7185,
+      "cost_bps": 51.76
     }
   ]
 }
