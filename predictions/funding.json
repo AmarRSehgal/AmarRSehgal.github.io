@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T15:00:10.000094+00:00",
+  "generated_at": "2026-11-09T16:00:05.781885+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 282.14,
-      "net_at_hold": 0.25766,
-      "cost_bps": 20.85
+      "net_apr": 320.53,
+      "net_at_hold": 0.29272,
+      "cost_bps": 20.84
     },
     {
       "base": "AERO",
@@ -29,7 +29,7 @@
       "scans": 24,
       "net_apr": 98.59,
       "net_at_hold": 0.09004,
-      "cost_bps": 21.85
+      "cost_bps": 21.84
     },
     {
       "base": "RUNE",
@@ -40,8 +40,8 @@
       "min_hold_h": 8,
       "hits": 22,
       "scans": 24,
-      "net_apr": 159.99,
-      "net_at_hold": 0.14611,
+      "net_apr": 142.58,
+      "net_at_hold": 0.13021,
       "cost_bps": 34.55
     },
     {
@@ -53,22 +53,9 @@
       "min_hold_h": 8,
       "hits": 21,
       "scans": 24,
-      "net_apr": 733.25,
-      "net_at_hold": 0.66963,
+      "net_apr": 733.21,
+      "net_at_hold": 0.6696,
       "cost_bps": 35.52
-    },
-    {
-      "base": "CYBER",
-      "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "Hyperliquid",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 21,
-      "scans": 24,
-      "net_apr": 675.98,
-      "net_at_hold": 0.61734,
-      "cost_bps": 25.78
     },
     {
       "base": "RUNE",
@@ -79,8 +66,8 @@
       "min_hold_h": 8,
       "hits": 21,
       "scans": 24,
-      "net_apr": 106.93,
-      "net_at_hold": 0.09766,
+      "net_apr": 105.75,
+      "net_at_hold": 0.09658,
       "cost_bps": 33.73
     },
     {
@@ -94,7 +81,20 @@
       "scans": 24,
       "net_apr": 83.45,
       "net_at_hold": 0.07621,
-      "cost_bps": 33.61
+      "cost_bps": 33.59
+    },
+    {
+      "base": "CYBER",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "Hyperliquid",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 20,
+      "scans": 24,
+      "net_apr": 633.23,
+      "net_at_hold": 0.57829,
+      "cost_bps": 25.78
     },
     {
       "base": "CELR",
@@ -105,8 +105,8 @@
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 224.08,
-      "net_at_hold": 0.20464,
+      "net_apr": 223.69,
+      "net_at_hold": 0.20428,
       "cost_bps": 36.54
     }
   ]
