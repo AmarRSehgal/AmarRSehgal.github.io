@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-09T09:24:14.194100+00:00",
+  "generated_at": "2026-11-09T10:24:15.491218+00:00",
   "window_hours": 24,
-  "articles_in_window": 1777,
+  "articles_in_window": 1820,
   "collection_days": 57,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,91 +10,91 @@
   "topics": [
     {
       "term": "nvidia",
-      "articles": 92,
+      "articles": 97,
       "sources": 36,
       "sentiment_direction": "positive",
-      "surge": 5.52,
+      "surge": 5.76,
+      "sentiment_mean": 0.158,
+      "headline": "Nvidia shares slide as it probes alleged Chinese spy scandal",
+      "headline_source": "Financial Times",
+      "headline_url": "https://www.ft.com/content/fa3b0a35-1aa9-4f31-97b4-e4c599e3e654?syn-25a6b1a6=1"
+    },
+    {
+      "term": "trump",
+      "articles": 167,
+      "sources": 34,
+      "sentiment_direction": "mixed",
+      "surge": 0.6,
+      "sentiment_mean": -0.119,
+      "headline": "EXCLUSIVE: Trump's FAA touts new AI-powered tool helping thousands of passengers avoid flight delays",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/politics/exclusive-trumps-faa-touts-new-ai-powered-tool-helping-thousands-passengers-avoid-flight-delays"
+    },
+    {
+      "term": "huang",
+      "articles": 77,
+      "sources": 34,
+      "sentiment_direction": "positive",
+      "surge": 15.6,
       "sentiment_mean": 0.19,
       "headline": "Nvidia stock falls 5% as scrutiny turns to Jensen Huang\u2019s relationship with alleged Chinese spy",
       "headline_source": "CNBC Top News",
       "headline_url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html"
     },
     {
-      "term": "huang",
-      "articles": 74,
-      "sources": 34,
-      "sentiment_direction": "positive",
-      "surge": 15.52,
-      "sentiment_mean": 0.213,
-      "headline": "Nvidia stock falls 5% as scrutiny turns to Jensen Huang\u2019s relationship with alleged Chinese spy",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html"
-    },
-    {
       "term": "chinese",
-      "articles": 76,
+      "articles": 79,
       "sources": 33,
       "sentiment_direction": "positive",
-      "surge": 2.7,
-      "sentiment_mean": 0.222,
-      "headline": "Nvidia stock falls 5% as scrutiny turns to Jensen Huang\u2019s relationship with alleged Chinese spy",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html"
-    },
-    {
-      "term": "trump",
-      "articles": 165,
-      "sources": 32,
-      "sentiment_direction": "mixed",
-      "surge": 0.6,
-      "sentiment_mean": -0.082,
-      "headline": "U.S., Armenia and Azerbaijan move forward with for Trump transport corridor",
-      "headline_source": "Reddit r/geopolitics",
-      "headline_url": "https://www.reddit.com/r/geopolitics/comments/1xrmpfm/us_armenia_and_azerbaijan_move_forward_with_for/"
+      "surge": 2.82,
+      "sentiment_mean": 0.214,
+      "headline": "When Jensen said he loves Chinese models, I thought it was about DeepSeek and Kimi and GLM, etc\u2026\u2026",
+      "headline_source": "Reddit r/wallstreetbets",
+      "headline_url": "https://www.reddit.com/r/wallstreetbets/comments/1xro37z/when_jensen_said_he_loves_chinese_models_i/"
     },
     {
       "term": "jensen",
-      "articles": 67,
-      "sources": 31,
+      "articles": 71,
+      "sources": 32,
       "sentiment_direction": "positive",
-      "surge": 19.43,
-      "sentiment_mean": 0.178,
-      "headline": "Last thing Jensen saw before personally offering Xi the Blackwell source code",
+      "surge": 19.64,
+      "sentiment_mean": 0.161,
+      "headline": "When Jensen said he loves Chinese models, I thought it was about DeepSeek and Kimi and GLM, etc\u2026\u2026",
       "headline_source": "Reddit r/wallstreetbets",
-      "headline_url": "https://www.reddit.com/r/wallstreetbets/comments/1xrn3g6/last_thing_jensen_saw_before_personally_offering/"
-    },
-    {
-      "term": "investigation",
-      "articles": 55,
-      "sources": 28,
-      "sentiment_direction": "mixed",
-      "surge": 2.87,
-      "sentiment_mean": -0.099,
-      "headline": "How Wall Street is reacting to the news of Nvidia\u2019s investigation into Jensen Huang spy claims",
-      "headline_source": "MarketWatch Top Stories",
-      "headline_url": "https://www.marketwatch.com/story/how-wall-street-is-reacting-to-the-news-of-nvidias-jensen-huang-investigation-into-spy-claims-d8c839ab?mod=mw_rss_topstories"
+      "headline_url": "https://www.reddit.com/r/wallstreetbets/comments/1xro37z/when_jensen_said_he_loves_chinese_models_i/"
     },
     {
       "term": "president",
       "articles": 109,
-      "sources": 27,
+      "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 0.7,
-      "sentiment_mean": -0.006,
-      "headline": "How a bank collapse left millions in limbo and toppled Paraguay's president",
-      "headline_source": "NPR News",
-      "headline_url": "https://www.npr.org/2026/11/09/nx-s1-6034066/paraguay-president-pena-ueno"
+      "surge": 0.71,
+      "sentiment_mean": -0.051,
+      "headline": "How a Bank Implosion in Paraguay Ensnared a President",
+      "headline_source": "NYT World",
+      "headline_url": "https://www.nytimes.com/2026/11/09/world/americas/paraguay-bank-president-ueno.html"
+    },
+    {
+      "term": "investigation",
+      "articles": 58,
+      "sources": 28,
+      "sentiment_direction": "mixed",
+      "surge": 3.03,
+      "sentiment_mean": -0.114,
+      "headline": "Poland\u2019s justice minister says investigation into Krak\u00f3w shooting will aim to establish if the 24-year-old acted alone \u2013 Europe live",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/world/live/2026/nov/09/polands-krakow-attack-ukraine-russia-france-germany-europe-latest-news"
     },
     {
       "term": "iran",
-      "articles": 67,
-      "sources": 25,
+      "articles": 69,
+      "sources": 26,
       "sentiment_direction": "negative",
-      "surge": 0.76,
-      "sentiment_mean": -0.429,
-      "headline": "Iran live updates: Americans are tired of 'Forever Wars,' Araghchi says",
-      "headline_source": "ABC News",
-      "headline_url": "https://abcnews.com/International/live-updates/iran-live-updates-americans-tired-forever-wars-araghchi/?id=137967256"
+      "surge": 0.79,
+      "sentiment_mean": -0.397,
+      "headline": "Qatar PM to meet Trump: What\u2019s the latest on US-Iran negotiations?",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/news/2026/11/9/qatar-pm-to-meet-trump-whats-the-latest-on-us-iran-negotiations?traffic_source=rss"
     }
   ],
   "hours_since_fetch": 0.0
