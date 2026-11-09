@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-09T21:24:23.256723+00:00",
+  "generated_at": "2026-11-09T22:24:20.011022+00:00",
   "window_hours": 24,
-  "articles_in_window": 2397,
+  "articles_in_window": 2422,
   "collection_days": 57,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,92 +9,92 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
-      "term": "nvidia",
-      "articles": 186,
+      "term": "chinese",
+      "articles": 121,
       "sources": 42,
       "sentiment_direction": "mixed",
-      "surge": 8.83,
-      "sentiment_mean": 0.081,
-      "headline": "The Nvidia Affair",
-      "headline_source": "NYT World",
-      "headline_url": "https://www.nytimes.com/2026/11/09/world/nvidia-affair-jensen-huang-russell-brand.html"
+      "surge": 3.89,
+      "sentiment_mean": 0.044,
+      "headline": "Nvidia, Jensen Huang sued over alleged Chinese spy links, shareholder fraud claims",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/business/international-business/nvidia-jensen-huang-sued-over-alleged-chinese-spy-links-shareholder-fraud-claims/articleshow/135693375.cms"
     },
     {
-      "term": "chinese",
-      "articles": 125,
+      "term": "nvidia",
+      "articles": 181,
       "sources": 40,
       "sentiment_direction": "mixed",
-      "surge": 4.22,
-      "sentiment_mean": 0.054,
-      "headline": "Chinese nationals stream from poor localities of Dhaka, claim those are in Delhi",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/india/chinese-nationals-stream-from-poor-localities-of-dhaka-claim-those-are-in-delhi-report/articleshow/135693011.cms"
+      "surge": 7.64,
+      "sentiment_mean": 0.072,
+      "headline": "Trading Day: Broad rebound rally lifts all boats but Nvidia",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/economy-news/trading-day-broad-rebound-rally-lifts-all-boats-but-nvidia-5013492"
     },
     {
       "term": "trump",
-      "articles": 239,
-      "sources": 38,
+      "articles": 243,
+      "sources": 39,
       "sentiment_direction": "negative",
-      "surge": 0.89,
-      "sentiment_mean": -0.161,
-      "headline": "Trump casts doubt on election results after saying he was \u2018absolutely willing\u2019 to accept them",
-      "headline_source": "NBC News",
-      "headline_url": "https://www.nbcnews.com/politics/donald-trump/trump-midterm-elections-voting-machines-doubt-rcna607893"
+      "surge": 0.91,
+      "sentiment_mean": -0.152,
+      "headline": "Democrats plan to use new power to rein in Trump's education agenda. But their tools are limited",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/politics/democrats-plan-to-use-new-power-to-rein-in-trumps-education-agenda-but-their-tools-are-limited"
     },
     {
       "term": "huang",
-      "articles": 145,
+      "articles": 138,
       "sources": 36,
       "sentiment_direction": "mixed",
-      "surge": 16.22,
-      "sentiment_mean": 0.046,
-      "headline": "As Nvidia probes Jensen Huang affair, here's the board member likely to play a big role",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-investigation.html"
+      "surge": 12.26,
+      "sentiment_mean": 0.042,
+      "headline": "you can't blame Old Huang",
+      "headline_source": "Reddit r/wallstreetbets",
+      "headline_url": "https://www.reddit.com/r/wallstreetbets/comments/1xs5bn2/you_cant_blame_old_huang/"
     },
     {
       "term": "jensen",
-      "articles": 137,
+      "articles": 130,
       "sources": 36,
       "sentiment_direction": "mixed",
-      "surge": 19.71,
-      "sentiment_mean": 0.036,
-      "headline": "As Nvidia probes Jensen Huang affair, here's the board member likely to play a big role",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-investigation.html"
+      "surge": 14.56,
+      "sentiment_mean": 0.025,
+      "headline": "Nvidia, Jensen Huang sued over alleged Chinese spy links, shareholder fraud claims",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/business/international-business/nvidia-jensen-huang-sued-over-alleged-chinese-spy-links-shareholder-fraud-claims/articleshow/135693375.cms"
     },
     {
       "term": "iran",
-      "articles": 113,
+      "articles": 115,
       "sources": 34,
       "sentiment_direction": "negative",
-      "surge": 1.3,
-      "sentiment_mean": -0.489,
-      "headline": "France Accuses Iran of Supermarket Fridge Hacking",
-      "headline_source": "Slashdot",
-      "headline_url": "https://it.slashdot.org/story/26/11/09/2032202/france-accuses-iran-of-supermarket-fridge-hacking?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+      "surge": 1.33,
+      "sentiment_mean": -0.498,
+      "headline": "France blames Iran for last month's cyberattack on supermarket fridges",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/world/france-blames-iran-for-last-months-cyberattack-on-supermarket-fridges"
+    },
+    {
+      "term": "president",
+      "articles": 135,
+      "sources": 31,
+      "sentiment_direction": "mixed",
+      "surge": 0.9,
+      "sentiment_mean": -0.083,
+      "headline": "French Judo superstar Teddy Riner says will run for president",
+      "headline_source": "France24",
+      "headline_url": "https://www.france24.com/en/french-judo-superstar-teddy-riner-says-will-run-for-president"
     },
     {
       "term": "affair",
-      "articles": 78,
-      "sources": 34,
+      "articles": 71,
+      "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 26.33,
-      "sentiment_mean": 0.135,
-      "headline": "The Nvidia Affair",
-      "headline_source": "NYT World",
-      "headline_url": "https://www.nytimes.com/2026/11/09/world/nvidia-affair-jensen-huang-russell-brand.html"
-    },
-    {
-      "term": "investigation",
-      "articles": 75,
-      "sources": 32,
-      "sentiment_direction": "mixed",
-      "surge": 3.43,
-      "sentiment_mean": -0.031,
-      "headline": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
+      "surge": 15.43,
+      "sentiment_mean": 0.147,
+      "headline": "Zoe Kleinman: Nvidia CEO's affair will cause ripples across US and beyond",
       "headline_source": "BBC World",
-      "headline_url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss"
+      "headline_url": "https://www.bbc.co.uk/news/articles/cj3vqv3nee72o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "hours_since_fetch": 0.0
