@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T17:00:05.619185+00:00",
+  "generated_at": "2026-11-09T18:00:08.147546+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 346.21,
-      "net_at_hold": 0.31618,
+      "net_apr": 357.43,
+      "net_at_hold": 0.32642,
       "cost_bps": 20.84
     },
     {
@@ -27,8 +27,8 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 98.59,
-      "net_at_hold": 0.09004,
+      "net_apr": 96.09,
+      "net_at_hold": 0.08775,
       "cost_bps": 21.82
     },
     {
@@ -42,33 +42,20 @@
       "scans": 24,
       "net_apr": 733.21,
       "net_at_hold": 0.6696,
-      "cost_bps": 35.52
+      "cost_bps": 35.53
     },
     {
-      "base": "RUNE",
+      "base": "TIA",
       "type": "perp-perp",
-      "long_venue": "Crypto.com",
-      "short_venue": "Bitget",
+      "long_venue": "Lighter",
+      "short_venue": "Crypto.com",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 21,
+      "hits": 20,
       "scans": 24,
-      "net_apr": 154.33,
-      "net_at_hold": 0.14094,
-      "cost_bps": 33.79
-    },
-    {
-      "base": "RUNE",
-      "type": "perp-perp",
-      "long_venue": "Crypto.com",
-      "short_venue": "Gate",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 21,
-      "scans": 24,
-      "net_apr": 83.45,
-      "net_at_hold": 0.07621,
-      "cost_bps": 33.59
+      "net_apr": 314.99,
+      "net_at_hold": 0.28766,
+      "cost_bps": 20.24
     },
     {
       "base": "CELR",
@@ -79,22 +66,35 @@
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 217.92,
-      "net_at_hold": 0.19902,
-      "cost_bps": 36.54
+      "net_apr": 212.39,
+      "net_at_hold": 0.19397,
+      "cost_bps": 36.55
     },
     {
       "base": "RUNE",
       "type": "perp-perp",
       "long_venue": "Crypto.com",
-      "short_venue": "KuCoin",
+      "short_venue": "Bitget",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 106.34,
-      "net_at_hold": 0.09712,
-      "cost_bps": 33.73
+      "net_apr": 159.99,
+      "net_at_hold": 0.14611,
+      "cost_bps": 33.76
+    },
+    {
+      "base": "RUNE",
+      "type": "perp-perp",
+      "long_venue": "Crypto.com",
+      "short_venue": "Gate",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 20,
+      "scans": 24,
+      "net_apr": 89.4,
+      "net_at_hold": 0.08165,
+      "cost_bps": 32.79
     },
     {
       "base": "CYBER",
@@ -105,8 +105,8 @@
       "min_hold_h": 8,
       "hits": 19,
       "scans": 24,
-      "net_apr": 590.47,
-      "net_at_hold": 0.53924,
+      "net_apr": 570.52,
+      "net_at_hold": 0.52103,
       "cost_bps": 25.78
     }
   ]
