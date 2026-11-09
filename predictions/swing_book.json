@@ -1,132 +1,132 @@
 {
-  "generated_at": "2026-11-05T14:35:13.156979+00:00",
+  "generated_at": "2026-11-09T14:35:13.062792+00:00",
   "strategy": "MultiFactorV3",
   "account": "PA37U0PIU9B9",
   "paper": true,
   "started": "2026-09-12",
   "starting_equity": 100000.0,
-  "equity": 98088.44,
-  "cash": 1897.92,
-  "return_pct": -0.0191,
+  "equity": 95197.35,
+  "cash": 2573.14,
+  "return_pct": -0.048,
   "positions": [
-    {
-      "ticker": "AMGN",
-      "qty": 17.3417,
-      "avg_entry": 446.06,
-      "price": 480.78,
-      "market_value": 8337.54,
-      "pnl": 602.09,
-      "return_pct": 0.0778,
-      "weight_pct": 0.085
-    },
     {
       "ticker": "DIS",
       "qty": 68.9304,
       "avg_entry": 112.77,
-      "price": 120.39,
-      "market_value": 8298.19,
-      "pnl": 525.05,
-      "return_pct": 0.0675,
-      "weight_pct": 0.0846
-    },
-    {
-      "ticker": "CMCSA",
-      "qty": 330.0696,
-      "avg_entry": 23.55,
-      "price": 25.04,
-      "market_value": 8264.94,
-      "pnl": 491.8,
-      "return_pct": 0.0633,
-      "weight_pct": 0.0843
-    },
-    {
-      "ticker": "T",
-      "qty": 363.7303,
-      "avg_entry": 21.37,
-      "price": 22.06,
-      "market_value": 8023.89,
-      "pnl": 250.75,
-      "return_pct": 0.0323,
-      "weight_pct": 0.0818
-    },
-    {
-      "ticker": "GILD",
-      "qty": 45.4125,
-      "avg_entry": 171.17,
-      "price": 174.5,
-      "market_value": 7924.26,
-      "pnl": 151.12,
-      "return_pct": 0.0194,
-      "weight_pct": 0.0808
-    },
-    {
-      "ticker": "DE",
-      "qty": 11.6336,
-      "avg_entry": 672.66,
-      "price": 685.65,
-      "market_value": 7976.56,
-      "pnl": 151.12,
-      "return_pct": 0.0193,
-      "weight_pct": 0.0813
+      "price": 118.39,
+      "market_value": 8160.67,
+      "pnl": 387.53,
+      "return_pct": 0.0498,
+      "weight_pct": 0.0857
     },
     {
       "ticker": "META",
       "qty": 12.6244,
       "avg_entry": 615.72,
-      "price": 627.5,
-      "market_value": 7921.86,
-      "pnl": 148.72,
-      "return_pct": 0.0191,
-      "weight_pct": 0.0808
+      "price": 637.24,
+      "market_value": 8044.76,
+      "pnl": 271.62,
+      "return_pct": 0.0349,
+      "weight_pct": 0.0845
     },
     {
-      "ticker": "PFE",
-      "qty": 254.857,
-      "avg_entry": 30.5,
-      "price": 31.05,
-      "market_value": 7914.59,
-      "pnl": 141.45,
-      "return_pct": 0.0182,
-      "weight_pct": 0.0807
+      "ticker": "AMGN",
+      "qty": 17.3417,
+      "avg_entry": 446.06,
+      "price": 459.63,
+      "market_value": 7970.76,
+      "pnl": 235.31,
+      "return_pct": 0.0304,
+      "weight_pct": 0.0837
+    },
+    {
+      "ticker": "MCD",
+      "qty": 28.1469,
+      "avg_entry": 278.8,
+      "price": 277.99,
+      "market_value": 7824.57,
+      "pnl": -22.75,
+      "return_pct": -0.0029,
+      "weight_pct": 0.0822
     },
     {
       "ticker": "LIN",
       "qty": 15.0532,
       "avg_entry": 519.3,
-      "price": 528.52,
-      "market_value": 7955.93,
-      "pnl": 138.86,
-      "return_pct": 0.0178,
+      "price": 514.58,
+      "market_value": 7746.09,
+      "pnl": -70.98,
+      "return_pct": -0.0091,
+      "weight_pct": 0.0814
+    },
+    {
+      "ticker": "PEP",
+      "qty": 54.7,
+      "avg_entry": 143.46,
+      "price": 141.11,
+      "market_value": 7718.71,
+      "pnl": -128.61,
+      "return_pct": -0.0164,
       "weight_pct": 0.0811
+    },
+    {
+      "ticker": "GILD",
+      "qty": 45.4125,
+      "avg_entry": 171.17,
+      "price": 166.84,
+      "market_value": 7576.63,
+      "pnl": -196.51,
+      "return_pct": -0.0253,
+      "weight_pct": 0.0796
+    },
+    {
+      "ticker": "IBM",
+      "qty": 30.8842,
+      "avg_entry": 254.09,
+      "price": 246.07,
+      "market_value": 7599.66,
+      "pnl": -247.66,
+      "return_pct": -0.0316,
+      "weight_pct": 0.0798
+    },
+    {
+      "ticker": "PFE",
+      "qty": 254.857,
+      "avg_entry": 30.5,
+      "price": 29.26,
+      "market_value": 7457.12,
+      "pnl": -316.02,
+      "return_pct": -0.0407,
+      "weight_pct": 0.0783
     },
     {
       "ticker": "ADI",
       "qty": 19.9009,
       "avg_entry": 397.4,
-      "price": 395.29,
-      "market_value": 7866.63,
-      "pnl": -42.08,
-      "return_pct": -0.0053,
-      "weight_pct": 0.0802
+      "price": 374.71,
+      "market_value": 7457.07,
+      "pnl": -451.64,
+      "return_pct": -0.0571,
+      "weight_pct": 0.0783
     },
     {
       "ticker": "ADBE",
       "qty": 31.5248,
       "avg_entry": 253.96,
-      "price": 248.79,
-      "market_value": 7843.06,
-      "pnl": -162.91,
-      "return_pct": -0.0204,
-      "weight_pct": 0.08
+      "price": 237.4,
+      "market_value": 7483.99,
+      "pnl": -521.98,
+      "return_pct": -0.0652,
+      "weight_pct": 0.0786
     },
     {
       "ticker": "COP",
-      "qty": 56.4973,
-      "avg_entry": 149.77,
-      "price": 138.84,
-      "market_value": 7844.36,
-      "pnl": -617.32,
-      "return_pct": -0.073,
+      "qty": 56.8295,
+      "avg_entry": 149.68,
+      "price": 134.01,
+      "market_value": 7616.0,
+      "pnl": -890.23,
+      "return_pct": -0.1047,
       "weight_pct": 0.08
     }
   ],
@@ -287,11 +287,19 @@
     {
       "date": "2026-11-05",
       "equity": 97680.34
+    },
+    {
+      "date": "2026-11-06",
+      "equity": 95260.12
+    },
+    {
+      "date": "2026-11-07",
+      "equity": 94736.92
     }
   ],
   "benchmark": "SPY",
-  "benchmark_return_pct": 0.0128,
-  "excess_return_pct": -0.0319,
+  "benchmark_return_pct": -0.0288,
+  "excess_return_pct": -0.0192,
   "ex_downtime": {
     "windows": [
       {
@@ -304,24 +312,24 @@
       }
     ],
     "sessions_excluded": 17,
-    "return_pct": -0.0498,
-    "benchmark_return_pct": 0.0221,
-    "excess_return_pct": -0.0719
+    "return_pct": -0.0778,
+    "benchmark_return_pct": -0.02,
+    "excess_return_pct": -0.0579
   },
-  "days_live": 30,
+  "days_live": 34,
   "verdict_due": false,
   "retire_after_days": 180,
   "backtest": {
-    "measured_at": "2026-11-01T22:00:40.110098+00:00",
+    "measured_at": "2026-11-08T22:00:29.318317+00:00",
     "window_start": "2019-01-01",
     "window_end": "2025-07-01",
     "universe": "etf",
     "universe_label": "12 broad and sector ETFs (survivorship-free)",
-    "strategy_return": 0.482865,
+    "strategy_return": 0.493939,
     "benchmark_return": 1.45555,
-    "strategy_sharpe": 0.463,
+    "strategy_sharpe": 0.471,
     "benchmark_sharpe": 0.801,
-    "strategy_max_drawdown": -0.316375,
+    "strategy_max_drawdown": -0.315896,
     "benchmark_max_drawdown": -0.357875,
     "walk_forward": {
       "windows": 17,
