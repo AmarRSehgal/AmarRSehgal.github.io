@@ -1,23 +1,10 @@
 {
-  "generated_at": "2026-11-09T11:00:10.704681+00:00",
+  "generated_at": "2026-11-09T12:00:10.578236+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
-    {
-      "base": "RUNE",
-      "type": "perp-perp",
-      "long_venue": "Crypto.com",
-      "short_venue": "KuCoin",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 102.48,
-      "net_at_hold": 0.09359,
-      "cost_bps": 33.73
-    },
     {
       "base": "CYBER",
       "type": "perp-perp",
@@ -27,8 +14,8 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 733.06,
-      "net_at_hold": 0.66946,
+      "net_apr": 698.66,
+      "net_at_hold": 0.63804,
       "cost_bps": 25.78
     },
     {
@@ -40,8 +27,8 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 205.27,
-      "net_at_hold": 0.18746,
+      "net_apr": 206.86,
+      "net_at_hold": 0.18891,
       "cost_bps": 23.24
     },
     {
@@ -58,17 +45,17 @@
       "cost_bps": 35.28
     },
     {
-      "base": "CTSI",
+      "base": "RUNE",
       "type": "perp-perp",
       "long_venue": "Crypto.com",
       "short_venue": "KuCoin",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 22,
+      "hits": 23,
       "scans": 24,
-      "net_apr": 98.1,
-      "net_at_hold": 0.08959,
-      "cost_bps": 36.17
+      "net_apr": 105.75,
+      "net_at_hold": 0.09658,
+      "cost_bps": 33.73
     },
     {
       "base": "AERO",
@@ -77,11 +64,11 @@
       "short_venue": "Lighter",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 22,
+      "hits": 23,
       "scans": 24,
-      "net_apr": 81.15,
-      "net_at_hold": 0.07411,
-      "cost_bps": 21.85
+      "net_apr": 96.09,
+      "net_at_hold": 0.08775,
+      "cost_bps": 21.84
     },
     {
       "base": "STORJ",
@@ -92,9 +79,22 @@
       "min_hold_h": 8,
       "hits": 21,
       "scans": 24,
-      "net_apr": 823.15,
-      "net_at_hold": 0.75174,
+      "net_apr": 822.74,
+      "net_at_hold": 0.75136,
       "cost_bps": 35.52
+    },
+    {
+      "base": "CTSI",
+      "type": "perp-perp",
+      "long_venue": "Crypto.com",
+      "short_venue": "KuCoin",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 21,
+      "scans": 24,
+      "net_apr": 97.89,
+      "net_at_hold": 0.08939,
+      "cost_bps": 36.17
     },
     {
       "base": "CELR",
@@ -105,9 +105,9 @@
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 235.98,
-      "net_at_hold": 0.21551,
-      "cost_bps": 36.47
+      "net_apr": 235.37,
+      "net_at_hold": 0.21495,
+      "cost_bps": 36.54
     }
   ]
 }
