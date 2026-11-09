@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T16:01:36.431250+00:00",
+  "generated_at": "2026-11-09T16:00:38.542768+00:00",
   "universe_pulled": "2026-09-11",
   "universe_size": 50,
   "screened": 43,
@@ -7,23 +7,23 @@
   "min_market_cap_m": 500.0,
   "ideas": [
     {
-      "ticker": "IRWD",
-      "name": "Ironwood Pharmaceuticals, Inc.",
-      "sector": "Healthcare",
-      "rank": 1,
-      "earnings_yield": 0.267685,
-      "return_on_capital": 5.365192,
-      "market_cap": 580818432.0,
-      "ebit_basis": "TTM"
-    },
-    {
       "ticker": "TDC",
       "name": "Teradata Corporation",
       "sector": "Technology",
-      "rank": 2,
-      "earnings_yield": 0.214615,
+      "rank": 1,
+      "earnings_yield": 0.23964,
       "return_on_capital": 4.8125,
-      "market_cap": 3220590080.0,
+      "market_cap": 2911546880.0,
+      "ebit_basis": "TTM"
+    },
+    {
+      "ticker": "ABUS",
+      "name": "Arbutus Biopharma Corporation",
+      "sector": "Healthcare",
+      "rank": 2,
+      "earnings_yield": 0.241479,
+      "return_on_capital": 1.730634,
+      "market_cap": 564821696.0,
       "ebit_basis": "TTM"
     },
     {
@@ -31,79 +31,79 @@
       "name": "Alphamin Resources Corp.",
       "sector": "Basic Materials",
       "rank": 3,
-      "earnings_yield": 0.394494,
+      "earnings_yield": 0.398294,
       "return_on_capital": 0.953121,
-      "market_cap": 1201364864.0,
-      "ebit_basis": "TTM"
-    },
-    {
-      "ticker": "ABUS",
-      "name": "Arbutus Biopharma Corporation",
-      "sector": "Healthcare",
-      "rank": 4,
-      "earnings_yield": 0.205837,
-      "return_on_capital": 1.730634,
-      "market_cap": 633029504.0,
+      "market_cap": 1171874816.0,
       "ebit_basis": "TTM"
     },
     {
       "ticker": "ANPMF",
       "name": "Andean Precious Metals Corp.",
       "sector": "Basic Materials",
-      "rank": 5,
-      "earnings_yield": 0.400422,
+      "rank": 4,
+      "earnings_yield": 0.352637,
       "return_on_capital": 0.673943,
-      "market_cap": 515570464.0,
-      "ebit_basis": "TTM"
-    },
-    {
-      "ticker": "VSNT",
-      "name": "Versant Media Group, Inc.",
-      "sector": "Communication Services",
-      "rank": 6,
-      "earnings_yield": 0.279619,
-      "return_on_capital": 0.752497,
-      "market_cap": 4503543808.0,
-      "ebit_basis": "TTM"
-    },
-    {
-      "ticker": "INVA",
-      "name": "Innoviva, Inc.",
-      "sector": "Healthcare",
-      "rank": 7,
-      "earnings_yield": 0.340506,
-      "return_on_capital": 0.633967,
-      "market_cap": 1512820608.0,
+      "market_cap": 570703680.0,
       "ebit_basis": "TTM"
     },
     {
       "ticker": "OTEX",
       "name": "Open Text Corporation",
       "sector": "Technology",
-      "rank": 8,
-      "earnings_yield": 0.106903,
-      "return_on_capital": 8.011845,
-      "market_cap": 6486365184.0,
+      "rank": 5,
+      "earnings_yield": 0.111226,
+      "return_on_capital": 8.006227,
+      "market_cap": 5988981760.0,
+      "ebit_basis": "TTM"
+    },
+    {
+      "ticker": "STRA",
+      "name": "Strategic Education, Inc.",
+      "sector": "Consumer Defensive",
+      "rank": 6,
+      "earnings_yield": 0.178011,
+      "return_on_capital": 0.758976,
+      "market_cap": 1113690880.0,
+      "ebit_basis": "annual"
+    },
+    {
+      "ticker": "PXED",
+      "name": "Phoenix Education Partners, Inc.",
+      "sector": "Consumer Defensive",
+      "rank": 7,
+      "earnings_yield": 0.269213,
+      "return_on_capital": 0.480543,
+      "market_cap": 713360768.0,
       "ebit_basis": "TTM"
     },
     {
       "ticker": "CCSI",
       "name": "Consensus Cloud Solutions, Inc.",
       "sector": "Technology",
-      "rank": 9,
-      "earnings_yield": 0.13803,
+      "rank": 8,
+      "earnings_yield": 0.130082,
       "return_on_capital": 0.915455,
-      "market_cap": 686818048.0,
+      "market_cap": 801687168.0,
       "ebit_basis": "TTM"
     },
     {
-      "ticker": "PXED",
-      "name": "Phoenix Education Partners, Inc.",
-      "sector": "Consumer Defensive",
+      "ticker": "ADBE",
+      "name": "Adobe Inc.",
+      "sector": "Technology",
+      "rank": 9,
+      "earnings_yield": 0.101198,
+      "return_on_capital": 4.441806,
+      "market_cap": 92160614400.0,
+      "ebit_basis": "TTM"
+    },
+    {
+      "ticker": "HRB",
+      "name": "H&R Block, Inc.",
+      "sector": "Consumer Cyclical",
       "rank": 10,
-      "earnings_yield": 0.172708,
-      "return_on_capital": 0.655046,
-      "market_cap": 866038208.0,
+      "earnings_yield": 0.12234,
+      "return_on_capital": 1.072622,
+      "market_cap": 6405774336.0,
       "ebit_basis": "TTM"
     }
   ],
@@ -115,12 +115,12 @@
         "buy_price": 38.3,
         "buy_date": "2026-04-15",
         "cost_basis": 200.0,
-        "days_held": 201,
+        "days_held": 208,
         "open": true,
-        "price": 66.48,
-        "pnl": 147.15,
-        "return_pct": 0.7358,
-        "market_value": 347.15
+        "price": 65.15,
+        "pnl": 140.21,
+        "return_pct": 0.701,
+        "market_value": 340.21
       },
       {
         "ticker": "HRB",
@@ -128,12 +128,12 @@
         "buy_price": 30.9,
         "buy_date": "2026-04-15",
         "cost_basis": 200.0,
-        "days_held": 201,
+        "days_held": 208,
         "open": true,
-        "price": 52.13,
-        "pnl": 137.44,
-        "return_pct": 0.6872,
-        "market_value": 337.44
+        "price": 52.29,
+        "pnl": 138.48,
+        "return_pct": 0.6924,
+        "market_value": 338.48
       },
       {
         "ticker": "HRMY",
@@ -141,12 +141,12 @@
         "buy_price": 29.22,
         "buy_date": "2026-04-15",
         "cost_basis": 200.0,
-        "days_held": 201,
+        "days_held": 208,
         "open": true,
-        "price": 38.23,
-        "pnl": 61.67,
-        "return_pct": 0.3084,
-        "market_value": 261.67
+        "price": 33.24,
+        "pnl": 27.52,
+        "return_pct": 0.1376,
+        "market_value": 227.51
       },
       {
         "ticker": "GIB",
@@ -154,12 +154,12 @@
         "buy_price": 74.07,
         "buy_date": "2026-04-15",
         "cost_basis": 200.0,
-        "days_held": 201,
+        "days_held": 208,
         "open": true,
-        "price": 81.72,
-        "pnl": 20.66,
-        "return_pct": 0.1033,
-        "market_value": 220.65
+        "price": 82.36,
+        "pnl": 22.38,
+        "return_pct": 0.1119,
+        "market_value": 222.38
       },
       {
         "ticker": "PXED",
@@ -167,24 +167,24 @@
         "buy_price": 28.25,
         "buy_date": "2026-04-15",
         "cost_basis": 200.0,
-        "days_held": 201,
+        "days_held": 208,
         "open": true,
-        "price": 24.02,
-        "pnl": -29.91,
-        "return_pct": -0.1496,
-        "market_value": 170.09
+        "price": 19.45,
+        "pnl": -62.3,
+        "return_pct": -0.3115,
+        "market_value": 137.7
       }
     ],
     "open_positions": 5,
     "closed_positions": 0,
     "since": "2026-04-15",
     "cost_basis": 999.99,
-    "market_value": 1337.0,
-    "unrealized_pnl": 337.01,
+    "market_value": 1266.28,
+    "unrealized_pnl": 266.29,
     "realized_pnl": 0.0,
-    "return_pct": 0.337,
+    "return_pct": 0.2663,
     "benchmark": "SPY",
-    "benchmark_return_pct": 0.093,
-    "excess_return_pct": 0.244
+    "benchmark_return_pct": 0.0789,
+    "excess_return_pct": 0.1874
   }
 }
