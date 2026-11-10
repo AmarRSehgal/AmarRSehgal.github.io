@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T17:00:11.713888+00:00",
+  "generated_at": "2026-11-10T18:00:06.429760+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -27,8 +27,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 197.99,
-      "net_at_hold": 0.18081,
+      "net_apr": 196.82,
+      "net_at_hold": 0.17974,
       "cost_bps": 21.28
     },
     {
@@ -45,30 +45,43 @@
       "cost_bps": 43.81
     },
     {
-      "base": "ERA",
-      "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "Crypto.com",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 22,
-      "scans": 24,
-      "net_apr": 203.97,
-      "net_at_hold": 0.09314,
-      "cost_bps": 29.27
-    },
-    {
       "base": "CHR",
       "type": "perp-perp",
       "long_venue": "Crypto.com",
       "short_venue": "KuCoin",
       "long_instrument": "perp",
       "min_hold_h": 8,
+      "hits": 22,
+      "scans": 24,
+      "net_apr": 320.99,
+      "net_at_hold": 0.29314,
+      "cost_bps": 38.99
+    },
+    {
+      "base": "ERA",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "Crypto.com",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
       "hits": 21,
       "scans": 24,
-      "net_apr": 321.02,
-      "net_at_hold": 0.29316,
-      "cost_bps": 38.99
+      "net_apr": 215.68,
+      "net_at_hold": 0.09849,
+      "cost_bps": 29.27
+    },
+    {
+      "base": "CELR",
+      "type": "perp-perp",
+      "long_venue": "Crypto.com",
+      "short_venue": "Bitget",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 21,
+      "scans": 24,
+      "net_apr": 165.74,
+      "net_at_hold": 0.15136,
+      "cost_bps": 52.68
     },
     {
       "base": "NATGAS",
@@ -84,19 +97,6 @@
       "cost_bps": 23.71
     },
     {
-      "base": "TIA",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Crypto.com",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 21,
-      "scans": 24,
-      "net_apr": 88.19,
-      "net_at_hold": 0.08053,
-      "cost_bps": 20.23
-    },
-    {
       "base": "STORJ",
       "type": "perp-perp",
       "long_venue": "Crypto.com",
@@ -105,8 +105,8 @@
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 531.83,
-      "net_at_hold": 0.48569,
+      "net_apr": 531.75,
+      "net_at_hold": 0.48562,
       "cost_bps": 35.54
     }
   ]
