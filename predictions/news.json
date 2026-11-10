@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-10T17:24:23.851721+00:00",
+  "generated_at": "2026-11-10T18:24:20.570056+00:00",
   "window_hours": 24,
-  "articles_in_window": 2572,
+  "articles_in_window": 2568,
   "collection_days": 58,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,22 +10,44 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 291,
+      "articles": 292,
       "sources": 41,
       "sentiment_direction": "mixed",
-      "surge": 1.12,
-      "sentiment_mean": -0.133,
-      "headline": "Trump puts his chips on Huang as China spy storm gathers force",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/us/trump-puts-his-chips-on-huang-as-china-spy-storm-gathers-force/articleshow/135717035.cms"
+      "surge": 1.13,
+      "sentiment_mean": -0.135,
+      "headline": "\u2018This is sabotage\u2019: Hegseth fires back over impeachment as Trump, Vance circle wagons",
+      "headline_source": "Sydney Morning Herald",
+      "headline_url": "https://www.smh.com.au/world/north-america/this-is-sabotage-hegseth-fires-back-over-impeachment-as-vance-comes-to-his-aid-20261111-p61d3f.html?ref=rss&utm_medium=rss&utm_source=rss_world"
     },
     {
       "term": "nvidia",
       "articles": 165,
       "sources": 40,
       "sentiment_direction": "mixed",
-      "surge": 3.57,
-      "sentiment_mean": -0.068,
+      "surge": 3.51,
+      "sentiment_mean": -0.063,
+      "headline": "Blender 5.3 Released With Nvidia DLSS 4.5 Ray Reconstruction, Vulkan Default",
+      "headline_source": "Slashdot",
+      "headline_url": "https://tech.slashdot.org/story/26/11/10/178254/blender-53-released-with-nvidia-dlss-45-ray-reconstruction-vulkan-default?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    },
+    {
+      "term": "security",
+      "articles": 105,
+      "sources": 36,
+      "sentiment_direction": "positive",
+      "surge": 2.21,
+      "sentiment_mean": 0.226,
+      "headline": "From Punchline To Power: The Rise Of Iran's Security Chief Mohsen Rezaei",
+      "headline_source": "Reddit r/geopolitics",
+      "headline_url": "https://www.reddit.com/r/geopolitics/comments/1xssj6u/from_punchline_to_power_the_rise_of_irans/"
+    },
+    {
+      "term": "chinese",
+      "articles": 118,
+      "sources": 35,
+      "sentiment_direction": "mixed",
+      "surge": 2.64,
+      "sentiment_mean": -0.05,
       "headline": "Nvidia CEO Jensen Huang\u2019s affair with alleged Chinese spy: a timeline",
       "headline_source": "TechCrunch",
       "headline_url": "https://techcrunch.com/2026/11/10/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
@@ -33,68 +55,46 @@
     {
       "term": "iran",
       "articles": 180,
-      "sources": 35,
+      "sources": 34,
       "sentiment_direction": "negative",
-      "surge": 2.08,
-      "sentiment_mean": -0.488,
-      "headline": "From Punchline To Power: The Rise Of Iran's Security Chief Mohsen Rezaei",
-      "headline_source": "Reddit r/geopolitics",
-      "headline_url": "https://www.reddit.com/r/geopolitics/comments/1xssj6u/from_punchline_to_power_the_rise_of_irans/"
-    },
-    {
-      "term": "huang",
-      "articles": 124,
-      "sources": 35,
-      "sentiment_direction": "mixed",
-      "surge": 4.12,
-      "sentiment_mean": -0.091,
-      "headline": "Trump puts his chips on Huang as China spy storm gathers force",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/us/trump-puts-his-chips-on-huang-as-china-spy-storm-gathers-force/articleshow/135717035.cms"
-    },
-    {
-      "term": "security",
-      "articles": 101,
-      "sources": 35,
-      "sentiment_direction": "positive",
-      "surge": 2.1,
-      "sentiment_mean": 0.216,
-      "headline": "From Punchline To Power: The Rise Of Iran's Security Chief Mohsen Rezaei",
-      "headline_source": "Reddit r/geopolitics",
-      "headline_url": "https://www.reddit.com/r/geopolitics/comments/1xssj6u/from_punchline_to_power_the_rise_of_irans/"
+      "surge": 2.06,
+      "sentiment_mean": -0.49,
+      "headline": "Iran backs nuclear treaty even as hardliners raise prospect of bomb",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/news/2026/11/10/iran-backs-nuclear-treaty-even-as-hardliners-raise-prospect-of-bomb?traffic_source=rss"
     },
     {
       "term": "president",
-      "articles": 153,
+      "articles": 154,
       "sources": 34,
       "sentiment_direction": "mixed",
-      "surge": 1.02,
-      "sentiment_mean": -0.078,
-      "headline": "Bucks President on Building Beyond Giannis",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/videos/2026-11-10/bucks-president-on-building-beyond-giannis-video"
+      "surge": 1.03,
+      "sentiment_mean": -0.081,
+      "headline": "Israeli president warns against repeat election in new Knesset session",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/news/2026/11/10/israeli-president-warns-against-repeat-election-in-new-knesset-session?traffic_source=rss"
     },
     {
-      "term": "chinese",
+      "term": "huang",
       "articles": 119,
       "sources": 34,
       "sentiment_direction": "mixed",
-      "surge": 2.7,
-      "sentiment_mean": -0.041,
-      "headline": "Nvidia CEO Jensen Huang\u2019s affair with alleged Chinese spy: a timeline",
-      "headline_source": "TechCrunch",
-      "headline_url": "https://techcrunch.com/2026/11/10/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
+      "surge": 3.77,
+      "sentiment_mean": -0.089,
+      "headline": "Jensen Huang\u2019s Apology May Be the Only Correct Use of AI",
+      "headline_source": "The Atlantic",
+      "headline_url": "https://www.theatlantic.com/newsletters/2026/11/jensen-huang-ai-apology-nvidia/689366/?utm_source=feed"
     },
     {
       "term": "house",
       "articles": 123,
-      "sources": 33,
+      "sources": 32,
       "sentiment_direction": "mixed",
       "surge": 0.93,
-      "sentiment_mean": -0.086,
-      "headline": "House finds \"decades-long failures\" as Epstein preyed on victims",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/news/jeffrey-epstein-house-oversight-committee-report/"
+      "sentiment_mean": -0.073,
+      "headline": "House Oversight Committee Releases Report on the Federal Government\u2019s Mishandling of Epstein and Maxwell Criminal Investigations - United States House Committee on Oversight and Government Reform",
+      "headline_source": "Reddit r/politics",
+      "headline_url": "https://www.reddit.com/r/politics/comments/1xssr70/house_oversight_committee_releases_report_on_the/"
     }
   ],
   "hours_since_fetch": 0.0
