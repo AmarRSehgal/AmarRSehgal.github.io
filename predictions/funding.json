@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T23:00:09.712316+00:00",
+  "generated_at": "2026-11-10T00:00:11.401085+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -16,33 +16,7 @@
       "scans": 24,
       "net_apr": 360.88,
       "net_at_hold": 0.32957,
-      "cost_bps": 21.26
-    },
-    {
-      "base": "AERO",
-      "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Lighter",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 22,
-      "scans": 24,
-      "net_apr": 97.34,
-      "net_at_hold": 0.08889,
-      "cost_bps": 21.06
-    },
-    {
-      "base": "STORJ",
-      "type": "perp-perp",
-      "long_venue": "Crypto.com",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 21,
-      "scans": 24,
-      "net_apr": 733.21,
-      "net_at_hold": 0.6696,
-      "cost_bps": 35.52
+      "cost_bps": 21.67
     },
     {
       "base": "TIA",
@@ -53,9 +27,35 @@
       "min_hold_h": 8,
       "hits": 21,
       "scans": 24,
-      "net_apr": 128.24,
-      "net_at_hold": 0.11711,
+      "net_apr": 113.87,
+      "net_at_hold": 0.10399,
       "cost_bps": 20.23
+    },
+    {
+      "base": "AERO",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "Lighter",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 21,
+      "scans": 24,
+      "net_apr": 98.59,
+      "net_at_hold": 0.09004,
+      "cost_bps": 20.3
+    },
+    {
+      "base": "STORJ",
+      "type": "perp-perp",
+      "long_venue": "Crypto.com",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 20,
+      "scans": 24,
+      "net_apr": 733.23,
+      "net_at_hold": 0.66962,
+      "cost_bps": 35.52
     },
     {
       "base": "CELR",
@@ -66,8 +66,8 @@
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 223.69,
-      "net_at_hold": 0.20428,
+      "net_apr": 224.08,
+      "net_at_hold": 0.20464,
       "cost_bps": 36.58
     },
     {
@@ -95,19 +95,6 @@
       "net_apr": 196.88,
       "net_at_hold": 0.1798,
       "cost_bps": 30.69
-    },
-    {
-      "base": "CYBER",
-      "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "Hyperliquid",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 18,
-      "scans": 24,
-      "net_apr": 180.16,
-      "net_at_hold": 0.16453,
-      "cost_bps": 25.81
     }
   ]
 }
