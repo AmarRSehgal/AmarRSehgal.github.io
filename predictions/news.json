@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-10T19:24:20.987460+00:00",
+  "generated_at": "2026-11-10T20:42:36.934946+00:00",
   "window_hours": 24,
-  "articles_in_window": 2532,
+  "articles_in_window": 2520,
   "collection_days": 58,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,21 +10,54 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 281,
+      "articles": 271,
       "sources": 41,
       "sentiment_direction": "mixed",
-      "surge": 1.09,
-      "sentiment_mean": -0.149,
-      "headline": "Trump's first Iran war escalation post-midterm losses seeks to choke off Tehran\u2019s trade",
+      "surge": 1.04,
+      "sentiment_mean": -0.137,
+      "headline": "Top Dem cries \u2018weaponization\u2019 as comments warning young people not to join Trump admin lands her in hot water",
       "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/politics/trumps-first-iran-war-escalation-post-midterm-losses-seeks-choke-off-tehrans-trade"
+      "headline_url": "https://www.foxnews.com/politics/top-dem-cries-weaponization-comments-warning-young-people-not-join-trump-admin-lands-hot-water"
     },
     {
       "term": "nvidia",
       "articles": 166,
-      "sources": 40,
+      "sources": 39,
       "sentiment_direction": "mixed",
-      "surge": 3.47,
+      "surge": 3.37,
+      "sentiment_mean": -0.063,
+      "headline": "Nvidia hires major New York law firm to investigate Jensen Huang affair",
+      "headline_source": "BBC World",
+      "headline_url": "https://www.bbc.co.uk/news/articles/ck1wvwwl3x0go?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "term": "huang",
+      "articles": 120,
+      "sources": 35,
+      "sentiment_direction": "mixed",
+      "surge": 3.61,
+      "sentiment_mean": -0.092,
+      "headline": "Nvidia hires major New York law firm to investigate Jensen Huang affair",
+      "headline_source": "BBC World",
+      "headline_url": "https://www.bbc.co.uk/news/articles/ck1wvwwl3x0go?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "term": "iran",
+      "articles": 165,
+      "sources": 34,
+      "sentiment_direction": "negative",
+      "surge": 1.83,
+      "sentiment_mean": -0.488,
+      "headline": "Rubio says no need for major combat operations against Iran",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/10/rubio-says-no-need-for-major-combat-operations-against-iran?traffic_source=rss"
+    },
+    {
+      "term": "chinese",
+      "articles": 119,
+      "sources": 34,
+      "sentiment_direction": "mixed",
+      "surge": 2.62,
       "sentiment_mean": -0.072,
       "headline": "Nvidia Hires Wachtell Lipton to Investigate C.E.O.\u2019s Affair With Chinese Executive",
       "headline_source": "NYT Business",
@@ -32,70 +65,37 @@
     },
     {
       "term": "security",
-      "articles": 104,
-      "sources": 37,
+      "articles": 99,
+      "sources": 34,
       "sentiment_direction": "positive",
-      "surge": 2.17,
-      "sentiment_mean": 0.211,
+      "surge": 2.05,
+      "sentiment_mean": 0.181,
       "headline": "There Are Likely More Spies at AI Companies, Says Security Executive Lisa Thiergart",
       "headline_source": "Reddit r/technology",
       "headline_url": "https://www.reddit.com/r/technology/comments/1xsuc18/there_are_likely_more_spies_at_ai_companies_says/"
     },
     {
       "term": "president",
-      "articles": 149,
-      "sources": 34,
-      "sentiment_direction": "mixed",
-      "surge": 0.99,
-      "sentiment_mean": -0.109,
-      "headline": "50 UK Indian diaspora groups urge President to probe anti-India protests in London",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/uk/50-indian-diaspora-groups-in-uk-write-to-indias-president-calling-for-probe-into-anti-india-demonstrations-in-london/articleshow/135718427.cms"
-    },
-    {
-      "term": "huang",
-      "articles": 119,
-      "sources": 34,
-      "sentiment_direction": "mixed",
-      "surge": 3.69,
-      "sentiment_mean": -0.109,
-      "headline": "The US is winning the AI race. Jensen Huang could have blown it",
-      "headline_source": "The Verge",
-      "headline_url": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy"
-    },
-    {
-      "term": "chinese",
-      "articles": 118,
-      "sources": 34,
-      "sentiment_direction": "mixed",
-      "surge": 2.62,
-      "sentiment_mean": -0.083,
-      "headline": "Nvidia Hires Wachtell Lipton to Investigate C.E.O.\u2019s Affair With Chinese Executive",
-      "headline_source": "NYT Business",
-      "headline_url": "https://www.nytimes.com/2026/11/10/business/nvidia-wachtell-lipton-jensen-huang.html"
-    },
-    {
-      "term": "iran",
-      "articles": 175,
+      "articles": 148,
       "sources": 33,
-      "sentiment_direction": "negative",
-      "surge": 1.98,
-      "sentiment_mean": -0.483,
-      "headline": "Oil shock from Iran war led to drop in carbon pollution, scientists say",
-      "headline_source": "PBS NewsHour",
-      "headline_url": "https://www.pbs.org/newshour/science/oil-shock-from-iran-war-led-to-drop-in-carbon-pollution-scientists-say"
+      "sentiment_direction": "mixed",
+      "surge": 0.98,
+      "sentiment_mean": -0.126,
+      "headline": "How Paraguay's banking crisis ousted a president and left millions broke \u2013 explainer",
+      "headline_source": "Guardian Business",
+      "headline_url": "https://www.theguardian.com/world/video/2026/nov/10/how-paraguays-banking-crisis-ousted-a-president-and-left-millions-broke-explainer"
     },
     {
       "term": "jensen",
-      "articles": 107,
-      "sources": 32,
+      "articles": 108,
+      "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 3.7,
-      "sentiment_mean": -0.09,
-      "headline": "The US is winning the AI race. Jensen Huang could have blown it",
-      "headline_source": "The Verge",
-      "headline_url": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy"
+      "surge": 3.61,
+      "sentiment_mean": -0.071,
+      "headline": "Nvidia hires major New York law firm to investigate Jensen Huang affair",
+      "headline_source": "BBC World",
+      "headline_url": "https://www.bbc.co.uk/news/articles/ck1wvwwl3x0go?at_medium=RSS&at_campaign=rss"
     }
   ],
-  "hours_since_fetch": 0.0
+  "hours_since_fetch": 0.07
 }
