@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T00:00:11.401085+00:00",
+  "generated_at": "2026-11-10T01:00:11.020824+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -19,19 +19,6 @@
       "cost_bps": 21.67
     },
     {
-      "base": "TIA",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Crypto.com",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 21,
-      "scans": 24,
-      "net_apr": 113.87,
-      "net_at_hold": 0.10399,
-      "cost_bps": 20.23
-    },
-    {
       "base": "AERO",
       "type": "perp-perp",
       "long_venue": "Bitget",
@@ -40,8 +27,8 @@
       "min_hold_h": 8,
       "hits": 21,
       "scans": 24,
-      "net_apr": 98.59,
-      "net_at_hold": 0.09004,
+      "net_apr": 92.86,
+      "net_at_hold": 0.0848,
       "cost_bps": 20.3
     },
     {
@@ -53,8 +40,8 @@
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 733.23,
-      "net_at_hold": 0.66962,
+      "net_apr": 733.1,
+      "net_at_hold": 0.6695,
       "cost_bps": 35.52
     },
     {
@@ -66,9 +53,22 @@
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 224.08,
-      "net_at_hold": 0.20464,
+      "net_apr": 224.18,
+      "net_at_hold": 0.20473,
       "cost_bps": 36.58
+    },
+    {
+      "base": "TIA",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Crypto.com",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 20,
+      "scans": 24,
+      "net_apr": 113.02,
+      "net_at_hold": 0.10321,
+      "cost_bps": 20.23
     },
     {
       "base": "SKR",
