@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T09:00:10.812066+00:00",
+  "generated_at": "2026-11-10T10:00:10.906014+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 284.72,
-      "net_at_hold": 0.26002,
-      "cost_bps": 36.64
+      "net_apr": 284.84,
+      "net_at_hold": 0.26013,
+      "cost_bps": 36.65
     },
     {
       "base": "SKR",
@@ -53,9 +53,35 @@
       "min_hold_h": 8,
       "hits": 21,
       "scans": 24,
-      "net_apr": 620.84,
-      "net_at_hold": 0.56698,
+      "net_apr": 620.81,
+      "net_at_hold": 0.56695,
       "cost_bps": 35.53
+    },
+    {
+      "base": "ERA",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "Crypto.com",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 20,
+      "scans": 24,
+      "net_apr": 185.62,
+      "net_at_hold": 0.08476,
+      "cost_bps": 28.61
+    },
+    {
+      "base": "NATGAS",
+      "type": "perp-perp",
+      "long_venue": "Aster",
+      "short_venue": "Lighter",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 20,
+      "scans": 24,
+      "net_apr": 118.96,
+      "net_at_hold": 0.10864,
+      "cost_bps": 23.78
     },
     {
       "base": "CELR",
@@ -68,33 +94,7 @@
       "scans": 24,
       "net_apr": 236.28,
       "net_at_hold": 0.21579,
-      "cost_bps": 43.56
-    },
-    {
-      "base": "ERA",
-      "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "Crypto.com",
-      "long_instrument": "perp",
-      "min_hold_h": 4,
-      "hits": 19,
-      "scans": 24,
-      "net_apr": 192.25,
-      "net_at_hold": 0.08779,
-      "cost_bps": 27.96
-    },
-    {
-      "base": "NATGAS",
-      "type": "perp-perp",
-      "long_venue": "Aster",
-      "short_venue": "Lighter",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 19,
-      "scans": 24,
-      "net_apr": 122.42,
-      "net_at_hold": 0.1118,
-      "cost_bps": 23.8
+      "cost_bps": 43.57
     },
     {
       "base": "NATGAS",
