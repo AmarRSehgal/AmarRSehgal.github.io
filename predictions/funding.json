@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T07:01:42.880370+00:00",
+  "generated_at": "2026-11-10T08:00:05.799448+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 301.33,
-      "net_at_hold": 0.27519,
-      "cost_bps": 21.28
+      "net_apr": 264.26,
+      "net_at_hold": 0.24133,
+      "cost_bps": 20.88
     },
     {
       "base": "CELR",
@@ -25,10 +25,10 @@
       "short_venue": "KuCoin",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 23,
+      "hits": 24,
       "scans": 24,
-      "net_apr": 236.26,
-      "net_at_hold": 0.21577,
+      "net_apr": 260.48,
+      "net_at_hold": 0.23788,
       "cost_bps": 36.64
     },
     {
@@ -40,8 +40,8 @@
       "min_hold_h": 8,
       "hits": 23,
       "scans": 24,
-      "net_apr": 102.88,
-      "net_at_hold": 0.09396,
+      "net_apr": 95.87,
+      "net_at_hold": 0.08756,
       "cost_bps": 20.23
     },
     {
@@ -53,9 +53,9 @@
       "min_hold_h": 8,
       "hits": 20,
       "scans": 24,
-      "net_apr": 627.06,
-      "net_at_hold": 0.57266,
-      "cost_bps": 35.53
+      "net_apr": 621.01,
+      "net_at_hold": 0.56713,
+      "cost_bps": 35.52
     },
     {
       "base": "CELR",
@@ -64,24 +64,37 @@
       "short_venue": "Gate",
       "long_instrument": "perp",
       "min_hold_h": 8,
-      "hits": 18,
+      "hits": 19,
       "scans": 24,
-      "net_apr": 208.97,
-      "net_at_hold": 0.19084,
-      "cost_bps": 43.43
+      "net_apr": 209.02,
+      "net_at_hold": 0.19088,
+      "cost_bps": 43.52
     },
     {
-      "base": "AERO",
+      "base": "ERA",
       "type": "perp-perp",
-      "long_venue": "Bitget",
+      "long_venue": "Gate",
+      "short_venue": "Crypto.com",
+      "long_instrument": "perp",
+      "min_hold_h": 4,
+      "hits": 18,
+      "scans": 24,
+      "net_apr": 203.97,
+      "net_at_hold": 0.09314,
+      "cost_bps": 27.96
+    },
+    {
+      "base": "NATGAS",
+      "type": "perp-perp",
+      "long_venue": "Aster",
       "short_venue": "Lighter",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 18,
       "scans": 24,
-      "net_apr": 59.34,
-      "net_at_hold": 0.05419,
-      "cost_bps": 20.29
+      "net_apr": 137.87,
+      "net_at_hold": 0.1259,
+      "cost_bps": 23.81
     }
   ]
 }
