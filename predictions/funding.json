@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T01:00:10.469659+00:00",
+  "generated_at": "2026-11-11T02:00:12.854267+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 348.6,
-      "net_at_hold": 0.31836,
-      "cost_bps": 36.7
+      "net_apr": 348.65,
+      "net_at_hold": 0.3184,
+      "cost_bps": 36.68
     },
     {
       "base": "CHR",
@@ -40,9 +40,22 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 163.19,
-      "net_at_hold": 0.14903,
+      "net_apr": 151.3,
+      "net_at_hold": 0.13817,
       "cost_bps": 20.89
+    },
+    {
+      "base": "ESPORTS",
+      "type": "perp-perp",
+      "long_venue": "KuCoin",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 23,
+      "scans": 24,
+      "net_apr": 395.85,
+      "net_at_hold": 0.36151,
+      "cost_bps": 41.22
     },
     {
       "base": "CELR",
@@ -71,43 +84,30 @@
       "cost_bps": 52.66
     },
     {
-      "base": "ESPORTS",
+      "base": "LDO",
       "type": "perp-perp",
-      "long_venue": "KuCoin",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 22,
-      "scans": 24,
-      "net_apr": 426.99,
-      "net_at_hold": 0.38994,
-      "cost_bps": 41.27
-    },
-    {
-      "base": "STORJ",
-      "type": "perp-perp",
-      "long_venue": "Crypto.com",
-      "short_venue": "Aster",
+      "long_venue": "Coinbase",
+      "short_venue": "Lighter",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 21,
       "scans": 24,
-      "net_apr": 531.75,
-      "net_at_hold": 0.48562,
-      "cost_bps": 35.54
+      "net_apr": 847.09,
+      "net_at_hold": 0.7736,
+      "cost_bps": 26.0
     },
     {
-      "base": "CHR",
+      "base": "CHIP",
       "type": "perp-perp",
-      "long_venue": "Crypto.com",
-      "short_venue": "Bitget",
+      "long_venue": "Lighter",
+      "short_venue": "Coinbase",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 21,
       "scans": 24,
-      "net_apr": 159.03,
-      "net_at_hold": 0.14523,
-      "cost_bps": 53.21
+      "net_apr": 837.46,
+      "net_at_hold": 0.7648,
+      "cost_bps": 26.0
     }
   ]
 }
