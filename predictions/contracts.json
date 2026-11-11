@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-10T16:00:20.226199+00:00",
-  "snapshot_date": "2026-11-10",
-  "snapshots": 71,
-  "observing_snapshots": 52,
+  "generated_at": "2026-11-11T16:00:17.442931+00:00",
+  "snapshot_date": "2026-11-11",
+  "snapshots": 72,
+  "observing_snapshots": 53,
   "days_since_new_data": 0,
-  "notices_tracked": 107666,
+  "notices_tracked": 108443,
   "lanes": [
     {
       "office": "FCC COLEMAN",
@@ -24,6 +24,25 @@
         "FL"
       ],
       "link": "https://sam.gov/opp/89f5d01ea7cd4ee3ad8146c8755040c3/view"
+    },
+    {
+      "office": "DLA AVIATION AT HUNTSVILLE, AL",
+      "agency": "DEPT OF DEFENSE",
+      "group": "Containers/packaging",
+      "lane": "shipping storag",
+      "evidence": "OBSERVED",
+      "solicitations": 3,
+      "cadence": "monthly",
+      "cadence_days": 28,
+      "cadence_source": "dates",
+      "regularity": 0.23,
+      "span_days": 57,
+      "next_expected": "2026-12-08",
+      "open_deadline": "2026-11-26",
+      "states": [
+        "OK"
+      ],
+      "link": "https://sam.gov/opp/3b2d38d9b72b4ba8a5e711f7a01d0408/view"
     },
     {
       "office": "W6QM MICC-FT DRUM",
@@ -62,6 +81,44 @@
       "link": "https://sam.gov/opp/223505d083984427886c6f1eb170406e/view"
     },
     {
+      "office": "FCI BENNETTSVILLE",
+      "agency": "JUSTICE, DEPARTMENT OF",
+      "group": "Subsistence/FOOD",
+      "lane": "bread requirement",
+      "evidence": "OBSERVED",
+      "solicitations": 2,
+      "cadence": "quarterly",
+      "cadence_days": 86,
+      "cadence_source": "dates",
+      "regularity": null,
+      "span_days": 86,
+      "next_expected": "2027-01-30",
+      "open_deadline": "2026-11-20",
+      "states": [
+        "SC"
+      ],
+      "link": "https://sam.gov/opp/6fa7f770dbad42829ab207c30939e9f0/view"
+    },
+    {
+      "office": "FCI BENNETTSVILLE",
+      "agency": "JUSTICE, DEPARTMENT OF",
+      "group": "Subsistence/FOOD",
+      "lane": "subsistence requirement",
+      "evidence": "OBSERVED",
+      "solicitations": 2,
+      "cadence": "quarterly",
+      "cadence_days": 86,
+      "cadence_source": "dates",
+      "regularity": null,
+      "span_days": 86,
+      "next_expected": "2027-01-30",
+      "open_deadline": "2026-11-20",
+      "states": [
+        "SC"
+      ],
+      "link": "https://sam.gov/opp/22973dd2c3ab47239b907ee72a90340b/view"
+    },
+    {
       "office": "USMCFP SPRINGFIELD",
       "agency": "JUSTICE, DEPARTMENT OF",
       "group": "Subsistence/FOOD",
@@ -81,134 +138,79 @@
       "link": "https://sam.gov/opp/d2198ef802f9462aa700ccce8c65c759/view"
     },
     {
-      "office": "FCI FAIRTON",
+      "office": "FPC MORGANTOWN",
       "agency": "JUSTICE, DEPARTMENT OF",
       "group": "Subsistence/FOOD",
-      "lane": "fci fairton subsistence",
+      "lane": "food",
       "evidence": "OBSERVED",
       "solicitations": 2,
       "cadence": "quarterly",
-      "cadence_days": 79,
+      "cadence_days": 82,
       "cadence_source": "dates",
       "regularity": null,
-      "span_days": 79,
-      "next_expected": "2027-01-22",
-      "open_deadline": "2026-11-19",
+      "span_days": 82,
+      "next_expected": "2027-01-30",
+      "open_deadline": "2026-11-30",
       "states": [
-        "NJ"
+        "WV"
       ],
-      "link": "https://sam.gov/opp/6f16eb56cfdd4669b70b668fdbec37a5/view"
-    },
-    {
-      "office": "DLA ENERGY",
-      "agency": "DEPT OF DEFENSE",
-      "group": "Fuels/lubricants",
-      "lane": "department state erbil iraq",
-      "evidence": "OBSERVED",
-      "solicitations": 2,
-      "cadence": "bimonthly",
-      "cadence_days": 71,
-      "cadence_source": "dates",
-      "regularity": null,
-      "span_days": 71,
-      "next_expected": "2027-01-14",
-      "open_deadline": "2026-11-18",
-      "states": [],
-      "link": "https://sam.gov/opp/eaedcf23cbd340a9ad02e7f2460ebbaa/view"
-    },
-    {
-      "office": "U.S. EMBASSY MANILA",
-      "agency": "STATE, DEPARTMENT OF",
-      "group": "Fuels/lubricants",
-      "lane": "supply delivery fuel",
-      "evidence": "OBSERVED",
-      "solicitations": 2,
-      "cadence": "monthly",
-      "cadence_days": 42,
-      "cadence_source": "dates",
-      "regularity": null,
-      "span_days": 42,
-      "next_expected": "2026-12-03",
-      "open_deadline": "2026-11-23",
-      "states": [
-        "PH-00"
-      ],
-      "link": "https://sam.gov/opp/3b8dee4690f349a397a6952889f490f9/view"
-    },
-    {
-      "office": "DLA AVIATION AT HUNTSVILLE, AL",
-      "agency": "DEPT OF DEFENSE",
-      "group": "Containers/packaging",
-      "lane": "shipping storag",
-      "evidence": "OBSERVED",
-      "solicitations": 2,
-      "cadence": "monthly",
-      "cadence_days": 22,
-      "cadence_source": "dates",
-      "regularity": null,
-      "span_days": 22,
-      "next_expected": "2026-10-28",
-      "open_deadline": "2026-12-07",
-      "states": [
-        "OK"
-      ],
-      "link": "https://sam.gov/opp/3b2d38d9b72b4ba8a5e711f7a01d0408/view"
+      "link": "https://sam.gov/opp/5fb0565df671480e9c1f579db5dbbcc1/view"
     }
   ],
   "open": [
     {
-      "title": "8915--Prescott Fresh Produce 27",
-      "office": "262-NETWORK CONTRACT OFFICE 22 (36C262)",
-      "group": "Subsistence/FOOD",
-      "state": "AZ",
-      "deadline": "2026-11-10",
-      "access": "small-biz",
-      "link": "https://sam.gov/opp/bb9192b0c03c4072be1cde58003ea9cf/view"
-    },
-    {
-      "title": "Advanced Technology Anti-Gravity Suit (ATAGS) Material Obsolescence Effort - RFI",
-      "office": "FA8533  AFLCMC ROKB",
-      "group": "Clothing/textiles",
-      "state": "CA",
-      "deadline": "2026-11-10",
-      "access": "OPEN",
-      "link": "https://sam.gov/opp/f1c66180affd4ee8b356c932b1118618/view"
-    },
-    {
-      "title": "Canned Fruit for use in Domestic Food Assistance Programs",
-      "office": "USDA  AMS  3J14",
-      "group": "Subsistence/FOOD",
-      "state": "",
-      "deadline": "2026-11-10",
-      "access": "OPEN",
-      "link": "https://sam.gov/opp/48c986ce52b34b7f9ccd9880ec003d34/view"
-    },
-    {
-      "title": "Propane for Jeehdeeza Elementary School",
-      "office": "INDIAN EDUCATION ACQUISITION OFFICE",
+      "title": "AK-BETTLES ADMINISTRATIVE SITE OPTION YE",
+      "office": "FWS CONTRACTING ACTIVITY",
       "group": "Fuels/lubricants",
       "state": "",
-      "deadline": "2026-11-10",
+      "deadline": "2026-11-11",
       "access": "small-biz",
-      "link": "https://sam.gov/opp/341baa9eadae42c187d1c2950e031980/view"
+      "link": "https://sam.gov/opp/012f552c031a4ac18ca26cb5272db3f8/view"
     },
     {
-      "title": "SHELL EGGS for use in Domestic Food Assistance Programs",
-      "office": "USDA  AMS  3J14",
-      "group": "Subsistence/FOOD",
-      "state": "",
-      "deadline": "2026-11-10",
-      "access": "OPEN",
-      "link": "https://sam.gov/opp/5cbeab5ea72f4dd29017329fa226ae3a/view"
+      "title": "Cow Cake - Miles City MT",
+      "office": "USDA ARS AFM APD",
+      "group": "Agriculture supplies",
+      "state": "MT",
+      "deadline": "2026-11-11",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/ed27221bfca245569e561984ca73c28e/view"
     },
     {
-      "title": "Zippers",
+      "title": "Display Cases",
       "office": "W6QM MICC-FT DRUM",
-      "group": "Textiles/leather",
+      "group": "Furniture",
       "state": "",
-      "deadline": "2026-11-10",
+      "deadline": "2026-11-11",
       "access": "small-biz",
-      "link": "https://sam.gov/opp/d9590b882dfb4764ae5ddd6c242c49a7/view"
+      "link": "https://sam.gov/opp/969f9b323a9047b2856a03063e9feae5/view"
+    },
+    {
+      "title": "Pressure Seal V-Fold Mailer",
+      "office": "DEPT OF COMMERCE CENSUS",
+      "group": "Office supplies",
+      "state": "IN",
+      "deadline": "2026-11-11",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/308a70d9a2e048f0baca622d88931a64/view"
+    },
+    {
+      "title": "USP McCreary FY27 2nd QTR Halal, Certification Required",
+      "office": "USP MCCREARY",
+      "group": "Subsistence/FOOD",
+      "state": "KY",
+      "deadline": "2026-11-11",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/0fa1702b1efd49ba97e7d5b117e11013/view"
+    },
+    {
+      "title": "USP McCreary FY27 2nd QTR Kosher, Certification Required",
+      "office": "USP MCCREARY",
+      "group": "Subsistence/FOOD",
+      "state": "KY",
+      "deadline": "2026-11-11",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/3e583303bd974ed8a5272697609003f1/view"
     }
   ]
 }
