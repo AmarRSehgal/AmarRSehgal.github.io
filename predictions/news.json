@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-11T07:24:17.320234+00:00",
+  "generated_at": "2026-11-11T08:24:20.266367+00:00",
   "window_hours": 24,
-  "articles_in_window": 2544,
+  "articles_in_window": 2552,
   "collection_days": 59,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,36 +10,25 @@
   "topics": [
     {
       "term": "nvidia",
-      "articles": 125,
-      "sources": 39,
+      "articles": 126,
+      "sources": 38,
       "sentiment_direction": "mixed",
-      "surge": 1.97,
-      "sentiment_mean": -0.078,
-      "headline": "China PLA-linked university bought Nvidia H200 chips despite U.S. curbs - Reuters",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/china-plalinked-university-bought-nvidia-h200-chips-despite-us-curbs--reuters-5017739"
+      "surge": 1.96,
+      "sentiment_mean": -0.048,
+      "headline": "Nvidia\u2019s value tumbles by $430bn since spy allegations, as major US law firm hired to investigate claims \u2013 business live",
+      "headline_source": "Guardian Business",
+      "headline_url": "https://www.theguardian.com/business/live/2026/nov/11/nvidia-spy-allegations-us-law-firm-hired-investigation-stock-markets-pound-dollar-ftse-nasdaq-latest-news-updates"
     },
     {
       "term": "trump",
-      "articles": 187,
+      "articles": 182,
       "sources": 35,
       "sentiment_direction": "negative",
-      "surge": 0.73,
-      "sentiment_mean": -0.242,
+      "surge": 0.72,
+      "sentiment_mean": -0.223,
       "headline": "For Trump, Musk and Farage, the message is the same: voters don\u2019t want to be hijacked by billionaires | Rafael Behr",
       "headline_source": "Guardian Business",
       "headline_url": "https://www.theguardian.com/commentisfree/2026/nov/11/donald-trump-elon-musk-nigel-farage-voters-billionaires-midterms"
-    },
-    {
-      "term": "huang",
-      "articles": 86,
-      "sources": 33,
-      "sentiment_direction": "negative",
-      "surge": 1.96,
-      "sentiment_mean": -0.152,
-      "headline": "How Nvidia CEO Jensen Huang's extramarital affair could cause collateral damage in Washington - AP News",
-      "headline_source": "AP News",
-      "headline_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPOHhUdHFXb3pRd05pMHh1LWcxVldiZEQ4ZWhnaDdPMnFuTk9DUU9iWENpZ2ZaUUZ1cnZNNDU1cDJtNTRVeG5wMVpDdFlmQU9SRWJnYmhWZzVMQjlvdi12c1Y5NlRDZWZhVFF3MUFpaGlpOWtzbVA5ZEx0NV82T3Uxeng4bzlEX3F4bTllU25GVDdkWGZGNjhUaXZCRzdVam5ZUTZVYVhFQlY?oc=5"
     },
     {
       "term": "data",
@@ -47,54 +36,65 @@
       "sources": 32,
       "sentiment_direction": "mixed",
       "surge": 1.06,
-      "sentiment_mean": 0.117,
+      "sentiment_mean": 0.126,
       "headline": "India: CPCB addresses stark Delhi pollution data gap on Diwali night",
       "headline_source": "DW News",
       "headline_url": "https://www.dw.com/en/india-cpcb-addresses-stark-delhi-pollution-data-gap-on-diwali-night/live-79914190?maca=en-rss-en-all-1573-rdf"
     },
     {
-      "term": "jensen",
-      "articles": 79,
+      "term": "huang",
+      "articles": 83,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 2.0,
-      "sentiment_mean": -0.124,
+      "surge": 1.86,
+      "sentiment_mean": -0.122,
+      "headline": "Advantage China? How Nvidia CEO's affair with Chinese spy Alice Huang could impact US",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/world/us/advantage-china-how-nvidia-ceos-affair-with-chinese-spy-alice-huang-could-impact-us/articleshow/135728760.cms"
+    },
+    {
+      "term": "president",
+      "articles": 118,
+      "sources": 31,
+      "sentiment_direction": "mixed",
+      "surge": 0.8,
+      "sentiment_mean": -0.147,
+      "headline": "Host Hotels & Resorts president and CEO sells $16.7 million in shares",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/insider-trading-news/host-hotels--resorts-president-and-ceo-sells-167-million-in-shares-93CH-5017975"
+    },
+    {
+      "term": "jensen",
+      "articles": 77,
+      "sources": 31,
+      "sentiment_direction": "mixed",
+      "surge": 1.93,
+      "sentiment_mean": -0.092,
       "headline": "How Nvidia CEO Jensen Huang's extramarital affair could cause collateral damage in Washington - AP News",
       "headline_source": "AP News",
       "headline_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPOHhUdHFXb3pRd05pMHh1LWcxVldiZEQ4ZWhnaDdPMnFuTk9DUU9iWENpZ2ZaUUZ1cnZNNDU1cDJtNTRVeG5wMVpDdFlmQU9SRWJnYmhWZzVMQjlvdi12c1Y5NlRDZWZhVFF3MUFpaGlpOWtzbVA5ZEx0NV82T3Uxeng4bzlEX3F4bTllU25GVDdkWGZGNjhUaXZCRzdVam5ZUTZVYVhFQlY?oc=5"
     },
     {
-      "term": "president",
-      "articles": 119,
-      "sources": 31,
-      "sentiment_direction": "negative",
-      "surge": 0.81,
-      "sentiment_mean": -0.165,
-      "headline": "Ajay Amlani, Aware president & CEO, buys $4,000 in stock.",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/insider-trading-news/ajay-amlani-aware-president--ceo-buys-4000-in-stock-93CH-5017729"
-    },
-    {
-      "term": "security",
-      "articles": 78,
-      "sources": 31,
-      "sentiment_direction": "positive",
-      "surge": 1.46,
-      "sentiment_mean": 0.175,
-      "headline": "U.S. calls for new Europe security at Russia-Ukraine talks",
-      "headline_source": "Japan Times",
-      "headline_url": "https://www.japantimes.co.jp/news/2026/11/11/world/politics/us-europe-russia-ukraine-talks/"
-    },
-    {
       "term": "iran",
-      "articles": 135,
+      "articles": 132,
       "sources": 30,
       "sentiment_direction": "negative",
-      "surge": 1.37,
-      "sentiment_mean": -0.518,
-      "headline": "No strikes, no peace deal: How Trump plans to keep Iran under pressure",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/us/no-strikes-no-peace-deal-how-trump-plans-to-keep-iran-under-pressure/articleshow/135727902.cms"
+      "surge": 1.33,
+      "sentiment_mean": -0.511,
+      "headline": "Iran producing 50 missiles per month despite crippled industry",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/news/2026/11/11/world/iran-50-missiles-month-industry/"
+    },
+    {
+      "term": "company",
+      "articles": 82,
+      "sources": 30,
+      "sentiment_direction": "positive",
+      "surge": 1.22,
+      "sentiment_mean": 0.23,
+      "headline": "Neptune Insurance CEO Trevor Burgess sells $122,450 in company stock",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/insider-trading-news/neptune-insurance-ceo-trevor-burgess-sells-122450-in-company-stock-93CH-5017691"
     }
   ],
   "hours_since_fetch": 0.0
