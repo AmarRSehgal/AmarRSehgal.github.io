@@ -1,88 +1,138 @@
 {
-  "generated_at": "2026-11-10T17:00:09Z",
-  "date": "2026-11-10",
+  "generated_at": "2026-11-11T17:00:09Z",
+  "date": "2026-11-11",
   "games": [
     {
-      "away_team": "MIL",
+      "away_team": "WSH",
+      "home_team": "IND",
+      "away_team_full": "Washington Wizards",
+      "home_team_full": "Indiana Pacers",
+      "tipoff": "2026-11-12T00:00Z",
+      "pick": "IND",
+      "pred_spread": -3.3,
+      "ml_win_prob": 0.649,
+      "confidence": 0.649,
+      "pred_total": 229.6,
+      "bet": {
+        "status": "unpriced"
+      }
+    },
+    {
+      "away_team": "CLE",
       "home_team": "NY",
-      "away_team_full": "Milwaukee Bucks",
+      "away_team_full": "Cleveland Cavaliers",
       "home_team_full": "New York Knicks",
-      "tipoff": "2026-11-11T00:30Z",
+      "tipoff": "2026-11-12T00:00Z",
       "pick": "NY",
-      "pred_spread": -10.8,
-      "ml_win_prob": 0.892,
-      "confidence": 0.892,
-      "pred_total": 219.0,
+      "pred_spread": -4.1,
+      "ml_win_prob": 0.601,
+      "confidence": 0.601,
+      "pred_total": 218.1,
       "bet": {
         "status": "unpriced"
       }
     },
     {
       "away_team": "BOS",
-      "home_team": "PHI",
+      "home_team": "TOR",
       "away_team_full": "Boston Celtics",
-      "home_team_full": "Philadelphia 76ers",
-      "tipoff": "2026-11-11T01:00Z",
+      "home_team_full": "Toronto Raptors",
+      "tipoff": "2026-11-12T00:00Z",
       "pick": "BOS",
-      "pred_spread": 0.9,
-      "ml_win_prob": 0.425,
-      "confidence": 0.575,
-      "pred_total": 217.9,
-      "bet": {
-        "status": "bet",
-        "team": "BOS",
-        "stake": 100.0,
-        "selection": "Boston Celtics",
-        "price": 1.92,
-        "book": "DraftKings",
-        "quoted_at": "2026-11-09T19:30:07Z",
-        "model_prob": 0.575,
-        "implied_prob": 0.5208,
-        "edge": 0.0542,
-        "ev_per_dollar": 0.104
-      }
-    },
-    {
-      "away_team": "LAC",
-      "home_team": "PHX",
-      "away_team_full": "LA Clippers",
-      "home_team_full": "Phoenix Suns",
-      "tipoff": "2026-11-11T02:00Z",
-      "pick": "PHX",
-      "pred_spread": -0.8,
-      "ml_win_prob": 0.526,
-      "confidence": 0.526,
-      "pred_total": 222.9,
+      "pred_spread": 2.0,
+      "ml_win_prob": 0.377,
+      "confidence": 0.623,
+      "pred_total": 225.3,
       "bet": {
         "status": "unpriced"
       }
     },
     {
-      "away_team": "MIA",
-      "home_team": "UTAH",
-      "away_team_full": "Miami Heat",
-      "home_team_full": "Utah Jazz",
-      "tipoff": "2026-11-11T02:00Z",
-      "pick": "MIA",
-      "pred_spread": 12.4,
-      "ml_win_prob": 0.166,
-      "confidence": 0.834,
-      "pred_total": 245.8,
+      "away_team": "SA",
+      "home_team": "CHI",
+      "away_team_full": "San Antonio Spurs",
+      "home_team_full": "Chicago Bulls",
+      "tipoff": "2026-11-12T01:00Z",
+      "pick": "SA",
+      "pred_spread": 15.9,
+      "ml_win_prob": 0.082,
+      "confidence": 0.918,
+      "pred_total": 238.7,
+      "bet": {
+        "status": "unpriced"
+      }
+    },
+    {
+      "away_team": "DEN",
+      "home_team": "MEM",
+      "away_team_full": "Denver Nuggets",
+      "home_team_full": "Memphis Grizzlies",
+      "tipoff": "2026-11-12T01:00Z",
+      "pick": "DEN",
+      "pred_spread": -0.8,
+      "ml_win_prob": 0.476,
+      "confidence": 0.524,
+      "pred_total": 235.1,
+      "bet": {
+        "status": "unpriced"
+      }
+    },
+    {
+      "away_team": "LAL",
+      "home_team": "MIL",
+      "away_team_full": "Los Angeles Lakers",
+      "home_team_full": "Milwaukee Bucks",
+      "tipoff": "2026-11-12T01:00Z",
+      "pick": "LAL",
+      "pred_spread": 15.0,
+      "ml_win_prob": 0.109,
+      "confidence": 0.891,
+      "pred_total": 231.1,
+      "bet": {
+        "status": "unpriced"
+      }
+    },
+    {
+      "away_team": "BKN",
+      "home_team": "NO",
+      "away_team_full": "Brooklyn Nets",
+      "home_team_full": "New Orleans Pelicans",
+      "tipoff": "2026-11-12T01:00Z",
+      "pick": "BKN",
+      "pred_spread": -2.7,
+      "ml_win_prob": 0.496,
+      "confidence": 0.504,
+      "pred_total": 233.2,
       "bet": {
         "status": "unpriced"
       }
     },
     {
       "away_team": "ORL",
-      "home_team": "SAC",
+      "home_team": "UTAH",
       "away_team_full": "Orlando Magic",
-      "home_team_full": "Sacramento Kings",
-      "tipoff": "2026-11-11T03:00Z",
+      "home_team_full": "Utah Jazz",
+      "tipoff": "2026-11-12T02:00Z",
       "pick": "ORL",
-      "pred_spread": 4.3,
-      "ml_win_prob": 0.307,
-      "confidence": 0.693,
-      "pred_total": 223.7,
+      "pred_spread": 6.8,
+      "ml_win_prob": 0.219,
+      "confidence": 0.781,
+      "pred_total": 227.3,
+      "bet": {
+        "status": "unpriced"
+      }
+    },
+    {
+      "away_team": "GS",
+      "home_team": "HOU",
+      "away_team_full": "Golden State Warriors",
+      "home_team_full": "Houston Rockets",
+      "tipoff": "2026-11-12T02:30Z",
+      "pick": "HOU",
+      "pred_spread": -0.2,
+      "ml_win_prob": 0.608,
+      "confidence": 0.608,
+      "pred_total": 216.5,
       "bet": {
         "status": "unpriced"
       }
@@ -92,14 +142,24 @@
       "home_team": "POR",
       "away_team_full": "Oklahoma City Thunder",
       "home_team_full": "Portland Trail Blazers",
-      "tipoff": "2026-11-11T04:00Z",
-      "pick": "OKC",
-      "pred_spread": 1.2,
-      "ml_win_prob": 0.488,
-      "confidence": 0.512,
-      "pred_total": 221.6,
+      "tipoff": "2026-11-12T03:00Z",
+      "pick": "POR",
+      "pred_spread": -0.2,
+      "ml_win_prob": 0.549,
+      "confidence": 0.549,
+      "pred_total": 225.9,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "POR",
+        "stake": 100.0,
+        "selection": "Portland Trail Blazers",
+        "price": 2.18,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-10T19:30:07Z",
+        "model_prob": 0.549,
+        "implied_prob": 0.4587,
+        "edge": 0.0903,
+        "ev_per_dollar": 0.1968
       }
     }
   ],
