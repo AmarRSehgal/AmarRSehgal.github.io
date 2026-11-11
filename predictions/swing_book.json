@@ -1,133 +1,133 @@
 {
-  "generated_at": "2026-11-10T14:35:10.773628+00:00",
+  "generated_at": "2026-11-11T14:35:10.594195+00:00",
   "strategy": "MultiFactorV3",
   "account": "PA37U0PIU9B9",
   "paper": true,
   "started": "2026-09-12",
   "starting_equity": 100000.0,
-  "equity": 95075.15,
-  "cash": 2928.1,
-  "return_pct": -0.0492,
+  "equity": 94892.91,
+  "cash": 2754.43,
+  "return_pct": -0.0511,
   "positions": [
     {
       "ticker": "HON",
       "qty": 34.0594,
       "avg_entry": 223.61,
-      "price": 229.0,
-      "market_value": 7799.61,
-      "pnl": 183.58,
-      "return_pct": 0.0241,
+      "price": 228.39,
+      "market_value": 7778.83,
+      "pnl": 162.8,
+      "return_pct": 0.0214,
       "weight_pct": 0.082
-    },
-    {
-      "ticker": "MCD",
-      "qty": 28.1469,
-      "avg_entry": 278.8,
-      "price": 282.44,
-      "market_value": 7949.82,
-      "pnl": 102.5,
-      "return_pct": 0.0131,
-      "weight_pct": 0.0836
-    },
-    {
-      "ticker": "NKE",
-      "qty": 196.1632,
-      "avg_entry": 38.82,
-      "price": 39.22,
-      "market_value": 7692.54,
-      "pnl": 76.51,
-      "return_pct": 0.01,
-      "weight_pct": 0.0809
     },
     {
       "ticker": "WMT",
       "qty": 61.1091,
       "avg_entry": 124.63,
-      "price": 125.75,
-      "market_value": 7684.47,
-      "pnl": 68.44,
-      "return_pct": 0.009,
-      "weight_pct": 0.0808
-    },
-    {
-      "ticker": "HD",
-      "qty": 21.7277,
-      "avg_entry": 350.52,
-      "price": 350.6,
-      "market_value": 7617.64,
-      "pnl": 1.61,
-      "return_pct": 0.0002,
-      "weight_pct": 0.0801
-    },
-    {
-      "ticker": "PEP",
-      "qty": 54.7,
-      "avg_entry": 143.46,
-      "price": 142.0,
-      "market_value": 7767.67,
-      "pnl": -79.65,
-      "return_pct": -0.0101,
-      "weight_pct": 0.0817
-    },
-    {
-      "ticker": "SYK",
-      "qty": 23.5469,
-      "avg_entry": 327.93,
-      "price": 322.96,
-      "market_value": 7604.71,
-      "pnl": -116.99,
-      "return_pct": -0.0152,
-      "weight_pct": 0.08
-    },
-    {
-      "ticker": "INTU",
-      "qty": 22.6057,
-      "avg_entry": 342.48,
-      "price": 336.62,
-      "market_value": 7609.54,
-      "pnl": -132.49,
-      "return_pct": -0.0171,
-      "weight_pct": 0.08
+      "price": 125.34,
+      "market_value": 7659.42,
+      "pnl": 43.39,
+      "return_pct": 0.0057,
+      "weight_pct": 0.0807
     },
     {
       "ticker": "XOM",
       "qty": 47.4254,
       "avg_entry": 164.19,
-      "price": 160.34,
-      "market_value": 7604.43,
-      "pnl": -182.27,
-      "return_pct": -0.0234,
-      "weight_pct": 0.08
+      "price": 164.72,
+      "market_value": 7811.92,
+      "pnl": 25.22,
+      "return_pct": 0.0032,
+      "weight_pct": 0.0823
+    },
+    {
+      "ticker": "MCD",
+      "qty": 28.1469,
+      "avg_entry": 278.8,
+      "price": 278.42,
+      "market_value": 7836.67,
+      "pnl": -10.65,
+      "return_pct": -0.0014,
+      "weight_pct": 0.0826
+    },
+    {
+      "ticker": "INTU",
+      "qty": 22.6057,
+      "avg_entry": 342.48,
+      "price": 339.71,
+      "market_value": 7679.39,
+      "pnl": -62.64,
+      "return_pct": -0.0081,
+      "weight_pct": 0.0809
+    },
+    {
+      "ticker": "HD",
+      "qty": 21.9241,
+      "avg_entry": 350.49,
+      "price": 346.99,
+      "market_value": 7607.32,
+      "pnl": -76.74,
+      "return_pct": -0.01,
+      "weight_pct": 0.0802
+    },
+    {
+      "ticker": "NKE",
+      "qty": 196.1632,
+      "avg_entry": 38.82,
+      "price": 38.21,
+      "market_value": 7495.4,
+      "pnl": -120.63,
+      "return_pct": -0.0158,
+      "weight_pct": 0.079
+    },
+    {
+      "ticker": "PEP",
+      "qty": 54.7,
+      "avg_entry": 143.46,
+      "price": 141.01,
+      "market_value": 7713.51,
+      "pnl": -133.81,
+      "return_pct": -0.017,
+      "weight_pct": 0.0813
+    },
+    {
+      "ticker": "SYK",
+      "qty": 23.7423,
+      "avg_entry": 327.86,
+      "price": 319.04,
+      "market_value": 7574.74,
+      "pnl": -209.41,
+      "return_pct": -0.0269,
+      "weight_pct": 0.0798
     },
     {
       "ticker": "IBM",
       "qty": 31.0549,
       "avg_entry": 254.04,
-      "price": 245.08,
-      "market_value": 7610.93,
-      "pnl": -278.26,
-      "return_pct": -0.0353,
-      "weight_pct": 0.0801
+      "price": 243.42,
+      "market_value": 7559.38,
+      "pnl": -329.81,
+      "return_pct": -0.0418,
+      "weight_pct": 0.0797
     },
     {
       "ticker": "PFE",
-      "qty": 260.1591,
+      "qty": 261.6477,
       "avg_entry": 30.47,
-      "price": 29.21,
-      "market_value": 7599.25,
-      "pnl": -328.98,
-      "return_pct": -0.0415,
-      "weight_pct": 0.0799
+      "price": 29.0,
+      "market_value": 7589.09,
+      "pnl": -382.32,
+      "return_pct": -0.048,
+      "weight_pct": 0.08
     },
     {
       "ticker": "COP",
       "qty": 57.6999,
       "avg_entry": 149.41,
-      "price": 131.81,
-      "market_value": 7605.14,
-      "pnl": -1015.92,
-      "return_pct": -0.1178,
-      "weight_pct": 0.08
+      "price": 135.79,
+      "market_value": 7835.36,
+      "pnl": -785.7,
+      "return_pct": -0.0911,
+      "weight_pct": 0.0826
     }
   ],
   "open_positions": 12,
@@ -299,11 +299,15 @@
     {
       "date": "2026-11-10",
       "equity": 95717.47
+    },
+    {
+      "date": "2026-11-11",
+      "equity": 95570.78
     }
   ],
   "benchmark": "SPY",
-  "benchmark_return_pct": -0.0059,
-  "excess_return_pct": -0.0433,
+  "benchmark_return_pct": -0.0095,
+  "excess_return_pct": -0.0416,
   "ex_downtime": {
     "windows": [
       {
@@ -316,11 +320,11 @@
       }
     ],
     "sessions_excluded": 17,
-    "return_pct": -0.079,
-    "benchmark_return_pct": 0.0032,
-    "excess_return_pct": -0.0822
+    "return_pct": -0.0808,
+    "benchmark_return_pct": -0.0005,
+    "excess_return_pct": -0.0803
   },
-  "days_live": 35,
+  "days_live": 36,
   "verdict_due": false,
   "retire_after_days": 180,
   "backtest": {
