@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T17:00:10Z",
+  "generated_at": "2026-11-12T19:45:07Z",
   "date": "2026-11-12",
   "games": [
     {
@@ -9,12 +9,22 @@
       "home_team_full": "Philadelphia 76ers",
       "tipoff": "2026-11-13T00:00Z",
       "pick": "PHI",
-      "pred_spread": -4.5,
-      "ml_win_prob": 0.685,
-      "confidence": 0.685,
+      "pred_spread": -3.7,
+      "ml_win_prob": 0.679,
+      "confidence": 0.679,
       "pred_total": 221.6,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "TOR",
+        "stake": 100.0,
+        "selection": "Toronto Raptors",
+        "price": 3.21,
+        "book": "DraftKings",
+        "quoted_at": "2026-11-12T19:30:08Z",
+        "model_prob": 0.321,
+        "implied_prob": 0.3115,
+        "edge": 0.0095,
+        "ev_per_dollar": 0.0304
       }
     },
     {
@@ -29,7 +39,17 @@
       "confidence": 0.905,
       "pred_total": 219.6,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "DET",
+        "stake": 100.0,
+        "selection": "Detroit Pistons",
+        "price": 1.22,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-12T19:30:08Z",
+        "model_prob": 0.905,
+        "implied_prob": 0.8197,
+        "edge": 0.0853,
+        "ev_per_dollar": 0.1041
       }
     },
     {
@@ -44,7 +64,17 @@
       "confidence": 0.757,
       "pred_total": 223.9,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "MIN",
+        "stake": 100.0,
+        "selection": "Minnesota Timberwolves",
+        "price": 1.45,
+        "book": "DraftKings",
+        "quoted_at": "2026-11-12T19:30:08Z",
+        "model_prob": 0.757,
+        "implied_prob": 0.6897,
+        "edge": 0.0673,
+        "ev_per_dollar": 0.0977
       }
     },
     {
@@ -59,7 +89,17 @@
       "confidence": 0.7,
       "pred_total": 223.4,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "PHX",
+        "stake": 100.0,
+        "selection": "Phoenix Suns",
+        "price": 1.44,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-12T19:30:08Z",
+        "model_prob": 0.7,
+        "implied_prob": 0.6944,
+        "edge": 0.0056,
+        "ev_per_dollar": 0.008
       }
     }
   ],
