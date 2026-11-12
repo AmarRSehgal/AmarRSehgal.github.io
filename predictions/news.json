@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-12T09:24:23.754629+00:00",
+  "generated_at": "2026-11-12T10:24:19.365481+00:00",
   "window_hours": 24,
-  "articles_in_window": 2456,
+  "articles_in_window": 2438,
   "collection_days": 60,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,93 +9,93 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
-      "term": "nvidia",
-      "articles": 199,
+      "term": "huang",
+      "articles": 151,
       "sources": 37,
       "sentiment_direction": "mixed",
-      "surge": 2.35,
-      "sentiment_mean": 0.036,
-      "headline": "Nvidia stock falls 7% as investors await Jensen Huang\u2019s fate",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html"
+      "surge": 2.55,
+      "sentiment_mean": 0.026,
+      "headline": "Nvidia board weighs future without Jensen Huang. Here\u2019s what we know so far",
+      "headline_source": "CNBC World",
+      "headline_url": "https://www.cnbc.com/video/2026/11/12/nvidia-board-jensen-huang-fate.html"
     },
     {
-      "term": "huang",
-      "articles": 147,
-      "sources": 37,
+      "term": "nvidia",
+      "articles": 202,
+      "sources": 36,
       "sentiment_direction": "mixed",
-      "surge": 2.5,
-      "sentiment_mean": 0.017,
-      "headline": "Nvidia stock falls 7% as investors await Jensen Huang\u2019s fate",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html"
+      "surge": 2.37,
+      "sentiment_mean": 0.044,
+      "headline": "SoftBank, Nvidia back Germany\u2019s Agile Robots at $8.5 billion valuation",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/stock-market-news/softbank-nvidia-back-germanys-agile-robots-at-85-billion-valuation-5020769"
     },
     {
       "term": "jensen",
-      "articles": 144,
+      "articles": 147,
       "sources": 36,
       "sentiment_direction": "mixed",
-      "surge": 2.71,
-      "sentiment_mean": 0.036,
-      "headline": "Nvidia stock falls 7% as investors await Jensen Huang\u2019s fate",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html"
+      "surge": 2.75,
+      "sentiment_mean": 0.048,
+      "headline": "Nvidia board weighs future without Jensen Huang. Here\u2019s what we know so far",
+      "headline_source": "CNBC World",
+      "headline_url": "https://www.cnbc.com/video/2026/11/12/nvidia-board-jensen-huang-fate.html"
     },
     {
       "term": "trump",
-      "articles": 155,
+      "articles": 149,
       "sources": 35,
       "sentiment_direction": "negative",
-      "surge": 0.7,
-      "sentiment_mean": -0.188,
-      "headline": "Trump-Xi-Putin summit under discussion as US allies watch on",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/plus/news/china/diplomacy/article/3374199/trump-xi-putin-summit-under-discussion-us-allies-watch"
-    },
-    {
-      "term": "security",
-      "articles": 69,
-      "sources": 32,
-      "sentiment_direction": "mixed",
-      "surge": 1.18,
-      "sentiment_mean": 0.131,
-      "headline": "UK appoints world\u2019s first special representative for climate security | Andy Burnham",
-      "headline_source": "Reddit r/environment",
-      "headline_url": "https://www.reddit.com/r/environment/comments/1xu89m0/uk_appoints_worlds_first_special_representative/"
+      "surge": 0.68,
+      "sentiment_mean": -0.196,
+      "headline": "Ro Khanna rejects warnings that Trump admin investigations could derail Democrats' affordability agenda",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/politics/ro-khanna-rejects-warnings-trump-admin-investigations-could-derail-democrats-affordability-agenda"
     },
     {
       "term": "president",
-      "articles": 112,
+      "articles": 113,
       "sources": 31,
-      "sentiment_direction": "negative",
-      "surge": 0.83,
-      "sentiment_mean": -0.153,
-      "headline": "Indonesian vice president, son of former leader, steps down over diploma scandal",
-      "headline_source": "Japan Times",
-      "headline_url": "https://www.japantimes.co.jp/news/2026/11/12/asia-pacific/politics/gibran-indonesia-diploma-scandal/"
+      "sentiment_direction": "mixed",
+      "surge": 0.84,
+      "sentiment_mean": -0.145,
+      "headline": "Indonesia's vice-president resigns after academic credentials questioned",
+      "headline_source": "CBC World",
+      "headline_url": "https://www.cbc.ca/news/world/indonesia-vice-president-resigns-9.7418723?cmp=rss"
     },
     {
       "term": "across",
-      "articles": 75,
+      "articles": 73,
       "sources": 31,
       "sentiment_direction": "negative",
-      "surge": 1.22,
-      "sentiment_mean": -0.201,
+      "surge": 1.19,
+      "sentiment_mean": -0.159,
       "headline": "Israeli strikes hit medical complex as nine killed across Gaza - Al Jazeera",
       "headline_source": "Google News Top",
       "headline_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOUjFPWWxmYkExQ2pkYVBVZ0N3RFJnUjh4a0pmM0JEQVI2Z09td01Yd1J1Ym14ZEVKaGFFTWczb1NSRnpqWnJvdkhxdEZJU0JCdXVlb3Rjb1JmSFZDWHpHdW94MHlLOHhveDBwZXp1YzliTXd5bG5XM1pra3VqUGZfR1lTaTctWjBQcmdINkdOZ3lvSHdRMkJmclhn0gGfAUFVX3lxTE8xbmxmdzdrZDUtNGx6SnJ3NjlTOFV0YzFZZEhtUjNnSVRuVXd2UXBoQzVheEZCYkF3b21FZHhDWVo3UnFtZlg0NWRTc2ZQVlMtODFid3FhZWRGaGQxbFNhY1JpemZqNTVuRTB5QlVxWVdFSW5yakROZTI0WHdoQ1o2OEh2NU9EUzZtcnVETS1TUUZwLUNvcXJtQlp1aDQ0aw?oc=5"
     },
     {
+      "term": "security",
+      "articles": 69,
+      "sources": 31,
+      "sentiment_direction": "mixed",
+      "surge": 1.18,
+      "sentiment_mean": 0.113,
+      "headline": "UK appoints world\u2019s first special representative for climate security | Andy Burnham",
+      "headline_source": "Reddit r/environment",
+      "headline_url": "https://www.reddit.com/r/environment/comments/1xu89m0/uk_appoints_worlds_first_special_representative/"
+    },
+    {
       "term": "house",
-      "articles": 98,
+      "articles": 96,
       "sources": 29,
       "sentiment_direction": "negative",
-      "surge": 0.83,
-      "sentiment_mean": -0.309,
-      "headline": "Malaysia\u2019s Najib barred from politics under house arrest rule ahead of Melaka election",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/week-asia/politics/article/3374194/malaysias-najib-barred-politics-under-house-arrest-rule-ahead-melaka-election"
+      "surge": 0.82,
+      "sentiment_mean": -0.318,
+      "headline": "A blue wave helped offset for now a falling tally of Black members in the U.S. House",
+      "headline_source": "NPR News",
+      "headline_url": "https://www.npr.org/2026/11/12/nx-s1-6029640/black-voter-turnout-congress-redistricting"
     }
   ],
-  "hours_since_fetch": 0.02
+  "hours_since_fetch": 0.0
 }
