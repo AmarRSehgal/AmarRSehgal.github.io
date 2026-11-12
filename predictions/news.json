@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-12T02:24:20.668594+00:00",
+  "generated_at": "2026-11-12T03:24:18.690968+00:00",
   "window_hours": 24,
-  "articles_in_window": 2375,
+  "articles_in_window": 2369,
   "collection_days": 60,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,93 +9,93 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
+      "term": "huang",
+      "articles": 111,
+      "sources": 36,
+      "sentiment_direction": "mixed",
+      "surge": 1.94,
+      "sentiment_mean": -0.02,
+      "headline": "Who could replace Jensen Huang? A highly unscientific list of possible successors",
+      "headline_source": "TechCrunch",
+      "headline_url": "https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/"
+    },
+    {
       "term": "trump",
-      "articles": 162,
+      "articles": 160,
       "sources": 35,
       "sentiment_direction": "negative",
       "surge": 0.72,
-      "sentiment_mean": -0.199,
-      "headline": "Trump\u2019s ties to Nvidia CEO Jensen Huang in the spotlight",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/trumps-ties-to-nvidia-ceo-jensen-huang-in-the-spotlight-5020179"
-    },
-    {
-      "term": "huang",
-      "articles": 108,
-      "sources": 35,
-      "sentiment_direction": "mixed",
-      "surge": 1.91,
-      "sentiment_mean": -0.04,
-      "headline": "Nvidia board reportedly meeting to decide CEO Jensen Huang\u2019s future as chip giant\u2019s share price plunges \u2013 follow live",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/technology/live/2026/nov/12/nvidia-ceo-jensen-huang-affairs-share-price-plunges-live-latest"
+      "sentiment_mean": -0.205,
+      "headline": "Sen. Richard Blumenthal ordered to preserve documents from inquiry into Trump ballroom",
+      "headline_source": "NBC News",
+      "headline_url": "https://www.nbcnews.com/politics/trump-administration/us-attorney-demands-sen-richard-blumenthal-preserve-documents-inquiry-rcna608899"
     },
     {
       "term": "nvidia",
-      "articles": 141,
-      "sources": 34,
+      "articles": 145,
+      "sources": 35,
       "sentiment_direction": "mixed",
-      "surge": 1.74,
-      "sentiment_mean": -0.033,
-      "headline": "Nvidia board reportedly meeting to decide CEO Jensen Huang\u2019s future as chip giant\u2019s share price plunges \u2013 follow live",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/technology/live/2026/nov/12/nvidia-ceo-jensen-huang-affairs-share-price-plunges-live-latest"
+      "surge": 1.77,
+      "sentiment_mean": -0.018,
+      "headline": "What we know so far about Nvidia partner Megaspeed\u2019s Asia footprint",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/11/12/nvidia-megaspeed-alice-huang-jensen-.html"
+    },
+    {
+      "term": "jensen",
+      "articles": 103,
+      "sources": 33,
+      "sentiment_direction": "mixed",
+      "surge": 1.98,
+      "sentiment_mean": -0.014,
+      "headline": "Who could replace Jensen Huang? A highly unscientific list of possible successors",
+      "headline_source": "TechCrunch",
+      "headline_url": "https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/"
     },
     {
       "term": "president",
-      "articles": 105,
+      "articles": 106,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 0.77,
-      "sentiment_mean": -0.111,
+      "surge": 0.78,
+      "sentiment_mean": -0.128,
       "headline": "South Korea's President Lee to visit Philippines, attend APEC summit in China - Reuters",
       "headline_source": "Reuters",
       "headline_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPR2lhT211dkxSNVF6WHRhd3VfeERHZUZBV2tIeEtGUkljTVZubmwycktQSjNZOTRGT1FidU9WUEt5d0lKMWNSZWdyRk9GcURGeDRBNWVEY2NxUnZ6VzVrS0poSEtpUVBjQkNYT2NqbUtETTl0eTVtM1NJV0NRb3J3Ny0wbUtxY0wyMnhDME9fOWdjQlRMcmVMSElQb0J4blppdk9pNWMzdGlyN2xqRGJnN2ZnckNRZ2Uz?oc=5"
     },
     {
-      "term": "jensen",
-      "articles": 99,
-      "sources": 32,
-      "sentiment_direction": "mixed",
-      "surge": 1.92,
-      "sentiment_mean": -0.03,
-      "headline": "I too am a victim of Jensen\u2019s behavior",
-      "headline_source": "Reddit r/wallstreetbets",
-      "headline_url": "https://www.reddit.com/r/wallstreetbets/comments/1xu0sa1/i_too_am_a_victim_of_jensens_behavior/"
-    },
-    {
-      "term": "security",
-      "articles": 65,
-      "sources": 30,
-      "sentiment_direction": "mixed",
-      "surge": 1.09,
-      "sentiment_mean": 0.076,
-      "headline": "Japan to feature denial capabilities in security documents",
-      "headline_source": "Japan Times",
-      "headline_url": "https://www.japantimes.co.jp/news/2026/11/12/japan/japan-security-documents-denial-capabilities/"
-    },
-    {
       "term": "across",
-      "articles": 75,
+      "articles": 76,
       "sources": 29,
       "sentiment_direction": "negative",
-      "surge": 1.22,
-      "sentiment_mean": -0.211,
+      "surge": 1.23,
+      "sentiment_mean": -0.2,
       "headline": "Nature and civilization collide once again as lost black bear sprints across South Florida street",
       "headline_source": "Fox News",
       "headline_url": "https://www.foxnews.com/outkick-sports/nature-civilization-collide-lost-black-bear-sprints-across-south-florida-street"
     },
     {
+      "term": "security",
+      "articles": 60,
+      "sources": 29,
+      "sentiment_direction": "mixed",
+      "surge": 1.01,
+      "sentiment_mean": 0.048,
+      "headline": "Japan to feature denial capabilities in security documents",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/news/2026/11/12/japan/japan-security-documents-denial-capabilities/"
+    },
+    {
       "term": "national",
-      "articles": 59,
+      "articles": 56,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 1.15,
-      "sentiment_mean": -0.044,
+      "surge": 1.1,
+      "sentiment_mean": -0.079,
       "headline": "Hegseth's group asked by soldier to maintain respect at Arlington National Cemetery",
       "headline_source": "CBS News",
       "headline_url": "https://www.cbsnews.com/video/hegseths-group-asked-soldier-maintain-respect-arlington-national-cemetery/"
     }
   ],
-  "hours_since_fetch": 0.04
+  "hours_since_fetch": 0.0
 }
