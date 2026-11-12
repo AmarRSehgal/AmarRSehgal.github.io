@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T17:00:10.537519+00:00",
+  "generated_at": "2026-11-12T18:00:10.432375+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -45,6 +45,19 @@
       "cost_bps": 26.0
     },
     {
+      "base": "INJ",
+      "type": "perp-perp",
+      "long_venue": "OKX",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 814.87,
+      "net_at_hold": 0.74417,
+      "cost_bps": 32.34
+    },
+    {
       "base": "TRUMP",
       "type": "perp-perp",
       "long_venue": "Lighter",
@@ -56,19 +69,6 @@
       "net_apr": 813.8,
       "net_at_hold": 0.7432,
       "cost_bps": 26.0
-    },
-    {
-      "base": "INJ",
-      "type": "perp-perp",
-      "long_venue": "OKX",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 813.01,
-      "net_at_hold": 0.74247,
-      "cost_bps": 32.34
     },
     {
       "base": "PENGU",
