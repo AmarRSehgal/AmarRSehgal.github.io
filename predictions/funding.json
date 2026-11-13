@@ -1,36 +1,10 @@
 {
-  "generated_at": "2026-11-13T20:00:11.404112+00:00",
+  "generated_at": "2026-11-13T21:00:10.384780+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
-    {
-      "base": "BARD",
-      "type": "perp-perp",
-      "long_venue": "OKX",
-      "short_venue": "GRVT",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1339.75,
-      "net_at_hold": 1.22352,
-      "cost_bps": 55.84
-    },
-    {
-      "base": "BARD",
-      "type": "perp-perp",
-      "long_venue": "OKX",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1220.46,
-      "net_at_hold": 1.11457,
-      "cost_bps": 55.78
-    },
     {
       "base": "BARD",
       "type": "perp-perp",
@@ -53,9 +27,22 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1081.76,
-      "net_at_hold": 0.98791,
+      "net_apr": 1040.18,
+      "net_at_hold": 0.94994,
       "cost_bps": 58.44
+    },
+    {
+      "base": "BARD",
+      "type": "perp-perp",
+      "long_venue": "OKX",
+      "short_venue": "GRVT",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1033.69,
+      "net_at_hold": 0.94401,
+      "cost_bps": 55.84
     },
     {
       "base": "LDO",
@@ -95,6 +82,19 @@
       "net_apr": 820.81,
       "net_at_hold": 0.7496,
       "cost_bps": 26.0
+    },
+    {
+      "base": "BARD",
+      "type": "perp-perp",
+      "long_venue": "OKX",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 820.76,
+      "net_at_hold": 0.74955,
+      "cost_bps": 56.35
     },
     {
       "base": "PYTH",
