@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T17:00:08Z",
+  "generated_at": "2026-11-13T19:45:08Z",
   "date": "2026-11-13",
   "games": [
     {
@@ -14,7 +14,17 @@
       "confidence": 0.794,
       "pred_total": 220.2,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "NY",
+        "stake": 100.0,
+        "selection": "New York Knicks",
+        "price": 1.31,
+        "book": "BetMGM",
+        "quoted_at": "2026-11-13T19:30:01Z",
+        "model_prob": 0.794,
+        "implied_prob": 0.7634,
+        "edge": 0.0306,
+        "ev_per_dollar": 0.0401
       }
     },
     {
@@ -29,7 +39,17 @@
       "confidence": 0.722,
       "pred_total": 221.0,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "MIL",
+        "stake": 100.0,
+        "selection": "Milwaukee Bucks",
+        "price": 4.2,
+        "book": "BetMGM",
+        "quoted_at": "2026-11-13T19:30:01Z",
+        "model_prob": 0.278,
+        "implied_prob": 0.2381,
+        "edge": 0.0399,
+        "ev_per_dollar": 0.1676
       }
     },
     {
@@ -44,7 +64,17 @@
       "confidence": 0.544,
       "pred_total": 242.4,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "CLE",
+        "stake": 100.0,
+        "selection": "Cleveland Cavaliers",
+        "price": 2.2,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-13T19:30:01Z",
+        "model_prob": 0.544,
+        "implied_prob": 0.4545,
+        "edge": 0.0895,
+        "ev_per_dollar": 0.1968
       }
     },
     {
@@ -59,7 +89,17 @@
       "confidence": 0.644,
       "pred_total": 242.7,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "CHI",
+        "stake": 100.0,
+        "selection": "Chicago Bulls",
+        "price": 3.36,
+        "book": "DraftKings",
+        "quoted_at": "2026-11-13T19:30:01Z",
+        "model_prob": 0.356,
+        "implied_prob": 0.2976,
+        "edge": 0.0584,
+        "ev_per_dollar": 0.1962
       }
     },
     {
@@ -69,12 +109,22 @@
       "home_team_full": "New Orleans Pelicans",
       "tipoff": "2026-11-14T01:00Z",
       "pick": "MEM",
-      "pred_spread": -0.4,
-      "ml_win_prob": 0.42,
-      "confidence": 0.58,
+      "pred_spread": 0.6,
+      "ml_win_prob": 0.381,
+      "confidence": 0.619,
       "pred_total": 235.6,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "MEM",
+        "stake": 100.0,
+        "selection": "Memphis Grizzlies",
+        "price": 1.65,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-13T19:30:01Z",
+        "model_prob": 0.619,
+        "implied_prob": 0.6061,
+        "edge": 0.0129,
+        "ev_per_dollar": 0.0213
       }
     },
     {
@@ -89,7 +139,17 @@
       "confidence": 0.934,
       "pred_total": 224.6,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "HOU",
+        "stake": 100.0,
+        "selection": "Houston Rockets",
+        "price": 1.09,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-13T19:30:01Z",
+        "model_prob": 0.934,
+        "implied_prob": 0.9174,
+        "edge": 0.0166,
+        "ev_per_dollar": 0.0181
       }
     },
     {
@@ -104,7 +164,17 @@
       "confidence": 0.752,
       "pred_total": 218.4,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "GS",
+        "stake": 100.0,
+        "selection": "Golden State Warriors",
+        "price": 6.0,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-13T19:30:01Z",
+        "model_prob": 0.248,
+        "implied_prob": 0.1667,
+        "edge": 0.0813,
+        "ev_per_dollar": 0.488
       }
     },
     {
@@ -119,7 +189,17 @@
       "confidence": 0.809,
       "pred_total": 229.3,
       "bet": {
-        "status": "unpriced"
+        "status": "pass",
+        "team": "POR",
+        "stake": 100.0,
+        "selection": "Portland Trail Blazers",
+        "price": 1.22,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-13T19:30:01Z",
+        "model_prob": 0.809,
+        "implied_prob": 0.8197,
+        "edge": -0.0107,
+        "ev_per_dollar": -0.013
       }
     },
     {
