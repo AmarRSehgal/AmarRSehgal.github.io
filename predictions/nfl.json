@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T17:30:07Z",
+  "generated_at": "2026-11-13T17:30:06Z",
   "season": 2026,
   "week": 10,
   "season_type": "regular",
@@ -14,21 +14,28 @@
       "home_team_full": "New York Giants",
       "pick": "NYG",
       "pred_spread": -3.9,
-      "pred_total": 43.1,
-      "ml_win_prob": 0.578,
-      "confidence": 0.578,
+      "pred_total": 43.2,
+      "ml_win_prob": 0.5698,
+      "confidence": 0.5698,
+      "result": {
+        "away_pts": 24,
+        "home_pts": 21,
+        "winner": "WSH",
+        "correct": false,
+        "actual_spread": 3.0
+      },
       "bet": {
         "status": "bet",
         "team": "NYG",
         "stake": 100.0,
         "selection": "New York Giants",
-        "price": 1.75,
-        "book": "FanDuel",
-        "quoted_at": "2026-11-11T19:30:07Z",
-        "model_prob": 0.578,
-        "implied_prob": 0.5714,
-        "edge": 0.0066,
-        "ev_per_dollar": 0.0115
+        "price": 1.77,
+        "book": "DraftKings",
+        "quoted_at": "2026-11-12T19:30:07Z",
+        "model_prob": 0.5698,
+        "implied_prob": 0.565,
+        "edge": 0.0048,
+        "ev_per_dollar": 0.0085
       }
     },
     {
@@ -40,8 +47,8 @@
       "pick": "NE",
       "pred_spread": 0.5,
       "pred_total": 49.0,
-      "ml_win_prob": 0.476,
-      "confidence": 0.524,
+      "ml_win_prob": 0.4711,
+      "confidence": 0.5289,
       "bet": {
         "status": "bet",
         "team": "NE",
@@ -49,11 +56,11 @@
         "selection": "New England Patriots",
         "price": 2.3,
         "book": "DraftKings",
-        "quoted_at": "2026-11-11T19:30:07Z",
-        "model_prob": 0.524,
+        "quoted_at": "2026-11-12T19:30:07Z",
+        "model_prob": 0.5289,
         "implied_prob": 0.4348,
-        "edge": 0.0892,
-        "ev_per_dollar": 0.2052
+        "edge": 0.0941,
+        "ev_per_dollar": 0.2165
       }
     },
     {
@@ -63,22 +70,22 @@
       "away_team_full": "Buffalo Bills",
       "home_team_full": "New York Jets",
       "pick": "BUF",
-      "pred_spread": 11.1,
+      "pred_spread": 11.0,
       "pred_total": 45.6,
-      "ml_win_prob": 0.1726,
-      "confidence": 0.8274,
+      "ml_win_prob": 0.1747,
+      "confidence": 0.8253,
       "bet": {
         "status": "bet",
         "team": "BUF",
         "stake": 100.0,
         "selection": "Buffalo Bills",
-        "price": 1.25,
+        "price": 1.23,
         "book": "DraftKings",
-        "quoted_at": "2026-11-11T19:30:07Z",
-        "model_prob": 0.8274,
-        "implied_prob": 0.8,
-        "edge": 0.0274,
-        "ev_per_dollar": 0.0343
+        "quoted_at": "2026-11-12T19:30:07Z",
+        "model_prob": 0.8253,
+        "implied_prob": 0.813,
+        "edge": 0.0123,
+        "ev_per_dollar": 0.0151
       }
     },
     {
@@ -90,20 +97,20 @@
       "pick": "NO",
       "pred_spread": -1.8,
       "pred_total": 46.5,
-      "ml_win_prob": 0.5422,
-      "confidence": 0.5422,
+      "ml_win_prob": 0.5428,
+      "confidence": 0.5428,
       "bet": {
         "status": "pass",
         "team": "CAR",
         "stake": 100.0,
         "selection": "Carolina Panthers",
-        "price": 2.18,
-        "book": "FanDuel",
-        "quoted_at": "2026-11-11T19:30:07Z",
-        "model_prob": 0.4578,
-        "implied_prob": 0.4587,
-        "edge": -0.0009,
-        "ev_per_dollar": -0.002
+        "price": 2.15,
+        "book": "BetMGM",
+        "quoted_at": "2026-11-12T19:30:07Z",
+        "model_prob": 0.4572,
+        "implied_prob": 0.4651,
+        "edge": -0.0079,
+        "ev_per_dollar": -0.017
       }
     },
     {
@@ -113,22 +120,22 @@
       "away_team_full": "Houston Texans",
       "home_team_full": "Cleveland Browns",
       "pick": "HOU",
-      "pred_spread": 3.8,
+      "pred_spread": 3.9,
       "pred_total": 45.2,
-      "ml_win_prob": 0.3649,
-      "confidence": 0.6351,
+      "ml_win_prob": 0.3617,
+      "confidence": 0.6383,
       "bet": {
         "status": "bet",
         "team": "CLE",
         "stake": 100.0,
         "selection": "Cleveland Browns",
-        "price": 3.0,
-        "book": "BetMGM",
-        "quoted_at": "2026-11-11T19:30:07Z",
-        "model_prob": 0.3649,
-        "implied_prob": 0.3333,
-        "edge": 0.0316,
-        "ev_per_dollar": 0.0947
+        "price": 2.94,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-12T19:30:07Z",
+        "model_prob": 0.3617,
+        "implied_prob": 0.3401,
+        "edge": 0.0216,
+        "ev_per_dollar": 0.0634
       }
     },
     {
@@ -138,22 +145,22 @@
       "away_team_full": "Jacksonville Jaguars",
       "home_team_full": "Tennessee Titans",
       "pick": "JAX",
-      "pred_spread": 12.4,
-      "pred_total": 46.0,
-      "ml_win_prob": 0.1565,
-      "confidence": 0.8435,
+      "pred_spread": 12.5,
+      "pred_total": 46.1,
+      "ml_win_prob": 0.1574,
+      "confidence": 0.8426,
       "bet": {
-        "status": "bet",
-        "team": "JAX",
+        "status": "pass",
+        "team": "TEN",
         "stake": 100.0,
-        "selection": "Jacksonville Jaguars",
-        "price": 1.19,
-        "book": "DraftKings",
-        "quoted_at": "2026-11-11T19:30:07Z",
-        "model_prob": 0.8435,
-        "implied_prob": 0.8403,
-        "edge": 0.0032,
-        "ev_per_dollar": 0.0038
+        "selection": "Tennessee Titans",
+        "price": 6.0,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-12T19:30:07Z",
+        "model_prob": 0.1574,
+        "implied_prob": 0.1667,
+        "edge": -0.0093,
+        "ev_per_dollar": -0.0556
       }
     },
     {
@@ -163,22 +170,22 @@
       "away_team_full": "Kansas City Chiefs",
       "home_team_full": "Atlanta Falcons",
       "pick": "KC",
-      "pred_spread": 4.8,
-      "pred_total": 47.5,
-      "ml_win_prob": 0.3348,
-      "confidence": 0.6652,
+      "pred_spread": 4.9,
+      "pred_total": 47.2,
+      "ml_win_prob": 0.3404,
+      "confidence": 0.6596,
       "bet": {
         "status": "bet",
         "team": "KC",
         "stake": 100.0,
         "selection": "Kansas City Chiefs",
-        "price": 1.57,
+        "price": 1.58,
         "book": "FanDuel",
-        "quoted_at": "2026-11-11T19:30:07Z",
-        "model_prob": 0.6652,
-        "implied_prob": 0.6369,
-        "edge": 0.0283,
-        "ev_per_dollar": 0.0444
+        "quoted_at": "2026-11-12T19:30:07Z",
+        "model_prob": 0.6596,
+        "implied_prob": 0.6329,
+        "edge": 0.0267,
+        "ev_per_dollar": 0.0422
       }
     },
     {
@@ -188,22 +195,22 @@
       "away_team_full": "Miami Dolphins",
       "home_team_full": "Indianapolis Colts",
       "pick": "IND",
-      "pred_spread": -5.8,
-      "pred_total": 43.9,
-      "ml_win_prob": 0.6791,
-      "confidence": 0.6791,
+      "pred_spread": -5.7,
+      "pred_total": 43.7,
+      "ml_win_prob": 0.6838,
+      "confidence": 0.6838,
       "bet": {
         "status": "bet",
         "team": "IND",
         "stake": 100.0,
         "selection": "Indianapolis Colts",
-        "price": 1.52,
-        "book": "DraftKings",
-        "quoted_at": "2026-11-11T19:30:07Z",
-        "model_prob": 0.6791,
-        "implied_prob": 0.6579,
-        "edge": 0.0212,
-        "ev_per_dollar": 0.0322
+        "price": 1.5,
+        "book": "BetMGM",
+        "quoted_at": "2026-11-12T19:30:07Z",
+        "model_prob": 0.6838,
+        "implied_prob": 0.6667,
+        "edge": 0.0171,
+        "ev_per_dollar": 0.0257
       }
     },
     {
@@ -213,22 +220,22 @@
       "away_team_full": "Minnesota Vikings",
       "home_team_full": "Green Bay Packers",
       "pick": "GB",
-      "pred_spread": -5.5,
-      "pred_total": 41.7,
-      "ml_win_prob": 0.688,
-      "confidence": 0.688,
+      "pred_spread": -5.7,
+      "pred_total": 41.4,
+      "ml_win_prob": 0.6846,
+      "confidence": 0.6846,
       "bet": {
         "status": "bet",
         "team": "GB",
         "stake": 100.0,
         "selection": "Green Bay Packers",
-        "price": 1.62,
+        "price": 1.65,
         "book": "DraftKings",
-        "quoted_at": "2026-11-11T19:30:07Z",
-        "model_prob": 0.688,
-        "implied_prob": 0.6173,
-        "edge": 0.0707,
-        "ev_per_dollar": 0.1146
+        "quoted_at": "2026-11-12T19:30:07Z",
+        "model_prob": 0.6846,
+        "implied_prob": 0.6061,
+        "edge": 0.0785,
+        "ev_per_dollar": 0.1296
       }
     },
     {
@@ -239,21 +246,21 @@
       "home_team_full": "Arizona Cardinals",
       "pick": "LAR",
       "pred_spread": 9.7,
-      "pred_total": 46.1,
-      "ml_win_prob": 0.2267,
-      "confidence": 0.7733,
+      "pred_total": 46.2,
+      "ml_win_prob": 0.236,
+      "confidence": 0.764,
       "bet": {
         "status": "bet",
         "team": "ARI",
         "stake": 100.0,
         "selection": "Arizona Cardinals",
-        "price": 4.5,
-        "book": "BetMGM",
-        "quoted_at": "2026-11-11T19:30:07Z",
-        "model_prob": 0.2267,
-        "implied_prob": 0.2222,
-        "edge": 0.0045,
-        "ev_per_dollar": 0.0202
+        "price": 5.1,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-12T19:30:07Z",
+        "model_prob": 0.236,
+        "implied_prob": 0.1961,
+        "edge": 0.0399,
+        "ev_per_dollar": 0.2036
       }
     },
     {
@@ -263,10 +270,10 @@
       "away_team_full": "Seattle Seahawks",
       "home_team_full": "Las Vegas Raiders",
       "pick": "SEA",
-      "pred_spread": 8.9,
+      "pred_spread": 8.6,
       "pred_total": 46.2,
-      "ml_win_prob": 0.2326,
-      "confidence": 0.7674,
+      "ml_win_prob": 0.23,
+      "confidence": 0.77,
       "bet": {
         "status": "bet",
         "team": "SEA",
@@ -274,11 +281,11 @@
         "selection": "Seattle Seahawks",
         "price": 1.34,
         "book": "DraftKings",
-        "quoted_at": "2026-11-11T19:30:07Z",
-        "model_prob": 0.7674,
+        "quoted_at": "2026-11-12T19:30:07Z",
+        "model_prob": 0.77,
         "implied_prob": 0.7463,
-        "edge": 0.0211,
-        "ev_per_dollar": 0.0283
+        "edge": 0.0237,
+        "ev_per_dollar": 0.0318
       }
     },
     {
@@ -288,10 +295,10 @@
       "away_team_full": "San Francisco 49ers",
       "home_team_full": "Dallas Cowboys",
       "pick": "SF",
-      "pred_spread": 4.2,
-      "pred_total": 50.5,
-      "ml_win_prob": 0.3719,
-      "confidence": 0.6281,
+      "pred_spread": 4.1,
+      "pred_total": 50.7,
+      "ml_win_prob": 0.3773,
+      "confidence": 0.6227,
       "bet": {
         "status": "bet",
         "team": "DAL",
@@ -299,11 +306,11 @@
         "selection": "Dallas Cowboys",
         "price": 2.85,
         "book": "BetMGM",
-        "quoted_at": "2026-11-11T19:30:07Z",
-        "model_prob": 0.3719,
+        "quoted_at": "2026-11-12T19:30:07Z",
+        "model_prob": 0.3773,
         "implied_prob": 0.3509,
-        "edge": 0.021,
-        "ev_per_dollar": 0.0599
+        "edge": 0.0264,
+        "ev_per_dollar": 0.0753
       }
     },
     {
@@ -313,10 +320,10 @@
       "away_team_full": "Pittsburgh Steelers",
       "home_team_full": "Cincinnati Bengals",
       "pick": "CIN",
-      "pred_spread": -3.4,
-      "pred_total": 49.5,
-      "ml_win_prob": 0.5904,
-      "confidence": 0.5904,
+      "pred_spread": -3.3,
+      "pred_total": 49.8,
+      "ml_win_prob": 0.5951,
+      "confidence": 0.5951,
       "bet": {
         "status": "bet",
         "team": "PIT",
@@ -324,11 +331,11 @@
         "selection": "Pittsburgh Steelers",
         "price": 2.55,
         "book": "BetMGM",
-        "quoted_at": "2026-11-11T19:30:07Z",
-        "model_prob": 0.4096,
+        "quoted_at": "2026-11-12T19:30:07Z",
+        "model_prob": 0.4049,
         "implied_prob": 0.3922,
-        "edge": 0.0174,
-        "ev_per_dollar": 0.0445
+        "edge": 0.0127,
+        "ev_per_dollar": 0.0325
       }
     },
     {
@@ -338,30 +345,30 @@
       "away_team_full": "Los Angeles Chargers",
       "home_team_full": "Baltimore Ravens",
       "pick": "BAL",
-      "pred_spread": -1.4,
-      "pred_total": 40.4,
-      "ml_win_prob": 0.5483,
-      "confidence": 0.5483,
+      "pred_spread": -1.3,
+      "pred_total": 40.3,
+      "ml_win_prob": 0.5433,
+      "confidence": 0.5433,
       "bet": {
         "status": "bet",
         "team": "LAC",
         "stake": 100.0,
         "selection": "Los Angeles Chargers",
-        "price": 2.8,
-        "book": "DraftKings",
-        "quoted_at": "2026-11-11T19:30:07Z",
-        "model_prob": 0.4517,
-        "implied_prob": 0.3571,
-        "edge": 0.0946,
-        "ev_per_dollar": 0.2648
+        "price": 2.88,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-12T19:30:07Z",
+        "model_prob": 0.4567,
+        "implied_prob": 0.3472,
+        "edge": 0.1095,
+        "ev_per_dollar": 0.3153
       }
     }
   ],
   "track_record": {
     "season": 2026,
-    "n_games": 122,
-    "accuracy": 0.6393,
-    "baseline_accuracy": 0.5,
+    "n_games": 123,
+    "accuracy": 0.6341,
+    "baseline_accuracy": 0.4959,
     "baseline_label": "always pick the home team",
     "beats_baseline": true,
     "mcnemar_p_vs_baseline": 0.0213,
@@ -374,7 +381,8 @@
       5,
       7,
       8,
-      9
+      9,
+      10
     ],
     "basis": "picks as published on the site before kickoff, scored against final scores",
     "betting": {
@@ -389,25 +397,25 @@
         "betmgm"
       ],
       "basis": "flat $100 on every side whose model probability beats its price, at the last quote before kickoff on DraftKings, FanDuel or BetMGM",
-      "bets": 107,
-      "record": "50-57",
-      "hit_rate": 0.467,
-      "staked": 10700.0,
-      "pnl": 382.0,
-      "roi": 0.0357,
-      "avg_price": 2.559,
-      "break_even_hit_rate": 0.457,
-      "avg_edge": 0.0672,
+      "bets": 108,
+      "record": "50-58",
+      "hit_rate": 0.463,
+      "staked": 10800.0,
+      "pnl": 282.0,
+      "roi": 0.0261,
+      "avg_price": 2.551,
+      "break_even_hit_rate": 0.458,
+      "avg_edge": 0.0667,
       "every_pick": {
-        "bets": 122,
-        "record": "78-44",
-        "hit_rate": 0.639,
-        "staked": 12200.0,
-        "pnl": -233.0,
-        "roi": -0.0191,
-        "avg_price": 1.61,
+        "bets": 123,
+        "record": "78-45",
+        "hit_rate": 0.634,
+        "staked": 12300.0,
+        "pnl": -333.0,
+        "roi": -0.0271,
+        "avg_price": 1.612,
         "break_even_hit_rate": 0.648,
-        "avg_edge": -0.0019
+        "avg_edge": -0.0017
       },
       "settled": [
         {
@@ -2014,10 +2022,34 @@
           "ev_per_dollar": 0.2812,
           "won": false,
           "pnl": -100.0
+        },
+        {
+          "label": "Week 10",
+          "home": "New York Giants",
+          "away": "Washington Commanders",
+          "kickoff": "2026-11-13T01:15:00Z",
+          "selection": "New York Giants",
+          "price": 1.77,
+          "book": "DraftKings",
+          "model_prob": 0.578,
+          "implied_prob": 0.565,
+          "edge": 0.013,
+          "ev_per_dollar": 0.0231,
+          "won": false,
+          "pnl": -100.0
         }
       ]
     },
     "by_week": [
+      {
+        "week": 10,
+        "games": 1,
+        "correct": 0,
+        "accuracy": 0.0,
+        "bets": 1,
+        "pnl": -100.0,
+        "roi": -1.0
+      },
       {
         "week": 9,
         "games": 15,
@@ -2091,7 +2123,7 @@
         "roi": -0.0664
       }
     ],
-    "mean_abs_spread_error": 13.53,
+    "mean_abs_spread_error": 13.43,
     "high_conf_threshold": 0.6,
     "high_conf_n": 77,
     "high_conf_stated": 0.7051,
