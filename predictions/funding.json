@@ -1,10 +1,49 @@
 {
-  "generated_at": "2026-11-13T23:00:10.939299+00:00",
+  "generated_at": "2026-11-14T00:00:10.476808+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
+    {
+      "base": "BARD",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "GRVT",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1336.34,
+      "net_at_hold": 1.2204,
+      "cost_bps": 53.86
+    },
+    {
+      "base": "BARD",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "GRVT",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1137.27,
+      "net_at_hold": 1.0386,
+      "cost_bps": 55.02
+    },
+    {
+      "base": "BARD",
+      "type": "perp-perp",
+      "long_venue": "KuCoin",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1133.8,
+      "net_at_hold": 1.03544,
+      "cost_bps": 55.18
+    },
     {
       "base": "BARD",
       "type": "perp-perp",
@@ -16,7 +55,7 @@
       "scans": 24,
       "net_apr": 1101.83,
       "net_at_hold": 1.00624,
-      "cost_bps": 57.24
+      "cost_bps": 56.36
     },
     {
       "base": "BARD",
@@ -27,8 +66,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1050.26,
-      "net_at_hold": 0.95914,
+      "net_apr": 1058.3,
+      "net_at_hold": 0.96649,
       "cost_bps": 53.84
     },
     {
@@ -68,45 +107,6 @@
       "scans": 24,
       "net_apr": 847.09,
       "net_at_hold": 0.7736,
-      "cost_bps": 26.0
-    },
-    {
-      "base": "CHIP",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 837.46,
-      "net_at_hold": 0.7648,
-      "cost_bps": 26.0
-    },
-    {
-      "base": "SEI",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 820.81,
-      "net_at_hold": 0.7496,
-      "cost_bps": 26.0
-    },
-    {
-      "base": "PYTH",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 819.06,
-      "net_at_hold": 0.748,
       "cost_bps": 26.0
     }
   ]
