@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-13T23:24:22.009574+00:00",
+  "generated_at": "2026-11-14T00:24:23.368998+00:00",
   "window_hours": 24,
-  "articles_in_window": 2371,
-  "collection_days": 61,
+  "articles_in_window": 2338,
+  "collection_days": 62,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
   "surge_available": true,
@@ -10,91 +10,91 @@
   "topics": [
     {
       "term": "nvidia",
-      "articles": 246,
+      "articles": 236,
       "sources": 40,
       "sentiment_direction": "mixed",
-      "surge": 1.58,
-      "sentiment_mean": -0.12,
-      "headline": "US Congress widens Nvidia probe, seeking testimony from Jensen Huang and Trump officials",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/china/diplomacy/article/3374412/us-congress-widens-nvidia-probe-seeking-testimony-jensen-huang-and-trump-officials"
+      "surge": 1.49,
+      "sentiment_mean": -0.139,
+      "headline": "Bessent accuses Lutnick of failing to prevent China from obtaining Nvidia chips",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/show/bessent-accuses-lutnick-of-failing-to-prevent-china-from-obtaining-nvidia-chips"
     },
     {
       "term": "huang",
-      "articles": 191,
+      "articles": 183,
       "sources": 38,
       "sentiment_direction": "mixed",
-      "surge": 1.57,
-      "sentiment_mean": -0.108,
-      "headline": "How the Jensen Huang scandal created a headache for business-friendly Singapore",
-      "headline_source": "BBC World",
-      "headline_url": "https://www.bbc.co.uk/news/articles/ck1exevgql4qo?at_medium=RSS&at_campaign=rss"
+      "surge": 1.48,
+      "sentiment_mean": -0.131,
+      "headline": "Nvidia approaches Arm CEO Haas as employees seek Huang\u2019s return, reports say",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/business/2026/11/14/companies/nvidia-arm-ceo-haas-huang/"
     },
     {
       "term": "trump",
       "articles": 165,
       "sources": 37,
       "sentiment_direction": "negative",
-      "surge": 0.85,
-      "sentiment_mean": -0.196,
-      "headline": "Trump Officials Press Congress to Renew Spying Law in Lame-Duck Session",
-      "headline_source": "NYT Politics",
-      "headline_url": "https://www.nytimes.com/2026/11/13/us/politics/trump-congress-section-702-surveillance.html"
+      "surge": 0.86,
+      "sentiment_mean": -0.195,
+      "headline": "Mexico's Sheinbaum says migrant caravan not moving toward US now as Trump threatens tariffs",
+      "headline_source": "Reddit r/worldnews",
+      "headline_url": "https://www.reddit.com/r/worldnews/comments/1xvnlhp/mexicos_sheinbaum_says_migrant_caravan_not_moving/"
     },
     {
       "term": "jensen",
-      "articles": 164,
+      "articles": 156,
       "sources": 37,
       "sentiment_direction": "negative",
-      "surge": 1.48,
-      "sentiment_mean": -0.155,
-      "headline": "How the Jensen Huang scandal created a headache for business-friendly Singapore",
-      "headline_source": "BBC World",
-      "headline_url": "https://www.bbc.co.uk/news/articles/ck1exevgql4qo?at_medium=RSS&at_campaign=rss"
+      "surge": 1.39,
+      "sentiment_mean": -0.174,
+      "headline": "The true reason Jensen was pushed out in a concerted effort, and why it will juice up Anthropic\u2019s IPO",
+      "headline_source": "Reddit r/wallstreetbets",
+      "headline_url": "https://www.reddit.com/r/wallstreetbets/comments/1xvnsxx/the_true_reason_jensen_was_pushed_out_in_a/"
     },
     {
       "term": "microsoft",
       "articles": 101,
-      "sources": 36,
+      "sources": 37,
       "sentiment_direction": "negative",
-      "surge": 6.58,
-      "sentiment_mean": -0.221,
-      "headline": "Microsoft\u2019s global outage and fixes: What we know",
-      "headline_source": "Sydney Morning Herald",
-      "headline_url": "https://www.smh.com.au/world/north-america/microsoft-s-global-outage-and-fixes-what-we-know-20261114-p61e3v.html?ref=rss&utm_medium=rss&utm_source=rss_world"
+      "surge": 6.44,
+      "sentiment_mean": -0.219,
+      "headline": "What to know about Microsoft's outage and why it takes so long to restore email services",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/science/what-to-know-about-microsofts-outage-and-why-it-takes-so-long-to-restore-email-services"
     },
     {
       "term": "outage",
-      "articles": 102,
-      "sources": 34,
+      "articles": 106,
+      "sources": 36,
       "sentiment_direction": "negative",
-      "surge": 16.7,
-      "sentiment_mean": -0.258,
-      "headline": "Lego's BrickLink Marketplace Back Online After Week-Long Outage Caused By 'Cyber Incident'",
-      "headline_source": "Slashdot",
-      "headline_url": "https://tech.slashdot.org/story/26/11/13/2053209/legos-bricklink-marketplace-back-online-after-week-long-outage-caused-by-cyber-incident?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+      "surge": 16.46,
+      "sentiment_mean": -0.273,
+      "headline": "Update to network connecting air traffic control system led to outage before ground stop, sources ay",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/update-to-network-connecting-air-traffic-control-system-led-to-outage-before-ground-stop-sources-ay/"
     },
     {
       "term": "company",
-      "articles": 102,
-      "sources": 29,
+      "articles": 98,
+      "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 1.26,
-      "sentiment_mean": 0.139,
-      "headline": "Exemplar Luxury Group CEO on the Company\u2019s Second Life",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/videos/2026-11-13/exemplar-luxury-group-ceo-on-the-company-s-second-life-video"
+      "surge": 1.2,
+      "sentiment_mean": 0.132,
+      "headline": "Box COO Olivia Nottebohm sells $219,394 in company stock",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/insider-trading-news/box-coo-olivia-nottebohm-sells-219394-in-company-stock-93CH-5026784"
     },
     {
-      "term": "president",
-      "articles": 90,
-      "sources": 28,
+      "term": "across",
+      "articles": 78,
+      "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 0.71,
-      "sentiment_mean": -0.007,
-      "headline": "Paraguay\u2019s ex-president Pena faces new charge over Ueno bank collapse",
+      "surge": 1.44,
+      "sentiment_mean": -0.023,
+      "headline": "FAA grounds all fights across the US over \u2018telecommunication outage\u2019",
       "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/news/2026/11/13/paraguays-ex-president-pena-faces-new-charge-over-ueno-bank-collapse?traffic_source=rss"
+      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/faa-grounds-all-fights-across-the-us-over-telecommunication?traffic_source=rss"
     }
   ],
   "hours_since_fetch": 0.0
