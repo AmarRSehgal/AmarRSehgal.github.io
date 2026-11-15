@@ -1,101 +1,13 @@
 {
-  "generated_at": "2026-11-14T17:40:57.049667+00:00",
+  "generated_at": "2026-11-15T06:19:57.567562+00:00",
   "window_hours": 24,
-  "articles_in_window": 953,
+  "articles_in_window": 26,
   "collection_days": 62,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
   "surge_available": true,
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
-  "topics": [
-    {
-      "term": "ground",
-      "articles": 103,
-      "sources": 32,
-      "sentiment_direction": "negative",
-      "surge": 14.18,
-      "sentiment_mean": -0.435,
-      "headline": "CNN Aviation Analyst Says \u2018It\u2019s Just Too Much of a Coincidence\u2019 FAA Rolled Out New AI Traffic Tool Right Before Nationwide Ground Stop",
-      "headline_source": "Reddit r/technology",
-      "headline_url": "https://www.reddit.com/r/technology/comments/1xvudm2/cnn_aviation_analyst_says_its_just_too_much_of_a/"
-    },
-    {
-      "term": "nationwide",
-      "articles": 89,
-      "sources": 32,
-      "sentiment_direction": "negative",
-      "surge": 12.86,
-      "sentiment_mean": -0.398,
-      "headline": "Company Behind FAA\u2019s New AI-Powered ATC Tool Denies It Caused Nationwide Flight Chaos",
-      "headline_source": "Reddit r/technology",
-      "headline_url": "https://www.reddit.com/r/technology/comments/1xvyado/company_behind_faas_new_aipowered_atc_tool_denies/"
-    },
-    {
-      "term": "trump",
-      "articles": 83,
-      "sources": 31,
-      "sentiment_direction": "negative",
-      "surge": 0.43,
-      "sentiment_mean": -0.178,
-      "headline": "Trump official seeks $50 billion for air traffic control after outage",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/white-house-urges-congress-to-provide-301-billion-for-aviation-reform-5024655"
-    },
-    {
-      "term": "flights",
-      "articles": 57,
-      "sources": 29,
-      "sentiment_direction": "negative",
-      "surge": 8.49,
-      "sentiment_mean": -0.288,
-      "headline": "United Airlines Blocks A.I. Agents From Booking Flights on Customers' Behalf",
-      "headline_source": "Reddit r/technology",
-      "headline_url": "https://www.reddit.com/r/technology/comments/1xvrw1w/united_airlines_blocks_ai_agents_from_booking/"
-    },
-    {
-      "term": "nvidia",
-      "articles": 61,
-      "sources": 26,
-      "sentiment_direction": "negative",
-      "surge": 0.33,
-      "sentiment_mean": -0.164,
-      "headline": "Met this cute chick trying to get into the Nvidia booth. What should I do?",
-      "headline_source": "Reddit r/wallstreetbets",
-      "headline_url": "https://www.reddit.com/r/wallstreetbets/comments/1xvwi9b/met_this_cute_chick_trying_to_get_into_the_nvidia/"
-    },
-    {
-      "term": "outage",
-      "articles": 50,
-      "sources": 25,
-      "sentiment_direction": "negative",
-      "surge": 2.73,
-      "sentiment_mean": -0.248,
-      "headline": "Will we ever get the truth for the Microsoft outage?",
-      "headline_source": "Reddit r/technology",
-      "headline_url": "https://www.reddit.com/r/technology/comments/1xvzktn/will_we_ever_get_the_truth_for_the_microsoft/"
-    },
-    {
-      "term": "huang",
-      "articles": 44,
-      "sources": 24,
-      "sentiment_direction": "negative",
-      "surge": 0.3,
-      "sentiment_mean": -0.312,
-      "headline": "Nvidia director sold nearly $1B in stock weeks before the Jensen Huang scandal broke",
-      "headline_source": "Reddit r/technology",
-      "headline_url": "https://www.reddit.com/r/technology/comments/1xvvahe/nvidia_director_sold_nearly_1b_in_stock_weeks/"
-    },
-    {
-      "term": "traffic",
-      "articles": 35,
-      "sources": 24,
-      "sentiment_direction": "negative",
-      "surge": 4.41,
-      "sentiment_mean": -0.315,
-      "headline": "CNN Aviation Analyst Says \u2018It\u2019s Just Too Much of a Coincidence\u2019 FAA Rolled Out New AI Traffic Tool Right Before Nationwide Ground Stop",
-      "headline_source": "Reddit r/technology",
-      "headline_url": "https://www.reddit.com/r/technology/comments/1xvudm2/cnn_aviation_analyst_says_its_just_too_much_of_a/"
-    }
-  ],
-  "hours_since_fetch": 1.18
+  "topics": [],
+  "hours_since_fetch": 13.83,
+  "note": "No topic reached 4 independent outlets in the last 24h."
 }
