@@ -1,13 +1,33 @@
 {
-  "generated_at": "2026-11-15T19:40:25.234953+00:00",
+  "generated_at": "2026-11-16T03:54:32.336431+00:00",
   "window_hours": 24,
-  "articles_in_window": 0,
-  "collection_days": 62,
+  "articles_in_window": 91,
+  "collection_days": 63,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
   "surge_available": true,
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
-  "topics": [],
-  "hours_since_fetch": 27.17,
-  "note": "No articles collected in the last 24h -- collection has stopped or has not started."
+  "topics": [
+    {
+      "term": "faster",
+      "articles": 4,
+      "sources": 4,
+      "sentiment_direction": "unknown",
+      "surge": 0.61,
+      "headline": "Crows make decisions faster than we can",
+      "headline_source": "Hacker News",
+      "headline_url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html"
+    },
+    {
+      "term": "links",
+      "articles": 4,
+      "sources": 4,
+      "sentiment_direction": "unknown",
+      "surge": 0.57,
+      "headline": "Pranksters Redirect Bitly's Links in X Posts for Trump, McDonald's and Burger King",
+      "headline_source": "Slashdot",
+      "headline_url": "https://slashdot.org/story/26/11/15/2311255/pranksters-redirect-bitlys-links-in-x-posts-for-trump-mcdonalds-and-burger-king?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    }
+  ],
+  "hours_since_fetch": 0.0
 }
