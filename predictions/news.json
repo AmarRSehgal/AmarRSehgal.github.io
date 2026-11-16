@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16T05:24:19.392867+00:00",
+  "generated_at": "2026-11-16T19:43:35.374464+00:00",
   "window_hours": 24,
-  "articles_in_window": 934,
+  "articles_in_window": 624,
   "collection_days": 63,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,92 +10,92 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 73,
-      "sources": 29,
+      "articles": 45,
+      "sources": 25,
       "sentiment_direction": "negative",
-      "surge": 0.44,
-      "sentiment_mean": -0.243,
-      "headline": "China confirms Xi-Trump-Putin historic summit. What will be on the agenda?",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/16/trump-xi-putin-ukraine-nuclear-tariffs-russia-iran-.html"
+      "surge": 0.3,
+      "sentiment_mean": -0.167,
+      "headline": "Trump, Putin and Xi set for historic summit as Ukraine stays sidelined",
+      "headline_source": "Reddit r/geopolitics",
+      "headline_url": "https://www.reddit.com/r/geopolitics/comments/1xxlzwg/trump_putin_and_xi_set_for_historic_summit_as/"
     },
     {
       "term": "nvidia",
-      "articles": 61,
-      "sources": 28,
+      "articles": 43,
+      "sources": 25,
       "sentiment_direction": "mixed",
-      "surge": 0.33,
-      "sentiment_mean": 0.008,
-      "headline": "U.S. plans to name Nvidia among AI \u2018national champions\u2019, WSJ reports",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/us-plans-to-name-nvidia-among-ai-national-champions-wsj-reports-5028365"
+      "surge": 0.26,
+      "sentiment_mean": 0.033,
+      "headline": "They're closing the nvidia/china loophole",
+      "headline_source": "Reddit r/wallstreetbets",
+      "headline_url": "https://www.reddit.com/r/wallstreetbets/comments/1xxpxod/theyre_closing_the_nvidiachina_loophole/"
+    },
+    {
+      "term": "huang",
+      "articles": 27,
+      "sources": 21,
+      "sentiment_direction": "mixed",
+      "surge": 0.21,
+      "sentiment_mean": 0.016,
+      "headline": "Taipei101 lights up in Jensen Huang. He is still a national hero of Taiwan \ud83c\uddf9\ud83c\uddfc",
+      "headline_source": "Reddit r/wallstreetbets",
+      "headline_url": "https://www.reddit.com/r/wallstreetbets/comments/1xxq0ty/taipei101_lights_up_in_jensen_huang_he_is_still_a/"
+    },
+    {
+      "term": "jensen",
+      "articles": 28,
+      "sources": 20,
+      "sentiment_direction": "mixed",
+      "surge": 0.24,
+      "sentiment_mean": 0.068,
+      "headline": "Taipei101 lights up in Jensen Huang. He is still a national hero of Taiwan \ud83c\uddf9\ud83c\uddfc",
+      "headline_source": "Reddit r/wallstreetbets",
+      "headline_url": "https://www.reddit.com/r/wallstreetbets/comments/1xxq0ty/taipei101_lights_up_in_jensen_huang_he_is_still_a/"
     },
     {
       "term": "president",
-      "articles": 54,
-      "sources": 26,
+      "articles": 30,
+      "sources": 18,
       "sentiment_direction": "mixed",
-      "surge": 0.54,
-      "sentiment_mean": -0.118,
+      "surge": 0.33,
+      "sentiment_mean": -0.141,
       "headline": "Indonesian president apologises to Singapore, Malaysia for wildfire haze",
       "headline_source": "Al Jazeera",
       "headline_url": "https://www.aljazeera.com/news/2026/11/16/indonesian-president-apologises-to-singapore-malaysia-for-wildfire-haze?traffic_source=rss"
     },
     {
-      "term": "huang",
-      "articles": 44,
-      "sources": 24,
-      "sentiment_direction": "mixed",
-      "surge": 0.3,
-      "sentiment_mean": -0.028,
-      "headline": "Days after resigning, Jensen Huang \u2018talks\u2019 return as Nvidia CEO",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/technology/tech-news/days-after-resigning-over-affair-jensen-huang-talks-return-as-nvidia-ceo-everyone-loves-jensen-call-war-room-and-more-that-could-bring-him-back/articleshow/135873375.cms"
-    },
-    {
-      "term": "jensen",
-      "articles": 42,
-      "sources": 21,
-      "sentiment_direction": "mixed",
-      "surge": 0.32,
-      "sentiment_mean": -0.019,
-      "headline": "Days after resigning, Jensen Huang \u2018talks\u2019 return as Nvidia CEO",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/technology/tech-news/days-after-resigning-over-affair-jensen-huang-talks-return-as-nvidia-ceo-everyone-loves-jensen-call-war-room-and-more-that-could-bring-him-back/articleshow/135873375.cms"
-    },
-    {
-      "term": "iran",
+      "term": "government",
       "articles": 34,
-      "sources": 21,
-      "sentiment_direction": "negative",
-      "surge": 0.41,
-      "sentiment_mean": -0.533,
-      "headline": "US-Iran deal uncertainty to weigh on rupee and bonds; Fed, RBI rate paths eyed - Reuters",
-      "headline_source": "Reuters",
-      "headline_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMVNxZjdMUWpxX0k5UFljV1NLWVhkTW5lMnE0SVVsRjlVNml3N1BCWmt2NTgwV0RGZkNYam1yQ1N3MXRjUHJLME5jZmY0dERCNGo4Rl9rZjdKZldwajhnbmlTQ25PRzE4WndhUEFoS29fZmFDWVczMUZfRFRRa21MektCU0luRGJiNllsTnZiRmZHVUN1R0kwTlJsM2dCN2hlYzJyOXk0bUZRX29XajFHRkhubzk?oc=5"
-    },
-    {
-      "term": "country",
-      "articles": 41,
-      "sources": 20,
+      "sources": 16,
       "sentiment_direction": "mixed",
-      "surge": 0.9,
-      "sentiment_mean": 0.09,
-      "headline": "They Defeated a Strongman. But Can They Run a Country?",
-      "headline_source": "NYT World",
-      "headline_url": "https://www.nytimes.com/2026/11/16/world/europe/serbia-students-vucic-election.html"
+      "surge": 0.66,
+      "sentiment_mean": -0.114,
+      "headline": "Houthis advance on Yemen government stronghold of Aden",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/world/middle-east/article/3374549/houthis-advance-yemen-government-stronghold-aden"
     },
     {
       "term": "control",
-      "articles": 30,
-      "sources": 19,
+      "articles": 24,
+      "sources": 16,
       "sentiment_direction": "negative",
-      "surge": 0.93,
-      "sentiment_mean": -0.247,
+      "surge": 0.79,
+      "sentiment_mean": -0.377,
       "headline": "Congo Ebola Outbreak 2026: Record Crisis Defies Control Six Months In",
       "headline_source": "Bloomberg Markets",
       "headline_url": "https://www.bloomberg.com/news/articles/2026-11-16/congo-ebola-outbreak-2026-record-crisis-defies-control-six-months-in"
+    },
+    {
+      "term": "iran",
+      "articles": 23,
+      "sources": 16,
+      "sentiment_direction": "negative",
+      "surge": 0.32,
+      "sentiment_mean": -0.524,
+      "headline": "US-Iran deal uncertainty to weigh on rupee and bonds; Fed, RBI rate paths eyed - Reuters",
+      "headline_source": "Reuters",
+      "headline_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMVNxZjdMUWpxX0k5UFljV1NLWVhkTW5lMnE0SVVsRjlVNml3N1BCWmt2NTgwV0RGZkNYam1yQ1N3MXRjUHJLME5jZmY0dERCNGo4Rl9rZjdKZldwajhnbmlTQ25PRzE4WndhUEFoS29fZmFDWVczMUZfRFRRa21MektCU0luRGJiNllsTnZiRmZHVUN1R0kwTlJsM2dCN2hlYzJyOXk0bUZRX29XajFHRkhubzk?oc=5"
     }
   ],
-  "hours_since_fetch": 0.0
+  "hours_since_fetch": 5.71
 }
