@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16T03:54:32.336431+00:00",
+  "generated_at": "2026-11-16T04:24:13.720968+00:00",
   "window_hours": 24,
-  "articles_in_window": 91,
+  "articles_in_window": 870,
   "collection_days": 63,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,24 +9,92 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
-      "term": "faster",
-      "articles": 4,
-      "sources": 4,
-      "sentiment_direction": "unknown",
-      "surge": 0.61,
-      "headline": "Crows make decisions faster than we can",
-      "headline_source": "Hacker News",
-      "headline_url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html"
+      "term": "trump",
+      "articles": 66,
+      "sources": 28,
+      "sentiment_direction": "negative",
+      "surge": 0.39,
+      "sentiment_mean": -0.25,
+      "headline": "Modi Heads to Manila With Maritime, Trade, Trump on Agenda",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/articles/2026-11-16/modi-heads-to-manila-with-maritime-trade-trump-on-agenda"
     },
     {
-      "term": "links",
-      "articles": 4,
-      "sources": 4,
-      "sentiment_direction": "unknown",
-      "surge": 0.57,
-      "headline": "Pranksters Redirect Bitly's Links in X Posts for Trump, McDonald's and Burger King",
-      "headline_source": "Slashdot",
-      "headline_url": "https://slashdot.org/story/26/11/15/2311255/pranksters-redirect-bitlys-links-in-x-posts-for-trump-mcdonalds-and-burger-king?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+      "term": "nvidia",
+      "articles": 55,
+      "sources": 28,
+      "sentiment_direction": "mixed",
+      "surge": 0.3,
+      "sentiment_mean": 0.002,
+      "headline": "U.S Gov to Name Nvidia Among AI \u2018National Champions\u2019",
+      "headline_source": "Reddit r/wallstreetbets",
+      "headline_url": "https://www.reddit.com/r/wallstreetbets/comments/1xxfsqd/us_gov_to_name_nvidia_among_ai_national_champions/"
+    },
+    {
+      "term": "president",
+      "articles": 49,
+      "sources": 23,
+      "sentiment_direction": "mixed",
+      "surge": 0.49,
+      "sentiment_mean": -0.135,
+      "headline": "Trump's handpicked party chair faces a rebellion as midterm losses challenge president's grip on GOP",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/politics/trumps-handpicked-party-chair-faces-a-rebellion-as-midterm-losses-challenge-presidents-grip-on-gop"
+    },
+    {
+      "term": "huang",
+      "articles": 40,
+      "sources": 23,
+      "sentiment_direction": "mixed",
+      "surge": 0.28,
+      "sentiment_mean": -0.043,
+      "headline": "Tech world's calls for Jensen Huang to return to Nvidia are growing",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/11/16/nvidia-jensen-huang-return-tech.html"
+    },
+    {
+      "term": "country",
+      "articles": 38,
+      "sources": 20,
+      "sentiment_direction": "mixed",
+      "surge": 0.82,
+      "sentiment_mean": 0.137,
+      "headline": "Myanmar activist Bo Kyi wins Magsaysay Award, urges Asean to restore country\u2019s democracy",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/asia/southeast-asia/article/3374529/myanmar-activist-bo-kyi-wins-magsaysay-award-urges-asean-restore-countrys-democracy"
+    },
+    {
+      "term": "jensen",
+      "articles": 38,
+      "sources": 20,
+      "sentiment_direction": "mixed",
+      "surge": 0.29,
+      "sentiment_mean": -0.034,
+      "headline": "Tech world's calls for Jensen Huang to return to Nvidia are growing",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/11/16/nvidia-jensen-huang-return-tech.html"
+    },
+    {
+      "term": "iran",
+      "articles": 34,
+      "sources": 20,
+      "sentiment_direction": "negative",
+      "surge": 0.41,
+      "sentiment_mean": -0.508,
+      "headline": "US-Iran deal uncertainty to weigh on rupee and bonds; Fed, RBI rate paths eyed - Reuters",
+      "headline_source": "Reuters",
+      "headline_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMVNxZjdMUWpxX0k5UFljV1NLWVhkTW5lMnE0SVVsRjlVNml3N1BCWmt2NTgwV0RGZkNYam1yQ1N3MXRjUHJLME5jZmY0dERCNGo4Rl9rZjdKZldwajhnbmlTQ25PRzE4WndhUEFoS29fZmFDWVczMUZfRFRRa21MektCU0luRGJiNllsTnZiRmZHVUN1R0kwTlJsM2dCN2hlYzJyOXk0bUZRX29XajFHRkhubzk?oc=5"
+    },
+    {
+      "term": "control",
+      "articles": 29,
+      "sources": 20,
+      "sentiment_direction": "negative",
+      "surge": 0.9,
+      "sentiment_mean": -0.232,
+      "headline": "Yemeni forces' retreat leaves Houthis in control of key Red Sea waterway",
+      "headline_source": "BBC World",
+      "headline_url": "https://www.bbc.co.uk/news/articles/cqvg2xgyvnjpo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "hours_since_fetch": 0.0
