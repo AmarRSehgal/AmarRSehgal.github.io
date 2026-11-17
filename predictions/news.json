@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-17T06:38:57.504289+00:00",
+  "generated_at": "2026-11-17T07:25:04.162075+00:00",
   "window_hours": 24,
-  "articles_in_window": 117,
+  "articles_in_window": 1050,
   "collection_days": 64,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,87 +9,92 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
-      "term": "data",
-      "articles": 14,
-      "sources": 8,
-      "sentiment_direction": "positive",
-      "surge": 0.3,
-      "sentiment_mean": 0.285,
-      "headline": "Just 400 US Data Centers Use More Electricity Than Michigan",
-      "headline_source": "Slashdot",
-      "headline_url": "https://news.slashdot.org/story/26/11/16/2137223/just-400-us-data-centers-use-more-electricity-than-michigan?utm_source=rss1.0mainlinkanon&utm_medium=feed"
-    },
-    {
-      "term": "power",
-      "articles": 10,
-      "sources": 6,
+      "term": "trump",
+      "articles": 137,
+      "sources": 38,
       "sentiment_direction": "mixed",
-      "surge": 0.29,
-      "sentiment_mean": 0.024,
-      "headline": "Uniper nears first data centre deal on idle power plant site - report",
+      "surge": 1.05,
+      "sentiment_mean": -0.119,
+      "headline": "Trump to kick off Asia trip with Quad talks in Manila ahead of China visit",
       "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/uniper-nears-first-data-centre-deal-on-idle-power-plant-site--report-93CH-5028487"
-    },
-    {
-      "term": "chinese",
-      "articles": 8,
-      "sources": 6,
-      "sentiment_direction": "unknown",
-      "surge": 0.14,
-      "headline": "US Closes Loophole That Allowed China To Remotely Access Nvidia Chips",
-      "headline_source": "Slashdot",
-      "headline_url": "https://hardware.slashdot.org/story/26/11/16/1645203/us-closes-loophole-that-allowed-china-to-remotely-access-nvidia-chips?utm_source=rss1.0mainlinkanon&utm_medium=feed"
-    },
-    {
-      "term": "share",
-      "articles": 8,
-      "sources": 6,
-      "sentiment_direction": "unknown",
-      "surge": 0.43,
-      "headline": "Japan planning to build network to share disaster information across Asia",
-      "headline_source": "Japan Times",
-      "headline_url": "https://www.japantimes.co.jp/news/2026/11/16/japan/disaster-information-share-network-asia/"
-    },
-    {
-      "term": "company",
-      "articles": 10,
-      "sources": 5,
-      "sentiment_direction": "mixed",
-      "surge": 0.14,
-      "sentiment_mean": 0.131,
-      "headline": "Blue States Sue Trump Administration Over Offshore Wind Deal. \u201cThis administration cooked up a sham deal to pay a foreign energy company hundreds of millions of taxpayer dollars to abandon offshore wind and invest in oil and gas instead.\u201d The extraordinary deal violates 2 federal laws.",
-      "headline_source": "Reddit r/energy",
-      "headline_url": "https://www.reddit.com/r/energy/comments/1xxsdx6/blue_states_sue_trump_administration_over/"
-    },
-    {
-      "term": "including",
-      "articles": 9,
-      "sources": 5,
-      "sentiment_direction": "unknown",
-      "surge": 0.21,
-      "headline": "JPMorgan Chase Glitch Disrupts Online Banking Across Major US Banks",
-      "headline_source": "Slashdot",
-      "headline_url": "https://news.slashdot.org/story/26/11/16/2332229/jpmorgan-chase-glitch-disrupts-online-banking-across-major-us-banks?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+      "headline_url": "https://www.investing.com/news/economic-indicators/trump-to-kick-off-asia-trip-with-quad-talks-in-manila-ahead-of-china-visit-5031428"
     },
     {
       "term": "nvidia",
-      "articles": 8,
-      "sources": 5,
-      "sentiment_direction": "unknown",
-      "surge": 0.06,
-      "headline": "US Closes Loophole That Allowed China To Remotely Access Nvidia Chips",
-      "headline_source": "Slashdot",
-      "headline_url": "https://hardware.slashdot.org/story/26/11/16/1645203/us-closes-loophole-that-allowed-china-to-remotely-access-nvidia-chips?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+      "articles": 68,
+      "sources": 32,
+      "sentiment_direction": "mixed",
+      "surge": 0.43,
+      "sentiment_mean": 0.023,
+      "headline": "Stock futures are mixed after Nvidia pressures tech to start the week: Live updates",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/11/16/stock-market-today-live-updates.html"
     },
     {
-      "term": "market",
-      "articles": 7,
-      "sources": 5,
-      "sentiment_direction": "unknown",
-      "surge": 0.13,
-      "headline": "The future of U.S. renewable energy rests on Nextpower\u2014the backbone of the growing solar sector",
-      "headline_source": "Reddit r/energy",
-      "headline_url": "https://www.reddit.com/r/energy/comments/1xxwn0f/the_future_of_us_renewable_energy_rests_on/"
+      "term": "president",
+      "articles": 72,
+      "sources": 26,
+      "sentiment_direction": "mixed",
+      "surge": 0.86,
+      "sentiment_mean": -0.119,
+      "headline": "Mongolian President Khurelsukh to resign amid corruption allegations",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/mongolian-president-khurelsukh-to-resign-amid-corruption-allegations/a-79964717?maca=en-rss-en-all-1573-rdf"
+    },
+    {
+      "term": "tech",
+      "articles": 43,
+      "sources": 26,
+      "sentiment_direction": "mixed",
+      "surge": 0.95,
+      "sentiment_mean": 0.141,
+      "headline": "Stock futures are mixed after Nvidia pressures tech to start the week: Live updates",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/11/16/stock-market-today-live-updates.html"
+    },
+    {
+      "term": "chinese",
+      "articles": 48,
+      "sources": 25,
+      "sentiment_direction": "mixed",
+      "surge": 0.73,
+      "sentiment_mean": 0.035,
+      "headline": "Carney says Canada could turn to Chinese automakers if Trump trade talks fail",
+      "headline_source": "Reddit r/economics",
+      "headline_url": "https://www.reddit.com/r/Economics/comments/1xy91b4/carney_says_canada_could_turn_to_chinese/"
+    },
+    {
+      "term": "huang",
+      "articles": 37,
+      "sources": 24,
+      "sentiment_direction": "mixed",
+      "surge": 0.3,
+      "sentiment_mean": 0.11,
+      "headline": "How Jensen Huang scandal makes Congress a bigger risk to U.S.-China relations",
+      "headline_source": "CNBC World",
+      "headline_url": "https://www.cnbc.com/2026/11/17/jensen-nvidia-trump-xi-tech-curbs-congress.html"
+    },
+    {
+      "term": "data",
+      "articles": 42,
+      "sources": 23,
+      "sentiment_direction": "mixed",
+      "surge": 0.85,
+      "sentiment_mean": 0.073,
+      "headline": "America\u2019s most powerful data centres emit as much as a small nation",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/world/united-states-canada/article/3374707/americas-most-powerful-data-centres-emit-much-small-nation"
+    },
+    {
+      "term": "iran",
+      "articles": 35,
+      "sources": 23,
+      "sentiment_direction": "negative",
+      "surge": 0.55,
+      "sentiment_mean": -0.689,
+      "headline": "Hundreds arrested in anti-Trump protests in Philippines amid anger over Iran war and AI pact",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/world/2026/nov/17/hundreds-arrested-manila-anti-trump-protests-philippines"
     }
   ],
   "hours_since_fetch": 0.0
