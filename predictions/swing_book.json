@@ -1,132 +1,132 @@
 {
-  "generated_at": "2026-11-13T14:35:10.061134+00:00",
+  "generated_at": "2026-11-17T14:35:10.356389+00:00",
   "strategy": "MultiFactorV3",
   "account": "PA37U0PIU9B9",
   "paper": true,
   "started": "2026-09-12",
   "starting_equity": 100000.0,
-  "equity": 95794.18,
-  "cash": 2618.32,
-  "return_pct": -0.0421,
+  "equity": 95748.09,
+  "cash": 2471.77,
+  "return_pct": -0.0425,
   "positions": [
     {
-      "ticker": "XOM",
-      "qty": 47.4254,
-      "avg_entry": 164.19,
-      "price": 170.78,
-      "market_value": 8099.32,
-      "pnl": 312.62,
-      "return_pct": 0.0401,
-      "weight_pct": 0.0845
+      "ticker": "NKE",
+      "qty": 202.2298,
+      "avg_entry": 38.8,
+      "price": 40.38,
+      "market_value": 8167.05,
+      "pnl": 319.64,
+      "return_pct": 0.0407,
+      "weight_pct": 0.0853
     },
     {
       "ticker": "CVX",
       "qty": 35.8808,
       "avg_entry": 211.54,
-      "price": 218.09,
-      "market_value": 7825.12,
-      "pnl": 234.72,
-      "return_pct": 0.0309,
-      "weight_pct": 0.0817
+      "price": 218.38,
+      "market_value": 7835.65,
+      "pnl": 245.25,
+      "return_pct": 0.0323,
+      "weight_pct": 0.0818
     },
     {
       "ticker": "WMT",
       "qty": 61.1091,
       "avg_entry": 124.63,
-      "price": 126.98,
-      "market_value": 7759.94,
-      "pnl": 143.91,
-      "return_pct": 0.0189,
-      "weight_pct": 0.081
-    },
-    {
-      "ticker": "COST",
-      "qty": 6.9777,
-      "avg_entry": 1091.52,
-      "price": 1101.91,
-      "market_value": 7688.76,
-      "pnl": 72.52,
-      "return_pct": 0.0095,
-      "weight_pct": 0.0803
+      "price": 128.22,
+      "market_value": 7835.41,
+      "pnl": 219.38,
+      "return_pct": 0.0288,
+      "weight_pct": 0.0818
     },
     {
       "ticker": "CB",
       "qty": 20.4808,
       "avg_entry": 374.4,
-      "price": 375.29,
-      "market_value": 7686.26,
-      "pnl": 18.21,
-      "return_pct": 0.0024,
-      "weight_pct": 0.0802
-    },
-    {
-      "ticker": "INTU",
-      "qty": 22.6057,
-      "avg_entry": 342.48,
-      "price": 342.31,
-      "market_value": 7738.17,
-      "pnl": -3.86,
-      "return_pct": -0.0005,
-      "weight_pct": 0.0808
+      "price": 378.62,
+      "market_value": 7754.56,
+      "pnl": 86.51,
+      "return_pct": 0.0113,
+      "weight_pct": 0.081
     },
     {
       "ticker": "AMT",
       "qty": 40.2787,
       "avg_entry": 190.37,
-      "price": 189.78,
-      "market_value": 7643.88,
-      "pnl": -24.17,
-      "return_pct": -0.0032,
-      "weight_pct": 0.0798
+      "price": 190.13,
+      "market_value": 7658.38,
+      "pnl": -9.67,
+      "return_pct": -0.0013,
+      "weight_pct": 0.08
+    },
+    {
+      "ticker": "INTU",
+      "qty": 22.795,
+      "avg_entry": 342.43,
+      "price": 336.07,
+      "market_value": 7660.71,
+      "pnl": -144.97,
+      "return_pct": -0.0186,
+      "weight_pct": 0.08
+    },
+    {
+      "ticker": "SPGI",
+      "qty": 16.5479,
+      "avg_entry": 472.49,
+      "price": 462.87,
+      "market_value": 7659.53,
+      "pnl": -159.21,
+      "return_pct": -0.0204,
+      "weight_pct": 0.08
     },
     {
       "ticker": "HD",
-      "qty": 22.2799,
-      "avg_entry": 350.38,
-      "price": 344.02,
-      "market_value": 7664.83,
-      "pnl": -141.7,
-      "return_pct": -0.0181,
+      "qty": 22.4957,
+      "avg_entry": 350.29,
+      "price": 340.7,
+      "market_value": 7664.39,
+      "pnl": -215.7,
+      "return_pct": -0.0274,
       "weight_pct": 0.08
     },
     {
-      "ticker": "NKE",
-      "qty": 202.2298,
-      "avg_entry": 38.8,
-      "price": 37.92,
-      "market_value": 7667.78,
-      "pnl": -179.63,
-      "return_pct": -0.0229,
-      "weight_pct": 0.08
-    },
-    {
-      "ticker": "SYK",
-      "qty": 24.4514,
-      "avg_entry": 327.5,
-      "price": 313.49,
-      "market_value": 7665.28,
-      "pnl": -342.51,
-      "return_pct": -0.0428,
+      "ticker": "LMT",
+      "qty": 13.0537,
+      "avg_entry": 603.44,
+      "price": 586.77,
+      "market_value": 7659.5,
+      "pnl": -217.59,
+      "return_pct": -0.0276,
       "weight_pct": 0.08
     },
     {
       "ticker": "COP",
       "qty": 57.6999,
       "avg_entry": 149.41,
-      "price": 141.84,
-      "market_value": 8183.87,
-      "pnl": -437.19,
-      "return_pct": -0.0507,
-      "weight_pct": 0.0854
+      "price": 142.58,
+      "market_value": 8226.85,
+      "pnl": -394.21,
+      "return_pct": -0.0457,
+      "weight_pct": 0.0859
+    },
+    {
+      "ticker": "SYK",
+      "qty": 24.4514,
+      "avg_entry": 327.5,
+      "price": 310.46,
+      "market_value": 7591.32,
+      "pnl": -416.47,
+      "return_pct": -0.052,
+      "weight_pct": 0.0793
     },
     {
       "ticker": "PFE",
-      "qty": 261.6477,
-      "avg_entry": 30.47,
-      "price": 28.88,
-      "market_value": 7555.08,
-      "pnl": -416.33,
-      "return_pct": -0.0522,
+      "qty": 265.4151,
+      "avg_entry": 30.44,
+      "price": 28.48,
+      "market_value": 7559.02,
+      "pnl": -521.24,
+      "return_pct": -0.0645,
       "weight_pct": 0.0789
     }
   ],
@@ -311,11 +311,19 @@
     {
       "date": "2026-11-13",
       "equity": 95371.85
+    },
+    {
+      "date": "2026-11-14",
+      "equity": 95975.94
+    },
+    {
+      "date": "2026-11-17",
+      "equity": 95836.58
     }
   ],
   "benchmark": "SPY",
-  "benchmark_return_pct": 0.0,
-  "excess_return_pct": -0.0421,
+  "benchmark_return_pct": -0.0227,
+  "excess_return_pct": -0.0198,
   "ex_downtime": {
     "windows": [
       {
@@ -328,11 +336,11 @@
       }
     ],
     "sessions_excluded": 17,
-    "return_pct": -0.072,
-    "benchmark_return_pct": 0.0091,
-    "excess_return_pct": -0.0812
+    "return_pct": -0.0725,
+    "benchmark_return_pct": -0.0137,
+    "excess_return_pct": -0.0587
   },
-  "days_live": 38,
+  "days_live": 42,
   "verdict_due": false,
   "retire_after_days": 180,
   "backtest": {
