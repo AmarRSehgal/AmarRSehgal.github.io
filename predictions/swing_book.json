@@ -1,133 +1,133 @@
 {
-  "generated_at": "2026-11-17T14:35:10.356389+00:00",
+  "generated_at": "2026-11-18T14:35:12.398434+00:00",
   "strategy": "MultiFactorV3",
   "account": "PA37U0PIU9B9",
   "paper": true,
   "started": "2026-09-12",
   "starting_equity": 100000.0,
-  "equity": 95748.09,
-  "cash": 2471.77,
-  "return_pct": -0.0425,
+  "equity": 93014.12,
+  "cash": 3088.42,
+  "return_pct": -0.0699,
   "positions": [
-    {
-      "ticker": "NKE",
-      "qty": 202.2298,
-      "avg_entry": 38.8,
-      "price": 40.38,
-      "market_value": 8167.05,
-      "pnl": 319.64,
-      "return_pct": 0.0407,
-      "weight_pct": 0.0853
-    },
-    {
-      "ticker": "CVX",
-      "qty": 35.8808,
-      "avg_entry": 211.54,
-      "price": 218.38,
-      "market_value": 7835.65,
-      "pnl": 245.25,
-      "return_pct": 0.0323,
-      "weight_pct": 0.0818
-    },
     {
       "ticker": "WMT",
       "qty": 61.1091,
       "avg_entry": 124.63,
-      "price": 128.22,
-      "market_value": 7835.41,
-      "pnl": 219.38,
-      "return_pct": 0.0288,
-      "weight_pct": 0.0818
+      "price": 126.59,
+      "market_value": 7735.8,
+      "pnl": 119.77,
+      "return_pct": 0.0157,
+      "weight_pct": 0.0832
     },
     {
       "ticker": "CB",
       "qty": 20.4808,
       "avg_entry": 374.4,
-      "price": 378.62,
-      "market_value": 7754.56,
-      "pnl": 86.51,
-      "return_pct": 0.0113,
-      "weight_pct": 0.081
+      "price": 373.08,
+      "market_value": 7641.1,
+      "pnl": -26.95,
+      "return_pct": -0.0035,
+      "weight_pct": 0.0821
     },
     {
-      "ticker": "AMT",
-      "qty": 40.2787,
-      "avg_entry": 190.37,
-      "price": 190.13,
-      "market_value": 7658.38,
-      "pnl": -9.67,
-      "return_pct": -0.0013,
-      "weight_pct": 0.08
+      "ticker": "PEP",
+      "qty": 53.2622,
+      "avg_entry": 143.81,
+      "price": 141.6,
+      "market_value": 7541.92,
+      "pnl": -117.71,
+      "return_pct": -0.0154,
+      "weight_pct": 0.0811
     },
     {
-      "ticker": "INTU",
-      "qty": 22.795,
-      "avg_entry": 342.43,
-      "price": 336.07,
-      "market_value": 7660.71,
-      "pnl": -144.97,
-      "return_pct": -0.0186,
-      "weight_pct": 0.08
-    },
-    {
-      "ticker": "SPGI",
-      "qty": 16.5479,
-      "avg_entry": 472.49,
-      "price": 462.87,
-      "market_value": 7659.53,
-      "pnl": -159.21,
-      "return_pct": -0.0204,
-      "weight_pct": 0.08
-    },
-    {
-      "ticker": "HD",
-      "qty": 22.4957,
-      "avg_entry": 350.29,
-      "price": 340.7,
-      "market_value": 7664.39,
-      "pnl": -215.7,
-      "return_pct": -0.0274,
-      "weight_pct": 0.08
+      "ticker": "DIS",
+      "qty": 63.6923,
+      "avg_entry": 120.26,
+      "price": 117.89,
+      "market_value": 7508.68,
+      "pnl": -150.95,
+      "return_pct": -0.0197,
+      "weight_pct": 0.0807
     },
     {
       "ticker": "LMT",
       "qty": 13.0537,
       "avg_entry": 603.44,
-      "price": 586.77,
-      "market_value": 7659.5,
-      "pnl": -217.59,
-      "return_pct": -0.0276,
-      "weight_pct": 0.08
+      "price": 582.33,
+      "market_value": 7601.55,
+      "pnl": -275.54,
+      "return_pct": -0.035,
+      "weight_pct": 0.0817
     },
     {
-      "ticker": "COP",
-      "qty": 57.6999,
-      "avg_entry": 149.41,
-      "price": 142.58,
-      "market_value": 8226.85,
-      "pnl": -394.21,
-      "return_pct": -0.0457,
-      "weight_pct": 0.0859
-    },
-    {
-      "ticker": "SYK",
-      "qty": 24.4514,
-      "avg_entry": 327.5,
-      "price": 310.46,
-      "market_value": 7591.32,
-      "pnl": -416.47,
-      "return_pct": -0.052,
+      "ticker": "LOW",
+      "qty": 34.1624,
+      "avg_entry": 224.21,
+      "price": 215.8,
+      "market_value": 7372.25,
+      "pnl": -287.38,
+      "return_pct": -0.0375,
       "weight_pct": 0.0793
     },
     {
-      "ticker": "PFE",
-      "qty": 265.4151,
-      "avg_entry": 30.44,
-      "price": 28.48,
-      "market_value": 7559.02,
-      "pnl": -521.24,
-      "return_pct": -0.0645,
+      "ticker": "AMT",
+      "qty": 40.2787,
+      "avg_entry": 190.37,
+      "price": 182.26,
+      "market_value": 7341.19,
+      "pnl": -326.86,
+      "return_pct": -0.0426,
       "weight_pct": 0.0789
+    },
+    {
+      "ticker": "HD",
+      "qty": 22.4957,
+      "avg_entry": 350.29,
+      "price": 335.26,
+      "market_value": 7541.9,
+      "pnl": -338.19,
+      "return_pct": -0.0429,
+      "weight_pct": 0.0811
+    },
+    {
+      "ticker": "SPGI",
+      "qty": 16.5479,
+      "avg_entry": 472.49,
+      "price": 451.03,
+      "market_value": 7463.61,
+      "pnl": -355.13,
+      "return_pct": -0.0454,
+      "weight_pct": 0.0802
+    },
+    {
+      "ticker": "INTU",
+      "qty": 22.795,
+      "avg_entry": 342.43,
+      "price": 320.82,
+      "market_value": 7313.09,
+      "pnl": -492.59,
+      "return_pct": -0.0631,
+      "weight_pct": 0.0786
+    },
+    {
+      "ticker": "PFE",
+      "qty": 269.1325,
+      "avg_entry": 30.42,
+      "price": 28.47,
+      "market_value": 7661.42,
+      "pnl": -524.75,
+      "return_pct": -0.0641,
+      "weight_pct": 0.0824
+    },
+    {
+      "ticker": "NKE",
+      "qty": 202.2298,
+      "avg_entry": 38.8,
+      "price": 35.59,
+      "market_value": 7197.36,
+      "pnl": -650.05,
+      "return_pct": -0.0828,
+      "weight_pct": 0.0774
     }
   ],
   "open_positions": 12,
@@ -319,11 +319,15 @@
     {
       "date": "2026-11-17",
       "equity": 95836.58
+    },
+    {
+      "date": "2026-11-18",
+      "equity": 93538.99
     }
   ],
   "benchmark": "SPY",
-  "benchmark_return_pct": -0.0227,
-  "excess_return_pct": -0.0198,
+  "benchmark_return_pct": -0.0326,
+  "excess_return_pct": -0.0373,
   "ex_downtime": {
     "windows": [
       {
@@ -336,15 +340,15 @@
       }
     ],
     "sessions_excluded": 17,
-    "return_pct": -0.0725,
-    "benchmark_return_pct": -0.0137,
-    "excess_return_pct": -0.0587
+    "return_pct": -0.099,
+    "benchmark_return_pct": -0.0238,
+    "excess_return_pct": -0.0752
   },
-  "days_live": 42,
+  "days_live": 43,
   "verdict_due": false,
   "retire_after_days": 180,
   "backtest": {
-    "measured_at": "2026-11-08T22:00:29.318317+00:00",
+    "measured_at": "2026-11-17T23:33:31.103130+00:00",
     "window_start": "2019-01-01",
     "window_end": "2025-07-01",
     "universe": "etf",
