@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-17T19:24:18.364490+00:00",
+  "generated_at": "2026-11-18T01:36:14.167735+00:00",
   "window_hours": 24,
-  "articles_in_window": 2203,
-  "collection_days": 64,
+  "articles_in_window": 1749,
+  "collection_days": 65,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
   "surge_available": true,
@@ -10,92 +10,92 @@
   "topics": [
     {
       "term": "nvidia",
-      "articles": 163,
-      "sources": 39,
+      "articles": 138,
+      "sources": 38,
       "sentiment_direction": "mixed",
-      "surge": 1.05,
-      "sentiment_mean": 0.018,
-      "headline": "Cornyn links Nvidia scandal to perception of Trump admin corruption",
-      "headline_source": "Politico",
-      "headline_url": "https://www.politico.com/news/2026/11/17/cornyn-trump-nvidia-corruption-perceptions-01170190"
+      "surge": 0.9,
+      "sentiment_mean": 0.031,
+      "headline": "Nvidia Rejects Jensen Huang's Offer to Return as CEO",
+      "headline_source": "Slashdot",
+      "headline_url": "https://slashdot.org/story/26/11/18/0124249/nvidia-rejects-jensen-huangs-offer-to-return-as-ceo?utm_source=rss1.0mainlinkanon&utm_medium=feed"
     },
     {
       "term": "trump",
-      "articles": 279,
+      "articles": 221,
       "sources": 37,
       "sentiment_direction": "negative",
-      "surge": 2.32,
-      "sentiment_mean": -0.215,
-      "headline": "Cornyn links Nvidia scandal to perception of Trump admin corruption",
-      "headline_source": "Politico",
-      "headline_url": "https://www.politico.com/news/2026/11/17/cornyn-trump-nvidia-corruption-perceptions-01170190"
+      "surge": 1.81,
+      "sentiment_mean": -0.196,
+      "headline": "\u201cTrump was in bed with Jensen\u201d: Critics balk at Huang\u2019s wish to return to Nvidia",
+      "headline_source": "Ars Technica",
+      "headline_url": "https://arstechnica.com/tech-policy/2026/11/trump-was-in-bed-with-jensen-critics-balk-at-huangs-wish-to-return-to-nvidia/"
     },
     {
       "term": "huang",
-      "articles": 87,
-      "sources": 36,
+      "articles": 78,
+      "sources": 35,
       "sentiment_direction": "mixed",
-      "surge": 0.72,
-      "sentiment_mean": 0.112,
-      "headline": "Jensen Huang agrees to testify before US House, says can resume CEO role",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/economy/2026/11/17/jensen-huang-to-testify-before-us-house-committees-next-month?traffic_source=rss"
+      "surge": 0.65,
+      "sentiment_mean": 0.121,
+      "headline": "Nvidia Rejects Jensen Huang's Offer to Return as CEO",
+      "headline_source": "Slashdot",
+      "headline_url": "https://slashdot.org/story/26/11/18/0124249/nvidia-rejects-jensen-huangs-offer-to-return-as-ceo?utm_source=rss1.0mainlinkanon&utm_medium=feed"
     },
     {
       "term": "jensen",
-      "articles": 74,
+      "articles": 68,
       "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 0.67,
-      "sentiment_mean": 0.089,
-      "headline": "Jensen Huang agrees to testify before US House, says can resume CEO role",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/economy/2026/11/17/jensen-huang-to-testify-before-us-house-committees-next-month?traffic_source=rss"
-    },
-    {
-      "term": "tech",
-      "articles": 88,
-      "sources": 32,
-      "sentiment_direction": "mixed",
-      "surge": 2.02,
-      "sentiment_mean": 0.015,
-      "headline": "Veteran pilot: Congress must act to update 'archaic' FAA tech that is 'putting Americans in danger'",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/us/veteran-pilot-congress-must-act-upate-archaic-faa-tech-putting-americans-danger"
-    },
-    {
-      "term": "data",
-      "articles": 80,
-      "sources": 32,
-      "sentiment_direction": "mixed",
-      "surge": 1.81,
-      "sentiment_mean": -0.046,
-      "headline": "The data is very preliminary, but Vulcan failure may not be due to BE-4 engines",
-      "headline_source": "Ars Technica",
-      "headline_url": "https://arstechnica.com/space/2026/11/sources-vulcan-launch-anomaly-investigation-is-complex/"
+      "surge": 0.64,
+      "sentiment_mean": 0.108,
+      "headline": "Nvidia Rejects Jensen Huang's Offer to Return as CEO",
+      "headline_source": "Slashdot",
+      "headline_url": "https://slashdot.org/story/26/11/18/0124249/nvidia-rejects-jensen-huangs-offer-to-return-as-ceo?utm_source=rss1.0mainlinkanon&utm_medium=feed"
     },
     {
       "term": "security",
-      "articles": 77,
-      "sources": 32,
+      "articles": 65,
+      "sources": 30,
       "sentiment_direction": "positive",
-      "surge": 1.62,
-      "sentiment_mean": 0.232,
+      "surge": 1.37,
+      "sentiment_mean": 0.261,
       "headline": "National Security Agency network for internal communications goes down",
       "headline_source": "Guardian World",
       "headline_url": "https://www.theguardian.com/us-news/2026/nov/17/nsa-national-security-classified-communications-network-down"
     },
     {
-      "term": "public",
-      "articles": 61,
-      "sources": 32,
+      "term": "president",
+      "articles": 112,
+      "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 1.65,
-      "sentiment_mean": -0.0,
-      "headline": "Why startups still go public, eventually",
-      "headline_source": "The Economist",
-      "headline_url": "https://www.economist.com/finance-and-economics/2026/11/17/why-startups-still-go-public-eventually"
+      "surge": 1.46,
+      "sentiment_mean": -0.09,
+      "headline": "President Trump Starts Asia Trip With Quick Manila Stopover",
+      "headline_source": "NYT World",
+      "headline_url": "https://www.nytimes.com/2026/11/17/world/asia/17trump-summit-manila-asean-marcos.html"
+    },
+    {
+      "term": "tech",
+      "articles": 72,
+      "sources": 29,
+      "sentiment_direction": "mixed",
+      "surge": 1.63,
+      "sentiment_mean": 0.024,
+      "headline": "Veteran pilot: Congress must act to update 'archaic' FAA tech that is 'putting Americans in danger'",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/us/veteran-pilot-congress-must-act-upate-archaic-faa-tech-putting-americans-danger"
+    },
+    {
+      "term": "national",
+      "articles": 58,
+      "sources": 29,
+      "sentiment_direction": "positive",
+      "surge": 1.53,
+      "sentiment_mean": 0.2,
+      "headline": "National Security Agency network for internal communications goes down",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/us-news/2026/nov/17/nsa-national-security-classified-communications-network-down"
     }
   ],
-  "hours_since_fetch": 0.0
+  "hours_since_fetch": 0.01
 }
