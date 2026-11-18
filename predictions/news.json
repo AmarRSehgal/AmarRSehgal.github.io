@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-18T19:24:22.059233+00:00",
+  "generated_at": "2026-11-18T20:24:25.666625+00:00",
   "window_hours": 24,
-  "articles_in_window": 2280,
+  "articles_in_window": 2328,
   "collection_days": 65,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,14 +10,14 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 282,
-      "sources": 33,
+      "articles": 286,
+      "sources": 36,
       "sentiment_direction": "mixed",
-      "surge": 2.03,
-      "sentiment_mean": 0.008,
-      "headline": "Trump expected to press Xi on Americans detained in China",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/news/trump-xi-detained-americans/"
+      "surge": 2.07,
+      "sentiment_mean": 0.014,
+      "headline": "Trump, Xi and Putin Will Sit Down for the First Time. It Won\u2019t Be Like Yalta.",
+      "headline_source": "NYT Politics",
+      "headline_url": "https://www.nytimes.com/2026/11/18/us/politics/trump-xi-putin-summit-yalta.html"
     },
     {
       "term": "huang",
@@ -25,10 +25,21 @@
       "sources": 33,
       "sentiment_direction": "mixed",
       "surge": 0.88,
-      "sentiment_mean": 0.121,
+      "sentiment_mean": 0.119,
       "headline": "Nvidia interim CEO Kress tells employees \u2018let\u2019s move forward\u2019 at first all-hands meeting since Jensen Huang exit",
       "headline_source": "CNBC Top News",
       "headline_url": "https://www.cnbc.com/2026/11/18/nvidia-interim-ceo-kress-addresses-staff-after-jensen-huang-exit-.html"
+    },
+    {
+      "term": "president",
+      "articles": 170,
+      "sources": 32,
+      "sentiment_direction": "mixed",
+      "surge": 2.07,
+      "sentiment_mean": 0.114,
+      "headline": "President Trump lands in China for critical talks with Xi and Putin",
+      "headline_source": "NBC News",
+      "headline_url": "https://www.today.com/video/president-trump-lands-in-china-for-critical-talks-with-xi-and-putin-273752133676"
     },
     {
       "term": "jensen",
@@ -36,65 +47,54 @@
       "sources": 32,
       "sentiment_direction": "mixed",
       "surge": 0.86,
-      "sentiment_mean": 0.121,
+      "sentiment_mean": 0.119,
       "headline": "Nvidia interim CEO Kress tells employees \u2018let\u2019s move forward\u2019 at first all-hands meeting since Jensen Huang exit",
       "headline_source": "CNBC Top News",
       "headline_url": "https://www.cnbc.com/2026/11/18/nvidia-interim-ceo-kress-addresses-staff-after-jensen-huang-exit-.html"
     },
     {
       "term": "nvidia",
-      "articles": 172,
+      "articles": 173,
       "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 1.06,
-      "sentiment_mean": 0.101,
-      "headline": "Nvidia interim CEO Kress tells employees \u2018let\u2019s move forward\u2019 at first all-hands meeting since Jensen Huang exit",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/18/nvidia-interim-ceo-kress-addresses-staff-after-jensen-huang-exit-.html"
-    },
-    {
-      "term": "president",
-      "articles": 169,
-      "sources": 30,
-      "sentiment_direction": "mixed",
-      "surge": 2.06,
-      "sentiment_mean": 0.112,
-      "headline": "ECB President Christine Lagarde on Why She\u2019s Stepping Down Early",
-      "headline_source": "NYT Business",
-      "headline_url": "https://www.nytimes.com/2026/11/18/business/dealbook/christine-lagarde-european-central-bank.html"
+      "surge": 1.07,
+      "sentiment_mean": 0.106,
+      "headline": "What\u2019s next for Nvidia? Whatever doesn\u2019t rock the mind-bogglingly profitable boat",
+      "headline_source": "The Verge",
+      "headline_url": "https://www.theverge.com/tech/1035924/nvidia-visualized-revenue-profit-earnings-after-huang"
     },
     {
       "term": "tech",
-      "articles": 99,
+      "articles": 103,
       "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 2.04,
-      "sentiment_mean": -0.114,
-      "headline": "Tech lawsuits defined 2026 \u2014 and lawmakers want more",
-      "headline_source": "The Verge",
-      "headline_url": "https://www.theverge.com/policy/1036935/congress-forced-arbitration-deepfakes-defiance-act"
+      "surge": 2.14,
+      "sentiment_mean": -0.115,
+      "headline": "Washington is scrambling to get to the bottom of the growing number of tech outages across America",
+      "headline_source": "MarketWatch Top Stories",
+      "headline_url": "https://www.marketwatch.com/story/washington-is-scrambling-to-get-to-the-bottom-of-the-growing-number-of-tech-outages-across-america-66fbf299?mod=mw_rss_topstories"
     },
     {
       "term": "company",
       "articles": 85,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 1.17,
-      "sentiment_mean": 0.103,
+      "surge": 1.18,
+      "sentiment_mean": 0.107,
       "headline": "Russian national accused of surveilling US tech company",
       "headline_source": "Fox News",
       "headline_url": "https://www.foxnews.com/us/russian-national-accused-surveilling-us-tech-company"
     },
     {
-      "term": "house",
-      "articles": 96,
-      "sources": 26,
-      "sentiment_direction": "positive",
-      "surge": 2.17,
-      "sentiment_mean": 0.165,
-      "headline": "Hakeem Jeffries pledges that Democrats will \"fight hard\" after winning House speaker nomination",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/hakeem-jeffries-pledges-that-democrats-will-fight-hard-after-winning-house-speaker-nomination/"
+      "term": "putin",
+      "articles": 97,
+      "sources": 27,
+      "sentiment_direction": "mixed",
+      "surge": 3.5,
+      "sentiment_mean": 0.078,
+      "headline": "Trump, Xi and Putin Will Sit Down for the First Time. It Won\u2019t Be Like Yalta.",
+      "headline_source": "NYT Politics",
+      "headline_url": "https://www.nytimes.com/2026/11/18/us/politics/trump-xi-putin-summit-yalta.html"
     }
   ],
   "hours_since_fetch": 0.0
