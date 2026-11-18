@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T17:00:08Z",
+  "generated_at": "2026-11-18T19:45:09Z",
   "date": "2026-11-18",
   "games": [
     {
@@ -14,7 +14,17 @@
       "confidence": 0.585,
       "pred_total": 227.7,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "MEM",
+        "stake": 100.0,
+        "selection": "Memphis Grizzlies",
+        "price": 2.65,
+        "book": "BetMGM",
+        "quoted_at": "2026-11-18T19:30:08Z",
+        "model_prob": 0.415,
+        "implied_prob": 0.3774,
+        "edge": 0.0376,
+        "ev_per_dollar": 0.0998
       }
     },
     {
@@ -29,7 +39,17 @@
       "confidence": 0.562,
       "pred_total": 230.0,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "IND",
+        "stake": 100.0,
+        "selection": "Indiana Pacers",
+        "price": 3.47,
+        "book": "DraftKings",
+        "quoted_at": "2026-11-18T19:30:08Z",
+        "model_prob": 0.438,
+        "implied_prob": 0.2882,
+        "edge": 0.1498,
+        "ev_per_dollar": 0.5199
       }
     },
     {
@@ -39,12 +59,22 @@
       "home_team_full": "Miami Heat",
       "tipoff": "2026-11-19T00:00Z",
       "pick": "MIA",
-      "pred_spread": -3.9,
-      "ml_win_prob": 0.767,
-      "confidence": 0.767,
+      "pred_spread": -2.3,
+      "ml_win_prob": 0.763,
+      "confidence": 0.763,
       "pred_total": 236.7,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "MIL",
+        "stake": 100.0,
+        "selection": "Milwaukee Bucks",
+        "price": 5.87,
+        "book": "DraftKings",
+        "quoted_at": "2026-11-18T19:30:08Z",
+        "model_prob": 0.237,
+        "implied_prob": 0.1704,
+        "edge": 0.0666,
+        "ev_per_dollar": 0.3912
       }
     },
     {
@@ -59,7 +89,17 @@
       "confidence": 0.663,
       "pred_total": 220.3,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "ORL",
+        "stake": 100.0,
+        "selection": "Orlando Magic",
+        "price": 1.93,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-18T19:30:08Z",
+        "model_prob": 0.663,
+        "implied_prob": 0.5181,
+        "edge": 0.1449,
+        "ev_per_dollar": 0.2796
       }
     },
     {
@@ -74,7 +114,17 @@
       "confidence": 0.59,
       "pred_total": 233.9,
       "bet": {
-        "status": "unpriced"
+        "status": "pass",
+        "team": "BKN",
+        "stake": 100.0,
+        "selection": "Brooklyn Nets",
+        "price": 1.68,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-18T19:30:08Z",
+        "model_prob": 0.59,
+        "implied_prob": 0.5952,
+        "edge": -0.0052,
+        "ev_per_dollar": -0.0088
       }
     },
     {
@@ -89,7 +139,17 @@
       "confidence": 0.712,
       "pred_total": 226.2,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "TOR",
+        "stake": 100.0,
+        "selection": "Toronto Raptors",
+        "price": 1.54,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-18T19:30:08Z",
+        "model_prob": 0.712,
+        "implied_prob": 0.6494,
+        "edge": 0.0626,
+        "ev_per_dollar": 0.0965
       }
     },
     {
@@ -99,12 +159,22 @@
       "home_team_full": "New Orleans Pelicans",
       "tipoff": "2026-11-19T01:00Z",
       "pick": "DET",
-      "pred_spread": 9.0,
-      "ml_win_prob": 0.106,
-      "confidence": 0.894,
+      "pred_spread": 7.1,
+      "ml_win_prob": 0.115,
+      "confidence": 0.885,
       "pred_total": 229.5,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "DET",
+        "stake": 100.0,
+        "selection": "Detroit Pistons",
+        "price": 1.57,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-18T19:30:08Z",
+        "model_prob": 0.885,
+        "implied_prob": 0.6369,
+        "edge": 0.2481,
+        "ev_per_dollar": 0.3895
       }
     },
     {
@@ -119,7 +189,17 @@
       "confidence": 0.772,
       "pred_total": 222.4,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "OKC",
+        "stake": 100.0,
+        "selection": "Oklahoma City Thunder",
+        "price": 1.43,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-18T19:30:08Z",
+        "model_prob": 0.772,
+        "implied_prob": 0.6993,
+        "edge": 0.0727,
+        "ev_per_dollar": 0.104
       }
     },
     {
@@ -134,7 +214,17 @@
       "confidence": 0.509,
       "pred_total": 221.0,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "GS",
+        "stake": 100.0,
+        "selection": "Golden State Warriors",
+        "price": 2.66,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-18T19:30:08Z",
+        "model_prob": 0.491,
+        "implied_prob": 0.3759,
+        "edge": 0.1151,
+        "ev_per_dollar": 0.3061
       }
     },
     {
@@ -149,7 +239,17 @@
       "confidence": 0.571,
       "pred_total": 222.3,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "DEN",
+        "stake": 100.0,
+        "selection": "Denver Nuggets",
+        "price": 2.2,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-18T19:30:08Z",
+        "model_prob": 0.571,
+        "implied_prob": 0.4545,
+        "edge": 0.1165,
+        "ev_per_dollar": 0.2562
       }
     },
     {
@@ -168,13 +268,13 @@
         "team": "LAL",
         "stake": 100.0,
         "selection": "Los Angeles Lakers",
-        "price": 1.11,
-        "book": "FanDuel",
-        "quoted_at": "2026-04-12T22:20:58Z",
+        "price": 1.23,
+        "book": "DraftKings",
+        "quoted_at": "2026-11-18T19:30:08Z",
         "model_prob": 0.943,
-        "implied_prob": 0.9009,
-        "edge": 0.0421,
-        "ev_per_dollar": 0.0467
+        "implied_prob": 0.813,
+        "edge": 0.13,
+        "ev_per_dollar": 0.1599
       }
     },
     {
@@ -189,7 +289,17 @@
       "confidence": 0.754,
       "pred_total": 228.9,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "team": "PHX",
+        "stake": 100.0,
+        "selection": "Phoenix Suns",
+        "price": 1.39,
+        "book": "DraftKings",
+        "quoted_at": "2026-11-18T19:30:08Z",
+        "model_prob": 0.754,
+        "implied_prob": 0.7194,
+        "edge": 0.0346,
+        "ev_per_dollar": 0.0481
       }
     }
   ],
