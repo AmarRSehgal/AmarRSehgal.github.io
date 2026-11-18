@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-18T16:24:25.554944+00:00",
+  "generated_at": "2026-11-18T17:24:40.160916+00:00",
   "window_hours": 24,
-  "articles_in_window": 2229,
+  "articles_in_window": 2230,
   "collection_days": 65,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,58 +10,69 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 271,
-      "sources": 35,
+      "articles": 267,
+      "sources": 34,
       "sentiment_direction": "mixed",
-      "surge": 1.94,
-      "sentiment_mean": -0.025,
-      "headline": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html"
+      "surge": 1.9,
+      "sentiment_mean": 0.003,
+      "headline": "Trump plans to meet separately with Putin on his China trip in addition to their 3-way talks with Xi",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/world/trump-plans-to-meet-separately-with-putin-on-his-china-trip-in-addition-to-their-3-way-talks-with-xi"
     },
     {
       "term": "nvidia",
-      "articles": 179,
-      "sources": 34,
+      "articles": 165,
+      "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 1.11,
-      "sentiment_mean": 0.077,
-      "headline": "National security and AI figures urge DOJ to probe what Nvidia knew about chip smuggling",
-      "headline_source": "NBC News",
-      "headline_url": "https://www.nbcnews.com/tech/tech-news/doj-urged-investigate-nvidia-china-chip-smuggling-rcna609879"
+      "surge": 1.01,
+      "sentiment_mean": 0.093,
+      "headline": "Democrats demand answers from Howard Lutnick about Nvidia and his family\u2019s business",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/us-news/2026/nov/18/howard-lutnick-nvidia-cantor-fitzgerald"
     },
     {
       "term": "huang",
-      "articles": 121,
-      "sources": 33,
+      "articles": 108,
+      "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 0.98,
-      "sentiment_mean": 0.107,
-      "headline": "Was Jensen Huang\u2019s Exit Premature?",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/videos/2026-11-18/was-jensen-huang-s-exit-premature-video"
+      "surge": 0.86,
+      "sentiment_mean": 0.117,
+      "headline": "Jensen Huang's Fall Hits 'Open' Models In Boost to Anthropic and OpenAI",
+      "headline_source": "Slashdot",
+      "headline_url": "https://slashdot.org/story/26/11/18/1659257/jensen-huangs-fall-hits-open-models-in-boost-to-anthropic-and-openai?utm_source=rss1.0mainlinkanon&utm_medium=feed"
     },
     {
       "term": "jensen",
-      "articles": 107,
-      "sources": 32,
+      "articles": 94,
+      "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 0.97,
-      "sentiment_mean": 0.103,
-      "headline": "OpenAI CEO Sam Altman says it\u2019s \u2018hard to imagine the AI industry without Jensen\u2019",
-      "headline_source": "TechCrunch",
-      "headline_url": "https://techcrunch.com/2026/11/18/openai-ceo-sam-altman-says-its-hard-to-imagine-the-ai-industry-without-jensen/"
+      "surge": 0.83,
+      "sentiment_mean": 0.113,
+      "headline": "Jensen Huang's Fall Hits 'Open' Models In Boost to Anthropic and OpenAI",
+      "headline_source": "Slashdot",
+      "headline_url": "https://slashdot.org/story/26/11/18/1659257/jensen-huangs-fall-hits-open-models-in-boost-to-anthropic-and-openai?utm_source=rss1.0mainlinkanon&utm_medium=feed"
     },
     {
       "term": "president",
-      "articles": 161,
-      "sources": 31,
+      "articles": 163,
+      "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 1.92,
-      "sentiment_mean": 0.105,
+      "surge": 1.96,
+      "sentiment_mean": 0.101,
       "headline": "ECB President Christine Lagarde on Why She\u2019s Stepping Down Early",
       "headline_source": "NYT Business",
       "headline_url": "https://www.nytimes.com/2026/11/18/business/dealbook/christine-lagarde-european-central-bank.html"
+    },
+    {
+      "term": "company",
+      "articles": 83,
+      "sources": 29,
+      "sentiment_direction": "mixed",
+      "surge": 1.15,
+      "sentiment_mean": 0.134,
+      "headline": "\"Anthropic Is Not a Safe AI Company\" \u2013 Coalition Challenges Anthropic Safety",
+      "headline_source": "Hacker News",
+      "headline_url": "https://www.businesswire.com/news/home/20261118974464/en/Anthropic-is-Not-a-Safe-AI-Company---Broad-Coalition-of-Scientists-Legal-Scholars-and-Tech-Leaders-Challenge-Anthropics-Safety-Branding-Ahead-of-IPO"
     },
     {
       "term": "tech",
@@ -69,32 +80,21 @@
       "sources": 28,
       "sentiment_direction": "mixed",
       "surge": 1.99,
-      "sentiment_mean": -0.111,
-      "headline": "The best Black Friday tech deals: laptops, TVs, headphones and accessories, starting at $10",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/deals/best-black-friday-tech-deals"
+      "sentiment_mean": -0.095,
+      "headline": "Ford starts U.S. battery cell production using Chinese tech amid geopolitical tensions",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/11/18/ford-us-battery-cells-catl-tech.html"
     },
     {
-      "term": "company",
-      "articles": 80,
-      "sources": 28,
-      "sentiment_direction": "mixed",
-      "surge": 1.11,
-      "sentiment_mean": 0.133,
-      "headline": "Russia Asks if Netherlands Is Joining Ukraine War After Dutch Company's Missiles Used in Bridge Attack - The Moscow Times",
-      "headline_source": "Google News Top",
-      "headline_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQdFJ2TmpWd2JteFRMSWxwTW5FdVlPdTlUTGZrbEQ1azEtSHlMbW81ZURHS1JsbjMwaHByTkk1b2Q2SDNwXzhNYkItZFV0Q1FsXzk5dU9vSFBXUzNwMVFQejhMbWgwOUNJdXJRVGZSbnJEU1VIUEVJRzhUaDhwX2EwR1pQMXdGTDNzbzNudS1FYk9CSXpndjloaXo0NVFBMjhVa28yZlVPMk1OSTBncG9WS01yZDhVaEg2eEp6WkE2aVg3SktyakxtWWdwODdqMklpQkFLSU5UaGhFcEZEWi1hZmxWWlA?oc=5"
-    },
-    {
-      "term": "national",
-      "articles": 73,
-      "sources": 27,
-      "sentiment_direction": "mixed",
+      "term": "house",
+      "articles": 86,
+      "sources": 26,
+      "sentiment_direction": "positive",
       "surge": 1.87,
-      "sentiment_mean": -0.006,
-      "headline": "National security and AI figures urge DOJ to probe what Nvidia knew about chip smuggling",
-      "headline_source": "NBC News",
-      "headline_url": "https://www.nbcnews.com/tech/tech-news/doj-urged-investigate-nvidia-china-chip-smuggling-rcna609879"
+      "sentiment_mean": 0.177,
+      "headline": "Hakeem Jeffries poised to become 1st Black U.S. House Speaker, after internal vote by Democrats",
+      "headline_source": "CBC World",
+      "headline_url": "https://www.cbc.ca/news/world/us-democrats-house-leader-jeffries-9.7426505?cmp=rss"
     }
   ],
   "hours_since_fetch": 0.0
