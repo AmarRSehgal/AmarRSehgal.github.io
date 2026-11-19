@@ -1,10 +1,23 @@
 {
-  "generated_at": "2026-11-19T08:00:05.435055+00:00",
+  "generated_at": "2026-11-19T09:00:10.360182+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
+    {
+      "base": "ZKC",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 3975.32,
+      "net_at_hold": 3.63043,
+      "cost_bps": 68.15
+    },
     {
       "base": "BREV",
       "type": "perp-perp",
@@ -14,35 +27,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 987.1,
-      "net_at_hold": 0.90146,
+      "net_apr": 959.21,
+      "net_at_hold": 0.87599,
       "cost_bps": 31.61
-    },
-    {
-      "base": "BREV",
-      "type": "perp-perp",
-      "long_venue": "Bitget",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 877.93,
-      "net_at_hold": 0.80177,
-      "cost_bps": 38.74
-    },
-    {
-      "base": "BREV",
-      "type": "perp-perp",
-      "long_venue": "KuCoin",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 868.59,
-      "net_at_hold": 0.79323,
-      "cost_bps": 37.2
     },
     {
       "base": "LDO",
@@ -73,15 +60,28 @@
     {
       "base": "BREV",
       "type": "perp-perp",
-      "long_venue": "Gate",
+      "long_venue": "KuCoin",
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 831.78,
-      "net_at_hold": 0.75962,
-      "cost_bps": 42.45
+      "net_apr": 827.49,
+      "net_at_hold": 0.7557,
+      "cost_bps": 37.2
+    },
+    {
+      "base": "BREV",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 825.88,
+      "net_at_hold": 0.75423,
+      "cost_bps": 38.74
     },
     {
       "base": "SEI",
