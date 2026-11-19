@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T17:30:04Z",
+  "generated_at": "2026-11-19T17:30:07Z",
   "season": 2026,
   "week": 11,
   "season_type": "regular",
@@ -19,16 +19,17 @@
       "confidence": 0.7517,
       "bet": {
         "status": "bet",
+        "rule": "value",
         "team": "IND",
         "stake": 100.0,
         "selection": "Indianapolis Colts",
-        "price": 6.4,
+        "price": 6.9,
         "book": "FanDuel",
-        "quoted_at": "2026-11-17T19:30:01Z",
+        "quoted_at": "2026-11-18T19:30:07Z",
         "model_prob": 0.2483,
-        "implied_prob": 0.1562,
-        "edge": 0.092,
-        "ev_per_dollar": 0.5891
+        "implied_prob": 0.1449,
+        "edge": 0.1034,
+        "ev_per_dollar": 0.7133
       }
     },
     {
@@ -44,12 +45,13 @@
       "confidence": 0.8745,
       "bet": {
         "status": "bet",
+        "rule": "value",
         "team": "ARI",
         "stake": 100.0,
         "selection": "Arizona Cardinals",
         "price": 10.0,
         "book": "BetMGM",
-        "quoted_at": "2026-11-17T19:30:01Z",
+        "quoted_at": "2026-11-18T19:30:07Z",
         "model_prob": 0.1255,
         "implied_prob": 0.1,
         "edge": 0.0255,
@@ -69,16 +71,17 @@
       "confidence": 0.6526,
       "bet": {
         "status": "bet",
+        "rule": "value",
         "team": "CAR",
         "stake": 100.0,
         "selection": "Carolina Panthers",
-        "price": 1.72,
-        "book": "FanDuel",
-        "quoted_at": "2026-11-17T19:30:01Z",
+        "price": 1.74,
+        "book": "DraftKings",
+        "quoted_at": "2026-11-18T19:30:07Z",
         "model_prob": 0.6526,
-        "implied_prob": 0.5814,
-        "edge": 0.0712,
-        "ev_per_dollar": 0.1225
+        "implied_prob": 0.5747,
+        "edge": 0.0779,
+        "ev_per_dollar": 0.1355
       }
     },
     {
@@ -94,16 +97,17 @@
       "confidence": 0.9368,
       "bet": {
         "status": "bet",
+        "rule": "value",
         "team": "BUF",
         "stake": 100.0,
         "selection": "Buffalo Bills",
-        "price": 1.08,
+        "price": 1.07,
         "book": "DraftKings",
-        "quoted_at": "2026-11-17T19:30:01Z",
+        "quoted_at": "2026-11-18T19:30:07Z",
         "model_prob": 0.9368,
-        "implied_prob": 0.9259,
-        "edge": 0.0109,
-        "ev_per_dollar": 0.0117
+        "implied_prob": 0.9346,
+        "edge": 0.0022,
+        "ev_per_dollar": 0.0024
       }
     },
     {
@@ -119,16 +123,17 @@
       "confidence": 0.8231,
       "bet": {
         "status": "bet",
+        "rule": "value",
         "team": "NO",
         "stake": 100.0,
         "selection": "New Orleans Saints",
-        "price": 5.9,
-        "book": "DraftKings",
-        "quoted_at": "2026-11-17T19:30:01Z",
+        "price": 6.2,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-18T19:30:07Z",
         "model_prob": 0.1769,
-        "implied_prob": 0.1695,
-        "edge": 0.0074,
-        "ev_per_dollar": 0.0437
+        "implied_prob": 0.1613,
+        "edge": 0.0156,
+        "ev_per_dollar": 0.0968
       }
     },
     {
@@ -144,16 +149,17 @@
       "confidence": 0.7697,
       "bet": {
         "status": "bet",
+        "rule": "value",
         "team": "DET",
         "stake": 100.0,
         "selection": "Detroit Lions",
-        "price": 1.37,
-        "book": "DraftKings",
-        "quoted_at": "2026-11-17T19:30:01Z",
+        "price": 1.31,
+        "book": "BetMGM",
+        "quoted_at": "2026-11-18T19:30:07Z",
         "model_prob": 0.7697,
-        "implied_prob": 0.7299,
-        "edge": 0.0398,
-        "ev_per_dollar": 0.0545
+        "implied_prob": 0.7634,
+        "edge": 0.0063,
+        "ev_per_dollar": 0.0083
       }
     },
     {
@@ -168,17 +174,18 @@
       "ml_win_prob": 0.7707,
       "confidence": 0.7707,
       "bet": {
-        "status": "bet",
+        "status": "pass",
+        "rule": "value",
         "team": "TEN",
         "stake": 100.0,
         "selection": "Tennessee Titans",
-        "price": 4.5,
+        "price": 4.3,
         "book": "FanDuel",
-        "quoted_at": "2026-11-17T19:30:01Z",
+        "quoted_at": "2026-11-18T19:30:07Z",
         "model_prob": 0.2293,
-        "implied_prob": 0.2222,
-        "edge": 0.0071,
-        "ev_per_dollar": 0.0318
+        "implied_prob": 0.2326,
+        "edge": -0.0033,
+        "ev_per_dollar": -0.014
       }
     },
     {
@@ -194,16 +201,17 @@
       "confidence": 0.7306,
       "bet": {
         "status": "bet",
+        "rule": "value",
         "team": "PIT",
         "stake": 100.0,
         "selection": "Pittsburgh Steelers",
-        "price": 1.48,
-        "book": "FanDuel",
-        "quoted_at": "2026-11-17T19:30:01Z",
+        "price": 1.46,
+        "book": "DraftKings",
+        "quoted_at": "2026-11-18T19:30:07Z",
         "model_prob": 0.7306,
-        "implied_prob": 0.6757,
-        "edge": 0.0549,
-        "ev_per_dollar": 0.0813
+        "implied_prob": 0.6849,
+        "edge": 0.0457,
+        "ev_per_dollar": 0.0667
       }
     },
     {
@@ -219,16 +227,17 @@
       "confidence": 0.5683,
       "bet": {
         "status": "bet",
+        "rule": "value",
         "team": "NYJ",
         "stake": 100.0,
         "selection": "New York Jets",
-        "price": 2.54,
-        "book": "FanDuel",
-        "quoted_at": "2026-11-17T19:30:01Z",
+        "price": 2.36,
+        "book": "DraftKings",
+        "quoted_at": "2026-11-18T19:30:07Z",
         "model_prob": 0.4317,
-        "implied_prob": 0.3937,
-        "edge": 0.038,
-        "ev_per_dollar": 0.0965
+        "implied_prob": 0.4237,
+        "edge": 0.008,
+        "ev_per_dollar": 0.0188
       }
     },
     {
@@ -244,12 +253,13 @@
       "confidence": 0.7203,
       "bet": {
         "status": "bet",
+        "rule": "value",
         "team": "JAX",
         "stake": 100.0,
         "selection": "Jacksonville Jaguars",
         "price": 1.41,
         "book": "FanDuel",
-        "quoted_at": "2026-11-17T19:30:01Z",
+        "quoted_at": "2026-11-18T19:30:07Z",
         "model_prob": 0.7203,
         "implied_prob": 0.7092,
         "edge": 0.0111,
@@ -269,16 +279,17 @@
       "confidence": 0.9039,
       "bet": {
         "status": "bet",
+        "rule": "value",
         "team": "DEN",
         "stake": 100.0,
         "selection": "Denver Broncos",
-        "price": 1.19,
+        "price": 1.18,
         "book": "BetMGM",
-        "quoted_at": "2026-11-17T19:30:01Z",
+        "quoted_at": "2026-11-18T19:30:07Z",
         "model_prob": 0.9039,
-        "implied_prob": 0.8403,
-        "edge": 0.0636,
-        "ev_per_dollar": 0.0756
+        "implied_prob": 0.8475,
+        "edge": 0.0564,
+        "ev_per_dollar": 0.0666
       }
     },
     {
@@ -294,12 +305,13 @@
       "confidence": 0.6553,
       "bet": {
         "status": "bet",
+        "rule": "value",
         "team": "SF",
         "stake": 100.0,
         "selection": "San Francisco 49ers",
         "price": 1.62,
         "book": "DraftKings",
-        "quoted_at": "2026-11-17T19:30:01Z",
+        "quoted_at": "2026-11-18T19:30:07Z",
         "model_prob": 0.6553,
         "implied_prob": 0.6173,
         "edge": 0.038,
@@ -319,16 +331,17 @@
       "confidence": 0.6935,
       "bet": {
         "status": "bet",
+        "rule": "value",
         "team": "WSH",
         "stake": 100.0,
         "selection": "Washington Commanders",
-        "price": 3.4,
+        "price": 3.45,
         "book": "DraftKings",
-        "quoted_at": "2026-11-17T19:30:01Z",
+        "quoted_at": "2026-11-18T19:30:07Z",
         "model_prob": 0.3065,
-        "implied_prob": 0.2941,
-        "edge": 0.0124,
-        "ev_per_dollar": 0.0421
+        "implied_prob": 0.2899,
+        "edge": 0.0166,
+        "ev_per_dollar": 0.0574
       }
     }
   ],
