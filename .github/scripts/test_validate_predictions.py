@@ -1250,3 +1250,37 @@ class PaperABDaily(ContractBase):
         self.rejects('pm_btc_paper', d, 'ascending')
         d['daily'] = [{'date': '2026-09-25', 'pnl': {'taker_v1': '1'}}]
         self.rejects('pm_btc_paper', d, 'must be a number')
+
+
+class SlateBetRuleTest(unittest.TestCase):
+    """check_slate_bet: the value rule ties status to edge; every_pick ties it to the pick."""
+
+    def _game(self, **bet):
+        b = {"status": "bet", "team": "IND", "selection": "Indiana Pacers", "price": 1.4,
+             "model_prob": 0.65, "edge": -0.064, "book": "FanDuel",
+             "quoted_at": "2026-11-18T19:30:00Z", **bet}
+        return {"away_team": "WSH", "home_team": "IND", "away_team_full": "Washington Wizards",
+                "home_team_full": "Indiana Pacers", "pick": "IND", "bet": b}
+
+    def _check(self, g):
+        from validate_predictions import check_slate_bet
+        check_slate_bet("games[0]", g)
+
+    def test_value_rule_rejects_bet_without_edge(self):
+        with self.assertRaises(Invalid):
+            self._check(self._game())
+
+    def test_every_pick_accepts_negative_edge_on_the_pick(self):
+        self._check(self._game(rule="every_pick"))
+
+    def test_every_pick_must_be_on_the_pick(self):
+        with self.assertRaises(Invalid):
+            self._check(self._game(rule="every_pick", team="WSH", selection="Washington Wizards"))
+
+    def test_every_pick_never_passes(self):
+        with self.assertRaises(Invalid):
+            self._check(self._game(rule="every_pick", status="pass"))
+
+    def test_unknown_rule_rejected(self):
+        with self.assertRaises(Invalid):
+            self._check(self._game(rule="martingale"))

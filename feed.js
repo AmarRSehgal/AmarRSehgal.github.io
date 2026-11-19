@@ -1076,6 +1076,20 @@ function f1Races(data) {
 // the selection is doing any work.
 function bettingRows(b) {
     if (!b) return [];
+    if (b.strategy === 'every_pick') {
+        const rows = [
+            [`Bet every pick, ${b.record}`,
+             `${P.formatSigned(b.pnl)} on ${P.formatMoney(b.staked)} `
+             + `(${(b.roi * 100).toFixed(1)}% ROI)`],
+            ['Hit rate vs break-even',
+             `${(b.hit_rate * 100).toFixed(1)}% against ${(b.break_even_hit_rate * 100).toFixed(1)}% needed`],
+        ];
+        if (b.value_rule) {
+            rows.push(['Betting only on edge instead',
+                       `${b.value_rule.record}, ${(b.value_rule.roi * 100).toFixed(1)}% ROI`]);
+        }
+        return rows;
+    }
     if (!b.bets) {
         return [['Bets placed', `none -- no side beat its price across `
                  + `${b.skipped_no_edge} game${b.skipped_no_edge === 1 ? '' : 's'}`]];
@@ -1289,9 +1303,12 @@ function betSummary(games) {
     if (!games.some(g => g.bet)) return '';
     const quoted = games.map(g => g.bet && g.bet.quoted_at).filter(Boolean).sort().pop();
     const open = bets.filter(g => !g.result).length;
+    const everyPick = bets.some(g => g.bet.rule === 'every_pick');
     return `<div class="prediction-note">${bets.length} bet${bets.length === 1 ? '' : 's'} on `
-        + `this slate (${open} still to play), flat $100 on every side whose model probability `
-        + `beats the best DraftKings/FanDuel/BetMGM price`
+        + `this slate (${open} still to play), `
+        + (everyPick
+            ? `flat $100 on the model's pick in every game at the best DraftKings/FanDuel/BetMGM price`
+            : `flat $100 on every side whose model probability beats the best DraftKings/FanDuel/BetMGM price`)
         + (quoted ? `, prices as of ${esc(P.formatStamp(quoted))}` : '')
         + `. Unplayed prices move until the close, which is what the record settles at, `
         + `so a listed bet can flip before kickoff.</div>`;

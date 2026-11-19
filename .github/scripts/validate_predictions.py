@@ -816,6 +816,7 @@ def check_game_result(where, g):
 
 
 BET_STATUS = ('bet', 'pass', 'unpriced')
+BET_RULES = ('value', 'every_pick')
 
 
 def check_slate_bet(where, g):
@@ -823,7 +824,8 @@ def check_slate_bet(where, g):
 
     `status` is derivable from `edge`, and `team` from `selection`, so both are checked
     rather than trusted: a "bet" on a side with no edge is the claim this feed exists
-    not to make.
+    not to make -- unless the bet says its rule is `every_pick`, which backs the
+    model's own pick at any price, and then it must be on the pick and never a pass.
     """
     b = g.get('bet')
     if b is None:
@@ -848,7 +850,15 @@ def check_slate_bet(where, g):
         datetime.fromisoformat(str(b.get('quoted_at')).replace('Z', '+00:00'))
     except ValueError:
         raise Invalid(f'{w}.quoted_at={b.get("quoted_at")!r} is not ISO 8601')
-    if (b['status'] == 'bet') != (edge > 0):
+    rule = b.get('rule', 'value')
+    if rule not in BET_RULES:
+        raise Invalid(f'{w}.rule={rule!r} must be one of {list(BET_RULES)}')
+    if rule == 'every_pick':
+        if b['status'] != 'bet':
+            raise Invalid(f'{w}: every_pick backs every priced game, got status={b["status"]!r}')
+        if g.get('pick') and b['team'] != g['pick']:
+            raise Invalid(f'{w}.team={b["team"]!r} is not the published pick {g["pick"]!r}')
+    elif (b['status'] == 'bet') != (edge > 0):
         raise Invalid(f'{w}: status={b["status"]!r} contradicts edge={edge}')
 
 
