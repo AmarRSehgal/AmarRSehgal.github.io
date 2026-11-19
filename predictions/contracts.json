@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-18T16:00:20.016487+00:00",
-  "snapshot_date": "2026-11-18",
-  "snapshots": 77,
-  "observing_snapshots": 57,
+  "generated_at": "2026-11-19T16:00:22.293350+00:00",
+  "snapshot_date": "2026-11-19",
+  "snapshots": 78,
+  "observing_snapshots": 58,
   "days_since_new_data": 0,
-  "notices_tracked": 113740,
+  "notices_tracked": 114462,
   "lanes": [
     {
       "office": "FCC COLEMAN",
@@ -60,6 +60,25 @@
       "open_deadline": "",
       "states": [],
       "link": "https://sam.gov/opp/489da87c620a48eb9431d9e29c021dc4/view"
+    },
+    {
+      "office": "FMC LEXINGTON",
+      "agency": "JUSTICE, DEPARTMENT OF",
+      "group": "Subsistence/FOOD",
+      "lane": "fmc lexington subsistence",
+      "evidence": "OBSERVED",
+      "solicitations": 2,
+      "cadence": "quarterly",
+      "cadence_days": 97,
+      "cadence_source": "dates",
+      "regularity": null,
+      "span_days": 97,
+      "next_expected": "2027-02-21",
+      "open_deadline": "2026-11-27",
+      "states": [
+        "KY"
+      ],
+      "link": "https://sam.gov/opp/18f04f6b3b3041ddbf1e131ae55a31ba/view"
     },
     {
       "office": "FCI BERLIN",
@@ -136,81 +155,62 @@
         "PA"
       ],
       "link": "https://sam.gov/opp/9cf9c1a59e8549b69caf6e00a6741dec/view"
-    },
-    {
-      "office": "FCC ALLENWOOD",
-      "agency": "JUSTICE, DEPARTMENT OF",
-      "group": "Subsistence/FOOD",
-      "lane": "fcc allenwood bread dairy eggs",
-      "evidence": "OBSERVED",
-      "solicitations": 2,
-      "cadence": "quarterly",
-      "cadence_days": 93,
-      "cadence_source": "dates",
-      "regularity": null,
-      "span_days": 93,
-      "next_expected": "2027-02-13",
-      "open_deadline": "2026-12-01",
-      "states": [
-        "PA"
-      ],
-      "link": "https://sam.gov/opp/ccdb0eea46d54708827c4842f14b5cd6/view"
     }
   ],
   "open": [
     {
-      "title": "19 ASOS Deployment Uniforms",
-      "office": "FA4452  763 ESS",
+      "title": "75--Printer Toner",
+      "office": "INDIAN EDUCATION ACQUISITION OFFICE",
+      "group": "Office supplies",
+      "state": "",
+      "deadline": "2026-11-19",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/c4c4dff3c61d4752ba9b1689d357d9c1/view"
+    },
+    {
+      "title": "FCI Fairton 2nd Qtr Subsistence",
+      "office": "FCI FAIRTON",
+      "group": "Subsistence/FOOD",
+      "state": "NJ",
+      "deadline": "2026-11-19",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/ead3d65dedf34058b9d6f1ea48a513c4/view"
+    },
+    {
+      "title": "FCI Mendota 1st QTR-Subsidies FY 27",
+      "office": "FCI MENDOTA",
+      "group": "Subsistence/FOOD",
+      "state": "CA",
+      "deadline": "2026-11-19",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/3c95fae9cc2c488f97cdc964575434da/view"
+    },
+    {
+      "title": "Fresh Fruits and Vegetables for distribution to federal Food Nutrition Assistance Programs",
+      "office": "USDA  AMS  3J14",
+      "group": "Subsistence/FOOD",
+      "state": "",
+      "deadline": "2026-11-19",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/5de256e6803a4a7fb1f1c06b2f149965/view"
+    },
+    {
+      "title": "Furniture Tahoma National Cemetery",
+      "office": "NATIONAL CEMETERY ADMIN (36C786)",
+      "group": "Furniture",
+      "state": "WA",
+      "deadline": "2026-11-19",
+      "access": "small-biz",
+      "link": "https://sam.gov/opp/b776009afb7e456f932a4e3ed88214c1/view"
+    },
+    {
+      "title": "U.S.M.A Buttons",
+      "office": "W6QM MICC-FT DRUM",
       "group": "Clothing/textiles",
-      "state": "TN",
-      "deadline": "2026-11-18",
+      "state": "",
+      "deadline": "2026-11-19",
       "access": "small-biz",
-      "link": "https://sam.gov/opp/87f455b3db1a451da28de44be80b087d/view"
-    },
-    {
-      "title": "Bottled water",
-      "office": "DLA TROOP SUPPORT",
-      "group": "Subsistence/FOOD",
-      "state": "EC-G",
-      "deadline": "2026-11-18",
-      "access": "small-biz",
-      "link": "https://sam.gov/opp/b11ac4e99cc24986b816328e49a1c1d9/view"
-    },
-    {
-      "title": "CHICKEN (BULK) Products for Domestic Food Assistance Programs Assistance",
-      "office": "USDA  AMS  3J14",
-      "group": "Subsistence/FOOD",
-      "state": "",
-      "deadline": "2026-11-18",
-      "access": "OPEN",
-      "link": "https://sam.gov/opp/6572b9f287454c4f892fb521f197dc63/view"
-    },
-    {
-      "title": "Canned Soup Products for use in Domestic Food Assistance Programs",
-      "office": "USDA  AMS  3J14",
-      "group": "Subsistence/FOOD",
-      "state": "",
-      "deadline": "2026-11-18",
-      "access": "OPEN",
-      "link": "https://sam.gov/opp/0741ca7fb9a045018a41b3852a4fb67a/view"
-    },
-    {
-      "title": "Canned Tomato Products for use in Domestic Food Assistance Program",
-      "office": "USDA  AMS  3J14",
-      "group": "Subsistence/FOOD",
-      "state": "",
-      "deadline": "2026-11-18",
-      "access": "small-biz",
-      "link": "https://sam.gov/opp/20531a84cf59442a9172bdcc4428e959/view"
-    },
-    {
-      "title": "Canned Vegetable Products for use in Domestic Food Assistance Programs",
-      "office": "USDA  AMS  3J14",
-      "group": "Subsistence/FOOD",
-      "state": "",
-      "deadline": "2026-11-18",
-      "access": "OPEN",
-      "link": "https://sam.gov/opp/87047f4134bd4a3b8d909808c6e0720c/view"
+      "link": "https://sam.gov/opp/57567a311e5b4c168e3cc4aa06dbd783/view"
     }
   ]
 }
