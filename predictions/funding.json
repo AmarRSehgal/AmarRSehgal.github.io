@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T07:00:49.605262+00:00",
+  "generated_at": "2026-11-19T08:00:05.435055+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,35 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1145.96,
-      "net_at_hold": 1.04654,
+      "net_apr": 987.1,
+      "net_at_hold": 0.90146,
       "cost_bps": 31.61
-    },
-    {
-      "base": "BREV",
-      "type": "perp-perp",
-      "long_venue": "KuCoin",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 952.43,
-      "net_at_hold": 0.8698,
-      "cost_bps": 37.2
-    },
-    {
-      "base": "BREV",
-      "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 931.81,
-      "net_at_hold": 0.85097,
-      "cost_bps": 42.45
     },
     {
       "base": "BREV",
@@ -53,9 +27,22 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 928.78,
-      "net_at_hold": 0.8482,
+      "net_apr": 877.93,
+      "net_at_hold": 0.80177,
       "cost_bps": 38.74
+    },
+    {
+      "base": "BREV",
+      "type": "perp-perp",
+      "long_venue": "KuCoin",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 868.59,
+      "net_at_hold": 0.79323,
+      "cost_bps": 37.2
     },
     {
       "base": "LDO",
@@ -82,6 +69,19 @@
       "net_apr": 837.46,
       "net_at_hold": 0.7648,
       "cost_bps": 26.0
+    },
+    {
+      "base": "BREV",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 831.78,
+      "net_at_hold": 0.75962,
+      "cost_bps": 42.45
     },
     {
       "base": "SEI",
