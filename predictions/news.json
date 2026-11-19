@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-19T01:24:18.069622+00:00",
+  "generated_at": "2026-11-19T02:24:24.430521+00:00",
   "window_hours": 24,
-  "articles_in_window": 2368,
+  "articles_in_window": 2379,
   "collection_days": 66,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,54 +10,65 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 282,
-      "sources": 35,
+      "articles": 286,
+      "sources": 34,
       "sentiment_direction": "mixed",
-      "surge": 2.01,
-      "sentiment_mean": 0.068,
-      "headline": "Widespread Tech Outages Put Focus on Trump\u2019s National Security Cuts",
-      "headline_source": "NYT Politics",
-      "headline_url": "https://www.nytimes.com/2026/11/18/us/politics/tech-outages-trump-national-security.html"
+      "surge": 2.02,
+      "sentiment_mean": 0.085,
+      "headline": "Xi speaks at APEC summit ahead of rare meeting with Trump and Putin",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/news/trump-xi-putin-china-apec-summit/"
     },
     {
       "term": "president",
-      "articles": 179,
+      "articles": 180,
       "sources": 31,
       "sentiment_direction": "positive",
       "surge": 2.17,
-      "sentiment_mean": 0.152,
+      "sentiment_mean": 0.172,
       "headline": "Glaukos president & COO Joseph Gilliam sells $215,250 in stock",
       "headline_source": "Investing.com News",
       "headline_url": "https://www.investing.com/news/insider-trading-news/glaukos-president--coo-joseph-gilliam-sells-215250-in-stock-93CH-5037459"
     },
     {
       "term": "tech",
-      "articles": 103,
+      "articles": 101,
       "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 2.01,
-      "sentiment_mean": -0.055,
-      "headline": "Some Americans stocking up on supplies after wave of major tech outages",
+      "surge": 1.97,
+      "sentiment_mean": -0.061,
+      "headline": "Amid China's high-tech future, its population is crashing",
       "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/some-americans-stocking-up-on-supplies-after-wave-of-major-tech-outages/"
+      "headline_url": "https://www.cbsnews.com/video/amid-chinas-high-tech-future-its-population-is-crashing/"
     },
     {
       "term": "putin",
-      "articles": 105,
-      "sources": 27,
+      "articles": 111,
+      "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 3.63,
-      "sentiment_mean": 0.056,
-      "headline": "Latest on Trump's summit with Xi, Putin",
+      "surge": 3.75,
+      "sentiment_mean": 0.07,
+      "headline": "Xi speaks at APEC summit ahead of rare meeting with Trump and Putin",
       "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/latest-on-trumps-summit-with-xi-putin/"
+      "headline_url": "https://www.cbsnews.com/news/trump-xi-putin-china-apec-summit/"
+    },
+    {
+      "term": "theft",
+      "articles": 60,
+      "sources": 28,
+      "sentiment_direction": "positive",
+      "surge": 9.38,
+      "sentiment_mean": 0.39,
+      "headline": "Grand Theft Auto VI draws rave reviews as gamers return to Vice City",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/life/2026/11/19/digital/grand-theft-auto-5-launch-reaction-rockstar/"
     },
     {
       "term": "democrats",
-      "articles": 92,
+      "articles": 94,
       "sources": 27,
       "sentiment_direction": "positive",
-      "surge": 2.79,
+      "surge": 2.89,
       "sentiment_mean": 0.29,
       "headline": "Obama Tells Incoming House Democrats to Keep Up Outreach in Red Areas",
       "headline_source": "NYT Politics",
@@ -65,36 +76,25 @@
     },
     {
       "term": "meeting",
+      "articles": 89,
+      "sources": 27,
+      "sentiment_direction": "mixed",
+      "surge": 2.89,
+      "sentiment_mean": 0.128,
+      "headline": "Xi speaks at APEC summit ahead of rare meeting with Trump and Putin",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/news/trump-xi-putin-china-apec-summit/"
+    },
+    {
+      "term": "company",
       "articles": 86,
       "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 2.85,
-      "sentiment_mean": 0.115,
-      "headline": "Trump, Xi and Putin set to hold historic meeting on Apec sidelines - BBC",
-      "headline_source": "Google News Top",
-      "headline_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1JaDV1Q0dGNjZ3bW8xZEFsR3hsRzFlb1dFUGFoUFlxejBDaUNyeHZqRnpyZkRTTkhHSWFNU2IxeWhoV0M0c1p5ZEcyMmRFMmpJb2R2TmxB?oc=5"
-    },
-    {
-      "term": "grand",
-      "articles": 60,
-      "sources": 27,
-      "sentiment_direction": "positive",
-      "surge": 7.32,
-      "sentiment_mean": 0.42,
-      "headline": "Grand Theft Auto VI released as gamers rejoice globally",
-      "headline_source": "DW News",
-      "headline_url": "https://www.dw.com/en/grand-theft-auto-vi-released-as-gamers-rejoice-globally/a-79986461?maca=en-rss-en-all-1573-rdf"
-    },
-    {
-      "term": "theft",
-      "articles": 57,
-      "sources": 27,
-      "sentiment_direction": "positive",
-      "surge": 9.16,
-      "sentiment_mean": 0.374,
-      "headline": "Grand Theft Auto VI released as gamers rejoice globally",
-      "headline_source": "DW News",
-      "headline_url": "https://www.dw.com/en/grand-theft-auto-vi-released-as-gamers-rejoice-globally/a-79986461?maca=en-rss-en-all-1573-rdf"
+      "surge": 1.21,
+      "sentiment_mean": 0.064,
+      "headline": "Replimune CEO Sushil Patel sells $1.06 million in company stock",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/insider-trading-news/replimune-ceo-sushil-patel-sells-106-million-in-company-stock-93CH-5037474"
     }
   ],
   "hours_since_fetch": 0.0
