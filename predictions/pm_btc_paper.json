@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T14:05:29.327688+00:00",
+  "generated_at": "2026-11-19T14:06:39.704912+00:00",
   "experiment": "Polymarket BTC 5-minute binaries: taker v1 vs passive makers",
   "venue": "Polymarket",
   "paper": true,
@@ -27,54 +27,54 @@
   "unit": "window",
   "min_units_for_verdict": 200,
   "status": "verdict",
-  "headline": "The best scored maker (maker_anchored_0ms) beats the original taker by $+0.613 per window (95% CI $+0.157 to $+1.025). Latency-ladder arms are still collecting.",
+  "headline": "The best scored maker (maker_anchored_0ms) beats the original taker by $+0.488 per window (95% CI $+0.097 to $+0.873). Latency-ladder arms are still collecting.",
   "arms": [
     {
       "name": "taker_v1",
       "role": "control",
       "description": "The original tool, unchanged: buys the ask when N(d2) beats ask + taker fee, polling REST every 3s.",
-      "units": 338,
-      "active_units": 323,
-      "fills": 3634,
-      "size": 3634.0,
-      "pnl": -62.38,
-      "pnl_per_unit": -0.1846,
+      "units": 411,
+      "active_units": 395,
+      "fills": 4469,
+      "size": 4469.0,
+      "pnl": -54.59,
+      "pnl_per_unit": -0.1328,
       "pnl_per_unit_ci": [
-        -0.5665,
-        0.2232
+        -0.493,
+        0.2185
       ],
-      "pnl_per_size_c": -1.717,
+      "pnl_per_size_c": -1.222,
       "breakeven_rebate_bps": null,
-      "roi": -0.0401,
+      "roi": -0.0287,
       "max_drawdown": 106.47,
       "edge_at_fill_c": null,
       "markouts_c": null,
-      "fees": 54.27,
+      "fees": 66.83,
       "ladder": null
     },
     {
       "name": "maker_mid",
       "role": "treatment",
       "description": "Rests quotes around the Polymarket mid. No outside information -- measures what passive quoting alone is worth. Phase 3: quotes normally, goes reduce-only once its position could not be unwound in time (5x the time to trade it at 10% of the tape's volume), and rests what is left at the touch to close in the last 60 seconds.",
-      "units": 338,
-      "active_units": 302,
-      "fills": 2699,
-      "size": 10975.6,
-      "pnl": -209.11,
-      "pnl_per_unit": -0.6187,
+      "units": 411,
+      "active_units": 366,
+      "fills": 3119,
+      "size": 12779.1,
+      "pnl": -244.84,
+      "pnl_per_unit": -0.5957,
       "pnl_per_unit_ci": [
-        -0.8403,
-        -0.413
+        -0.7966,
+        -0.4021
       ],
-      "pnl_per_size_c": -1.905,
-      "breakeven_rebate_bps": 376.3,
-      "roi": -0.0376,
-      "max_drawdown": 217.12,
-      "edge_at_fill_c": 6.822,
+      "pnl_per_size_c": -1.916,
+      "breakeven_rebate_bps": 379.1,
+      "roi": -0.0379,
+      "max_drawdown": 246.33,
+      "edge_at_fill_c": 6.895,
       "markouts_c": {
-        "5": -1.932,
-        "30": -1.935,
-        "60": -1.825
+        "5": -2.0,
+        "30": -1.861,
+        "60": -1.941
       },
       "fees": 0.0,
       "ladder": null
@@ -83,25 +83,25 @@
       "name": "maker_model",
       "role": "treatment",
       "description": "Rests quotes around the N(d2) model price. Phase 3: quotes normally, goes reduce-only once its position could not be unwound in time (5x the time to trade it at 10% of the tape's volume), and rests what is left at the touch to close in the last 60 seconds.",
-      "units": 338,
-      "active_units": 301,
-      "fills": 1239,
-      "size": 5515.6,
-      "pnl": 25.62,
-      "pnl_per_unit": 0.0758,
+      "units": 411,
+      "active_units": 368,
+      "fills": 1502,
+      "size": 6719.3,
+      "pnl": -4.24,
+      "pnl_per_unit": -0.0103,
       "pnl_per_unit_ci": [
-        -0.2284,
-        0.3584
+        -0.2838,
+        0.2485
       ],
-      "pnl_per_size_c": 0.465,
-      "breakeven_rebate_bps": -97.7,
-      "roi": 0.0098,
+      "pnl_per_size_c": -0.063,
+      "breakeven_rebate_bps": 13.3,
+      "roi": -0.0013,
       "max_drawdown": 61.57,
-      "edge_at_fill_c": 5.54,
+      "edge_at_fill_c": 5.573,
       "markouts_c": {
-        "5": -0.95,
-        "30": -0.918,
-        "60": 0.711
+        "5": -0.971,
+        "30": -0.654,
+        "60": 0.917
       },
       "fees": 0.0,
       "ladder": null
@@ -110,25 +110,25 @@
       "name": "maker_anchored",
       "role": "treatment",
       "description": "Rests quotes around the Polymarket mid moved by the spot-implied change since its recent average. Phase 3: quotes normally, goes reduce-only once its position could not be unwound in time (5x the time to trade it at 10% of the tape's volume), and rests what is left at the touch to close in the last 60 seconds.",
-      "units": 338,
-      "active_units": 273,
-      "fills": 1539,
-      "size": 6302.0,
-      "pnl": 32.9,
-      "pnl_per_unit": 0.0974,
+      "units": 411,
+      "active_units": 334,
+      "fills": 1826,
+      "size": 7566.5,
+      "pnl": 11.81,
+      "pnl_per_unit": 0.0287,
       "pnl_per_unit_ci": [
-        -0.1367,
-        0.3295
+        -0.1739,
+        0.2301
       ],
-      "pnl_per_size_c": 0.522,
-      "breakeven_rebate_bps": -108.3,
-      "roi": 0.0108,
-      "max_drawdown": 32.04,
-      "edge_at_fill_c": 6.766,
+      "pnl_per_size_c": 0.156,
+      "breakeven_rebate_bps": -32.3,
+      "roi": 0.0032,
+      "max_drawdown": 38.75,
+      "edge_at_fill_c": 6.747,
       "markouts_c": {
-        "5": 0.153,
-        "30": -0.342,
-        "60": -0.058
+        "5": -0.12,
+        "30": -0.212,
+        "60": 0.278
       },
       "fees": 0.0,
       "ladder": null
@@ -137,25 +137,25 @@
       "name": "maker_mid_0ms",
       "role": "treatment",
       "description": "maker_mid at 0ms order latency, re-quoting every 50ms (latency ladder). Phase 3: quotes normally, goes reduce-only once its position could not be unwound in time (5x the time to trade it at 10% of the tape's volume), and rests what is left at the touch to close in the last 60 seconds.",
-      "units": 338,
-      "active_units": 269,
-      "fills": 1861,
-      "size": 7640.9,
-      "pnl": -65.65,
-      "pnl_per_unit": -0.1942,
+      "units": 411,
+      "active_units": 330,
+      "fills": 2122,
+      "size": 8800.3,
+      "pnl": -72.13,
+      "pnl_per_unit": -0.1755,
       "pnl_per_unit_ci": [
-        -0.403,
-        -0.0008
+        -0.3595,
+        0.013
       ],
-      "pnl_per_size_c": -0.859,
-      "breakeven_rebate_bps": 171.5,
-      "roi": -0.0171,
+      "pnl_per_size_c": -0.82,
+      "breakeven_rebate_bps": 163.5,
+      "roi": -0.0164,
       "max_drawdown": 82.93,
-      "edge_at_fill_c": 6.404,
+      "edge_at_fill_c": 6.523,
       "markouts_c": {
-        "5": -1.704,
-        "30": -1.025,
-        "60": -1.577
+        "5": -1.623,
+        "30": -1.173,
+        "60": -1.843
       },
       "fees": 0.0,
       "ladder": {
@@ -167,25 +167,25 @@
       "name": "maker_mid_100ms",
       "role": "treatment",
       "description": "maker_mid at 100ms order latency, re-quoting every 50ms (latency ladder). Phase 3: quotes normally, goes reduce-only once its position could not be unwound in time (5x the time to trade it at 10% of the tape's volume), and rests what is left at the touch to close in the last 60 seconds.",
-      "units": 338,
-      "active_units": 278,
-      "fills": 2051,
-      "size": 8479.5,
-      "pnl": -104.87,
-      "pnl_per_unit": -0.3103,
+      "units": 411,
+      "active_units": 340,
+      "fills": 2362,
+      "size": 9802.6,
+      "pnl": -126.77,
+      "pnl_per_unit": -0.3084,
       "pnl_per_unit_ci": [
-        -0.5209,
-        -0.1218
+        -0.4945,
+        -0.1255
       ],
-      "pnl_per_size_c": -1.237,
-      "breakeven_rebate_bps": 247.1,
-      "roi": -0.0247,
-      "max_drawdown": 118.49,
-      "edge_at_fill_c": 6.417,
+      "pnl_per_size_c": -1.293,
+      "breakeven_rebate_bps": 258.1,
+      "roi": -0.0258,
+      "max_drawdown": 126.77,
+      "edge_at_fill_c": 6.54,
       "markouts_c": {
-        "5": -1.616,
-        "30": -1.645,
-        "60": -1.772
+        "5": -1.607,
+        "30": -1.821,
+        "60": -1.932
       },
       "fees": 0.0,
       "ladder": {
@@ -197,25 +197,25 @@
       "name": "maker_mid_200ms",
       "role": "treatment",
       "description": "maker_mid at 200ms order latency, re-quoting every 50ms (latency ladder). Phase 3: quotes normally, goes reduce-only once its position could not be unwound in time (5x the time to trade it at 10% of the tape's volume), and rests what is left at the touch to close in the last 60 seconds.",
-      "units": 338,
-      "active_units": 293,
-      "fills": 2498,
-      "size": 10283.7,
-      "pnl": -120.08,
-      "pnl_per_unit": -0.3553,
+      "units": 411,
+      "active_units": 359,
+      "fills": 2863,
+      "size": 11845.1,
+      "pnl": -148.89,
+      "pnl_per_unit": -0.3623,
       "pnl_per_unit_ci": [
-        -0.5744,
-        -0.149
+        -0.5623,
+        -0.1636
       ],
-      "pnl_per_size_c": -1.168,
-      "breakeven_rebate_bps": 231.5,
-      "roi": -0.0231,
-      "max_drawdown": 134.66,
-      "edge_at_fill_c": 6.465,
+      "pnl_per_size_c": -1.257,
+      "breakeven_rebate_bps": 249.2,
+      "roi": -0.0249,
+      "max_drawdown": 151.58,
+      "edge_at_fill_c": 6.576,
       "markouts_c": {
-        "5": -1.782,
-        "30": -1.642,
-        "60": -1.363
+        "5": -1.803,
+        "30": -1.617,
+        "60": -1.483
       },
       "fees": 0.0,
       "ladder": {
@@ -227,25 +227,25 @@
       "name": "maker_mid_300ms",
       "role": "treatment",
       "description": "maker_mid at 300ms order latency, re-quoting every 50ms (latency ladder). Phase 3: quotes normally, goes reduce-only once its position could not be unwound in time (5x the time to trade it at 10% of the tape's volume), and rests what is left at the touch to close in the last 60 seconds.",
-      "units": 338,
-      "active_units": 299,
-      "fills": 2841,
-      "size": 11602.9,
-      "pnl": -183.69,
-      "pnl_per_unit": -0.5435,
+      "units": 411,
+      "active_units": 365,
+      "fills": 3289,
+      "size": 13474.7,
+      "pnl": -221.7,
+      "pnl_per_unit": -0.5394,
       "pnl_per_unit_ci": [
-        -0.7611,
-        -0.3454
+        -0.7369,
+        -0.3453
       ],
-      "pnl_per_size_c": -1.583,
-      "breakeven_rebate_bps": 313.4,
-      "roi": -0.0313,
-      "max_drawdown": 185.3,
-      "edge_at_fill_c": 6.55,
+      "pnl_per_size_c": -1.645,
+      "breakeven_rebate_bps": 325.4,
+      "roi": -0.0325,
+      "max_drawdown": 222.48,
+      "edge_at_fill_c": 6.63,
       "markouts_c": {
-        "5": -1.909,
-        "30": -1.655,
-        "60": -1.866
+        "5": -2.037,
+        "30": -1.721,
+        "60": -1.978
       },
       "fees": 0.0,
       "ladder": {
@@ -257,25 +257,25 @@
       "name": "maker_mid_400ms",
       "role": "treatment",
       "description": "maker_mid at 400ms order latency, re-quoting every 50ms (latency ladder). Phase 3: quotes normally, goes reduce-only once its position could not be unwound in time (5x the time to trade it at 10% of the tape's volume), and rests what is left at the touch to close in the last 60 seconds.",
-      "units": 338,
-      "active_units": 303,
-      "fills": 3230,
-      "size": 13098.8,
-      "pnl": -220.22,
-      "pnl_per_unit": -0.6515,
+      "units": 411,
+      "active_units": 371,
+      "fills": 3742,
+      "size": 15259.9,
+      "pnl": -265.25,
+      "pnl_per_unit": -0.6454,
       "pnl_per_unit_ci": [
-        -0.8884,
-        -0.4283
+        -0.8547,
+        -0.4304
       ],
-      "pnl_per_size_c": -1.681,
-      "breakeven_rebate_bps": 330.9,
-      "roi": -0.0331,
-      "max_drawdown": 225.42,
-      "edge_at_fill_c": 6.568,
+      "pnl_per_size_c": -1.738,
+      "breakeven_rebate_bps": 342.6,
+      "roi": -0.0343,
+      "max_drawdown": 265.55,
+      "edge_at_fill_c": 6.639,
       "markouts_c": {
-        "5": -1.952,
-        "30": -1.527,
-        "60": -1.492
+        "5": -2.049,
+        "30": -1.426,
+        "60": -1.488
       },
       "fees": 0.0,
       "ladder": {
@@ -287,25 +287,25 @@
       "name": "maker_model_0ms",
       "role": "treatment",
       "description": "maker_model at 0ms order latency, re-quoting every 50ms (latency ladder). Phase 3: quotes normally, goes reduce-only once its position could not be unwound in time (5x the time to trade it at 10% of the tape's volume), and rests what is left at the touch to close in the last 60 seconds.",
-      "units": 338,
-      "active_units": 284,
-      "fills": 996,
-      "size": 4607.4,
-      "pnl": 123.56,
-      "pnl_per_unit": 0.3656,
+      "units": 411,
+      "active_units": 350,
+      "fills": 1203,
+      "size": 5534.6,
+      "pnl": 110.44,
+      "pnl_per_unit": 0.2687,
       "pnl_per_unit_ci": [
-        0.0774,
-        0.6391
+        0.0241,
+        0.5136
       ],
-      "pnl_per_size_c": 2.682,
-      "breakeven_rebate_bps": -565.0,
-      "roi": 0.0565,
+      "pnl_per_size_c": 1.996,
+      "breakeven_rebate_bps": -424.3,
+      "roi": 0.0424,
       "max_drawdown": 36.45,
-      "edge_at_fill_c": 5.22,
+      "edge_at_fill_c": 5.162,
       "markouts_c": {
-        "5": 1.221,
-        "30": 0.977,
-        "60": 2.561
+        "5": 1.074,
+        "30": 1.082,
+        "60": 2.342
       },
       "fees": 0.0,
       "ladder": {
@@ -317,25 +317,25 @@
       "name": "maker_model_100ms",
       "role": "treatment",
       "description": "maker_model at 100ms order latency, re-quoting every 50ms (latency ladder). Phase 3: quotes normally, goes reduce-only once its position could not be unwound in time (5x the time to trade it at 10% of the tape's volume), and rests what is left at the touch to close in the last 60 seconds.",
-      "units": 338,
-      "active_units": 283,
-      "fills": 1008,
-      "size": 4612.6,
-      "pnl": 119.15,
-      "pnl_per_unit": 0.3525,
+      "units": 411,
+      "active_units": 349,
+      "fills": 1227,
+      "size": 5615.2,
+      "pnl": 110.63,
+      "pnl_per_unit": 0.2692,
       "pnl_per_unit_ci": [
-        0.0675,
-        0.6281
+        0.0184,
+        0.5117
       ],
-      "pnl_per_size_c": 2.583,
-      "breakeven_rebate_bps": -547.3,
-      "roi": 0.0547,
+      "pnl_per_size_c": 1.97,
+      "breakeven_rebate_bps": -420.2,
+      "roi": 0.042,
       "max_drawdown": 38.23,
-      "edge_at_fill_c": 5.323,
+      "edge_at_fill_c": 5.259,
       "markouts_c": {
-        "5": 1.109,
-        "30": 1.205,
-        "60": 2.436
+        "5": 0.935,
+        "30": 1.444,
+        "60": 2.499
       },
       "fees": 0.0,
       "ladder": {
@@ -347,25 +347,25 @@
       "name": "maker_model_200ms",
       "role": "treatment",
       "description": "maker_model at 200ms order latency, re-quoting every 50ms (latency ladder). Phase 3: quotes normally, goes reduce-only once its position could not be unwound in time (5x the time to trade it at 10% of the tape's volume), and rests what is left at the touch to close in the last 60 seconds.",
-      "units": 338,
-      "active_units": 291,
-      "fills": 1069,
-      "size": 4767.5,
-      "pnl": 100.99,
-      "pnl_per_unit": 0.2988,
+      "units": 411,
+      "active_units": 354,
+      "fills": 1281,
+      "size": 5743.8,
+      "pnl": 83.1,
+      "pnl_per_unit": 0.2022,
       "pnl_per_unit_ci": [
-        0.007,
-        0.5885
+        -0.0381,
+        0.4505
       ],
-      "pnl_per_size_c": 2.118,
-      "breakeven_rebate_bps": -452.7,
-      "roi": 0.0453,
+      "pnl_per_size_c": 1.447,
+      "breakeven_rebate_bps": -310.5,
+      "roi": 0.0311,
       "max_drawdown": 45.58,
-      "edge_at_fill_c": 5.242,
+      "edge_at_fill_c": 5.119,
       "markouts_c": {
-        "5": 0.524,
-        "30": 0.442,
-        "60": 1.915
+        "5": 0.322,
+        "30": 0.448,
+        "60": 1.701
       },
       "fees": 0.0,
       "ladder": {
@@ -377,25 +377,25 @@
       "name": "maker_model_300ms",
       "role": "treatment",
       "description": "maker_model at 300ms order latency, re-quoting every 50ms (latency ladder). Phase 3: quotes normally, goes reduce-only once its position could not be unwound in time (5x the time to trade it at 10% of the tape's volume), and rests what is left at the touch to close in the last 60 seconds.",
-      "units": 338,
-      "active_units": 295,
-      "fills": 1147,
-      "size": 5042.7,
-      "pnl": 93.66,
-      "pnl_per_unit": 0.2771,
+      "units": 411,
+      "active_units": 358,
+      "fills": 1371,
+      "size": 6038.8,
+      "pnl": 67.82,
+      "pnl_per_unit": 0.165,
       "pnl_per_unit_ci": [
-        -0.0186,
-        0.5646
+        -0.0852,
+        0.4188
       ],
-      "pnl_per_size_c": 1.857,
-      "breakeven_rebate_bps": -394.5,
-      "roi": 0.0394,
+      "pnl_per_size_c": 1.123,
+      "breakeven_rebate_bps": -240.2,
+      "roi": 0.024,
       "max_drawdown": 40.82,
-      "edge_at_fill_c": 5.217,
+      "edge_at_fill_c": 5.201,
       "markouts_c": {
-        "5": -0.001,
-        "30": 0.063,
-        "60": 1.279
+        "5": -0.108,
+        "30": 0.208,
+        "60": 1.125
       },
       "fees": 0.0,
       "ladder": {
@@ -407,25 +407,25 @@
       "name": "maker_model_400ms",
       "role": "treatment",
       "description": "maker_model at 400ms order latency, re-quoting every 50ms (latency ladder). Phase 3: quotes normally, goes reduce-only once its position could not be unwound in time (5x the time to trade it at 10% of the tape's volume), and rests what is left at the touch to close in the last 60 seconds.",
-      "units": 338,
-      "active_units": 303,
-      "fills": 1269,
-      "size": 5628.6,
-      "pnl": 73.9,
-      "pnl_per_unit": 0.2186,
+      "units": 411,
+      "active_units": 369,
+      "fills": 1531,
+      "size": 6841.3,
+      "pnl": 41.3,
+      "pnl_per_unit": 0.1005,
       "pnl_per_unit_ci": [
-        -0.0794,
-        0.508
+        -0.1635,
+        0.3559
       ],
-      "pnl_per_size_c": 1.313,
-      "breakeven_rebate_bps": -277.8,
-      "roi": 0.0278,
+      "pnl_per_size_c": 0.604,
+      "breakeven_rebate_bps": -128.1,
+      "roi": 0.0128,
       "max_drawdown": 44.2,
-      "edge_at_fill_c": 5.236,
+      "edge_at_fill_c": 5.183,
       "markouts_c": {
-        "5": -0.391,
-        "30": -0.087,
-        "60": 1.736
+        "5": -0.6,
+        "30": -0.062,
+        "60": 1.528
       },
       "fees": 0.0,
       "ladder": {
@@ -437,25 +437,25 @@
       "name": "maker_anchored_0ms",
       "role": "treatment",
       "description": "maker_anchored at 0ms order latency, re-quoting every 50ms (latency ladder). Phase 3: quotes normally, goes reduce-only once its position could not be unwound in time (5x the time to trade it at 10% of the tape's volume), and rests what is left at the touch to close in the last 60 seconds.",
-      "units": 338,
-      "active_units": 249,
-      "fills": 1189,
-      "size": 5188.5,
-      "pnl": 144.66,
-      "pnl_per_unit": 0.428,
+      "units": 411,
+      "active_units": 302,
+      "fills": 1403,
+      "size": 6123.7,
+      "pnl": 145.87,
+      "pnl_per_unit": 0.3549,
       "pnl_per_unit_ci": [
-        0.2118,
-        0.6505
+        0.1538,
+        0.5407
       ],
-      "pnl_per_size_c": 2.788,
-      "breakeven_rebate_bps": -583.8,
-      "roi": 0.0584,
+      "pnl_per_size_c": 2.382,
+      "breakeven_rebate_bps": -499.1,
+      "roi": 0.0499,
       "max_drawdown": 23.69,
-      "edge_at_fill_c": 6.533,
+      "edge_at_fill_c": 6.558,
       "markouts_c": {
-        "5": 1.638,
-        "30": 1.78,
-        "60": 2.662
+        "5": 1.423,
+        "30": 1.755,
+        "60": 2.575
       },
       "fees": 0.0,
       "ladder": {
@@ -467,25 +467,25 @@
       "name": "maker_anchored_100ms",
       "role": "treatment",
       "description": "maker_anchored at 100ms order latency, re-quoting every 50ms (latency ladder). Phase 3: quotes normally, goes reduce-only once its position could not be unwound in time (5x the time to trade it at 10% of the tape's volume), and rests what is left at the touch to close in the last 60 seconds.",
-      "units": 338,
-      "active_units": 259,
-      "fills": 1222,
-      "size": 5335.3,
-      "pnl": 125.61,
-      "pnl_per_unit": 0.3716,
+      "units": 411,
+      "active_units": 313,
+      "fills": 1439,
+      "size": 6269.7,
+      "pnl": 124.14,
+      "pnl_per_unit": 0.302,
       "pnl_per_unit_ci": [
-        0.1507,
-        0.5904
+        0.1102,
+        0.4839
       ],
-      "pnl_per_size_c": 2.354,
-      "breakeven_rebate_bps": -489.2,
-      "roi": 0.0489,
+      "pnl_per_size_c": 1.98,
+      "breakeven_rebate_bps": -413.3,
+      "roi": 0.0413,
       "max_drawdown": 19.77,
-      "edge_at_fill_c": 6.552,
+      "edge_at_fill_c": 6.604,
       "markouts_c": {
-        "5": 1.419,
-        "30": 1.448,
-        "60": 2.849
+        "5": 1.205,
+        "30": 1.46,
+        "60": 2.664
       },
       "fees": 0.0,
       "ladder": {
@@ -497,25 +497,25 @@
       "name": "maker_anchored_200ms",
       "role": "treatment",
       "description": "maker_anchored at 200ms order latency, re-quoting every 50ms (latency ladder). Phase 3: quotes normally, goes reduce-only once its position could not be unwound in time (5x the time to trade it at 10% of the tape's volume), and rests what is left at the touch to close in the last 60 seconds.",
-      "units": 338,
-      "active_units": 266,
-      "fills": 1304,
-      "size": 5568.7,
-      "pnl": 105.53,
-      "pnl_per_unit": 0.3122,
+      "units": 411,
+      "active_units": 318,
+      "fills": 1519,
+      "size": 6526.5,
+      "pnl": 106.95,
+      "pnl_per_unit": 0.2602,
       "pnl_per_unit_ci": [
-        0.0896,
-        0.5387
+        0.064,
+        0.4523
       ],
-      "pnl_per_size_c": 1.895,
-      "breakeven_rebate_bps": -395.4,
-      "roi": 0.0395,
+      "pnl_per_size_c": 1.639,
+      "breakeven_rebate_bps": -344.2,
+      "roi": 0.0344,
       "max_drawdown": 35.15,
-      "edge_at_fill_c": 6.447,
+      "edge_at_fill_c": 6.47,
       "markouts_c": {
-        "5": 0.808,
-        "30": 0.789,
-        "60": 1.821
+        "5": 0.572,
+        "30": 0.806,
+        "60": 1.677
       },
       "fees": 0.0,
       "ladder": {
@@ -527,25 +527,25 @@
       "name": "maker_anchored_300ms",
       "role": "treatment",
       "description": "maker_anchored at 300ms order latency, re-quoting every 50ms (latency ladder). Phase 3: quotes normally, goes reduce-only once its position could not be unwound in time (5x the time to trade it at 10% of the tape's volume), and rests what is left at the touch to close in the last 60 seconds.",
-      "units": 338,
-      "active_units": 269,
-      "fills": 1382,
-      "size": 5915.2,
-      "pnl": 107.29,
-      "pnl_per_unit": 0.3174,
+      "units": 411,
+      "active_units": 328,
+      "fills": 1628,
+      "size": 6996.3,
+      "pnl": 99.97,
+      "pnl_per_unit": 0.2432,
       "pnl_per_unit_ci": [
-        0.0739,
-        0.5653
+        0.0258,
+        0.4506
       ],
-      "pnl_per_size_c": 1.814,
-      "breakeven_rebate_bps": -379.6,
-      "roi": 0.038,
+      "pnl_per_size_c": 1.429,
+      "breakeven_rebate_bps": -300.4,
+      "roi": 0.03,
       "max_drawdown": 32.5,
-      "edge_at_fill_c": 6.432,
+      "edge_at_fill_c": 6.471,
       "markouts_c": {
-        "5": 0.701,
-        "30": 0.87,
-        "60": 1.506
+        "5": 0.375,
+        "30": 0.807,
+        "60": 1.388
       },
       "fees": 0.0,
       "ladder": {
@@ -557,25 +557,25 @@
       "name": "maker_anchored_400ms",
       "role": "treatment",
       "description": "maker_anchored at 400ms order latency, re-quoting every 50ms (latency ladder). Phase 3: quotes normally, goes reduce-only once its position could not be unwound in time (5x the time to trade it at 10% of the tape's volume), and rests what is left at the touch to close in the last 60 seconds.",
-      "units": 338,
-      "active_units": 281,
-      "fills": 1670,
-      "size": 6980.6,
-      "pnl": 82.42,
-      "pnl_per_unit": 0.2439,
+      "units": 411,
+      "active_units": 343,
+      "fills": 1987,
+      "size": 8353.0,
+      "pnl": 63.09,
+      "pnl_per_unit": 0.1535,
       "pnl_per_unit_ci": [
-        -0.0096,
-        0.4856
+        -0.0651,
+        0.3633
       ],
-      "pnl_per_size_c": 1.181,
-      "breakeven_rebate_bps": -245.0,
-      "roi": 0.0245,
+      "pnl_per_size_c": 0.755,
+      "breakeven_rebate_bps": -157.3,
+      "roi": 0.0157,
       "max_drawdown": 31.02,
-      "edge_at_fill_c": 6.411,
+      "edge_at_fill_c": 6.479,
       "markouts_c": {
-        "5": 0.016,
-        "30": -0.008,
-        "60": 1.052
+        "5": -0.267,
+        "30": 0.022,
+        "60": 0.953
       },
       "fees": 0.0,
       "ladder": {
@@ -589,21 +589,21 @@
       "treatment": "maker_mid",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.4341,
+      "diff": -0.4629,
       "ci": [
-        -0.9153,
-        0.0355
+        -0.9104,
+        -0.0326
       ],
-      "verdict": "indistinguishable"
+      "verdict": "worse"
     },
     {
       "treatment": "maker_model",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.2604,
+      "diff": 0.1225,
       "ci": [
-        -0.1346,
-        0.6379
+        -0.22,
+        0.4494
       ],
       "verdict": "indistinguishable"
     },
@@ -611,10 +611,10 @@
       "treatment": "maker_anchored",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.2819,
+      "diff": 0.1616,
       "ci": [
-        -0.1804,
-        0.7051
+        -0.2364,
+        0.553
       ],
       "verdict": "indistinguishable"
     },
@@ -622,10 +622,10 @@
       "treatment": "maker_mid_0ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.0097,
+      "diff": -0.0427,
       "ci": [
-        -0.4773,
-        0.4583
+        -0.458,
+        0.3702
       ],
       "verdict": "indistinguishable"
     },
@@ -633,10 +633,10 @@
       "treatment": "maker_mid_100ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.1257,
+      "diff": -0.1756,
       "ci": [
-        -0.5896,
-        0.3295
+        -0.5736,
+        0.2281
       ],
       "verdict": "indistinguishable"
     },
@@ -644,10 +644,10 @@
       "treatment": "maker_mid_200ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.1707,
+      "diff": -0.2294,
       "ci": [
-        -0.653,
-        0.2834
+        -0.6692,
+        0.1976
       ],
       "verdict": "indistinguishable"
     },
@@ -655,10 +655,10 @@
       "treatment": "maker_mid_300ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.3589,
+      "diff": -0.4066,
       "ci": [
-        -0.8368,
-        0.1027
+        -0.8454,
+        0.0309
       ],
       "verdict": "indistinguishable"
     },
@@ -666,21 +666,21 @@
       "treatment": "maker_mid_400ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": -0.467,
+      "diff": -0.5126,
       "ci": [
-        -0.9573,
-        0.0127
+        -0.952,
+        -0.084
       ],
-      "verdict": "indistinguishable"
+      "verdict": "worse"
     },
     {
       "treatment": "maker_model_0ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.5501,
+      "diff": 0.4015,
       "ci": [
-        0.1604,
-        0.927
+        0.0738,
+        0.7297
       ],
       "verdict": "better"
     },
@@ -688,10 +688,10 @@
       "treatment": "maker_model_100ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.5371,
+      "diff": 0.402,
       "ci": [
-        0.1458,
-        0.9084
+        0.068,
+        0.7229
       ],
       "verdict": "better"
     },
@@ -699,43 +699,43 @@
       "treatment": "maker_model_200ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.4834,
+      "diff": 0.335,
       "ci": [
-        0.1024,
-        0.8689
+        -0.0049,
+        0.6635
       ],
-      "verdict": "better"
+      "verdict": "indistinguishable"
     },
     {
       "treatment": "maker_model_300ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.4617,
+      "diff": 0.2978,
       "ci": [
-        0.0754,
-        0.8378
+        -0.0404,
+        0.6256
       ],
-      "verdict": "better"
+      "verdict": "indistinguishable"
     },
     {
       "treatment": "maker_model_400ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.4032,
+      "diff": 0.2333,
       "ci": [
-        0.0168,
-        0.7761
+        -0.1068,
+        0.5678
       ],
-      "verdict": "better"
+      "verdict": "indistinguishable"
     },
     {
       "treatment": "maker_anchored_0ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.6126,
+      "diff": 0.4877,
       "ci": [
-        0.1573,
-        1.0253
+        0.097,
+        0.8728
       ],
       "verdict": "better"
     },
@@ -743,10 +743,10 @@
       "treatment": "maker_anchored_100ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.5562,
+      "diff": 0.4349,
       "ci": [
-        0.1077,
-        0.9639
+        0.0535,
+        0.8076
       ],
       "verdict": "better"
     },
@@ -754,10 +754,10 @@
       "treatment": "maker_anchored_200ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.4968,
+      "diff": 0.3931,
       "ci": [
-        0.0327,
-        0.9252
+        0.013,
+        0.7809
       ],
       "verdict": "better"
     },
@@ -765,21 +765,21 @@
       "treatment": "maker_anchored_300ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.502,
+      "diff": 0.3761,
       "ci": [
-        0.0469,
-        0.9407
+        -0.0102,
+        0.7763
       ],
-      "verdict": "better"
+      "verdict": "indistinguishable"
     },
     {
       "treatment": "maker_anchored_400ms",
       "control": "taker_v1",
       "metric": "pnl_per_window",
-      "diff": 0.4284,
+      "diff": 0.2863,
       "ci": [
-        -0.0437,
-        0.8668
+        -0.1264,
+        0.6832
       ],
       "verdict": "indistinguishable"
     }
@@ -1013,25 +1013,70 @@
     {
       "date": "2026-11-18",
       "pnl": {
-        "taker_v1": 13.79,
-        "maker_mid": -36.05,
-        "maker_model": 46.0,
-        "maker_anchored": 4.35,
-        "maker_mid_0ms": 8.24,
-        "maker_mid_100ms": 2.52,
-        "maker_mid_200ms": -12.05,
-        "maker_mid_300ms": -41.05,
-        "maker_mid_400ms": -54.52,
-        "maker_model_0ms": 52.95,
-        "maker_model_100ms": 47.45,
-        "maker_model_200ms": 53.05,
-        "maker_model_300ms": 54.04,
-        "maker_model_400ms": 63.54,
-        "maker_anchored_0ms": 59.34,
-        "maker_anchored_100ms": 52.37,
-        "maker_anchored_200ms": 57.88,
-        "maker_anchored_300ms": 37.33,
-        "maker_anchored_400ms": 26.15
+        "taker_v1": 12.7,
+        "maker_mid": -34.9,
+        "maker_model": 41.55,
+        "maker_anchored": 3.3,
+        "maker_mid_0ms": 11.09,
+        "maker_mid_100ms": 5.42,
+        "maker_mid_200ms": -9.2,
+        "maker_mid_300ms": -40.7,
+        "maker_mid_400ms": -54.12,
+        "maker_model_0ms": 51.99,
+        "maker_model_100ms": 46.49,
+        "maker_model_200ms": 52.09,
+        "maker_model_300ms": 50.08,
+        "maker_model_400ms": 60.08,
+        "maker_anchored_0ms": 59.83,
+        "maker_anchored_100ms": 52.86,
+        "maker_anchored_200ms": 58.37,
+        "maker_anchored_300ms": 37.23,
+        "maker_anchored_400ms": 26.05
+      },
+      "units": {
+        "taker_v1": 73,
+        "maker_mid": 73,
+        "maker_model": 73,
+        "maker_anchored": 73,
+        "maker_mid_0ms": 73,
+        "maker_mid_100ms": 73,
+        "maker_mid_200ms": 73,
+        "maker_mid_300ms": 73,
+        "maker_mid_400ms": 73,
+        "maker_model_0ms": 73,
+        "maker_model_100ms": 73,
+        "maker_model_200ms": 73,
+        "maker_model_300ms": 73,
+        "maker_model_400ms": 73,
+        "maker_anchored_0ms": 73,
+        "maker_anchored_100ms": 73,
+        "maker_anchored_200ms": 73,
+        "maker_anchored_300ms": 73,
+        "maker_anchored_400ms": 73
+      }
+    },
+    {
+      "date": "2026-11-19",
+      "pnl": {
+        "taker_v1": 8.87,
+        "maker_mid": -36.89,
+        "maker_model": -25.41,
+        "maker_anchored": -20.06,
+        "maker_mid_0ms": -9.33,
+        "maker_mid_100ms": -24.8,
+        "maker_mid_200ms": -31.65,
+        "maker_mid_300ms": -38.35,
+        "maker_mid_400ms": -45.43,
+        "maker_model_0ms": -12.13,
+        "maker_model_100ms": -7.56,
+        "maker_model_200ms": -16.91,
+        "maker_model_300ms": -21.86,
+        "maker_model_400ms": -29.13,
+        "maker_anchored_0ms": 0.72,
+        "maker_anchored_100ms": -1.96,
+        "maker_anchored_200ms": 0.93,
+        "maker_anchored_300ms": -7.21,
+        "maker_anchored_400ms": -19.25
       },
       "units": {
         "taker_v1": 71,
@@ -1064,72 +1109,72 @@
         {
           "latency_ms": 0,
           "arm": "maker_mid_0ms",
-          "units": 338,
-          "fills": 1861,
-          "breakeven_rebate_bps": 171.5,
-          "pnl": -65.65,
-          "pnl_per_unit": -0.1942,
+          "units": 411,
+          "fills": 2122,
+          "breakeven_rebate_bps": 163.5,
+          "pnl": -72.13,
+          "pnl_per_unit": -0.1755,
           "pnl_per_unit_ci": [
-            -0.403,
-            -0.0008
+            -0.3595,
+            0.013
           ],
-          "markout_c": -1.704
+          "markout_c": -1.623
         },
         {
           "latency_ms": 100,
           "arm": "maker_mid_100ms",
-          "units": 338,
-          "fills": 2051,
-          "breakeven_rebate_bps": 247.1,
-          "pnl": -104.87,
-          "pnl_per_unit": -0.3103,
+          "units": 411,
+          "fills": 2362,
+          "breakeven_rebate_bps": 258.1,
+          "pnl": -126.77,
+          "pnl_per_unit": -0.3084,
           "pnl_per_unit_ci": [
-            -0.5209,
-            -0.1218
+            -0.4945,
+            -0.1255
           ],
-          "markout_c": -1.616
+          "markout_c": -1.607
         },
         {
           "latency_ms": 200,
           "arm": "maker_mid_200ms",
-          "units": 338,
-          "fills": 2498,
-          "breakeven_rebate_bps": 231.5,
-          "pnl": -120.08,
-          "pnl_per_unit": -0.3553,
+          "units": 411,
+          "fills": 2863,
+          "breakeven_rebate_bps": 249.2,
+          "pnl": -148.89,
+          "pnl_per_unit": -0.3623,
           "pnl_per_unit_ci": [
-            -0.5744,
-            -0.149
+            -0.5623,
+            -0.1636
           ],
-          "markout_c": -1.782
+          "markout_c": -1.803
         },
         {
           "latency_ms": 300,
           "arm": "maker_mid_300ms",
-          "units": 338,
-          "fills": 2841,
-          "breakeven_rebate_bps": 313.4,
-          "pnl": -183.69,
-          "pnl_per_unit": -0.5435,
+          "units": 411,
+          "fills": 3289,
+          "breakeven_rebate_bps": 325.4,
+          "pnl": -221.7,
+          "pnl_per_unit": -0.5394,
           "pnl_per_unit_ci": [
-            -0.7611,
-            -0.3454
+            -0.7369,
+            -0.3453
           ],
-          "markout_c": -1.909
+          "markout_c": -2.037
         },
         {
           "latency_ms": 400,
           "arm": "maker_mid_400ms",
-          "units": 338,
-          "fills": 3230,
-          "breakeven_rebate_bps": 330.9,
-          "pnl": -220.22,
-          "pnl_per_unit": -0.6515,
+          "units": 411,
+          "fills": 3742,
+          "breakeven_rebate_bps": 342.6,
+          "pnl": -265.25,
+          "pnl_per_unit": -0.6454,
           "pnl_per_unit_ci": [
-            -0.8884,
-            -0.4283
+            -0.8547,
+            -0.4304
           ],
-          "markout_c": -1.952
+          "markout_c": -2.049
         }
       ]
     },
@@ -1140,72 +1185,72 @@
         {
           "latency_ms": 0,
           "arm": "maker_model_0ms",
-          "units": 338,
-          "fills": 996,
-          "breakeven_rebate_bps": -565.0,
-          "pnl": 123.56,
-          "pnl_per_unit": 0.3656,
+          "units": 411,
+          "fills": 1203,
+          "breakeven_rebate_bps": -424.3,
+          "pnl": 110.44,
+          "pnl_per_unit": 0.2687,
           "pnl_per_unit_ci": [
-            0.0774,
-            0.6391
+            0.0241,
+            0.5136
           ],
-          "markout_c": 1.221
+          "markout_c": 1.074
         },
         {
           "latency_ms": 100,
           "arm": "maker_model_100ms",
-          "units": 338,
-          "fills": 1008,
-          "breakeven_rebate_bps": -547.3,
-          "pnl": 119.15,
-          "pnl_per_unit": 0.3525,
+          "units": 411,
+          "fills": 1227,
+          "breakeven_rebate_bps": -420.2,
+          "pnl": 110.63,
+          "pnl_per_unit": 0.2692,
           "pnl_per_unit_ci": [
-            0.0675,
-            0.6281
+            0.0184,
+            0.5117
           ],
-          "markout_c": 1.109
+          "markout_c": 0.935
         },
         {
           "latency_ms": 200,
           "arm": "maker_model_200ms",
-          "units": 338,
-          "fills": 1069,
-          "breakeven_rebate_bps": -452.7,
-          "pnl": 100.99,
-          "pnl_per_unit": 0.2988,
+          "units": 411,
+          "fills": 1281,
+          "breakeven_rebate_bps": -310.5,
+          "pnl": 83.1,
+          "pnl_per_unit": 0.2022,
           "pnl_per_unit_ci": [
-            0.007,
-            0.5885
+            -0.0381,
+            0.4505
           ],
-          "markout_c": 0.524
+          "markout_c": 0.322
         },
         {
           "latency_ms": 300,
           "arm": "maker_model_300ms",
-          "units": 338,
-          "fills": 1147,
-          "breakeven_rebate_bps": -394.5,
-          "pnl": 93.66,
-          "pnl_per_unit": 0.2771,
+          "units": 411,
+          "fills": 1371,
+          "breakeven_rebate_bps": -240.2,
+          "pnl": 67.82,
+          "pnl_per_unit": 0.165,
           "pnl_per_unit_ci": [
-            -0.0186,
-            0.5646
+            -0.0852,
+            0.4188
           ],
-          "markout_c": -0.001
+          "markout_c": -0.108
         },
         {
           "latency_ms": 400,
           "arm": "maker_model_400ms",
-          "units": 338,
-          "fills": 1269,
-          "breakeven_rebate_bps": -277.8,
-          "pnl": 73.9,
-          "pnl_per_unit": 0.2186,
+          "units": 411,
+          "fills": 1531,
+          "breakeven_rebate_bps": -128.1,
+          "pnl": 41.3,
+          "pnl_per_unit": 0.1005,
           "pnl_per_unit_ci": [
-            -0.0794,
-            0.508
+            -0.1635,
+            0.3559
           ],
-          "markout_c": -0.391
+          "markout_c": -0.6
         }
       ]
     },
@@ -1216,72 +1261,72 @@
         {
           "latency_ms": 0,
           "arm": "maker_anchored_0ms",
-          "units": 338,
-          "fills": 1189,
-          "breakeven_rebate_bps": -583.8,
-          "pnl": 144.66,
-          "pnl_per_unit": 0.428,
+          "units": 411,
+          "fills": 1403,
+          "breakeven_rebate_bps": -499.1,
+          "pnl": 145.87,
+          "pnl_per_unit": 0.3549,
           "pnl_per_unit_ci": [
-            0.2118,
-            0.6505
+            0.1538,
+            0.5407
           ],
-          "markout_c": 1.638
+          "markout_c": 1.423
         },
         {
           "latency_ms": 100,
           "arm": "maker_anchored_100ms",
-          "units": 338,
-          "fills": 1222,
-          "breakeven_rebate_bps": -489.2,
-          "pnl": 125.61,
-          "pnl_per_unit": 0.3716,
+          "units": 411,
+          "fills": 1439,
+          "breakeven_rebate_bps": -413.3,
+          "pnl": 124.14,
+          "pnl_per_unit": 0.302,
           "pnl_per_unit_ci": [
-            0.1507,
-            0.5904
+            0.1102,
+            0.4839
           ],
-          "markout_c": 1.419
+          "markout_c": 1.205
         },
         {
           "latency_ms": 200,
           "arm": "maker_anchored_200ms",
-          "units": 338,
-          "fills": 1304,
-          "breakeven_rebate_bps": -395.4,
-          "pnl": 105.53,
-          "pnl_per_unit": 0.3122,
+          "units": 411,
+          "fills": 1519,
+          "breakeven_rebate_bps": -344.2,
+          "pnl": 106.95,
+          "pnl_per_unit": 0.2602,
           "pnl_per_unit_ci": [
-            0.0896,
-            0.5387
+            0.064,
+            0.4523
           ],
-          "markout_c": 0.808
+          "markout_c": 0.572
         },
         {
           "latency_ms": 300,
           "arm": "maker_anchored_300ms",
-          "units": 338,
-          "fills": 1382,
-          "breakeven_rebate_bps": -379.6,
-          "pnl": 107.29,
-          "pnl_per_unit": 0.3174,
+          "units": 411,
+          "fills": 1628,
+          "breakeven_rebate_bps": -300.4,
+          "pnl": 99.97,
+          "pnl_per_unit": 0.2432,
           "pnl_per_unit_ci": [
-            0.0739,
-            0.5653
+            0.0258,
+            0.4506
           ],
-          "markout_c": 0.701
+          "markout_c": 0.375
         },
         {
           "latency_ms": 400,
           "arm": "maker_anchored_400ms",
-          "units": 338,
-          "fills": 1670,
-          "breakeven_rebate_bps": -245.0,
-          "pnl": 82.42,
-          "pnl_per_unit": 0.2439,
+          "units": 411,
+          "fills": 1987,
+          "breakeven_rebate_bps": -157.3,
+          "pnl": 63.09,
+          "pnl_per_unit": 0.1535,
           "pnl_per_unit_ci": [
-            -0.0096,
-            0.4856
+            -0.0651,
+            0.3633
           ],
-          "markout_c": 0.016
+          "markout_c": -0.267
         }
       ]
     }
