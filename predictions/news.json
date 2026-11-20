@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-20T08:24:14.299234+00:00",
+  "generated_at": "2026-11-20T09:24:11.261375+00:00",
   "window_hours": 24,
-  "articles_in_window": 2214,
+  "articles_in_window": 2208,
   "collection_days": 67,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,36 +10,36 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 297,
+      "articles": 281,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 1.74,
-      "sentiment_mean": 0.091,
-      "headline": "Xi has a vision of a new world order. Trump just handed him a powerful image to sell",
-      "headline_source": "Sydney Morning Herald",
-      "headline_url": "https://www.smh.com.au/world/asia/xi-has-a-vision-of-a-new-world-order-trump-just-handed-him-a-powerful-image-to-sell-20261120-p61fj9.html?ref=rss&utm_medium=rss&utm_source=rss_world"
+      "surge": 1.62,
+      "sentiment_mean": 0.086,
+      "headline": "Philippine military rejects Trump\u2019s request for MacArthur-style gold baton",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/week-asia/politics/article/3375228/philippine-military-rejects-trumps-request-macarthur-style-gold-baton"
     },
     {
       "term": "president",
-      "articles": 160,
+      "articles": 150,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 1.71,
-      "sentiment_mean": 0.067,
+      "surge": 1.57,
+      "sentiment_mean": 0.055,
       "headline": "Former YC President: \"Stop!\u201d",
       "headline_source": "Hacker News",
       "headline_url": "https://geoffralston.substack.com/p/stop"
     },
     {
       "term": "anthropic",
-      "articles": 169,
+      "articles": 171,
       "sources": 30,
       "sentiment_direction": "positive",
-      "surge": 5.4,
-      "sentiment_mean": 0.23,
-      "headline": "European shares near 1-month lows as Anthropic\u2019s debut fails to halt tech rout",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/european-shares-near-1month-lows-as-anthropics-debut-fails-to-halt-tech-rout-5040695"
+      "surge": 5.46,
+      "sentiment_mean": 0.218,
+      "headline": "Anthropic Pop Is Followed By a Fizzle: Market Analysis",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-11-20/anthropic-pop-is-followed-by-a-fizzle-3-minutes-mliv-video"
     },
     {
       "term": "chinese",
@@ -47,55 +47,55 @@
       "sources": 29,
       "sentiment_direction": "positive",
       "surge": 1.34,
-      "sentiment_mean": 0.191,
-      "headline": "Fighting AI with AI: how a Chinese cybersecurity giant is defending against new hacks",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/tech/tech-trends/article/3375211/fighting-ai-ai-how-chinese-cybersecurity-giant-defending-against-new-hacks"
+      "sentiment_mean": 0.164,
+      "headline": "How an American AI Company Uses Chinese Open-Weight Models",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/articles/2026-11-20/how-an-american-ai-company-uses-chinese-open-weight-models"
     },
     {
       "term": "public",
-      "articles": 86,
+      "articles": 87,
       "sources": 28,
       "sentiment_direction": "positive",
-      "surge": 2.22,
-      "sentiment_mean": 0.24,
-      "headline": "Vape users hospitalised after losing consciousness, prompting public health warning in New South Wales",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/australia-news/2026/nov/20/vape-users-hospitalised-after-losing-consciousness-prompting-public-health-warning-in-new-south-wales"
+      "surge": 2.28,
+      "sentiment_mean": 0.239,
+      "headline": "Texas buys 952-acre historic ranch for public park; another 288 acres donated",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/science/nature/texas-officials-bought-952-acres-of-the-historic-southwest-stallion-station-ranch-for-a-future-public-park-while-another-288-acres-were-donated-for-conservation-protecting-land-along-wilbarger-creek-near-austin/articleshow/136014587.cms"
     },
     {
-      "term": "russia",
-      "articles": 89,
-      "sources": 26,
-      "sentiment_direction": "mixed",
+      "term": "security",
+      "articles": 87,
+      "sources": 27,
+      "sentiment_direction": "positive",
       "surge": 1.75,
-      "sentiment_mean": -0.001,
-      "headline": "Hours after Putin's 'painful' revenge warning, Russia unleashes massive attack on Kyiv",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/rest-of-world/hours-after-putins-painful-revenge-warning-russia-unleashes-massive-attack-on-ukraine/articleshow/136017914.cms"
+      "sentiment_mean": 0.214,
+      "headline": "British Library to outsource security and \u2018repurpose\u2019 reading rooms as business spaces",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/books/2026/nov/20/british-library-outsource-security-reading-rooms-business-spaces"
+    },
+    {
+      "term": "house",
+      "articles": 69,
+      "sources": 27,
+      "sentiment_direction": "mixed",
+      "surge": 1.47,
+      "sentiment_mean": 0.088,
+      "headline": "White House replaces top cyber security official",
+      "headline_source": "Financial Times",
+      "headline_url": "https://www.ft.com/content/6333f2e6-98da-4491-bd2e-30237d7bfbf5?syn-25a6b1a6=1"
     },
     {
       "term": "summit",
-      "articles": 116,
-      "sources": 25,
+      "articles": 110,
+      "sources": 26,
       "sentiment_direction": "positive",
-      "surge": 2.1,
-      "sentiment_mean": 0.164,
+      "surge": 1.95,
+      "sentiment_mean": 0.15,
       "headline": "The subtle symbolism behind the silk scarves worn by the Apec leaders at Shenzhen summit",
       "headline_source": "South China Morning Post",
       "headline_url": "https://www.scmp.com/news/china/diplomacy/article/3375195/subtle-symbolism-behind-silk-scarves-worn-apec-leaders-shenzhen-summit"
-    },
-    {
-      "term": "court",
-      "articles": 97,
-      "sources": 25,
-      "sentiment_direction": "mixed",
-      "surge": 2.34,
-      "sentiment_mean": 0.072,
-      "headline": "Supreme Court refuses separate listing of plea challenging split verdict on EC law",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/india/supreme-court-refuses-separate-listing-of-plea-challenging-split-verdict-on-ec-law/articleshow/136016277.cms"
     }
   ],
-  "hours_since_fetch": 0.0
+  "hours_since_fetch": 0.11
 }
