@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-20T01:24:15.024537+00:00",
+  "generated_at": "2026-11-20T02:24:41.745650+00:00",
   "window_hours": 24,
-  "articles_in_window": 2247,
+  "articles_in_window": 2219,
   "collection_days": 67,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,80 +10,69 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 319,
+      "articles": 316,
       "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 1.93,
-      "sentiment_mean": 0.093,
-      "headline": "Trump admin approved sales of nearly 9 lakh Nvidia and AMD AI chips for Chinese firms",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/business/international-business/trump-administration-approved-nearly-9-lakh-nvidia-and-amd-ai-chips-for-chinese-firms/articleshow/136009149.cms"
+      "surge": 1.9,
+      "sentiment_mean": 0.091,
+      "headline": "Judge further delays Trump's plan for D.C. arch",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/judge-further-delays-trumps-plan-for-dc-arch/"
     },
     {
       "term": "president",
-      "articles": 174,
+      "articles": 172,
       "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 1.91,
-      "sentiment_mean": 0.077,
+      "surge": 1.88,
+      "sentiment_mean": 0.083,
       "headline": "U.S. President Donald Trump posthumously pardons Pete Rose",
       "headline_source": "Japan Times",
       "headline_url": "https://www.japantimes.co.jp/sports/2026/11/20/baseball/mlb/donald-trump-pete-rose-pardon/"
     },
     {
       "term": "anthropic",
-      "articles": 162,
-      "sources": 31,
+      "articles": 157,
+      "sources": 30,
       "sentiment_direction": "positive",
-      "surge": 5.82,
-      "sentiment_mean": 0.286,
-      "headline": "SoftBank plunges over 16% as AI sell-off hits Asian tech stocks following Anthropic debut",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html"
-    },
-    {
-      "term": "chinese",
-      "articles": 102,
-      "sources": 28,
-      "sentiment_direction": "positive",
-      "surge": 1.72,
-      "sentiment_mean": 0.168,
-      "headline": "Inside Shenzhen, the Chinese city that grew to twice the size of NYC in less than a generation",
+      "surge": 5.45,
+      "sentiment_mean": 0.275,
+      "headline": "Anthropic's 7 co-founders now worth about $20 billion each after record IPO",
       "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/inside-shenzhen-the-chinese-city-that-grew-to-twice-the-size-of-nyc-in-less-than-a-generation/"
+      "headline_url": "https://www.cbsnews.com/video/anthropics-7-co-founders-now-worth-about-20-billion-each-after-record-ipo/"
     },
     {
       "term": "public",
       "articles": 84,
-      "sources": 28,
+      "sources": 29,
       "sentiment_direction": "positive",
-      "surge": 2.24,
-      "sentiment_mean": 0.209,
+      "surge": 2.23,
+      "sentiment_mean": 0.215,
       "headline": "Anthropic goes public after blockbuster IPO but fails to revive AI trade",
       "headline_source": "France24",
       "headline_url": "https://www.france24.com/en/tv-shows/business/20261119-anthropic-goes-public-after-blockbuster-ipo-but-fails-to-revive-ai-trade"
     },
     {
+      "term": "chinese",
+      "articles": 92,
+      "sources": 28,
+      "sentiment_direction": "positive",
+      "surge": 1.54,
+      "sentiment_mean": 0.156,
+      "headline": "Inside Shenzhen, the Chinese city that grew to twice the size of NYC in less than a generation",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/inside-shenzhen-the-chinese-city-that-grew-to-twice-the-size-of-nyc-in-less-than-a-generation/"
+    },
+    {
       "term": "court",
-      "articles": 105,
+      "articles": 102,
       "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 2.64,
-      "sentiment_mean": 0.07,
+      "surge": 2.54,
+      "sentiment_mean": 0.057,
       "headline": "International Court of Justice finds Myanmar guilty of genocide against Rohingya",
       "headline_source": "PBS NewsHour",
       "headline_url": "https://www.pbs.org/newshour/show/international-court-of-justice-finds-myanmar-guilty-of-genocide-against-rohingya"
-    },
-    {
-      "term": "summit",
-      "articles": 141,
-      "sources": 26,
-      "sentiment_direction": "mixed",
-      "surge": 2.88,
-      "sentiment_mean": 0.096,
-      "headline": "Xi separates Putin and Trump at APEC summit",
-      "headline_source": "Sydney Morning Herald",
-      "headline_url": "https://www.smh.com.au/world/xi-separates-putin-and-trump-at-apec-summit-20261120-p61fwj.html?ref=rss&utm_medium=rss&utm_source=rss_world"
     },
     {
       "term": "russia",
@@ -91,10 +80,21 @@
       "sources": 26,
       "sentiment_direction": "mixed",
       "surge": 1.98,
-      "sentiment_mean": 0.005,
-      "headline": "Japan Tobacco Shares Fall After Russia-Related Charges",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/articles/2026-11-20/japan-tobacco-shares-set-to-fall-after-russia-related-charges"
+      "sentiment_mean": 0.006,
+      "headline": "Husband of American detained in Russia says case was not mentioned during Trump meeting with Putin",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/husband-of-american-detained-in-russia-speaks-out/"
+    },
+    {
+      "term": "putin",
+      "articles": 176,
+      "sources": 25,
+      "sentiment_direction": "mixed",
+      "surge": 4.1,
+      "sentiment_mean": 0.099,
+      "headline": "No major agreements from Trump summit with Putin, Xi",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/no-major-agreements-from-trump-summit-with-putin-xi/"
     }
   ],
   "hours_since_fetch": 0.0
