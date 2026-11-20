@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T17:00:03Z",
+  "generated_at": "2026-11-20T19:45:09Z",
   "date": "2026-11-20",
   "games": [
     {
@@ -14,7 +14,18 @@
       "confidence": 0.586,
       "pred_total": 224.8,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "ATL",
+        "stake": 100.0,
+        "selection": "Atlanta Hawks",
+        "price": 1.4,
+        "book": "DraftKings",
+        "quoted_at": "2026-11-20T19:30:07Z",
+        "model_prob": 0.586,
+        "implied_prob": 0.7143,
+        "edge": -0.1283,
+        "ev_per_dollar": -0.1796
       }
     },
     {
@@ -29,7 +40,18 @@
       "confidence": 0.783,
       "pred_total": 223.7,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "ORL",
+        "stake": 100.0,
+        "selection": "Orlando Magic",
+        "price": 1.4,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-20T19:30:07Z",
+        "model_prob": 0.783,
+        "implied_prob": 0.7143,
+        "edge": 0.0687,
+        "ev_per_dollar": 0.0962
       }
     },
     {
@@ -44,7 +66,18 @@
       "confidence": 0.702,
       "pred_total": 226.5,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "CLE",
+        "stake": 100.0,
+        "selection": "Cleveland Cavaliers",
+        "price": 1.45,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-20T19:30:07Z",
+        "model_prob": 0.702,
+        "implied_prob": 0.6897,
+        "edge": 0.0123,
+        "ev_per_dollar": 0.0179
       }
     },
     {
@@ -54,12 +87,23 @@
       "home_team_full": "Detroit Pistons",
       "tipoff": "2026-11-21T00:30Z",
       "pick": "DET",
-      "pred_spread": -8.6,
-      "ml_win_prob": 0.689,
-      "confidence": 0.689,
+      "pred_spread": -9.8,
+      "ml_win_prob": 0.704,
+      "confidence": 0.704,
       "pred_total": 222.9,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "DET",
+        "stake": 100.0,
+        "selection": "Detroit Pistons",
+        "price": 1.38,
+        "book": "DraftKings",
+        "quoted_at": "2026-11-20T19:30:07Z",
+        "model_prob": 0.704,
+        "implied_prob": 0.7246,
+        "edge": -0.0206,
+        "ev_per_dollar": -0.0285
       }
     },
     {
@@ -79,13 +123,13 @@
         "team": "CHI",
         "stake": 100.0,
         "selection": "Chicago Bulls",
-        "price": 1.98,
-        "book": "BetMGM",
-        "quoted_at": "2026-10-24T06:21:49Z",
+        "price": 1.77,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-20T19:30:07Z",
         "model_prob": 0.569,
-        "implied_prob": 0.5051,
-        "edge": 0.0639,
-        "ev_per_dollar": 0.1266
+        "implied_prob": 0.565,
+        "edge": 0.004,
+        "ev_per_dollar": 0.0071
       }
     },
     {
@@ -100,7 +144,18 @@
       "confidence": 0.73,
       "pred_total": 228.0,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "OKC",
+        "stake": 100.0,
+        "selection": "Oklahoma City Thunder",
+        "price": 1.17,
+        "book": "DraftKings",
+        "quoted_at": "2026-11-20T19:30:07Z",
+        "model_prob": 0.73,
+        "implied_prob": 0.8547,
+        "edge": -0.1247,
+        "ev_per_dollar": -0.1459
       }
     },
     {
@@ -115,7 +170,18 @@
       "confidence": 0.722,
       "pred_total": 229.1,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "PHX",
+        "stake": 100.0,
+        "selection": "Phoenix Suns",
+        "price": 1.54,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-20T19:30:07Z",
+        "model_prob": 0.722,
+        "implied_prob": 0.6494,
+        "edge": 0.0726,
+        "ev_per_dollar": 0.1119
       }
     },
     {
@@ -130,7 +196,18 @@
       "confidence": 0.595,
       "pred_total": 227.3,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "DEN",
+        "stake": 100.0,
+        "selection": "Denver Nuggets",
+        "price": 1.82,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-20T19:30:07Z",
+        "model_prob": 0.595,
+        "implied_prob": 0.5495,
+        "edge": 0.0455,
+        "ev_per_dollar": 0.0829
       }
     },
     {
@@ -145,7 +222,18 @@
       "confidence": 0.823,
       "pred_total": 225.6,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "LAL",
+        "stake": 100.0,
+        "selection": "Los Angeles Lakers",
+        "price": 1.11,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-20T19:30:07Z",
+        "model_prob": 0.823,
+        "implied_prob": 0.9009,
+        "edge": -0.0779,
+        "ev_per_dollar": -0.0865
       }
     }
   ],
