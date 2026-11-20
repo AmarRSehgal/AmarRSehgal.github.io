@@ -1,136 +1,126 @@
 {
-  "generated_at": "2026-11-19T14:35:11.017383+00:00",
+  "generated_at": "2026-11-20T14:35:07.846486+00:00",
   "strategy": "MultiFactorV3",
   "account": "PA37U0PIU9B9",
   "paper": true,
   "started": "2026-09-12",
   "starting_equity": 100000.0,
-  "equity": 92600.49,
-  "cash": 2874.89,
-  "return_pct": -0.074,
+  "equity": 92912.1,
+  "cash": 13673.65,
+  "return_pct": -0.0709,
   "positions": [
     {
-      "ticker": "TXN",
-      "qty": 25.2316,
-      "avg_entry": 294.76,
-      "price": 299.04,
-      "market_value": 7545.27,
-      "pnl": 107.99,
-      "return_pct": 0.0145,
-      "weight_pct": 0.0815
+      "ticker": "SYK",
+      "qty": 23.5055,
+      "avg_entry": 315.09,
+      "price": 320.18,
+      "market_value": 7525.87,
+      "pnl": 119.53,
+      "return_pct": 0.0161,
+      "weight_pct": 0.081
     },
     {
       "ticker": "DIS",
       "qty": 63.6923,
       "avg_entry": 120.26,
-      "price": 121.32,
-      "market_value": 7727.14,
-      "pnl": 67.51,
-      "return_pct": 0.0088,
+      "price": 121.69,
+      "market_value": 7750.71,
+      "pnl": 91.08,
+      "return_pct": 0.0119,
       "weight_pct": 0.0834
-    },
-    {
-      "ticker": "LIN",
-      "qty": 14.5487,
-      "avg_entry": 511.2,
-      "price": 512.44,
-      "market_value": 7455.32,
-      "pnl": 18.04,
-      "return_pct": 0.0024,
-      "weight_pct": 0.0805
-    },
-    {
-      "ticker": "NEE",
-      "qty": 88.2135,
-      "avg_entry": 84.31,
-      "price": 84.02,
-      "market_value": 7411.26,
-      "pnl": -26.02,
-      "return_pct": -0.0035,
-      "weight_pct": 0.08
-    },
-    {
-      "ticker": "COST",
-      "qty": 6.7678,
-      "avg_entry": 1107.6,
-      "price": 1094.52,
-      "market_value": 7407.53,
-      "pnl": -88.55,
-      "return_pct": -0.0118,
-      "weight_pct": 0.08
     },
     {
       "ticker": "CB",
       "qty": 20.4808,
       "avg_entry": 374.4,
-      "price": 369.89,
-      "market_value": 7575.66,
-      "pnl": -92.39,
-      "return_pct": -0.012,
-      "weight_pct": 0.0818
+      "price": 376.98,
+      "market_value": 7720.87,
+      "pnl": 52.82,
+      "return_pct": 0.0069,
+      "weight_pct": 0.0831
     },
     {
-      "ticker": "CVX",
-      "qty": 35.1462,
-      "avg_entry": 211.61,
-      "price": 207.59,
-      "market_value": 7295.99,
-      "pnl": -141.29,
-      "return_pct": -0.019,
-      "weight_pct": 0.0788
+      "ticker": "LIN",
+      "qty": 14.5487,
+      "avg_entry": 511.2,
+      "price": 512.91,
+      "market_value": 7462.16,
+      "pnl": 24.88,
+      "return_pct": 0.0034,
+      "weight_pct": 0.0803
     },
     {
-      "ticker": "COP",
-      "qty": 53.7298,
-      "avg_entry": 138.42,
-      "price": 135.75,
-      "market_value": 7294.09,
-      "pnl": -143.19,
-      "return_pct": -0.0192,
-      "weight_pct": 0.0788
-    },
-    {
-      "ticker": "LMT",
-      "qty": 13.0537,
-      "avg_entry": 603.44,
-      "price": 578.15,
-      "market_value": 7546.98,
-      "pnl": -330.11,
-      "return_pct": -0.0419,
-      "weight_pct": 0.0815
+      "ticker": "COST",
+      "qty": 6.7678,
+      "avg_entry": 1107.6,
+      "price": 1104.14,
+      "market_value": 7472.64,
+      "pnl": -23.44,
+      "return_pct": -0.0031,
+      "weight_pct": 0.0804
     },
     {
       "ticker": "HD",
       "qty": 22.4957,
       "avg_entry": 350.29,
-      "price": 334.49,
-      "market_value": 7524.58,
-      "pnl": -355.51,
-      "return_pct": -0.0451,
-      "weight_pct": 0.0813
+      "price": 346.57,
+      "market_value": 7796.33,
+      "pnl": -83.76,
+      "return_pct": -0.0106,
+      "weight_pct": 0.0839
+    },
+    {
+      "ticker": "HON",
+      "qty": 34.0165,
+      "avg_entry": 222.42,
+      "price": 218.11,
+      "market_value": 7419.33,
+      "pnl": -146.67,
+      "return_pct": -0.0194,
+      "weight_pct": 0.0799
+    },
+    {
+      "ticker": "NKE",
+      "qty": 103.7515,
+      "avg_entry": 35.65,
+      "price": 34.48,
+      "market_value": 3577.35,
+      "pnl": -121.39,
+      "return_pct": -0.0328,
+      "weight_pct": 0.0385
     },
     {
       "ticker": "SPGI",
       "qty": 16.6454,
       "avg_entry": 472.33,
-      "price": 444.94,
-      "market_value": 7406.31,
-      "pnl": -455.85,
-      "return_pct": -0.058,
-      "weight_pct": 0.08
+      "price": 451.02,
+      "market_value": 7507.43,
+      "pnl": -354.73,
+      "return_pct": -0.0451,
+      "weight_pct": 0.0808
+    },
+    {
+      "ticker": "LMT",
+      "qty": 13.0537,
+      "avg_entry": 603.44,
+      "price": 573.75,
+      "market_value": 7489.61,
+      "pnl": -387.48,
+      "return_pct": -0.0492,
+      "weight_pct": 0.0806
     },
     {
       "ticker": "PFE",
       "qty": 269.1325,
       "avg_entry": 30.42,
-      "price": 27.96,
-      "market_value": 7526.29,
-      "pnl": -659.88,
-      "return_pct": -0.0806,
-      "weight_pct": 0.0813
+      "price": 27.97,
+      "market_value": 7527.64,
+      "pnl": -658.53,
+      "return_pct": -0.0804,
+      "weight_pct": 0.081
     }
   ],
-  "open_positions": 12,
+  "open_positions": 11,
   "equity_curve": [
     {
       "date": "2026-09-12",
@@ -327,11 +317,15 @@
     {
       "date": "2026-11-19",
       "equity": 92579.26
+    },
+    {
+      "date": "2026-11-20",
+      "equity": 91795.89
     }
   ],
   "benchmark": "SPY",
-  "benchmark_return_pct": -0.0356,
-  "excess_return_pct": -0.0384,
+  "benchmark_return_pct": -0.0545,
+  "excess_return_pct": -0.0164,
   "ex_downtime": {
     "windows": [
       {
@@ -344,11 +338,11 @@
       }
     ],
     "sessions_excluded": 17,
-    "return_pct": -0.103,
-    "benchmark_return_pct": -0.0267,
-    "excess_return_pct": -0.0762
+    "return_pct": -0.0999,
+    "benchmark_return_pct": -0.0458,
+    "excess_return_pct": -0.0541
   },
-  "days_live": 44,
+  "days_live": 45,
   "verdict_due": false,
   "retire_after_days": 180,
   "backtest": {
