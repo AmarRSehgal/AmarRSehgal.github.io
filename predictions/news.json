@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-20T12:24:15.164542+00:00",
+  "generated_at": "2026-11-20T13:24:12.853784+00:00",
   "window_hours": 24,
-  "articles_in_window": 2189,
+  "articles_in_window": 2193,
   "collection_days": 67,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,69 +10,80 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 252,
+      "articles": 244,
       "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 1.41,
-      "sentiment_mean": 0.071,
-      "headline": "As Trump courts Xi and Putin, middle powers make their own moves - Reuters",
-      "headline_source": "Reuters",
-      "headline_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSTlEeUw0SVZ1dkFoRVM0WEdFTktVUVFoQ2VvVlV5YmpQaEdwVGFWWmVnSmdmRU1pdXBRZng0MTV6ZVhOZjd0b2o5MlVicFh4Q3RkWEFMLWl4QzRtSHFJZ0VUbDA0YzcyOTNlZF9EQzhtUjA5R1gxXzBYS05qM0ZISGlBdnZCdXpFdjZhc2lCZ3dGdHlEU3JlOXNVdnFlVlVqWC1qWHdwNA?oc=5"
+      "surge": 1.35,
+      "sentiment_mean": 0.053,
+      "headline": "US and China hold maritime security talks in parallel with Xi-Trump meetings",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/china/military/article/3375274/us-and-china-hold-maritime-security-talks-parallel-trump-xi-meetings"
     },
     {
       "term": "president",
-      "articles": 138,
+      "articles": 136,
       "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 1.39,
-      "sentiment_mean": 0.084,
-      "headline": "Former YC President: \"Stop!\u201d",
-      "headline_source": "Hacker News",
-      "headline_url": "https://geoffralston.substack.com/p/stop"
+      "surge": 1.36,
+      "sentiment_mean": 0.041,
+      "headline": "\u2018I agree with the president\u2019: incoming senator Abdul El-Sayed seeks to help Trump end military aid to Israel",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/us-news/2026/nov/20/el-sayed-trump-israel-aid"
     },
     {
       "term": "anthropic",
       "articles": 164,
-      "sources": 29,
+      "sources": 28,
       "sentiment_direction": "positive",
-      "surge": 4.69,
-      "sentiment_mean": 0.173,
-      "headline": "Cathie Wood's ARK Invest was a big buyer of Anthropic during debut",
+      "surge": 4.52,
+      "sentiment_mean": 0.162,
+      "headline": "Anthropic raises $93.5 billion total as underwriters scoop up \u2018greenshoe\u2019 overallotment",
       "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/20/cathie-woods-ark-invest-was-a-big-buyer-of-anthropic-during-debut.html"
+      "headline_url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-greenshoe.html"
     },
     {
       "term": "tech",
-      "articles": 84,
+      "articles": 85,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 1.4,
-      "sentiment_mean": 0.003,
-      "headline": "The Tech Download: Anthropic charmed Wall Street. But one big uncertainty hangs over the business",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/20/tech-download-anthropic-compute-access.html"
+      "surge": 1.43,
+      "sentiment_mean": -0.013,
+      "headline": "White House National Cyber Director Departs Amid Tech Outages",
+      "headline_source": "NBC News",
+      "headline_url": "https://www.today.com/video/visa-mastercard-jp-morgan-chase-confirm-cyberattack-273882693910"
     },
     {
       "term": "summit",
-      "articles": 111,
+      "articles": 107,
       "sources": 26,
       "sentiment_direction": "mixed",
-      "surge": 1.87,
-      "sentiment_mean": 0.132,
-      "headline": "Stocks slide despite Anthropic\u2019s record debut and Trump touts \u2018unbelievable\u2019 China summit: Morning Rundown",
-      "headline_source": "NBC News",
-      "headline_url": "https://www.nbcnews.com/news/us-news/anthropic-stock-debut-trump-china-summit-morning-rundown-rcna610364"
+      "surge": 1.76,
+      "sentiment_mean": 0.091,
+      "headline": "China didn\u2019t just host an Apec summit. It ran a year-long campaign",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/opinion/china-opinion/article/3375119/china-didnt-just-host-apec-summit-it-ran-year-long-campaign"
+    },
+    {
+      "term": "public",
+      "articles": 76,
+      "sources": 26,
+      "sentiment_direction": "positive",
+      "surge": 1.89,
+      "sentiment_mean": 0.17,
+      "headline": "Evolution of China public holidays from ancient \u2018golden weeks\u2019 to modern make-up workdays",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/people-culture/trending-china/article/3375252/evolution-china-public-holidays-ancient-golden-weeks-modern-make-workdays"
     },
     {
       "term": "house",
-      "articles": 63,
+      "articles": 64,
       "sources": 26,
       "sentiment_direction": "mixed",
-      "surge": 1.33,
-      "sentiment_mean": 0.038,
-      "headline": "White House replaces cyber director Sean Cairncross amid widespread tech outages",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/20/sean-cairncross-white-house-cyber-director.html"
+      "surge": 1.34,
+      "sentiment_mean": 0.048,
+      "headline": "House Democrat probes agencies' use of messaging apps to discuss official business",
+      "headline_source": "ABC News",
+      "headline_url": "https://abcnews.com/Technology/wireStory/house-democrat-investigates-government-agencies-messaging-apps-discuss-138315690"
     },
     {
       "term": "security",
@@ -80,21 +91,10 @@
       "sources": 25,
       "sentiment_direction": "positive",
       "surge": 1.61,
-      "sentiment_mean": 0.178,
-      "headline": "Prospect Capital exits Security Fire Systems investment",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/company-news/prospect-capital-exits-security-fire-systems-investment-93CH-5041247"
-    },
-    {
-      "term": "public",
-      "articles": 77,
-      "sources": 25,
-      "sentiment_direction": "positive",
-      "surge": 1.91,
-      "sentiment_mean": 0.185,
-      "headline": "Evolution of China public holidays from ancient \u2018golden weeks\u2019 to modern make-up workdays",
+      "sentiment_mean": 0.163,
+      "headline": "US and China hold maritime security talks in parallel with Xi-Trump meetings",
       "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/people-culture/trending-china/article/3375252/evolution-china-public-holidays-ancient-golden-weeks-modern-make-workdays"
+      "headline_url": "https://www.scmp.com/news/china/military/article/3375274/us-and-china-hold-maritime-security-talks-parallel-trump-xi-meetings"
     }
   ],
   "hours_since_fetch": 0.0
