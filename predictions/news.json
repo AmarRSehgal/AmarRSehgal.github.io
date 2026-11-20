@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-19T23:24:23.143436+00:00",
+  "generated_at": "2026-11-20T00:24:22.539319+00:00",
   "window_hours": 24,
-  "articles_in_window": 2262,
-  "collection_days": 66,
+  "articles_in_window": 2252,
+  "collection_days": 67,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
   "surge_available": true,
@@ -10,58 +10,69 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 318,
-      "sources": 34,
-      "sentiment_direction": "mixed",
-      "surge": 1.94,
-      "sentiment_mean": 0.076,
-      "headline": "At China summit, Trump calls Putin 'my friend' amid Ukraine war",
-      "headline_source": "ABC News",
-      "headline_url": "https://abcnews.com/International/china-summit-trump-calls-putin-friend-amid-ukraine/story?id=138282642"
-    },
-    {
-      "term": "anthropic",
-      "articles": 154,
+      "articles": 317,
       "sources": 33,
-      "sentiment_direction": "positive",
-      "surge": 5.92,
-      "sentiment_mean": 0.319,
-      "headline": "Anthropic was supposed to save the AI trade. What went wrong?",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ai-stocks-selloff.html"
+      "sentiment_direction": "mixed",
+      "surge": 1.92,
+      "sentiment_mean": 0.074,
+      "headline": "Trump clears hurdle in $15 billion lawsuit against New York Times",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/media/trump-clears-hurdle-15-billion-lawsuit-against-new-york-times"
     },
     {
       "term": "president",
-      "articles": 168,
+      "articles": 171,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 1.85,
-      "sentiment_mean": 0.084,
-      "headline": "A president among body bags: Photo ops spark outrage in Colombia",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/tv-shows/the-observers/20261119-president-body-bags-photo-ops-sparking-outrage-colombia"
+      "surge": 1.87,
+      "sentiment_mean": 0.073,
+      "headline": "AI fueling \"disturbingly high\" inflation, Chicago Fed president says",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/news/ai-boom-inflation-chicago-fed-goolsbee/"
+    },
+    {
+      "term": "anthropic",
+      "articles": 155,
+      "sources": 32,
+      "sentiment_direction": "positive",
+      "surge": 5.74,
+      "sentiment_mean": 0.305,
+      "headline": "After Anthropic\u2019s \u2018bittersweet\u2019 IPO, here\u2019s what lies ahead",
+      "headline_source": "MarketWatch Top Stories",
+      "headline_url": "https://www.marketwatch.com/story/after-anthropics-bittersweet-ipo-heres-what-lies-ahead-8c32fdb7?mod=mw_rss_topstories"
+    },
+    {
+      "term": "chinese",
+      "articles": 100,
+      "sources": 28,
+      "sentiment_direction": "mixed",
+      "surge": 1.68,
+      "sentiment_mean": 0.148,
+      "headline": "US Congress releases list of Chinese firms seeking Nvidia chips",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/china/diplomacy/article/3375135/us-congress-releases-list-chinese-firms-seeking-nvidia-chips"
     },
     {
       "term": "public",
-      "articles": 81,
-      "sources": 29,
+      "articles": 82,
+      "sources": 28,
       "sentiment_direction": "positive",
-      "surge": 2.19,
-      "sentiment_mean": 0.229,
+      "surge": 2.18,
+      "sentiment_mean": 0.211,
       "headline": "Anthropic goes public after blockbuster IPO but fails to revive AI trade",
       "headline_source": "France24",
       "headline_url": "https://www.france24.com/en/tv-shows/business/20261119-anthropic-goes-public-after-blockbuster-ipo-but-fails-to-revive-ai-trade"
     },
     {
-      "term": "tech",
-      "articles": 80,
-      "sources": 28,
+      "term": "summit",
+      "articles": 150,
+      "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 1.42,
-      "sentiment_mean": 0.117,
-      "headline": "Former White House chief information officer on banking hack, tech outages",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/former-white-house-chief-information-officer-on-banking-hack-tech-outages/"
+      "surge": 3.19,
+      "sentiment_mean": 0.082,
+      "headline": "Inside the historic summit between Trump, Xi and Putin",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/show/inside-the-historic-summit-between-trump-xi-and-putin"
     },
     {
       "term": "court",
@@ -69,32 +80,21 @@
       "sources": 27,
       "sentiment_direction": "mixed",
       "surge": 2.76,
-      "sentiment_mean": 0.071,
-      "headline": "Court: 4th Amendment Doesn't Cover AI-Generated 'Probable Cause'",
-      "headline_source": "Hacker News",
-      "headline_url": "https://www.techdirt.com/2026/11/19/court-tells-cops-that-the-4th-amendment-doesnt-cover-ai-generated-probable-cause/"
+      "sentiment_mean": 0.053,
+      "headline": "International Court of Justice finds Myanmar guilty of genocide against Rohingya",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/show/international-court-of-justice-finds-myanmar-guilty-of-genocide-against-rohingya"
     },
     {
-      "term": "chinese",
-      "articles": 99,
+      "term": "tech",
+      "articles": 77,
       "sources": 27,
       "sentiment_direction": "positive",
-      "surge": 1.64,
-      "sentiment_mean": 0.156,
-      "headline": "Nvidia Asked to Sell Chips to Companies Tied to Chinese Military and Megaspeed",
-      "headline_source": "NYT Business",
-      "headline_url": "https://www.nytimes.com/2026/11/19/business/economy/nvidia-chips-commerce-china-huang.html"
-    },
-    {
-      "term": "summit",
-      "articles": 153,
-      "sources": 26,
-      "sentiment_direction": "mixed",
-      "surge": 3.35,
-      "sentiment_mean": 0.073,
-      "headline": "At China summit, Trump calls Putin 'my friend' amid Ukraine war",
-      "headline_source": "ABC News",
-      "headline_url": "https://abcnews.com/International/china-summit-trump-calls-putin-friend-amid-ukraine/story?id=138282642"
+      "surge": 1.33,
+      "sentiment_mean": 0.152,
+      "headline": "'GTA 6' release live updates: Reviews, memes and more as gamers explore and react to Leonida after 13 long years - Yahoo Tech",
+      "headline_source": "Google News Top",
+      "headline_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQMFNyd0t4WENWQi14dUoyWTh4LUg5X0x2VVNPZnB0Ulh5aVVpeHJQTUIxRXpIV1I5cUhGanBpczIzT2FKYUZ4RnFpOVUxSTRhX0lISVNJMjZpMHoyMHdUUjNmcXJDRE9CSXhvcE4zLTRtUTdWb1JJTWRBU0w2WGs5cHdJSGJkdkJTUVJYMDZEcmRHT3RUNFotSXRtYjhHNkRNaGN2MWMzekxYQzNIY1kzb0E4bTB5dTBjTll3cFU3ZU5FaTV4WHlma2F5T1VON1Bma2pET3RwTG5FdmxHUklySDJwYm9uYWh4Tk5XeDUtX2lHQU9IejY1VnI1NEFHaTVhZXc?oc=5"
     }
   ],
   "hours_since_fetch": 0.0
