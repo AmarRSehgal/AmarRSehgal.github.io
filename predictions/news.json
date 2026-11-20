@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-20T22:24:16.401167+00:00",
+  "generated_at": "2026-11-20T23:24:36.111280+00:00",
   "window_hours": 24,
-  "articles_in_window": 2082,
+  "articles_in_window": 2066,
   "collection_days": 67,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,55 +10,55 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 232,
+      "articles": 228,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 1.22,
-      "sentiment_mean": 0.008,
-      "headline": "Trump threatens \u2018tremendous penalties\u2019 on US tech firms that build datacenters abroad",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/us-news/2026/nov/20/trump-datacenters-white-house"
+      "surge": 1.19,
+      "sentiment_mean": 0.02,
+      "headline": "Trump signs Common Cents Act",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/news/trump-signs-common-cents-act-into-law/"
     },
     {
       "term": "president",
-      "articles": 143,
+      "articles": 137,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 1.38,
-      "sentiment_mean": 0.026,
+      "surge": 1.31,
+      "sentiment_mean": 0.034,
       "headline": "Brazil's imprisoned ex-president Jair Bolsonaro taken to hospital with abdominal pain",
       "headline_source": "Times of India",
       "headline_url": "https://timesofindia.indiatimes.com/world/rest-of-world/brazils-jailed-ex-president-jair-bolsonaro-taken-to-hospital-son-alleges-psychological-torture/articleshow/136039037.cms"
     },
     {
       "term": "data",
-      "articles": 67,
+      "articles": 71,
       "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 1.57,
-      "sentiment_mean": 0.007,
-      "headline": "Meta reconsiders 2030 net-zero goal amid record emissions from AI data centers",
-      "headline_source": "Ars Technica",
-      "headline_url": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/"
+      "surge": 1.66,
+      "sentiment_mean": 0.003,
+      "headline": "Trump Vows To Stop US Companies From Building Data Centers Abroad",
+      "headline_source": "Slashdot",
+      "headline_url": "https://news.slashdot.org/story/26/11/20/2223202/trump-vows-to-stop-us-companies-from-building-data-centers-abroad?utm_source=rss1.0mainlinkanon&utm_medium=feed"
     },
     {
       "term": "tech",
       "articles": 100,
       "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 1.63,
-      "sentiment_mean": -0.04,
-      "headline": "AI tech rout prompts US investors to rush into value stocks",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/economy-news/ai-tech-rout-prompts-us-investors-to-rush-into-value-stocks-5042534"
+      "surge": 1.62,
+      "sentiment_mean": -0.049,
+      "headline": "S&P, Dow Slide Into Correction as Investors Dump Tech",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-11-20/s-p-dow-slide-into-correction-as-investors-dump-tech-video"
     },
     {
       "term": "anthropic",
-      "articles": 141,
-      "sources": 28,
+      "articles": 133,
+      "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 3.0,
-      "sentiment_mean": 0.081,
+      "surge": 2.76,
+      "sentiment_mean": 0.082,
       "headline": "The hidden catch in Anthropic\u2019s IPO: Billions of locked-up shares are waiting in the wings",
       "headline_source": "MarketWatch Top Stories",
       "headline_url": "https://www.marketwatch.com/story/the-hidden-catch-in-anthropics-ipo-billions-of-locked-up-shares-are-waiting-in-the-wings-279d33ce?mod=mw_rss_topstories"
@@ -66,7 +66,7 @@
     {
       "term": "cyber",
       "articles": 49,
-      "sources": 26,
+      "sources": 27,
       "sentiment_direction": "mixed",
       "surge": 5.66,
       "sentiment_mean": 0.001,
@@ -75,26 +75,26 @@
       "headline_url": "https://www.scmp.com/news/us/politics/article/3375298/trump-replaces-us-cyber-chief-after-outages-hit-flights-banks-and-nsa"
     },
     {
+      "term": "deal",
+      "articles": 75,
+      "sources": 26,
+      "sentiment_direction": "positive",
+      "surge": 2.25,
+      "sentiment_mean": 0.188,
+      "headline": "Activists, leaders criticize COP31 climate talks as fossil fuels go unmentioned in draft deal",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/world/activists-leaders-criticize-cop31-climate-talks-as-fossil-fuels-go-unmentioned-in-draft-deal"
+    },
+    {
       "term": "outages",
-      "articles": 38,
+      "articles": 39,
       "sources": 26,
       "sentiment_direction": "mixed",
-      "surge": 1.62,
-      "sentiment_mean": -0.089,
+      "surge": 1.69,
+      "sentiment_mean": -0.087,
       "headline": "Trump replaces US cyber chief after outages hit flights, banks and NSA",
       "headline_source": "South China Morning Post",
       "headline_url": "https://www.scmp.com/news/us/politics/article/3375298/trump-replaces-us-cyber-chief-after-outages-hit-flights-banks-and-nsa"
-    },
-    {
-      "term": "summit",
-      "articles": 82,
-      "sources": 25,
-      "sentiment_direction": "mixed",
-      "surge": 1.23,
-      "sentiment_mean": 0.135,
-      "headline": "Inside the situations in Ukraine, Iran following Trump summit with Xi and Putin",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/inside-the-situations-in-ukraine-iran-following-trump-summit-with-xi-and-putin/"
     }
   ],
   "hours_since_fetch": 0.0
