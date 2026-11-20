@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-20T20:43:44.322142+00:00",
+  "generated_at": "2026-11-20T21:24:21.287564+00:00",
   "window_hours": 24,
-  "articles_in_window": 2004,
+  "articles_in_window": 2097,
   "collection_days": 67,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,91 +10,91 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 214,
+      "articles": 237,
       "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 1.14,
-      "sentiment_mean": 0.016,
-      "headline": "Trump Admin Still Won't Let TP-Link Sell Routers In US",
-      "headline_source": "Slashdot",
-      "headline_url": "https://yro.slashdot.org/story/26/11/20/1929255/trump-admin-still-wont-let-tp-link-sell-routers-in-us?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+      "surge": 1.26,
+      "sentiment_mean": 0.01,
+      "headline": "Trump replaces US cyber chief after outages hit flights, banks and NSA",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/us/politics/article/3375298/trump-replaces-us-cyber-chief-after-outages-hit-flights-banks-and-nsa"
     },
     {
       "term": "president",
-      "articles": 133,
+      "articles": 138,
       "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 1.31,
-      "sentiment_mean": 0.055,
-      "headline": "Colombian president calls out 'false' New York Times report on US partnership against narcoterrorism",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/media/colombian-president-calls-out-false-new-york-times-report-us-partnership-against-narcoterrorism"
+      "surge": 1.35,
+      "sentiment_mean": 0.029,
+      "headline": "Brazil's imprisoned ex-president Jair Bolsonaro taken to hospital with abdominal pain",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/world/rest-of-world/brazils-jailed-ex-president-jair-bolsonaro-taken-to-hospital-son-alleges-psychological-torture/articleshow/136039037.cms"
     },
     {
       "term": "anthropic",
-      "articles": 148,
-      "sources": 29,
+      "articles": 151,
+      "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 3.34,
-      "sentiment_mean": 0.088,
-      "headline": "SpaceX\u2019s stock falls back below its IPO price \u2014\u00a0and Anthropic\u2019s could be next",
-      "headline_source": "MarketWatch Top Stories",
-      "headline_url": "https://www.marketwatch.com/story/spacexs-stock-falls-back-below-its-ipo-price-and-anthropics-could-be-next-079d2a4a?mod=mw_rss_topstories"
+      "surge": 3.37,
+      "sentiment_mean": 0.098,
+      "headline": "Anthropic Shares Tank After Huge IPO As the Nasdaq Erases 2026 Gains",
+      "headline_source": "Slashdot",
+      "headline_url": "https://news.slashdot.org/story/26/11/20/1934244/anthropic-shares-tank-after-huge-ipo-as-the-nasdaq-erases-2026-gains?utm_source=rss1.0mainlinkanon&utm_medium=feed"
     },
     {
       "term": "tech",
-      "articles": 92,
+      "articles": 101,
       "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 1.54,
-      "sentiment_mean": 0.005,
-      "headline": "Trump is trying to stop Big Tech\u2019s push to build data centers outside the U.S.",
-      "headline_source": "MarketWatch Top Stories",
-      "headline_url": "https://www.marketwatch.com/story/trump-is-trying-to-stop-big-techs-push-to-build-data-centers-outside-the-u-s-86f32f7f?mod=mw_rss_topstories"
+      "surge": 1.69,
+      "sentiment_mean": -0.013,
+      "headline": "WATCH: Cascade of tech outages 'separate events' and 'under control,' Trump says",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/politics/watch-cascade-of-tech-outages-separate-events-and-under-control-trump-says"
     },
     {
-      "term": "house",
-      "articles": 67,
-      "sources": 26,
+      "term": "data",
+      "articles": 61,
+      "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 1.41,
-      "sentiment_mean": 0.078,
-      "headline": "Speaker Mike Johnson calls upon House Republicans to show up for work",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/politics/speaker-mike-johnson-calls-house-republicans-show-work"
-    },
-    {
-      "term": "cyber",
-      "articles": 49,
-      "sources": 26,
-      "sentiment_direction": "mixed",
-      "surge": 6.0,
-      "sentiment_mean": 0.056,
-      "headline": "White House Replaces Cyber Director After Tech Outages",
-      "headline_source": "Slashdot",
-      "headline_url": "https://yro.slashdot.org/story/26/11/20/1739245/white-house-replaces-cyber-director-after-tech-outages?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+      "surge": 1.44,
+      "sentiment_mean": 0.029,
+      "headline": "Trump threatens ban on US firms building AI data centres overseas",
+      "headline_source": "BBC World",
+      "headline_url": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&at_campaign=rss"
     },
     {
       "term": "outages",
-      "articles": 37,
+      "articles": 42,
+      "sources": 27,
+      "sentiment_direction": "mixed",
+      "surge": 1.86,
+      "sentiment_mean": -0.07,
+      "headline": "Trump replaces US cyber chief after outages hit flights, banks and NSA",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/us/politics/article/3375298/trump-replaces-us-cyber-chief-after-outages-hit-flights-banks-and-nsa"
+    },
+    {
+      "term": "cyber",
+      "articles": 51,
       "sources": 26,
       "sentiment_direction": "mixed",
-      "surge": 1.65,
-      "sentiment_mean": -0.069,
-      "headline": "White House Replaces Cyber Director After Tech Outages",
-      "headline_source": "Slashdot",
-      "headline_url": "https://yro.slashdot.org/story/26/11/20/1739245/white-house-replaces-cyber-director-after-tech-outages?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+      "surge": 6.24,
+      "sentiment_mean": 0.041,
+      "headline": "Trump replaces US cyber chief after outages hit flights, banks and NSA",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/us/politics/article/3375298/trump-replaces-us-cyber-chief-after-outages-hit-flights-banks-and-nsa"
     },
     {
       "term": "summit",
-      "articles": 79,
+      "articles": 84,
       "sources": 25,
       "sentiment_direction": "mixed",
-      "surge": 1.19,
-      "sentiment_mean": 0.137,
-      "headline": "Trump holds news conference after summit with Putin, Xi | Special Report",
+      "surge": 1.26,
+      "sentiment_mean": 0.132,
+      "headline": "Inside the situations in Ukraine, Iran following Trump summit with Xi and Putin",
       "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/trump-holds-news-conference-after-summit-with-putin-xi-special-report/"
+      "headline_url": "https://www.cbsnews.com/video/inside-the-situations-in-ukraine-iran-following-trump-summit-with-xi-and-putin/"
     }
   ],
   "hours_since_fetch": 0.0
