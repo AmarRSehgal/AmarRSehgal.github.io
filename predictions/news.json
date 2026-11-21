@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-21T15:24:18.021915+00:00",
+  "generated_at": "2026-11-21T16:24:14.654162+00:00",
   "window_hours": 24,
-  "articles_in_window": 1729,
+  "articles_in_window": 1686,
   "collection_days": 68,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,22 +10,22 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 182,
+      "articles": 180,
       "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 0.88,
-      "sentiment_mean": -0.039,
-      "headline": "Trump's dream of battleships turns into financial nightmare for US Navy",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/defence/international/dream-for-president-nightmare-for-us-navy-trump-class-battleships-add-275-billion-to-bill/articleshow/136056941.cms"
+      "surge": 0.86,
+      "sentiment_mean": -0.065,
+      "headline": "Poland says Russian missiles hit its territory; Trump calls it a \u2018mistake\u2019",
+      "headline_source": "Washington Post",
+      "headline_url": "https://www.washingtonpost.com/world/2026/11/21/poland-says-russian-missiles-hit-its-territory-trump-calls-it-mistake/"
     },
     {
       "term": "president",
-      "articles": 111,
+      "articles": 110,
       "sources": 31,
       "sentiment_direction": "mixed",
-      "surge": 0.96,
-      "sentiment_mean": -0.017,
+      "surge": 0.94,
+      "sentiment_mean": -0.043,
       "headline": "Vivos Inc president Brad Weeks buys $5,790 in stock",
       "headline_source": "Investing.com News",
       "headline_url": "https://www.investing.com/news/insider-trading-news/vivos-inc-president-brad-weeks-buys-5790-in-stock-93CH-5043451"
@@ -33,68 +33,68 @@
     {
       "term": "tech",
       "articles": 83,
-      "sources": 31,
+      "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 1.17,
-      "sentiment_mean": -0.109,
-      "headline": "New EU budget proposal aims at tax gobal tech giants",
-      "headline_source": "DW News",
-      "headline_url": "https://www.dw.com/en/new-eu-budget-proposal-aims-at-tax-gobal-tech-giants/a-80009255?maca=en-rss-en-all-1573-rdf"
+      "surge": 1.16,
+      "sentiment_mean": -0.112,
+      "headline": "Market tumbles after tech stock sell-off",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/market-tumbles-after-tech-stock-sell-off/"
     },
     {
       "term": "data",
-      "articles": 57,
+      "articles": 56,
       "sources": 27,
       "sentiment_direction": "negative",
-      "surge": 1.22,
-      "sentiment_mean": -0.163,
+      "surge": 1.19,
+      "sentiment_mean": -0.187,
       "headline": "Probabilistic data structures in Go, part 2",
       "headline_source": "Lobsters",
       "headline_url": "https://antonz.org/probabilistic-data-structures-2/"
     },
     {
       "term": "companies",
-      "articles": 46,
+      "articles": 45,
       "sources": 23,
       "sentiment_direction": "negative",
-      "surge": 1.31,
-      "sentiment_mean": -0.174,
+      "surge": 1.27,
+      "sentiment_mean": -0.232,
       "headline": "Trump defends Putin relationship and says he\u2019ll stop US companies from building data centers abroad - CNN",
       "headline_source": "Google News Top",
       "headline_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQV1ZlV2E5d0xOS3N5d1hyTGlHTk8tMjY3R2Y0SG91d0J6VlR4Q0htNjc2Qkw0MTZJTmNqbU5zb1FpaHN6S3RTWkt1UFpYaGYyMUg2cktPS1ltLUF6NDRJRDVNaHRCemg3ZXQ2VkRfa3Vhbzg4dmM3bW5mckJxMFN4YUh5QzRNOUw1YXQyaw?oc=5"
     },
     {
       "term": "anthropic",
-      "articles": 54,
+      "articles": 56,
       "sources": 22,
       "sentiment_direction": "mixed",
-      "surge": 0.84,
+      "surge": 0.87,
       "sentiment_mean": 0.099,
       "headline": "Can Anthropic afford to put safety first?",
       "headline_source": "The Verge",
       "headline_url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure"
     },
     {
-      "term": "security",
-      "articles": 42,
-      "sources": 22,
-      "sentiment_direction": "mixed",
-      "surge": 0.77,
-      "sentiment_mean": 0.142,
-      "headline": "America is definitely rich enough to fix Social Security and Medicare. Here\u2019s how.",
-      "headline_source": "MarketWatch Top Stories",
-      "headline_url": "https://www.marketwatch.com/story/america-is-definitely-rich-enough-to-fix-social-security-and-medicare-heres-how-30678aa5?mod=mw_rss_topstories"
-    },
-    {
       "term": "court",
-      "articles": 67,
+      "articles": 63,
       "sources": 21,
       "sentiment_direction": "negative",
-      "surge": 1.28,
-      "sentiment_mean": -0.454,
+      "surge": 1.19,
+      "sentiment_mean": -0.486,
       "headline": "'India not a rogue state': Wangchuk says 'house arrest' lifted after court hearing",
       "headline_source": "Times of India",
       "headline_url": "https://timesofindia.indiatimes.com/india/india-not-a-rogue-state-wangchuk-cries-foul-over-house-arrest-says-police-pulled-out-after-court-order/articleshow/136055057.cms"
+    },
+    {
+      "term": "military",
+      "articles": 44,
+      "sources": 21,
+      "sentiment_direction": "negative",
+      "surge": 1.07,
+      "sentiment_mean": -0.312,
+      "headline": "Canada defense minister says no shift in US military ties - Reuters",
+      "headline_source": "Reuters",
+      "headline_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWVg0WXpZcmhwN081dnZKanFKZHhJM1c4a3BObXFaUW9mUF9Vc1ZYdU1YWi1udmx4RGhLcnhqYTI2ZHNYWWJNUTZLMGI1WEJTa2YzZmZPV3M5NUlpVTVmbW5wM0ZDUk96MFh6QW5tU2pVMHo5dXFQalo5b3NWZmNSaWUzS3FQR3N1WnF0S0NiX2Q3NHZyRTYwNGY4bFJ3dlp4akp3dTdNcHZsWnc?oc=5"
     }
   ],
   "hours_since_fetch": 0.0
