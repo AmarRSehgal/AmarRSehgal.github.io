@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-21T03:24:17.229000+00:00",
+  "generated_at": "2026-11-21T04:43:51.495991+00:00",
   "window_hours": 24,
-  "articles_in_window": 2032,
+  "articles_in_window": 2009,
   "collection_days": 68,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,91 +10,91 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 217,
+      "articles": 210,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 1.12,
-      "sentiment_mean": -0.035,
-      "headline": "'Look at India': Trump takes India's 7% growth as cue to demand Fed rate cuts",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/business/international-business/india-vs-us-interest-rates-trump-cites-look-at-india-example-to-turn-up-heat-on-fed/articleshow/136043034.cms"
+      "surge": 1.07,
+      "sentiment_mean": -0.042,
+      "headline": "Trump ousts cyber director after tech outages spark criticism",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/news/2026/11/21/world/politics/us-cyber-director-ousted/"
     },
     {
       "term": "president",
-      "articles": 131,
-      "sources": 30,
+      "articles": 133,
+      "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 1.22,
-      "sentiment_mean": 0.025,
-      "headline": "Upstart president Sanjay Datta sells $139,609 in company stock",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/insider-trading-news/upstart-president-sanjay-datta-sells-139609-in-company-stock-93CH-5043026"
-    },
-    {
-      "term": "tech",
-      "articles": 97,
-      "sources": 29,
-      "sentiment_direction": "mixed",
-      "surge": 1.52,
-      "sentiment_mean": -0.054,
-      "headline": "Trump says recent tech outages are \"all separate events\"",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/trump-says-recent-tech-outages-are-all-separate-events/"
+      "surge": 1.23,
+      "sentiment_mean": 0.011,
+      "headline": "Brazil ex-president Jair Bolsonaro taken to hospital over abdominal pain",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/brazil-ex-president-jair-bolsonaro-taken-to-hospital-over-abdominal-pain/a-80007648?maca=en-rss-en-all-1573-rdf"
     },
     {
       "term": "data",
-      "articles": 68,
+      "articles": 67,
+      "sources": 30,
+      "sentiment_direction": "mixed",
+      "surge": 1.53,
+      "sentiment_mean": -0.04,
+      "headline": "BlackBlaze now explicitly states selling your data for advertisement",
+      "headline_source": "Hacker News",
+      "headline_url": "https://www.backblaze.com/company/policy/privacy"
+    },
+    {
+      "term": "tech",
+      "articles": 96,
       "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 1.56,
-      "sentiment_mean": -0.025,
-      "headline": "Nvidia faces further blow after shock US export permit data release: analysts",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/tech/big-tech/article/3375287/nvidia-faces-further-blow-after-shock-us-export-permit-data-release-analysts"
+      "surge": 1.49,
+      "sentiment_mean": -0.046,
+      "headline": "Trump ousts cyber director after tech outages spark criticism",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/news/2026/11/21/world/politics/us-cyber-director-ousted/"
     },
     {
       "term": "deal",
-      "articles": 79,
+      "articles": 78,
       "sources": 26,
       "sentiment_direction": "positive",
-      "surge": 2.34,
-      "sentiment_mean": 0.159,
+      "surge": 2.3,
+      "sentiment_mean": 0.155,
       "headline": "COP31 deal stalls as nations struggle to agree on climate plan",
       "headline_source": "Al Jazeera",
       "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/21/cop31-deal-stalls-as-nations-struggle-to-agree-on-climate-plan?traffic_source=rss"
     },
     {
       "term": "cyber",
-      "articles": 39,
-      "sources": 25,
+      "articles": 38,
+      "sources": 24,
       "sentiment_direction": "mixed",
-      "surge": 3.64,
-      "sentiment_mean": 0.008,
-      "headline": "'If you target Americans, justice will find you': FBI chief warns cyber criminals",
+      "surge": 3.49,
+      "sentiment_mean": 0.007,
+      "headline": "Trump ousts cyber director after tech outages spark criticism",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/news/2026/11/21/world/politics/us-cyber-director-ousted/"
+    },
+    {
+      "term": "anthropic",
+      "articles": 106,
+      "sources": 23,
+      "sentiment_direction": "mixed",
+      "surge": 2.0,
+      "sentiment_mean": 0.09,
+      "headline": "Dario Amodei to Jamie Dimon: Why Anthropic avoids hiring highly technical people",
       "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/us/if-you-target-americans-justice-will-find-you-fbi-chief-kash-patel-warns-cyber-criminals-amid-jpmorgan-data-breach-tech-outages/articleshow/136042592.cms"
+      "headline_url": "https://timesofindia.indiatimes.com/technology/tech-news/dario-amodei-to-jamie-dimon-at-anthropic-we-do-not-hire-deeply-technically-talented-people-to-make-sure-our-culture-is-/articleshow/136043033.cms"
     },
     {
       "term": "home",
       "articles": 61,
-      "sources": 24,
+      "sources": 23,
       "sentiment_direction": "mixed",
-      "surge": 1.49,
-      "sentiment_mean": -0.006,
-      "headline": "Home Bancorp chief risk officer buys $315,013 in company stock",
+      "surge": 1.47,
+      "sentiment_mean": -0.008,
+      "headline": "Home Depot chair Edward Decker sells $6.55M in shares",
       "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/insider-trading-news/home-bancorp-chief-risk-officer-buys-315013-in-company-stock-93CH-5043042"
-    },
-    {
-      "term": "security",
-      "articles": 52,
-      "sources": 24,
-      "sentiment_direction": "positive",
-      "surge": 1.03,
-      "sentiment_mean": 0.161,
-      "headline": "China\u2019s top intelligence agency touts \u2018common international security\u2019 after summit",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/china/politics/article/3375207/chinas-top-intelligence-agency-touts-common-international-security-after-summit"
+      "headline_url": "https://www.investing.com/news/insider-trading-news/home-depot-chair-edward-decker-sells-655m-in-shares-93CH-5043120"
     }
   ],
   "hours_since_fetch": 0.0
