@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-20T23:24:36.111280+00:00",
+  "generated_at": "2026-11-21T00:24:17.557574+00:00",
   "window_hours": 24,
-  "articles_in_window": 2066,
-  "collection_days": 67,
+  "articles_in_window": 2050,
+  "collection_days": 68,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
   "surge_available": true,
@@ -10,91 +10,91 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 228,
+      "articles": 224,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 1.19,
-      "sentiment_mean": 0.02,
-      "headline": "Trump signs Common Cents Act",
+      "surge": 1.16,
+      "sentiment_mean": -0.005,
+      "headline": "Trump says recent tech outages are \"all separate events\"",
       "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/news/trump-signs-common-cents-act-into-law/"
+      "headline_url": "https://www.cbsnews.com/video/trump-says-recent-tech-outages-are-all-separate-events/"
     },
     {
       "term": "president",
-      "articles": 137,
+      "articles": 138,
       "sources": 32,
       "sentiment_direction": "mixed",
       "surge": 1.31,
-      "sentiment_mean": 0.034,
-      "headline": "Brazil's imprisoned ex-president Jair Bolsonaro taken to hospital with abdominal pain",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/rest-of-world/brazils-jailed-ex-president-jair-bolsonaro-taken-to-hospital-son-alleges-psychological-torture/articleshow/136039037.cms"
-    },
-    {
-      "term": "data",
-      "articles": 71,
-      "sources": 30,
-      "sentiment_direction": "mixed",
-      "surge": 1.66,
-      "sentiment_mean": 0.003,
-      "headline": "Trump Vows To Stop US Companies From Building Data Centers Abroad",
-      "headline_source": "Slashdot",
-      "headline_url": "https://news.slashdot.org/story/26/11/20/2223202/trump-vows-to-stop-us-companies-from-building-data-centers-abroad?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+      "sentiment_mean": 0.019,
+      "headline": "US Vice President Vance declines to say he would have ordered Iran strikes - Reuters",
+      "headline_source": "Reuters",
+      "headline_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQUp6a3JFdW5UTE50bkNkVmExSGVkZlNWMHR0YnZMaWxGQzlZaF9CNFdQYXZCVWFwYXA2QmI1eG1EUGFLY0FydzFDZ0FBNGlkVjZKMURfb0hNOWZ4a3ZEU3V1TXVwaEMzU0dxZVVxTWhxeHFOd1RwQmFmV19MYlc3LW9MVm5TOG5uTjFhVU5RSXZaZ2ZwRmZ5Y1BmdlBUMllHMlNSeEplQ2IyXzU5NE51NnRlUm1HUUU?oc=5"
     },
     {
       "term": "tech",
-      "articles": 100,
+      "articles": 101,
+      "sources": 29,
+      "sentiment_direction": "mixed",
+      "surge": 1.63,
+      "sentiment_mean": -0.076,
+      "headline": "Trump says recent tech outages are \"all separate events\"",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/trump-says-recent-tech-outages-are-all-separate-events/"
+    },
+    {
+      "term": "data",
+      "articles": 70,
       "sources": 29,
       "sentiment_direction": "mixed",
       "surge": 1.62,
-      "sentiment_mean": -0.049,
-      "headline": "S&P, Dow Slide Into Correction as Investors Dump Tech",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/videos/2026-11-20/s-p-dow-slide-into-correction-as-investors-dump-tech-video"
-    },
-    {
-      "term": "anthropic",
-      "articles": 133,
-      "sources": 27,
-      "sentiment_direction": "mixed",
-      "surge": 2.76,
-      "sentiment_mean": 0.082,
-      "headline": "The hidden catch in Anthropic\u2019s IPO: Billions of locked-up shares are waiting in the wings",
-      "headline_source": "MarketWatch Top Stories",
-      "headline_url": "https://www.marketwatch.com/story/the-hidden-catch-in-anthropics-ipo-billions-of-locked-up-shares-are-waiting-in-the-wings-279d33ce?mod=mw_rss_topstories"
+      "sentiment_mean": -0.001,
+      "headline": "Trump vows to stop data centres being built overseas",
+      "headline_source": "Sydney Morning Herald",
+      "headline_url": "https://www.smh.com.au/world/trump-vows-to-stop-data-centres-being-built-overseas-20261121-p61g4x.html?ref=rss&utm_medium=rss&utm_source=rss_world"
     },
     {
       "term": "cyber",
-      "articles": 49,
+      "articles": 46,
       "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 5.66,
-      "sentiment_mean": 0.001,
-      "headline": "Trump replaces US cyber chief after outages hit flights, banks and NSA",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/us/politics/article/3375298/trump-replaces-us-cyber-chief-after-outages-hit-flights-banks-and-nsa"
+      "surge": 4.86,
+      "sentiment_mean": -0.038,
+      "headline": "Republican senator blocks Trump cyber nominee over January 6 denial",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/us-news/2026/nov/20/tillis-republican-senator-trump-cyber-nominee"
+    },
+    {
+      "term": "anthropic",
+      "articles": 124,
+      "sources": 26,
+      "sentiment_direction": "mixed",
+      "surge": 2.51,
+      "sentiment_mean": 0.084,
+      "headline": "In a year of AI solving maths problems, Anthropic may have just solved the biggest",
+      "headline_source": "BBC World",
+      "headline_url": "https://www.bbc.co.uk/news/articles/c6pqr2g7w059o?at_medium=RSS&at_campaign=rss"
     },
     {
       "term": "deal",
-      "articles": 75,
-      "sources": 26,
+      "articles": 73,
+      "sources": 25,
       "sentiment_direction": "positive",
-      "surge": 2.25,
-      "sentiment_mean": 0.188,
+      "surge": 2.18,
+      "sentiment_mean": 0.203,
       "headline": "Activists, leaders criticize COP31 climate talks as fossil fuels go unmentioned in draft deal",
       "headline_source": "PBS NewsHour",
       "headline_url": "https://www.pbs.org/newshour/world/activists-leaders-criticize-cop31-climate-talks-as-fossil-fuels-go-unmentioned-in-draft-deal"
     },
     {
       "term": "outages",
-      "articles": 39,
-      "sources": 26,
+      "articles": 40,
+      "sources": 25,
       "sentiment_direction": "mixed",
-      "surge": 1.69,
-      "sentiment_mean": -0.087,
-      "headline": "Trump replaces US cyber chief after outages hit flights, banks and NSA",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/us/politics/article/3375298/trump-replaces-us-cyber-chief-after-outages-hit-flights-banks-and-nsa"
+      "surge": 1.71,
+      "sentiment_mean": -0.117,
+      "headline": "Trump says recent tech outages are \"all separate events\"",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/trump-says-recent-tech-outages-are-all-separate-events/"
     }
   ],
   "hours_since_fetch": 0.0
