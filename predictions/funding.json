@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T19:00:06.098689+00:00",
+  "generated_at": "2026-11-21T20:00:05.595303+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -16,7 +16,7 @@
       "scans": 24,
       "net_apr": 1648.83,
       "net_at_hold": 1.50578,
-      "cost_bps": 43.29
+      "cost_bps": 42.16
     },
     {
       "base": "CHIP",
@@ -27,8 +27,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 867.24,
-      "net_at_hold": 0.792,
+      "net_apr": 864.17,
+      "net_at_hold": 0.7892,
       "cost_bps": 26.0
     },
     {
@@ -45,7 +45,7 @@
       "cost_bps": 26.0
     },
     {
-      "base": "TRUMP",
+      "base": "ROBO",
       "type": "perp-perp",
       "long_venue": "Lighter",
       "short_venue": "Coinbase",
@@ -53,12 +53,12 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 823.44,
-      "net_at_hold": 0.752,
+      "net_apr": 826.51,
+      "net_at_hold": 0.7548,
       "cost_bps": 26.0
     },
     {
-      "base": "PYTH",
+      "base": "TRUMP",
       "type": "perp-perp",
       "long_venue": "Lighter",
       "short_venue": "Coinbase",
@@ -68,19 +68,6 @@
       "scans": 24,
       "net_apr": 822.13,
       "net_at_hold": 0.7508,
-      "cost_bps": 26.0
-    },
-    {
-      "base": "ROBO",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 821.69,
-      "net_at_hold": 0.7504,
       "cost_bps": 26.0
     },
     {
@@ -107,6 +94,19 @@
       "scans": 24,
       "net_apr": 807.67,
       "net_at_hold": 0.7376,
+      "cost_bps": 26.0
+    },
+    {
+      "base": "EIGEN",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 806.8,
+      "net_at_hold": 0.7368,
       "cost_bps": 26.0
     }
   ]
