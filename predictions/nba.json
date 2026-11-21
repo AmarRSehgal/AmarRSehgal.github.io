@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T17:00:12Z",
+  "generated_at": "2026-11-21T19:45:06Z",
   "date": "2026-11-21",
   "games": [
     {
@@ -40,7 +40,18 @@
       "confidence": 0.598,
       "pred_total": 214.4,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "NY",
+        "stake": 100.0,
+        "selection": "New York Knicks",
+        "price": 1.67,
+        "book": "BetMGM",
+        "quoted_at": "2026-11-21T19:30:20Z",
+        "model_prob": 0.598,
+        "implied_prob": 0.5988,
+        "edge": -0.0008,
+        "ev_per_dollar": -0.0013
       }
     },
     {
@@ -65,12 +76,23 @@
       "home_team_full": "Minnesota Timberwolves",
       "tipoff": "2026-11-22T01:00Z",
       "pick": "MIN",
-      "pred_spread": -6.5,
-      "ml_win_prob": 0.531,
-      "confidence": 0.531,
+      "pred_spread": -5.4,
+      "ml_win_prob": 0.519,
+      "confidence": 0.519,
       "pred_total": 220.1,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "MIN",
+        "stake": 100.0,
+        "selection": "Minnesota Timberwolves",
+        "price": 1.44,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-21T19:30:20Z",
+        "model_prob": 0.519,
+        "implied_prob": 0.6944,
+        "edge": -0.1754,
+        "ev_per_dollar": -0.2526
       }
     },
     {
@@ -85,7 +107,18 @@
       "confidence": 0.835,
       "pred_total": 227.5,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "SA",
+        "stake": 100.0,
+        "selection": "San Antonio Spurs",
+        "price": 1.06,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-21T19:30:20Z",
+        "model_prob": 0.835,
+        "implied_prob": 0.9434,
+        "edge": -0.1084,
+        "ev_per_dollar": -0.1149
       }
     },
     {
@@ -100,7 +133,18 @@
       "confidence": 0.929,
       "pred_total": 225.1,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "BOS",
+        "stake": 100.0,
+        "selection": "Boston Celtics",
+        "price": 1.13,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-21T19:30:20Z",
+        "model_prob": 0.929,
+        "implied_prob": 0.885,
+        "edge": 0.044,
+        "ev_per_dollar": 0.0498
       }
     }
   ],
