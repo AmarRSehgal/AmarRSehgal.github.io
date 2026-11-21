@@ -1,23 +1,10 @@
 {
-  "generated_at": "2026-11-21T12:00:10.275466+00:00",
+  "generated_at": "2026-11-21T13:00:05.539627+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
-    {
-      "base": "CYBER",
-      "type": "perp-perp",
-      "long_venue": "Gate",
-      "short_venue": "Hyperliquid",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 872.69,
-      "net_at_hold": 0.79697,
-      "cost_bps": 26.61
-    },
     {
       "base": "LDO",
       "type": "perp-perp",
@@ -40,9 +27,22 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 837.89,
-      "net_at_hold": 0.7652,
+      "net_apr": 835.7,
+      "net_at_hold": 0.7632,
       "cost_bps": 26.0
+    },
+    {
+      "base": "CYBER",
+      "type": "perp-perp",
+      "long_venue": "Gate",
+      "short_venue": "Hyperliquid",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 825.29,
+      "net_at_hold": 0.75369,
+      "cost_bps": 26.59
     },
     {
       "base": "PYTH",
@@ -71,19 +71,6 @@
       "cost_bps": 26.0
     },
     {
-      "base": "PENGU",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 816.43,
-      "net_at_hold": 0.7456,
-      "cost_bps": 26.0
-    },
-    {
       "base": "ROBO",
       "type": "perp-perp",
       "long_venue": "Lighter",
@@ -92,8 +79,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 815.56,
-      "net_at_hold": 0.7448,
+      "net_apr": 814.68,
+      "net_at_hold": 0.744,
       "cost_bps": 26.0
     },
     {
@@ -107,6 +94,19 @@
       "scans": 24,
       "net_apr": 807.67,
       "net_at_hold": 0.7376,
+      "cost_bps": 26.0
+    },
+    {
+      "base": "EIGEN",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 806.8,
+      "net_at_hold": 0.7368,
       "cost_bps": 26.0
     }
   ]
