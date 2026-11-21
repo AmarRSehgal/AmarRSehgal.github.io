@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-21T22:24:10.344162+00:00",
+  "generated_at": "2026-11-21T23:24:12.634113+00:00",
   "window_hours": 24,
-  "articles_in_window": 1403,
+  "articles_in_window": 1347,
   "collection_days": 68,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,58 +10,47 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 131,
-      "sources": 28,
+      "articles": 123,
+      "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 0.59,
-      "sentiment_mean": -0.103,
-      "headline": "Trump vows to work with Democrats to cap credit card interest rates at 10%",
-      "headline_source": "PBS NewsHour",
-      "headline_url": "https://www.pbs.org/newshour/politics/trump-vows-to-work-with-democrats-to-cap-credit-card-interest-rates-at-10"
+      "surge": 0.55,
+      "sentiment_mean": -0.097,
+      "headline": "Trump says Roger Clemens should be in the Baseball Hall of Fame 'immediately,' won't fully back Barry Bonds",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/outkick-sports/trump-says-roger-clemens-should-baseball-hall-fame-immediately-wont-fully-back-barry-bonds"
     },
     {
       "term": "president",
-      "articles": 91,
-      "sources": 25,
+      "articles": 89,
+      "sources": 26,
       "sentiment_direction": "mixed",
-      "surge": 0.74,
-      "sentiment_mean": -0.063,
+      "surge": 0.72,
+      "sentiment_mean": -0.056,
       "headline": "Lock of former US President George Washington's hair sells for $4,000",
       "headline_source": "BBC World",
       "headline_url": "https://www.bbc.co.uk/news/articles/cwe9k23dpz0do?at_medium=RSS&at_campaign=rss"
     },
     {
-      "term": "national",
-      "articles": 54,
-      "sources": 22,
-      "sentiment_direction": "mixed",
-      "surge": 1.2,
-      "sentiment_mean": -0.144,
-      "headline": "AP source: FBI investigating apparent hack of its key national criminal justice database",
-      "headline_source": "PBS NewsHour",
-      "headline_url": "https://www.pbs.org/newshour/politics/ap-source-fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database"
-    },
-    {
-      "term": "tech",
-      "articles": 50,
-      "sources": 21,
-      "sentiment_direction": "negative",
-      "surge": 0.65,
-      "sentiment_mean": -0.222,
-      "headline": "Tech Outages Are Only the Beginning. A.I. Will Bring More Disruptions.",
-      "headline_source": "NYT Politics",
-      "headline_url": "https://www.nytimes.com/2026/11/21/us/politics/tech-outages-ai-disruptions.html"
-    },
-    {
       "term": "talks",
-      "articles": 44,
-      "sources": 21,
+      "articles": 45,
+      "sources": 22,
       "sentiment_direction": "negative",
-      "surge": 0.91,
-      "sentiment_mean": -0.252,
+      "surge": 0.92,
+      "sentiment_mean": -0.248,
       "headline": "UN talks on AI in warfare end with no commitment to binding rules",
       "headline_source": "CBC World",
       "headline_url": "https://www.cbc.ca/news/world/ai-warfare-regulations-un-talks-9.7431398?cmp=rss"
+    },
+    {
+      "term": "national",
+      "articles": 52,
+      "sources": 21,
+      "sentiment_direction": "negative",
+      "surge": 1.14,
+      "sentiment_mean": -0.153,
+      "headline": "For families of the fallen, Trump's proposed arch casts a shadow over Arlington National Cemetery",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/politics/for-families-of-the-fallen-trumps-proposed-arch-casts-a-shadow-over-arlington-national-cemetery"
     },
     {
       "term": "wanted",
@@ -75,6 +64,28 @@
       "headline_url": "https://abcnews.com/International/mexican-cartel-leader-fbis-10-wanted-fugitive-list/story?id=138346100"
     },
     {
+      "term": "russia",
+      "articles": 48,
+      "sources": 20,
+      "sentiment_direction": "negative",
+      "surge": 0.75,
+      "sentiment_mean": -0.441,
+      "headline": "Russia stocks lower at close of trade; MOEX Russia Index unchanged",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/stock-market-news/russia-stocks-lower-at-close-of-trade-moex-russia-index-unchanged-5043590"
+    },
+    {
+      "term": "tech",
+      "articles": 47,
+      "sources": 20,
+      "sentiment_direction": "negative",
+      "surge": 0.6,
+      "sentiment_mean": -0.279,
+      "headline": "Tech Outages Are Only the Beginning. A.I. Will Bring More Disruptions.",
+      "headline_source": "NYT Politics",
+      "headline_url": "https://www.nytimes.com/2026/11/21/us/politics/tech-outages-ai-disruptions.html"
+    },
+    {
       "term": "isidro",
       "articles": 26,
       "sources": 20,
@@ -84,17 +95,6 @@
       "headline": "Mexico captures top drug lord 'El Chapo Isidro,' latest in string of arrests",
       "headline_source": "CNBC Top News",
       "headline_url": "https://www.cnbc.com/2026/11/21/mexico-drug-lord-el-chapo-isidro.html"
-    },
-    {
-      "term": "russia",
-      "articles": 47,
-      "sources": 19,
-      "sentiment_direction": "negative",
-      "surge": 0.74,
-      "sentiment_mean": -0.435,
-      "headline": "Russia stocks lower at close of trade; MOEX Russia Index unchanged",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/russia-stocks-lower-at-close-of-trade-moex-russia-index-unchanged-5043590"
     }
   ],
   "hours_since_fetch": 0.0
