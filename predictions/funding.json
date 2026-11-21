@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T06:00:10.827136+00:00",
+  "generated_at": "2026-11-21T07:00:10.788841+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -58,6 +58,19 @@
       "cost_bps": 26.0
     },
     {
+      "base": "PENGU",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 814.68,
+      "net_at_hold": 0.744,
+      "cost_bps": 26.0
+    },
+    {
       "base": "ROBO",
       "type": "perp-perp",
       "long_venue": "Lighter",
@@ -68,19 +81,6 @@
       "scans": 24,
       "net_apr": 813.8,
       "net_at_hold": 0.7432,
-      "cost_bps": 26.0
-    },
-    {
-      "base": "PENGU",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 812.93,
-      "net_at_hold": 0.7424,
       "cost_bps": 26.0
     },
     {
