@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-21T05:24:23.586976+00:00",
+  "generated_at": "2026-11-21T06:24:19.727076+00:00",
   "window_hours": 24,
-  "articles_in_window": 2020,
+  "articles_in_window": 1996,
   "collection_days": 68,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,65 +10,76 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 216,
+      "articles": 212,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 1.1,
-      "sentiment_mean": -0.049,
+      "surge": 1.08,
+      "sentiment_mean": -0.053,
       "headline": "Zelensky says Putin is a 'killer' after Trump calls Russian leader a friend",
       "headline_source": "BBC World",
       "headline_url": "https://www.bbc.co.uk/news/articles/cxnv4zvmdy0jo?at_medium=RSS&at_campaign=rss"
     },
     {
       "term": "president",
-      "articles": 133,
+      "articles": 130,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 1.23,
-      "sentiment_mean": 0.002,
+      "surge": 1.19,
+      "sentiment_mean": -0.002,
       "headline": "Brazil ex-president Jair Bolsonaro taken to hospital over abdominal pain",
       "headline_source": "DW News",
       "headline_url": "https://www.dw.com/en/brazil-ex-president-jair-bolsonaro-taken-to-hospital-over-abdominal-pain/a-80007648?maca=en-rss-en-all-1573-rdf"
     },
     {
       "term": "data",
-      "articles": 68,
+      "articles": 65,
       "sources": 30,
       "sentiment_direction": "mixed",
-      "surge": 1.55,
-      "sentiment_mean": -0.052,
-      "headline": "BlackBlaze now explicitly states selling your data for advertisement",
-      "headline_source": "Hacker News",
-      "headline_url": "https://www.backblaze.com/company/policy/privacy"
+      "surge": 1.47,
+      "sentiment_mean": -0.063,
+      "headline": "Australian Energy Officials Warned of Data Center Risk, Age Says",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/articles/2026-11-21/australian-energy-officials-warned-of-data-center-risk-age-says"
     },
     {
       "term": "tech",
-      "articles": 98,
+      "articles": 96,
       "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 1.52,
-      "sentiment_mean": -0.058,
+      "surge": 1.47,
+      "sentiment_mean": -0.049,
       "headline": "Trump ousts cyber director after tech outages spark criticism",
       "headline_source": "Japan Times",
       "headline_url": "https://www.japantimes.co.jp/news/2026/11/21/world/politics/us-cyber-director-ousted/"
     },
     {
       "term": "deal",
-      "articles": 77,
+      "articles": 78,
       "sources": 25,
       "sentiment_direction": "positive",
-      "surge": 2.25,
-      "sentiment_mean": 0.167,
+      "surge": 2.28,
+      "sentiment_mean": 0.175,
       "headline": "Deal on duty-free Swiss exports to China a boon for Hong Kong, top diplomat says",
       "headline_source": "South China Morning Post",
       "headline_url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3375311/deal-duty-free-swiss-exports-china-boon-hong-kong-top-diplomat-says"
     },
     {
+      "term": "court",
+      "articles": 77,
+      "sources": 24,
+      "sentiment_direction": "negative",
+      "surge": 1.6,
+      "sentiment_mean": -0.263,
+      "headline": "Federal Court Halts Pregnant Workers\u2019 Protection Law",
+      "headline_source": "NYT Politics",
+      "headline_url": "https://www.nytimes.com/2026/11/21/us/politics/federal-court-halts-pregnant-workers-protection-law.html"
+    },
+    {
       "term": "security",
-      "articles": 52,
+      "articles": 51,
       "sources": 24,
       "sentiment_direction": "mixed",
-      "surge": 1.02,
+      "surge": 1.0,
       "sentiment_mean": 0.144,
       "headline": "China\u2019s top intelligence agency touts \u2018common international security\u2019 after summit",
       "headline_source": "South China Morning Post",
@@ -76,26 +87,15 @@
     },
     {
       "term": "anthropic",
-      "articles": 104,
+      "articles": 97,
       "sources": 23,
       "sentiment_direction": "mixed",
-      "surge": 1.94,
-      "sentiment_mean": 0.068,
+      "surge": 1.77,
+      "sentiment_mean": 0.054,
       "headline": "Anthropic\u2019s post-debut stumble delivers reality check for AI trade",
       "headline_source": "Japan Times",
       "headline_url": "https://www.japantimes.co.jp/business/2026/11/21/markets/anthropic-ai-stocks/"
-    },
-    {
-      "term": "court",
-      "articles": 79,
-      "sources": 23,
-      "sentiment_direction": "negative",
-      "surge": 1.66,
-      "sentiment_mean": -0.252,
-      "headline": "\u2018Justice at last\u2019: Rohingya refugees welcome UN court action against Myanmar",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/south-asia/justice-at-last-rohingya-refugees-welcome-un-court-action-against-myanmar/articleshow/136043229.cms"
     }
   ],
-  "hours_since_fetch": 0.11
+  "hours_since_fetch": 0.0
 }
