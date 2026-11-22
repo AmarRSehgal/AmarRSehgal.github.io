@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-22T09:24:13.723879+00:00",
+  "generated_at": "2026-11-22T10:24:14.042014+00:00",
   "window_hours": 24,
-  "articles_in_window": 1421,
+  "articles_in_window": 1422,
   "collection_days": 69,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,25 +10,25 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 104,
+      "articles": 100,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 0.45,
-      "sentiment_mean": -0.083,
-      "headline": "\u2018Trump\u2019s exit strategy may depend on quietly lifting Iran blockade\u2019",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/trumps-exit-strategy-may-depend-on-quietly-lifting-iran?traffic_source=rss"
+      "surge": 0.43,
+      "sentiment_mean": -0.097,
+      "headline": "Republicans Debate Why They Lost the Midterms, and if Trump Is to Blame",
+      "headline_source": "NYT Politics",
+      "headline_url": "https://www.nytimes.com/2026/11/22/us/politics/republican-midterm-loss-debate-trump.html"
     },
     {
       "term": "president",
-      "articles": 85,
+      "articles": 84,
       "sources": 25,
       "sentiment_direction": "mixed",
-      "surge": 0.66,
+      "surge": 0.65,
       "sentiment_mean": -0.062,
-      "headline": "Why Somalia\u2019s president turned against his former ally, the UAE",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/news/2026/11/22/why-somalias-president-turned-against-his-former-ally-the-uae?traffic_source=rss"
+      "headline": "Serve Robotics president & COO Touraj Parang sells $66,006 in stock",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/insider-trading-news/serve-robotics-president--coo-touraj-parang-sells-66006-in-stock-93CH-5043830"
     },
     {
       "term": "isidro",
@@ -53,48 +53,48 @@
       "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/first-images-of-mexican-cartel-boss-el-chapo-isidro-after-arrest?traffic_source=rss"
     },
     {
-      "term": "national",
-      "articles": 47,
-      "sources": 21,
-      "sentiment_direction": "mixed",
-      "surge": 0.98,
-      "sentiment_mean": -0.13,
-      "headline": "Europe is entering a \u2018supercycle\u2019 of national elections. Their outcomes could shake the EU\u2019s foundations",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/world/2026/nov/22/europe-elections-supercycle-could-shake-eu-foundations"
-    },
-    {
       "term": "talks",
-      "articles": 45,
+      "articles": 43,
       "sources": 20,
       "sentiment_direction": "mixed",
-      "surge": 0.87,
-      "sentiment_mean": -0.115,
+      "surge": 0.82,
+      "sentiment_mean": -0.108,
       "headline": "New draft deal aims to avert collapse of talks at climate summit",
       "headline_source": "BBC World",
       "headline_url": "https://www.bbc.co.uk/news/articles/cq7827z2841zo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "term": "city",
-      "articles": 51,
-      "sources": 19,
-      "sentiment_direction": "mixed",
-      "surge": 1.11,
-      "sentiment_mean": 0.083,
-      "headline": "Kansas City Current defeat Washington Spirit 2-1 to lift first NWSL title",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/sports/2026/11/22/kansas-city-current-nwsl-2026-final-washington-spirit-womens-soccer?traffic_source=rss"
+      "term": "tech",
+      "articles": 35,
+      "sources": 20,
+      "sentiment_direction": "negative",
+      "surge": 0.44,
+      "sentiment_mean": -0.21,
+      "headline": "Defence, AI, high tech: a delicate balance between armies and industry",
+      "headline_source": "France24",
+      "headline_url": "https://www.france24.com/en/live-news/20261122-defence-ai-high-tech-a-delicate-balance-between-armies-and-industry"
     },
     {
-      "term": "tech",
-      "articles": 32,
+      "term": "city",
+      "articles": 52,
       "sources": 19,
-      "sentiment_direction": "negative",
-      "surge": 0.4,
-      "sentiment_mean": -0.225,
-      "headline": "Tech suppliers raise AI server prices up to 45% months after deals are signed",
-      "headline_source": "Financial Times",
-      "headline_url": "https://www.ft.com/content/dd2a6594-6146-4ff1-ac8e-54749c1fc99f?syn-25a6b1a6=1"
+      "sentiment_direction": "mixed",
+      "surge": 1.14,
+      "sentiment_mean": 0.091,
+      "headline": "Restored wells bring life back to Hebron\u2019s occupied Old City",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/features/2026/11/22/restored-wells-bring-life-back-to-hebrons-occupied-old-city?traffic_source=rss"
+    },
+    {
+      "term": "national",
+      "articles": 47,
+      "sources": 19,
+      "sentiment_direction": "mixed",
+      "surge": 0.97,
+      "sentiment_mean": -0.144,
+      "headline": "Europe is entering a \u2018supercycle\u2019 of national elections. Their outcomes could shake the EU\u2019s foundations",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/world/2026/nov/22/europe-elections-supercycle-could-shake-eu-foundations"
     }
   ],
   "hours_since_fetch": 0.0
