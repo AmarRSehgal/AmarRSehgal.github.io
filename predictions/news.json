@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-22T07:24:11.216410+00:00",
+  "generated_at": "2026-11-22T08:24:17.179895+00:00",
   "window_hours": 24,
-  "articles_in_window": 1385,
+  "articles_in_window": 1408,
   "collection_days": 69,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,22 +10,22 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 103,
+      "articles": 104,
       "sources": 28,
       "sentiment_direction": "mixed",
       "surge": 0.45,
-      "sentiment_mean": -0.081,
-      "headline": "Trump\u2019s calls go unanswered as Kim Jong Un sharpens North Korea\u2019s nuclear teeth",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/us/trump-cant-get-his-calls-returned-kim-jong-un-ignores-us-president-as-north-korea-expands-nuclear-arsenal-capable-of-striking-us-cities/articleshow/136068829.cms"
+      "sentiment_mean": -0.072,
+      "headline": "Trump pitches permanent peace deal with Iran",
+      "headline_source": "Sydney Morning Herald",
+      "headline_url": "https://www.smh.com.au/world/trump-pitches-permanent-peace-deal-with-iran-20261122-p61gaz.html?ref=rss&utm_medium=rss&utm_source=rss_world"
     },
     {
       "term": "president",
-      "articles": 81,
+      "articles": 84,
       "sources": 25,
       "sentiment_direction": "mixed",
-      "surge": 0.63,
-      "sentiment_mean": -0.074,
+      "surge": 0.65,
+      "sentiment_mean": -0.058,
       "headline": "Why Somalia\u2019s president turned against his former ally, the UAE",
       "headline_source": "Al Jazeera",
       "headline_url": "https://www.aljazeera.com/news/2026/11/22/why-somalias-president-turned-against-his-former-ally-the-uae?traffic_source=rss"
@@ -42,17 +42,6 @@
       "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/first-images-of-mexican-cartel-boss-el-chapo-isidro-after-arrest?traffic_source=rss"
     },
     {
-      "term": "national",
-      "articles": 49,
-      "sources": 22,
-      "sentiment_direction": "negative",
-      "surge": 1.02,
-      "sentiment_mean": -0.155,
-      "headline": "Europe is entering a \u2018supercycle\u2019 of national elections. Their outcomes could shake the EU\u2019s foundations",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/world/2026/nov/22/europe-elections-supercycle-could-shake-eu-foundations"
-    },
-    {
       "term": "chapo",
       "articles": 30,
       "sources": 22,
@@ -64,12 +53,23 @@
       "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/first-images-of-mexican-cartel-boss-el-chapo-isidro-after-arrest?traffic_source=rss"
     },
     {
-      "term": "talks",
-      "articles": 47,
+      "term": "national",
+      "articles": 46,
       "sources": 21,
-      "sentiment_direction": "mixed",
-      "surge": 0.92,
-      "sentiment_mean": -0.136,
+      "sentiment_direction": "negative",
+      "surge": 0.95,
+      "sentiment_mean": -0.154,
+      "headline": "Europe is entering a \u2018supercycle\u2019 of national elections. Their outcomes could shake the EU\u2019s foundations",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/world/2026/nov/22/europe-elections-supercycle-could-shake-eu-foundations"
+    },
+    {
+      "term": "talks",
+      "articles": 44,
+      "sources": 20,
+      "sentiment_direction": "negative",
+      "surge": 0.85,
+      "sentiment_mean": -0.158,
       "headline": "New draft deal aims to avert collapse of talks at climate summit",
       "headline_source": "BBC World",
       "headline_url": "https://www.bbc.co.uk/news/articles/cq7827z2841zo?at_medium=RSS&at_campaign=rss"
@@ -87,11 +87,11 @@
     },
     {
       "term": "city",
-      "articles": 49,
+      "articles": 50,
       "sources": 19,
       "sentiment_direction": "mixed",
-      "surge": 1.06,
-      "sentiment_mean": 0.051,
+      "surge": 1.09,
+      "sentiment_mean": 0.069,
       "headline": "Kansas City Current defeat Washington Spirit 2-1 to lift first NWSL title",
       "headline_source": "Al Jazeera",
       "headline_url": "https://www.aljazeera.com/sports/2026/11/22/kansas-city-current-nwsl-2026-final-washington-spirit-womens-soccer?traffic_source=rss"
