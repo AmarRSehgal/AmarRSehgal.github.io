@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T17:00:09Z",
+  "generated_at": "2026-11-22T19:45:10Z",
   "date": "2026-11-22",
   "games": [
     {
@@ -9,12 +9,23 @@
       "home_team_full": "Atlanta Hawks",
       "tipoff": "2026-11-22T20:30Z",
       "pick": "DET",
-      "pred_spread": 0.4,
-      "ml_win_prob": 0.415,
-      "confidence": 0.585,
+      "pred_spread": 0.9,
+      "ml_win_prob": 0.47,
+      "confidence": 0.53,
       "pred_total": 224.6,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "DET",
+        "stake": 100.0,
+        "selection": "Detroit Pistons",
+        "price": 1.81,
+        "book": "DraftKings",
+        "quoted_at": "2026-11-22T19:30:07Z",
+        "model_prob": 0.53,
+        "implied_prob": 0.5525,
+        "edge": -0.0225,
+        "ev_per_dollar": -0.0407
       }
     },
     {
@@ -29,7 +40,18 @@
       "confidence": 0.56,
       "pred_total": 239.9,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "OKC",
+        "stake": 100.0,
+        "selection": "Oklahoma City Thunder",
+        "price": 2.46,
+        "book": "DraftKings",
+        "quoted_at": "2026-11-22T19:30:07Z",
+        "model_prob": 0.56,
+        "implied_prob": 0.4065,
+        "edge": 0.1535,
+        "ev_per_dollar": 0.3776
       }
     },
     {
@@ -44,7 +66,18 @@
       "confidence": 0.753,
       "pred_total": 225.0,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "ORL",
+        "stake": 100.0,
+        "selection": "Orlando Magic",
+        "price": 1.51,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-22T19:30:07Z",
+        "model_prob": 0.753,
+        "implied_prob": 0.6623,
+        "edge": 0.0907,
+        "ev_per_dollar": 0.137
       }
     },
     {
@@ -59,7 +92,18 @@
       "confidence": 0.759,
       "pred_total": 235.2,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "DEN",
+        "stake": 100.0,
+        "selection": "Denver Nuggets",
+        "price": 1.23,
+        "book": "DraftKings",
+        "quoted_at": "2026-11-22T19:30:07Z",
+        "model_prob": 0.759,
+        "implied_prob": 0.813,
+        "edge": -0.054,
+        "ev_per_dollar": -0.0664
       }
     },
     {
@@ -69,12 +113,23 @@
       "home_team_full": "Utah Jazz",
       "tipoff": "2026-11-23T00:00Z",
       "pick": "DAL",
-      "pred_spread": 7.6,
-      "ml_win_prob": 0.274,
-      "confidence": 0.726,
+      "pred_spread": 6.9,
+      "ml_win_prob": 0.262,
+      "confidence": 0.738,
       "pred_total": 227.3,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "DAL",
+        "stake": 100.0,
+        "selection": "Dallas Mavericks",
+        "price": 1.83,
+        "book": "DraftKings",
+        "quoted_at": "2026-11-22T19:30:07Z",
+        "model_prob": 0.738,
+        "implied_prob": 0.5464,
+        "edge": 0.1916,
+        "ev_per_dollar": 0.3505
       }
     },
     {
@@ -84,12 +139,23 @@
       "home_team_full": "New York Knicks",
       "tipoff": "2026-11-23T01:00Z",
       "pick": "NY",
-      "pred_spread": -7.4,
-      "ml_win_prob": 0.824,
-      "confidence": 0.824,
+      "pred_spread": -7.1,
+      "ml_win_prob": 0.75,
+      "confidence": 0.75,
       "pred_total": 216.5,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "NY",
+        "stake": 100.0,
+        "selection": "New York Knicks",
+        "price": 1.35,
+        "book": "BetMGM",
+        "quoted_at": "2026-11-22T19:30:07Z",
+        "model_prob": 0.75,
+        "implied_prob": 0.7407,
+        "edge": 0.0093,
+        "ev_per_dollar": 0.0125
       }
     },
     {
@@ -104,7 +170,18 @@
       "confidence": 0.66,
       "pred_total": 215.7,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "BOS",
+        "stake": 100.0,
+        "selection": "Boston Celtics",
+        "price": 1.29,
+        "book": "BetMGM",
+        "quoted_at": "2026-11-22T19:30:07Z",
+        "model_prob": 0.66,
+        "implied_prob": 0.7752,
+        "edge": -0.1152,
+        "ev_per_dollar": -0.1486
       }
     }
   ],
