@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-22T16:24:16.065209+00:00",
+  "generated_at": "2026-11-22T17:24:15.380401+00:00",
   "window_hours": 24,
-  "articles_in_window": 1366,
+  "articles_in_window": 1375,
   "collection_days": 69,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,14 +10,14 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 96,
-      "sources": 27,
+      "articles": 95,
+      "sources": 26,
       "sentiment_direction": "mixed",
       "surge": 0.41,
-      "sentiment_mean": -0.105,
-      "headline": "Jeffries talks about where Democrats may be able to work with Trump",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/news/hakeem-jeffries-trump-democrats-healthcare/"
+      "sentiment_mean": -0.112,
+      "headline": "Mark Carney brings Trump impersonator onstage to joke about U.S.-Canada ties",
+      "headline_source": "Washington Post",
+      "headline_url": "https://www.washingtonpost.com/world/2026/11/22/mark-carney-brings-trump-impersonator-onstage-joke-about-us-canada-ties/"
     },
     {
       "term": "president",
@@ -25,76 +25,76 @@
       "sources": 26,
       "sentiment_direction": "mixed",
       "surge": 0.54,
-      "sentiment_mean": 0.005,
-      "headline": "Marriott president, Greater China, Mao Yibing sells $2.57M shares",
+      "sentiment_mean": 0.014,
+      "headline": "Air Products group president sells $142,584 in shares",
       "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/insider-trading-news/marriott-president-greater-china-mao-yibing-sells-257m-shares-93CH-5044004"
+      "headline_url": "https://www.investing.com/news/insider-trading-news/air-products-group-president-sells-142584-in-shares-93CH-5044071"
     },
     {
       "term": "climate",
-      "articles": 43,
-      "sources": 24,
+      "articles": 46,
+      "sources": 26,
       "sentiment_direction": "negative",
-      "surge": 2.4,
-      "sentiment_mean": -0.444,
-      "headline": "UN climate conference ends without deal as countries clash over fossil fuels, finance",
-      "headline_source": "ABC News",
-      "headline_url": "https://abcnews.com/Technology/climate-conference-ends-signature-agreement-countries-clash-fossil/story?id=138359179"
+      "surge": 2.52,
+      "sentiment_mean": -0.419,
+      "headline": "No to a 'COP that greenwashes fossil fuels': climate talks collapse - Reuters",
+      "headline_source": "Reuters",
+      "headline_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE83eTl2ZlN6aXJPY2U0ZHd6R1JxdEhsN2JBTmJlcUFaVDJCN2F3SmRTTzBkSlk0c3FVVjhIYVdLN1VTWWpVbkFFNU9lQkR1YUpJbXkxVVBhaU9QaXZORzZQR3ZVc2ZzekVaU1J0U3lzdExfOG8xblRxdGEtbVh5QQ?oc=5"
     },
     {
       "term": "talks",
-      "articles": 55,
-      "sources": 23,
+      "articles": 59,
+      "sources": 24,
       "sentiment_direction": "negative",
-      "surge": 1.01,
-      "sentiment_mean": -0.173,
-      "headline": "Jeffries talks about where Democrats may be able to work with Trump",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/news/hakeem-jeffries-trump-democrats-healthcare/"
+      "surge": 1.07,
+      "sentiment_mean": -0.172,
+      "headline": "No to a 'COP that greenwashes fossil fuels': climate talks collapse - Reuters",
+      "headline_source": "Reuters",
+      "headline_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE83eTl2ZlN6aXJPY2U0ZHd6R1JxdEhsN2JBTmJlcUFaVDJCN2F3SmRTTzBkSlk0c3FVVjhIYVdLN1VTWWpVbkFFNU9lQkR1YUpJbXkxVVBhaU9QaXZORzZQR3ZVc2ZzekVaU1J0U3lzdExfOG8xblRxdGEtbVh5QQ?oc=5"
+    },
+    {
+      "term": "fossil",
+      "articles": 31,
+      "sources": 21,
+      "sentiment_direction": "negative",
+      "surge": 4.27,
+      "sentiment_mean": -0.408,
+      "headline": "No to a 'COP that greenwashes fossil fuels': climate talks collapse - Reuters",
+      "headline_source": "Reuters",
+      "headline_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE83eTl2ZlN6aXJPY2U0ZHd6R1JxdEhsN2JBTmJlcUFaVDJCN2F3SmRTTzBkSlk0c3FVVjhIYVdLN1VTWWpVbkFFNU9lQkR1YUpJbXkxVVBhaU9QaXZORzZQR3ZVc2ZzekVaU1J0U3lzdExfOG8xblRxdGEtbVh5QQ?oc=5"
     },
     {
       "term": "deal",
       "articles": 47,
       "sources": 20,
       "sentiment_direction": "negative",
-      "surge": 0.97,
-      "sentiment_mean": -0.178,
-      "headline": "UN climate conference ends without deal as countries clash over fossil fuels, finance",
-      "headline_source": "ABC News",
-      "headline_url": "https://abcnews.com/Technology/climate-conference-ends-signature-agreement-countries-clash-fossil/story?id=138359179"
+      "surge": 0.96,
+      "sentiment_mean": -0.209,
+      "headline": "COP31 climate talks collapse after member states reject deal for not mentioning fossil fuels",
+      "headline_source": "CBC World",
+      "headline_url": "https://www.cbc.ca/news/world/cop31-talks-collapse-fossil-fuel-9.7431847?cmp=rss"
+    },
+    {
+      "term": "fuels",
+      "articles": 30,
+      "sources": 20,
+      "sentiment_direction": "negative",
+      "surge": 3.32,
+      "sentiment_mean": -0.46,
+      "headline": "No to a 'COP that greenwashes fossil fuels': climate talks collapse - Reuters",
+      "headline_source": "Reuters",
+      "headline_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE83eTl2ZlN6aXJPY2U0ZHd6R1JxdEhsN2JBTmJlcUFaVDJCN2F3SmRTTzBkSlk0c3FVVjhIYVdLN1VTWWpVbkFFNU9lQkR1YUpJbXkxVVBhaU9QaXZORzZQR3ZVc2ZzekVaU1J0U3lzdExfOG8xblRxdGEtbVh5QQ?oc=5"
     },
     {
       "term": "russian",
       "articles": 40,
       "sources": 19,
       "sentiment_direction": "negative",
-      "surge": 0.72,
-      "sentiment_mean": -0.589,
-      "headline": "Ukrainian city moves to remote learning as Russian strikes disrupt utilities",
-      "headline_source": "Washington Post",
-      "headline_url": "https://www.washingtonpost.com/world/2026/11/22/ukrainian-city-moves-remote-learning-russian-strikes-disrupt-utilities/"
-    },
-    {
-      "term": "fossil",
-      "articles": 28,
-      "sources": 18,
-      "sentiment_direction": "negative",
-      "surge": 3.95,
-      "sentiment_mean": -0.397,
-      "headline": "UN climate conference ends without deal as countries clash over fossil fuels, finance",
-      "headline_source": "ABC News",
-      "headline_url": "https://abcnews.com/Technology/climate-conference-ends-signature-agreement-countries-clash-fossil/story?id=138359179"
-    },
-    {
-      "term": "national",
-      "articles": 40,
-      "sources": 17,
-      "sentiment_direction": "mixed",
-      "surge": 0.79,
-      "sentiment_mean": -0.073,
-      "headline": "Europe is entering a \u2018supercycle\u2019 of national elections. Their outcomes could shake the EU\u2019s foundations",
+      "surge": 0.71,
+      "sentiment_mean": -0.586,
+      "headline": "Blast on Russian ship in Benghazi a suspected drone attack, say Libyan authorities",
       "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/world/2026/nov/22/europe-elections-supercycle-could-shake-eu-foundations"
+      "headline_url": "https://www.theguardian.com/world/2026/nov/22/blast-russian-ship-suspected-drone-attack-benghazi-libya"
     }
   ],
   "hours_since_fetch": 0.0
