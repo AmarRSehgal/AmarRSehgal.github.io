@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-22T00:24:07.312004+00:00",
+  "generated_at": "2026-11-22T01:24:10.166462+00:00",
   "window_hours": 24,
-  "articles_in_window": 1323,
+  "articles_in_window": 1309,
   "collection_days": 69,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,47 +10,47 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 112,
+      "articles": 113,
       "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 0.49,
-      "sentiment_mean": -0.085,
-      "headline": "Judge Blocks Trump Administration\u2019s Effort to Transform Homelessness Policy",
-      "headline_source": "NYT Politics",
-      "headline_url": "https://www.nytimes.com/2026/11/21/us/politics/judge-trump-homeless-aid-addiction-treatment.html"
+      "surge": 0.5,
+      "sentiment_mean": -0.115,
+      "headline": "FBI's national crime database targeted in hack, Trump says",
+      "headline_source": "ABC News",
+      "headline_url": "https://abcnews.com/US/fbis-national-crime-database-targeted-hack-trump/story?id=138347810"
     },
     {
       "term": "president",
-      "articles": 83,
-      "sources": 26,
+      "articles": 80,
+      "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 0.66,
-      "sentiment_mean": -0.066,
-      "headline": "Ge senior vice president Riccardo Procacci sells $657,151 in stock",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/insider-trading-news/ge-senior-vice-president-riccardo-procacci-sells-657151-in-stock-93CH-5043644"
+      "surge": 0.63,
+      "sentiment_mean": -0.098,
+      "headline": "Abdul El-Sayed catches president\u2019s attention with pitch for \u2018Trumpcare\u2019",
+      "headline_source": "NBC News",
+      "headline_url": "https://www.nbcnews.com/politics/donald-trump/abdul-el-sayed-catches-trumps-attention-pitch-trumpcare-rcna610626"
+    },
+    {
+      "term": "national",
+      "articles": 51,
+      "sources": 22,
+      "sentiment_direction": "mixed",
+      "surge": 1.1,
+      "sentiment_mean": -0.126,
+      "headline": "FBI's national crime database targeted in hack, Trump says",
+      "headline_source": "ABC News",
+      "headline_url": "https://abcnews.com/US/fbis-national-crime-database-targeted-hack-trump/story?id=138347810"
     },
     {
       "term": "talks",
       "articles": 44,
-      "sources": 22,
+      "sources": 21,
       "sentiment_direction": "negative",
       "surge": 0.89,
-      "sentiment_mean": -0.235,
+      "sentiment_mean": -0.211,
       "headline": "COP31 climate talks close to final deal, says summit president",
       "headline_source": "Investing.com News",
       "headline_url": "https://www.investing.com/news/commodities-news/cop31-climate-talks-close-to-final-deal-says-summit-president-5043619"
-    },
-    {
-      "term": "national",
-      "articles": 52,
-      "sources": 21,
-      "sentiment_direction": "negative",
-      "surge": 1.14,
-      "sentiment_mean": -0.159,
-      "headline": "For families of the fallen, Trump's proposed arch casts a shadow over Arlington National Cemetery",
-      "headline_source": "PBS NewsHour",
-      "headline_url": "https://www.pbs.org/newshour/politics/for-families-of-the-fallen-trumps-proposed-arch-casts-a-shadow-over-arlington-national-cemetery"
     },
     {
       "term": "wanted",
@@ -75,6 +75,17 @@
       "headline_url": "https://www.cnbc.com/2026/11/21/mexico-drug-lord-el-chapo-isidro.html"
     },
     {
+      "term": "tech",
+      "articles": 41,
+      "sources": 20,
+      "sentiment_direction": "negative",
+      "surge": 0.52,
+      "sentiment_mean": -0.258,
+      "headline": "China\u2019s AI stocks lose $1.7 trillion as tech selloff deepens",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/stock-market-news/chinas-ai-stocks-lose-17-trillion-as-tech-selloff-deepens-5043672"
+    },
+    {
       "term": "chapo",
       "articles": 25,
       "sources": 20,
@@ -84,17 +95,6 @@
       "headline": "Mexico captures top drug lord 'El Chapo Isidro,' latest in string of arrests",
       "headline_source": "CNBC Top News",
       "headline_url": "https://www.cnbc.com/2026/11/21/mexico-drug-lord-el-chapo-isidro.html"
-    },
-    {
-      "term": "russia",
-      "articles": 46,
-      "sources": 19,
-      "sentiment_direction": "negative",
-      "surge": 0.72,
-      "sentiment_mean": -0.45,
-      "headline": "Russia escalates attacks on Ukraine as concerns grow in Europe",
-      "headline_source": "NBC News",
-      "headline_url": "https://www.nbcnews.com/nightly-news/video/russia-escalates-attacks-on-ukraine-as-concerns-grow-in-europe-273965125962"
     }
   ],
   "hours_since_fetch": 0.0
