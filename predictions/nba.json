@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T17:00:07Z",
+  "generated_at": "2026-11-23T19:45:10Z",
   "date": "2026-11-23",
   "games": [
     {
@@ -14,7 +14,18 @@
       "confidence": 0.581,
       "pred_total": 218.2,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "MEM",
+        "stake": 100.0,
+        "selection": "Memphis Grizzlies",
+        "price": 1.69,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-23T19:30:15Z",
+        "model_prob": 0.581,
+        "implied_prob": 0.5917,
+        "edge": -0.0107,
+        "ev_per_dollar": -0.0181
       }
     },
     {
@@ -29,7 +40,18 @@
       "confidence": 0.609,
       "pred_total": 224.5,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "PHI",
+        "stake": 100.0,
+        "selection": "Philadelphia 76ers",
+        "price": 1.75,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-23T19:30:15Z",
+        "model_prob": 0.609,
+        "implied_prob": 0.5714,
+        "edge": 0.0376,
+        "ev_per_dollar": 0.0657
       }
     },
     {
@@ -39,12 +61,23 @@
       "home_team_full": "Indiana Pacers",
       "tipoff": "2026-11-24T00:30Z",
       "pick": "OKC",
-      "pred_spread": 7.9,
-      "ml_win_prob": 0.237,
-      "confidence": 0.763,
+      "pred_spread": 5.5,
+      "ml_win_prob": 0.299,
+      "confidence": 0.701,
       "pred_total": 226.7,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "OKC",
+        "stake": 100.0,
+        "selection": "Oklahoma City Thunder",
+        "price": 1.45,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-23T19:30:15Z",
+        "model_prob": 0.701,
+        "implied_prob": 0.6897,
+        "edge": 0.0113,
+        "ev_per_dollar": 0.0165
       }
     },
     {
@@ -59,7 +92,18 @@
       "confidence": 0.743,
       "pred_total": 222.8,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "TOR",
+        "stake": 100.0,
+        "selection": "Toronto Raptors",
+        "price": 1.21,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-23T19:30:15Z",
+        "model_prob": 0.743,
+        "implied_prob": 0.8264,
+        "edge": -0.0834,
+        "ev_per_dollar": -0.101
       }
     },
     {
@@ -74,7 +118,18 @@
       "confidence": 0.78,
       "pred_total": 223.0,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "MIN",
+        "stake": 100.0,
+        "selection": "Minnesota Timberwolves",
+        "price": 1.2,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-23T19:30:15Z",
+        "model_prob": 0.78,
+        "implied_prob": 0.8333,
+        "edge": -0.0533,
+        "ev_per_dollar": -0.064
       }
     },
     {
@@ -89,7 +144,18 @@
       "confidence": 0.782,
       "pred_total": 234.1,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "CLE",
+        "stake": 100.0,
+        "selection": "Cleveland Cavaliers",
+        "price": 1.31,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-23T19:30:15Z",
+        "model_prob": 0.782,
+        "implied_prob": 0.7634,
+        "edge": 0.0186,
+        "ev_per_dollar": 0.0244
       }
     },
     {
@@ -104,7 +170,18 @@
       "confidence": 0.714,
       "pred_total": 229.8,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "PHX",
+        "stake": 100.0,
+        "selection": "Phoenix Suns",
+        "price": 1.67,
+        "book": "BetMGM",
+        "quoted_at": "2026-11-23T19:30:15Z",
+        "model_prob": 0.714,
+        "implied_prob": 0.5988,
+        "edge": 0.1152,
+        "ev_per_dollar": 0.1924
       }
     },
     {
@@ -139,13 +216,13 @@
         "team": "LAL",
         "stake": 100.0,
         "selection": "Los Angeles Lakers",
-        "price": 1.23,
-        "book": "DraftKings",
-        "quoted_at": "2026-11-18T19:30:08Z",
+        "price": 1.13,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-23T19:30:15Z",
         "model_prob": 0.929,
-        "implied_prob": 0.813,
-        "edge": 0.116,
-        "ev_per_dollar": 0.1427
+        "implied_prob": 0.885,
+        "edge": 0.044,
+        "ev_per_dollar": 0.0498
       }
     },
     {
@@ -160,7 +237,18 @@
       "confidence": 0.932,
       "pred_total": 223.6,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "SA",
+        "stake": 100.0,
+        "selection": "San Antonio Spurs",
+        "price": 1.21,
+        "book": "FanDuel",
+        "quoted_at": "2026-11-23T19:30:15Z",
+        "model_prob": 0.932,
+        "implied_prob": 0.8264,
+        "edge": 0.1056,
+        "ev_per_dollar": 0.1277
       }
     }
   ],
