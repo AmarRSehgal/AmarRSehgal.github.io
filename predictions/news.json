@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-23T08:24:18.242538+00:00",
+  "generated_at": "2026-11-23T09:24:18.214394+00:00",
   "window_hours": 24,
-  "articles_in_window": 1550,
+  "articles_in_window": 1573,
   "collection_days": 70,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,48 +9,48 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
-      "term": "climate",
-      "articles": 56,
-      "sources": 27,
-      "sentiment_direction": "negative",
-      "surge": 2.67,
-      "sentiment_mean": -0.534,
-      "headline": "Fossil fuels fight at COP31 climate talks ends in \u2018unbridgeable\u2019 red lines",
-      "headline_source": "Financial Times",
-      "headline_url": "https://www.ft.com/content/32f7f678-1037-4922-860b-4b7f3c9f6de7?syn-25a6b1a6=1"
-    },
-    {
       "term": "trump",
-      "articles": 103,
-      "sources": 26,
+      "articles": 104,
+      "sources": 27,
       "sentiment_direction": "mixed",
       "surge": 0.44,
-      "sentiment_mean": 0.049,
-      "headline": "Trump to host private dinner for largest owners of his meme coin - Al Jazeera",
-      "headline_source": "Google News Top",
-      "headline_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUXVidE4wWjBSODFQSG5weXZmek5Nb3c2YnNHZEUzb21yMjhNZkhKeFJqeDBHVzNJd2VFTDJnNHJZZndYeFhnRXo1dGYwRHBlZlBCUmg5a1Buc0kzQnVlVEQwVk1rS3hIOHZKZ0dFTG84VXBIV29qQ0hBSFpOWTl5MWRxQ0pKdk9qbnFDbzdLaXkyMV9FTi1SYmJzZnkwcndpZ2dFeGJ3WXA2d9IBrwFBVV95cUxOY0NnVnZEaGVETUk3NEJPT0NSU0w2bUpseXF0ZVpwR1NDYW5BZ2NYN19YLWxPdkt3U190VTBMR3VOSWJNSXFVQkhjRjBpMm1iUEc2ZkxwWWJrb0puMzhxVV9OZlpHZUR0bjlyNGJmRVI3bFI5U2tGTkdpNk9oSnBlSC1sZ19LY2Y4d0h6WDJueTVBVzh5VFZrWHZYcTlzNWlFN0hVZFJldkI4NmVlSjFF?oc=5"
+      "sentiment_mean": 0.059,
+      "headline": "Trump\u2019s US$2.4b defence package for the Philippines: a push for self-reliance?",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/asia/southeast-asia/article/3375471/trumps-us24bn-defence-package-philippines-push-self-reliance"
+    },
+    {
+      "term": "climate",
+      "articles": 57,
+      "sources": 27,
+      "sentiment_direction": "negative",
+      "surge": 2.72,
+      "sentiment_mean": -0.534,
+      "headline": "Five takeaways from the failed climate talks COP31",
+      "headline_source": "BBC World",
+      "headline_url": "https://www.bbc.co.uk/news/articles/cm75237wlp3lo?at_medium=RSS&at_campaign=rss"
     },
     {
       "term": "talks",
-      "articles": 77,
+      "articles": 75,
       "sources": 24,
       "sentiment_direction": "negative",
-      "surge": 1.38,
-      "sentiment_mean": -0.352,
+      "surge": 1.33,
+      "sentiment_mean": -0.38,
       "headline": "MSCI considers alternatives to Indonesia downgrade after Prabowo talks",
       "headline_source": "Investing.com News",
       "headline_url": "https://www.investing.com/news/stock-market-news/msci-considers-alternatives-to-indonesia-downgrade-after-prabowo-talks-5044445"
     },
     {
       "term": "president",
-      "articles": 62,
-      "sources": 24,
+      "articles": 67,
+      "sources": 23,
       "sentiment_direction": "positive",
-      "surge": 0.47,
-      "sentiment_mean": 0.214,
-      "headline": "AMD chair, president & CEO Lisa Su sells $48.1 million common stock",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/insider-trading-news/amd-chair-president--ceo-lisa-su-sells-481-million-common-stock-93CH-5044378"
+      "surge": 0.5,
+      "sentiment_mean": 0.168,
+      "headline": "Microsoft President on recent global outage: It was basically a perfect storm of ...",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-president-brad-smith-on-recent-outage-i-think-we-have-to-be-prepared-for-the-coming-months-because-/articleshow/136095645.cms"
     },
     {
       "term": "fossil",
@@ -75,26 +75,26 @@
       "headline_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSEd1T0pjQjRCQklVS2tPbGF2elpYZFl5d0k3MmhtOFJWejU1LTVoN1lnWlBtcXMzZmFxX0M3azFjQ0Fwd21TUG0tamRTaTM3T1h1Q2NmM0l6SkxwaUtDOE9JQjE5WVR1QWxXNWNlRGtmSmNWc0hMeWpEdEtYbWZUWURZUVpPOVF3Q0wtR2JVaDVES19aRlNUZGs5WGdNbi1zcWswellITkNkcUhXUjZycEUxSERTeTJ2TE5NODBkczA?oc=5"
     },
     {
+      "term": "russian",
+      "articles": 60,
+      "sources": 21,
+      "sentiment_direction": "negative",
+      "surge": 1.03,
+      "sentiment_mean": -0.633,
+      "headline": "NATO Parliamentary Assembly convenes amid Russian airspace violations",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/nato-parliamentary-assembly-convenes-amid-russian-airspace-violations/live-80016415?maca=en-rss-en-all-1573-rdf"
+    },
+    {
       "term": "deal",
       "articles": 56,
       "sources": 21,
       "sentiment_direction": "negative",
-      "surge": 1.1,
-      "sentiment_mean": -0.241,
+      "surge": 1.09,
+      "sentiment_mean": -0.238,
       "headline": "Coca-Cola HBC Rises in JSE Debut Ahead of $2.6 Billion Deal",
       "headline_source": "Bloomberg Markets",
       "headline_url": "https://www.bloomberg.com/news/articles/2026-11-23/coca-cola-hbc-rises-in-jse-debut-ahead-of-2-6-billion-deal"
-    },
-    {
-      "term": "house",
-      "articles": 56,
-      "sources": 21,
-      "sentiment_direction": "positive",
-      "surge": 0.94,
-      "sentiment_mean": 0.188,
-      "headline": "Israeli forces continue house demolitions in southern Lebanon",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/israeli-forces-continue-house-demolitions-in-southern-lebanon?traffic_source=rss"
     }
   ],
   "hours_since_fetch": 0.0
