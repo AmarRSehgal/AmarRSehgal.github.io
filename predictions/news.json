@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-23T12:24:18.605492+00:00",
+  "generated_at": "2026-11-23T13:24:14.494268+00:00",
   "window_hours": 24,
-  "articles_in_window": 1693,
+  "articles_in_window": 1722,
   "collection_days": 70,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,92 +9,92 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
-      "term": "climate",
-      "articles": 61,
-      "sources": 27,
-      "sentiment_direction": "negative",
-      "surge": 2.84,
-      "sentiment_mean": -0.538,
-      "headline": "First Thing: Cop31 talks collapse without deal in blow to planet\u2019s future climate",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/us-news/2026/nov/23/first-thing-cop31-talks-collapse-no-deal-future-global-climate"
-    },
-    {
-      "term": "trump",
-      "articles": 103,
-      "sources": 26,
-      "sentiment_direction": "mixed",
-      "surge": 0.44,
-      "sentiment_mean": 0.093,
-      "headline": "Trump to confront Newsom over plan to spare 548 death row inmates, including notorious child killers",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/politics/president-trump-confront-newsom-plan-spare-548-death-row-inmates-notorious-child-killers"
-    },
-    {
       "term": "president",
-      "articles": 79,
-      "sources": 26,
+      "articles": 80,
+      "sources": 27,
       "sentiment_direction": "mixed",
       "surge": 0.59,
-      "sentiment_mean": 0.039,
+      "sentiment_mean": 0.037,
       "headline": "Indonesia\u2019s Prabowo names 2 vice-president candidates to replace Gibran",
       "headline_source": "South China Morning Post",
       "headline_url": "https://www.scmp.com/news/asia/southeast-asia/article/3375506/indonesias-prabowo-names-2-vp-candidates-replace-gibran"
     },
     {
-      "term": "talks",
-      "articles": 75,
-      "sources": 25,
-      "sentiment_direction": "negative",
-      "surge": 1.31,
-      "sentiment_mean": -0.378,
-      "headline": "First Thing: Cop31 talks collapse without deal in blow to planet\u2019s future climate",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/us-news/2026/nov/23/first-thing-cop31-talks-collapse-no-deal-future-global-climate"
-    },
-    {
       "term": "deal",
-      "articles": 57,
+      "articles": 60,
+      "sources": 27,
+      "sentiment_direction": "mixed",
+      "surge": 1.12,
+      "sentiment_mean": -0.138,
+      "headline": "Two Major Cybersecurity Firms to Combine in $44 Billion Deal",
+      "headline_source": "NYT Business",
+      "headline_url": "https://www.nytimes.com/2026/11/23/business/crowdstrike-zscaler-cybersecurity.html"
+    },
+    {
+      "term": "trump",
+      "articles": 102,
+      "sources": 25,
+      "sentiment_direction": "mixed",
+      "surge": 0.43,
+      "sentiment_mean": 0.076,
+      "headline": "'One of the very worst.' Jan. 6 leader Stewart Rhodes says he is 'absolutely done' with Trump",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/politics/one-of-the-very-worst-jan-6-leader-stewart-rhodes-says-he-is-absolutely-done-with-trump"
+    },
+    {
+      "term": "climate",
+      "articles": 58,
       "sources": 25,
       "sentiment_direction": "negative",
-      "surge": 1.08,
-      "sentiment_mean": -0.242,
-      "headline": "First Thing: Cop31 talks collapse without deal in blow to planet\u2019s future climate",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/us-news/2026/nov/23/first-thing-cop31-talks-collapse-no-deal-future-global-climate"
-    },
-    {
-      "term": "fuels",
-      "articles": 43,
-      "sources": 24,
-      "sentiment_direction": "negative",
-      "surge": 3.94,
-      "sentiment_mean": -0.457,
-      "headline": "\u2018Worst COP ever\u2019: Climate talks collapse after draft deal fails to include fossil fuels",
-      "headline_source": "CNBC World",
-      "headline_url": "https://www.cnbc.com/2026/11/23/cop31-climate-summit-fossil-fuels.html"
-    },
-    {
-      "term": "fossil",
-      "articles": 41,
-      "sources": 24,
-      "sentiment_direction": "negative",
-      "surge": 4.58,
-      "sentiment_mean": -0.502,
-      "headline": "\u2018Worst COP ever\u2019: Climate talks collapse after draft deal fails to include fossil fuels",
-      "headline_source": "CNBC World",
-      "headline_url": "https://www.cnbc.com/2026/11/23/cop31-climate-summit-fossil-fuels.html"
+      "surge": 2.57,
+      "sentiment_mean": -0.468,
+      "headline": "A reset for climate diplomacy?",
+      "headline_source": "DW News",
+      "headline_url": "https://www.dw.com/en/a-reset-for-climate-diplomacy/a-80020494?maca=en-rss-en-all-1573-rdf"
     },
     {
       "term": "russian",
-      "articles": 74,
+      "articles": 77,
+      "sources": 24,
+      "sentiment_direction": "negative",
+      "surge": 1.3,
+      "sentiment_mean": -0.596,
+      "headline": "Ukraine Claims Attack on Russian Ship off Libyan Coast",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-11-23/ukraine-claims-attack-on-russian-ship-off-libyan-coast-video"
+    },
+    {
+      "term": "ukraine",
+      "articles": 60,
       "sources": 23,
       "sentiment_direction": "negative",
-      "surge": 1.26,
-      "sentiment_mean": -0.603,
-      "headline": "Ukraine confirms it used naval drones to strike two Russian ships off Libya",
-      "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/world/2026/nov/23/ukraine-naval-drones-strike-russian-warship-libya"
+      "surge": 1.02,
+      "sentiment_mean": -0.378,
+      "headline": "Ukraine Claims Attack on Russian Ship off Libyan Coast",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-11-23/ukraine-claims-attack-on-russian-ship-off-libyan-coast-video"
+    },
+    {
+      "term": "talks",
+      "articles": 76,
+      "sources": 22,
+      "sentiment_direction": "negative",
+      "surge": 1.31,
+      "sentiment_mean": -0.293,
+      "headline": "European Banks Set to Fire Up M&A Talks, Morgan Stanley Says",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/articles/2026-11-23/european-banks-set-to-fire-up-m-a-talks-morgan-stanley-says"
+    },
+    {
+      "term": "largest",
+      "articles": 35,
+      "sources": 22,
+      "sentiment_direction": "positive",
+      "surge": 1.46,
+      "sentiment_mean": 0.257,
+      "headline": "Democrats win House by largest margin in 50 years. And, COP31 ends with no deal",
+      "headline_source": "NPR News",
+      "headline_url": "https://www.npr.org/2026/11/23/g-s1-155021/up-first-newsletter-midterms-house-ai-stocks-poland-nato-cop31"
     }
   ],
   "hours_since_fetch": 0.0
