@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-23T10:24:14.684246+00:00",
+  "generated_at": "2026-11-23T11:24:17.565649+00:00",
   "window_hours": 24,
-  "articles_in_window": 1615,
+  "articles_in_window": 1655,
   "collection_days": 70,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,93 +9,93 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
+      "term": "president",
+      "articles": 80,
+      "sources": 28,
+      "sentiment_direction": "mixed",
+      "surge": 0.6,
+      "sentiment_mean": 0.058,
+      "headline": "Treasury yields jump as stock futures rebound, investors await New York Fed President Williams speech",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html"
+    },
+    {
       "term": "climate",
-      "articles": 58,
+      "articles": 60,
       "sources": 28,
       "sentiment_direction": "negative",
-      "surge": 2.74,
-      "sentiment_mean": -0.545,
-      "headline": "\u2018Worst COP ever\u2019: Climate talks collapse after draft deal fails to include fossil fuels",
-      "headline_source": "CNBC World",
-      "headline_url": "https://www.cnbc.com/2026/11/23/cop31-climate-summit-fossil-fuels.html"
+      "surge": 2.84,
+      "sentiment_mean": -0.552,
+      "headline": "The worst COP ever? Climate talks collapse in chaos",
+      "headline_source": "France24",
+      "headline_url": "https://www.france24.com/en/video/20261123-the-worst-cop-ever-climate-talks-collapse-in-chaos"
     },
     {
       "term": "trump",
-      "articles": 101,
+      "articles": 102,
       "sources": 26,
       "sentiment_direction": "mixed",
       "surge": 0.43,
-      "sentiment_mean": 0.086,
-      "headline": "Trump\u2019s US$2.4b defence package for the Philippines: a push for self-reliance?",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/asia/southeast-asia/article/3375471/trumps-us24bn-defence-package-philippines-push-self-reliance"
-    },
-    {
-      "term": "president",
-      "articles": 74,
-      "sources": 26,
-      "sentiment_direction": "mixed",
-      "surge": 0.55,
-      "sentiment_mean": 0.091,
-      "headline": "Microsoft President on recent global outage: It was basically a perfect storm of ...",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-president-brad-smith-on-recent-outage-i-think-we-have-to-be-prepared-for-the-coming-months-because-/articleshow/136095645.cms"
+      "sentiment_mean": 0.081,
+      "headline": "Trump to confront Newsom over plan to spare 548 death row inmates, including notorious child killers",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/politics/president-trump-confront-newsom-plan-spare-548-death-row-inmates-notorious-child-killers"
     },
     {
       "term": "talks",
-      "articles": 77,
+      "articles": 78,
       "sources": 25,
       "sentiment_direction": "negative",
-      "surge": 1.36,
-      "sentiment_mean": -0.363,
-      "headline": "\u2018Worst COP ever\u2019: Climate talks collapse after draft deal fails to include fossil fuels",
-      "headline_source": "CNBC World",
-      "headline_url": "https://www.cnbc.com/2026/11/23/cop31-climate-summit-fossil-fuels.html"
-    },
-    {
-      "term": "deal",
-      "articles": 56,
-      "sources": 23,
-      "sentiment_direction": "negative",
-      "surge": 1.08,
-      "sentiment_mean": -0.257,
-      "headline": "\u2018Worst COP ever\u2019: Climate talks collapse after draft deal fails to include fossil fuels",
-      "headline_source": "CNBC World",
-      "headline_url": "https://www.cnbc.com/2026/11/23/cop31-climate-summit-fossil-fuels.html"
+      "surge": 1.38,
+      "sentiment_mean": -0.372,
+      "headline": "Trump Suggests Resumption of Iran Strikes Next Year If Talks Fail",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-11-23/trump-suggests-resumption-of-iran-strikes-next-year-video"
     },
     {
       "term": "fuels",
-      "articles": 40,
-      "sources": 23,
+      "articles": 42,
+      "sources": 24,
       "sentiment_direction": "negative",
-      "surge": 3.73,
-      "sentiment_mean": -0.435,
-      "headline": "\u2018Worst COP ever\u2019: Climate talks collapse after draft deal fails to include fossil fuels",
-      "headline_source": "CNBC World",
-      "headline_url": "https://www.cnbc.com/2026/11/23/cop31-climate-summit-fossil-fuels.html"
-    },
-    {
-      "term": "fossil",
-      "articles": 39,
-      "sources": 23,
-      "sentiment_direction": "negative",
-      "surge": 4.44,
-      "sentiment_mean": -0.498,
+      "surge": 3.91,
+      "sentiment_mean": -0.438,
       "headline": "\u2018Worst COP ever\u2019: Climate talks collapse after draft deal fails to include fossil fuels",
       "headline_source": "CNBC World",
       "headline_url": "https://www.cnbc.com/2026/11/23/cop31-climate-summit-fossil-fuels.html"
     },
     {
       "term": "russian",
-      "articles": 69,
-      "sources": 22,
+      "articles": 72,
+      "sources": 23,
       "sentiment_direction": "negative",
-      "surge": 1.18,
-      "sentiment_mean": -0.631,
-      "headline": "Zelenskyy praises \u2018exemplary\u2019 drone operation that sank Russian warship in a Libyan port",
+      "surge": 1.23,
+      "sentiment_mean": -0.607,
+      "headline": "Ukrainian drones sink Russian warship at naval base in Libya",
+      "headline_source": "France24",
+      "headline_url": "https://www.france24.com/en/video/20261123-ukrainian-drones-sink-russian-warship-at-naval-base-in-libya"
+    },
+    {
+      "term": "deal",
+      "articles": 57,
+      "sources": 23,
+      "sentiment_direction": "negative",
+      "surge": 1.09,
+      "sentiment_mean": -0.263,
+      "headline": "CrowdStrike bets on network security with $43.9 billion Zscaler deal",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/11/23/crowdstrike-to-buy-zscaler.html"
+    },
+    {
+      "term": "fossil",
+      "articles": 40,
+      "sources": 23,
+      "sentiment_direction": "negative",
+      "surge": 4.56,
+      "sentiment_mean": -0.51,
+      "headline": "\u2018Worst COP ever\u2019: Climate talks collapse after draft deal fails to include fossil fuels",
       "headline_source": "CNBC World",
-      "headline_url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html"
+      "headline_url": "https://www.cnbc.com/2026/11/23/cop31-climate-summit-fossil-fuels.html"
     }
   ],
-  "hours_since_fetch": 0.11
+  "hours_since_fetch": 0.0
 }
