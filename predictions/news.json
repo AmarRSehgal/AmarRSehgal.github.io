@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-23T09:24:18.214394+00:00",
+  "generated_at": "2026-11-23T10:24:14.684246+00:00",
   "window_hours": 24,
-  "articles_in_window": 1573,
+  "articles_in_window": 1615,
   "collection_days": 70,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,93 +9,93 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
+      "term": "climate",
+      "articles": 58,
+      "sources": 28,
+      "sentiment_direction": "negative",
+      "surge": 2.74,
+      "sentiment_mean": -0.545,
+      "headline": "\u2018Worst COP ever\u2019: Climate talks collapse after draft deal fails to include fossil fuels",
+      "headline_source": "CNBC World",
+      "headline_url": "https://www.cnbc.com/2026/11/23/cop31-climate-summit-fossil-fuels.html"
+    },
+    {
       "term": "trump",
-      "articles": 104,
-      "sources": 27,
+      "articles": 101,
+      "sources": 26,
       "sentiment_direction": "mixed",
-      "surge": 0.44,
-      "sentiment_mean": 0.059,
+      "surge": 0.43,
+      "sentiment_mean": 0.086,
       "headline": "Trump\u2019s US$2.4b defence package for the Philippines: a push for self-reliance?",
       "headline_source": "South China Morning Post",
       "headline_url": "https://www.scmp.com/news/asia/southeast-asia/article/3375471/trumps-us24bn-defence-package-philippines-push-self-reliance"
     },
     {
-      "term": "climate",
-      "articles": 57,
-      "sources": 27,
-      "sentiment_direction": "negative",
-      "surge": 2.72,
-      "sentiment_mean": -0.534,
-      "headline": "Five takeaways from the failed climate talks COP31",
-      "headline_source": "BBC World",
-      "headline_url": "https://www.bbc.co.uk/news/articles/cm75237wlp3lo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "term": "talks",
-      "articles": 75,
-      "sources": 24,
-      "sentiment_direction": "negative",
-      "surge": 1.33,
-      "sentiment_mean": -0.38,
-      "headline": "MSCI considers alternatives to Indonesia downgrade after Prabowo talks",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/msci-considers-alternatives-to-indonesia-downgrade-after-prabowo-talks-5044445"
-    },
-    {
       "term": "president",
-      "articles": 67,
-      "sources": 23,
-      "sentiment_direction": "positive",
-      "surge": 0.5,
-      "sentiment_mean": 0.168,
+      "articles": 74,
+      "sources": 26,
+      "sentiment_direction": "mixed",
+      "surge": 0.55,
+      "sentiment_mean": 0.091,
       "headline": "Microsoft President on recent global outage: It was basically a perfect storm of ...",
       "headline_source": "Times of India",
       "headline_url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-president-brad-smith-on-recent-outage-i-think-we-have-to-be-prepared-for-the-coming-months-because-/articleshow/136095645.cms"
     },
     {
-      "term": "fossil",
-      "articles": 39,
-      "sources": 22,
+      "term": "talks",
+      "articles": 77,
+      "sources": 25,
       "sentiment_direction": "negative",
-      "surge": 4.62,
-      "sentiment_mean": -0.441,
-      "headline": "COMMENTARY: The wind has finally shown up in Germany, and fossil fuels feel it - Reuters",
-      "headline_source": "Reuters",
-      "headline_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSEd1T0pjQjRCQklVS2tPbGF2elpYZFl5d0k3MmhtOFJWejU1LTVoN1lnWlBtcXMzZmFxX0M3azFjQ0Fwd21TUG0tamRTaTM3T1h1Q2NmM0l6SkxwaUtDOE9JQjE5WVR1QWxXNWNlRGtmSmNWc0hMeWpEdEtYbWZUWURZUVpPOVF3Q0wtR2JVaDVES19aRlNUZGs5WGdNbi1zcWswellITkNkcUhXUjZycEUxSERTeTJ2TE5NODBkczA?oc=5"
-    },
-    {
-      "term": "fuels",
-      "articles": 39,
-      "sources": 22,
-      "sentiment_direction": "negative",
-      "surge": 3.69,
-      "sentiment_mean": -0.406,
-      "headline": "COMMENTARY: The wind has finally shown up in Germany, and fossil fuels feel it - Reuters",
-      "headline_source": "Reuters",
-      "headline_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSEd1T0pjQjRCQklVS2tPbGF2elpYZFl5d0k3MmhtOFJWejU1LTVoN1lnWlBtcXMzZmFxX0M3azFjQ0Fwd21TUG0tamRTaTM3T1h1Q2NmM0l6SkxwaUtDOE9JQjE5WVR1QWxXNWNlRGtmSmNWc0hMeWpEdEtYbWZUWURZUVpPOVF3Q0wtR2JVaDVES19aRlNUZGs5WGdNbi1zcWswellITkNkcUhXUjZycEUxSERTeTJ2TE5NODBkczA?oc=5"
-    },
-    {
-      "term": "russian",
-      "articles": 60,
-      "sources": 21,
-      "sentiment_direction": "negative",
-      "surge": 1.03,
-      "sentiment_mean": -0.633,
-      "headline": "NATO Parliamentary Assembly convenes amid Russian airspace violations",
-      "headline_source": "DW News",
-      "headline_url": "https://www.dw.com/en/nato-parliamentary-assembly-convenes-amid-russian-airspace-violations/live-80016415?maca=en-rss-en-all-1573-rdf"
+      "surge": 1.36,
+      "sentiment_mean": -0.363,
+      "headline": "\u2018Worst COP ever\u2019: Climate talks collapse after draft deal fails to include fossil fuels",
+      "headline_source": "CNBC World",
+      "headline_url": "https://www.cnbc.com/2026/11/23/cop31-climate-summit-fossil-fuels.html"
     },
     {
       "term": "deal",
       "articles": 56,
-      "sources": 21,
+      "sources": 23,
       "sentiment_direction": "negative",
-      "surge": 1.09,
-      "sentiment_mean": -0.238,
-      "headline": "Coca-Cola HBC Rises in JSE Debut Ahead of $2.6 Billion Deal",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/articles/2026-11-23/coca-cola-hbc-rises-in-jse-debut-ahead-of-2-6-billion-deal"
+      "surge": 1.08,
+      "sentiment_mean": -0.257,
+      "headline": "\u2018Worst COP ever\u2019: Climate talks collapse after draft deal fails to include fossil fuels",
+      "headline_source": "CNBC World",
+      "headline_url": "https://www.cnbc.com/2026/11/23/cop31-climate-summit-fossil-fuels.html"
+    },
+    {
+      "term": "fuels",
+      "articles": 40,
+      "sources": 23,
+      "sentiment_direction": "negative",
+      "surge": 3.73,
+      "sentiment_mean": -0.435,
+      "headline": "\u2018Worst COP ever\u2019: Climate talks collapse after draft deal fails to include fossil fuels",
+      "headline_source": "CNBC World",
+      "headline_url": "https://www.cnbc.com/2026/11/23/cop31-climate-summit-fossil-fuels.html"
+    },
+    {
+      "term": "fossil",
+      "articles": 39,
+      "sources": 23,
+      "sentiment_direction": "negative",
+      "surge": 4.44,
+      "sentiment_mean": -0.498,
+      "headline": "\u2018Worst COP ever\u2019: Climate talks collapse after draft deal fails to include fossil fuels",
+      "headline_source": "CNBC World",
+      "headline_url": "https://www.cnbc.com/2026/11/23/cop31-climate-summit-fossil-fuels.html"
+    },
+    {
+      "term": "russian",
+      "articles": 69,
+      "sources": 22,
+      "sentiment_direction": "negative",
+      "surge": 1.18,
+      "sentiment_mean": -0.631,
+      "headline": "Zelenskyy praises \u2018exemplary\u2019 drone operation that sank Russian warship in a Libyan port",
+      "headline_source": "CNBC World",
+      "headline_url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html"
     }
   ],
-  "hours_since_fetch": 0.0
+  "hours_since_fetch": 0.11
 }
