@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-22T23:24:19.766950+00:00",
+  "generated_at": "2026-11-23T00:24:16.628119+00:00",
   "window_hours": 24,
-  "articles_in_window": 1423,
-  "collection_days": 69,
+  "articles_in_window": 1404,
+  "collection_days": 70,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
   "surge_available": true,
@@ -10,36 +10,25 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 96,
-      "sources": 26,
+      "articles": 90,
+      "sources": 25,
       "sentiment_direction": "mixed",
-      "surge": 0.41,
-      "sentiment_mean": 0.023,
-      "headline": "Trump hosts exclusive dinner for investors of his declining meme coin",
-      "headline_source": "NBC News",
-      "headline_url": "https://www.nbcnews.com/politics/donald-trump/trump-hosts-exclusive-dinner-investors-declining-meme-coin-rcna610757"
+      "surge": 0.38,
+      "sentiment_mean": 0.042,
+      "headline": "Trump says Iran unleashed missile, drone surge after midterms",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/world/trump-says-iran-unleashed-missile-drone-surge-after-midterms"
     },
     {
       "term": "climate",
       "articles": 59,
       "sources": 25,
       "sentiment_direction": "negative",
-      "surge": 3.1,
-      "sentiment_mean": -0.423,
+      "surge": 3.05,
+      "sentiment_mean": -0.452,
       "headline": "In their own words: Leaders at UN climate talks discuss why negotiations ended without deal",
       "headline_source": "PBS NewsHour",
       "headline_url": "https://www.pbs.org/newshour/world/in-their-own-words-leaders-at-un-climate-talks-discuss-why-negotiations-ended-without-deal"
-    },
-    {
-      "term": "president",
-      "articles": 69,
-      "sources": 23,
-      "sentiment_direction": "mixed",
-      "surge": 0.52,
-      "sentiment_mean": 0.115,
-      "headline": "Iranian president turns out office lights to urge citizens to save energy",
-      "headline_source": "Washington Post",
-      "headline_url": "https://www.washingtonpost.com/world/2026/11/22/iranian-president-turns-out-office-lights-urge-citizens-save-energy/"
     },
     {
       "term": "talks",
@@ -47,54 +36,65 @@
       "sources": 23,
       "sentiment_direction": "negative",
       "surge": 1.17,
-      "sentiment_mean": -0.305,
+      "sentiment_mean": -0.331,
       "headline": "In their own words: Leaders at UN climate talks discuss why negotiations ended without deal",
       "headline_source": "PBS NewsHour",
       "headline_url": "https://www.pbs.org/newshour/world/in-their-own-words-leaders-at-un-climate-talks-discuss-why-negotiations-ended-without-deal"
     },
     {
+      "term": "president",
+      "articles": 62,
+      "sources": 22,
+      "sentiment_direction": "positive",
+      "surge": 0.46,
+      "sentiment_mean": 0.169,
+      "headline": "Iranian president turns out office lights to urge citizens to save energy",
+      "headline_source": "Washington Post",
+      "headline_url": "https://www.washingtonpost.com/world/2026/11/22/iranian-president-turns-out-office-lights-urge-citizens-save-energy/"
+    },
+    {
       "term": "fossil",
-      "articles": 38,
+      "articles": 39,
       "sources": 22,
       "sentiment_direction": "negative",
-      "surge": 4.98,
-      "sentiment_mean": -0.389,
+      "surge": 5.11,
+      "sentiment_mean": -0.402,
       "headline": "Finance, fossil fuels and the \u2018overshoot\u2019: six key takeaways from Cop31 - The Guardian",
       "headline_source": "Google News Top",
       "headline_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWm50ZjJub3NFR1hNeTBfNTVpUm9sWG03Zi1zZnpiWDJDQXNtOC1DckFxRlp6QW94MXV3YjNzRVBEYnNqTmN0NzVVWk9xcU9wem1DYXotSGQwNldTdXBuc0ZSWUNEdlAycUtUcV9pcXdrS3g4QTV5c3ZJcHNhM2JTdkhldVhWcXJaV2hvX2FEcTd6Ui1CeEZGWWlGWGI5ZFZtRnB2R3p3ZnZHQQ?oc=5"
     },
     {
       "term": "fuels",
-      "articles": 37,
+      "articles": 39,
       "sources": 22,
       "sentiment_direction": "negative",
-      "surge": 3.86,
-      "sentiment_mean": -0.387,
-      "headline": "Ossoff's broad and decisive Senate win fuels 2028 speculation",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/news/jon-ossoff-2028-presidential-speculation-after-georgia-win/"
+      "surge": 4.07,
+      "sentiment_mean": -0.366,
+      "headline": "Patrick and Brittany Mahomes' $325M stadium investment fuels NWSL title success",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/sports/nfl/news/a-sense-of-permanence-how-patrick-mahomes-and-brittany-mahomes-325-million-kansas-city-currents-purpose-built-stadium-helped-shape-its-championship-journey/articleshow/136072662.cms"
     },
     {
       "term": "deal",
-      "articles": 51,
+      "articles": 50,
       "sources": 21,
       "sentiment_direction": "negative",
-      "surge": 1.02,
-      "sentiment_mean": -0.257,
-      "headline": "In their own words: Leaders at UN climate talks discuss why negotiations ended without deal",
-      "headline_source": "PBS NewsHour",
-      "headline_url": "https://www.pbs.org/newshour/world/in-their-own-words-leaders-at-un-climate-talks-discuss-why-negotiations-ended-without-deal"
+      "surge": 0.99,
+      "sentiment_mean": -0.26,
+      "headline": "Reports: Tarik Skubal agrees to 9-year, $450M deal with Mets - Reuters",
+      "headline_source": "Reuters",
+      "headline_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTDdwZ1c0Q3pCMkhZMGotRl9YcHhTZURxajNKa1J0UlUzT2YyY1M0RmZjb1Z1NWtVaFRIUkRKNVlqX1h4bUpjN2xzVjVsVzllaC1QcF9WRTNXUnhXZ3BLRXZsamdxeTEyNTRsVUM3aUxGWHFYZEtQUEhkY0pXdFU1dHFKR0JGY19Xc24yaXJSelI1S2tXVE1JNkhvaDhkZlZaMHdTdA?oc=5"
     },
     {
-      "term": "russian",
-      "articles": 45,
+      "term": "house",
+      "articles": 55,
       "sources": 20,
-      "sentiment_direction": "negative",
-      "surge": 0.8,
-      "sentiment_mean": -0.584,
-      "headline": "Suspected Ukrainian sea drones hit Russian warship at a Libyan naval base, officials say",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/world/africa/article/3375407/suspected-ukrainian-sea-drones-hit-russian-warship-libyan-naval-base-officials-say"
+      "sentiment_direction": "positive",
+      "surge": 0.91,
+      "sentiment_mean": 0.192,
+      "headline": "Democrats win largest House majority since 1992 with North Carolina seat",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/news/2026/11/22/democrats-win-largest-house-majority-since-1992-with-north-carolina-seat?traffic_source=rss"
     }
   ],
   "hours_since_fetch": 0.0
