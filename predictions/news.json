@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-23T14:24:20.375603+00:00",
+  "generated_at": "2026-11-23T15:24:21.205014+00:00",
   "window_hours": 24,
-  "articles_in_window": 1764,
+  "articles_in_window": 1780,
   "collection_days": 70,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,92 +9,92 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
+      "term": "nvidia",
+      "articles": 83,
+      "sources": 31,
+      "sentiment_direction": "mixed",
+      "surge": 0.94,
+      "sentiment_mean": 0.091,
+      "headline": "Trump tells CNBC he spoke to Nvidia board directly about Jensen Huang",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html"
+    },
+    {
+      "term": "huang",
+      "articles": 64,
+      "sources": 31,
+      "sentiment_direction": "mixed",
+      "surge": 1.22,
+      "sentiment_mean": 0.121,
+      "headline": "Trump tells CNBC he spoke to Nvidia board directly about Jensen Huang",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html"
+    },
+    {
+      "term": "jensen",
+      "articles": 55,
+      "sources": 31,
+      "sentiment_direction": "mixed",
+      "surge": 1.2,
+      "sentiment_mean": 0.135,
+      "headline": "Trump tells CNBC he spoke to Nvidia board directly about Jensen Huang",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html"
+    },
+    {
       "term": "president",
-      "articles": 82,
+      "articles": 97,
+      "sources": 29,
+      "sentiment_direction": "mixed",
+      "surge": 0.72,
+      "sentiment_mean": 0.008,
+      "headline": "'No national security risk': Nvidia reinstates Jensen Huang as president, CEO",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/technology/tech-news/nvidia-reinstates-jensen-huang-as-ceo-less-than-two-weeks-after-he-resigned-huang-says-i-want-to-thank-the-nvidia-board-for-its-confidence-and-deliberation-through-this-process/articleshow/136105674.cms"
+    },
+    {
+      "term": "trump",
+      "articles": 111,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 0.61,
-      "sentiment_mean": 0.004,
-      "headline": "Indonesia\u2019s Prabowo names 2 vice-president candidates to replace Gibran",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/asia/southeast-asia/article/3375506/indonesias-prabowo-names-2-vp-candidates-replace-gibran"
+      "surge": 0.47,
+      "sentiment_mean": 0.109,
+      "headline": "Trump tells CNBC he spoke to Nvidia board directly about Jensen Huang",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html"
     },
     {
       "term": "deal",
       "articles": 62,
       "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 1.14,
-      "sentiment_mean": -0.094,
-      "headline": "GameGolf partners with The Bay Golf Club in TGL league deal",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/company-news/gamegolf-partners-with-the-bay-golf-club-in-tgl-league-deal-93CH-5045804"
+      "surge": 1.13,
+      "sentiment_mean": -0.061,
+      "headline": "CrowdStrike to buy Zscaler in $44 billion deal as AI supercharges cyberattacks",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/11/23/crowdstrike-zscaler-aquisition-ai-cyberattacks.html"
     },
     {
-      "term": "trump",
-      "articles": 103,
+      "term": "board",
+      "articles": 34,
       "sources": 25,
       "sentiment_direction": "mixed",
-      "surge": 0.44,
-      "sentiment_mean": 0.093,
-      "headline": "\u2018Nothing came through\u2019: why Boeing failed to land firm orders during Trump\u2019s Shenzhen trip",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/economy/policy/article/3375468/nothing-came-through-why-boeing-failed-land-firm-orders-during-trumps-shenzhen-trip"
-    },
-    {
-      "term": "nvidia",
-      "articles": 58,
-      "sources": 25,
-      "sentiment_direction": "mixed",
-      "surge": 0.66,
-      "sentiment_mean": 0.083,
-      "headline": "Nvidia Reinstates Jensen Huang as Chief Executive",
-      "headline_source": "NYT Business",
-      "headline_url": "https://www.nytimes.com/2026/11/23/business/nvidia-jensen-huang.html"
+      "surge": 1.49,
+      "sentiment_mean": 0.009,
+      "headline": "Trump tells CNBC he spoke to Nvidia board directly about Jensen Huang",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html"
     },
     {
       "term": "russian",
-      "articles": 77,
+      "articles": 78,
       "sources": 24,
       "sentiment_direction": "negative",
-      "surge": 1.29,
-      "sentiment_mean": -0.602,
-      "headline": "Zelenskyy hails Ukraine's attack on a Russian warship docked at a naval base in Libya",
-      "headline_source": "PBS NewsHour",
-      "headline_url": "https://www.pbs.org/newshour/world/zelenskyy-hails-ukraines-attack-on-a-russian-warship-docked-at-a-naval-base-in-libya"
-    },
-    {
-      "term": "climate",
-      "articles": 57,
-      "sources": 24,
-      "sentiment_direction": "negative",
-      "surge": 2.49,
-      "sentiment_mean": -0.475,
-      "headline": "COP31 has failed. The climate system is working as designed",
-      "headline_source": "Al Jazeera",
-      "headline_url": "https://www.aljazeera.com/opinions/2026/11/23/cop31-has-failed-the-climate-system-is-working-as-designed?traffic_source=rss"
-    },
-    {
-      "term": "huang",
-      "articles": 40,
-      "sources": 23,
-      "sentiment_direction": "mixed",
-      "surge": 0.77,
-      "sentiment_mean": 0.112,
-      "headline": "Nvidia Reinstates Jensen Huang as Chief Executive",
-      "headline_source": "NYT Business",
-      "headline_url": "https://www.nytimes.com/2026/11/23/business/nvidia-jensen-huang.html"
-    },
-    {
-      "term": "talks",
-      "articles": 71,
-      "sources": 22,
-      "sentiment_direction": "negative",
-      "surge": 1.21,
-      "sentiment_mean": -0.294,
-      "headline": "European Banks Set to Fire Up M&A Talks, Morgan Stanley Says",
-      "headline_source": "Bloomberg Markets",
-      "headline_url": "https://www.bloomberg.com/news/articles/2026-11-23/european-banks-set-to-fire-up-m-a-talks-morgan-stanley-says"
+      "surge": 1.3,
+      "sentiment_mean": -0.597,
+      "headline": "Ukraine attacks Russian ships in Libya",
+      "headline_source": "CBS News",
+      "headline_url": "https://www.cbsnews.com/video/ukraine-attacks-russian-ships-in-libya/"
     }
   ],
   "hours_since_fetch": 0.0
