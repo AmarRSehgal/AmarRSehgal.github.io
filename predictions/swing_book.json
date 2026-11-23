@@ -1,126 +1,136 @@
 {
-  "generated_at": "2026-11-20T14:35:07.846486+00:00",
+  "generated_at": "2026-11-23T14:35:12.185808+00:00",
   "strategy": "MultiFactorV3",
   "account": "PA37U0PIU9B9",
   "paper": true,
   "started": "2026-09-12",
   "starting_equity": 100000.0,
-  "equity": 92912.1,
-  "cash": 13673.65,
-  "return_pct": -0.0709,
+  "equity": 91766.59,
+  "cash": 2560.63,
+  "return_pct": -0.0823,
   "positions": [
     {
-      "ticker": "SYK",
-      "qty": 23.5055,
-      "avg_entry": 315.09,
-      "price": 320.18,
-      "market_value": 7525.87,
-      "pnl": 119.53,
-      "return_pct": 0.0161,
+      "ticker": "CVX",
+      "qty": 35.8752,
+      "avg_entry": 207.13,
+      "price": 207.26,
+      "market_value": 7435.5,
+      "pnl": 4.6,
+      "return_pct": 0.0006,
       "weight_pct": 0.081
     },
     {
-      "ticker": "DIS",
-      "qty": 63.6923,
-      "avg_entry": 120.26,
-      "price": 121.69,
-      "market_value": 7750.71,
-      "pnl": 91.08,
-      "return_pct": 0.0119,
-      "weight_pct": 0.0834
-    },
-    {
-      "ticker": "CB",
-      "qty": 20.4808,
-      "avg_entry": 374.4,
-      "price": 376.98,
-      "market_value": 7720.87,
-      "pnl": 52.82,
-      "return_pct": 0.0069,
-      "weight_pct": 0.0831
+      "ticker": "XOM",
+      "qty": 46.5967,
+      "avg_entry": 159.47,
+      "price": 158.45,
+      "market_value": 7383.24,
+      "pnl": -47.66,
+      "return_pct": -0.0064,
+      "weight_pct": 0.0805
     },
     {
       "ticker": "LIN",
       "qty": 14.5487,
       "avg_entry": 511.2,
-      "price": 512.91,
-      "market_value": 7462.16,
-      "pnl": 24.88,
-      "return_pct": 0.0034,
+      "price": 507.86,
+      "market_value": 7388.69,
+      "pnl": -48.59,
+      "return_pct": -0.0065,
+      "weight_pct": 0.0805
+    },
+    {
+      "ticker": "SCHW",
+      "qty": 80.6131,
+      "avg_entry": 92.18,
+      "price": 91.44,
+      "market_value": 7371.26,
+      "pnl": -59.64,
+      "return_pct": -0.008,
       "weight_pct": 0.0803
-    },
-    {
-      "ticker": "COST",
-      "qty": 6.7678,
-      "avg_entry": 1107.6,
-      "price": 1104.14,
-      "market_value": 7472.64,
-      "pnl": -23.44,
-      "return_pct": -0.0031,
-      "weight_pct": 0.0804
-    },
-    {
-      "ticker": "HD",
-      "qty": 22.4957,
-      "avg_entry": 350.29,
-      "price": 346.57,
-      "market_value": 7796.33,
-      "pnl": -83.76,
-      "return_pct": -0.0106,
-      "weight_pct": 0.0839
     },
     {
       "ticker": "HON",
       "qty": 34.0165,
       "avg_entry": 222.42,
-      "price": 218.11,
-      "market_value": 7419.33,
-      "pnl": -146.67,
-      "return_pct": -0.0194,
-      "weight_pct": 0.0799
+      "price": 219.53,
+      "market_value": 7467.64,
+      "pnl": -98.36,
+      "return_pct": -0.013,
+      "weight_pct": 0.0814
     },
     {
-      "ticker": "NKE",
-      "qty": 103.7515,
-      "avg_entry": 35.65,
-      "price": 34.48,
-      "market_value": 3577.35,
-      "pnl": -121.39,
-      "return_pct": -0.0328,
-      "weight_pct": 0.0385
+      "ticker": "CB",
+      "qty": 20.4808,
+      "avg_entry": 374.4,
+      "price": 369.07,
+      "market_value": 7558.87,
+      "pnl": -109.18,
+      "return_pct": -0.0142,
+      "weight_pct": 0.0824
+    },
+    {
+      "ticker": "COST",
+      "qty": 6.7678,
+      "avg_entry": 1107.6,
+      "price": 1089.98,
+      "market_value": 7376.84,
+      "pnl": -119.24,
+      "return_pct": -0.0159,
+      "weight_pct": 0.0804
+    },
+    {
+      "ticker": "DIS",
+      "qty": 63.6923,
+      "avg_entry": 120.26,
+      "price": 118.19,
+      "market_value": 7528.05,
+      "pnl": -131.58,
+      "return_pct": -0.0172,
+      "weight_pct": 0.082
+    },
+    {
+      "ticker": "HD",
+      "qty": 22.4957,
+      "avg_entry": 350.29,
+      "price": 340.16,
+      "market_value": 7652.13,
+      "pnl": -227.96,
+      "return_pct": -0.0289,
+      "weight_pct": 0.0834
+    },
+    {
+      "ticker": "UBER",
+      "qty": 111.241,
+      "avg_entry": 66.8,
+      "price": 64.48,
+      "market_value": 7172.82,
+      "pnl": -258.08,
+      "return_pct": -0.0347,
+      "weight_pct": 0.0782
     },
     {
       "ticker": "SPGI",
       "qty": 16.6454,
       "avg_entry": 472.33,
-      "price": 451.02,
-      "market_value": 7507.43,
-      "pnl": -354.73,
-      "return_pct": -0.0451,
-      "weight_pct": 0.0808
+      "price": 447.1,
+      "market_value": 7442.18,
+      "pnl": -419.98,
+      "return_pct": -0.0534,
+      "weight_pct": 0.0811
     },
     {
       "ticker": "LMT",
       "qty": 13.0537,
       "avg_entry": 603.44,
-      "price": 573.75,
-      "market_value": 7489.61,
-      "pnl": -387.48,
-      "return_pct": -0.0492,
-      "weight_pct": 0.0806
-    },
-    {
-      "ticker": "PFE",
-      "qty": 269.1325,
-      "avg_entry": 30.42,
-      "price": 27.97,
-      "market_value": 7527.64,
-      "pnl": -658.53,
-      "return_pct": -0.0804,
-      "weight_pct": 0.081
+      "price": 568.21,
+      "market_value": 7417.16,
+      "pnl": -459.93,
+      "return_pct": -0.0584,
+      "weight_pct": 0.0808
     }
   ],
-  "open_positions": 11,
+  "open_positions": 12,
   "equity_curve": [
     {
       "date": "2026-09-12",
@@ -321,11 +331,15 @@
     {
       "date": "2026-11-20",
       "equity": 91795.89
+    },
+    {
+      "date": "2026-11-21",
+      "equity": 91278.77
     }
   ],
   "benchmark": "SPY",
-  "benchmark_return_pct": -0.0545,
-  "excess_return_pct": -0.0164,
+  "benchmark_return_pct": -0.0889,
+  "excess_return_pct": 0.0066,
   "ex_downtime": {
     "windows": [
       {
@@ -338,15 +352,15 @@
       }
     ],
     "sessions_excluded": 17,
-    "return_pct": -0.0999,
-    "benchmark_return_pct": -0.0458,
-    "excess_return_pct": -0.0541
+    "return_pct": -0.111,
+    "benchmark_return_pct": -0.0806,
+    "excess_return_pct": -0.0305
   },
-  "days_live": 45,
+  "days_live": 48,
   "verdict_due": false,
   "retire_after_days": 180,
   "backtest": {
-    "measured_at": "2026-11-17T23:33:31.103130+00:00",
+    "measured_at": "2026-11-22T22:00:25.547913+00:00",
     "window_start": "2019-01-01",
     "window_end": "2025-07-01",
     "universe": "etf",
