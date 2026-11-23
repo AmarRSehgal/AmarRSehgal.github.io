@@ -1,15 +1,140 @@
 {
-  "generated_at": "2026-11-22T07:24:39Z",
+  "generated_at": "2026-11-23T04:05:29Z",
   "track_record": {
-    "races_scored": 5,
+    "races_scored": 6,
     "basis": "grids published to the site before each race, from the run ledger",
-    "winners_correct": 3,
-    "winner_hit_rate": 0.6,
-    "podium_hits": 10,
-    "podium_slots": 15,
-    "mean_abs_position_error": 2.74,
-    "mean_spearman": 0.778,
+    "winners_correct": 4,
+    "winner_hit_rate": 0.667,
+    "podium_hits": 11,
+    "podium_slots": 18,
+    "mean_abs_position_error": 2.96,
+    "mean_spearman": 0.767,
     "races": [
+      {
+        "year": 2026,
+        "round": 21,
+        "race_name": "Las Vegas Grand Prix",
+        "published_at": "2026-11-22T04:17:30Z",
+        "drivers_scored": 22,
+        "predicted_winner": "VER",
+        "actual_winner": "VER",
+        "winner_correct": true,
+        "podium_hits": 1,
+        "mean_abs_position_error": 4.09,
+        "spearman": 0.711,
+        "finishers": [
+          {
+            "driver": "VER",
+            "predicted": 1,
+            "actual": 1
+          },
+          {
+            "driver": "NOR",
+            "predicted": 4,
+            "actual": 2
+          },
+          {
+            "driver": "PIA",
+            "predicted": 5,
+            "actual": 3
+          },
+          {
+            "driver": "ANT",
+            "predicted": 2,
+            "actual": 4
+          },
+          {
+            "driver": "GAS",
+            "predicted": 13,
+            "actual": 5
+          },
+          {
+            "driver": "COL",
+            "predicted": 14,
+            "actual": 6
+          },
+          {
+            "driver": "HAM",
+            "predicted": 6,
+            "actual": 7
+          },
+          {
+            "driver": "SAI",
+            "predicted": 15,
+            "actual": 8
+          },
+          {
+            "driver": "RUS",
+            "predicted": 3,
+            "actual": 9
+          },
+          {
+            "driver": "LEC",
+            "predicted": 7,
+            "actual": 10
+          },
+          {
+            "driver": "HUL",
+            "predicted": 10,
+            "actual": 11
+          },
+          {
+            "driver": "BOR",
+            "predicted": 16,
+            "actual": 12
+          },
+          {
+            "driver": "BEA",
+            "predicted": 18,
+            "actual": 13
+          },
+          {
+            "driver": "LAW",
+            "predicted": 9,
+            "actual": 14
+          },
+          {
+            "driver": "HAD",
+            "predicted": 8,
+            "actual": 15
+          },
+          {
+            "driver": "CAM",
+            "predicted": 12,
+            "actual": 16
+          },
+          {
+            "driver": "STR",
+            "predicted": 22,
+            "actual": 17
+          },
+          {
+            "driver": "BOT",
+            "predicted": 21,
+            "actual": 18
+          },
+          {
+            "driver": "ALO",
+            "predicted": 20,
+            "actual": 19
+          },
+          {
+            "driver": "LIN",
+            "predicted": 11,
+            "actual": 20
+          },
+          {
+            "driver": "PER",
+            "predicted": 19,
+            "actual": 21
+          },
+          {
+            "driver": "ALB",
+            "predicted": 17,
+            "actual": 22
+          }
+        ]
+      },
       {
         "year": 2026,
         "round": 20,
