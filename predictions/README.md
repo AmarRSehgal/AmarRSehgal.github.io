@@ -839,3 +839,20 @@ pushed daily by those repos' launchd jobs.
   and anything but `collecting` is refused while the sample is below
   `min_units_for_verdict` -- the size fixed before the first fill. That is the rule the
   feed exists to keep: a running total must never be published as a result.
+
+## `crypto_fund_carry.json` / `crypto_fund_drift.json` -- crypto paper funds
+
+Published every 6 hours by `publish_fund.sh` in `funding-rate-arb` and `funding-drift`
+(each fund steps hourly; every step is kept in `equity_curve`). Paper only.
+
+| Field | Rule |
+|---|---|
+| `fund` | `"carry"` or `"drift"`, matching the feed name |
+| `paper` | must be literally `true` |
+| `starting_equity`, `equity`, `return_pct` | `return_pct` must equal `equity / starting_equity - 1` (to 1e-4) |
+| `realized_pnl`, `unrealized_pnl`, `fees`, `asleep_hours`, `excluded_hours` | numbers |
+| `open_positions` | must equal `len(positions)` |
+| `positions[]` | `coin`, `legs` (venue text), `side` (`long` / `short` / `null` for two-legged carry), `margin` >= 0, `funding`, `pnl` |
+| `closes[]` | `coin`, `what`, `pnl`; `date` may be null |
+| `equity_curve[]`, `daily[]` | `date` string + `equity` number; hourly for the last 7 days, daily before |
+| `settlement` | object with a `note`: how much funding was settled from venue history vs estimated |
