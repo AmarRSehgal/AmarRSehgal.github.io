@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-11-24T01:01:25.986745+00:00",
+ "fund": "drift",
+ "paper": true,
+ "strategy": "Funding vs realized drift: trade the side the funding rate is mispricing, exit on reversion or a stop",
+ "started": "2026-11-24",
+ "starting_equity": 7000.0,
+ "equity": 7010.73,
+ "return_pct": 0.001533,
+ "realized_pnl": 0,
+ "unrealized_pnl": 10.73,
+ "fees": 10.35,
+ "open_positions": 7,
+ "closed_trades": 0,
+ "wins": 0,
+ "params": {
+  "per_venue": 1000.0,
+  "leverage": 3.0,
+  "entry_threshold": 0.02,
+  "exit_threshold": 0.005,
+  "stop_loss_pct": 5.0,
+  "take_profit_pct": 10.0,
+  "max_hold_hours": 72.0,
+  "venues": 7
+ },
+ "equity_curve": [
+  {
+   "date": "2026-11-24 00:48",
+   "equity": 6989.65
+  },
+  {
+   "date": "2026-11-24 00:50",
+   "equity": 7010.73
+  }
+ ],
+ "daily": [
+  {
+   "date": "2026-11-24",
+   "equity": 7010.73,
+   "pnl": 10.73
+  }
+ ],
+ "positions": [
+  {
+   "coin": "NVDL",
+   "legs": "Bitget",
+   "side": "long",
+   "margin": 1000.0,
+   "funding": 0.0,
+   "pnl": 3.82
+  },
+  {
+   "coin": "SOXS",
+   "legs": "KuCoin",
+   "side": "short",
+   "margin": 1000.0,
+   "funding": 0.0,
+   "pnl": 3.04
+  },
+  {
+   "coin": "SKDD",
+   "legs": "HTX",
+   "side": "short",
+   "margin": 1000.0,
+   "funding": 0.0,
+   "pnl": 4.36
+  },
+  {
+   "coin": "MUBARAK",
+   "legs": "OKX",
+   "side": "long",
+   "margin": 1000.0,
+   "funding": 0.0,
+   "pnl": 13.68
+  },
+  {
+   "coin": "UP",
+   "legs": "Gate",
+   "side": "short",
+   "margin": 1000.0,
+   "funding": 0.0,
+   "pnl": -3.17
+  },
+  {
+   "coin": "MON",
+   "legs": "dYdX",
+   "side": "short",
+   "margin": 1000.0,
+   "funding": 0.0,
+   "pnl": -6.76
+  },
+  {
+   "coin": "CHIP",
+   "legs": "Hyperliquid",
+   "side": "long",
+   "margin": 1000.0,
+   "funding": 0.0,
+   "pnl": -4.24
+  }
+ ],
+ "closes": [],
+ "settlement": {
+  "real": 7,
+  "estimated": 0,
+  "stops": 0,
+  "take_profits": 0,
+  "note": "Funding is settled from each venue's own history; stops and take-profits fill at their level in the hour they were crossed."
+ },
+ "asleep_hours": 0,
+ "excluded_hours": 0
+}
