@@ -1,133 +1,133 @@
 {
-  "generated_at": "2026-11-23T14:35:12.185808+00:00",
+  "generated_at": "2026-11-24T14:35:10.763247+00:00",
   "strategy": "MultiFactorV3",
   "account": "PA37U0PIU9B9",
   "paper": true,
   "started": "2026-09-12",
   "starting_equity": 100000.0,
-  "equity": 91766.59,
-  "cash": 2560.63,
-  "return_pct": -0.0823,
+  "equity": 91915.69,
+  "cash": 2154.04,
+  "return_pct": -0.0808,
   "positions": [
     {
-      "ticker": "CVX",
-      "qty": 35.8752,
-      "avg_entry": 207.13,
-      "price": 207.26,
-      "market_value": 7435.5,
-      "pnl": 4.6,
-      "return_pct": 0.0006,
-      "weight_pct": 0.081
-    },
-    {
-      "ticker": "XOM",
-      "qty": 46.5967,
-      "avg_entry": 159.47,
-      "price": 158.45,
-      "market_value": 7383.24,
-      "pnl": -47.66,
-      "return_pct": -0.0064,
+      "ticker": "AXP",
+      "qty": 24.0922,
+      "avg_entry": 304.78,
+      "price": 307.04,
+      "market_value": 7397.26,
+      "pnl": 54.45,
+      "return_pct": 0.0074,
       "weight_pct": 0.0805
     },
     {
       "ticker": "LIN",
       "qty": 14.5487,
       "avg_entry": 511.2,
-      "price": 507.86,
-      "market_value": 7388.69,
-      "pnl": -48.59,
-      "return_pct": -0.0065,
-      "weight_pct": 0.0805
+      "price": 514.51,
+      "market_value": 7485.51,
+      "pnl": 48.23,
+      "return_pct": 0.0065,
+      "weight_pct": 0.0814
     },
     {
       "ticker": "SCHW",
       "qty": 80.6131,
       "avg_entry": 92.18,
-      "price": 91.44,
-      "market_value": 7371.26,
-      "pnl": -59.64,
-      "return_pct": -0.008,
-      "weight_pct": 0.0803
-    },
-    {
-      "ticker": "HON",
-      "qty": 34.0165,
-      "avg_entry": 222.42,
-      "price": 219.53,
-      "market_value": 7467.64,
-      "pnl": -98.36,
-      "return_pct": -0.013,
-      "weight_pct": 0.0814
-    },
-    {
-      "ticker": "CB",
-      "qty": 20.4808,
-      "avg_entry": 374.4,
-      "price": 369.07,
-      "market_value": 7558.87,
-      "pnl": -109.18,
-      "return_pct": -0.0142,
-      "weight_pct": 0.0824
-    },
-    {
-      "ticker": "COST",
-      "qty": 6.7678,
-      "avg_entry": 1107.6,
-      "price": 1089.98,
-      "market_value": 7376.84,
-      "pnl": -119.24,
-      "return_pct": -0.0159,
-      "weight_pct": 0.0804
+      "price": 92.61,
+      "market_value": 7465.58,
+      "pnl": 34.68,
+      "return_pct": 0.0047,
+      "weight_pct": 0.0812
     },
     {
       "ticker": "DIS",
       "qty": 63.6923,
       "avg_entry": 120.26,
-      "price": 118.19,
-      "market_value": 7528.05,
-      "pnl": -131.58,
-      "return_pct": -0.0172,
-      "weight_pct": 0.082
+      "price": 120.31,
+      "market_value": 7662.81,
+      "pnl": 3.18,
+      "return_pct": 0.0004,
+      "weight_pct": 0.0834
+    },
+    {
+      "ticker": "CVX",
+      "qty": 35.8752,
+      "avg_entry": 207.13,
+      "price": 206.96,
+      "market_value": 7424.73,
+      "pnl": -6.17,
+      "return_pct": -0.0008,
+      "weight_pct": 0.0808
+    },
+    {
+      "ticker": "NEE",
+      "qty": 88.0397,
+      "avg_entry": 83.72,
+      "price": 83.51,
+      "market_value": 7352.2,
+      "pnl": -18.15,
+      "return_pct": -0.0025,
+      "weight_pct": 0.08
     },
     {
       "ticker": "HD",
       "qty": 22.4957,
       "avg_entry": 350.29,
-      "price": 340.16,
-      "market_value": 7652.13,
-      "pnl": -227.96,
-      "return_pct": -0.0289,
-      "weight_pct": 0.0834
+      "price": 345.56,
+      "market_value": 7773.61,
+      "pnl": -106.48,
+      "return_pct": -0.0135,
+      "weight_pct": 0.0846
+    },
+    {
+      "ticker": "CB",
+      "qty": 20.4808,
+      "avg_entry": 374.4,
+      "price": 369.24,
+      "market_value": 7562.35,
+      "pnl": -105.7,
+      "return_pct": -0.0138,
+      "weight_pct": 0.0823
+    },
+    {
+      "ticker": "COST",
+      "qty": 6.8263,
+      "avg_entry": 1107.34,
+      "price": 1077.15,
+      "market_value": 7352.97,
+      "pnl": -206.09,
+      "return_pct": -0.0273,
+      "weight_pct": 0.08
     },
     {
       "ticker": "UBER",
-      "qty": 111.241,
-      "avg_entry": 66.8,
-      "price": 64.48,
-      "market_value": 7172.82,
-      "pnl": -258.08,
-      "return_pct": -0.0347,
-      "weight_pct": 0.0782
+      "qty": 113.925,
+      "avg_entry": 66.74,
+      "price": 64.62,
+      "market_value": 7362.41,
+      "pnl": -241.26,
+      "return_pct": -0.0317,
+      "weight_pct": 0.0801
     },
     {
       "ticker": "SPGI",
       "qty": 16.6454,
       "avg_entry": 472.33,
-      "price": 447.1,
-      "market_value": 7442.18,
-      "pnl": -419.98,
-      "return_pct": -0.0534,
-      "weight_pct": 0.0811
+      "price": 454.69,
+      "market_value": 7568.6,
+      "pnl": -293.56,
+      "return_pct": -0.0373,
+      "weight_pct": 0.0823
     },
     {
-      "ticker": "LMT",
-      "qty": 13.0537,
-      "avg_entry": 603.44,
-      "price": 568.21,
-      "market_value": 7417.16,
-      "pnl": -459.93,
-      "return_pct": -0.0584,
-      "weight_pct": 0.0808
+      "ticker": "TXN",
+      "qty": 26.605,
+      "avg_entry": 287.63,
+      "price": 276.32,
+      "market_value": 7351.64,
+      "pnl": -300.67,
+      "return_pct": -0.0393,
+      "weight_pct": 0.08
     }
   ],
   "open_positions": 12,
@@ -335,11 +335,15 @@
     {
       "date": "2026-11-21",
       "equity": 91278.77
+    },
+    {
+      "date": "2026-11-24",
+      "equity": 92346.94
     }
   ],
   "benchmark": "SPY",
-  "benchmark_return_pct": -0.0889,
-  "excess_return_pct": 0.0066,
+  "benchmark_return_pct": -0.046,
+  "excess_return_pct": -0.0348,
   "ex_downtime": {
     "windows": [
       {
@@ -352,13 +356,927 @@
       }
     ],
     "sessions_excluded": 17,
-    "return_pct": -0.111,
-    "benchmark_return_pct": -0.0806,
-    "excess_return_pct": -0.0305
+    "return_pct": -0.1096,
+    "benchmark_return_pct": -0.0373,
+    "excess_return_pct": -0.0723
   },
-  "days_live": 48,
+  "days_live": 49,
   "verdict_due": false,
   "retire_after_days": 180,
+  "trades": [
+    {
+      "date": "2026-11-23",
+      "ticker": "NEE",
+      "side": "buy",
+      "kind": "entry",
+      "qty": 87.7101,
+      "price": 83.72,
+      "value": 7342.81,
+      "realized_pnl": null
+    },
+    {
+      "date": "2026-11-23",
+      "ticker": "LMT",
+      "side": "sell",
+      "kind": "exit",
+      "qty": 13.0537,
+      "price": 566.9,
+      "value": 7400.12,
+      "realized_pnl": -476.97
+    },
+    {
+      "date": "2026-11-23",
+      "ticker": "TXN",
+      "side": "buy",
+      "kind": "entry",
+      "qty": 25.4857,
+      "price": 288.12,
+      "value": 7342.81,
+      "realized_pnl": null
+    },
+    {
+      "date": "2026-11-23",
+      "ticker": "XOM",
+      "side": "sell",
+      "kind": "exit",
+      "qty": 46.5967,
+      "price": 157.64,
+      "value": 7345.37,
+      "realized_pnl": -85.53
+    },
+    {
+      "date": "2026-11-23",
+      "ticker": "AXP",
+      "side": "buy",
+      "kind": "entry",
+      "qty": 24.0922,
+      "price": 304.78,
+      "value": 7342.81,
+      "realized_pnl": null
+    },
+    {
+      "date": "2026-11-23",
+      "ticker": "HON",
+      "side": "sell",
+      "kind": "exit",
+      "qty": 34.0165,
+      "price": 219.0,
+      "value": 7449.61,
+      "realized_pnl": -116.39
+    },
+    {
+      "date": "2026-11-20",
+      "ticker": "XOM",
+      "side": "buy",
+      "kind": "entry",
+      "qty": 46.5967,
+      "price": 159.47,
+      "value": 7430.9,
+      "realized_pnl": null
+    },
+    {
+      "date": "2026-11-20",
+      "ticker": "SCHW",
+      "side": "buy",
+      "kind": "entry",
+      "qty": 80.6131,
+      "price": 92.18,
+      "value": 7430.9,
+      "realized_pnl": null
+    },
+    {
+      "date": "2026-11-20",
+      "ticker": "UBER",
+      "side": "buy",
+      "kind": "entry",
+      "qty": 111.241,
+      "price": 66.8,
+      "value": 7430.9,
+      "realized_pnl": null
+    },
+    {
+      "date": "2026-11-20",
+      "ticker": "CVX",
+      "side": "buy",
+      "kind": "entry",
+      "qty": 35.8752,
+      "price": 207.13,
+      "value": 7430.9,
+      "realized_pnl": null
+    },
+    {
+      "date": "2026-11-20",
+      "ticker": "SYK",
+      "side": "sell",
+      "kind": "exit",
+      "qty": 23.5055,
+      "price": 319.56,
+      "value": 7511.41,
+      "realized_pnl": 105.07
+    },
+    {
+      "date": "2026-11-20",
+      "ticker": "NKE",
+      "side": "sell",
+      "kind": "exit",
+      "qty": 207.7515,
+      "price": 34.46,
+      "value": 7158.69,
+      "realized_pnl": -247.65
+    },
+    {
+      "date": "2026-11-20",
+      "ticker": "PFE",
+      "side": "sell",
+      "kind": "exit",
+      "qty": 269.1325,
+      "price": 27.96,
+      "value": 7524.95,
+      "realized_pnl": -661.22
+    },
+    {
+      "date": "2026-11-20",
+      "ticker": "NEE",
+      "side": "sell",
+      "kind": "exit",
+      "qty": 88.2135,
+      "price": 84.69,
+      "value": 7470.8,
+      "realized_pnl": 33.52
+    },
+    {
+      "date": "2026-11-19",
+      "ticker": "HON",
+      "side": "buy",
+      "kind": "entry",
+      "qty": 33.2856,
+      "price": 222.51,
+      "value": 7406.34,
+      "realized_pnl": null
+    },
+    {
+      "date": "2026-11-19",
+      "ticker": "SYK",
+      "side": "buy",
+      "kind": "entry",
+      "qty": 23.5055,
+      "price": 315.09,
+      "value": 7406.34,
+      "realized_pnl": null
+    },
+    {
+      "date": "2026-11-19",
+      "ticker": "NKE",
+      "side": "buy",
+      "kind": "entry",
+      "qty": 207.7515,
+      "price": 35.65,
+      "value": 7406.34,
+      "realized_pnl": null
+    },
+    {
+      "date": "2026-11-19",
+      "ticker": "TXN",
+      "side": "sell",
+      "kind": "exit",
+      "qty": 25.2316,
+      "price": 298.84,
+      "value": 7540.23,
+      "realized_pnl": 102.95
+    },
+    {
+      "date": "2026-11-19",
+      "ticker": "CVX",
+      "side": "sell",
+      "kind": "exit",
+      "qty": 35.1462,
+      "price": 207.55,
+      "value": 7294.59,
+      "realized_pnl": -142.69
+    },
+    {
+      "date": "2026-11-19",
+      "ticker": "COP",
+      "side": "sell",
+      "kind": "exit",
+      "qty": 53.7298,
+      "price": 135.65,
+      "value": 7288.45,
+      "realized_pnl": -148.83
+    },
+    {
+      "date": "2026-11-18",
+      "ticker": "INTU",
+      "side": "sell",
+      "kind": "exit",
+      "qty": 22.795,
+      "price": 320.41,
+      "value": 7303.76,
+      "realized_pnl": -501.92
+    },
+    {
+      "date": "2026-11-18",
+      "ticker": "TXN",
+      "side": "buy",
+      "kind": "entry",
+      "qty": 25.2316,
+      "price": 294.76,
+      "value": 7437.28,
+      "realized_pnl": null
+    },
+    {
+      "date": "2026-11-18",
+      "ticker": "COST",
+      "side": "buy",
+      "kind": "entry",
+      "qty": 6.7141,
+      "price": 1107.71,
+      "value": 7437.28,
+      "realized_pnl": null
+    },
+    {
+      "date": "2026-11-18",
+      "ticker": "NEE",
+      "side": "buy",
+      "kind": "entry",
+      "qty": 88.2135,
+      "price": 84.31,
+      "value": 7437.28,
+      "realized_pnl": null
+    },
+    {
+      "date": "2026-11-18",
+      "ticker": "COP",
+      "side": "buy",
+      "kind": "entry",
+      "qty": 53.7298,
+      "price": 138.42,
+      "value": 7437.28,
+      "realized_pnl": null
+    },
+    {
+      "date": "2026-11-18",
+      "ticker": "CVX",
+      "side": "buy",
+      "kind": "entry",
+      "qty": 35.1462,
+      "price": 211.61,
+      "value": 7437.28,
+      "realized_pnl": null
+    },
+    {
+      "date": "2026-11-18",
+      "ticker": "LIN",
+      "side": "buy",
+      "kind": "entry",
+      "qty": 14.5487,
+      "price": 511.2,
+      "value": 7437.28,
+      "realized_pnl": null
+    },
+    {
+      "date": "2026-11-18",
+      "ticker": "NKE",
+      "side": "sell",
+      "kind": "exit",
+      "qty": 202.2298,
+      "price": 35.55,
+      "value": 7189.27,
+      "realized_pnl": -658.14
+    },
+    {
+      "date": "2026-11-18",
+      "ticker": "LOW",
+      "side": "sell",
+      "kind": "exit",
+      "qty": 34.1624,
+      "price": 215.85,
+      "value": 7373.95,
+      "realized_pnl": -285.68
+    },
+    {
+      "date": "2026-11-18",
+      "ticker": "WMT",
+      "side": "sell",
+      "kind": "exit",
+      "qty": 61.1091,
+      "price": 126.71,
+      "value": 7743.14,
+      "realized_pnl": 127.11
+    },
+    {
+      "date": "2026-11-18",
+      "ticker": "PEP",
+      "side": "sell",
+      "kind": "exit",
+      "qty": 53.2622,
+      "price": 141.75,
+      "value": 7549.91,
+      "realized_pnl": -109.72
+    },
+    {
+      "date": "2026-11-18",
+      "ticker": "AMT",
+      "side": "sell",
+      "kind": "exit",
+      "qty": 40.2787,
+      "price": 182.56,
+      "value": 7353.27,
+      "realized_pnl": -314.78
+    },
+    {
+      "date": "2026-11-17",
+      "ticker": "LOW",
+      "side": "buy",
+      "kind": "entry",
+      "qty": 34.1624,
+      "price": 224.21,
+      "value": 7659.63,
+      "realized_pnl": null
+    },
+    {
+      "date": "2026-11-17",
+      "ticker": "CVX",
+      "side": "sell",
+      "kind": "exit",
+      "qty": 35.8808,
+      "price": 218.29,
+      "value": 7832.53,
+      "realized_pnl": 242.13
+    },
+    {
+      "date": "2026-11-17",
+      "ticker": "PEP",
+      "side": "buy",
+      "kind": "entry",
+      "qty": 53.2622,
+      "price": 143.81,
+      "value": 7659.63,
+      "realized_pnl": null
+    },
+    {
+      "date": "2026-11-17",
+      "ticker": "DIS",
+      "side": "buy",
+      "kind": "entry",
+      "qty": 63.6923,
+      "price": 120.26,
+      "value": 7659.63,
+      "realized_pnl": null
+    },
+    {
+      "date": "2026-11-17",
+      "ticker": "SYK",
+      "side": "sell",
+      "kind": "exit",
+      "qty": 24.4514,
+      "price": 310.63,
+      "value": 7595.35,
+      "realized_pnl": -412.44
+    },
+    {
+      "date": "2026-11-17",
+      "ticker": "COP",
+      "side": "sell",
+      "kind": "exit",
+      "qty": 57.6999,
+      "price": 142.45,
+      "value": 8219.35,
+      "realized_pnl": -401.71
+    },
+    {
+      "date": "2026-11-13",
+      "ticker": "XOM",
+      "side": "sell",
+      "kind": "exit",
+      "qty": 47.4254,
+      "price": 170.76,
+      "value": 8098.15,
+      "realized_pnl": 311.45
+    },
+    {
+      "date": "2026-11-13",
+      "ticker": "LMT",
+      "side": "buy",
+      "kind": "entry",
+      "qty": 12.695,
+      "price": 603.9,
+      "value": 7666.54,
+      "realized_pnl": null
+    }
+  ],
+  "trades_total": 208,
+  "rebalances_total": 87,
+  "rebalanced_value": 9696.45,
+  "realized_pnl": -7121.34,
+  "trade_days": [
+    {
+      "date": "2026-11-23",
+      "entries": [
+        "AXP",
+        "TXN",
+        "NEE"
+      ],
+      "exits": [
+        "HON",
+        "XOM",
+        "LMT"
+      ],
+      "entered": 22028.43,
+      "exited": 22195.1,
+      "realized_pnl": -678.89,
+      "rebalances": 1,
+      "rebalanced": 172.77
+    },
+    {
+      "date": "2026-11-20",
+      "entries": [
+        "CVX",
+        "UBER",
+        "SCHW",
+        "XOM"
+      ],
+      "exits": [
+        "NEE",
+        "PFE",
+        "NKE",
+        "SYK"
+      ],
+      "entered": 29723.6,
+      "exited": 29665.85,
+      "realized_pnl": -770.28,
+      "rebalances": 1,
+      "rebalanced": 159.66
+    },
+    {
+      "date": "2026-11-19",
+      "entries": [
+        "NKE",
+        "SYK",
+        "HON"
+      ],
+      "exits": [
+        "COP",
+        "CVX",
+        "TXN"
+      ],
+      "entered": 22219.02,
+      "exited": 22123.27,
+      "realized_pnl": -188.57,
+      "rebalances": 2,
+      "rebalanced": 102.22
+    },
+    {
+      "date": "2026-11-18",
+      "entries": [
+        "LIN",
+        "CVX",
+        "COP",
+        "NEE",
+        "COST",
+        "TXN"
+      ],
+      "exits": [
+        "AMT",
+        "PEP",
+        "WMT",
+        "LOW",
+        "NKE",
+        "INTU"
+      ],
+      "entered": 44623.68,
+      "exited": 44513.3,
+      "realized_pnl": -1743.13,
+      "rebalances": 0,
+      "rebalanced": 0.0
+    },
+    {
+      "date": "2026-11-17",
+      "entries": [
+        "DIS",
+        "PEP",
+        "LOW"
+      ],
+      "exits": [
+        "COP",
+        "SYK",
+        "CVX"
+      ],
+      "entered": 22978.89,
+      "exited": 23647.23,
+      "realized_pnl": -572.02,
+      "rebalances": 5,
+      "rebalanced": 605.87
+    },
+    {
+      "date": "2026-11-13",
+      "entries": [
+        "SPGI",
+        "LMT"
+      ],
+      "exits": [
+        "COST",
+        "XOM"
+      ],
+      "entered": 15333.08,
+      "exited": 15784.33,
+      "realized_pnl": 381.39,
+      "rebalances": 4,
+      "rebalanced": 470.77
+    },
+    {
+      "date": "2026-11-12",
+      "entries": [
+        "CB",
+        "AMT"
+      ],
+      "exits": [
+        "PEP",
+        "HON"
+      ],
+      "entered": 15336.1,
+      "exited": 15600.63,
+      "realized_pnl": 137.28,
+      "rebalances": 3,
+      "rebalanced": 142.49
+    },
+    {
+      "date": "2026-11-11",
+      "entries": [
+        "COST",
+        "CVX"
+      ],
+      "exits": [
+        "MCD",
+        "IBM"
+      ],
+      "entered": 15180.8,
+      "exited": 15384.16,
+      "realized_pnl": -352.35,
+      "rebalances": 4,
+      "rebalanced": 272.58
+    },
+    {
+      "date": "2026-11-09",
+      "entries": [
+        "HON",
+        "WMT",
+        "HD",
+        "NKE",
+        "XOM",
+        "INTU",
+        "SYK"
+      ],
+      "exits": [
+        "ADBE",
+        "DIS",
+        "ADI",
+        "LIN",
+        "AMGN",
+        "META",
+        "GILD"
+      ],
+      "entered": 53312.21,
+      "exited": 54382.44,
+      "realized_pnl": -404.18,
+      "rebalances": 2,
+      "rebalanced": 199.64
+    },
+    {
+      "date": "2026-11-05",
+      "entries": [
+        "PEP",
+        "MCD",
+        "IBM"
+      ],
+      "exits": [
+        "CMCSA",
+        "DE",
+        "T"
+      ],
+      "entered": 23541.96,
+      "exited": 24262.24,
+      "realized_pnl": 890.52,
+      "rebalances": 2,
+      "rebalanced": 366.87
+    },
+    {
+      "date": "2026-11-02",
+      "entries": [
+        "PFE",
+        "ADBE",
+        "DE",
+        "CMCSA",
+        "LIN",
+        "META",
+        "GILD",
+        "DIS",
+        "T"
+      ],
+      "exits": [
+        "AMT",
+        "TJX",
+        "NEE",
+        "INTU",
+        "CVX",
+        "TSLA",
+        "COST",
+        "CB",
+        "PG"
+      ],
+      "entered": 69958.26,
+      "exited": 71007.18,
+      "realized_pnl": 1242.07,
+      "rebalances": 0,
+      "rebalanced": 0.0
+    },
+    {
+      "date": "2026-10-28",
+      "entries": [
+        "TJX",
+        "INTU"
+      ],
+      "exits": [
+        "ADBE",
+        "BX"
+      ],
+      "entered": 15171.68,
+      "exited": 14773.26,
+      "realized_pnl": -639.76,
+      "rebalances": 4,
+      "rebalanced": 325.74
+    },
+    {
+      "date": "2026-10-27",
+      "entries": [
+        "BX"
+      ],
+      "exits": [],
+      "entered": 7635.63,
+      "exited": 0.0,
+      "realized_pnl": 0.0,
+      "rebalances": 6,
+      "rebalanced": 448.18
+    },
+    {
+      "date": "2026-10-26",
+      "entries": [
+        "AMGN",
+        "CB",
+        "ADBE",
+        "TSLA",
+        "COST",
+        "AMT",
+        "NEE",
+        "CVX",
+        "COP",
+        "ADI",
+        "PG"
+      ],
+      "exits": [
+        "DIS",
+        "ADI",
+        "PFE",
+        "CMCSA",
+        "PG",
+        "VRTX",
+        "T",
+        "META",
+        "XOM",
+        "DHR",
+        "APH",
+        "BX"
+      ],
+      "entered": 84220.48,
+      "exited": 92045.28,
+      "realized_pnl": -382.88,
+      "rebalances": 1,
+      "rebalanced": 51.12
+    },
+    {
+      "date": "2026-10-09",
+      "entries": [
+        "ADI",
+        "APH",
+        "T",
+        "DHR",
+        "PG",
+        "PFE",
+        "BX",
+        "VRTX"
+      ],
+      "exits": [
+        "LMT",
+        "KKR",
+        "COP",
+        "QCOM",
+        "SPGI",
+        "TSLA",
+        "SYK",
+        "VZ"
+      ],
+      "entered": 60671.2,
+      "exited": 61624.73,
+      "realized_pnl": -754.2,
+      "rebalances": 0,
+      "rebalanced": 0.0
+    },
+    {
+      "date": "2026-10-08",
+      "entries": [
+        "LMT",
+        "KKR",
+        "SYK",
+        "XOM",
+        "VZ",
+        "META",
+        "TSLA"
+      ],
+      "exits": [
+        "DHR",
+        "ABBV",
+        "PG",
+        "RTX",
+        "GILD",
+        "T",
+        "UBER"
+      ],
+      "entered": 52950.87,
+      "exited": 53516.02,
+      "realized_pnl": -955.51,
+      "rebalances": 2,
+      "rebalanced": 417.38
+    },
+    {
+      "date": "2026-10-01",
+      "entries": [
+        "RTX"
+      ],
+      "exits": [
+        "AXP"
+      ],
+      "entered": 7584.83,
+      "exited": 7645.58,
+      "realized_pnl": -69.92,
+      "rebalances": 2,
+      "rebalanced": 195.73
+    },
+    {
+      "date": "2026-09-30",
+      "entries": [
+        "PG",
+        "SPGI"
+      ],
+      "exits": [
+        "MS",
+        "SCHW"
+      ],
+      "entered": 15314.34,
+      "exited": 15438.59,
+      "realized_pnl": -701.37,
+      "rebalances": 1,
+      "rebalanced": 36.44
+    },
+    {
+      "date": "2026-09-28",
+      "entries": [
+        "UBER",
+        "AXP"
+      ],
+      "exits": [
+        "TMUS",
+        "SPGI"
+      ],
+      "entered": 15431.0,
+      "exited": 15547.89,
+      "realized_pnl": -167.37,
+      "rebalances": 1,
+      "rebalanced": 51.77
+    },
+    {
+      "date": "2026-09-25",
+      "entries": [
+        "ABBV",
+        "DHR",
+        "GILD",
+        "MS",
+        "TMUS",
+        "DIS"
+      ],
+      "exits": [
+        "ACN",
+        "ADBE",
+        "AAPL",
+        "META",
+        "PFE",
+        "MDT"
+      ],
+      "entered": 46404.3,
+      "exited": 47064.39,
+      "realized_pnl": -1074.11,
+      "rebalances": 1,
+      "rebalanced": 223.21
+    },
+    {
+      "date": "2026-09-23",
+      "entries": [
+        "META",
+        "QCOM"
+      ],
+      "exits": [
+        "RTX",
+        "SYK"
+      ],
+      "entered": 15601.64,
+      "exited": 15795.15,
+      "realized_pnl": -456.15,
+      "rebalances": 2,
+      "rebalanced": 410.6
+    },
+    {
+      "date": "2026-09-21",
+      "entries": [
+        "ADBE",
+        "RTX"
+      ],
+      "exits": [
+        "NVDA",
+        "GE"
+      ],
+      "entered": 15867.24,
+      "exited": 16065.81,
+      "realized_pnl": 303.81,
+      "rebalances": 4,
+      "rebalanced": 432.54
+    },
+    {
+      "date": "2026-09-18",
+      "entries": [
+        "AAPL",
+        "GE",
+        "NVDA"
+      ],
+      "exits": [
+        "RTX",
+        "VRTX",
+        "WFC"
+      ],
+      "entered": 23643.0,
+      "exited": 23895.31,
+      "realized_pnl": -270.11,
+      "rebalances": 4,
+      "rebalanced": 503.07
+    },
+    {
+      "date": "2026-09-17",
+      "entries": [
+        "COP",
+        "SPGI",
+        "ACN",
+        "SYK",
+        "T",
+        "WFC",
+        "SCHW"
+      ],
+      "exits": [
+        "ABBV",
+        "AMGN",
+        "DIS",
+        "DHR",
+        "VZ",
+        "GILD",
+        "LMT"
+      ],
+      "entered": 55868.47,
+      "exited": 56300.74,
+      "realized_pnl": 104.38,
+      "rebalances": 1,
+      "rebalanced": 188.47
+    },
+    {
+      "date": "2026-09-15",
+      "entries": [
+        "DIS",
+        "RTX",
+        "AMGN",
+        "PFE",
+        "CMCSA",
+        "VRTX",
+        "MDT",
+        "VZ",
+        "ABBV",
+        "LMT",
+        "DHR",
+        "GILD"
+      ],
+      "exits": [],
+      "entered": 95999.88,
+      "exited": 0.0,
+      "realized_pnl": 0.0,
+      "rebalances": 0,
+      "rebalanced": 0.0
+    }
+  ],
   "backtest": {
     "measured_at": "2026-11-22T22:00:25.547913+00:00",
     "window_start": "2019-01-01",
