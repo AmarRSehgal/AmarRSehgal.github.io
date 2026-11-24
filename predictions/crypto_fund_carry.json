@@ -1,18 +1,18 @@
 {
- "generated_at": "2026-11-24T08:00:25.640870+00:00",
+ "generated_at": "2026-11-24T14:00:32.256114+00:00",
  "fund": "carry",
  "paper": true,
  "strategy": "Cross-exchange funding carry: long one venue, short the same coin on another, collect the funding gap",
  "started": "2026-11-24",
  "starting_equity": 13000.0,
- "equity": 13072.29,
- "return_pct": 0.005561,
- "realized_pnl": 99.99,
- "unrealized_pnl": -27.71,
- "funding_pnl": 179.31,
- "fees": 29.48,
- "open_positions": 22,
- "closed_trades": 0,
+ "equity": 12993.91,
+ "return_pct": -0.000468,
+ "realized_pnl": 125.83,
+ "unrealized_pnl": -131.92,
+ "funding_pnl": 291.99,
+ "fees": 64.83,
+ "open_positions": 23,
+ "closed_trades": 9,
  "params": {
   "per_venue": 1000.0,
   "venues": 13,
@@ -55,197 +55,284 @@
   {
    "date": "2026-11-24 08:00",
    "equity": 13072.26
+  },
+  {
+   "date": "2026-11-24 09:00",
+   "equity": 13056.19
+  },
+  {
+   "date": "2026-11-24 10:00",
+   "equity": 13015.57
+  },
+  {
+   "date": "2026-11-24 11:00",
+   "equity": 12998.45
+  },
+  {
+   "date": "2026-11-24 12:00",
+   "equity": 12993.62
+  },
+  {
+   "date": "2026-11-24 13:00",
+   "equity": 13048.55
+  },
+  {
+   "date": "2026-11-24 14:00",
+   "equity": 12993.88
   }
  ],
  "daily": [
   {
    "date": "2026-11-24",
-   "equity": 13072.26,
-   "pnl": 72.26
+   "equity": 12993.88,
+   "pnl": -6.12
   }
  ],
  "positions": [
   {
-   "coin": "ONE",
-   "legs": "long Crypto.com / short Gate",
+   "coin": "ARPA",
+   "legs": "long Crypto.com / short KuCoin",
    "side": null,
-   "margin": 1395.57,
-   "funding": 125.33,
-   "pnl": 92.9
+   "margin": 1738.8,
+   "funding": 3.44,
+   "pnl": -25.38
+  },
+  {
+   "coin": "SKHYNIX",
+   "legs": "long HTX / short GRVT",
+   "side": null,
+   "margin": 1712.51,
+   "funding": 0.0,
+   "pnl": -5.47
+  },
+  {
+   "coin": "VINE",
+   "legs": "long Aster / short Crypto.com",
+   "side": null,
+   "margin": 1596.04,
+   "funding": 6.66,
+   "pnl": -70.89
+  },
+  {
+   "coin": "UNITREE",
+   "legs": "long OKX / short Gate",
+   "side": null,
+   "margin": 1424.66,
+   "funding": -1.71,
+   "pnl": -4.09
   },
   {
    "coin": "H100",
    "legs": "long OKX / short Bitget",
    "side": null,
-   "margin": 1013.67,
-   "funding": 1.57,
-   "pnl": -30.36
-  },
-  {
-   "coin": "INIT",
-   "legs": "long Crypto.com / short Aster",
-   "side": null,
-   "margin": 320.67,
-   "funding": 5.0,
-   "pnl": 5.45
+   "margin": 1231.96,
+   "funding": 50.26,
+   "pnl": 22.8
   },
   {
    "coin": "ACE",
-   "legs": "long Bitget / short Aster",
+   "legs": "long Aster / short Hyperliquid",
    "side": null,
-   "margin": 289.18,
-   "funding": 4.0,
-   "pnl": 4.37
+   "margin": 1207.1,
+   "funding": 12.62,
+   "pnl": 84.07
   },
   {
-   "coin": "JASMY",
-   "legs": "long Coinbase / short Gate",
+   "coin": "SHAZ",
+   "legs": "long KuCoin / short Crypto.com",
    "side": null,
-   "margin": 286.93,
-   "funding": 4.0,
-   "pnl": -1.81
+   "margin": 1083.6,
+   "funding": 6.86,
+   "pnl": -5.47
   },
   {
-   "coin": "ON",
-   "legs": "long Gate / short OKX",
+   "coin": "INIT",
+   "legs": "long Hyperliquid / short Aster",
    "side": null,
-   "margin": 278.11,
-   "funding": 0.03,
-   "pnl": -28.21
+   "margin": 792.9,
+   "funding": 7.28,
+   "pnl": 1.91
   },
   {
-   "coin": "INJ",
-   "legs": "long OKX / short Coinbase",
+   "coin": "SAHARA",
+   "legs": "long OKX / short GRVT",
    "side": null,
-   "margin": 258.07,
-   "funding": 3.51,
-   "pnl": -2.29
+   "margin": 768.04,
+   "funding": 0.23,
+   "pnl": -1.82
   },
   {
-   "coin": "APE",
-   "legs": "long OKX / short Coinbase",
+   "coin": "ANSEM",
+   "legs": "long Lighter / short Aster",
    "side": null,
-   "margin": 248.39,
-   "funding": 0.78,
-   "pnl": -3.57
-  },
-  {
-   "coin": "LGELECTRONICS",
-   "legs": "long Crypto.com / short Bitget",
-   "side": null,
-   "margin": 237.79,
-   "funding": 5.54,
-   "pnl": 0.08
-  },
-  {
-   "coin": "LDO",
-   "legs": "long Coinbase / short Lighter",
-   "side": null,
-   "margin": 225.5,
-   "funding": 3.15,
-   "pnl": 2.47
-  },
-  {
-   "coin": "CHIP",
-   "legs": "long Lighter / short Coinbase",
-   "side": null,
-   "margin": 224.1,
-   "funding": 3.48,
-   "pnl": 11.56
-  },
-  {
-   "coin": "PENGU",
-   "legs": "long Lighter / short Coinbase",
-   "side": null,
-   "margin": 218.73,
-   "funding": 2.57,
-   "pnl": 1.51
-  },
-  {
-   "coin": "SEI",
-   "legs": "long Lighter / short Coinbase",
-   "side": null,
-   "margin": 218.5,
-   "funding": 2.98,
-   "pnl": 4.09
-  },
-  {
-   "coin": "PYTH",
-   "legs": "long Lighter / short Coinbase",
-   "side": null,
-   "margin": 218.03,
-   "funding": 2.97,
-   "pnl": 6.57
-  },
-  {
-   "coin": "EIGEN",
-   "legs": "long Lighter / short Coinbase",
-   "side": null,
-   "margin": 214.77,
-   "funding": 2.54,
-   "pnl": 3.34
-  },
-  {
-   "coin": "WIF",
-   "legs": "long Lighter / short Coinbase",
-   "side": null,
-   "margin": 214.54,
-   "funding": 3.2,
-   "pnl": 5.24
-  },
-  {
-   "coin": "COST",
-   "legs": "long Bitget / short Gate",
-   "side": null,
-   "margin": 214.19,
-   "funding": 3.83,
-   "pnl": 1.26
+   "margin": 277.7,
+   "funding": 0.96,
+   "pnl": 2.0
   },
   {
    "coin": "TRUMP",
    "legs": "long Lighter / short Coinbase",
    "side": null,
-   "margin": 209.27,
-   "funding": 3.28,
-   "pnl": -1.98
+   "margin": 265.69,
+   "funding": 6.27,
+   "pnl": -16.61
   },
   {
-   "coin": "BOT",
-   "legs": "long Lighter / short Crypto.com",
+   "coin": "BWET",
+   "legs": "long Crypto.com / short Bitget",
    "side": null,
-   "margin": 192.71,
-   "funding": 0.3,
-   "pnl": -3.46
+   "margin": 261.2,
+   "funding": 2.28,
+   "pnl": -1.92
   },
   {
-   "coin": "RUNE",
-   "legs": "long KuCoin / short Coinbase",
+   "coin": "LDO",
+   "legs": "long Coinbase / short Lighter",
    "side": null,
-   "margin": 141.31,
-   "funding": 0.28,
-   "pnl": 0.63
+   "margin": 247.28,
+   "funding": 5.97,
+   "pnl": 15.95
+  },
+  {
+   "coin": "CHIP",
+   "legs": "long Lighter / short Coinbase",
+   "side": null,
+   "margin": 244.47,
+   "funding": 6.25,
+   "pnl": -8.97
+  },
+  {
+   "coin": "PENGU",
+   "legs": "long Lighter / short Coinbase",
+   "side": null,
+   "margin": 241.14,
+   "funding": 5.3,
+   "pnl": -11.19
+  },
+  {
+   "coin": "SEI",
+   "legs": "long Lighter / short Coinbase",
+   "side": null,
+   "margin": 239.61,
+   "funding": 5.69,
+   "pnl": -4.31
+  },
+  {
+   "coin": "PYTH",
+   "legs": "long Lighter / short Coinbase",
+   "side": null,
+   "margin": 239.1,
+   "funding": 5.63,
+   "pnl": -8.03
+  },
+  {
+   "coin": "EIGEN",
+   "legs": "long Lighter / short Coinbase",
+   "side": null,
+   "margin": 235.52,
+   "funding": 3.66,
+   "pnl": -8.41
   },
   {
    "coin": "S",
    "legs": "long Lighter / short Coinbase",
    "side": null,
-   "margin": 129.44,
-   "funding": 3.29,
-   "pnl": 7.84
+   "margin": 235.26,
+   "funding": 5.17,
+   "pnl": 3.02
   },
   {
-   "coin": "BREV",
-   "legs": "long Crypto.com / short Aster",
+   "coin": "ROBO",
+   "legs": "long Lighter / short Coinbase",
    "side": null,
-   "margin": 45.97,
-   "funding": 0.15,
-   "pnl": -3.31
+   "margin": 164.94,
+   "funding": 1.86,
+   "pnl": 1.05
+  },
+  {
+   "coin": "JUP",
+   "legs": "long Lighter / short Coinbase",
+   "side": null,
+   "margin": 86.81,
+   "funding": 0.95,
+   "pnl": -1.33
+  },
+  {
+   "coin": "WIF",
+   "legs": "long Lighter / short Coinbase",
+   "side": null,
+   "margin": 51.92,
+   "funding": 6.89,
+   "pnl": -1.0
+  },
+  {
+   "coin": "RUNE",
+   "legs": "long Gate / short Coinbase",
+   "side": null,
+   "margin": 26.83,
+   "funding": 1.32,
+   "pnl": 1.8
   }
  ],
- "closes": [],
+ "closes": [
+  {
+   "date": null,
+   "coin": "INJ",
+   "what": "closed: dropped out of the ranking",
+   "pnl": -21.75
+  },
+  {
+   "date": null,
+   "coin": "ONE",
+   "what": "closed: dropped out of the ranking",
+   "pnl": 96.91
+  },
+  {
+   "date": null,
+   "coin": "APE",
+   "what": "closed: dropped out of the ranking",
+   "pnl": -2.93
+  },
+  {
+   "date": null,
+   "coin": "LGELECTRONICS",
+   "what": "closed: dropped out of the ranking",
+   "pnl": 3.9
+  },
+  {
+   "date": null,
+   "coin": "COST",
+   "what": "closed: dropped out of the ranking",
+   "pnl": 0.91
+  },
+  {
+   "date": null,
+   "coin": "BREV",
+   "what": "closed: dropped out of the ranking",
+   "pnl": -3.43
+  },
+  {
+   "date": null,
+   "coin": "ON",
+   "what": "closed: dropped out of the ranking",
+   "pnl": -27.03
+  },
+  {
+   "date": null,
+   "coin": "BOT",
+   "what": "closed: dropped out of the ranking",
+   "pnl": -3.7
+  },
+  {
+   "date": null,
+   "coin": "JASMY",
+   "what": "closed: dropped out of the ranking",
+   "pnl": -1.84
+  }
+ ],
  "settlement": {
-  "real": 132,
-  "estimated": 168,
+  "real": 251,
+  "estimated": 297,
   "liquidations": 0,
   "note": "Funding is settled from each venue's own history; Coinbase INTX and Lighter publish none, so their legs use the last seen rate."
  },
