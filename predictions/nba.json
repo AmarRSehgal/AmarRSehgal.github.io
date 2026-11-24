@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T17:00:11Z",
+  "generated_at": "2026-11-24T19:45:08Z",
   "date": "2026-11-24",
   "games": [
     {
@@ -14,7 +14,18 @@
       "confidence": 0.532,
       "pred_total": 217.0,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "DET",
+        "stake": 100.0,
+        "selection": "Detroit Pistons",
+        "price": 1.77,
+        "book": "DraftKings",
+        "quoted_at": "2026-11-24T19:30:07Z",
+        "model_prob": 0.532,
+        "implied_prob": 0.565,
+        "edge": -0.033,
+        "ev_per_dollar": -0.0584
       }
     },
     {
@@ -29,7 +40,18 @@
       "confidence": 0.653,
       "pred_total": 217.4,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "BOS",
+        "stake": 100.0,
+        "selection": "Boston Celtics",
+        "price": 1.22,
+        "book": "DraftKings",
+        "quoted_at": "2026-11-24T19:30:07Z",
+        "model_prob": 0.653,
+        "implied_prob": 0.8197,
+        "edge": -0.1667,
+        "ev_per_dollar": -0.2033
       }
     },
     {
@@ -44,7 +66,18 @@
       "confidence": 0.575,
       "pred_total": 226.0,
       "bet": {
-        "status": "unpriced"
+        "status": "bet",
+        "rule": "every_pick",
+        "team": "DEN",
+        "stake": 100.0,
+        "selection": "Denver Nuggets",
+        "price": 1.33,
+        "book": "BetMGM",
+        "quoted_at": "2026-11-24T19:30:07Z",
+        "model_prob": 0.575,
+        "implied_prob": 0.7519,
+        "edge": -0.1769,
+        "ev_per_dollar": -0.2353
       }
     }
   ],
