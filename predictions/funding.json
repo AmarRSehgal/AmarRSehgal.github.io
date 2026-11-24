@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T07:00:30.973743+00:00",
+  "generated_at": "2026-11-24T08:00:22.892869+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -27,8 +27,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1865.17,
-      "net_at_hold": 1.70335,
+      "net_apr": 1817.25,
+      "net_at_hold": 1.65958,
       "cost_bps": 43.16
     },
     {
@@ -53,8 +53,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 848.41,
-      "net_at_hold": 0.7748,
+      "net_apr": 853.22,
+      "net_at_hold": 0.7792,
       "cost_bps": 26.0
     },
     {
@@ -69,6 +69,19 @@
       "net_apr": 847.09,
       "net_at_hold": 0.7736,
       "cost_bps": 26.0
+    },
+    {
+      "base": "COST",
+      "type": "perp-perp",
+      "long_venue": "OKX",
+      "short_venue": "Gate",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 833.6,
+      "net_at_hold": 0.76128,
+      "cost_bps": 24.1
     },
     {
       "base": "SEI",
@@ -94,19 +107,6 @@
       "scans": 24,
       "net_apr": 819.06,
       "net_at_hold": 0.748,
-      "cost_bps": 26.0
-    },
-    {
-      "base": "PENGU",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 812.05,
-      "net_at_hold": 0.7416,
       "cost_bps": 26.0
     }
   ]
