@@ -411,7 +411,68 @@ const SPORTS = {
     // the numbers are running totals, because they are.
     pm_btc_paper: paperFeed('predictions/pm_btc_paper.json', 'pm-btc-paper'),
     kalshi_mm_paper: paperFeed('predictions/kalshi_mm_paper.json', 'kalshi-mm-paper'),
+    // The two crypto paper funds. Each steps hourly on the local machine and publishes
+    // every six hours; before every step it settles the time since the last one from the
+    // venues' own history (real funding, liquidations / stops), so hours the machine was
+    // asleep are settled rather than skipped. Stale after two days: a fund that has not
+    // reported since the day before yesterday is a broken job.
+    crypto_fund_carry: fundFeed('predictions/crypto_fund_carry.json', 'crypto-fund-carry',
+        'The fund is flat -- no route currently clears its cost.'),
+    crypto_fund_drift: fundFeed('predictions/crypto_fund_drift.json', 'crypto-fund-drift',
+        'The fund is flat -- no market currently shows a drift past the entry threshold.'),
 };
+
+function fundFeed(file, slug, emptyLabel) {
+    return {
+        file, container: `${slug}-rows`, stamp: `${slug}-updated`,
+        cadence: 'every 6 hours', noun: 'positions', listKey: 'positions',
+        staleAfter: 2 * MS_DAY, emptyLabel,
+        slate: d => fundSlate(d),
+        render: renderFund,
+    };
+}
+
+// Exact dollars: the shared formatMoney rounds to $K, which at fund size turned the
+// headline into "$7K from $7K" -- true and useless.
+function fundDollars(v) {
+    return '$' + Math.round(Number(v) || 0).toLocaleString('en-US');
+}
+
+function fundMoney(v) {
+    const n = Number(v) || 0;
+    return (n >= 0 ? '+' : '-') + fundDollars(Math.abs(n));
+}
+
+function fundSlate(d) {
+    const pct = v => (v >= 0 ? '+' : '') + (Number(v) * 100).toFixed(2) + '%';
+    const bits = [`${fundDollars(d.equity)} from ${fundDollars(d.starting_equity)}`, pct(d.return_pct),
+                  `${fundMoney(d.realized_pnl)} realized`, `${fundMoney(d.unrealized_pnl)} open`];
+    if (d.closed_trades) bits.push(`${d.closed_trades} closed`);
+    return bits.join(' | ');
+}
+
+function renderFund(data) {
+    const rows = data.positions.map(p => {
+        const cls = p.pnl >= 0 ? 'confidence-high' : 'confidence-low';
+        const facts = [p.side ? `${p.side} on ${p.legs}` : p.legs,
+                       `${fundDollars(p.margin)} margin`, `${fundMoney(p.funding)} funding`];
+        return `
+            <div class="nba-game">
+                <div class="nba-matchup">
+                    <div class="nba-teams"><span class="pick-team">${esc(p.coin)}</span></div>
+                    <div class="nba-meta">${esc(facts.join(' | '))}</div>
+                </div>
+                <div class="nba-pick">
+                    <div class="nba-pick-label">P&amp;L</div>
+                    <div class="nba-confidence ${cls}">${esc(fundMoney(p.pnl))}</div>
+                </div>
+            </div>
+        `;
+    }).join('');
+    return rows + `<div class="prediction-note">Paper fund, simulated fills at the quoted `
+        + `prices, ${fundDollars(data.starting_equity)} of paper capital. ${esc(data.settlement.note)} `
+        + `Not advice, and nothing here is traded with real money.</div>`;
+}
 
 function paperFeed(file, slug) {
     return {
@@ -564,6 +625,7 @@ const SPORT_LABEL = { swing_book: 'Swing book', mf_book: 'Magic Formula book',
                       stock_levels: 'Stock levels book',
                       polymarket_whales: 'Polymarket whale watch',
                       pm_btc_paper: 'Polymarket maker A/B', kalshi_mm_paper: 'Kalshi market-maker A/B',
+                      crypto_fund_carry: 'Funding carry fund', crypto_fund_drift: 'Funding drift fund',
                       news: 'News coverage' };
 
 function esc(v) {
@@ -1494,7 +1556,7 @@ window.Predictions = {
     FEEDS: SPORTS,
     LABEL: SPORT_LABEL,
     load: loadFeed,
-    esc, note, formatStamp, formatDay, formatMoney, formatKickoff,
+    esc, note, formatStamp, formatDay, formatMoney, formatKickoff, fundDollars,
     relativeAge, parseIsoDay, formatSigned,
     MS_HOUR, MS_DAY,
 };

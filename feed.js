@@ -20,6 +20,45 @@ const P = window.Predictions;
 const esc = P.esc;
 
 const PROJECTS = {
+    crypto_fund_carry: {
+        title: 'Funding Carry Fund (paper)',
+        tagline: 'Cross-exchange funding carry, traded hourly with paper capital and settled from the venues\u2019 own history.',
+        repo: 'funding-rate-arb',
+        stack: ['Python', '13 exchange APIs', 'launchd'],
+        what: 'The funding-rate scanner\u2019s own portfolio simulator, run as a persistent fund: '
+            + 'it holds the same coin long on one exchange and short on another, so price moves '
+            + 'mostly cancel and what is left is the gap between the two funding rates.',
+        how: 'Every hour the scanner fetches all venues, ranks routes by cost-adjusted return on '
+            + 'capital, and the fund rebalances toward the top routes within $1,000 per exchange '
+            + 'and 3x on perpetual legs, holding each new route long enough to collect at least '
+            + 'one funding payment. Before each step it settles the time since the last one from '
+            + 'the venues\u2019 history: every funding payment at its real rate, and any leg whose '
+            + '3x liquidation price was crossed is closed there.',
+        data: 'Public REST APIs of 13 exchanges (Binance and Bybit refuse US connections and are '
+            + 'off). Funding history from 11 of them; OKX hourly candles for the liquidation check.',
+        limits: 'Fills are simulated at the quoted price, with taker fees but no slippage or queue. '
+            + 'Coinbase INTX and Lighter publish no usable funding history, so their legs use the '
+            + 'last seen rate. New entries only happen while the machine is running; stretches '
+            + 'longer than seven days asleep are excluded rather than reconstructed.',
+    },
+    crypto_fund_drift: {
+        title: 'Funding Drift Fund (paper)',
+        tagline: 'Trades perps whose funding rate disagrees with how the price has actually moved, with paper capital.',
+        repo: 'funding-drift',
+        stack: ['Python', 'OKX + 7 exchange APIs', 'launchd'],
+        what: 'The drift scanner\u2019s own portfolio simulator, run as a persistent fund: when a '
+            + 'market\u2019s 24h price move and its funding rate diverge by more than 2%, it takes '
+            + 'the side the funding is mispricing and exits when the gap closes.',
+        how: '$1,000 per exchange at 3x. Exits on drift falling under 0.5% or flipping sign, a 5% '
+            + 'stop, a 10% take-profit, or 72 hours held. Before each hourly step it settles the '
+            + 'time since the last one from history: real funding payments, and stops or '
+            + 'take-profits filled at their level in the hour they were crossed.',
+        data: 'Perpetual 24h returns, volumes and mark prices from OKX (Binance futures refuses US '
+            + 'connections); funding rates and funding history from seven exchanges.',
+        limits: 'Simulated fills at the quoted price with taker fees, no slippage. The universe '
+            + 'includes tokenised leveraged stock funds that exchanges list as perps. Signal-based '
+            + 'exits and new entries only happen while the machine is running.',
+    },
     swing_book: {
         title: 'Swing Book (live paper)',
         tagline: 'MultiFactorV3 signals executed into a $100k Alpaca paper account -- a falsification test, not a showcase.',
@@ -602,6 +641,33 @@ function equityChart(data) {
     `;
 }
 
+function renderFundFull(data) {
+    const pct = v => (v >= 0 ? '+' : '') + (Number(v) * 100).toFixed(2) + '%';
+    const money = v => (Number(v) >= 0 ? '+' : '-') + P.fundDollars(Math.abs(Number(v) || 0));
+    const facts = [`${P.fundDollars(data.equity)} from ${P.fundDollars(data.starting_equity)} (${pct(data.return_pct)})`,
+                   `${money(data.realized_pnl)} realized`, `${money(data.unrealized_pnl)} open`,
+                   `${P.fundDollars(data.fees)} fees`];
+    if (data.funding_pnl != null) facts.push(`${money(data.funding_pnl)} funding`);
+    const closes = (data.closes || []).map(c => `
+            <div class="nba-game">
+                <div class="nba-matchup">
+                    <div class="nba-teams"><span class="pick-team">${esc(c.coin)}</span></div>
+                    <div class="nba-meta">${esc((c.date ? c.date + ' UTC | ' : '') + c.what)}</div>
+                </div>
+                <div class="nba-pick">
+                    <div class="nba-pick-label">Closed</div>
+                    <div class="nba-confidence ${c.pnl >= 0 ? 'confidence-high' : 'confidence-low'}">${esc(money(c.pnl))}</div>
+                </div>
+            </div>`).join('');
+    return equityChart(data)
+        + `<div class="prediction-slate">${esc(facts.join(' | '))}</div>`
+        + `<h2 class="feed-sub">Open positions</h2>`
+        + (data.positions.length ? P.FEEDS['crypto_fund_' + data.fund].render(data)
+                                 : `<p class="prediction-none">${esc(P.FEEDS['crypto_fund_' + data.fund].emptyLabel)}</p>`)
+        + `<h2 class="feed-sub">Recent closes</h2>`
+        + (closes ? `<div class="prediction-content">${closes}</div>` : `<p class="prediction-none">Nothing closed yet.</p>`);
+}
+
 function renderBookFull(data) {
     const extra = [];
     if (data.dividends_total) {
@@ -1168,7 +1234,25 @@ function dailySlates(data) {
             + 'beat the price, flat $100 at the last quote before the game.' };
 }
 
+// The funds' own day-by-day record: end-of-day equity and that day's P&L, UTC days.
+function fundDays(data) {
+    const days = data.daily || [];
+    if (!days.length) return null;
+    const rows = days.map(d => ({
+        when: d.date,
+        facts: `${P.fundDollars(d.equity)} at the end of the day`,
+        label: 'Day P&L',
+        value: (d.pnl >= 0 ? '+' : '-') + P.fundDollars(Math.abs(d.pnl)),
+        cls: d.pnl >= 0 ? 'confidence-high' : 'confidence-low',
+        sub: '',
+    }));
+    return { title: 'Day by day', rows, note: 'UTC days. Each day is the change in paper equity '
+        + 'from the previous day\u2019s last hourly step, funding and fees included.' };
+}
+
 const SESSIONS = {
+    crypto_fund_carry: fundDays,
+    crypto_fund_drift: fundDays,
     mlb: dailySlates,
     nba: dailySlates,
     nfl: nflWeeks,
@@ -1383,7 +1467,15 @@ function projectPanel(proj) {
 
 // Counters worth showing differ per feed, so each one names its own. Anything absent
 // from the payload is skipped rather than rendered as "undefined".
+const fundFacts = d => [['Strategy', d.strategy], ['Started', d.started],
+                        ['Paper capital', `${P.fundDollars(d.starting_equity)} (${P.fundDollars(d.params.per_venue)} x ${d.params.venues} exchanges, ${d.params.leverage}x)`],
+                        ['Open / closed', `${d.open_positions} / ${d.closed_trades}`],
+                        ['Settled from venue history', `${d.settlement.real} real, ${d.settlement.estimated} estimated`],
+                        ['Machine asleep', `${d.asleep_hours}h settled from history` + (d.excluded_hours ? `, ${d.excluded_hours}h excluded` : '')]];
+
 const FACTS = {
+    crypto_fund_carry: fundFacts,
+    crypto_fund_drift: fundFacts,
     pm_btc_paper: d => [['Status', d.status], ['Settled windows', d.arms.length ? d.arms[0].units : 0],
                         ['Needed for a verdict', d.min_units_for_verdict], ['Phase', d.phase], ['Started', d.started]],
     kalshi_mm_paper: d => [['Status', d.status], ['Paired days', d.arms.length ? d.arms[0].units : 0],
@@ -1460,6 +1552,8 @@ if (P.FEEDS.nba) P.FEEDS.nba.renderFull = renderGamesWithResults;
 if (P.FEEDS.mlb) P.FEEDS.mlb.renderFull = d =>
     P.FEEDS.mlb.render({ ...d, games: [] }) + renderGamesWithResults(d);
 if (P.FEEDS.magic_formula) P.FEEDS.magic_formula.renderFull = renderMagicFormulaFull;
+if (P.FEEDS.crypto_fund_carry) P.FEEDS.crypto_fund_carry.renderFull = renderFundFull;
+if (P.FEEDS.crypto_fund_drift) P.FEEDS.crypto_fund_drift.renderFull = renderFundFull;
 if (P.FEEDS.swing_book) P.FEEDS.swing_book.renderFull = renderBookFull;
 if (P.FEEDS.mf_book) P.FEEDS.mf_book.renderFull = renderBookFull;
 if (P.FEEDS.stock_levels) P.FEEDS.stock_levels.renderFull = renderBookFull;

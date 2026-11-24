@@ -1284,3 +1284,48 @@ class SlateBetRuleTest(unittest.TestCase):
     def test_unknown_rule_rejected(self):
         with self.assertRaises(Invalid):
             self._check(self._game(rule="martingale"))
+
+
+class CryptoFundTest(unittest.TestCase):
+    """crypto_fund_carry / crypto_fund_drift: paper only, a self-consistent return,
+    counts that match their lists."""
+
+    def _payload(self, **over):
+        d = {"generated_at": NOW.isoformat(), "fund": "drift", "paper": True,
+             "strategy": "Funding vs realized drift", "started": "2026-09-08",
+             "starting_equity": 7000.0, "equity": 7070.0, "return_pct": 0.01,
+             "realized_pnl": 50.0, "unrealized_pnl": 20.0, "fees": 10.0,
+             "open_positions": 1, "closed_trades": 1,
+             "equity_curve": [{"date": "2026-09-08 01:00", "equity": 7000.0}, {"date": "2026-09-09 01:00", "equity": 7070.0}],
+             "daily": [{"date": "2026-09-09", "equity": 7070.0, "pnl": 70.0}],
+             "positions": [{"coin": "ABC", "legs": "Gate", "side": "long", "margin": 1000.0, "funding": 1.0, "pnl": 20.0}],
+             "closes": [{"date": "2026-09-08 20:00", "coin": "XYZ", "what": "long closed: stop", "pnl": 50.0}],
+             "settlement": {"real": 3, "estimated": 0, "note": "from venue history"},
+             "asleep_hours": 0, "excluded_hours": 0}
+        d.update(over)
+        return d
+
+    def test_a_valid_fund_passes(self):
+        validate("crypto_fund_drift", self._payload(), now=NOW)
+
+    def test_real_money_is_refused(self):
+        with self.assertRaises(Invalid):
+            validate("crypto_fund_drift", self._payload(paper=False), now=NOW)
+
+    def test_return_must_match_equity_and_base(self):
+        with self.assertRaises(Invalid):
+            validate("crypto_fund_drift", self._payload(return_pct=0.05), now=NOW)
+
+    def test_open_count_must_match_positions(self):
+        with self.assertRaises(Invalid):
+            validate("crypto_fund_drift", self._payload(open_positions=3), now=NOW)
+
+    def test_fund_must_match_the_feed_it_is_published_as(self):
+        with self.assertRaises(Invalid):
+            validate("crypto_fund_carry", self._payload(), now=NOW)
+
+    def test_side_is_long_short_or_null(self):
+        bad = self._payload()
+        bad["positions"][0]["side"] = "both"
+        with self.assertRaises(Invalid):
+            validate("crypto_fund_drift", bad, now=NOW)

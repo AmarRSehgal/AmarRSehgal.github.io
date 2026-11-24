@@ -97,6 +97,12 @@ PAPER_STATUS = ('collecting', 'verdict')
 PAPER_VERDICTS = ('collecting', 'better', 'worse', 'indistinguishable')
 
 
+FUND_KEYS = ('generated_at', 'fund', 'paper', 'strategy', 'started', 'starting_equity', 'equity',
+             'return_pct', 'realized_pnl', 'unrealized_pnl', 'fees', 'open_positions', 'closed_trades',
+             'equity_curve', 'daily', 'positions', 'closes', 'settlement', 'asleep_hours', 'excluded_hours')
+FUND_POSITION_KEYS = ('coin', 'legs', 'margin', 'funding', 'pnl')
+
+
 SPECS = {
     'nba': (('generated_at', 'date', 'games'), 'games',
             ('away_team', 'home_team', 'pick', 'pred_spread', 'ml_win_prob', 'confidence')),
@@ -152,6 +158,11 @@ SPECS = {
     # `starting_equity` is required because a return with no base is unfalsifiable, and
     # `account` because a book published under the wrong account number is worse than
     # no book at all.
+    # The two crypto paper funds (funding-rate-arb, funding-drift). Same shape, two feeds.
+    # Paper only: `paper` must be literally true. The equity curve is hourly for the last
+    # week and daily before that, so the chart and the book-style return agree.
+    'crypto_fund_carry': (FUND_KEYS, 'positions', FUND_POSITION_KEYS),
+    'crypto_fund_drift': (FUND_KEYS, 'positions', FUND_POSITION_KEYS),
     'swing_book': (('generated_at', 'account', 'started', 'starting_equity', 'equity',
                     'positions'), 'positions',
                    ('ticker', 'qty', 'avg_entry', 'price', 'market_value', 'pnl',
@@ -1014,6 +1025,56 @@ def check_book_position(where, pos, long_only=True):
         raise Invalid(f'{where} has a non-positive price')
 
 
+def check_fund_payload(data, sport):
+    """A crypto paper fund: paper only, a return that matches its own equity and base,
+    and counts that match the lists they summarise."""
+    if data['paper'] is not True:
+        raise Invalid('paper must be true -- these funds trade no real money, and the page says so')
+    if data['fund'] != sport.removeprefix('crypto_fund_'):
+        raise Invalid(f'fund={data["fund"]!r} published as {sport}')
+    require_str('<payload>', 'strategy', data['strategy'])
+    if data['started'] is not None:
+        check_date_string('<payload>', 'started', data['started'])
+    base = require_number('<payload>', 'starting_equity', data['starting_equity'])
+    if base <= 0:
+        raise Invalid('starting_equity must be positive -- a return with no base is unfalsifiable')
+    eq = require_number('<payload>', 'equity', data['equity'])
+    ret = require_number('<payload>', 'return_pct', data['return_pct'])
+    if abs((eq / base - 1) - ret) > 1e-4:
+        raise Invalid(f'return_pct={ret} does not match equity/starting_equity-1={eq / base - 1:.6f}')
+    for k in ('realized_pnl', 'unrealized_pnl', 'fees', 'asleep_hours', 'excluded_hours'):
+        require_number('<payload>', k, data[k])
+    for k, lst in (('open_positions', 'positions'), ('closed_trades', 'closes')):
+        n = require_int('<payload>', k, data[k])
+        if not isinstance(data[lst], list):
+            raise Invalid(f'{lst} must be a list')
+        if k == 'open_positions' and n != len(data[lst]):
+            raise Invalid(f'{k}={n} but {len(data[lst])} {lst} are listed')
+    for key in ('equity_curve', 'daily'):
+        if not isinstance(data[key], list):
+            raise Invalid(f'{key} must be a list')
+        for i, pt in enumerate(data[key]):
+            require_str(f'{key}[{i}]', 'date', pt.get('date'))
+            require_number(f'{key}[{i}]', 'equity', pt.get('equity'))
+    for i, c in enumerate(data['closes']):
+        require_str(f'closes[{i}]', 'coin', c.get('coin'))
+        require_str(f'closes[{i}]', 'what', c.get('what'))
+        require_number(f'closes[{i}]', 'pnl', c.get('pnl'))
+    if not isinstance(data['settlement'], dict):
+        raise Invalid('settlement must be an object')
+    require_str('settlement', 'note', data['settlement'].get('note'))
+
+
+def check_fund_position(where, pos):
+    require_str(where, 'coin', pos['coin'])
+    require_str(where, 'legs', pos['legs'])
+    if require_number(where, 'margin', pos['margin']) < 0:
+        raise Invalid(f'{where}.margin is negative')
+    require_number(where, 'funding', pos['funding'])
+    require_number(where, 'pnl', pos['pnl'])
+    if pos.get('side') not in (None, 'long', 'short'):
+        raise Invalid(f'{where}.side={pos.get("side")!r} must be long, short or null')
+
 def check_contracts_payload(data):
     """Payload-level checks for the federal-lanes feed: the counters and the `open` list.
 
@@ -1329,6 +1390,8 @@ def validate(sport, data, now=None):
                     raise Invalid(f'strategy entry missing {k!r}')
         if not isinstance(data['research'], dict):
             raise Invalid('research must be an object')
+    elif sport in ('crypto_fund_carry', 'crypto_fund_drift'):
+        check_fund_payload(data, sport)
     elif sport in ('swing_book', 'mf_book'):
         check_book_payload(data, sport)
     elif sport in ('pm_btc_paper', 'kalshi_mm_paper'):
@@ -1367,6 +1430,8 @@ def validate(sport, data, now=None):
             check_source_section(where, item)
         elif sport == 'contracts':
             check_lane(where, item)
+        elif sport in ('crypto_fund_carry', 'crypto_fund_drift'):
+            check_fund_position(where, item)
         elif sport in ('swing_book', 'mf_book', 'stock_levels'):
             # stock_levels is dollar-neutral: its shorts are the strategy, not a reconcile bug.
             check_book_position(where, item, long_only=sport != 'stock_levels')
