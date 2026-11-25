@@ -1,133 +1,133 @@
 {
-  "generated_at": "2026-11-24T14:35:10.763247+00:00",
+  "generated_at": "2026-11-25T14:35:11.048720+00:00",
   "strategy": "MultiFactorV3",
   "account": "PA37U0PIU9B9",
   "paper": true,
   "started": "2026-09-12",
   "starting_equity": 100000.0,
-  "equity": 91915.69,
-  "cash": 2154.04,
-  "return_pct": -0.0808,
+  "equity": 91969.76,
+  "cash": 2119.81,
+  "return_pct": -0.0803,
   "positions": [
-    {
-      "ticker": "AXP",
-      "qty": 24.0922,
-      "avg_entry": 304.78,
-      "price": 307.04,
-      "market_value": 7397.26,
-      "pnl": 54.45,
-      "return_pct": 0.0074,
-      "weight_pct": 0.0805
-    },
-    {
-      "ticker": "LIN",
-      "qty": 14.5487,
-      "avg_entry": 511.2,
-      "price": 514.51,
-      "market_value": 7485.51,
-      "pnl": 48.23,
-      "return_pct": 0.0065,
-      "weight_pct": 0.0814
-    },
-    {
-      "ticker": "SCHW",
-      "qty": 80.6131,
-      "avg_entry": 92.18,
-      "price": 92.61,
-      "market_value": 7465.58,
-      "pnl": 34.68,
-      "return_pct": 0.0047,
-      "weight_pct": 0.0812
-    },
-    {
-      "ticker": "DIS",
-      "qty": 63.6923,
-      "avg_entry": 120.26,
-      "price": 120.31,
-      "market_value": 7662.81,
-      "pnl": 3.18,
-      "return_pct": 0.0004,
-      "weight_pct": 0.0834
-    },
-    {
-      "ticker": "CVX",
-      "qty": 35.8752,
-      "avg_entry": 207.13,
-      "price": 206.96,
-      "market_value": 7424.73,
-      "pnl": -6.17,
-      "return_pct": -0.0008,
-      "weight_pct": 0.0808
-    },
     {
       "ticker": "NEE",
       "qty": 88.0397,
       "avg_entry": 83.72,
-      "price": 83.51,
-      "market_value": 7352.2,
-      "pnl": -18.15,
-      "return_pct": -0.0025,
-      "weight_pct": 0.08
+      "price": 84.93,
+      "market_value": 7477.21,
+      "pnl": 106.86,
+      "return_pct": 0.0145,
+      "weight_pct": 0.0813
     },
     {
       "ticker": "HD",
       "qty": 22.4957,
       "avg_entry": 350.29,
-      "price": 345.56,
-      "market_value": 7773.61,
-      "pnl": -106.48,
-      "return_pct": -0.0135,
-      "weight_pct": 0.0846
+      "price": 355.21,
+      "market_value": 7990.69,
+      "pnl": 110.6,
+      "return_pct": 0.014,
+      "weight_pct": 0.0869
     },
     {
       "ticker": "CB",
       "qty": 20.4808,
       "avg_entry": 374.4,
-      "price": 369.24,
-      "market_value": 7562.35,
-      "pnl": -105.7,
-      "return_pct": -0.0138,
-      "weight_pct": 0.0823
+      "price": 379.47,
+      "market_value": 7771.87,
+      "pnl": 103.82,
+      "return_pct": 0.0135,
+      "weight_pct": 0.0845
+    },
+    {
+      "ticker": "DIS",
+      "qty": 63.6923,
+      "avg_entry": 120.26,
+      "price": 121.89,
+      "market_value": 7763.45,
+      "pnl": 103.82,
+      "return_pct": 0.0135,
+      "weight_pct": 0.0844
+    },
+    {
+      "ticker": "CVX",
+      "qty": 35.8752,
+      "avg_entry": 207.13,
+      "price": 209.54,
+      "market_value": 7517.25,
+      "pnl": 86.35,
+      "return_pct": 0.0116,
+      "weight_pct": 0.0817
+    },
+    {
+      "ticker": "LIN",
+      "qty": 14.5487,
+      "avg_entry": 511.2,
+      "price": 516.64,
+      "market_value": 7516.42,
+      "pnl": 79.14,
+      "return_pct": 0.0106,
+      "weight_pct": 0.0817
+    },
+    {
+      "ticker": "SCHW",
+      "qty": 80.6131,
+      "avg_entry": 92.18,
+      "price": 93.11,
+      "market_value": 7505.89,
+      "pnl": 74.99,
+      "return_pct": 0.0101,
+      "weight_pct": 0.0816
+    },
+    {
+      "ticker": "AXP",
+      "qty": 24.0922,
+      "avg_entry": 304.78,
+      "price": 305.49,
+      "market_value": 7360.0,
+      "pnl": 17.19,
+      "return_pct": 0.0023,
+      "weight_pct": 0.08
     },
     {
       "ticker": "COST",
       "qty": 6.8263,
       "avg_entry": 1107.34,
-      "price": 1077.15,
-      "market_value": 7352.97,
-      "pnl": -206.09,
-      "return_pct": -0.0273,
-      "weight_pct": 0.08
-    },
-    {
-      "ticker": "UBER",
-      "qty": 113.925,
-      "avg_entry": 66.74,
-      "price": 64.62,
-      "market_value": 7362.41,
-      "pnl": -241.26,
-      "return_pct": -0.0317,
-      "weight_pct": 0.0801
+      "price": 1094.49,
+      "market_value": 7471.34,
+      "pnl": -87.72,
+      "return_pct": -0.0116,
+      "weight_pct": 0.0812
     },
     {
       "ticker": "SPGI",
       "qty": 16.6454,
       "avg_entry": 472.33,
-      "price": 454.69,
-      "market_value": 7568.6,
-      "pnl": -293.56,
-      "return_pct": -0.0373,
-      "weight_pct": 0.0823
+      "price": 455.62,
+      "market_value": 7584.0,
+      "pnl": -278.16,
+      "return_pct": -0.0354,
+      "weight_pct": 0.0825
+    },
+    {
+      "ticker": "UBER",
+      "qty": 114.4572,
+      "avg_entry": 66.73,
+      "price": 64.27,
+      "market_value": 7355.59,
+      "pnl": -282.3,
+      "return_pct": -0.037,
+      "weight_pct": 0.08
     },
     {
       "ticker": "TXN",
       "qty": 26.605,
       "avg_entry": 287.63,
-      "price": 276.32,
-      "market_value": 7351.64,
-      "pnl": -300.67,
-      "return_pct": -0.0393,
-      "weight_pct": 0.08
+      "price": 245.76,
+      "market_value": 6538.45,
+      "pnl": -1113.86,
+      "return_pct": -0.1456,
+      "weight_pct": 0.0711
     }
   ],
   "open_positions": 12,
@@ -339,11 +339,15 @@
     {
       "date": "2026-11-24",
       "equity": 92346.94
+    },
+    {
+      "date": "2026-11-25",
+      "equity": 92336.75
     }
   ],
   "benchmark": "SPY",
-  "benchmark_return_pct": -0.046,
-  "excess_return_pct": -0.0348,
+  "benchmark_return_pct": -0.0506,
+  "excess_return_pct": -0.0297,
   "ex_downtime": {
     "windows": [
       {
@@ -356,11 +360,11 @@
       }
     ],
     "sessions_excluded": 17,
-    "return_pct": -0.1096,
-    "benchmark_return_pct": -0.0373,
-    "excess_return_pct": -0.0723
+    "return_pct": -0.1091,
+    "benchmark_return_pct": -0.042,
+    "excess_return_pct": -0.0671
   },
-  "days_live": 49,
+  "days_live": 50,
   "verdict_due": false,
   "retire_after_days": 180,
   "trades": [
@@ -766,8 +770,8 @@
     }
   ],
   "trades_total": 208,
-  "rebalances_total": 87,
-  "rebalanced_value": 9696.45,
+  "rebalances_total": 88,
+  "rebalanced_value": 9730.67,
   "realized_pnl": -7121.34,
   "trade_days": [
     {
