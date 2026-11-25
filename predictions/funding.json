@@ -1,23 +1,10 @@
 {
-  "generated_at": "2026-11-25T20:00:27.192893+00:00",
+  "generated_at": "2026-11-25T21:00:26.777560+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
-    {
-      "base": "TRUMP",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 847.97,
-      "net_at_hold": 0.7744,
-      "cost_bps": 26.0
-    },
     {
       "base": "LDO",
       "type": "perp-perp",
@@ -29,6 +16,19 @@
       "scans": 24,
       "net_apr": 847.09,
       "net_at_hold": 0.7736,
+      "cost_bps": 26.0
+    },
+    {
+      "base": "TRUMP",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 846.65,
+      "net_at_hold": 0.7732,
       "cost_bps": 26.0
     },
     {
