@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-25T17:24:20.695938+00:00",
+  "generated_at": "2026-11-25T18:24:26.075674+00:00",
   "window_hours": 24,
-  "articles_in_window": 2120,
+  "articles_in_window": 2126,
   "collection_days": 72,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,92 +9,92 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
-      "term": "trump",
-      "articles": 145,
+      "term": "nvidia",
+      "articles": 125,
       "sources": 35,
       "sentiment_direction": "mixed",
-      "surge": 0.72,
-      "sentiment_mean": 0.062,
-      "headline": "Trump administration to raise tariffs on China, EU, Brazil and others",
-      "headline_source": "PBS NewsHour",
-      "headline_url": "https://www.pbs.org/newshour/politics/trump-administration-to-raise-tariffs-on-china-eu-brazil-and-others"
+      "surge": 1.23,
+      "sentiment_mean": 0.13,
+      "headline": "Nvidia\u2019s Billion-Dollar Board Bet: Who\u2019s Protected as Lawsuits Mount?",
+      "headline_source": "CNBC Top News",
+      "headline_url": "https://www.cnbc.com/2026/11/25/nvidias-billion-dollar-board-bet-whos-protected-as-lawsuits-mount.html"
     },
     {
-      "term": "nvidia",
-      "articles": 126,
-      "sources": 35,
+      "term": "trump",
+      "articles": 140,
+      "sources": 34,
       "sentiment_direction": "mixed",
-      "surge": 1.25,
-      "sentiment_mean": 0.129,
-      "headline": "Nvidia leads tech sell-off as Huang comeback rally fizzles and AI concerns return",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/25/nvidia-ai-stock-tech-selloff.html"
+      "surge": 0.7,
+      "sentiment_mean": 0.051,
+      "headline": "Far-left podcaster's 'bottom feeder' remark about Melania Trump draws conservative rebuke",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/media/far-left-podcaster-bottom-feeder-remark-melania-trump-draws-conservative-rebuke"
     },
     {
       "term": "huang",
-      "articles": 123,
+      "articles": 119,
       "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 1.53,
-      "sentiment_mean": 0.109,
-      "headline": "Nvidia leads tech sell-off as Huang comeback rally fizzles and AI concerns return",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/25/nvidia-ai-stock-tech-selloff.html"
+      "surge": 1.46,
+      "sentiment_mean": 0.122,
+      "headline": "US Justice Department did not open probe into Jensen Huang before reinstatement, sources say",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/economy-news/us-justice-department-did-not-open-probe-into-jensen-huang-before-reinstatement-sources-say-5051296"
     },
     {
       "term": "jensen",
-      "articles": 99,
+      "articles": 98,
       "sources": 32,
       "sentiment_direction": "mixed",
-      "surge": 1.46,
-      "sentiment_mean": 0.124,
-      "headline": "No evidence that Alice spied on Jensen Huang: US officials to congressional staffers",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/world/us/no-evidence-that-alice-spied-on-jensen-huang-us-officials-to-congressional-staffers/articleshow/136168430.cms"
+      "surge": 1.44,
+      "sentiment_mean": 0.139,
+      "headline": "US Justice Department did not open probe into Jensen Huang before reinstatement, sources say",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/economy-news/us-justice-department-did-not-open-probe-into-jensen-huang-before-reinstatement-sources-say-5051296"
     },
     {
       "term": "tech",
-      "articles": 80,
-      "sources": 30,
-      "sentiment_direction": "mixed",
-      "surge": 1.14,
-      "sentiment_mean": -0.045,
-      "headline": "Nvidia leads tech sell-off as Huang comeback rally fizzles and AI concerns return",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/25/nvidia-ai-stock-tech-selloff.html"
-    },
-    {
-      "term": "president",
-      "articles": 92,
+      "articles": 85,
       "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 0.73,
-      "sentiment_mean": 0.093,
-      "headline": "South African President Wins Reprieve From \u2018Farmgate\u2019 Impeachment Investigation",
-      "headline_source": "NYT World",
-      "headline_url": "https://www.nytimes.com/2026/11/25/world/africa/south-africa-ramaphosa-farmgate.html"
+      "surge": 1.21,
+      "sentiment_mean": -0.046,
+      "headline": "Trump officials reportedly at odds over tech titan's comeback as national security concerns linger",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/politics/trump-officials-odds-tech-titan-comeback-national-security-concerns-linger"
     },
     {
       "term": "security",
       "articles": 76,
       "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 1.28,
-      "sentiment_mean": 0.136,
-      "headline": "Colombia: Security forces rescue hostages in supermarket siege",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/video/20261125-colombia-security-forces-rescue-hostages-in-supermarket-siege"
+      "surge": 1.27,
+      "sentiment_mean": 0.119,
+      "headline": "Trump officials reportedly at odds over tech titan's comeback as national security concerns linger",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/politics/trump-officials-odds-tech-titan-comeback-national-security-concerns-linger"
+    },
+    {
+      "term": "president",
+      "articles": 89,
+      "sources": 28,
+      "sentiment_direction": "mixed",
+      "surge": 0.7,
+      "sentiment_mean": 0.099,
+      "headline": "South African President Wins Reprieve From \u2018Farmgate\u2019 Impeachment Investigation",
+      "headline_source": "NYT World",
+      "headline_url": "https://www.nytimes.com/2026/11/25/world/africa/south-africa-ramaphosa-farmgate.html"
     },
     {
       "term": "company",
-      "articles": 90,
-      "sources": 25,
+      "articles": 94,
+      "sources": 26,
       "sentiment_direction": "mixed",
-      "surge": 1.27,
-      "sentiment_mean": -0.084,
-      "headline": "Energy Vault CEO buys $60,750 in company stock",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/insider-trading-news/energy-vault-ceo-buys-60750-in-company-stock-93CH-5051259"
+      "surge": 1.34,
+      "sentiment_mean": -0.093,
+      "headline": "Tiger Woods declawed in courtroom battle over Sun Day Red company logo",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/outkick-sports/tiger-woods-declawed-courtroom-battle-sun-day-red-company-logo"
     }
   ],
   "hours_since_fetch": 0.0
