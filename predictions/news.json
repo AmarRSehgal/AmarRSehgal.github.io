@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-25T08:24:18.832368+00:00",
+  "generated_at": "2026-11-25T09:24:19.368010+00:00",
   "window_hours": 24,
-  "articles_in_window": 2117,
+  "articles_in_window": 2118,
   "collection_days": 72,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,78 +9,67 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
-      "term": "huang",
-      "articles": 169,
-      "sources": 39,
-      "sentiment_direction": "mixed",
-      "surge": 2.41,
-      "sentiment_mean": 0.137,
-      "headline": "EXCLUSIVE: Alice Huang-linked firms listed $270 million in AI servers in China, records show - Reuters",
-      "headline_source": "Reuters",
-      "headline_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYXNKWVJFdGJPenhtYnNFM2VnNnJGdUpjaUlfVDMycE9TWlVUOWJwNVNmU0dyMC1OUF90NzQ1TUZwdDlERUc0RENMRU44MVo2eGhsT1V3MTFpLXh0OTM3cW1hWkNZbGFzc3V5WVdFenoxTE5uZkZoaDNXdW41cmFzVThQZnVNYUR2N3hMcE1EeUQ4cGotR3FVYjJKV0FudldtekoyZUQ3b2NlNTUxWmNfODdPd3RHVlNZM2tsYWpwSFVjZGFY?oc=5"
-    },
-    {
       "term": "nvidia",
-      "articles": 183,
+      "articles": 178,
       "sources": 38,
       "sentiment_direction": "mixed",
-      "surge": 1.94,
-      "sentiment_mean": 0.132,
-      "headline": "AI debt worries grow as Nvidia rebound masks Big Tech spending squeeze",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/25/ai-debt-big-tech-spending-nvidia.html"
+      "surge": 1.87,
+      "sentiment_mean": 0.133,
+      "headline": "Why Jensen Huang\u2019s Return to Nvidia Matters for China",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-11-25/why-jensen-huang-s-return-to-nvidia-matters-for-china-video"
+    },
+    {
+      "term": "huang",
+      "articles": 165,
+      "sources": 38,
+      "sentiment_direction": "mixed",
+      "surge": 2.31,
+      "sentiment_mean": 0.139,
+      "headline": "Why Jensen Huang\u2019s Return to Nvidia Matters for China",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-11-25/why-jensen-huang-s-return-to-nvidia-matters-for-china-video"
     },
     {
       "term": "jensen",
-      "articles": 139,
-      "sources": 37,
+      "articles": 135,
+      "sources": 36,
       "sentiment_direction": "positive",
-      "surge": 2.33,
-      "sentiment_mean": 0.15,
-      "headline": "Jensen Huang says he\u2019s thankful for second chance at Nvidia employee meeting",
-      "headline_source": "NBC News",
-      "headline_url": "https://www.nbcnews.com/business/business-news/jensen-huang-says-s-thankful-second-chance-nvidia-employee-meeting-rcna611235"
+      "surge": 2.22,
+      "sentiment_mean": 0.161,
+      "headline": "Why Jensen Huang\u2019s Return to Nvidia Matters for China",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-11-25/why-jensen-huang-s-return-to-nvidia-matters-for-china-video"
     },
     {
       "term": "trump",
-      "articles": 167,
-      "sources": 33,
+      "articles": 162,
+      "sources": 32,
       "sentiment_direction": "positive",
-      "surge": 0.79,
-      "sentiment_mean": 0.169,
+      "surge": 0.77,
+      "sentiment_mean": 0.188,
       "headline": "Migrant who became a symbol in Trump crackdown leaves US voluntarily",
       "headline_source": "South China Morning Post",
       "headline_url": "https://www.scmp.com/news/world/united-states-canada/article/3375712/migrant-who-became-symbol-trump-crackdown-leaves-us-voluntarily"
     },
     {
-      "term": "president",
-      "articles": 114,
-      "sources": 30,
-      "sentiment_direction": "mixed",
-      "surge": 0.86,
-      "sentiment_mean": 0.11,
-      "headline": "Plexus regional president Frank Zycinski sells $164k in stock",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/insider-trading-news/plexus-regional-president-frank-zycinski-sells-164k-in-stock-93CH-5049930"
-    },
-    {
       "term": "return",
-      "articles": 93,
+      "articles": 88,
       "sources": 30,
       "sentiment_direction": "positive",
-      "surge": 1.94,
-      "sentiment_mean": 0.177,
-      "headline": "Solomons Islands\u2019 return to the fold may thwart China in the Pacific",
-      "headline_source": "Sydney Morning Herald",
-      "headline_url": "https://www.smh.com.au/world/oceania/solomons-islands-return-to-the-fold-may-thwart-china-in-the-pacific-20261125-p61h56.html?ref=rss&utm_medium=rss&utm_source=rss_world"
+      "surge": 1.8,
+      "sentiment_mean": 0.176,
+      "headline": "Why Jensen Huang\u2019s Return to Nvidia Matters for China",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/videos/2026-11-25/why-jensen-huang-s-return-to-nvidia-matters-for-china-video"
     },
     {
       "term": "chinese",
-      "articles": 92,
-      "sources": 30,
+      "articles": 89,
+      "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 1.47,
-      "sentiment_mean": 0.054,
+      "surge": 1.43,
+      "sentiment_mean": 0.078,
       "headline": "BYD apologises for wheel-rim error; Chinese car buyers go electric: 7 EV reads",
       "headline_source": "South China Morning Post",
       "headline_url": "https://www.scmp.com/business/china-evs/article/3375716/byd-apologises-wheel-rim-error-chinese-car-buyers-go-electric-7-ev-reads"
@@ -88,14 +77,25 @@
     {
       "term": "security",
       "articles": 79,
+      "sources": 29,
+      "sentiment_direction": "mixed",
+      "surge": 1.32,
+      "sentiment_mean": 0.086,
+      "headline": "All hostages freed after Colombian security forces storm supermarket, says president",
+      "headline_source": "Guardian World",
+      "headline_url": "https://www.theguardian.com/world/2026/nov/25/hostages-freed-colombia-security-forces-storm-cartagena-supermarket"
+    },
+    {
+      "term": "president",
+      "articles": 111,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 1.34,
-      "sentiment_mean": 0.068,
-      "headline": "China-linked battery projects could receive UK funding despite security warnings",
+      "surge": 0.84,
+      "sentiment_mean": 0.126,
+      "headline": "All hostages freed after Colombian security forces storm supermarket, says president",
       "headline_source": "Guardian World",
-      "headline_url": "https://www.theguardian.com/business/2026/nov/25/china-battery-projects-uk-funding-security-warnings"
+      "headline_url": "https://www.theguardian.com/world/2026/nov/25/hostages-freed-colombia-security-forces-storm-cartagena-supermarket"
     }
   ],
-  "hours_since_fetch": 0.11
+  "hours_since_fetch": 0.0
 }
