@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T04:00:28.146958+00:00",
+  "generated_at": "2026-11-25T05:49:45.513627+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1020.43,
-      "net_at_hold": 0.9319,
-      "cost_bps": 50.23
+      "net_apr": 952.0,
+      "net_at_hold": 0.86941,
+      "cost_bps": 50.21
     },
     {
       "base": "TRUMP",
@@ -84,19 +84,6 @@
       "cost_bps": 26.0
     },
     {
-      "base": "EIGEN",
-      "type": "perp-perp",
-      "long_venue": "Lighter",
-      "short_venue": "Coinbase",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 806.8,
-      "net_at_hold": 0.7368,
-      "cost_bps": 26.0
-    },
-    {
       "base": "WIF",
       "type": "perp-perp",
       "long_venue": "Lighter",
@@ -107,6 +94,19 @@
       "scans": 24,
       "net_apr": 805.92,
       "net_at_hold": 0.736,
+      "cost_bps": 26.0
+    },
+    {
+      "base": "JUP",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 799.35,
+      "net_at_hold": 0.73,
       "cost_bps": 26.0
     }
   ]
