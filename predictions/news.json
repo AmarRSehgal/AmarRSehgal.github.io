@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-26T03:24:19.566959+00:00",
+  "generated_at": "2026-11-26T06:37:52.482525+00:00",
   "window_hours": 24,
-  "articles_in_window": 2085,
+  "articles_in_window": 2046,
   "collection_days": 73,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,92 +10,92 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 145,
-      "sources": 34,
+      "articles": 150,
+      "sources": 33,
       "sentiment_direction": "mixed",
-      "surge": 0.75,
-      "sentiment_mean": 0.016,
-      "headline": "Trump admin weighed using Cold War law to reinstate Nvidia CEO Huang, WaPo reports",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/stock-market-news/trump-admin-weighed-using-cold-war-law-to-reinstate-nvidia-ceo-huang-wapo-reports-5051938"
+      "surge": 0.79,
+      "sentiment_mean": -0.006,
+      "headline": "Trump and NATO chief urge Russia to avoid actions that widen Ukraine war",
+      "headline_source": "Japan Times",
+      "headline_url": "https://www.japantimes.co.jp/news/2026/11/26/world/politics/trump-nato-chief-russia-ukraine-war/"
     },
     {
       "term": "nvidia",
-      "articles": 94,
-      "sources": 28,
+      "articles": 90,
+      "sources": 27,
       "sentiment_direction": "mixed",
-      "surge": 0.9,
-      "sentiment_mean": 0.073,
-      "headline": "\u2018Your booth is waiting\u2019: Denny\u2019s welcomes Jensen Huang back as Nvidia CEO",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/26/dennys-jensen-huang-nvidia.html"
-    },
-    {
-      "term": "tech",
-      "articles": 73,
-      "sources": 26,
-      "sentiment_direction": "mixed",
-      "surge": 1.07,
-      "sentiment_mean": 0.003,
-      "headline": "China sounds alarm on new and unseen tech risks, urges AI-driven security defence",
-      "headline_source": "South China Morning Post",
-      "headline_url": "https://www.scmp.com/news/china/politics/article/3375786/china-sounds-alarm-new-and-unseen-tech-risks-urges-ai-driven-security-defence"
-    },
-    {
-      "term": "thanksgiving",
-      "articles": 132,
-      "sources": 25,
-      "sentiment_direction": "mixed",
-      "surge": 3.82,
-      "sentiment_mean": -0.008,
-      "headline": "Extreme weather threatens Thanksgiving festivities in US",
-      "headline_source": "DW News",
-      "headline_url": "https://www.dw.com/en/extreme-weather-threatens-thanksgiving-festivities-in-us/a-80055880?maca=en-rss-en-all-1573-rdf"
-    },
-    {
-      "term": "court",
-      "articles": 97,
-      "sources": 25,
-      "sentiment_direction": "mixed",
-      "surge": 1.26,
-      "sentiment_mean": -0.14,
-      "headline": "7th high court posting? Justice Rao may be Karnataka Chief Justice",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/india/7th-high-court-posting-justice-rao-may-be-karnataka-chief-justice/articleshow/136174895.cms"
+      "surge": 0.85,
+      "sentiment_mean": 0.059,
+      "headline": "Asian stocks rally as Taiwan, South Korea rebound; Nvidia risks linger",
+      "headline_source": "Investing.com News",
+      "headline_url": "https://www.investing.com/news/stock-market-news/asian-stocks-rally-as-taiwan-south-korea-rebound-nvidia-risks-linger-5052021"
     },
     {
       "term": "president",
-      "articles": 82,
-      "sources": 25,
+      "articles": 88,
+      "sources": 26,
       "sentiment_direction": "mixed",
-      "surge": 0.66,
-      "sentiment_mean": 0.144,
-      "headline": "\u2018Terrorist attack\u2019 caused major blackout in Colombia, president says",
-      "headline_source": "Washington Post",
-      "headline_url": "https://www.washingtonpost.com/business/2026/11/25/terrorist-attack-caused-major-blackout-colombia-president-says/"
+      "surge": 0.72,
+      "sentiment_mean": 0.127,
+      "headline": "Colombian president taunts arrested supermarket hostage-takers",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/video/newsfeed/2026/11/26/colombian-president-taunts-arrested-supermarket-hostage-takers?traffic_source=rss"
+    },
+    {
+      "term": "lead",
+      "articles": 70,
+      "sources": 26,
+      "sentiment_direction": "negative",
+      "surge": 1.88,
+      "sentiment_mean": -0.152,
+      "headline": "Questions linger about lead pollution from Iowa blast, despite officials\u2019 assurances",
+      "headline_source": "NBC News",
+      "headline_url": "https://www.nbcnews.com/science/environment/questions-lead-dust-pollution-safe-iowa-detonation-tests-rcna611366"
+    },
+    {
+      "term": "tech",
+      "articles": 60,
+      "sources": 26,
+      "sentiment_direction": "mixed",
+      "surge": 0.87,
+      "sentiment_mean": -0.006,
+      "headline": "Software stocks spared in tech rout as AI narrative shifts",
+      "headline_source": "Financial Times",
+      "headline_url": "https://www.ft.com/content/90b82a64-4f58-45d7-8a6a-4c2730545b65?syn-25a6b1a6=1"
+    },
+    {
+      "term": "court",
+      "articles": 100,
+      "sources": 25,
+      "sentiment_direction": "negative",
+      "surge": 1.31,
+      "sentiment_mean": -0.154,
+      "headline": "Puerto Rico\u2019s Supreme Court cancels major power contract",
+      "headline_source": "Al Jazeera",
+      "headline_url": "https://www.aljazeera.com/news/2026/11/26/puerto-ricos-supreme-court-cancels-major-power-contract?traffic_source=rss"
     },
     {
       "term": "million",
       "articles": 79,
       "sources": 25,
       "sentiment_direction": "mixed",
-      "surge": 1.35,
-      "sentiment_mean": 0.029,
-      "headline": "US authorizes SpaceX to launch up to one million satellites for orbital data centers",
-      "headline_source": "France24",
-      "headline_url": "https://www.france24.com/en/technology/20261126-us-authorizes-spacex-to-launch-up-to-one-million-satellites-for-orbital-data-centers"
+      "surge": 1.37,
+      "sentiment_mean": 0.049,
+      "headline": "Adani Firms Plan Public Bond Sale to Raise at Least $220 Million",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/articles/2026-11-26/adani-firms-plan-public-bond-sale-to-raise-at-least-220-million"
     },
     {
       "term": "huang",
-      "articles": 72,
+      "articles": 65,
       "sources": 25,
       "sentiment_direction": "mixed",
-      "surge": 0.83,
-      "sentiment_mean": 0.038,
-      "headline": "\u2018Your booth is waiting\u2019: Denny\u2019s welcomes Jensen Huang back as Nvidia CEO",
-      "headline_source": "CNBC Top News",
-      "headline_url": "https://www.cnbc.com/2026/11/26/dennys-jensen-huang-nvidia.html"
+      "surge": 0.74,
+      "sentiment_mean": -0.004,
+      "headline": "EXCLUSIVE: US officials divided over Chinese spying allegations following Jensen Huang's return - Reuters",
+      "headline_source": "Reuters",
+      "headline_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPcXVqeXRkckRvMDl4OWJsUlhwZk5qNDNKZWl5MGxrSWFXSmdUWW14QmJvTXFUSFBXekdMc2lHZ2h0WjY2MjdJWjdhYTB6SUR0NTRaYmVQbUVMVUIyd1NJY1h2N0VDMGJoNHV2MkFYb29wS1R1WVFnWkgxVmNid1g0UVhka29CS3JzUWNvMTFaZTFucGJ6cG1RV2pDc2NUUWRrNnRYcF9uMVM2cEpFNEdrRlJsMHotUkRFR2pneW93?oc=5"
     }
   ],
-  "hours_since_fetch": 0.11
+  "hours_since_fetch": 0.0
 }
