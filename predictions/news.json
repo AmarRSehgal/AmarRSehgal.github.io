@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-26T01:24:20.062521+00:00",
+  "generated_at": "2026-11-26T02:24:23.850087+00:00",
   "window_hours": 24,
-  "articles_in_window": 2094,
+  "articles_in_window": 2091,
   "collection_days": 73,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -10,58 +10,58 @@
   "topics": [
     {
       "term": "trump",
-      "articles": 146,
+      "articles": 142,
       "sources": 34,
       "sentiment_direction": "mixed",
-      "surge": 0.74,
-      "sentiment_mean": 0.04,
-      "headline": "Trump blames volatile stock market on midterm election results",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/trump-blames-volatile-stock-market-midterm-election-results/"
+      "surge": 0.73,
+      "sentiment_mean": 0.035,
+      "headline": "North Korea\u2019s Kim vows to build more nuclear weapons after ignoring Trump\u2019s overture - AP News",
+      "headline_source": "AP News",
+      "headline_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQcjR1N2UyTm5TeG50ZVdtSHRYd1NuZ2lfeWxNQWluM182WUtVUHpGbGRSN05QdkQ2Ti00ZUZzeFFxTE9yMU1SbEVYMlM5RHRicmtoT1R2QTlJUjQ5VFp3Y0RwQmFGRzJpd3lYWmUzUjBFQThMTkhYbGs1TnZSTEF3RnotdE5QVWhaaG54dm9UYW0xQUNJeTg1YXRHZ1JvQQ?oc=5"
     },
     {
       "term": "nvidia",
-      "articles": 95,
+      "articles": 90,
       "sources": 28,
       "sentiment_direction": "mixed",
-      "surge": 0.91,
-      "sentiment_mean": 0.087,
-      "headline": "Trump owned millions in Nvidia stock while pushing for Jensen Huang's reinstatement",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/trump-owned-millions-in-nvidia-shares-while-pushing-for-huang-reinstatement-that-caused-stock-to-soar/"
+      "surge": 0.86,
+      "sentiment_mean": 0.088,
+      "headline": "Nvidia's China link: How US firms with Chinese owners are accessing advanced AI chips",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/world/us/nvidias-china-link-how-us-firms-with-chinese-owners-are-accessing-advanced-ai-chips/articleshow/136175651.cms"
     },
     {
       "term": "president",
-      "articles": 87,
-      "sources": 27,
-      "sentiment_direction": "mixed",
-      "surge": 0.7,
-      "sentiment_mean": 0.133,
+      "articles": 85,
+      "sources": 26,
+      "sentiment_direction": "positive",
+      "surge": 0.68,
+      "sentiment_mean": 0.158,
       "headline": "\u2018Terrorist attack\u2019 caused major blackout in Colombia, president says",
       "headline_source": "Washington Post",
       "headline_url": "https://www.washingtonpost.com/business/2026/11/25/terrorist-attack-caused-major-blackout-colombia-president-says/"
     },
     {
-      "term": "court",
-      "articles": 99,
-      "sources": 26,
-      "sentiment_direction": "negative",
-      "surge": 1.28,
-      "sentiment_mean": -0.157,
-      "headline": "7th high court posting? Justice Rao may be Karnataka Chief Justice",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/india/7th-high-court-posting-justice-rao-may-be-karnataka-chief-justice/articleshow/136174895.cms"
-    },
-    {
       "term": "huang",
-      "articles": 81,
+      "articles": 75,
       "sources": 26,
       "sentiment_direction": "mixed",
-      "surge": 0.93,
-      "sentiment_mean": 0.072,
+      "surge": 0.87,
+      "sentiment_mean": 0.071,
       "headline": "Trump owned millions in Nvidia stock while pushing for Jensen Huang's reinstatement",
       "headline_source": "CBS News",
       "headline_url": "https://www.cbsnews.com/video/trump-owned-millions-in-nvidia-shares-while-pushing-for-huang-reinstatement-that-caused-stock-to-soar/"
+    },
+    {
+      "term": "court",
+      "articles": 96,
+      "sources": 25,
+      "sentiment_direction": "mixed",
+      "surge": 1.23,
+      "sentiment_mean": -0.133,
+      "headline": "7th high court posting? Justice Rao may be Karnataka Chief Justice",
+      "headline_source": "Times of India",
+      "headline_url": "https://timesofindia.indiatimes.com/india/7th-high-court-posting-justice-rao-may-be-karnataka-chief-justice/articleshow/136174895.cms"
     },
     {
       "term": "tech",
@@ -69,32 +69,32 @@
       "sources": 25,
       "sentiment_direction": "mixed",
       "surge": 1.05,
-      "sentiment_mean": -0.008,
-      "headline": "Volatility-weary investors sideswiped as tariff mayhem adds to tech pain",
-      "headline_source": "Japan Times",
-      "headline_url": "https://www.japantimes.co.jp/business/2026/11/26/markets/volatility-investors-tariff-tech-pain/"
-    },
-    {
-      "term": "jensen",
-      "articles": 66,
-      "sources": 25,
-      "sentiment_direction": "mixed",
-      "surge": 0.92,
-      "sentiment_mean": 0.107,
-      "headline": "Trump owned millions in Nvidia stock while pushing for Jensen Huang's reinstatement",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/trump-owned-millions-in-nvidia-shares-while-pushing-for-huang-reinstatement-that-caused-stock-to-soar/"
+      "sentiment_mean": -0.005,
+      "headline": "China sounds alarm on new and unseen tech risks, urges AI-driven security defence",
+      "headline_source": "South China Morning Post",
+      "headline_url": "https://www.scmp.com/news/china/politics/article/3375786/china-sounds-alarm-new-and-unseen-tech-risks-urges-ai-driven-security-defence"
     },
     {
       "term": "lead",
-      "articles": 65,
+      "articles": 69,
       "sources": 25,
       "sentiment_direction": "negative",
-      "surge": 1.75,
-      "sentiment_mean": -0.177,
-      "headline": "EPA detects no lead in air shortly after toxic Iowa chemical detonation",
+      "surge": 1.86,
+      "sentiment_mean": -0.178,
+      "headline": "Questions linger about lead pollution from Iowa blast, despite officials\u2019 assurances",
+      "headline_source": "NBC News",
+      "headline_url": "https://www.nbcnews.com/science/environment/questions-lead-dust-pollution-safe-iowa-detonation-tests-rcna611366"
+    },
+    {
+      "term": "jensen",
+      "articles": 60,
+      "sources": 25,
+      "sentiment_direction": "mixed",
+      "surge": 0.83,
+      "sentiment_mean": 0.11,
+      "headline": "Trump owned millions in Nvidia stock while pushing for Jensen Huang's reinstatement",
       "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/video/epa-detects-no-lead-air-shortly-toxic-iowa-chemical-detonation/"
+      "headline_url": "https://www.cbsnews.com/video/trump-owned-millions-in-nvidia-shares-while-pushing-for-huang-reinstatement-that-caused-stock-to-soar/"
     }
   ],
   "hours_since_fetch": 0.0
