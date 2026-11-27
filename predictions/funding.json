@@ -1,23 +1,10 @@
 {
-  "generated_at": "2026-11-27T15:00:24.405943+00:00",
+  "generated_at": "2026-11-27T16:00:27.697077+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
   "min_hits": 18,
   "opportunities": [
-    {
-      "base": "ME",
-      "type": "perp-perp",
-      "long_venue": "Crypto.com",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 2617.95,
-      "net_at_hold": 2.39082,
-      "cost_bps": 37.25
-    },
     {
       "base": "ME",
       "type": "perp-perp",
@@ -40,8 +27,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1270.27,
-      "net_at_hold": 1.16007,
+      "net_apr": 1207.17,
+      "net_at_hold": 1.10244,
       "cost_bps": 36.58
     },
     {
@@ -60,19 +47,6 @@
     {
       "base": "ME",
       "type": "perp-perp",
-      "long_venue": "Hyperliquid",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1058.28,
-      "net_at_hold": 0.96647,
-      "cost_bps": 33.99
-    },
-    {
-      "base": "ME",
-      "type": "perp-perp",
       "long_venue": "Bitget",
       "short_venue": "Aster",
       "long_instrument": "perp",
@@ -81,7 +55,7 @@
       "scans": 24,
       "net_apr": 1057.54,
       "net_at_hold": 0.96579,
-      "cost_bps": 41.0
+      "cost_bps": 40.32
     },
     {
       "base": "LDO",
@@ -107,6 +81,32 @@
       "scans": 24,
       "net_apr": 837.46,
       "net_at_hold": 0.7648,
+      "cost_bps": 26.0
+    },
+    {
+      "base": "SEI",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 820.81,
+      "net_at_hold": 0.7496,
+      "cost_bps": 26.0
+    },
+    {
+      "base": "PYTH",
+      "type": "perp-perp",
+      "long_venue": "Lighter",
+      "short_venue": "Coinbase",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 819.06,
+      "net_at_hold": 0.748,
       "cost_bps": 26.0
     }
   ]
