@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-27T11:24:20.961322+00:00",
+  "generated_at": "2026-11-27T12:24:34.103533+00:00",
   "window_hours": 24,
-  "articles_in_window": 1737,
+  "articles_in_window": 1730,
   "collection_days": 74,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
@@ -9,93 +9,93 @@
   "caveat": "Ranked by how many independent outlets are covering each topic, not by sentiment. VADER mis-scores news language, so sentiment is shown only as a coarse direction and only where the sample supports it.",
   "topics": [
     {
-      "term": "thanksgiving",
-      "articles": 170,
-      "sources": 26,
+      "term": "trump",
+      "articles": 110,
+      "sources": 29,
       "sentiment_direction": "mixed",
-      "surge": 2.72,
-      "sentiment_mean": 0.083,
-      "headline": "From Thanksgiving blackouts to Black Friday, a holiday hit by wild weather and economic woes",
-      "headline_source": "NPR News",
-      "headline_url": "https://www.npr.org/2026/11/27/nx-s1-6054884/thanksgiving-weather-black-friday"
+      "surge": 0.68,
+      "sentiment_mean": -0.142,
+      "headline": "Intel faced a choice: Give Trump 10% or face the consequences",
+      "headline_source": "Ars Technica",
+      "headline_url": "https://arstechnica.com/tech-policy/2026/11/intel-faced-a-choice-give-trump-10-or-face-the-consequences/"
     },
     {
-      "term": "trump",
-      "articles": 107,
+      "term": "thanksgiving",
+      "articles": 163,
       "sources": 26,
       "sentiment_direction": "mixed",
-      "surge": 0.66,
-      "sentiment_mean": -0.141,
-      "headline": "Democrats vow to restrain Trump\u2019s foreign policy, but foresee limits",
-      "headline_source": "Washington Post",
-      "headline_url": "https://www.washingtonpost.com/national-security/2026/11/27/democrats-vow-restrain-trumps-foreign-policy-foresee-limits/"
+      "surge": 2.52,
+      "sentiment_mean": 0.087,
+      "headline": "Thanksgiving scraps reinvented by top chefs for delicious, easy-to-make meals",
+      "headline_source": "Fox News",
+      "headline_url": "https://www.foxnews.com/food-drink/thanksgiving-scraps-reinvented-top-chefs-delicious-easy-to-make-meals"
+    },
+    {
+      "term": "holiday",
+      "articles": 64,
+      "sources": 25,
+      "sentiment_direction": "positive",
+      "surge": 2.57,
+      "sentiment_mean": 0.349,
+      "headline": "Books, bikes, and The Burbs: These are Ars staff\u2019s holiday gift picks for 2026",
+      "headline_source": "Ars Technica",
+      "headline_url": "https://arstechnica.com/shopping/2026/11/books-bikes-and-the-burbs-these-are-ars-staffs-holiday-gift-picks-for-2026/"
     },
     {
       "term": "home",
       "articles": 59,
-      "sources": 25,
-      "sentiment_direction": "mixed",
-      "surge": 1.16,
-      "sentiment_mean": -0.102,
-      "headline": "Best Kitchen Gifts for Home Cooks (2026)",
-      "headline_source": "Wired",
-      "headline_url": "https://www.wired.com/story/the-best-gifts-for-cooks-who-love-cooking/"
-    },
-    {
-      "term": "holiday",
-      "articles": 66,
       "sources": 24,
-      "sentiment_direction": "positive",
-      "surge": 2.7,
-      "sentiment_mean": 0.338,
-      "headline": "How to spot real Black Friday savings this holiday season amid the affordability squeeze",
+      "sentiment_direction": "mixed",
+      "surge": 1.15,
+      "sentiment_mean": -0.14,
+      "headline": "Illegal immigrant allegedly confessed to killing elderly military veteran for $50K in home attack: docs",
       "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/politics/how-spot-real-black-friday-savings-holiday-season-amid-affordability-squeeze"
+      "headline_url": "https://www.foxnews.com/us/illegal-immigrant-allegedly-confessed-killing-elderly-military-veteran-50k-home-attack-docs"
     },
     {
       "term": "president",
-      "articles": 82,
+      "articles": 84,
       "sources": 22,
       "sentiment_direction": "mixed",
-      "surge": 0.76,
-      "sentiment_mean": -0.081,
-      "headline": "'One community favoured': Ex-CJI flags diversity gap in SC judiciary, writes to president",
-      "headline_source": "Times of India",
-      "headline_url": "https://timesofindia.indiatimes.com/india/one-community-being-favoured-ex-cji-gavai-writes-to-president-murmu-cites-low-obc-sc-and-st-representation-in-judiciary/articleshow/136216500.cms"
+      "surge": 0.79,
+      "sentiment_mean": -0.115,
+      "headline": "Polish President Blocks Pre-Election Tax Cut in New Blow to Tusk",
+      "headline_source": "Bloomberg Markets",
+      "headline_url": "https://www.bloomberg.com/news/articles/2026-11-27/polish-president-blocks-pre-election-tax-cut-in-new-blow-to-tusk"
+    },
+    {
+      "term": "power",
+      "articles": 50,
+      "sources": 22,
+      "sentiment_direction": "mixed",
+      "surge": 1.51,
+      "sentiment_mean": -0.05,
+      "headline": "Democrats hint at healthcare middle ground and storms leave thousands without power: Morning Rundown",
+      "headline_source": "NBC News",
+      "headline_url": "https://www.nbcnews.com/news/us-news/democrats-healthcare-medicare-macys-parade-performers-morning-rundown-rcna611527"
     },
     {
       "term": "government",
-      "articles": 84,
+      "articles": 83,
       "sources": 21,
       "sentiment_direction": "negative",
-      "surge": 1.32,
-      "sentiment_mean": -0.16,
+      "surge": 1.31,
+      "sentiment_mean": -0.156,
       "headline": "Former government chief of China's Guangxi sentenced to death with reprieve over graft - Reuters",
       "headline_source": "Reuters",
       "headline_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQbXpEaENJRlIwSHl4dEZuT0pwQTVreDduek1JSVNKVTB4UkJFMDZUZFBtQUYtYVlHYVZSdklGNXNsbU1vWHc3cS02NkFGSnlSa3Z4a0dybGlwWHpXYW9TUGwyLTJjSmFNNDIzOE5iRlRCS3JBYUpFcVhxOUQwR1dNem5EZm15akU4YV9uc21tYUVwa0tXRmRkdmFuZ2FmeGlScEd6MTljM0RrSXhpazNJSVV4WVVJRDhXc1l1RHdyUWZpVEdmQkE?oc=5"
     },
     {
-      "term": "company",
-      "articles": 58,
-      "sources": 21,
-      "sentiment_direction": "mixed",
-      "surge": 0.84,
-      "sentiment_mean": -0.11,
-      "headline": "Webull CFO buys $90,000 in company shares",
-      "headline_source": "Investing.com News",
-      "headline_url": "https://www.investing.com/news/insider-trading-news/webull-cfo-buys-90000-in-company-shares-93CH-5053302"
-    },
-    {
       "term": "support",
-      "articles": 53,
+      "articles": 51,
       "sources": 21,
       "sentiment_direction": "positive",
-      "surge": 1.63,
-      "sentiment_mean": 0.427,
+      "surge": 1.56,
+      "sentiment_mean": 0.424,
       "headline": "Chinese chip stocks notch biggest ever one-day gains as Beijing signals broader market support - CNBC",
       "headline_source": "Google News Top",
       "headline_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNaUs2ZGhWWGZ4dmxhN1NMMUlJMTJsVXJXQ1RlT1g0NXdQanJVczJ5djBtaGtBajh4ekxnN0JKQjBjTzBHWDNmZXR3cVVnaGpnZW5Fb0R0dGJMa05oYm5oU3hFYkFTNWlMTFlNOHJVdU1CdUJnTVgtTWlaYmtuTUc5TjVtY9IBiAFBVV95cUxPQW92NkJ5MlkwUXJzdzBoYVY5Mzh3TFQ2VjFHN2txazJUc1gxVjVrSzlNWUQ5VVVtdVNwQzhsWjE5WFVVdHBITXpNbFdBY0ctSElyekNOLWNraW5odmxtZ3hCODJuZ1VVSUYwSHNwMmJya3FvU3NoakthQ0IzdTZoNGkyTWV3QktO?oc=5"
     }
   ],
-  "hours_since_fetch": 0.0
+  "hours_since_fetch": 0.12
 }
