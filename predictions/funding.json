@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T12:00:22.778762+00:00",
+  "generated_at": "2026-11-27T13:00:20.988881+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -16,20 +16,7 @@
       "scans": 24,
       "net_apr": 2666.54,
       "net_at_hold": 2.4352,
-      "cost_bps": 37.74
-    },
-    {
-      "base": "MOVE",
-      "type": "perp-perp",
-      "long_venue": "Hyperliquid",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 1657.37,
-      "net_at_hold": 1.51358,
-      "cost_bps": 36.36
+      "cost_bps": 37.5
     },
     {
       "base": "ME",
@@ -40,9 +27,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1568.66,
-      "net_at_hold": 1.43257,
-      "cost_bps": 39.25
+      "net_apr": 1535.89,
+      "net_at_hold": 1.40263,
+      "cost_bps": 39.01
     },
     {
       "base": "MOVE",
@@ -53,22 +40,22 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1555.14,
-      "net_at_hold": 1.42022,
-      "cost_bps": 36.98
+      "net_apr": 1515.1,
+      "net_at_hold": 1.38365,
+      "cost_bps": 36.58
     },
     {
       "base": "MOVE",
       "type": "perp-perp",
-      "long_venue": "Bitget",
+      "long_venue": "Hyperliquid",
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1512.16,
-      "net_at_hold": 1.38097,
-      "cost_bps": 40.57
+      "net_apr": 1508.82,
+      "net_at_hold": 1.37792,
+      "cost_bps": 35.6
     },
     {
       "base": "MOVE",
@@ -79,9 +66,22 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1509.32,
-      "net_at_hold": 1.37838,
-      "cost_bps": 41.36
+      "net_apr": 1487.61,
+      "net_at_hold": 1.35855,
+      "cost_bps": 40.6
+    },
+    {
+      "base": "MOVE",
+      "type": "perp-perp",
+      "long_venue": "Bitget",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 1438.7,
+      "net_at_hold": 1.31388,
+      "cost_bps": 40.26
     },
     {
       "base": "MOVE",
@@ -92,22 +92,22 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1443.31,
-      "net_at_hold": 1.31809,
-      "cost_bps": 52.38
+      "net_apr": 1421.81,
+      "net_at_hold": 1.29846,
+      "cost_bps": 51.8
     },
     {
       "base": "ME",
       "type": "perp-perp",
-      "long_venue": "Bitget",
+      "long_venue": "OKX",
       "short_venue": "Aster",
       "long_instrument": "perp",
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1325.14,
-      "net_at_hold": 1.21018,
-      "cost_bps": 42.53
+      "net_apr": 1200.3,
+      "net_at_hold": 1.09617,
+      "cost_bps": 37.29
     }
   ]
 }
