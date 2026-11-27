@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T07:00:18.271988+00:00",
+  "generated_at": "2026-11-27T08:00:21.133439+00:00",
   "status": "ok",
   "scans_seen": 24,
   "window_scans": 24,
@@ -14,9 +14,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 2681.85,
-      "net_at_hold": 2.44918,
-      "cost_bps": 44.2
+      "net_apr": 2424.92,
+      "net_at_hold": 2.21454,
+      "cost_bps": 42.51
     },
     {
       "base": "MOVE",
@@ -27,22 +27,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 2531.21,
-      "net_at_hold": 2.31161,
+      "net_apr": 2174.44,
+      "net_at_hold": 1.98579,
       "cost_bps": 38.44
-    },
-    {
-      "base": "MOVE",
-      "type": "perp-perp",
-      "long_venue": "KuCoin",
-      "short_venue": "Aster",
-      "long_instrument": "perp",
-      "min_hold_h": 8,
-      "hits": 24,
-      "scans": 24,
-      "net_apr": 2470.11,
-      "net_at_hold": 2.25581,
-      "cost_bps": 41.36
     },
     {
       "base": "MOVE",
@@ -53,9 +40,9 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 2152.89,
-      "net_at_hold": 1.96611,
-      "cost_bps": 36.36
+      "net_apr": 2120.83,
+      "net_at_hold": 1.93683,
+      "cost_bps": 36.58
     },
     {
       "base": "MOVE",
@@ -68,7 +55,20 @@
       "scans": 24,
       "net_apr": 2111.76,
       "net_at_hold": 1.92855,
-      "cost_bps": 52.38
+      "cost_bps": 53.33
+    },
+    {
+      "base": "MOVE",
+      "type": "perp-perp",
+      "long_venue": "KuCoin",
+      "short_venue": "Aster",
+      "long_instrument": "perp",
+      "min_hold_h": 8,
+      "hits": 24,
+      "scans": 24,
+      "net_apr": 2089.24,
+      "net_at_hold": 1.90798,
+      "cost_bps": 41.58
     },
     {
       "base": "CKB",
@@ -79,8 +79,8 @@
       "min_hold_h": 8,
       "hits": 24,
       "scans": 24,
-      "net_apr": 1187.87,
-      "net_at_hold": 1.08481,
+      "net_apr": 1518.14,
+      "net_at_hold": 1.38643,
       "cost_bps": 32.12
     },
     {
