@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-27T23:24:19.582579+00:00",
+  "generated_at": "2026-11-28T00:24:17.749280+00:00",
   "window_hours": 24,
-  "articles_in_window": 1702,
-  "collection_days": 74,
+  "articles_in_window": 1710,
+  "collection_days": 75,
   "min_sources": 4,
   "min_articles_for_sentiment": 10,
   "surge_available": true,
@@ -10,44 +10,66 @@
   "topics": [
     {
       "term": "holiday",
-      "articles": 53,
+      "articles": 51,
       "sources": 24,
       "sentiment_direction": "positive",
-      "surge": 1.84,
-      "sentiment_mean": 0.314,
+      "surge": 1.73,
+      "sentiment_mean": 0.36,
       "headline": "WATCH:  Breaking down the best holiday movies",
       "headline_source": "ABC News",
       "headline_url": "https://abcnews.com/video/138487748/"
     },
     {
       "term": "trump",
-      "articles": 91,
+      "articles": 96,
       "sources": 23,
       "sentiment_direction": "mixed",
-      "surge": 0.62,
-      "sentiment_mean": -0.106,
-      "headline": "Donald Trump Jr criticizes Netflix over racy 'Hunting Wives' Thanksgiving post",
-      "headline_source": "Fox News",
-      "headline_url": "https://www.foxnews.com/media/donald-trump-jr-criticizes-netflix-over-racy-hunting-wives-thanksgiving-post"
+      "surge": 0.66,
+      "sentiment_mean": -0.085,
+      "headline": "Brooks and Capehart on Trump's new tariffs, Nvidia's future and Democratic leadership",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/show/brooks-and-capehart-on-trumps-new-tariffs-nvidias-future-and-democratic-leadership"
     },
     {
       "term": "power",
-      "articles": 68,
+      "articles": 67,
       "sources": 23,
       "sentiment_direction": "mixed",
-      "surge": 1.98,
-      "sentiment_mean": 0.057,
-      "headline": "Power being slowly restored as heavy Thanksgiving storm eases",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/news/east-coast-thanksgiving-storm-power-outages-cleanup/"
+      "surge": 1.92,
+      "sentiment_mean": 0.036,
+      "headline": "News Wrap: Crews work to restore power for thousands after Thanksgiving storm",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/show/news-wrap-crews-work-to-restore-power-for-thousands-after-thanksgiving-storm"
     },
     {
       "term": "black",
-      "articles": 132,
+      "articles": 139,
       "sources": 22,
       "sentiment_direction": "positive",
-      "surge": 4.11,
-      "sentiment_mean": 0.485,
+      "surge": 4.33,
+      "sentiment_mean": 0.482,
+      "headline": "Yeti Coolers Are up to 30% Off for Black Friday (2026)",
+      "headline_source": "Wired",
+      "headline_url": "https://www.wired.com/story/yeti-black-friday-sale-11-2026/"
+    },
+    {
+      "term": "thanksgiving",
+      "articles": 115,
+      "sources": 20,
+      "sentiment_direction": "mixed",
+      "surge": 1.43,
+      "sentiment_mean": -0.048,
+      "headline": "News Wrap: Crews work to restore power for thousands after Thanksgiving storm",
+      "headline_source": "PBS NewsHour",
+      "headline_url": "https://www.pbs.org/newshour/show/news-wrap-crews-work-to-restore-power-for-thousands-after-thanksgiving-storm"
+    },
+    {
+      "term": "deals",
+      "articles": 93,
+      "sources": 20,
+      "sentiment_direction": "positive",
+      "surge": 3.64,
+      "sentiment_mean": 0.544,
       "headline": "The Best Black Friday Gaming Deals I\u2019ve Found (2026)",
       "headline_source": "Wired",
       "headline_url": "https://www.wired.com/story/black-friday-gaming-deals-11-27-2026/"
@@ -55,46 +77,24 @@
     {
       "term": "country",
       "articles": 57,
-      "sources": 21,
+      "sources": 20,
       "sentiment_direction": "mixed",
       "surge": 1.23,
-      "sentiment_mean": -0.102,
+      "sentiment_mean": -0.083,
       "headline": "Joe Rogan says American education system is turning young people against their own country",
       "headline_source": "Fox News",
       "headline_url": "https://www.foxnews.com/media/joe-rogan-american-education-system-turning-young-people-against-their-own-country"
     },
     {
-      "term": "thanksgiving",
-      "articles": 120,
-      "sources": 20,
-      "sentiment_direction": "mixed",
-      "surge": 1.51,
-      "sentiment_mean": -0.02,
-      "headline": "Power being slowly restored as heavy Thanksgiving storm eases",
-      "headline_source": "CBS News",
-      "headline_url": "https://www.cbsnews.com/news/east-coast-thanksgiving-storm-power-outages-cleanup/"
-    },
-    {
-      "term": "deals",
-      "articles": 92,
-      "sources": 20,
-      "sentiment_direction": "positive",
-      "surge": 3.58,
-      "sentiment_mean": 0.562,
-      "headline": "The Best Black Friday Gaming Deals I\u2019ve Found (2026)",
-      "headline_source": "Wired",
-      "headline_url": "https://www.wired.com/story/black-friday-gaming-deals-11-27-2026/"
-    },
-    {
       "term": "election",
-      "articles": 56,
+      "articles": 57,
       "sources": 20,
       "sentiment_direction": "positive",
-      "surge": 2.34,
-      "sentiment_mean": 0.156,
-      "headline": "Johannesburg Lawmakers Snub Helen Zille in Mayoral Election",
-      "headline_source": "NYT World",
-      "headline_url": "https://www.nytimes.com/2026/11/27/world/africa/johannesburg-mayor-zille-mashaba-anc.html"
+      "surge": 2.4,
+      "sentiment_mean": 0.153,
+      "headline": "2026 Colorado Proposition 134 Election Live Results - AP News",
+      "headline_source": "AP News",
+      "headline_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWV9zX2QzeGRMN1c0SkFuaVdDYnNTTVdqU1dVbUprb1ZaQTRnRHJlVnVhS3VZeFdzby05MzFZaWIzNkZRZk4wb1pTSENpQ0ZwWjlpNWRiY2VrSDdhOGEtNG5MS2tBTi1nVGtqQ2o2cG1rajVCSkpYN1RqcHdnenBiVjBB?oc=5"
     }
   ],
   "hours_since_fetch": 0.0
