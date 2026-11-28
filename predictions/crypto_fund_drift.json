@@ -1,18 +1,18 @@
 {
- "generated_at": "2026-11-28T02:43:14.946122+00:00",
+ "generated_at": "2026-11-28T08:43:57.507335+00:00",
  "fund": "drift",
  "paper": true,
  "strategy": "Funding vs realized drift: trade the side the funding rate is mispricing, exit on reversion or a stop",
  "started": "2026-11-24",
  "starting_equity": 7000.0,
- "equity": 7422.49,
- "return_pct": 0.060356,
- "realized_pnl": 260.27,
- "unrealized_pnl": 162.23,
- "fees": 965.85,
+ "equity": 7827.4,
+ "return_pct": 0.1182,
+ "realized_pnl": 688.03,
+ "unrealized_pnl": 139.37,
+ "fees": 1013.55,
  "open_positions": 7,
- "closed_trades": 322,
- "wins": 113,
+ "closed_trades": 338,
+ "wins": 122,
  "params": {
   "per_venue": 1000.0,
   "leverage": 3.0,
@@ -395,13 +395,37 @@
   {
    "date": "2026-11-28 02:43",
    "equity": 7422.49
+  },
+  {
+   "date": "2026-11-28 03:43",
+   "equity": 7537.12
+  },
+  {
+   "date": "2026-11-28 04:43",
+   "equity": 7658.59
+  },
+  {
+   "date": "2026-11-28 05:43",
+   "equity": 7753.35
+  },
+  {
+   "date": "2026-11-28 06:43",
+   "equity": 7924.34
+  },
+  {
+   "date": "2026-11-28 07:43",
+   "equity": 7842.42
+  },
+  {
+   "date": "2026-11-28 08:43",
+   "equity": 7827.4
   }
  ],
  "daily": [
   {
    "date": "2026-11-28",
-   "equity": 7422.49,
-   "pnl": 438.42
+   "equity": 7827.4,
+   "pnl": 843.33
   },
   {
    "date": "2026-11-27",
@@ -426,63 +450,159 @@
  ],
  "positions": [
   {
-   "coin": "INIT",
-   "legs": "Gate",
-   "side": "short",
-   "margin": 1000.0,
-   "funding": 0.0,
-   "pnl": 68.65
-  },
-  {
-   "coin": "AKE",
-   "legs": "HTX",
-   "side": "short",
-   "margin": 1000.0,
-   "funding": 0.0,
-   "pnl": 20.72
-  },
-  {
    "coin": "SNXX",
    "legs": "Bitget",
    "side": "long",
    "margin": 1000.0,
    "funding": 0.0,
-   "pnl": 58.66
+   "pnl": 25.41
   },
   {
-   "coin": "ROBO",
+   "coin": "H",
    "legs": "KuCoin",
-   "side": "long",
+   "side": "short",
    "margin": 1000.0,
-   "funding": 0.0,
-   "pnl": -1.8
+   "funding": 0.54,
+   "pnl": -18.89
   },
   {
    "coin": "CXMT",
    "legs": "OKX",
    "side": "long",
    "margin": 1000.0,
-   "funding": -0.0,
-   "pnl": 18.55
+   "funding": -2.7,
+   "pnl": 59.19
+  },
+  {
+   "coin": "CASHCAT",
+   "legs": "Gate",
+   "side": "short",
+   "margin": 1000.0,
+   "funding": 0.15,
+   "pnl": 8.34
+  },
+  {
+   "coin": "TRUMP",
+   "legs": "HTX",
+   "side": "short",
+   "margin": 1000.0,
+   "funding": 0.15,
+   "pnl": 60.47
   },
   {
    "coin": "ME",
    "legs": "dYdX",
    "side": "short",
    "margin": 1000.0,
-   "funding": 0.0,
-   "pnl": -1.5
+   "funding": 0.04,
+   "pnl": 5.89
   },
   {
-   "coin": "SKY",
+   "coin": "BERA",
    "legs": "Hyperliquid",
-   "side": "long",
+   "side": "short",
    "margin": 1000.0,
    "funding": 0.0,
    "pnl": -1.05
   }
  ],
  "closes": [
+  {
+   "date": "2026-11-28 07:47",
+   "coin": "WLFI",
+   "what": "short closed: stop",
+   "pnl": -51.05
+  },
+  {
+   "date": "2026-11-28 06:51",
+   "coin": "TRUMP",
+   "what": "short closed: stop",
+   "pnl": -51.5
+  },
+  {
+   "date": "2026-11-28 06:46",
+   "coin": "BLUR",
+   "what": "short closed: stop",
+   "pnl": -51.8
+  },
+  {
+   "date": "2026-11-28 07:06",
+   "coin": "SKY",
+   "what": "long closed: stop",
+   "pnl": -51.05
+  },
+  {
+   "date": "2026-11-28 07:09",
+   "coin": "ME",
+   "what": "short closed: take-profit",
+   "pnl": 98.5
+  },
+  {
+   "date": "2026-11-28 06:43",
+   "coin": "UNITREE",
+   "what": "long closed: signal exit",
+   "pnl": 0.11
+  },
+  {
+   "date": "2026-11-28 06:29",
+   "coin": "INIT",
+   "what": "short closed: take-profit",
+   "pnl": 98.5
+  },
+  {
+   "date": "2026-11-28 05:45",
+   "coin": "BIGTIME",
+   "what": "short closed: take-profit",
+   "pnl": 98.2
+  },
+  {
+   "date": "2026-11-28 05:02",
+   "coin": "INIT",
+   "what": "short closed: take-profit",
+   "pnl": 98.5
+  },
+  {
+   "date": "2026-11-28 05:25",
+   "coin": "SKY",
+   "what": "long closed: stop",
+   "pnl": -51.05
+  },
+  {
+   "date": "2026-11-28 03:51",
+   "coin": "AKE",
+   "what": "short closed: stop",
+   "pnl": -51.8
+  },
+  {
+   "date": "2026-11-28 04:20",
+   "coin": "BLUR",
+   "what": "short closed: take-profit",
+   "pnl": 98.5
+  },
+  {
+   "date": "2026-11-28 04:34",
+   "coin": "ME",
+   "what": "short closed: take-profit",
+   "pnl": 98.5
+  },
+  {
+   "date": "2026-11-28 02:48",
+   "coin": "ROBO",
+   "what": "long closed: stop",
+   "pnl": -51.8
+  },
+  {
+   "date": "2026-11-28 03:32",
+   "coin": "AKE",
+   "what": "short closed: take-profit",
+   "pnl": 98.5
+  },
+  {
+   "date": "2026-11-28 02:59",
+   "coin": "INIT",
+   "what": "short closed: take-profit",
+   "pnl": 98.5
+  },
   {
    "date": "2026-11-28 01:46",
    "coin": "ROBO",
@@ -506,109 +626,13 @@
    "coin": "BLUR",
    "what": "short closed: take-profit",
    "pnl": 98.95
-  },
-  {
-   "date": "2026-11-28 01:08",
-   "coin": "WLFI",
-   "what": "short closed: stop",
-   "pnl": -51.8
-  },
-  {
-   "date": "2026-11-28 01:15",
-   "coin": "AKE",
-   "what": "short closed: stop",
-   "pnl": -51.5
-  },
-  {
-   "date": "2026-11-28 01:05",
-   "coin": "BTW",
-   "what": "long closed: take-profit",
-   "pnl": 98.5
-  },
-  {
-   "date": "2026-11-27 23:53",
-   "coin": "BLUR",
-   "what": "short closed: take-profit",
-   "pnl": 98.95
-  },
-  {
-   "date": "2026-11-28 00:02",
-   "coin": "WLFI",
-   "what": "short closed: take-profit",
-   "pnl": 98.2
-  },
-  {
-   "date": "2026-11-27 22:51",
-   "coin": "BLUR",
-   "what": "short closed: take-profit",
-   "pnl": 98.95
-  },
-  {
-   "date": "2026-11-27 21:56",
-   "coin": "BLUR",
-   "what": "short closed: stop",
-   "pnl": -51.05
-  },
-  {
-   "date": "2026-11-27 22:15",
-   "coin": "MMT",
-   "what": "short closed: stop",
-   "pnl": -51.5
-  },
-  {
-   "date": "2026-11-27 21:56",
-   "coin": "AKE",
-   "what": "short closed: stop",
-   "pnl": -51.5
-  },
-  {
-   "date": "2026-11-27 21:37",
-   "coin": "WLFI",
-   "what": "short closed: stop",
-   "pnl": -51.8
-  },
-  {
-   "date": "2026-11-27 20:44",
-   "coin": "BLUR",
-   "what": "short closed: take-profit",
-   "pnl": 98.95
-  },
-  {
-   "date": "2026-11-27 21:32",
-   "coin": "MMT",
-   "what": "short closed: stop",
-   "pnl": -51.5
-  },
-  {
-   "date": "2026-11-27 20:30",
-   "coin": "SKY",
-   "what": "long closed: take-profit",
-   "pnl": 98.95
-  },
-  {
-   "date": "2026-11-27 19:52",
-   "coin": "MMT",
-   "what": "short closed: stop",
-   "pnl": -51.8
-  },
-  {
-   "date": "2026-11-27 20:03",
-   "coin": "BLUR",
-   "what": "short closed: take-profit",
-   "pnl": 98.5
-  },
-  {
-   "date": "2026-11-27 20:27",
-   "coin": "INIT",
-   "what": "short closed: stop",
-   "pnl": -51.5
   }
  ],
  "settlement": {
-  "real": 643,
+  "real": 685,
   "estimated": 0,
-  "stops": 207,
-  "take_profits": 111,
+  "stops": 214,
+  "take_profits": 119,
   "note": "Funding is settled from each venue's own history; stops and take-profits fill at their level in the hour they were crossed."
  },
  "asleep_hours": 9.1,
